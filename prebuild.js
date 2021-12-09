@@ -1,17 +1,18 @@
-import fs from 'fs'
-import path from 'path'
+const fs = require('fs')
+const path = require('path')
 
 const blogDirectory = path.join(process.cwd(), 'pages/blog')
 const metadataFlag = '//+metadata'
+const metadataFile = 'lib/metadata.js'
 
-export function getSortedMetadata() {
-    // const fileNames = fs.readdirSync(blogDirectory)
-    // const allMetadata = fileNames.map(fileName => {
-    //     const fullPath = path.join(blogDirectory, fileName)
-    //     const id = fileName.replace(/\.js$/, '')
-    //     return getMetdata(fullPath, id)
-    // })
-    // return allMetadata
+// Get a sorted list of metadata from all pages in the blogDirectory
+function getSortedMetadata() {
+    const fileNames = fs.readdirSync(blogDirectory)
+    const metadata = fileNames.map(fileName => {
+        const fullPath = path.join(blogDirectory, fileName)
+        const id = fileName.replace(/\.js$/, '')
+        return getMetdata(fullPath, id)
+    })
 
     // Sort metadata by Date
     return metadata.sort((a, b) => {
@@ -23,32 +24,7 @@ export function getSortedMetadata() {
     })
 }
 
-let tags = {
-    camping: "Camping",
-    hiking: "Hiking",
-    backpacking: "Backpacking",
-    hot_springs: "Hot Springs"
-}
-
-let metadata = [
-    {
-        id: "foo",
-        title: "Foo Page",
-        desc: "Foo!",
-        date: "2020-01-01",
-        image: "/images/cover.jpeg",
-        tags: [tags.backpacking]
-    },
-    {
-        id: "bar",
-        title: "Bar Page",
-        desc: "This is Bar Page :)",
-        date: "2020-01-02",
-        image: "/images/profile.jpg",
-        tags: [tags.camping, tags.hot_springs]
-    }
-]
-
+// Read metadata from a blog post
 function getMetdata(file, id) {
     const data = fs.readFileSync(file).toString('utf-8')
     const idx = data.indexOf(metadataFlag)
@@ -91,3 +67,21 @@ function getMetdata(file, id) {
     metadata["id"] = id
     return metadata
 }
+
+// Define the Posts function which returns a sorted array of post data
+metadata = getSortedMetadata()
+data = `
+export default function Posts() {
+    return ${JSON.stringify(metadata)}
+}
+`
+console.log(data)
+
+// Write the Posts function out to the metadata.js file
+fs.writeFile(metadataFile, data, function (err,data) {
+    if (err) {
+      return console.log(err);
+    }
+    console.log(data);
+  });
+

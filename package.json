@@ -1,13 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "prebuild": "node prebuild.js",
+    "dev": "npm run prebuild && next dev",
+    "build": "npm run prebuild && next build",
+    "start": "npm run prebuild && next start"
   },
   "dependencies": {
     "date-fns": "^2.11.1",
-    "gray-matter": "^4.0.2",
     "next": "latest",
     "react": "17.0.2",
     "react-dom": "17.0.2",

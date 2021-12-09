@@ -30,7 +30,7 @@
 }
 
 .borderRounded {
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 .colorInherit {
@@ -53,18 +53,18 @@
   height: 300px;
 }
 
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.listItem {
+.postBox {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 15px;
-  gap: 20px 20px;
+  gap: 30px 50px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .listItemText{
@@ -75,10 +75,21 @@
   color: #666;
 }
 
+.postLink {
+  color: black;
+  font-size: small;
+}
+
 .tagButton {
-  padding: 0;
   border: none;
   background: none;
   font-size: small;
-  color: #0000EE;
+  padding: 0%;
+  padding-right: 7px;
+  color: #272727;
+}
+
+.tagButton:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

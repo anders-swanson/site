@@ -5,7 +5,8 @@ let metadata = {
     "title": "Foo Page",
     "desc": "Foo!",
     "date": "2020-01-01",
-    "image": "/images/cover.jpeg"
+    "image": "/images/cover.jpeg",
+    "tags": ["hiking"]
 }
 
 export default function Post() {

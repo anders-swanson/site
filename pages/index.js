@@ -37,13 +37,14 @@ export default function Home({ allPostsData }) {
                 </a>                                 
               </Link>
               <br/>
+              <div className={utilStyles.tag}>
               {item.tags.map((t) => (
-                <button className={utilStyles.tagButton}>
+                <Link href={'/filter/' + t}>
                   {t}
-                </button>
+                </Link>
                 
-              ))}                             
-              <br/>
+              ))}  
+              </div>                    
               <Link href={`/blog/${item.id}`} className={utilStyles.postLink}>
                 <a>{item.title}</a>
               </Link>              

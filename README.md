@@ -47,8 +47,10 @@ Implement the React page contract in your page:
 import Layout from "../../components/layout"
 
 export default function Post() {
-    return (         
-        <Layout>                
+    return (
+        // you may use any image or header text, not just the metadata values
+        <Layout headerImage={metadata.image} headerText={metadata.title}>
+            // page content is configurable               
             <h1>Hello World!</h1>
         </Layout>
     )

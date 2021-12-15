@@ -1,0 +1,21 @@
+.menu {
+    background-color: rgb(26, 26, 26);
+    font-size: 24px;
+    width: 80%;
+    padding: 25px 25px 25px;
+    border-radius: 15px;
+}
+
+.menuImage {
+    z-index: 9999;
+    filter: brightness(75%);
+    display: block;
+}
+
+.menu a {
+    color: #FFF
+}
+
+.menu a:hover {
+    color: #FFF
+}

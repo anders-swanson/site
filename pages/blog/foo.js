@@ -11,7 +11,7 @@ let metadata = {
 
 export default function Post() {
     return (
-        <Layout>                
+        <Layout headerImage={metadata.image} headerText={metadata.title}>                 
             <h1>Hello World!</h1>
         </Layout>
     )

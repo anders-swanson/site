@@ -1,22 +1,26 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Burger from './burger'
 
 export const title = `Lauren's Big Adventure`
 const name = title
 const defaultHeaderImage = "/images/profile.jpg"
 
 
-export default function Layout({ children, home, headerImage}) {
-  let img = !headerImage ? defaultHeaderImage : headerImage
+
+export default function Layout({ children, home, headerImage, headerText}) {
+  let img = headerImage ? headerImage : defaultHeaderImage
+  let txt = headerText ? headerText : name
   return (
     <>
-      <img 
-        src={img}
-        className={utilStyles.headerImage}
-        />
+    <Burger/>
+    <img 
+      src={img}
+      className={utilStyles.headerImage}
+    />
+    
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />        
@@ -32,7 +36,7 @@ export default function Layout({ children, home, headerImage}) {
       <header className={styles.header}>
         {
           <>                      
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl}>{txt}</h1>
           </>
         }
       </header>

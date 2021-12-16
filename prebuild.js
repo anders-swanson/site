@@ -68,20 +68,46 @@ function getMetdata(file, id) {
     return metadata
 }
 
+function getTags(metadata) {
+    let allTags = new Set()
+
+    for (let i = 0; i < metadata.length; ++i) {
+        tags = metadata[i]["tags"]
+        for (let j = 0; j < tags.length; ++j) {
+            console.log(tags[j])
+            allTags.add(tags[j])
+        }
+    }
+
+    return Array.from(allTags).map(tag => {
+        return {
+            params: {
+                id: tag
+            }
+        }
+    })
+}
+
 // Define the Posts function which returns a sorted array of post data
 metadata = getSortedMetadata()
-data = `
-export default function Posts() {
+tags = getTags(metadata)
+
+
+data=`
+export function Posts() {
     return ${JSON.stringify(metadata)}
+}
+
+export function Tags() {
+    return ${JSON.stringify(tags)}
 }
 `
 console.log(data)
 
 // Write the Posts function out to the metadata.js file
-fs.writeFile(metadataFile, data, function (err,data) {
+fs.writeFile(metadataFile, data, function (err, data) {
     if (err) {
-      return console.log(err);
+        return console.log(err);
     }
     console.log(data);
-  });
-
+});

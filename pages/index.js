@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Layout, { title } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import Posts from '../lib/metadata'
-import Link from 'next/link'
-import Date from '../components/date'
+import { Posts } from '../lib/metadata'
+import PostBox from '../components/postbox'
 
 export default function Home({ allPostsData }) {
   return (
@@ -22,40 +20,7 @@ export default function Home({ allPostsData }) {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Recent Posts</h2><hr></hr>
-        <div className={utilStyles.postBox}>
-          {allPostsData.map(({ ...item }) => (
-            <div>
-              <Link href={`/blog/${item.id}`}>
-                <a>
-                  <Image         
-                    src={item.image} className={utilStyles.borderRounded}
-                    height={144}
-                    width={144}
-                  />
-                </a>                                 
-              </Link>
-              <br/>
-              <div className={utilStyles.tag}>
-              {item.tags.map((t) => (
-                <Link href={'/filter/' + t}>
-                  {t}
-                </Link>
-                
-              ))}  
-              </div>                    
-              <Link href={`/blog/${item.id}`} className={utilStyles.postLink}>
-                <a>{item.title}</a>
-              </Link>              
-              <br/>              
-              <small className={utilStyles.lightText}>
-                <Date dateString={item.date} />
-              </small>                                      
-            </div>
-          ))}
-        </div>        
-      </section>
+      <PostBox posts={allPostsData} heading="Recent Posts"/>
     </Layout>
       
   )

@@ -4,7 +4,7 @@ import { slide as Menu } from 'react-burger-menu'
 
 const menuStyles = {
   bmBurgerButton: {
-    "z-index": "9999",
+    zIndex: "9999",
     position: 'fixed',
     width: '36px',
     height: '30px',

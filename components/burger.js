@@ -12,7 +12,7 @@ const menuStyles = {
     top: '36px'
   },
   bmBurgerBars: {
-    background: 'rgb(26, 26, 26)'
+    background: '#FFF'
   },
   bmBurgerBarsHover: {
     background: '#a90000'

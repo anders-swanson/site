@@ -2,12 +2,16 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
-import { Tags } from '../lib/metadata'
+import { CapitalizeWords } from '../lib/common'
 
 export default function PostBox({ posts, heading }) {
+    const headingUpper = CapitalizeWords(heading)
     return (
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>{heading}</h2><hr></hr>
+        <div style={{display: "flex"}}>
+            <h2 className={utilStyles.headingLg}>{headingUpper}</h2>
+        </div>
+        <hr/>
         <div className={utilStyles.postBox}>
           {posts.map(({ ...item }) => (
             <div>

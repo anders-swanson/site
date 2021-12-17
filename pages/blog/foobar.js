@@ -1,3 +1,5 @@
+import Layout from "../../components/layout"
+
 //+metadata
 let metadata = {
     "title": "FooBAR Page",
@@ -9,6 +11,9 @@ let metadata = {
 
 export default function Post() {
     return (
-        <h1>Hello World!</h1>
+        <Layout>
+            <h1>Hello World!</h1>
+        </Layout>
+        
     )
 }

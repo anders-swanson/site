@@ -1,0 +1,11 @@
+.searchBox {
+    height: 20px;
+    z-index: 9999;
+    position: fixed;
+    width: 150px;
+    height: 33px;
+    left: 90px;
+    top: 35px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

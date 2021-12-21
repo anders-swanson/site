@@ -8,11 +8,10 @@ export const title = `Lauren's Big Adventure`
 const name = title
 const defaultHeaderImage = "/images/profile.jpg"
 
-
-
 export default function Layout({ children, home, headerImage, headerText}) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
+
   return (
     <>
     <Burger/>
@@ -30,7 +29,7 @@ export default function Layout({ children, home, headerImage, headerText}) {
       <header className={styles.header}>
         {
           <>                      
-            <h1 className={utilStyles.heading2Xl}>{txt}</h1>
+            <h1 className={utilStyles.heading2Xl}>{txt}</h1>            
           </>
         }
       </header>

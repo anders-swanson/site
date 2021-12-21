@@ -14,10 +14,6 @@ export default function Home({ allPostsData }) {
         <title>{title}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Website text</p>
-        <p>
-          Space for more text
-        </p>
       </section>
       <PostBox posts={allPostsData} heading="Recent Posts"/>
     </Layout>

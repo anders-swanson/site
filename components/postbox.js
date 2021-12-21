@@ -1,19 +1,33 @@
 import utilStyles from '../styles/utils.module.css'
+import styles from './postbox.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
 import { CapitalizeWords } from '../lib/common'
+import {useState} from 'react';
+import { Matches } from '../lib/search'
 
 export default function PostBox({ posts, heading }) {
+    const [search, setSearch] = useState('')
     const headingUpper = CapitalizeWords(heading)
+
+    const filteredPosts = search.length === 0 ? posts : Matches(search, posts)
+
     return (
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <input
+            className={styles.searchBox}
+            type="text"
+            placeholder="search"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          /> 
         <div style={{display: "flex"}}>
-            <h2 className={utilStyles.headingLg}>{headingUpper}</h2>
+            <h2 className={utilStyles.headingLg}>{headingUpper}</h2>            
         </div>
         <hr/>
         <div className={utilStyles.postBox}>
-          {posts.map(({ ...item }) => (
+          {filteredPosts.map(({ ...item }) => (
             <div>
               <Link href={`/blog/${item.id}`}>
                 <a>

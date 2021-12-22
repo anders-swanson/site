@@ -6,7 +6,7 @@ import Burger from './burger'
 
 export const title = `Lauren's Big Adventure`
 const name = title
-const defaultHeaderImage = "/images/profile.jpg"
+const defaultHeaderImage = "/images/cover.jpeg"
 
 export default function Layout({ children, home, headerImage, headerText}) {
   let img = headerImage ? headerImage : defaultHeaderImage
@@ -22,7 +22,7 @@ export default function Layout({ children, home, headerImage, headerText}) {
     
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/flower.jpg" />        
+        <link rel="icon" href="logo.jpg" />        
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -41,6 +41,10 @@ export default function Layout({ children, home, headerImage, headerText}) {
           </Link>
         </div>
       )}
+      
+    </div>
+    <div className={styles.footer}>
+      <p>© {new Date().getFullYear()}</p>
     </div>
     </>
   )

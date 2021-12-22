@@ -18,7 +18,7 @@ export default function PostBox({ posts, heading }) {
         <input
             className={styles.searchBox}
             type="text"
-            placeholder="search"
+            placeholder=" 🔎︎"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           /> 

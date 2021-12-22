@@ -40,11 +40,7 @@ export default function Layout({ children, home, headerImage, headerText}) {
             <a>← Back to home</a>
           </Link>
         </div>
-      )}
-      
-    </div>
-    <div className={styles.footer}>
-      <p>© {new Date().getFullYear()}</p>
+      )}      
     </div>
     </>
   )

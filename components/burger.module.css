@@ -19,3 +19,15 @@
 .menu a:hover {
     color: #FFF
 }
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+}
+
+.footer p {
+    color: #FFF;
+    font-size: small;
+}

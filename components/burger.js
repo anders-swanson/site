@@ -9,7 +9,7 @@ const menuStyles = {
     width: '36px',
     height: '30px',
     left: '36px',
-    top: '36px'
+    top: '36px',
   },
   bmBurgerBars: {
     background: '#FFF'
@@ -63,7 +63,11 @@ export default function Burger() {
           <br/>
           <Link href="/links">Links</Link>
           <br/>
-        </div>          
+          
+          <div className={styles.footer}>
+            <p>© {new Date().getFullYear()}</p>
+          </div>
+        </div>        
       </Menu>
     )
 }

@@ -5,26 +5,54 @@ import Link from 'next/link'
 import Burger from './burger'
 import PostBox from './postbox'
 import Search from './search'
-import {useState} from 'react'
+import { useState, useEffect } from 'react'
 
 export const title = `Lauren's Big Adventure`
 const name = title
 const defaultHeaderImage = "/images/cover.jpeg"
+const maxScroll = 230
 
 export default function Layout({ children, home, allPostsData, postsHeading, headerImage, headerText}) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
+
+  // State for the search box
   const [search, setSearch] = useState('')
+  // State for the scroll effect
+  const [isVisible, setVisible] = useState(true)
+
+  // set isVisible property to false if the viewport is past maxScroll pixels
+  const onScroll = () => {
+    const currentScroll = document.body.scrollTop || document.documentElement.scrollTop
+    if (currentScroll > maxScroll) {
+      isVisible && setVisible(false)
+    } else {
+      setVisible(true)
+    }
+  }
+
+  // use the scroll effect
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll)
+    return () => {
+        window.removeEventListener("scroll", onScroll)
+    }
+  }, [])
 
   return (
     <>
-    <div>
-      <Burger/>
-      <Search
-        search={search}
-        setSearch={setSearch}
-      />
-    </div>
+    {isVisible && (
+      <div >
+        <Burger/>
+        <Search
+          search={search}
+          setSearch={setSearch}
+        />
+      </div>
+
+    )
+
+    }
     <img 
       src={img}
       className={utilStyles.headerImage}
@@ -43,7 +71,7 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
           </>
         }
       </header>
-      <main>{children}</main>
+      <main>{children}</main>      
       {allPostsData && (
         <PostBox
           posts={allPostsData}

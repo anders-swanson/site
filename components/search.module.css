@@ -7,4 +7,5 @@
     left: 90px;
     top: 35px;
     font-size: 16px;
+    transition: top 0.3s;
 }

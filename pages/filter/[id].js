@@ -1,15 +1,15 @@
 
 import Layout from "../../components/layout";
-import PostBox from "../../components/postbox";
 import { Tags, Posts } from "../../lib/metadata";
 
-export default function Post({ id, posts, tags }) {
+export default function Post({ id, posts }) {
     return (
-        <Layout headerImage="/images/cover.jpeg">
-            <PostBox posts={posts} heading={id}/>
-        </Layout>
+        <Layout
+            headerImage="/images/cover.jpeg"
+            allPostsData={posts}
+            postsHeading={id}        
+        />
     )
-
 }
 
 export async function getStaticPaths() {

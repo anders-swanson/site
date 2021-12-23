@@ -3,22 +3,14 @@ import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
 import { CapitalizeWords } from '../lib/common'
-import {useState} from 'react';
 import { Matches } from '../lib/search'
-import Search from './search'
 
-export default function PostBox({ posts, heading }) {
-    const [search, setSearch] = useState('')
+export default function PostBox({ posts, search, heading }) {    
     const headingUpper = CapitalizeWords(heading)
-
     const filteredPosts = search.length === 0 ? posts : Matches(search, posts)
 
     return (
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <Search
-          search={search}
-          setSearch={setSearch}
-        />
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div style={{display: "flex"}}>
             <h2 className={utilStyles.headingLg}>{headingUpper}</h2>            
         </div>

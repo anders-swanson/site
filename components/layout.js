@@ -3,18 +3,28 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Burger from './burger'
+import PostBox from './postbox'
+import Search from './search'
+import {useState} from 'react'
 
 export const title = `Lauren's Big Adventure`
 const name = title
 const defaultHeaderImage = "/images/cover.jpeg"
 
-export default function Layout({ children, home, headerImage, headerText}) {
+export default function Layout({ children, home, allPostsData, postsHeading, headerImage, headerText}) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
+  const [search, setSearch] = useState('')
 
   return (
     <>
-    <Burger/>
+    <div>
+      <Burger/>
+      <Search
+        search={search}
+        setSearch={setSearch}
+      />
+    </div>
     <img 
       src={img}
       className={utilStyles.headerImage}
@@ -34,6 +44,13 @@ export default function Layout({ children, home, headerImage, headerText}) {
         }
       </header>
       <main>{children}</main>
+      {allPostsData && (
+        <PostBox
+          posts={allPostsData}
+          search={search}
+          heading={postsHeading}
+        />
+      )}
       {!home && (      
         <div className={styles.backToHome}>
           <Link href="/">
@@ -44,4 +61,13 @@ export default function Layout({ children, home, headerImage, headerText}) {
     </div>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const allPostsData = Posts()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }

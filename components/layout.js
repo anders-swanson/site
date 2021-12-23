@@ -37,7 +37,7 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     return () => {
         window.removeEventListener("scroll", onScroll)
     }
-  }, [onScroll])
+  })
 
   return (
     <>

@@ -37,7 +37,7 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     return () => {
         window.removeEventListener("scroll", onScroll)
     }
-  }, [])
+  }, [onScroll])
 
   return (
     <>
@@ -53,7 +53,8 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     )
 
     }
-    <img 
+    <img
+      alt=""
       src={img}
       className={utilStyles.headerImage}
     />

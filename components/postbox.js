@@ -17,10 +17,11 @@ export default function PostBox({ posts, search, heading }) {
         <hr/>
         <div className={utilStyles.postBox}>
           {filteredPosts.map(({ ...item }) => (
-            <div>
+            <div key={item.id}>
               <Link href={`/blog/${item.id}`}>
                 <a>
-                  <Image         
+                  <Image
+                    alt={item.id}       
                     src={item.image} className={utilStyles.borderRounded}
                     height={144}
                     width={144}
@@ -30,7 +31,10 @@ export default function PostBox({ posts, search, heading }) {
               <br/>
               <div className={utilStyles.tag}>
               {item.tags.map((t) => (
-                <Link href={'/filter/' + t}>
+                <Link
+                  href={'/filter/' + t}
+                  key={item.id}
+                >
                   {t}
                 </Link>
                 

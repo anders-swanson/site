@@ -17,19 +17,21 @@ let metadata = {
 const image = ImagePathBuilder('/images/2021/souixon-trail')
 const trailhead = 'https://www.google.com/maps/place/Lower+Souixon+Trail+Parking/@45.9477672,-122.226288,14.08z/data=!4m12!1m6!3m5!1s0x54942b51083d9eb1:0xae0d2a45bb6c5d62!2sSiouxon+Creek+Trailhead!8m2!3d45.946644!4d-122.1774154!3m4!1s0x54942cc3dc0b270f:0xbf9497bd565d4d3b!8m2!3d45.9406036!4d-122.2294643'
 
+const text1 = ''
+
 export default function Post() {
     return (        
         <Layout headerImage={metadata.image} headerText={metadata.title}>            
             <div className={utilStyles.flexContainer}>        
                 <div>
-                    <Link href={trailhead}>Siouxon creek trailhead</Link> is located in south-western Washington, a few miles south of highway
+                    <Link href={trailhead}>Siouxon creek trailhead</Link>{` is located in south-western Washington, a few miles south of highway
                     503 near Mount St. Helens. The access road is closed after the lower trailhead due to the 2020 Big Hollow fire, and
-                    may be closed at a gate 1/2 mile <b>before</b> the lower trailhead during the winder - 
-                    along the trail you'll find sections of forest recovering from the 2020 burn.
+                    may be closed at a gate 1/2 mile before the lower trailhead during the winder - 
+                    along the trail you'll find sections of forest recovering from the 2020 burn.`}
                     <br/><br/>
-                    About two miles in, there is a washout on a side creek that requires ankle-deep fording during the rainy season. You'll pass 
+                    {`About two miles in, there is a washout on a side creek that requires ankle-deep fording during the rainy season. You'll pass 
                     the closed upper trailhead after around three miles, and will start to have a better view of Siouxon creek as the trail draws 
-                    closer to the water.
+                    closer to the water.`}
                     <br/><br/>
                     With the recent rainfall, the waterfalls were flowing hard. More falls can be found further along the trail,
                     but with daylight running out we decided to turn back.

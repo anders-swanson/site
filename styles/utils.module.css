@@ -42,3 +42,14 @@
 .lightText {
   color: #666;
 }
+
+.centered {
+  align-items: center;
+}
+
+.flexContainer {
+  display: flex;
+  gap: 1px 1px;
+  padding-left: 50px;
+  padding-right: 50px;
+}

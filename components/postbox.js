@@ -25,7 +25,8 @@ export default function PostBox({ posts, search, heading }) {
                 <a>
                   <Image
                     alt={item.id}       
-                    src={item.image} className={utilStyles.borderRounded}
+                    src={item.image}
+                    className={utilStyles.borderRounded}
                     height={imgSizing}
                     width={imgSizing}
                   />

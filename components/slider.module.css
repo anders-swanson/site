@@ -1,6 +1,11 @@
 .container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
     text-align: center;
+    width: 50%;
 }
+
 
 .dot {
     cursor: pointer;

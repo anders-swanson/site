@@ -11,7 +11,7 @@ import { CapitalizeWords } from '../lib/common'
 export const title = `Lauren's Big Adventure`
 const name = title
 const defaultHeaderImage = "/images/cover.jpeg"
-const maxScroll = 175
+const maxScroll = 125
 const defaultHeaderColor = 'white'
 
 export default function Layout({ children, home, allPostsData, postsHeading, headerImage, headerText, headerColor}) {
@@ -67,7 +67,7 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <h1 className={styles.headerText} style={{ 'color': color }}>{CapitalizeWords(txt)}</h1>  
+      {isVisible && (<h1 className={styles.headerText} style={{ 'color': color }}>{CapitalizeWords(txt)}</h1>)}
       <main>{children}</main>
       {allPostsData && (
         <PostBox

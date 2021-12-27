@@ -39,7 +39,7 @@ export default function PostBox({ posts, search, heading }) {
                   href={'/filter/' + t}
                   key={item.id}
                 >
-                  {t}
+                  {CapitalizeWords(t)}
                 </Link>
                 
               ))}  

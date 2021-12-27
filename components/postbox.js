@@ -21,7 +21,7 @@ export default function PostBox({ posts, search, heading }) {
         <div className={styles.postBox}>
           {filteredPosts.map(({ ...item }) => (
             <div key={item.id} className={styles.post}>
-              <Link href={`/blog/${item.id}`}>
+              <Link href={`/blog${item.id}`}>
                 <a>
                   <Image
                     alt={item.id}       
@@ -43,7 +43,7 @@ export default function PostBox({ posts, search, heading }) {
                 
               ))}  
               </div>                    
-              <Link href={`/blog/${item.id}`} className={styles.postLink}>
+              <Link href={`/blog${item.id}`} className={styles.postLink}>
                 <a>{item.title}</a>
               </Link>              
               <br/>              

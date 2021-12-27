@@ -1,7 +1,7 @@
 .container {
   max-width: 72rem;
   padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  margin: 1rem auto 6rem;
 }
 
 .header {
@@ -11,7 +11,7 @@
 }
 
 .headerText {
-  position: fixed;
+  position: absolute;
   top: 210px;
   left: 50%;
   transform: translateX(-50%);
@@ -20,13 +20,8 @@
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
-}
-
-.logoText {
-  position: fixed;
-  top: 36px;
-  right: 36px;
-  border: ;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .backToHome {

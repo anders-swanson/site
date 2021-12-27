@@ -7,21 +7,33 @@ const metadataFile = 'lib/metadata.js'
 
 // Get a sorted list of metadata from all pages in the blogDirectory
 function getSortedMetadata() {
-    const fileNames = fs.readdirSync(blogDirectory)
-    const metadata = fileNames.map(fileName => {
-        const fullPath = path.join(blogDirectory, fileName)
-        const id = fileName.replace(/\.js$/, '')
-        return getMetdata(fullPath, id)
-    })
+    metadata = []
+    const recurseMetadata = (currentDir, relDir) => {
+        const files = fs.readdirSync(currentDir)
+        files.map((fileName) => {
+            const filePath = path.join(currentDir, fileName)
+            if (fs.statSync(filePath).isDirectory()) {                
+                recurseMetadata(filePath, relDir + '/' + fileName)
+            } else if (fileName.endsWith('.js')) {
+                const id = relDir + '/' + fileName.replace(/\.js$/, '')
+                metadata.push(getMetdata(filePath, id))
+            } else {
+                return
+            }            
+        })
+    }
 
-    // Sort metadata by Date
-    return metadata.sort((a, b) => {
+    recurseMetadata(blogDirectory, '')
+    return metadata.filter(e => {
+        return e != null
+    }).sort((a, b) => {
         if (a.date < b.date) {
           return 1
         } else {
           return -1
         }
     })
+    
 }
 
 // Read metadata from a blog post

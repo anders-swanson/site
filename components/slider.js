@@ -28,10 +28,6 @@ export default function Slider({ slides, width, height }) {
     return (
         <div
             className={styles.container}
-            style={{
-                'minWidth': imgWidth,
-                'minHeight': imgHeight
-            }}
         >
             <div key={slide}>
                 {isVideo(slide) && (

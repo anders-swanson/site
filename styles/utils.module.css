@@ -53,3 +53,11 @@
   padding-left: 50px;
   padding-right: 50px;
 }
+
+.flexWrapContainer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 1px 1px;
+  flex-wrap: wrap;
+}

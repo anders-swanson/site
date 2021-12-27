@@ -5,9 +5,28 @@
 }
 
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: fixed;
+  top: 200px;
+  left: 50%;
+}
+
+.headerText {
+  position: fixed;
+  top: 210px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.logoText {
+  position: fixed;
+  top: 36px;
+  right: 36px;
+  border: ;
 }
 
 .backToHome {

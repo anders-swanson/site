@@ -1,0 +1,35 @@
+.postBox {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 30px 50px;
+}
+
+.post {
+    width: 210px;
+    overflow-wrap: break-word;
+}
+
+.postLink {
+    color: black;
+    font-size: small;
+}
+
+.tag {
+    border: none;
+    background: none;
+    font-size: small;
+    padding: 0%;
+    color: #272727;
+}
+
+.tag a {
+    padding-right: 7px;
+    color: #272727;
+}
+
+.tag a:hover {
+    padding-right: 7px;
+    color: #272727;
+}

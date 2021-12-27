@@ -1,9 +1,12 @@
 import utilStyles from '../styles/utils.module.css'
+import styles from './postbox.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 import Image from 'next/image'
 import { CapitalizeWords } from '../lib/common'
 import { Matches } from '../lib/search'
+
+const imgSizing = 200
 
 export default function PostBox({ posts, search, heading }) {    
     const headingUpper = CapitalizeWords(heading)
@@ -15,21 +18,21 @@ export default function PostBox({ posts, search, heading }) {
             <h2 className={utilStyles.headingLg}>{headingUpper}</h2>            
         </div>
         <hr/>
-        <div className={utilStyles.postBox}>
+        <div className={styles.postBox}>
           {filteredPosts.map(({ ...item }) => (
-            <div key={item.id}>
+            <div key={item.id} className={styles.post}>
               <Link href={`/blog/${item.id}`}>
                 <a>
                   <Image
                     alt={item.id}       
                     src={item.image} className={utilStyles.borderRounded}
-                    height={144}
-                    width={144}
+                    height={imgSizing}
+                    width={imgSizing}
                   />
                 </a>                                 
               </Link>
               <br/>
-              <div className={utilStyles.tag}>
+              <div className={styles.tag}>
               {item.tags.map((t) => (
                 <Link
                   href={'/filter/' + t}
@@ -40,7 +43,7 @@ export default function PostBox({ posts, search, heading }) {
                 
               ))}  
               </div>                    
-              <Link href={`/blog/${item.id}`} className={utilStyles.postLink}>
+              <Link href={`/blog/${item.id}`} className={styles.postLink}>
                 <a>{item.title}</a>
               </Link>              
               <br/>              

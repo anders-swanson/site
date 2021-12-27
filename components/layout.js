@@ -6,16 +6,18 @@ import Burger from './burger'
 import PostBox from './postbox'
 import Search from './search'
 import { useState, useEffect } from 'react'
+import { CapitalizeWords } from '../lib/common'
 
 export const title = `Lauren's Big Adventure`
 const name = title
 const defaultHeaderImage = "/images/cover.jpeg"
 const maxScroll = 230
+const defaultHeaderColor = 'white'
 
-export default function Layout({ children, home, allPostsData, postsHeading, headerImage, headerText}) {
+export default function Layout({ children, home, allPostsData, postsHeading, headerImage, headerText, headerColor}) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
-
+  let color = headerColor ? headerColor : defaultHeaderColor
   // State for the search box
   const [search, setSearch] = useState('')
   // State for the scroll effect
@@ -61,18 +63,12 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="logo.jpg" />        
+        <link rel="icon" href="logo.jpg" />
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        {
-          <>                      
-            <h1 className={utilStyles.heading2Xl}>{txt}</h1>            
-          </>
-        }
-      </header>
-      <main>{children}</main>      
+      <h1 className={styles.headerText} style={{ 'color': color }}>{CapitalizeWords(txt)}</h1>   
+      <main>{children}</main>
       {allPostsData && (
         <PostBox
           posts={allPostsData}
@@ -80,13 +76,13 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
           heading={postsHeading}
         />
       )}
-      {!home && (      
+      {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
             <a>← Back to home</a>
           </Link>
         </div>
-      )}      
+      )}
     </div>
     </>
   )

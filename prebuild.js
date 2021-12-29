@@ -74,9 +74,10 @@ function getMetdata(file, id) {
         }
     }
 
-    const metadataStr = data.substr(startIdx, endIdx - startIdx + 1)
+    const metadataStr = data.substring(startIdx, endIdx + 1)
     let metadata = JSON.parse(metadataStr)
     metadata["id"] = id
+    metadata["tags"] = metadata["tags"].sort()
     return metadata
 }
 
@@ -86,7 +87,6 @@ function getTags(metadata) {
     for (let i = 0; i < metadata.length; ++i) {
         tags = metadata[i]["tags"]
         for (let j = 0; j < tags.length; ++j) {
-            console.log(tags[j])
             allTags.add(tags[j])
         }
     }

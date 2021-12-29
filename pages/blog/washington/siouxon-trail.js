@@ -4,7 +4,6 @@ import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import Slider from "../../../components/slider"
 import { ImagePathBuilder } from "../../../lib/common"
-import TripStats from "../../../components/tripstats"
 
 //+metadata
 let metadata = {

@@ -44,7 +44,10 @@
 }
 
 .centered {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 1px 1px;
 }
 
 .flexContainer {
@@ -60,4 +63,16 @@
   display: flex;
   gap: 1px 1px;
   flex-wrap: wrap;
+}
+
+.flexGapContainer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 25px 25px;
+  flex-wrap: wrap;
+}
+
+.textBlock {
+  width: 500px
 }

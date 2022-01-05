@@ -21,6 +21,17 @@
   margin: 1rem 0;
 }
 
+.statsText {
+  position: fixed;
+  top: 100px;
+  left: 36px;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
 .backToHome {
   margin: 3rem 0 0;
 }

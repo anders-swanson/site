@@ -14,9 +14,10 @@ const defaultHeaderImage = "/images/cover.jpeg"
 const maxScroll = 125
 const defaultHeaderColor = 'white'
 
-export default function Layout({ children, home, allPostsData, postsHeading, headerImage, headerText, headerColor}) {
+export default function Layout({ children, home, allPostsData, postsHeading, headerImage, headerText, subText, headerColor}) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
+  let stxt = subText ? subText : ""
   let color = headerColor ? headerColor : defaultHeaderColor
   // State for the search box
   const [search, setSearch] = useState('')
@@ -68,6 +69,9 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       {isVisible && (<h1 className={styles.headerText} style={{ 'color': color }}>{CapitalizeWords(txt)}</h1>)}
+      {isVisible && (
+        <h1 className={styles.statsText} style={{ 'color': color }}>{stxt}</h1>
+      )}
       <main>{children}</main>
       {allPostsData && (
         <PostBox

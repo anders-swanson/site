@@ -16,10 +16,11 @@ let metadata = {
 
 const image = ImagePathBuilder('/images/washington/souixon-trail')
 const trailhead = 'https://www.google.com/maps/place/Lower+Souixon+Trail+Parking/@45.9477672,-122.226288,14.08z/data=!4m12!1m6!3m5!1s0x54942b51083d9eb1:0xae0d2a45bb6c5d62!2sSiouxon+Creek+Trailhead!8m2!3d45.946644!4d-122.1774154!3m4!1s0x54942cc3dc0b270f:0xbf9497bd565d4d3b!8m2!3d45.9406036!4d-122.2294643'
+const subText = '15.25 miles, 2,915 feet gain'
 
 export default function Post() {
     return (        
-        <Layout headerImage={metadata.image} headerText={metadata.title}>            
+        <Layout headerImage={metadata.image} headerText={metadata.title} subText={subText}>            
             <div className={utilStyles.flexWrapContainer}>                
                 <div style={{'width': '500px'}}>
                     <Link href={trailhead}>Siouxon creek trailhead</Link>{` is located in south-western Washington, a few miles south of highway

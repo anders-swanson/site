@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import Slider from "../../../components/slider"
 import { ImagePathBuilder } from "../../../lib/common"
 import Link from 'next/link'
 
@@ -14,13 +13,13 @@ let metadata = {
     "tags": ["hiking", "waterfall"]
 }
 
+const subText = '20.04 miles, 2,867 feet gain'
 const image = ImagePathBuilder('/images/oregon/little-blitzen')
 const trailhead = 'https://www.google.com/maps/@42.657206,-118.7285438,18.46z'
-//7/4/2021	Little Blitzen Gorge	7:19:34	20.04	2,867.00																					
 
 export default function Post() {
     return (
-        <Layout headerImage={image('cover.jpg')} headerText={metadata.title}>
+        <Layout headerImage={image('cover.jpg')} headerText={metadata.title} subText={subText}>
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     A small parking lot for the <Link href={trailhead}>trailhead</Link> is just before South Steens campground.

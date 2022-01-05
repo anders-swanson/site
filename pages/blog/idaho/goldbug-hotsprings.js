@@ -16,10 +16,11 @@ let metadata = {
 
 const image = ImagePathBuilder('/images/idaho/goldbug-hotsprings')
 const goldbug = 'https://www.google.com/maps/place/Goldbug+Hot+Springs+Trailhead/@44.9025503,-113.9459512,15z/data=!4m5!3m4!1s0x535820e9ac394b2d:0x47a4f614255ba06!8m2!3d44.8980974!4d-113.9569976'
+const subText = '3.92 miles, 950 feet elevation gain'
 
 export default function Post() {
     return (
-        <Layout headerImage={metadata.image} headerText={metadata.title}> 
+        <Layout headerImage={metadata.image} headerText={metadata.title} subText={subText}> 
             <div className={utilStyles.flexWrapContainer}>
                 <div style={{'width': '500px'}}>
                     <Link href={goldbug}>Goldbug hot springs</Link> is located in a steep canyon, with springs emerging from several sources towards the top.

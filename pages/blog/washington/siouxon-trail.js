@@ -22,7 +22,7 @@ export default function Post() {
     return (        
         <Layout headerImage={metadata.image} headerText={metadata.title} subText={subText}>            
             <div className={utilStyles.flexWrapContainer}>                
-                <div style={{'width': '500px'}}>
+                <div className={utilStyles.textBlock}>
                     <Link href={trailhead}>Siouxon creek trailhead</Link>{` is located in south-western Washington, a few miles south of highway
                     503 near Mount St. Helens. The access road is closed after the lower trailhead due to the 2020 Big Hollow fire, and
                     may be closed at a gate 1/2 mile before the lower trailhead during the winder - 

@@ -22,7 +22,7 @@ export default function Post() {
     return (
         <Layout headerImage={metadata.image} headerText={metadata.title} subText={subText}> 
             <div className={utilStyles.flexWrapContainer}>
-                <div style={{'width': '500px'}}>
+                <div className={utilStyles.textBlock}>
                     <Link href={goldbug}>Goldbug hot springs</Link> is located in a steep canyon, with springs emerging from several sources towards the top.
                     The steepness of the canyon creates a cascade of hot springs into multiple pools, the water temperature varying 
                     depending on how far you are from the source. 

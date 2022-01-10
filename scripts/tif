@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Conversion utility script to change the wonderful proprietary heic/heif formats to JPG
+
+if [[ -z "$(which tifig)" ]]; then
+  echo "Oops! You don't have tifig :("
+  echo "Consider installing tifig if you don't like seeing this message!"
+  echo "----------------------------------------------------------------"
+  echo '|------> https://github.com/monostream/tifig/releases" <-------|'
+  echo "----------------------------------------------------------------"
+  exit 1
+fi
+
+F="$1"
+
+if [[ -f "$F" ]]; then
+  tifig "$F" "$(basename $F).jpg"
+  exit 0
+fi
+
+if [[ -d "$F" ]]; then
+  FILES="$(find . -maxdepth 1 -type f |egrep '.*(heic|heif|HEIC|HEIF)$')"
+  for file in $FILES; do
+    output_file="$(echo "${file%.*}").jpg"
+    echo "Converting... $file --> $output_file"
+    tifig $file $output_file
+  done
+  exit 0
+fi
+
+echo "TIF received 0 input files : better luck next time!"
+exit 1

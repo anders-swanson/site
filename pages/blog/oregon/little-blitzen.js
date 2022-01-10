@@ -9,7 +9,7 @@ let metadata = {
     "title": "Little Blitzen Gorge",
     "desc": "",
     "date": "2021-07-04",
-    "image": "/images/oregon/little-blitzen/gorge1.jpg",
+    "image": "/images/oregon/little-blitzen/thumbnail.jpg",
     "tags": ["hiking", "waterfall"]
 }
 

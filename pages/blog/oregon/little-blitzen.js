@@ -52,9 +52,6 @@ export default function Post() {
                         width={600}
                         src={image('gorge3.jpg')}
                 />
-                <div className={utilStyles.textBlock}>
-                   
-                </div>
             </div>
             <hr/>
             <div className={utilStyles.flexWrapContainer}>

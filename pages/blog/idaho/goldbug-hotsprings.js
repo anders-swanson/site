@@ -44,7 +44,7 @@ export default function Post() {
                         image('springs3.MOV'),
                         image('springs4.MOV')
                     ]}
-                /> 
+                />
             </div>
             <hr/>
             <div className={utilStyles.flexContainer}>

@@ -4,6 +4,10 @@
   margin: 1rem auto 6rem;
 }
 
+.container img {
+  border-radius: 5px;
+}
+
 .header {
   position: fixed;
   top: 200px;

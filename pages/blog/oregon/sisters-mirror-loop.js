@@ -26,8 +26,8 @@ export default function Post() {
                     Starting at the <Link href={trailhead}>Quinn Meadows Horse Camp</Link>, we completed a one-night backpacking
                     loop of <Link href={sistersMirror}>{`Sister's Mirror Lake`}</Link>{`. On the way up we passed Horse lake, and took the
                     Red Hill trail to Sister's Mirror. About three miles from the Mirror Lakes area, the trail was completely lost under
-                    snow, and we relied entirely on GPS to reach to the lake, blazes were not visible. On second day, we took the Mirror
-                    Lakes trail back towards Quinn Meadows. there was hardpack snow almost the entire way to the trailhead.`}
+                    snow, and we relied on GPS to reach to the lake, trail blazes were not visible. On second day, we took the Mirror
+                    Lakes trail back towards Quinn Meadows, there was hardpack snow almost the entire way to the trailhead.`}
                     <br/>
                     If you are thinking of doing this loop before melt out, consider bringing a GPS, spikes, and a topo-trail map.
                     Route-finding would be difficult to impossible without these items.
@@ -55,7 +55,7 @@ export default function Post() {
                         src={image('silhouette.jpg')}
                 />
                 <div style={{'width': '1200px'}}>
-                    While not required, bringing your floaty is recommended. The might be a bit cold in June!
+                    While not required, bringing your floaty is recommended. The water might be a bit cold in June!
                 </div>
                 <Image
                         alt='floating'

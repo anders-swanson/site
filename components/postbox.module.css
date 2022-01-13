@@ -1,14 +1,14 @@
 .postBox {
+    justify-content: center;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 15px;
-    gap: 30px 50px;
+    gap: 30px;
 }
 
 .post {
-    width: 210px;
-    overflow-wrap: break-word;
+    width: 230px;
+    height: 330px;
 }
 
 .postLink {

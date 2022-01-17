@@ -26,7 +26,7 @@ export default function Post() {
                     The Fairyland loop starts at <Link href={trailhead}>Fairyland Point</Link>{` in Bryce Canyon 
                     National Park. The loop trail itself is around 8 miles, but we added on the Queen's garden loop
                     near the end to extend the trail. This is a great trail to see Bryce's hoodoo rock
-                    formations, the view from the rim, and natural bridges.`}
+                    formations, rim views, and natural bridges.`}
                     <br/><br/>
                     {`Because of the cold weather and snow (6" had fallen the night before, and the high was 23F), 
                     there weren't too many other groups on the trail.

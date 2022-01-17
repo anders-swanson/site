@@ -22,7 +22,7 @@ export default function Post() {
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                 Willow Creek hot springs is a remote springs on BLM land, located at a basic, walk-up, 
-                <Link href={campground}>free-to-use campground</Link>. Willow Creek is about an hour drive
+                <Link href={campground}> free-to-use campground</Link>. Willow Creek is about an hour drive
                 east from the town of Fields - the roads were in good condition in 2021.
                 <br/><br/>
                {`The springs are divided into two sections, for hot and cool pools. The area is quiet,

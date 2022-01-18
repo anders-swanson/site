@@ -1,0 +1,133 @@
+import Image from 'next/image'
+import utilStyles from '../../../styles/utils.module.css'
+import Layout from "../../../components/layout"
+import { ImagePathBuilder } from "../../../lib/common"
+import Link from 'next/link'
+import Slider from '../../../components/slider'
+
+//+metadata
+let metadata = { 
+    "title": "Glacier Backpacking",
+    "desc": "",
+    "date": "2021-08-28",
+    "image": "https://lh3.googleusercontent.com/pw/AM-JKLWApIcPOrd5ioi3DJX5ahuj-1RqjTPm9pYZ_4K0u8pwfDrNHe_Cr31ff8tiQx9-gSeDECijH834LfP5jQ-4Q9VdffUZremTuJiAZxm9zgsOceG8IUk1f53qDWjTivqzqqbDnWm7aWAVLUJb-pSDz_6Z=s1075-no?authuser=1",
+    "tags": ["backpacking", "lakes"]
+}
+
+
+
+
+const subText = '59.04 miles, 7471 feet gain, 3 nights'
+const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXIj1g2Ls4knxXhrHXEYM68jF-YPOZ-z5VXL645gbyG50lQSvRBhtquPAysASh1g8Hh2qyIu3boI1eToBauM7kjlUix1cqfJ5-WIcVhlgPxegxNQ_4Mjvev-CVDCwYUXRAAnyhLIxm9xfjBLj1_miCz=w1609-h1075-no?authuser=1'
+const image1 = 'https://lh3.googleusercontent.com/pw/AM-JKLUkyZS10srB4-5QJ4Ezq2G3E6rdFjLpTM0nzntUIDktFFPn7gS-liBUs10K6CGiTzrf8XU86eB2vcBfJ_agCMwBjHwG_ycSLB3c8UoU_ncljA2P46JlFDGAvmhsMRaWwxDycdS0cJygZgGoN-T6mudd=w1609-h1075-no?authuser=1'
+const image2 = 'https://lh3.googleusercontent.com/pw/AM-JKLXCCl2eMQSBsLEAJEe0UZRlLoPahdYSY2pVAdOoQ2yzUVF1iQn04WH-aqv7CbfjHdaSiffkNqtabkYH6Rna8Ecs9JiNi3LFFdPNZ-i_Vc5NzAdfrtw1k2x2ppVqlokmVdwkBUO2JxLf1ype_4QEQE5_=w1609-h1075-no?authuser=1'
+const image3 = 'https://lh3.googleusercontent.com/pw/AM-JKLVYS8P3ZwZnv1yoRJ7yYs2axz8sD-kHIArUWmbb5HEIb9BeYmmOx-2oTrWDbsN-iVZ62LYnxq9BOq8390seV2aw8jm1_sEvR21dsOsOhwVWdxQfo2DPk8918449EUQ1RbqtI-YOdvi6UC5QYcgQYH88=w1609-h1075-no?authuser=1'
+const image4 = 'https://lh3.googleusercontent.com/pw/AM-JKLVpOSPuLu_TSne3XwgF66824R4laN68I2iu2rF9c7MIcPr6YrgyweyLQ88RocxsdLV25c6SETTV8gFnQKrGRJwcmGbcfdl1czsvEgkArmjqyQfu4__7wGJenFCenibyujuk1x2yDel-ZLnPjxrPlF6Q=w1609-h1075-no?authuser=1'
+const image5 = 'https://lh3.googleusercontent.com/pw/AM-JKLXqdcGxi9huHtW_UfjPzBRUDtJzLa9zn2zm_wxJ_FuvDi2MsTglEWgFqJzJGLCdL2huorQMVaLFSpmkAOOqFltQM0sTaBLitMfHNPnyVSsmaWyo7I0MFFI9hBMzA15TijIoaFGXsPl-kmfMpZi3Dm8d=w807-h1075-no?authuser=1'
+const image6 = 'https://lh3.googleusercontent.com/pw/AM-JKLWSYXJv5JLaxdNQnzKfnose41q-qjEHkJdA3jANnURIFuLdx2z6o5qrwBI-AablqhYXQBB3574-lOz9M2BwUDgUAScPsynHDoTH920ZpSSAnYJ37kDZD3wp8WqvASW4W0-B3QVPo73WVHEFBu-sL6E0=w807-h1075-no?authuser=1'
+const image7 = 'https://lh3.googleusercontent.com/pw/AM-JKLUq0u6mV9NzydRfFIZ9VXXCPmWsAK67xbsoAvfKjYmswXwoJpGC9h9RilD3In_TP_l7SRfmTk0lMXFGDqPDKIlvfaLZcT_ZunBFZwOIBtNrtDVze_ojzHXxEQfHx4L88blQxt2KsAc7f29UFTqospUX=w807-h1075-no?authuser=1'
+const slides = [
+    'https://lh3.googleusercontent.com/pw/AM-JKLUOoF6zBKVTDaGZQm-FkcWI0c1Ly20TvAEqYLFwlW5cqQqCdfw6FxyJIGtZT4XB6gYfkU2XRjJz7w0v3fKMXQVBnF5FVc1F6rDex4GaLuIfIMz-HJJeXZwVv51furk3VwIBeBMD1CrrST1ARxN_F5ie=w1609-h1075-no?authuser=1',
+    'https://lh3.googleusercontent.com/pw/AM-JKLUhFf-5GlbiJWStS0hETheADCYHpr8xR4ds7bCaSp6lMmTWvMOsBXLJkA0WoUpmFRYhS6eZXXPwjG5VnH-vqyR6NaLuVOOLSFDHuV9eMz62-FA9aRghyTx4W-pmTNHhoD29edGiOz9iOnMK_sR7y3Ed=w1434-h1075-no?authuser=1',
+    'https://lh3.googleusercontent.com/pw/AM-JKLUxae0LpovkEibUtUOxq4RFywC7EE9FdNCLXdOujD2csLlTy89lMPQR5Zig12EpBzBVEofnL7POBwgc0mibM2UyicC0lgCJtdz04O9byEldfSDQntUSs9ki-QU1UsR8mhHRnaHa7DZsxtRmSasxWFL2=w1609-h1075-no?authuser=1'
+]
+
+export default function Post() {
+    return (
+        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+            <div className={utilStyles.flexGapContainer}>
+                <div className={utilStyles.textBlock}>
+                    {`We backpacked for three nights in Glacer National Park, beginning at the Chief Mountain trailhead at the very 
+                    northeast corner of the park. The area accessible via Chief Mountain is more remote, and is more likely to be
+                    frequented by backpackers.`}
+                    <br/><br/>
+                    {`Backcountry camping in Glacier National Park is restricted to designated campgrounds, and a permit is required for
+                    each campsite/night you are in the park. Permits can be purchased in advance via a lottery system,
+                    or you can try your luck by checking one of the ranger stations in the park for any available walk-up permits
+                    (about 50% of the permits are reserved for walk-ups).`}
+                </div>
+                <Image
+                        alt='cosley'
+                        height={450}
+                        width={700}
+                        src={image1}
+                />
+                <div className={utilStyles.textBlock}>
+                    {`Our first night was at Glenns Lake Head, about a 10 mile trek from the trailhead. You'll pass through meadows
+                    and valleys, before climbing up to Cosley Lake, which chains to Glenns Lake. These lakes (like most in Glacier),
+                    are long, finger-type lakes, surrounded on their sides by towering peaks. Depending on the season, there may be 
+                    more or less snow on the peaks.`}
+                    <br/><br/>
+                    {`Our next site after Glenns Head was Elizabeth Head, in the Belly area. After setting up our camp, we hiked
+                    past Elizabeth Head to Helen Lake, a glacier-backed lake and probably one of the most beautiful places we 
+                    saw in the park.`}
+                </div>
+                <Image
+                        alt='lauren helen lake'
+                        height={450}
+                        width={700}
+                        src={image2}
+                />
+                <div className={utilStyles.textBlock}>
+                    {`On the third day, we had a short hike to our next campsite, so we decided to make the hike up to Ptarmigan Tunnel.
+                    The tunnel is a man-made pass through the mountains that connects to the popular trailhead at Many Glacier.
+                    On the way up to the tunnel, you get sweeping, gorgeous views of the Belly area, from Elizabeth Lake to Helen Lake.`}
+                    <br/><br/>
+                    {`The tunnel is kept open during the warmer seasons, and closed by the park service in the winter to prevent animals
+                    from hibernating in it. We started to see more people as we approached the Ptarmigan Tunnel, as it is a popular
+                    day hike from Many Glacier. It's an experience to walk through the tunnel, as it is like a portal between two
+                    sections of the park.`}
+                </div>
+                <Image
+                        alt='ptarmigan trail'
+                        height={450}
+                        width={700}
+                        src={image4}
+                />
+                <div className={utilStyles.textBlock}>
+                   {`Coming down from the Ptarmigan Tunnel, we headed back towards Cosley Lake, for our final night in Glacier.
+                   The hike out from Cosley was around 9 miles to Chief Mountain Trailhead.`}
+                   <br/><br/>
+                   {`If you decide to backpack Glacier, make sure you are up-to-date with the park's recommendation for bear safety. Bears
+                   (both black and brown) and numerous in the park, and we ran into one black bear during our trip, which passed us on the trail
+                   going the opposite direction. Every other hiker we encountered had a similar story about a bear encounter. When camping,
+                   you're requested to sling your food (and other scented items/cookware) on provided poles. The park rangers will strongly 
+                   recommend all hikers to bring bear spray, and make plenty of noise while on the trail.`}
+                </div>
+                <Image
+                        alt='ptarmigan trail'
+                        height={450}
+                        width={700}
+                        src={image3}
+                />
+                <div className={utilStyles.flexWrapContainer}>
+                    <Image
+                        height={400}
+                        width={400}
+                        alt='5'
+                        src={image5}
+                    />
+                    <Image
+                        height={400}
+                        width={400}
+                        alt='6'
+                        src={image6}
+                    />
+                    <Image
+                        height={400}
+                        width={400}
+                        alt='7'
+                        src={image7}
+                    />
+                </div>
+                
+                <Slider
+                    height={900}
+                    width={1200}
+                    slides={slides}
+
+                />                
+            </div>
+        </Layout>
+    )
+}

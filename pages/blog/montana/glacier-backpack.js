@@ -1,8 +1,6 @@
 import Image from 'next/image'
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import { ImagePathBuilder } from "../../../lib/common"
-import Link from 'next/link'
 import Slider from '../../../components/slider'
 
 //+metadata

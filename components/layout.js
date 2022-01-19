@@ -44,6 +44,9 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
 
   return (
     <>
+    <Head>
+      <title>{headerText ? headerText : title}</title>
+    </Head>
     {isVisible && (
       <div >
         <Burger/>
@@ -52,7 +55,6 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
           setSearch={setSearch}
         />
       </div>
-
     )
 
     }
@@ -68,9 +70,11 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      {isVisible && (<h1 className={styles.headerText} style={{ 'color': color }}>{CapitalizeWords(txt)}</h1>)}
       {isVisible && (
-        <h1 className={styles.statsText} style={{ 'color': color }}>{stxt}</h1>
+        <>
+          <h1 className={styles.headerText} style={{ 'color': color }}>{CapitalizeWords(txt)}</h1>
+          <h1 className={styles.statsText} style={{ 'color': color }}>{stxt}</h1>
+        </>
       )}
       <main>{children}</main>
       {allPostsData && (

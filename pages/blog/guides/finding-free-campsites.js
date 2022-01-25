@@ -16,7 +16,6 @@ const tent1 = 'https://lh3.googleusercontent.com/pw/AM-JKLXt2H_cG1Gi1b6fVuaUny7D
 const tent2 = 'https://lh3.googleusercontent.com/pw/AM-JKLUGp0OaLjXgmnr7iJsYoRDbqKnQtOdtvk3lqTlySAg1tJlkPoaZnH027tCaKToTniVpYE_KAVU48ph67SIcDzFYzs_FxKKb408H4xzS_zPgkGKQL9FwgLvEermQLbE3MUTHZ3_yoH_8tBASCN3ihAeA=w807-h1075-no?authuser=1'
 const tent3 = 'https://lh3.googleusercontent.com/pw/AM-JKLX93LbV7GeXS8ZNI6u0gSEQnUXP95Fe4wIf40iqCkMjkAuLJBoRMzcIgmGPWYRrNPRIxEgL4vP1VrF7-JC-UdXxQSFG2GwMLdgHQvrwrgWmZ2nRxni01TU4A2vr9YdcRvHEZQOjul2HkYX0FRfh79-R=w807-h1075-no?authuser=1'
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLVCuN0XZmybg8YX_z9owTEDco9SLDjYtk248PcljRwtKgLbhaVmSShbON0xwzYftzcECY2NrJgidepu2N-RU2Ri1YIWuXuYKpl7IIwu9qzmumRTkb5rCKhuxS9MzBgNWQb1xj0lY52s_YvztXEz-gOp=w1759-h1075-no?authuser=1'
-const justifyCenter = {'width': '1400px', 'justifyContent': 'center', 'alignContent': 'center', 'display': 'flex'}
 
 export default function Post() {
     return (
@@ -38,7 +37,7 @@ export default function Post() {
                 </div>
 
                 <h1>Finding a Good Campsite</h1>
-                <div style={justifyCenter}>
+                <div className={utilStyles.justifyCenter}>
                         {`When searching for a dispersed campsite, you'll want to keep in mind a few things.`}
                 </div>
                 <div className={utilStyles.flexWrapContainer}>
@@ -70,7 +69,7 @@ export default function Post() {
                     /> 
                 </div>
 
-                <h1 style={justifyCenter}>BLM/National Forest Camping</h1>
+                <h1 className={utilStyles.justifyCenter}>BLM/National Forest Camping</h1>
                 <br/>
                     <div className={utilStyles.textBlock}>
                         {`BLM land offers some of the best, and easily accessible free campsites. Much of the western U.S. is public land,
@@ -95,7 +94,7 @@ export default function Post() {
                     /> 
                 
 
-                <h1 style={justifyCenter}>Wilderness Camping</h1>
+                <h1 className={utilStyles.justifyCenter}>Wilderness Camping</h1>
                 <br/>
                 <div className={utilStyles.textBlock}>
                     {`Regulations in Wilderness areas vary from place to place. By checking ahead, you can likely figure out if, and where,

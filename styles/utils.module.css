@@ -76,3 +76,10 @@
 .textBlock {
   width: 500px;
 }
+
+.justifyCenter {
+  width: 1400px;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}

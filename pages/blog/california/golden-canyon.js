@@ -2,7 +2,6 @@ import Image from 'next/image'
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import Link from 'next/link'
-import Slider from '../../../components/slider'
 
 //+metadata
 let metadata = { 
@@ -12,8 +11,6 @@ let metadata = {
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLV3jc6L3YxPH7Nv1BA4tPYYCPJF9aMReUSFvE6UvRK-qmUJSiiMamjLoDfOTPszrGebRi5SfC_MEuZ8HVsE753uQv4VE9mkmWnWZEQkDt_BUzwylu-pc5DPlAbrN5XX2ZCujhA1j57gnkq3Er1oO6XP=w1076-h1075-no?authuser=1",
     "tags": ["hiking"]
 }
-
-
 
 const trailhead = 'https://www.google.com/maps/place/Golden+Canyon+Trailhead/@36.4226602,-116.8415294,14.96z/data=!4m5!3m4!1s0x80c73e8ab49dc8e7:0x81181ab2667c4455!8m2!3d36.4207027!4d-116.8467738'
 const subText = '6.23 miles, 1,158 feet gain'
@@ -27,6 +24,7 @@ const image5 = 'https://lh3.googleusercontent.com/pw/AM-JKLXeB-3oi-Fi6v5n90ciq-a
 export default function Post() {
     return (
         <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     <Link href={trailhead}>Golden Canyon</Link> is a popular hiking trail in Death Valley national park,
@@ -53,6 +51,7 @@ export default function Post() {
                     {`If you hike this in the warm season (why would you, unless you like suffering), bring plenty of water and dress
                     appropriately. There wont be much shade during the summer months, and the heat can quickly become intolerable in the canyon.`}
                 </div>
+                
                 <Image
                         alt='golden canyons'
                         height={450}
@@ -83,7 +82,7 @@ export default function Post() {
                         alt='5'
                         src={image5}
                     />
-                </div>              
+                </div>     
             </div>
         </Layout>
     )

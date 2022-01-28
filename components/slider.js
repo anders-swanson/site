@@ -65,5 +65,5 @@ export default function Slider({ slides, width, height }) {
 
 function isVideo(slide) {
     let slideLowercase = slide.toLowerCase()
-    return slideLowercase.endsWith('.mp4') || slideLowercase.endsWith('.mov')
+    return slideLowercase.endsWith('.mp4') || slideLowercase.endsWith('.mov') || slideLowercase.includes('youtube.com')
 }

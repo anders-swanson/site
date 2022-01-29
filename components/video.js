@@ -12,7 +12,7 @@ export default function Video({ src, height, width, controls}) {
     const videoRef = useRef(null)
     const imgHeight = height ? height : "500px"
     const imgWidth = width ? width : "500px"
-     
+
     let videoType = videoTypes.mp4
     if (src.includes('youtube.com')) {
         videoType = videoTypes.youtube
@@ -33,6 +33,7 @@ export default function Video({ src, height, width, controls}) {
                         width={imgWidth}
                         height={imgHeight}
                         autoPlay
+                        loop
                         muted
                         controls={controls}
                     >
@@ -41,7 +42,8 @@ export default function Video({ src, height, width, controls}) {
                 </Waypoint>
             )}
             {videoType === videoTypes.youtube && (
-                <iframe 
+                <iframe
+                    frameBorder="0"
                     width={width}
                     height={height} 
                     src={src}

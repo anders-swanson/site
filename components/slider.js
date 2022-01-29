@@ -7,7 +7,9 @@ export default function Slider({ slides, width, height }) {
     const imgWidth = width ? width : "500px"
     const imgHeight = height ? height : "500px"
 
-    const [slide, setSlide] = useState(slides[0])
+    // the currently acive slide in the slider
+    const [currentSlide, setCurrentSlide] = useState(slides[0])
+    // buttonClass is the class of the dotted buttons below the slider
     const [buttonClass, setButtonClass] = useState(slides.map((_, idx) => {
         if (idx == 0) {
             return `${styles.dot} ${styles.active}`
@@ -16,7 +18,7 @@ export default function Slider({ slides, width, height }) {
     }))
     
     const goToSlide = (idx) => {
-        setSlide(slides[idx])
+        setCurrentSlide(slides[idx])
         setButtonClass(slides.map((_, i) => {
             if (i == idx) {
                 return `${styles.dot} ${styles.active}`
@@ -29,17 +31,17 @@ export default function Slider({ slides, width, height }) {
         <div
             className={styles.container}
         >
-            <div key={slide}>
-                {isVideo(slide) && (
+            <div key={currentSlide}>
+                {isVideo(currentSlide) && (
                     <Video            
-                        src={slide}
+                        src={currentSlide}
                         width={imgWidth}
                         height={imgHeight}
                     />
                 ) || (
                     <Image
-                        alt={slide}
-                        src={slide}
+                        alt={currentSlide}
+                        src={currentSlide}
                         width={imgWidth}
                         height={imgHeight}
                     />

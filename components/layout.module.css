@@ -8,6 +8,10 @@
   border-radius: 5px;
 }
 
+.container video {
+  border-radius: 5px;
+}
+
 .header {
   position: fixed;
   top: 200px;

@@ -46,6 +46,9 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     <>
     <Head>
       <title>{headerText ? headerText : title}</title>
+      <link rel="icon" href="logo.jpg" />
+      <meta name="og:title" content={title} />
+      <meta name="twitter:card" content="logo.jpg" />
     </Head>
     {isVisible && (
       <div >
@@ -55,9 +58,7 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
           setSearch={setSearch}
         />
       </div>
-    )
-
-    }
+    )}
     <img
       alt=""
       src={img}
@@ -65,11 +66,6 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     />
     
     <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="logo.jpg" />
-        <meta name="og:title" content={title} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
       {isVisible && (
         <>
           <h1 className={styles.headerText} style={{ 'color': color }}>{CapitalizeWords(txt)}</h1>

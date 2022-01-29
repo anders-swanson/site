@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import Layout, { title } from '../components/layout'
+import Layout from '../components/layout'
 import { Posts } from '../lib/metadata'
 import ReactGA from 'react-ga';
 
@@ -13,7 +12,8 @@ export default function Home({ allPostsData }) {
       headerImage="/images/cover.jpeg"
       allPostsData={allPostsData}
       postsHeading="Posts"
-    />
+    >
+    </Layout>
   )
 }
 

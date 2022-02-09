@@ -47,8 +47,8 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     <Head>
       <title>{headerText ? headerText : title}</title>
       <link rel="icon" href="logo.jpg" />
-      <meta name="og:title" content={title} />
-      <meta name="twitter:card" content="logo.jpg" />
+      <meta name="og:title" content={title}/>
+      <meta name="twitter:card" content="logo.jpg"/>
     </Head>
     {isVisible && (
       <div >

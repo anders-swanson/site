@@ -3,20 +3,27 @@ import Image from "next/image"
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import Slider from "../../../components/slider"
-import { ImagePathBuilder } from "../../../lib/common"
+import { rawData } from "../../../lib/common"
 
 //+metadata
 let metadata = {
     "title": "Siouxon Creek Trail",
     "desc": "",
     "date": "2021-11-28",
-    "image": "/images/washington/souixon-trail/falls1.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AM-JKLXGmSLxR_PLkzmOxphgROXQYNAxjXtjD9Hl-n0Ph3gMeNHcBlq7NkW_mioJoitYBnUHWYS3Sb2Y6PAWLJ4pGBa9-xAcgo5zwIjVPIbyydmGj8JGgUEaRUHqvnBnDkhvhkkB0d3rVA5LmwDQ1dlnBtR_=w801-h1067-no?authuser=0",
     "tags": ["hiking", "waterfall"]
 }
 
-const image = ImagePathBuilder('/images/washington/souixon-trail')
+
 const trailhead = 'https://www.google.com/maps/place/Lower+Souixon+Trail+Parking/@45.9477672,-122.226288,14.08z/data=!4m12!1m6!3m5!1s0x54942b51083d9eb1:0xae0d2a45bb6c5d62!2sSiouxon+Creek+Trailhead!8m2!3d45.946644!4d-122.1774154!3m4!1s0x54942cc3dc0b270f:0xbf9497bd565d4d3b!8m2!3d45.9406036!4d-122.2294643'
 const subText = '15.25 miles, 2,915 feet gain'
+
+const burn1 = 'https://lh3.googleusercontent.com/pw/AM-JKLXYdKIYKzgRfy8Vie1af9Nm_jbLL9dKSYIWKMk7vaDK17gxeof4fqlZpKyroWPsrKfevlNKh6Xb8k3ftl6j46vTn07sn9DGSHrybqReMJzE3oPlF6OSdgGe0LPAwlFC1uMmOCCjNXy3qfp9It4P2tLS=w1423-h1067-no?authuser=0'
+const burn3 = 'https://lh3.googleusercontent.com/pw/AM-JKLXY_SuGswjCuDI9-FTbT15u-Gkx60ibwL7IKIkAtgZoZz1WHaYUyYgRP03CvHEZ3LhSOhISTZ0G64E5zKv3wi3mVlGsI1lYcO7bqlIEW8vwYwP3K4AoitiXuk9blRnoF49cPe0xRHGBbLfWtxAjAL7u=w801-h1067-no?authuser=0'
+const chanterelle = 'https://lh3.googleusercontent.com/pw/AM-JKLWKb290kyiOGYHOyPsO7q9Lv4sdBRpohJNfdghBTBxZem-w8rZqQJ4Uh8axFIL2j-2fuQls03dPlmxqLfOo2DJYuHz-4ckq1p5o1_oENPPA96mBEvvtD4MOlfMHCNDTpuncrM8KNYHbbnObr6jH-bAk=w801-h1067-no?authuser=0'
+const lobster = 'https://lh3.googleusercontent.com/pw/AM-JKLVegy4pqaiRkoHCQndPzI-x-c_8ofqiQpd8u7RtevDe0c5YjCJe145Nsc5wMHanQLJCFrcbK_etKLjEThbckVkFgRMyIdr7kronG23RACLjg893V5g79d9riuoaTxiTVuyudIWf9p87JtJ2PZQWHnao=w801-h1067-no?authuser=0'
+const falls2 = 'https://lh3.googleusercontent.com/pw/AM-JKLXAVZGbjPCyU30ifygza2qrF-W9UTiTwLrmK0xVpePEuFz2lnCJk6Nx439a630ZoJjG1PNVyKq1cPf9T7rvIth3Y8vVNNzTEeTVrXYhamku9QbFbc6PYdlr8SAHSCV8hzM7N5a60XEnroVgvd_dS71x=w801-h1067-no?authuser=0'
+
 
 export default function Post() {
     return (        
@@ -38,14 +45,14 @@ export default function Post() {
                 </div>
                 <Slider
                     slides={[
-                        image('burn1.jpg'),
-                        image('burn2.MOV'),
-                        image('burn3.jpg'),
-                        image('washout.MOV'),
-                        image('washout-reverse.MOV'),
-                        image('f1.MOV'),
-                        image('f2.MOV'),
-                        image('f3.MOV')
+                        rawData('f2.mp4'),
+                        rawData('f1.mp4'),
+                        rawData('f3.mp4'),
+                        rawData('washout.mp4'),
+                        rawData('washout-reverse.mp4'),
+                        burn1,
+                        rawData('burn2.mp4'),
+                        burn3
                     ]}
                 /> 
             </div>
@@ -55,19 +62,19 @@ export default function Post() {
                     height={400}
                     width={400}
                     alt='chanterelle'
-                    src={image('chanterelle.jpg')}
+                    src={chanterelle}
                 />
                 <Image
                     height={400}
                     width={400}
                     alt='falls'
-                    src={image('falls2.jpg')}
+                    src={falls2}
                 />
                 <Image
                     height={400}
                     width={400}
                     alt='lobster'
-                    src={image('lobster.jpg')}
+                    src={lobster}
                 />
             </div>
         </Layout>

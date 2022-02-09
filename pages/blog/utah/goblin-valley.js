@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import { ImagePathBuilder } from "../../../lib/common"
 import Slider from "../../../components/slider"
 import Link from 'next/link'
 
@@ -10,17 +9,24 @@ let metadata = {
     "title": "Goblin Valley",
     "desc": "",
     "date": "2020-11-06",
-    "image": "/images/utah/goblin-valley/thumbnail.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AM-JKLXWrT94NWtCKzcXwflU9Xa-DQI9zNvmaRyFTI2QprcDklAXjG8MTkrjrpeMsW1NTWc5joii5dg2oJJRJhHf8Sqk5oFp_Ge9pX35yeiMlqwNyfYOgUmHT1ZhPHuTfDcgVWrn6YDt-ZsFhUUnlebuOQ7U=s1067-no?authuser=0",
     "tags": ["hiking"]
 }
 
 const subText = '7.91 miles, 1,191 feet gain'
-const image = ImagePathBuilder('/images/utah/goblin-valley')
 const trailhead = 'https://www.google.com/maps/place/Goblin+Overlook/@38.5670356,-110.705913,16.54z/data=!4m13!1m7!3m6!1s0x8749a2b4c60051bb:0x3d0ce33fdda3dbb6!2sGoblin+Valley+Rd,+Utah!3b1!8m2!3d38.6080852!4d-110.6837684!3m4!1s0x8749bd7b2b723b91:0xcc4f51d8ca254352!8m2!3d38.564315!4d-110.7036055'
+const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLU0oZlBijhdrx4_ZI-twDykZLBDgLXxIF9fVT6IO5ylp2QuQbVp0ADeqneJ4FST1HyLFkVd35d963j5BQu9PmTpU3KVZe6ETAOIkPt1w9lbHV-IZH3XaUC5ddDjvZrg3LXVPM4-rlUYV35R85EQhl5_=w1920-h952-no?authuser=0'
+const threesisters = 'https://lh3.googleusercontent.com/pw/AM-JKLWm0Gi37hqKJJc-UJDM06B36GDD3Kf4BmCp3ysqk3iYc1pXDUbkimNAcpZmBsfkNt6fhqc03bq6pNq8YuuYe7DTCV7uQEH9zXoIUnVgdRmB2AjqiNH78_BPo_lC6dvb8RNUCwfk_JUq8NT9Fw9Opybb=w1423-h1067-no?authuser=0'
+const gob1 = 'https://lh3.googleusercontent.com/pw/AM-JKLWm0Gi37hqKJJc-UJDM06B36GDD3Kf4BmCp3ysqk3iYc1pXDUbkimNAcpZmBsfkNt6fhqc03bq6pNq8YuuYe7DTCV7uQEH9zXoIUnVgdRmB2AjqiNH78_BPo_lC6dvb8RNUCwfk_JUq8NT9Fw9Opybb=w1423-h1067-no?authuser=0'
+const gob2 = 'https://lh3.googleusercontent.com/pw/AM-JKLVgam4xCcyMrcWWTqQZwY5IFUrLAWOJ7V112xbFYUo3yvrrW4TLo-l4NyN4gX03GFK0b1h_CAJnFjuUdmdAPLvMJbkM9CO1Mkmukh6iWgd1Tkvu206I4IQYZhFeIzw0ACcl_ZOU0DX9N9N0OxfY9AnE=w1423-h1067-no?authuser=0'
+const gob3 = 'https://lh3.googleusercontent.com/pw/AM-JKLVOYH4J7XEhdnokuCOj-tNna8e-tpaFWIJFonUSTMwjYsa8aUlYTnSv_e0QsjUD3gvlzhvLjjjAxlaar_Q25NobZzg01PGONLjsoXEsTYHcM3PfyxMpurNAn1k7UOxZW4fxSZS6mYgouMajF7ExoW59=w1423-h1067-no?authuser=0'
+const gob4 = 'https://lh3.googleusercontent.com/pw/AM-JKLWvz7sY-m-ofxwKV-FwKmGdLbsl6R0yszg4v8RtT52R4hwJvD4j5kOwYxNqkEmIQt-dwp9HaXUlp-20w8MMEQL8AZKmmknB3Q_Akec57TlYRSzT--Bz7uLDLIJdB_QxT7BjBsZSrYLJQ6JkRDf2Hu-C=w801-h1067-no?authuser=0'
+const lair = 'https://lh3.googleusercontent.com/pw/AM-JKLWOqSsYYcgBcPglpEfla2visQc4c-T4XA5ZfGq808N8yaWv39v08Vfgs9qhk6F25oITzDlcjsBWslhwHOz8omtfbsNtkquY_cLZF0QvB7dSs1j9m3iui3gOrrJO3BJCrO2ooNfDfFZ5mprky0EWJz0J=w801-h1067-no?authuser=0'
+
 
 export default function Post() {
     return (
-        <Layout headerImage={image('cover.jpg')} headerText={metadata.title} subText={subText}>
+        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     <Link href={trailhead}>Goblin Valley</Link>{` is a state park in Utah ($20 entry fee for day use), containing
@@ -35,7 +41,7 @@ export default function Post() {
                         alt='three sisters'
                         height={400}
                         width={600}
-                        src={image('3-sisters.jpg')}
+                        src={threesisters}
                 />
                 <div className={utilStyles.textBlock}>                
                     If you are thinking about making the trip to Goblin Valley - do it. This place is seriously amazing and has some of
@@ -51,7 +57,7 @@ export default function Post() {
                         alt='goblins'
                         height={400}
                         width={600}
-                        src={image('gob1.jpg')}
+                        src={gob1}
                 />
                 <div className={utilStyles.textBlock}>
                    
@@ -62,9 +68,9 @@ export default function Post() {
                     width="1200px"
                     height="800px"
                     slides={[
-                        image('cover.jpg'),
-                        image('gob2.jpg'),
-                        image('gob3.jpg')
+                        cover,
+                        gob2,
+                        gob3
                     ]}
                 /> 
             </div>
@@ -78,13 +84,13 @@ export default function Post() {
                         alt='goblin in its lair'
                         height={600}
                         width={450}
-                        src={image('lair.jpg')}
+                        src={lair}
                    />
                    <Image
                         alt='goblin nose'
                         height={600}
                         width={450}
-                        src={image('gob4.jpg')}
+                        src={gob4}
                    />
             </div>
         </Layout>

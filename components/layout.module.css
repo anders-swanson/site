@@ -18,26 +18,25 @@
   left: 50%;
 }
 
-.headerText {
+.fixedText {
   position: fixed;
   top: 50px;
   left: 36px;
-  font-size: 2.5rem;
-  line-height: 1.2;
+}
+
+.fixedText h1 {
   font-weight: 800;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.headerText {
+  font-size: 2.5rem;
 }
 
 .statsText {
-  position: fixed;
-  top: 100px;
-  left: 36px;
   font-size: 1.8rem;
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
 }
 
 .backToHome {

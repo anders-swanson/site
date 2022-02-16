@@ -30,18 +30,18 @@ export default function Post() {
         <Layout headerImage={metadata.image} headerText={metadata.title} subText={subText}>            
             <div className={utilStyles.flexWrapContainer}>                
                 <div className={utilStyles.textBlock}>
-                    <Link href={trailhead}>Siouxon creek trailhead</Link>{` is located in south-western Washington, a few miles south of highway
-                    503 near Mount St. Helens. The access road is closed after the lower trailhead due to the 2020 Big Hollow fire, and
-                    may be closed at a gate 1/2 mile before the lower trailhead during the winder - 
-                    along the trail you'll find sections of forest recovering from the 2020 burn.`}
+                    The <Link href={trailhead}>Siouxon creek trailhead</Link>{` is located in southwestern Washington, a few miles south of highway
+                    503 near Mount St. Helens. This is good hike to view waterfalls, but you'll have to walk pretty far: the access road has been
+                    closed after the lower trailhead due to the 2020 Big Hollow fire, and may be closed at a gate 1/2 mile before the lower trailhead during the winter. 
+                    Along the trail you'll find sections of forest recovering from the 2020 burn, and there may be unexpected obstacles (washouts, downed trees, etc.).`}
                     <br/><br/>
                     {`About two miles in, there is a washout on a side creek that requires ankle-deep fording during the rainy season. You'll pass 
                     the closed upper trailhead after around three miles, and will start to have a better view of Siouxon creek as the trail draws 
                     closer to the water.`}
                     <br/><br/>
-                    With the recent rainfall, the waterfalls were flowing hard. More falls can be found further along the trail,
+                    Just before our visit, there had been heavy rainfall, so the waterfalls were flowing hard. There are more falls to be found further up the trail,
                     but as daylight was running out we decided to turn back. We ended up hiking 15.24 miles with 2,195 feet of 
-                    elevation gain.
+                    elevation gain. If you decide to hike the full length of the trail, it looks to be around 24 miles.
                 </div>
                 <Slider
                     slides={[
@@ -57,6 +57,9 @@ export default function Post() {
                 /> 
             </div>
             <hr/>
+            <div className={utilStyles.flexContainer}>
+                We were able to find wild, edible mushrooms growing beside the trail. Pictured below are Golden Chanterelles and a Lobster mushroom.
+            </div>
             <div className={utilStyles.flexContainer}>
                 <Image
                     height={400}

@@ -7,13 +7,15 @@ export default function Post() {
         <Layout headerImage='/images/about.png'>                
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
-                    {`Hi - we are a couple from the Pacific Northwest who enjoy all aspects of the outdoors. 
-                    On this page you'll find hiking + backpacking trips, camping excursions, guides, and more.
-                    We mostly post about Oregon, where we live, but often travel outside the state to visit parks,
-                    mountains, and other natural areas. Maybe we'll see you on the trail!`}
-
+                    {`Welcome to our page - We are a couple from the Pacific Northwest who enjoy spending time outdoors.`}
                     <br/><br/>
-                    Setting sun and clouds over the Three Sisters (Bend, OR)
+                    {`On this page you'll find hiking/backpacking/camping trips, guides, and more.
+                    Most of the content here is focused on the Pacific Northwest, 
+                    but we often travel and post about other parts of the world.`}
+                    <br/><br/>
+                    {`Happy trails!`}
+                    <br/><br/>
+                    <strong>Setting sun and clouds over the Three Sisters (Bend, OR)</strong>
                 </div>
                 <Image
                     height={450}

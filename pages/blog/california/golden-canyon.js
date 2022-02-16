@@ -31,11 +31,11 @@ export default function Post() {
                     just a few minutes from Furnace Creek.
                     <br/>
                     {`A shorter out-and-back to Red Cathedral can be hiked on this trail, or you can make a longer loop that 
-                    should be under 7 miles. If you have time, you can also add on Zabriskie Point, which is also reachable from this
-                    trail.`}
+                    should be around 7 miles. If you have time, you can also add on the Zabriskie Point hike, which is reachable from
+                    the Golden Canyon trail`}
                     <br/><br/>
-                    {`The trail is home to canyons of varied color from light yellow to ruddy or dark brown. Near Red Cathedral (a 1/2 mile
-                    spur trail), the sandstone takes on a reddish hue.`}
+                    {`The Golden Canyon trail is home to colorful canyons that vary from light yellow to ruddy or dark brown. Near Red Cathedral (a 1/2 mile
+                    spur trail), tall sandstone cliffs take on a deep, reddish hue.`}
                 </div>
                 <Image
                         alt='lauren in a canyon'
@@ -46,7 +46,7 @@ export default function Post() {
                 <div className={utilStyles.textBlock}>
                     {`As you climb up and around the loop, the trail exits the wash and follows a series of marker posts. 
                     Near Manly Beacon (the high point on the trail), there are panoramic views of the canyons, and the salt flats below.
-                    To exit Golden Canyon, the trail rejoins a wash, and shortly descends to Gower Gulch, back to the trailhead.`}
+                    To complete the loop back to Golden Canyon trailhead, the trail rejoins a wash and descends to Gower Gulch.`}
                     <br/><br/>
                     {`If you hike this in the warm season (why would you, unless you like suffering), bring plenty of water and dress
                     appropriately. There wont be much shade during the summer months, and the heat can quickly become intolerable in the canyon.`}
@@ -59,9 +59,10 @@ export default function Post() {
                         src={image2}
                 />
                 <div>
-                    {`Golden Canyon can easily be tied in with other viewpoints and trails along Badwater Road. 
-                    On the same day, we also hit up Artist's Palette, Devil's Golf Course, the Badwater basin salt flats, and Room Canyon
-                    before heading back to camp at Stovepipe Wells.`}
+                    {`Golden Canyon can be tied in with other trails and destinations along the Badwater Basin road (the road that runs south
+                    from Furnace Creek). 
+                    On the same day, we were able to visit Artist's Palette, Devil's Golf Course, the Badwater Basin salt flats, and Room Canyon
+                    before heading back to camp near Stovepipe Wells.`}
                 </div>
                 <div className={utilStyles.flexWrapContainer}>
                     <Image

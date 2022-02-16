@@ -21,16 +21,19 @@ export default function Post() {
     return (
         <Layout headerImage={image('cover.jpg')} headerText={metadata.title} subText={subText}>
             <div className={utilStyles.flexGapContainer}>
+                <div>
+                    {`Three Fingered Jack is a shield volcano in Oregon's Cascade Range, between Mt. Jefferson and the Mt. Washington. At 7,844 feet, it's overshadowed
+                    by the nearby Three Sisters, but is still a prominent peak in the area.`}
+                </div>
                 <div className={utilStyles.textBlock}>
-                    We started our loop at the <Link href={trailhead}>Round Lake Trailhead</Link> in the Mt. Jefferson Wilderness. While there are
-                    many access points to this loop, we happened to pick Round Lake because overnight permits were still
-                    available.
+                    We started our loop around Three Fingered Jack at <Link href={trailhead}>Round Lake Trailhead</Link> in the Mt. Jefferson Wilderness. While there are
+                    many access points to this loop, we picked Round Lake because we were lucky enough to snag an overnight permit there (everything else was taken).
                     <br/><br/>
-                    {`It's not recommended to follow Google Maps to the trailhead, which will take you on a very rought road.
-                    Our passenger car didn't have enough clearance for the boulders in the road, and we had to park about 2.5 miles from the 
-                    trailhead, adding a total of 5 miles to the round trip. Instead, turn left onto NF-1210 off of Jack Lake Road, continuing on
-                    NF-1210 for 5.8 miles. At Round Lake, turn right onto NF-600, driving a short distance to the trail marker
-                    near the Round Lake Wilderness retreat. This route is longer, but much better graded.`}
+                    {`If you're starting at Round Lake, don't follow Google Maps to the trailhead! You'll get onto a very rough road, 
+                    which is not passable by passenger cars with low clearance. We ended up having to park 2.5 miles from the 
+                    trailhead, adding a total of 5 miles to the round trip. Instead of following Google Maps, turn left onto NF-1210 from Jack Lake Road,
+                    and continue on NF-1210 for 5.8 miles. At Round Lake, turn right onto NF-600, driving a short distance to the trail marker
+                    near the Round Lake Wilderness retreat. This route is slightly longer, but much better graded.`}
 
                 </div>
                 <Image
@@ -41,12 +44,12 @@ export default function Post() {
                 />
                 <div className={utilStyles.textBlock}>
                     {`We looped clock-wise around Three Fingered Jack, making detours for Summit lake and Canyon Creek meadows. Canyon Creek meadows
-                    is a great spot for wildflowers, and close-up views to the east face of Three Fingered Jack. If you're willing to make the scramble,
-                    you can also ascend to the summit at 7,844 ft.`}
+                    is a great spot to view wildflowers, and get close-up views Three Fingerd Jack's eastern face. If you're willing to make the scramble,
+                    you can also climb to the summit near here.`}
                     <br/><br/>
-                    {`As you make your way around the loop, you'll get panoramic views of the Mt. Jefferson wilderness, and on the south side, views
-                    down to Mt. Washington and the Three Sisters. A large portion of the loop is through scrubby, open burn, and can be excruciatingly
-                    hot on summer days. Thankfully the route is punctuated by a large amount of lakes and meadows,
+                    {`As you make your way around the loop, you'll get panoramic views of the Mt. Jefferson wilderness, and views down to Mt. Washington 
+                    and the Three Sisters in the south. A large portion of the loop is through scrubby, open burn, and can be excruciatingly
+                    hot on summer days. Thankfully, the route is punctuated by a large amount of lakes and meadows
                     and it is never too far to a water source.`}
                 </div>
                 <Image
@@ -56,9 +59,11 @@ export default function Post() {
                         src={image('square-lake2.jpg')}
                 />
                 <div className={utilStyles.flexWrapContainer}>
-                    {`There are a lot of decent camping spots along the loop - we ended up camping at Wasco lake, which is popular with backpackers. 
-                    All the camping areas along this route are primitive. The second day was a bit of a slog - we had much farther to hike than anticipated,
-                    and the temperatures began creeping towards the ninties in the afternoon. By the time we made it back to the car, we were exhausted, 
+                    {`There's good camping all around the loop, mostly at the various lakes. We ended up camping at Wasco lake, which is popular with backpackers. 
+                    All the camping areas along this route are primitive.`}
+                    <br/><br/>
+                    {`The second day back to the car was a bit of a slog - we had much farther to hike than planned,
+                    and the temperatures were creeping into the ninties by afternoon. By the time we made it back to the car, we were exhausted, 
                     dusty, and dead-tired from the heat, but thankful for our time in the beautiful Mt. Jefferson Wilderness.`}                                
                 </div>
             </div>

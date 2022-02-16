@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
       home
       headerImage="/images/cover.jpeg"
       allPostsData={allPostsData}
-      postsHeading="Posts"
+      postsHeading="Recent Posts"
     >
     </Layout>
   )

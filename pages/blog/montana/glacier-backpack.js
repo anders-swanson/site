@@ -36,13 +36,13 @@ export default function Post() {
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     {`We backpacked for three nights in Glacer National Park, beginning at the Chief Mountain trailhead at the very 
-                    northeast corner of the park. The area accessible via Chief Mountain is more remote, and is more likely to be
+                    northeast corner of the park. The area accessible via Chief Mountain is remote, and likely to be
                     frequented by backpackers.`}
                     <br/><br/>
-                    {`Backcountry camping in Glacier National Park is restricted to designated campgrounds, and a permit is required for
+                    {`Backcountry camping in Glacier National Park is restricted to designated campgrounds, a permit being required for
                     each campsite/night you are in the park. Permits can be purchased in advance via a lottery system,
                     or you can try your luck by checking one of the ranger stations in the park for any available walk-up permits
-                    (about 50% of the permits are reserved for walk-ups).`}
+                    (around 50% of the permits are reserved for walk-ups).`}
                 </div>
                 <Image
                         alt='cosley'
@@ -51,14 +51,14 @@ export default function Post() {
                         src={image1}
                 />
                 <div className={utilStyles.textBlock}>
-                    {`Our first night was at Glenns Lake Head, about a 10 mile trek from the trailhead. You'll pass through meadows
-                    and valleys, before climbing up to Cosley Lake, which chains to Glenns Lake. These lakes (like most in Glacier),
-                    are long, finger-type lakes, surrounded on their sides by towering peaks. Depending on the season, there may be 
+                    {`Our first night was at Glenns Lake Head, a 10 mile trek from Chief Mountain. On the way, we passed through meadows
+                    and valleys, before climbing up to Cosley Lake, which connects to Glenns Lake. These lakes (like most in Glacier),
+                    are finger lakes, surrounded on their sides by towering peaks. Depending on the season, there may be 
                     more or less snow on the peaks.`}
                     <br/><br/>
-                    {`Our next site after Glenns Head was Elizabeth Head, in the Belly area. After setting up our camp, we hiked
-                    past Elizabeth Head to Helen Lake, a glacier-backed lake and probably one of the most beautiful places we 
-                    saw in the park.`}
+                    {`Our next site after Glenns Head was Elizabeth Lake Head, in Glacier's Belly area. After setting up our camp, we hiked
+                    further past Elizabeth Lake to Helen Lake. Helen Lake is backed by a steep, snowy headwall, and was probably the most beautiful
+                    place we saw in Glacier.`}
                 </div>
                 <Image
                         alt='lauren helen lake'
@@ -67,14 +67,14 @@ export default function Post() {
                         src={image2}
                 />
                 <div className={utilStyles.textBlock}>
-                    {`On the third day, we had a short hike to our next campsite, so we decided to make the hike up to Ptarmigan Tunnel.
-                    The tunnel is a man-made pass through the mountains that connects to the popular trailhead at Many Glacier.
-                    On the way up to the tunnel, you get sweeping, gorgeous views of the Belly area, from Elizabeth Lake to Helen Lake.`}
+                    {`On our third day, we had a short hike to our next campsite, so we decided to make the climb up to Ptarmigan Tunnel.
+                    The Ptarmigan Tunnel hike is a tough climb to a man-made pass. The tunnel pass provides access through the mountains to
+                    a popular trail that starts near Many Glacier.
+                    On the way up to the tunnel, you are granted a sweeping, gorgeous view of the Belly valley, from Elizabeth Lake to Helen Lake.`}
                     <br/><br/>
                     {`The tunnel is kept open during the warmer seasons, and closed by the park service in the winter to prevent animals
-                    from hibernating in it. We started to see more people as we approached the Ptarmigan Tunnel, as it is a popular
-                    day hike from Many Glacier. It's an experience to walk through the tunnel, as it is like a portal between two
-                    sections of the park.`}
+                    from hibernating in it. It's an amazing experience to pass through the tunnel, as it feels like a portal between two
+                    totally different sections of the park.`}
                 </div>
                 <Image
                         alt='ptarmigan trail'
@@ -84,13 +84,13 @@ export default function Post() {
                 />
                 <div className={utilStyles.textBlock}>
                    {`Coming down from the Ptarmigan Tunnel, we headed back towards Cosley Lake, for our final night in Glacier.
-                   The hike out from Cosley was around 9 miles to Chief Mountain Trailhead.`}
+                   On our last day, the hike out from Cosley Lake clocked in at around 9 miles to Chief Mountain Trailhead.`}
                    <br/><br/>
                    {`If you decide to backpack Glacier, make sure you are up-to-date with the park's recommendation for bear safety. Bears
                    (both black and brown) and numerous in the park, and we ran into one black bear during our trip, which passed us on the trail
-                   going the opposite direction. Every other hiker we encountered had a similar story about a bear encounter. When camping,
-                   you're requested to sling your food (and other scented items/cookware) on provided poles. The park rangers will strongly 
-                   recommend all hikers to bring bear spray, and make plenty of noise while on the trail.`}
+                   going the opposite direction. Each hiker we encountered had a similar story about a bear encounter. 
+                   you're required to hang your food (and other scented items/cookware) on provided poles while camping. You are 
+                   recommend to bring bear spray, and make plenty of noise while on the trail to avoid startling any bears.`}
                 </div>
                 <Image
                         alt='ptarmigan trail'

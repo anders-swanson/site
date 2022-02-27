@@ -7,6 +7,8 @@ import PostBox from './postbox'
 import Search from './search'
 import { useState, useEffect } from 'react'
 import { CapitalizeWords } from '../lib/common'
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-218901111-1');
 
 export const title = `Lauren's Big Adventure`
 const name = title

@@ -23,9 +23,9 @@ export default function Post() {
         <Layout headerImage={image('cover.jpg')} headerText={metadata.title} subText={subText}>
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
-                    Start at the <Link href={trailhead}>Pole Creek Trailhead</Link>{`, in the Three Sisters Wilderness. The Pole
-                    Creek Trailhead does not require a permit for day hikers, only overnight use.
-                    From the trailhead, you'll be hiking through an exposed, dry burn for the majority of the trail, until you
+                    The hike to Chambers Lake Basin starts at the <Link href={trailhead}>Pole Creek Trailhead</Link>{`, in the Three Sisters Wilderness.
+                    Lucky for you (and us), the Pole Creek Trailhead does not require a permit for day hikers, but only for overnight use.
+                    From the trailhead, you'll be hiking through an exposed, dry burn for several miles, until you
                     are within a mile of Camp Lake. There a couple creek crossings along the way, if you need water.`}
                     <br/><br/>
                     {`After the North Fork Whychus creek crossing, there's a short side trail to Demaris Lake, a reflective lake with
@@ -42,9 +42,9 @@ export default function Post() {
                     Smoke from summer wildfires (unfortunately a common occurence in recent years) created a fine haze the day
                     I was hiking, and gave the mountains an ethereal look.`}
                     <br/><br/>
-                    {`Camp Lake has (surprise) a few campsites to pick from. These are all unimproved, backcountry campsites. If you do
+                    {`Camp Lake has (surprise, surprise!) a few campsites to pick from. These are all unimproved, backcountry campsites. If you do
                     intend to camp here, remember that a permit is required for overnight use in the Three Sisters Wilderness. It's an
-                    absolutely gorgeous spot to camp, and you'll allow yourself more time to explore.`}
+                    gorgeous spot to camp, and you'll allow yourself more time to explore.`}
                 </div>
                 <Slider
                     height={450}
@@ -71,8 +71,9 @@ export default function Post() {
                     approximately 3-5 miles to your round-trip, accompanied by steep climbing on rocks/scree.`}
                     <br/><br/>
                     {`Hiking up the ridge towards South Sister brings you to Sapphire and Turquoise lakes. These lakes get their color from
-                    glacial silt suspended in the water column, which reflects light to create brilliant blue hues. Cambers Lake itself can 
-                    be reached by heading towards the saddle between South Sister and Middle Sister. There's not much of a trail here.`}
+                    glacial silt suspended in the water column, which reflects the light to create brilliant blue hues. Chambers Lake itself can 
+                    be reached by heading towards the saddle between South Sister and Middle Sister. There's not much a trail here, but
+                    the alpine area is open and easy to navigate.`}
                 </div>
                 <Slider
                     height={450}

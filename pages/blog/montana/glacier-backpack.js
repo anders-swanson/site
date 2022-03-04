@@ -5,15 +5,12 @@ import Slider from '../../../components/slider'
 
 //+metadata
 let metadata = { 
-    "title": "Glacier Backpacking",
+    "title": "Glacier via Chief Mountain",
     "desc": "",
     "date": "2021-08-28",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLWApIcPOrd5ioi3DJX5ahuj-1RqjTPm9pYZ_4K0u8pwfDrNHe_Cr31ff8tiQx9-gSeDECijH834LfP5jQ-4Q9VdffUZremTuJiAZxm9zgsOceG8IUk1f53qDWjTivqzqqbDnWm7aWAVLUJb-pSDz_6Z=s1075-no?authuser=1",
     "tags": ["backpacking", "lakes"]
 }
-
-
-
 
 const subText = '59.04 miles, 7471 feet gain, 3 nights'
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXIj1g2Ls4knxXhrHXEYM68jF-YPOZ-z5VXL645gbyG50lQSvRBhtquPAysASh1g8Hh2qyIu3boI1eToBauM7kjlUix1cqfJ5-WIcVhlgPxegxNQ_4Mjvev-CVDCwYUXRAAnyhLIxm9xfjBLj1_miCz=w1609-h1075-no?authuser=1'

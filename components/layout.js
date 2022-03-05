@@ -44,6 +44,11 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     }
   })
 
+  // track page views with google analytics
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
+
   return (
     <>
     <Head>

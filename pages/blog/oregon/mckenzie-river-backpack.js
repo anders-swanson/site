@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import Slider from '../../../components/slider'
 import Video from '../../../components/video'
 
 //+metadata
@@ -95,6 +94,7 @@ export default function Post() {
                     width={300}
                 />
                 <Image
+                    alt='clear lake'
                     src={clearLake}
                     width={1200}
                     height={750}

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import { rawData, CentralCascadesWildernessPermit } from "../../../lib/common"
+import { CentralCascadesWildernessPermit } from "../../../lib/common"
 import Link from 'next/link'
 import Video from '../../../components/video'
 
@@ -40,11 +40,13 @@ export default function Post() {
                     are home to glaciers, though the remaining glaciers have shrunk considerably in recent years.`}
                 </div>
                 <Image
+                    alt='heart rock'
                     height='450px'
                     width='300px'
                     src={heartRock}
                 />
                 <Image
+                    alt='no name lake'
                     height={500}
                     width={850}
                     src={noNameLake}
@@ -56,15 +58,17 @@ export default function Post() {
                    via Green Lakes.`}
                    <br/><br/>
                    {`Broken Top has two glaciers, both of which can be seen on this hike. Crook glacier is nestled in a rocky pocket visible from the south,
-                   and Bend glacier can be seen from the ridge about No Name Lake. The day we were on Broken Top, the ice on Bend glacier was actively moving
+                   and Bend glacier can be seen from the ridge above No Name Lake. The day we were on Broken Top, the ice on Bend glacier was actively moving
                    and cracking, sending echoes throughout the lake basin.`}
                 </div>
                 <Image
+                    alt='bend glacier'
                     height='450px'
                     width='300px'
                     src={bendGlacier}
                 />
                 <Image
+                    alt='lauren on south sister'
                     src={laurenSummit}
                     height={613}
                     width={850}
@@ -84,11 +88,13 @@ export default function Post() {
                 </div>
                 <div className={utilStyles.flexWrapContainer}>
                   <Image
+                        alt='view from summit'
                         height={700}
                         width={1200}
                         src={summitView}
                     />
                     <Image
+                        alt='teardrop pool'
                         height={700}
                         width={1200}
                         src={teardropPool}

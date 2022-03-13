@@ -28,13 +28,13 @@ export default function Post() {
             <div className={utilStyles.flexGapContainer}>
                 <div>
                     <Link href={mtDefianceTrail}>{`Mt. Defiance`}</Link>{` is a steep hike to the tallest ridge in the Columbia River Gorge, starting at
-                    Starvation Creek State Park. Mt. Defiance is a very strenuous hike, climbing around 5,000 feet in 6 miles - once the steepness starts, it doesn't stop
+                    Starvation Creek State Park. This is a very strenuous hike, climbing around 5,000 feet in 6 miles - once the steepness starts, it doesn't stop
                     until you reach the radio tower on top. The summit has a decent view of the Hood River valley, and Mt. Hood. There are a few spots below the summit
-                    where the trees open up and you can see down to the Columbia River Gorge below.`}
+                    where the trees open up, and you can see to the Columbia River Gorge below.`}
                     <br/><br/>
-                    {`Before you begin climbing in earnest, there are 4 small to medium sized waterfalls that are worth viewing. Starvation Creek falls is a 0.1 mile
-                    walk from the trailhead, and the others will be encountered on your way to the summit. One notable waterfall is Hole in the Wall falls, where the water
-                    spills out of a small tunnel in the rock.`}
+                    {`Before the climbing begins in earnest, you'll encounter 4 small to medium sized waterfalls. Starvation Creek falls is a 0.1 mile
+                    paved side-trail from the parking lot, the other falls are along the main trail. One notable waterfall is Hole in the Wall falls, where water flows from
+                    a tunnel in the basalt cliffs.`}                    
                     <div className={utilStyles.flexWrapContainer}>
                         <Video
                             src={rawData('IMG_3340.mp4')}
@@ -53,14 +53,19 @@ export default function Post() {
                         />
                     </div>
                     <br/><br/>
-                    {`We hiked Mt. Defiance in January, when most of the trail was buried in snow. If you attempt this during the winter months, definitely bring
+                    {`We hiked Mt. Defiance in January, when most of the trail was buried in snow. If you attempt this trail during the winter months, bring
                     a GPS, a map, and crampons/spikes, and be prepared to melt your quads and calves from the climbing.`}
                     <br/>
                     {`Because the snow was dense hardpack (it hadn't snowed much in the two weeks
-                    prior to our hike), we ended up not needing our snowshoes. The snow kept getting deeper as we climbed, reaching around 7-8 feet deep at the summit.`}
+                    prior to our hike), we ended up not needing snowshoes, and only used our spikes.
+                    The snow got deeper as we climbed, reaching around 7-8 feet deep at the summit.`}
                     <br/>
                     {`Due to the deep snow and the elevation gain it ended up being a grueling hike, and we were absolutely exhausted by the time we half stumbled, half limped
                     back to the car.`}
+                    <br/>
+                    {`I'd recommend this winter hike to anyone adequately prepared, who is looking for a challenge.
+                    Your best bet is to attempt it when the snow is not too fresh. If snow has recently fallen,
+                    The grade of the trail will become to difficult, and potentially dangerous. If that doesn't sound appealing, you can always wait for summer!`}
                     <br/>
                 </div>
                 <Image

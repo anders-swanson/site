@@ -26,14 +26,14 @@ export default function Post() {
         <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
-                    {`The upper McKenzie River is a scenic section of Oregon's central cascades.The McKenzie
+                    {`The upper McKenzie River is a scenic section of Oregon's central cascades. The McKenzie
                     River trail follows the river for 26.5 miles from Clear Lake to McKenzie bridge, past waterfalls, pools, and hot springs. 
-                    The upper section of the trail is the most scenic - we backpacked from just before Clear Lake to Bigelow Hot Springs and back.`}
+                    The upper section of the trail is the most scenic - we backpacked from upstream of Clear Lake to Bigelow Hot Springs and back.`}
                     <br/><br/>
-                    {`Clear Lake is a beautiful (clear) cold water lake, the outflow of which is the McKenzie River. According to a diver we met on the trail, Clear Lake
-                    hosts some of the best freshwater diving around and is home to an ancient underwater forest that's preserved by the lake's cold waters. 
-                    We arrived late in the afternoon, and chose to camp here after hiking a couple miles from the 
-                    trailhead. We must have camped under this Stellar Jay's tree, because he kept hopping around the entire time we were there, looking for food.`}
+                    {`Clear Lake is a beautiful cold water lake, the outflow of which is the McKenzie River. According to a diver we met on the trail, Clear Lake
+                    hosts some of the best freshwater diving around with a stand of ancient underwater forest preserved by the lakes cold waters.
+                    We had a late start and chose to camp at Clear Lake after hiking 2.5 miles from the 
+                    trailhead. We must have camped under the tree of this Steller's Jay, because he kept hopping around the entire time we were there, looking for food.`}
                 </div>
                 <Image
                     alt='jay'
@@ -43,7 +43,8 @@ export default function Post() {
                 />
                 <div>
                     {`South of Clear Lake, you'll arrive at a loop trail connecting Sahalie and Koosah falls. You'll hit Sahalie first, 
-                    and then Koosah - Both falls are gorgeous, with vibrant hues of blue and green from the water and vegetation.`}
+                    and then Koosah - Both falls are gorgeous, with vibrant hues of blue and green from the water and vegetation. This section of the McKenzie
+                    is particularly beautiful, and can be accessed easily for day hiking by a trailhead at Sahalie falls.`}
                     <br/><br/>
                     <div className={utilStyles.flexWrapContainer}>
                         <Video
@@ -62,10 +63,11 @@ export default function Post() {
                 </div>
                 <div>
                     {`Not far past the waterfalls, the McKenzie River disappears underground. This section of the river was buried around 1,500 years ago by an eruption
-                    from Belknap Crater - the resulting lava flow covered the river, and it travels underground until resurfacing at Tamolitch Blue Pool.`}
+                    from Belknap Crater - the resulting lava flow covered the river, and it travels beneath the rock to resurface at Tamolitch Blue Pool.`}
                     <br/><br/>
                     {`Blue Pool is a radiantly blue pond filled with icy cold water, popular with day hikers, so don't be surprised if you see large groups of people hiking or swimming.
                     The pool is encircled by rocky cliffs, though there is a short scramble to get down to the water on the far side.`}
+                    <br/>
                 </div>
                 <Image
                     alt='bp'
@@ -82,17 +84,24 @@ export default function Post() {
                 <div className={utilStyles.textBlock}>
                     {`After Blue Pool, we continued to our second campsite, Bigelow Hot Springs. Bigelow is a primitive hot springs located on a
                     tributary creek of the McKenzie River. There is a small campground near the springs, and another across the creek. 
-                    The springs are pleasantly warm, not hot - note that it's pretty busy here, so visiting early is ideal`}
+                    The springs are pleasantly warm, not hot. Do note that it can get busy here, so visiting early is ideal - we were able to soak
+                    in the morning when the pool was otherwise empty.`}
                     <br/><br/>
-                    {`The next day we decided to skip the last 6-7 miles of the McKenzie River trail and head back to Clear Lake, about 20 miles north.
-                    If you choose to continue to McKenzie Bridge, you'll have the option of visiting the Belknap Hot Springs resort. This is a developed 
-                    hot springs resort, with camping and rooms available. Belknap is about 4 miles further past Bigelow Hot Springs.`}
+                    {`The next day we decided to skip the last 6-7 miles of the McKenzie River trail and double back to Clear Lake, about 20 miles north.
+                    If you choose to continue to McKenzie Bridge, you'll have the option of visiting the Belknap Hot Springs. Belknap is a developed 
+                    hot springs resort, with camping and room options available. To reach Belknap, it's about 4 more miles of hiking past Bigelow Hot Springs.`}
                 </div>
                 <Video
                     src={bigelowSprings}
                     height={450}
                     width={300}
                 />
+                <div>
+                    {`The McKenzie River trail is usually clear of snow before Memorial Day, depending on the year's snowpack, which makes it great for an earlier season
+                    backpacking trip. I'd recommend this trail to anyone planning a trip in May or June, but be advised that this area can get unbearably hot in the later
+                    summer months. A popular method of hiking the trail is to shuttle from Clear
+                    Lake to McKenzie bridge.`}
+                </div>
                 <Image
                     alt='clear lake'
                     src={clearLake}

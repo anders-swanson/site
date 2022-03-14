@@ -35,6 +35,7 @@ export default function Video({ src, height, width, controls}) {
                         autoPlay
                         loop
                         muted
+                        playsInline
                         controls={controls}
                     >
                         <source src={src} type="video/mp4"/>

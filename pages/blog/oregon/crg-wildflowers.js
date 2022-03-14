@@ -12,7 +12,7 @@ let metadata = {
     "title": "Columbia River Gorge Wildflowers",
     "desc": "",
     "date": "2022-03-13",
-    "image": "/images/oregon/chambers-lakes/thumbnail.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AM-JKLXe8AqPQnAu5WMEfzYEdiiX67YL7i2ujDnG7UyNvDAxqlh4G7N2ETUZJgksfFwnxRf99IlOrZdFI0IXs0KriM4Anhft9QOECIaLRffu9gLq9moDNldiaPEpeVuzBOsbzqq7f9gzsKda8B1lNE_C86eV=s1067-no?authuser=0",
     "tags": ["hiking", "wildflowers"]
 }
 

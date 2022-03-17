@@ -2,13 +2,14 @@ import styles from './slider.module.css'
 import { useState } from 'react'
 import Image from 'next/image'
 import Video from './video'
+import ReactTouchEvents from "react-touch-events";
 
 export default function Slider({ slides, width, height }) {
     const imgWidth = width ? width : "500px"
     const imgHeight = height ? height : "500px"
 
     // the currently acive slide in the slider
-    const [currentSlide, setCurrentSlide] = useState(slides[0])
+    const [currentSlide, setCurrentSlide] = useState(0)
     // buttonClass is the class of the dotted buttons below the slider
     const [buttonClass, setButtonClass] = useState(slides.map((_, idx) => {
         if (idx == 0) {
@@ -18,7 +19,7 @@ export default function Slider({ slides, width, height }) {
     }))
     
     const goToSlide = (idx) => {
-        setCurrentSlide(slides[idx])
+        setCurrentSlide(idx)
         setButtonClass(slides.map((_, i) => {
             if (i == idx) {
                 return `${styles.dot} ${styles.active}`
@@ -27,26 +28,51 @@ export default function Slider({ slides, width, height }) {
         }))
     }
 
+    const handleSwipe = (_, direction) => {
+        const maxIdx = slides.length - 1
+        switch (direction) {
+            case "left":
+                if (currentSlide != maxIdx) {
+                    goToSlide(currentSlide + 1)
+                }
+                break
+            case "right":
+                if (currentSlide != 0) {
+                    goToSlide(currentSlide - 1)
+                }
+                break 
+        }
+    }
+
     return (
         <div
             className={styles.container}
         >
-            <div key={currentSlide}>
-                {isVideo(currentSlide) && (
-                    <Video            
-                        src={currentSlide}
-                        width={imgWidth}
-                        height={imgHeight}
-                    />
-                ) || (
-                    <Image
-                        alt={currentSlide}
-                        src={currentSlide}
-                        width={imgWidth}
-                        height={imgHeight}
-                    />
-                )}
-            </div>            
+            <ReactTouchEvents
+                onSwipe={handleSwipe}
+            >
+                <div 
+                    key={slides[currentSlide]}
+                >
+                    {isVideo(slides[currentSlide]) && (
+                        <Video            
+                            src={slides[currentSlide]}
+                            width={imgWidth}
+                            height={imgHeight}
+                        />
+                    ) || (
+                        <Image
+                            alt={slides[currentSlide]}
+                            src={slides[currentSlide]}
+                            width={imgWidth}
+                            height={imgHeight}
+                            draggable="false"
+                            onmousedown="return false"
+                            style={{"userDrag": "none"}}
+                        />
+                    )}
+                </div> 
+            </ReactTouchEvents>
             <br/>
             <div>
             {                

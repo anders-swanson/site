@@ -2,11 +2,11 @@ import Image from 'next/image'
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import Slider from '../../../components/slider'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = { 
     "title": "Glacier via Chief Mountain",
-    "desc": "",
     "date": "2021-08-28",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLWApIcPOrd5ioi3DJX5ahuj-1RqjTPm9pYZ_4K0u8pwfDrNHe_Cr31ff8tiQx9-gSeDECijH834LfP5jQ-4Q9VdffUZremTuJiAZxm9zgsOceG8IUk1f53qDWjTivqzqqbDnWm7aWAVLUJb-pSDz_6Z=s1075-no?authuser=1",
     "tags": ["backpacking", "lakes"]
@@ -123,6 +123,10 @@ export default function Post() {
 
                 />                
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="backpacking"
+            />
         </Layout>
     )
 }

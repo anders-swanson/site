@@ -4,14 +4,14 @@ import Layout from "../../../components/layout"
 import Slider from "../../../components/slider"
 import { ImagePathBuilder } from "../../../lib/common"
 import Link from 'next/link'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
     "title": "Chambers Lake Basin",
-    "desc": "",
     "date": "2021-08-14",
     "image": "/images/oregon/chambers-lakes/thumbnail.jpg",
-    "tags": ["hiking", "lakes"]
+    "tags": ["hiking", "lakes", "sisters"]
 }
 
 const subText = '19 miles, 3,000 feet gain'
@@ -95,6 +95,10 @@ export default function Post() {
                     height={800}
                     width={1200}
                     src={image('camp-lake-2.jpg')}
+            />
+            <RelatedPosts
+                metadata={metadata}
+                tag="sisters"
             />
         </Layout>
     )

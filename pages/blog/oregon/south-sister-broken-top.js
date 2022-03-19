@@ -4,14 +4,14 @@ import Layout from "../../../components/layout"
 import { CentralCascadesWildernessPermit } from "../../../lib/common"
 import Link from 'next/link'
 import Video from '../../../components/video'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
     "title": "South Sister and Broken Top",
-    "desc": "",
     "date": "2022-02-16",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVsPHZLCQ6GFBOEdf31vfWweo6ukyR7nZDQ_78JqFA6Z6AQug5x3npOH8xKinKvnOUNmAuoB8TDOhz_njb_iL4arlL9uKE6443Hwuxd9usjJ-MDpHnEVueOVGy6GTT7oc7wfBwcI5B2066fEvl4auYS=w1167-h1067-no?authuser=0",
-    "tags": ["hiking", "lakes"]
+    "tags": ["hiking", "lakes", "sisters"]
 }
 
 const toddCreekTrailhead = 'https://www.google.com/maps/place/Todd+Creek+Trailhead/@44.0225321,-121.6929359,15.67z/data=!4m9!1m2!2m1!1stodd+lake+trailhead!3m5!1s0x54b8ae80b44e1a51:0xf82d14931d1d584f!8m2!3d44.0234736!4d-121.6821181!15sChN0b2RkIGxha2UgdHJhaWxoZWFkWhUiE3RvZGQgbGFrZSB0cmFpbGhlYWSSAQtoaWtpbmdfYXJlYZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VRMmRFNWhTMFozRUFF'
@@ -100,8 +100,11 @@ export default function Post() {
                         src={teardropPool}
                     />
                 </div>
-
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="sisters"
+            />
         </Layout>
     )
 }

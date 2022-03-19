@@ -3,14 +3,14 @@ import Layout from "../../../components/layout"
 import { ImagePathBuilder } from "../../../lib/common"
 import Link from 'next/link'
 import Image from 'next/image'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
     "title": "Willow Creek Hot Springs",
-    "desc": "",
     "date": "2021-07-05",
     "image": "/images/oregon/willow-creek/thumbnail.jpg",
-    "tags": ["camping", "hot springs"]
+    "tags": ["camping", "hot springs", "steens"]
 }
 
 const image = ImagePathBuilder('/images/oregon/willow-creek')
@@ -59,7 +59,10 @@ export default function Post() {
                     src={image('cover.jpg')}
                 />     
             </div>
-            
+            <RelatedPosts
+                metadata={metadata}
+                tag="steens"
+            />
         </Layout>
     )
 }

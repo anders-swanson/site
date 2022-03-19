@@ -5,15 +5,14 @@ import { rawData } from "../../../lib/common"
 import Link from 'next/link'
 import Video from '../../../components/video'
 import Slider from '../../../components/slider'
-
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
     "title": "Columbia River Gorge Wildflowers",
-    "desc": "",
     "date": "2022-03-13",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXe8AqPQnAu5WMEfzYEdiiX67YL7i2ujDnG7UyNvDAxqlh4G7N2ETUZJgksfFwnxRf99IlOrZdFI0IXs0KriM4Anhft9QOECIaLRffu9gLq9moDNldiaPEpeVuzBOsbzqq7f9gzsKda8B1lNE_C86eV=s1067-no?authuser=0",
-    "tags": ["hiking", "wildflowers"]
+    "tags": ["hiking", "wildflowers", "crg"]
 }
 
 const rowenaCrest = 'https://www.google.com/maps/place/Rowena+Crest+Viewpoint/@45.6768915,-121.3049786,15.54z/data=!4m5!3m4!1s0x54961a222daa6039:0x6ff5db7101043183!8m2!3d45.6827367!4d-121.2992539'
@@ -110,7 +109,12 @@ export default function Post() {
                         />
                     </div>
                 </div>
+
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="crg"
+            />
         </Layout>
     )
 }

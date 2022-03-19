@@ -3,14 +3,14 @@ import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import { ImagePathBuilder } from "../../../lib/common"
 import Link from 'next/link'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
     "title": "Little Blitzen Gorge",
-    "desc": "",
     "date": "2021-07-04",
     "image": "/images/oregon/little-blitzen/thumbnail.jpg",
-    "tags": ["hiking", "waterfall"]
+    "tags": ["hiking", "waterfall", "steens"]
 }
 
 const subText = '20.04 miles, 2,867 feet gain'
@@ -74,6 +74,10 @@ export default function Post() {
                     src={image('gorge5.jpg')}
                 />
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="steens"
+            />
         </Layout>
     )
 }

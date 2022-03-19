@@ -2,11 +2,11 @@ import Image from 'next/image'
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import Video from '../../../components/video'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = { 
     "title": "McKenzie River",
-    "desc": "",
     "date": "2022-03-02",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVXZxDHctgqXuPbATiM-jc6EREPPKZX1EWEKvAZVll3-UrsXRkryL4M_jqVy1SWhb5PFoRg5VC9uM_s8w-lvgVA6uadfICSeY7vUM5oK-Md7TOAa-k0EmZozrocZoO7XYLnoZg4sEfumj_b_6O7ahcU=w1065-h1067-no?authuser=0",
     "tags": ["backpacking", "hot springs"]
@@ -110,6 +110,10 @@ export default function Post() {
                 />
 
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="hot springs"
+            />
         </Layout>
     )
 }

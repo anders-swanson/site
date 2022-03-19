@@ -4,14 +4,14 @@ import Layout from "../../../components/layout"
 import { rawData } from "../../../lib/common"
 import Link from 'next/link'
 import Video from '../../../components/video'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
     "title": "Mt. Defiance Winter Route",
-    "desc": "",
     "date": "2022-03-05",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLUurR1iF-8zqOBfoQzGw8PMHNKTYAciJS09gTC2r--cchoXJ9To-ZXyjho6cEq8_Zpyu5_lDh6KskGe56fqeCDLADv9hF7FgneJnKD7Yvamkib6eT4Z2rU_kzk1LoKTzIzMLBIh7uKeXtdywLxcKPYt=s1067-no?authuser=0",
-    "tags": ["hiking", "waterfall"]
+    "tags": ["hiking", "waterfall", "crg"]
 }
 
 const subText = '12 miles, 5,000 feet  gain'
@@ -86,8 +86,11 @@ export default function Post() {
                     width='300px'
                     src={img3}
                 />
-
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="crg"
+            />
         </Layout>
     )
 }

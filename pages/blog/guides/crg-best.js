@@ -1,15 +1,15 @@
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import Slider from "../../../components/slider"
+import RelatedPosts from '../../../components/related_posts'
 import Link from 'next/link'
 
 //+metadata
 let metadata = {
     "title": "Classic Hikes in the Columbia River Gorge",
-    "desc": "",
     "date": "2022-01-24",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXQvu4P9AMp_zEBWEPl5pko0vJHNNGVO5xhR3lrWLMmdZ3yPl-tMgDATjWqNttYm8RHlxVU2cLxq9PQtrj2XM9O8LYvVzK7hAg00kDOeLKdebZXNIX7IovMT3LVKgRJ1x1EbnQA3WcufZn0qJHItZTV=s1067-no?authuser=0",
-    "tags": ["hiking", "guide"]
+    "tags": ["hiking", "guide", "crg"]
 }
 
 const hamilton1 = 'https://lh3.googleusercontent.com/pw/AM-JKLUVOemRvAGA8Nlxdhr_yhTK4HuQOENbAvI4E7e6OmOJCmpChtgfg5kFCYqD7YEFGy0sotPzv27hewXWwiukmvYVv83znU4cfdooGRIJFnZ-jauMN-AwpOnvVi19HnOJWqPuCaOFOaI1qdDFeXteohFU=w1912-h1075-no?authuser=0'
@@ -122,6 +122,10 @@ export default function Post() {
                         height={700}
                     />
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="crg"
+            />
         </Layout>
     )
 }

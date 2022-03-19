@@ -3,14 +3,14 @@ import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import Slider from "../../../components/slider"
 import Link from 'next/link'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
     "title": "Goblin Valley",
-    "desc": "",
     "date": "2020-11-06",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXWrT94NWtCKzcXwflU9Xa-DQI9zNvmaRyFTI2QprcDklAXjG8MTkrjrpeMsW1NTWc5joii5dg2oJJRJhHf8Sqk5oFp_Ge9pX35yeiMlqwNyfYOgUmHT1ZhPHuTfDcgVWrn6YDt-ZsFhUUnlebuOQ7U=s1067-no?authuser=0",
-    "tags": ["hiking"]
+    "tags": ["hiking", "national park"]
 }
 
 const subText = '7.91 miles, 1,191 feet gain'
@@ -93,6 +93,10 @@ export default function Post() {
                         src={gob4}
                    />
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="national park"
+            />
         </Layout>
     )
 }

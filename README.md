@@ -29,8 +29,6 @@ metadata to the metadata store during site compilation.
 let metadata = {
     // Title which will appear in links and in HTML title
     "title": "my new page",
-    // Page description
-    "desc": "This is a description of my page!",
     // Page publish date, in 'YYYY-MM-DD' format
     "date": "2020-01-02",
     // Path to cover image

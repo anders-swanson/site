@@ -3,11 +3,11 @@ import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import { ImagePathBuilder } from "../../../lib/common"
 import Link from 'next/link'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = { 
     "title": "Three Fingered Jack Loop",
-    "desc": "",
     "date": "2021-07-24",
     "image": "/images/oregon/tfj-loop/thumbnail.jpg",
     "tags": ["backpacking", "lakes"]
@@ -94,6 +94,10 @@ export default function Post() {
                         src={image('lauren-meadow-2.jpg')}
                 />
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="lakes"
+            />
         </Layout>
     )
 }

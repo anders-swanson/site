@@ -43,7 +43,7 @@ export default function PostBox({ posts, search, heading }) {
               {item.tags.map((t) => (
                 <Link
                   href={'/filter/' + t}
-                  key={item.id}
+                  key={`${item.id}-${t}`}
                 >
                   {CapitalizeWords(t)}
                 </Link>
@@ -70,8 +70,7 @@ export default function PostBox({ posts, search, heading }) {
               {pageNum+1}
             </button>
           ))}
-        </div>      
+          </div>  
       </section>
     )
 }
-

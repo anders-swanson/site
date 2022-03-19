@@ -4,11 +4,11 @@ import Layout from "../../../components/layout"
 import Video from "../../../components/video"
 import { ImagePathBuilder, rawData } from "../../../lib/common"
 import Link from 'next/link'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
     "title": "Goldbug Hot Springs",
-    "desc": "",
     "date": "2021-09-05",
     "image": "/images/idaho/goldbug-hotsprings/cover.jpg",
     "tags": ["backpacking", "hot springs", "waterfall"]
@@ -69,6 +69,10 @@ export default function Post() {
                     src={image('mountain.jpg')}
                 />
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="hot springs"
+            />
         </Layout>
     )
 }

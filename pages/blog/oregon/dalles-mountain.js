@@ -3,14 +3,14 @@ import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import Slider from "../../../components/slider"
 import Link from 'next/link'
+import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
     "title": "Dalles Mountain Loop + Stacker Butte",
-    "desc": "",
     "date": "2021-04-25",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLU7ss51ZNznlDCgNWaYP9MkawWJ0w-YqWksHfUQ0O87MIWpQnAbyIRSynnZK_0jlsNy62t4OZtfdvQs0T7aHESz60MRdb7_Y38etQpKjayDv3gVVzte8totA1DHOTkilRE_RrxGeIGYsiVCN2bXvlrn=s1067-no?authuser=0",
-    "tags": ["hiking", "wildflowers"]
+    "tags": ["hiking", "wildflowers", "crg"]
 }
 
 const subText = '13 miles, 1,600 feet gain'
@@ -80,7 +80,10 @@ export default function Post() {
                 width={1200}
                 slides={sliderImages}
             /> 
-
+            <RelatedPosts
+                metadata={metadata}
+                tag="crg"
+            />
         </Layout>
     )
 }

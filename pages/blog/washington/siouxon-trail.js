@@ -4,11 +4,11 @@ import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import Slider from "../../../components/slider"
 import { rawData } from "../../../lib/common"
+import RelatedPosts from "../../../components/related_posts"
 
 //+metadata
 let metadata = {
     "title": "Siouxon Creek Trail",
-    "desc": "",
     "date": "2021-11-28",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXGmSLxR_PLkzmOxphgROXQYNAxjXtjD9Hl-n0Ph3gMeNHcBlq7NkW_mioJoitYBnUHWYS3Sb2Y6PAWLJ4pGBa9-xAcgo5zwIjVPIbyydmGj8JGgUEaRUHqvnBnDkhvhkkB0d3rVA5LmwDQ1dlnBtR_=w801-h1067-no?authuser=0",
     "tags": ["hiking", "waterfall"]
@@ -80,6 +80,10 @@ export default function Post() {
                     src={lobster}
                 />
             </div>
+            <RelatedPosts
+                metadata={metadata}
+                tag="waterfall"
+            />
         </Layout>
     )
 }

@@ -22,7 +22,7 @@ export default function RelatedPosts({metadata, tag}) {
             <PostBox
                 posts={related}
                 search=""
-                heading={"Related"}
+                heading={"Related Posts"}
             />
         </>
     )

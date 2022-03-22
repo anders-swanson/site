@@ -29,7 +29,7 @@ export default function Post() {
             <div className={utilStyles.flexGapContainer}>
                 <div>
                     {`All the way out in Southeastern Utah you'll find the `}<Link href={needles}>Needles</Link>{`, a district of `}
-                    <Link href={needles}>Canyonlands National Park</Link>{`. This is a gorgeous area to explore, and I specifically recommend
+                    <Link href={clnp}>Canyonlands National Park</Link>{`. This is a gorgeous area to explore, and I specifically recommend
                     the Druid Arch hike.`}
                     <br/>
                     {`This hike is about 10-15 miles depending on your starting point (Elephant hill is the closest, Needles Campground

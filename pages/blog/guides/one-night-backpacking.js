@@ -33,11 +33,12 @@ export default function Post() {
                 <div>
                     {`You've got all your gear, and you're ready to hit the trail - only problem is, you're not sure where to go! 
                     If you live near the Portland metro area, check out our recommendations below for beginner friendly backpacking trips.
-                    These trip ideas are all within a few hours drive of Portland, and are all great adventures to get your feet wet.`}
+                    These trip ideas are all within a few hours drive of Portland, and are great adventures to get started with backpacking.`}
                     <br/><br/>
                     {`If you're inspired to try any of these trips, make sure you are physically fit enough to hike at least 5-6 miles per day,
                     wearing all of your backpacking gear. I've accidentally signed myself up for trips I wasn't physically prepared for,
-                    and it can turn a fun weekend of adventure into a grueling slog. Please be prepared and hike responsibly.`}
+                    and it can turn a fun weekend of adventure into a grueling slog. Please be prepared and hike responsibly - you are 
+                    responsible for your own safety in the backcountry.`}
                 </div>
 
                 <h1 className={utilStyles.justifyCenter}>Green Lakes</h1>

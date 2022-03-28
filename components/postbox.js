@@ -11,7 +11,8 @@ const imgSizing = 200
 const itemsPerPage = 8
 const selectedStyles = {'fontWeight': 'bold', 'textDecoration': 'underline', 'color': 'black'}
 
-export default function PostBox({ posts, search, heading }) {    
+export default function PostBox({ posts, search, heading, postBoxClass }) {
+    const pbClass = postBoxClass ? postBoxClass : styles.postBox
     const headingUpper = CapitalizeWords(heading)
     const filteredPosts = search.length === 0 ? posts : Matches(search, posts)
     const pages = [...Array(Math.ceil(filteredPosts.length / itemsPerPage)).keys()]
@@ -24,7 +25,7 @@ export default function PostBox({ posts, search, heading }) {
             <h2 className={utilStyles.headingLg}>{headingUpper}</h2>            
         </div>
         <hr/>
-        <div className={styles.postBox}>
+        <div className={pbClass}>
           {items.map(({ ...item }) => (
             <div key={item.id} className={styles.post}>
               <Link href={`/blog${item.id}`}>

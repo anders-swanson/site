@@ -1,5 +1,6 @@
 import PostBox from "./postbox";
 import { Posts } from "../lib/metadata";
+import styles from './related_posts.module.css'
 
 const posts = Posts()
 const defaultText = "Related Posts"
@@ -27,6 +28,7 @@ export default function RelatedPosts({metadata, tag, text}) {
                 posts={related}
                 search=""
                 heading={text}
+                postBoxClass={styles.scroll}
             />
         </>
     )

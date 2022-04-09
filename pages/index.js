@@ -2,31 +2,41 @@ import Layout from '../components/layout'
 import Link from 'next/link'
 import { Posts } from '../lib/metadata'
 import utilStyles from '../styles/utils.module.css'
+import Post from '../components/post'
 
-export default function Home({ allPostsData }) {
+export default function Home({ posts, featuredPost }) {
   return (
     <Layout
       home
       headerImage="/images/cover.jpeg"
-      allPostsData={allPostsData}
+      allPostsData={posts}
       postsHeading="Recent Posts"
     >
       <div className={utilStyles.centered}>
-        {`Welcome to Lauren's Big Adventure! You'll find pages about hiking, camping, and the outdoors here.`}
+      <div className={utilStyles.flexGapContainer} style={{'maxWidth': '600px'}}>
+        <div>
+          {`Welcome to Lauren's Big Adventure! You'll find pages about hiking, camping, and the outdoors here. While you're here, check out our
+          featured post, `}<Link href={`/blog${featuredPost.id}`}>{featuredPost.title}</Link>{`.`}
+        </div>
+        <br/>
+        <div>
+          <Post item={featuredPost} imgSizing={800}/>
+        </div>
       </div>
-      <div className={utilStyles.centered}>
-        <Link href='/about'>{` Read More...`}</Link>
+
       </div>
-      
+
     </Layout>
   )
 }
 
 export async function getStaticProps() {
-  const allPostsData = Posts()
+  const posts = Posts()
+  const featuredPost = posts.shift()
   return {
     props: {
-      allPostsData
+      posts,
+      featuredPost
     }
   }
 }

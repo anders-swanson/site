@@ -83,3 +83,12 @@
   align-content: center;
   display: flex;
 }
+
+.centeredRow {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 15px 15px;
+}

@@ -62,9 +62,9 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"/> 
     </Head>
+    <Burger/>
     {isVisible && (
       <div>
-        <Burger/>
         <Search
           search={search}
           setSearch={setSearch}

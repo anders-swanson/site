@@ -10,10 +10,12 @@ const menuStyles = {
     height: '30px',
     left: '36px',
     top: '36px',
-    transition: 'top 0.3s'
+    transition: 'top 0.3s',
   },
   bmBurgerBars: {
-    background: '#FFF'
+    border: '0.25px solid grey',
+    background: '#FFF',
+    height: '8px'
   },
   bmBurgerBarsHover: {
     background: '#a90000'

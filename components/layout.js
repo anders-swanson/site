@@ -56,8 +56,8 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       <link rel="icon" href="logo.jpg" />
       <meta name="og:title" content={headerText ? headerText : title}/>
       <meta name="og:image" content={ogImage ? ogImage : defaultHeaderImage}/>
+      <meta name="og:description" content={description ? description : title}/>
       <meta name="twitter:card" content={description ? description : title}/>
-      <meta name="description" content={description ? description : title}/>
       <meta name="keywords" content="hiking, backpacking, oregon"/>
 
 

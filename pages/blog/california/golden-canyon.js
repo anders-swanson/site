@@ -23,7 +23,12 @@ const image5 = 'https://lh3.googleusercontent.com/pw/AM-JKLXeB-3oi-Fi6v5n90ciq-a
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Loop trail in Death Valley National Park.`}
+        >
 
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>

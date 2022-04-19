@@ -16,7 +16,7 @@ const defaultHeaderImage = "/images/cover.jpeg"
 const maxScroll = 5
 const defaultHeaderColor = 'white'
 
-export default function Layout({ children, home, allPostsData, postsHeading, headerImage, headerText, subText, headerColor}) {
+export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor}) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
   let stxt = subText ? subText : ""
@@ -54,10 +54,13 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     <Head>
       <title>{headerText ? headerText : title}</title>
       <link rel="icon" href="logo.jpg" />
-      <meta name="og:title" content={title}/>
-      <meta name="twitter:card" content={title}/>
-      <meta name="description" content={title}/>
+      <meta name="og:title" content={headerText ? headerText : title}/>
+      <meta name="og:image" content={ogImage ? ogImage : defaultHeaderImage}/>
+      <meta name="twitter:card" content={description ? description : title}/>
+      <meta name="description" content={description ? description : title}/>
       <meta name="keywords" content="hiking, backpacking, oregon"/>
+
+
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"/> 

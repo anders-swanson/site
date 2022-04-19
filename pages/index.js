@@ -11,6 +11,7 @@ export default function Home({ posts, featuredPost }) {
       headerImage="/images/cover.jpeg"
       allPostsData={posts}
       postsHeading="Recent Posts"
+      description={`Welcome to Lauren's Big Adventure! You'll find pages about hiking, camping, and the outdoors here.`}
     >
       <div className={utilStyles.centered}>
       <div className={utilStyles.flexGapContainer} style={{'maxWidth': '600px'}}>

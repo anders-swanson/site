@@ -17,7 +17,12 @@ const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXuI7u_VPi6zxULb2Yl8XbJ
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={`3 miles out and back`}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={`3 miles out and back`}
+            description={`Alpine Lake hike in remote SE Oregon.`}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div>
                     {`Drive far enough into southeastern oregon, and the sprawling sagebrush desert eventually transforms into the pristine Steens Mountain Wilderness. Towering

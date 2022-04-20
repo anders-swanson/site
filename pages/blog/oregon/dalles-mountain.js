@@ -30,7 +30,13 @@ const sliderImages = [
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Loop and butte hiking for wildflowers in the eastern gorge.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     We began the Dalles Mountain loop at the <Link href={trailhead}>Crawford Oaks Trailhead</Link>, looped back to the

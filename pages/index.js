@@ -11,12 +11,13 @@ export default function Home({ posts, featuredPost }) {
       headerImage="/images/cover.jpeg"
       allPostsData={posts}
       postsHeading="Recent Posts"
-      description={`Welcome to Lauren's Big Adventure! You'll find pages about hiking, camping, and the outdoors here.`}
+      description={`Welcome to Trails and Trekking! You'll find pages about hiking, camping, and the outdoors here.`}
+      ogImage="/images/cover.jpeg"
     >
       <div className={utilStyles.centered}>
       <div className={utilStyles.flexGapContainer} style={{'maxWidth': '600px'}}>
         <div>
-          {`Welcome to Lauren's Big Adventure! You'll find pages about hiking, camping, and the outdoors here. While you're here, check out our
+          {`Welcome to Trails and Trekking! You'll find pages about hiking, camping, and the outdoors here. While you're here, check out our
           featured post, `}<Link href={`/blog${featuredPost.id}`}>{featuredPost.title}</Link>{`.`}
         </div>
         <br/>

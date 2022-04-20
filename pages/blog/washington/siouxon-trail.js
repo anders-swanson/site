@@ -27,7 +27,13 @@ const falls2 = 'https://lh3.googleusercontent.com/pw/AM-JKLXAVZGbjPCyU30ifygza2q
 
 export default function Post() {
     return (        
-        <Layout headerImage={metadata.image} headerText={metadata.title} subText={subText}>            
+        <Layout
+            headerImage={metadata.image}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Long creek hike for beautiful waterfalls, flowing hard with seasonal rain.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexWrapContainer}>                
                 <div className={utilStyles.textBlock}>
                     The <Link href={trailhead}>Siouxon creek trailhead</Link>{` is located in southwestern Washington, a few miles south of highway

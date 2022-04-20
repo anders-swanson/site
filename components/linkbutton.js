@@ -1,7 +1,6 @@
 import styles from './linkbutton.module.css'
 
 export default function LinkButton({ title, body, src }) {
-    
     return (
         <div className={styles.lbContainer}>
             <div className={styles.lbItem}>
@@ -16,5 +15,4 @@ export default function LinkButton({ title, body, src }) {
         </div>
 
     )
-
 }

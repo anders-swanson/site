@@ -24,7 +24,13 @@ const img3 = 'https://lh3.googleusercontent.com/pw/AM-JKLUYkB6TkGbyvpLgZQpIgt2Eo
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Steep, snowy climb to the Columbia River Gorge's highest point.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div>
                     <Link href={mtDefianceTrail}>{`Mt. Defiance`}</Link>{` is a steep hike to the tallest ridge in the Columbia River Gorge, starting at

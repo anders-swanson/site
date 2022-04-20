@@ -7,9 +7,6 @@ const defaultText = "Related Posts"
 
 export default function RelatedPosts({metadata, tag, text}) {
     const self = metadata.title
-    if (!text) {
-        text = defaultText
-    }
     const related = posts.filter((post) => {
             if (self === post.title) {
                 return false
@@ -27,7 +24,7 @@ export default function RelatedPosts({metadata, tag, text}) {
             <PostBox
                 posts={related}
                 search=""
-                heading={text}
+                heading={text ? text : defaultText}
                 postBoxClass={styles.scroll}
             />
         </>

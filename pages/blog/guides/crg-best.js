@@ -31,7 +31,12 @@ const eagleCreekTH = 'https://www.google.com/maps/place/Eagle+Creek+Trailhead/@4
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            description={`Classic and beautiful hikes in Oregon's Columbia River Gorge.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div>
                     {`The hikes listed here (in no particular order) are some of my favorite in the Columbia River Gorge. With the aid of a map and proper planning,

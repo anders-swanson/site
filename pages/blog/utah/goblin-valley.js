@@ -26,7 +26,13 @@ const lair = 'https://lh3.googleusercontent.com/pw/AM-JKLWOqSsYYcgBcPglpEfla2vis
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Unique rock formations in a valley that feels like another planet.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     <Link href={trailhead}>Goblin Valley</Link>{` is a state park in Utah ($20 entry fee for day use), containing

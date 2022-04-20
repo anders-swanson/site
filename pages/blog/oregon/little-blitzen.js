@@ -19,7 +19,12 @@ const trailhead = 'https://www.google.com/maps/@42.657206,-118.7285438,18.46z'
 
 export default function Post() {
     return (
-        <Layout headerImage={image('cover.jpg')} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={image('cover.jpg')}
+            headerText={metadata.title} subText={subText}
+            description={`Intense but beautiful hike in the remote Steens Mountain Wilderness.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     A small parking lot for the <Link href={trailhead}>trailhead</Link> is just before South Steens campground.

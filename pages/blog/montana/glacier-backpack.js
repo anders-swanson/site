@@ -29,7 +29,13 @@ const slides = [
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Three night, sixty mile backpacking trip in Glacer National Park.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     {`We backpacked for three nights in Glacer National Park, beginning at the Chief Mountain trailhead at the very 

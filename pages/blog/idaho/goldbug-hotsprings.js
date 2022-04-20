@@ -23,7 +23,12 @@ const mov2 = rawData('gb2.mp4')
 
 export default function Post() {
     return (
-        <Layout headerImage={metadata.image} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={metadata.image}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Cascading hot spring waterfall camping near Idaho's Salmon River.`}
+        >
             <div className={utilStyles.flexWrapContainer}>
                 <div style={{'width': '1400px'}}>
                     <Link href={goldbug}>Goldbug hot springs</Link> is located in a steep canyon, with springs emerging from several sources towards the top.

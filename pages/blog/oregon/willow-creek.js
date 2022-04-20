@@ -18,7 +18,13 @@ const campground = 'https://www.google.com/maps/place/Willow+Creek+Campground/@4
 
 export default function Post() {
     return (
-        <Layout headerImage={image('cover.jpg')} headerText={metadata.title} subText={`1 night camping`}>
+        <Layout
+            headerImage={image('cover.jpg')}
+            headerText={metadata.title}
+            subText={`1 night camping`}
+            description={`Secluded hot spring deep in Southeastern Oregon.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                 Willow Creek hot springs is a remote springs on BLM land, located at a basic, walk-up, 

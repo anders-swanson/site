@@ -29,7 +29,13 @@ const towerBridge = 'https://lh3.googleusercontent.com/pw/AM-JKLUTNUdEH2F_Ulaz2g
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={subText} headerColor={`black`}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={subText} headerColor={`black`}
+            description={`Popular Bryce Canyon hike, beautifully blanketed in snow. Crowds were thinned out due to the freezing temperatures.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     The Fairyland loop starts at <Link href={trailhead}>Fairyland Point</Link>{` in Bryce Canyon 

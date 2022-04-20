@@ -25,6 +25,8 @@ export default function Post() {
             headerImage={cover}
             headerText={metadata.title}
             subText={subText}
+            description={`Towering, stonehenge-esque arch in the heart of the Canyonland's jaw-dropping Needles district.`}
+            ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>
                 <div>

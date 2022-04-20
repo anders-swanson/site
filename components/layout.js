@@ -10,7 +10,7 @@ import { CapitalizeWords } from '../lib/common'
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-218901111-1');
 
-export const title = `Lauren's Big Adventure`
+export const title = `Trails and Trekking`
 const name = title
 const defaultHeaderImage = "/images/cover.jpeg"
 const maxScroll = 5
@@ -49,6 +49,8 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, [])
 
+  const descriptionText = description ? description : title
+
   return (
     <>
     <Head>
@@ -56,14 +58,12 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       <link rel="icon" href="logo.jpg" />
       <meta name="og:title" content={headerText ? headerText : title}/>
       <meta name="og:image" content={ogImage ? ogImage : defaultHeaderImage}/>
-      <meta name="og:description" content={description ? description : title}/>
-      <meta name="twitter:card" content={description ? description : title}/>
+      <meta name="og:description" content={descriptionText}/>
+      <meta name="og:site_name" content={title}/>
+      <meta name="description" content={descriptionText}/>
+      <meta name="twitter:card" content={descriptionText}/>
+      <meta name="twitter:description" content={descriptionText}/>
       <meta name="keywords" content="hiking, backpacking, oregon"/>
-
-
-      <link rel="preconnect" href="https://fonts.googleapis.com"/>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"/> 
     </Head>
     <Burger/>
     {isVisible && (

@@ -22,7 +22,11 @@ const columbiaHills = 'https://www.google.com/maps/place/Dalles+Mountain+Ranch+T
 
 export default function Post() {
     return (
-        <Layout headerText={metadata.title}>
+        <Layout
+            headerText={metadata.title}
+            description={`Where to find beautiful wildflowers in the Columbia River Gorge.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div>
                     {`Once you are past Hood River in the Columbia River Gorge, the trees begin to thin out and give way to grasslands. 

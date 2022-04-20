@@ -27,7 +27,8 @@ export default function Post() {
             headerImage={cover}
             headerText={metadata.title}
             subText={subText}
-            description={`Loop trail in Death Valley National Park.`}
+            description={`Canyon loop trail in Death Valley National Park.`}
+            ogImage={metadata.image}
         >
 
             <div className={utilStyles.flexGapContainer}>

@@ -22,6 +22,8 @@ export default function Post() {
         <Layout 
             headerImage={cover}
             headerText={metadata.title}
+            description={`How to find and secure free campsites in the western U.S.`}
+            ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>
                 <div>

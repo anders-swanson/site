@@ -3,7 +3,6 @@ import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
 import { CentralCascadesWildernessPermit } from "../../../lib/common"
 import Link from 'next/link'
-import Video from '../../../components/video'
 import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
@@ -27,7 +26,12 @@ const summitView = 'https://lh3.googleusercontent.com/pw/AM-JKLUD1AWWVFcr7OYY8Lo
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            description={`How to summit two popular peaks in the Three Sisters Wilderness.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     {`South Sister and Broken Top are mountain peaks in Oregon's Three Sister's Wilderness, which are both accessible by day hikers.

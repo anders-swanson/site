@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import { ImagePathBuilder, CentralCascadesWildernessPermit } from "../../../lib/common"
+import { CentralCascadesWildernessPermit } from "../../../lib/common"
 import Link from 'next/link'
 import RelatedPosts from '../../../components/related_posts'
 
@@ -14,7 +14,6 @@ let metadata = {
 }
 
 const subText = '18.61 miles, 2,011 feet gain, 1 night'
-const image = ImagePathBuilder('/images/oregon/sisters-mirror-loop')
 const trailhead = 'https://www.google.com/maps/place/Quinn+Meadow+Horse+Camp/@43.9975329,-121.7890709,17z/data=!3m1!4b1!4m5!3m4!1s0x54b8abda495b57bb:0xab653de931fb5259!8m2!3d43.9975291!4d-121.7868822'
 const sistersMirror = 'https://www.google.com/maps/place/Quinn+Meadow+Horse+Camp/@43.9975329,-121.7890709,17z/data=!3m1!4b1!4m5!3m4!1s0x54b8abda495b57bb:0xab653de931fb5259!8m2!3d43.9975291!4d-121.7868822'
 
@@ -28,7 +27,13 @@ const mirror = 'https://lh3.googleusercontent.com/pw/AM-JKLVRpCzXWY6r3nkKCEQJ1_A
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Backpacking loop near South Sister with plentiful lakes.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     Starting at the <Link href={trailhead}>Quinn Meadows Horse Camp</Link>, we completed a one-night backpacking

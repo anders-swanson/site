@@ -23,7 +23,13 @@ const clearLake = 'https://lh3.googleusercontent.com/pw/AM-JKLW5fLbW4asNmRMUAv3e
 const bigelowSprings = 'https://raw.githubusercontent.com/anders-swanson/data/master/data/IMG_3715.mp4'
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Backpacking the upper McKenzie River in Oregon's central Cascades.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     {`The upper McKenzie River is a scenic section of Oregon's central cascades. The McKenzie

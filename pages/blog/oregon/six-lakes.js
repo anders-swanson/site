@@ -26,7 +26,13 @@ const i4 = 'https://lh3.googleusercontent.com/pw/AM-JKLVPtAklTK5fJQ_FEpFMhDyBP53
 
 export default function Post() {
     return (
-        <Layout headerImage={cover} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={cover}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Backpacking loop in the Three Sisters Wilderness. Way more than six lakes can be found!`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     We backpacked this loop over one night from the <Link href={trailhead}>Six Lakes Trailhead</Link>, camping

@@ -20,7 +20,13 @@ const trailhead = 'https://www.google.com/maps/place/Pole+Creek+Trailhead/@44.16
 
 export default function Post() {
     return (
-        <Layout headerImage={image('cover.jpg')} headerText={metadata.title} subText={subText}>
+        <Layout
+            headerImage={image('cover.jpg')}
+            headerText={metadata.title}
+            subText={subText}
+            description={`Basin lakes in the Three Sisters high country.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div className={utilStyles.textBlock}>
                     The hike to Chambers Lake Basin starts at the <Link href={trailhead}>Pole Creek Trailhead</Link>{`, in the Three Sisters Wilderness.

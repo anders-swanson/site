@@ -19,7 +19,13 @@ const trailhead = 'https://www.fs.usda.gov/recarea/deschutes/recreation/hiking/r
 
 export default function Post() {
     return (
-        <Layout headerImage={image('cover.jpg')} headerText={metadata.title} subText={subText}>
+        <Layout 
+            headerImage={image('cover.jpg')}
+            headerText={metadata.title}
+            subText={subText}
+            description={`One night loop around Three Fingered Jack, featuring intense milage and overpowering heat.`}
+            ogImage={metadata.image}
+        >
             <div className={utilStyles.flexGapContainer}>
                 <div>
                     {`Three Fingered Jack is a shield volcano in Oregon's Cascade Range, between Mt. Jefferson and the Mt. Washington. At 7,844 feet, it's overshadowed

@@ -38,7 +38,7 @@ export default function Post() {
                     <br/><br/>
                 </div>
 
-                <h1>Finding a Good Campsite</h1>
+                <h1 id='finding-campsites'>Finding a Good Campsite</h1>
                 <div className={utilStyles.justifyCenter}>
                         {`When searching for a dispersed campsite, you'll want to keep in mind a few things.`}
                 </div>
@@ -71,7 +71,7 @@ export default function Post() {
                     /> 
                 </div>
 
-                <h1 className={utilStyles.justifyCenter}>BLM/National Forest Camping</h1>
+                <h1 className={utilStyles.justifyCenter} id='blm-camping'>BLM/National Forest Camping</h1>
                 <br/>
                     <div className={utilStyles.textBlock}>
                         {`BLM land offers some of the best, and easily accessible free campsites. Much of the western U.S. is public land,
@@ -96,7 +96,7 @@ export default function Post() {
                     /> 
                 
 
-                <h1 className={utilStyles.justifyCenter}>Wilderness Camping</h1>
+                <h1 className={utilStyles.justifyCenter} id='wilderness-camping'>Wilderness Camping</h1>
                 <br/>
                 <div className={utilStyles.textBlock}>
                     {`Regulations in Wilderness areas vary from place to place. By checking ahead, you can likely figure out if, and where,

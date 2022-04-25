@@ -43,7 +43,7 @@ export default function Post() {
                     responsible for your own safety in the backcountry.`}
                 </div>
 
-                <h1 className={utilStyles.justifyCenter}>Green Lakes</h1>
+                <h1 className={utilStyles.justifyCenter} id='green-lakes'>Green Lakes</h1>
                 <br/>
                 <div>
                     {`Most years, the `}<Link href={greenLakesTrailhead}>Green Lakes trail</Link>{` doesn't fully ice off until July, and is best visited
@@ -78,7 +78,7 @@ export default function Post() {
                     /> 
                 </div>
 
-                <h1 style={{'width': '1200px'}} className={utilStyles.centered}>Paradise Park Lollipop Loop</h1>
+                <h1 style={{'width': '1200px'}} className={utilStyles.centered} id='paradise-park'>Paradise Park Lollipop Loop</h1>
                 <div className={utilStyles.flexWrapContainer}>
                     <div>
                         {`This lollipop loop starts at `}<Link href={timberlineLodgeTrailhead}>Timberline Lodge</Link>{`, and heads northwest to
@@ -108,7 +108,7 @@ export default function Post() {
                     </div>
                 </div>
 
-                <h1 className={utilStyles.justifyCenter}>Mt. Adams High Camp</h1>
+                <h1 className={utilStyles.justifyCenter} id='high-camp'>Mt. Adams High Camp</h1>
                 <br/>
                 <div>
                     <b>Disclaimer</b>{`: The road to `}<Link href={killenCreekTrailhead}>Killen Creek Trailhead</Link>{` from Takh Lakh Lake is unpaved and deeply rutted.
@@ -140,7 +140,7 @@ export default function Post() {
                     you bring in.`}
                 </div>
 
-                <h1>Canyon Creek Meadows</h1>
+                <h1 id='canyon-creek-meadows'>Canyon Creek Meadows</h1>
                 <br/>
                 <div>
                     {`The shortest of the bunch, Canyon Creek Meadows is a 7.5 mile loop on the east side of Three Fingered Jack. Start at the `}

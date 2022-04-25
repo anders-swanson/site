@@ -100,7 +100,7 @@ export default function Post() {
                     /> 
                 </div>                
 
-                <h1 className={utilStyles.justifyCenter}>Eagle Creek</h1>
+                <h1 className={utilStyles.justifyCenter} id='eagle-creek'>Eagle Creek to Tunnel Falls</h1>
                 <div>
                     {`In my opinion, Eagle Creek is truly `}<b>the</b>{` definitive gorge hike, standing out with its amazing waterfalls
                     and cliffs. The `}<Link href={eagleCreekTH}>trailhead at Eagle Creek</Link>{` fills up fast almost every day (even week days),

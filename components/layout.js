@@ -65,15 +65,12 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       <meta name="twitter:description" content={descriptionText}/>
       <meta name="keywords" content="hiking, backpacking, oregon"/>
     </Head>
+    <div className={styles.headerBar}/>
     <Burger/>
-    {isVisible && (
-      <div>
-        <Search
-          search={search}
-          setSearch={setSearch}
-        />
-      </div>
-    )}
+    <Search
+      search={search}
+      setSearch={setSearch}
+    />
     <img
       alt=""
       src={img}

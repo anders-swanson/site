@@ -29,7 +29,7 @@ export default function Post() {
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>
-                <h1>Horsetail, Ponytail, and Triple Falls</h1>
+                <h1 id='horsetail-falls'>Horsetail, Ponytail, and Triple Falls</h1>
                 <div>
                     {`At a moderate 3.6 miles out-and-back, the `}<Link href={horsetailFallTrailhead}>Triple Falls Hike</Link>{` starts you off with the 
                     stunning Horsetail Falls right next to the parking lot, before climbing to Ponytail Falls, and Triple Falls further along. 
@@ -61,7 +61,7 @@ export default function Post() {
                             height={450}
                         />
                 </div>
-                <h1 className={utilStyles.justifyCenter}>Wahclella Falls</h1>
+                <h1 className={utilStyles.justifyCenter} id='wahclella-falls'>Wahclella Falls</h1>
                 <div>
                     {`Probably the best hike for the distance, the 2.4 miles out-and-back to Wahclella Falls is some of the best waterfall and lush canyon
                     scenery in the entire gorge. Shoot for an early morning or late afternoon start to beat the crowds - you'll want to take this hike at your
@@ -77,7 +77,7 @@ export default function Post() {
                     width={1000}
                     src='https://lh3.googleusercontent.com/pw/AM-JKLV2XGi4GsQisZTCqJTqwUAIHLjUOhKJNWJ0HbvZcClSl2jCbhFKsRSXSisB1zVhDKmgabE8En4jNvMf6j1w-tCyZPiUOMlWb46fN82MFgldvGFVmYwbnivxrjozh4W2VXF1dUxHUXSIVUTvbkVUzXbL=w1597-h1067-no?authuser=1'
                 />
-                <h1 className={utilStyles.justifyCenter}>Upper and Lower Latourell Falls</h1>
+                <h1 className={utilStyles.justifyCenter} id='latourell-falls'>Upper and Lower Latourell Falls</h1>
                 <div>
                     {`This 2.4 mile loop trail starts at the towering 249-foot Latourell Falls, and climbs a canyon to meet the smaller, but still pretty upper falls. Start at the 
                     `}<Link href={latourellTrailhead}>Latourell Falls Trailhead</Link>{` and take the loop path on the right - it'll take you to the top of Latourell Falls first
@@ -95,7 +95,7 @@ export default function Post() {
                     width={650}
                     src='https://lh3.googleusercontent.com/pw/AM-JKLU9NTNEBphj3drkI3Rt4XucNB1Vwd8V2rYhi_WmjGPYQr9AvtteDfkhmI8yTiMym_v-HAHQgESDR_K5ahzMIOC2Ev-2e_LHTIXNZ_9E55q0nSnuwoCmE2rlm0TF6A3GMZ6J2rYV3mUD0T2yICLFTR6c=w714-h1067-no?authuser=1'
                 />
-                <h1 className={utilStyles.justifyCenter}>Wahkeena Falls to Upper Multnomah Falls</h1>
+                <h1 className={utilStyles.justifyCenter} id='wahkeena-falls'>Wahkeena Falls to Upper Multnomah Falls</h1>
                 <div>
                     {`Wahkeena and Multnomah Falls can be traversed starting at either the Wahkeena or Multnomah trailheads. You can loop this, or do an out-and-back. Either way, it'll net you
                     around 8-9 miles and views of six stunning waterfalls, including Multnomah Falls - the tallest waterfall in Oregon at 620 feet.`}
@@ -124,7 +124,7 @@ export default function Post() {
                 </div>
 
                 <div>
-                    {`Checkout our post `}<Link href='/blog/guides/crg-best'>Classic Hikes in the Columbia River Gorge</Link>{` for more hiking ideas, including my personal
+                    {`Checkout our post `}<Link href='/blog/guides/crg-best#eagle-creek'>Classic Hikes in the Columbia River Gorge</Link>{` for more hiking ideas, including my personal
                     favorite (and most picturesque) gorge hike, Eagle Creek to Tunnel Falls.`}
                 </div>
             </div>

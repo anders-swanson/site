@@ -36,7 +36,7 @@ export default function Post() {
                     {`These are my top three recommendations to view wildflowers in the gorge, along with hiking tips to get the most out 
                     of your trip. Honorable menteions go out to Lyle Cherry Orchard and Dog Mountain (Dog Mountain requires a permit May through October).`}
                 </div>
-                <h2 className={utilStyles.justifyCenter}>Rowena Crest</h2>
+                <h2 className={utilStyles.justifyCenter} id='rowena-crest'>Rowena Crest</h2>
                 <div>
                     {`There are two shorter hikes you can do at `}<Link href={rowenaCrest}>Rowena Crest</Link>{`, both of which are good for viewing flowers.
                     If you head uphill from the parking lot, you'll have a quick (2.2 mile round trip) climb through an oak savannah to an overlook bluff.`}
@@ -60,7 +60,7 @@ export default function Post() {
                         height={550}
                         alt='f2'
                 />
-                <h2 className={utilStyles.justifyCenter}>Coyote Wall</h2>
+                <h2 className={utilStyles.justifyCenter} id='coyote-wall'>Coyote Wall</h2>
                 <div>
                     {`A pretty eight mile loop with views of the Columbia and Mount Hood, `}<Link href={coyoteWall}>Coyote Wall</Link>{` can optionally be made longer
                     by including the Catherine Creek area. Besides the wildflowers, the cliffs and rock formations here are worth seeing.`}
@@ -81,7 +81,7 @@ export default function Post() {
                     width={1200}
                     height={750}
                 />
-                <h2 className={utilStyles.justifyCenter}>Columbia Hills State Park</h2>
+                <h2 className={utilStyles.justifyCenter} id='columbia-hills'>Columbia Hills State Park</h2>
                 <div>
                     {`Probably my favorite of the three, `}<Link href={columbiaHills}>Columbia Hills State Park</Link>{` is also the furthest out from town,
                     across the river from the Dalles, on the Washington side of the gorge. There's a good amount of trail here, with possibilities for loops, out and backs, 

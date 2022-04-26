@@ -14,6 +14,7 @@ const menuStyles = {
   },
   bmBurgerBars: {
     border: '0.25px solid grey',
+    borderRadius: '3px',
     background: '#FFF',
     height: '8px'
   },

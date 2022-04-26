@@ -6,16 +6,43 @@
 TARGET_DIR="$1"
 RESIZE_FACTOR="50%"
 WATERMARK_FILE="watermark.png"
+ANNOTATION='(C) TrailsAndTrekking.com'
+MAX_WIDTH=1200
+MAX_HEIGHT=800
 
 if [[ -z "$TARGET_DIR" ]]; then
   TARGET_DIR="."
 fi
 
-
-TO_CONVERT="$(find $TARGET_DIR -maxdepth 1 -type f |egrep '.*(png|PNG|jpg|JPG|jpeg|JPEG)$')"
+TO_CONVERT="$(find $TARGET_DIR -type f |egrep '.*(png|PNG|jpg|JPG|jpeg|JPEG)$')"
 
 for file in $TO_CONVERT; do
   echo "Updating image: $file"
-  convert $file -resize "$RESIZE_FACTOR" $file
-  composite -compose multiply -gravity SouthEast -geometry +5+5 watermark.png $file $file
+  id=$(identify -format "%w %h" $file)
+  width=$(echo $id |cut -d' ' -f1)
+  height=$(echo $id |cut -d' ' -f2)
+  ratio=$(bc -l <<< "$height / $width")
+
+  echo "$file is ${height}x${width}"
+  new_height=""
+  new_width=""
+  if [[ $height -gt $MAX_HEIGHT ]]; then
+    new_height=$MAX_HEIGHT
+    hd=$((height - new_height))
+    new_width=$(bc <<< "$new_height / $ratio")
+  elif [[ $width -gt $MAX_WIDTH ]]; then
+    new_width=$MAX_WIDTH
+    wd=$((width - new_width))
+    new_height=$(bc <<< "$new_width * $ratio")
+  fi
+
+  if [[ -n $new_height ]] && [[ -n $new_width ]]; then
+    echo "Resizing $file to ${new_height}x${new_width}"
+    convert $file -resize ${new_height}x${new_width} $file
+  fi
+
+  echo "Annotating $file with watermark"
+  convert $file -gravity SouthEast \
+    -stroke '#000C' -strokewidth 2 -annotate 0 "$ANNOTATION" \
+    -stroke none -fill white -annotate 0 "$ANNOTATION" $file
 done

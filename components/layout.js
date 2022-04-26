@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
+import Image from 'next/image'
 import Link from 'next/link'
 import Burger from './burger'
 import PostBox from './postbox'
@@ -76,6 +77,7 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       src={img}
       className={utilStyles.headerImage}
     />
+
     
     <div className={styles.container}>
       {isVisible && (

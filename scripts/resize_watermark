@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Batch resize and watermark images in a directory
+# Requires ImageMagick : https://imagemagick.org/
+
+TARGET_DIR="$1"
+RESIZE_FACTOR="50%"
+WATERMARK_FILE="watermark.png"
+
+if [[ -z "$TARGET_DIR" ]]; then
+  TARGET_DIR="."
+fi
+
+
+TO_CONVERT="$(find $TARGET_DIR -maxdepth 1 -type f |egrep '.*(png|PNG|jpg|JPG|jpeg|JPEG)$')"
+
+for file in $TO_CONVERT; do
+  echo "Updating image: $file"
+  convert $file -resize "$RESIZE_FACTOR" $file
+  composite -compose multiply -gravity SouthEast -geometry +5+5 watermark.png $file $file
+done

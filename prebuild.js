@@ -41,7 +41,6 @@ function getMetdata(file, id) {
     const data = fs.readFileSync(file).toString('utf-8')
     const idx = data.indexOf(metadataFlag)
     if (idx === -1) {
-        console.log("foo")
         return {
             "error": "metadata not found"
         }

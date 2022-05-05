@@ -1,15 +1,13 @@
 import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
-import Image from 'next/image'
 import Link from 'next/link'
 import Burger from './burger'
 import PostBox from './postbox'
 import Search from './search'
 import { useState, useEffect } from 'react'
 import { CapitalizeWords } from '../lib/common'
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-218901111-1');
+import Gtag from './gtag'
 
 export const title = `Trails and Trekking`
 const name = title
@@ -45,15 +43,11 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     }
   })
 
-  // track page views with google analytics
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, [])
-
   const descriptionText = description ? description : title
 
   return (
     <>
+    <Gtag id='G-XKQY1855YQ'/>
     <Head>
       <title>{headerText ? headerText : title}</title>
       <link rel="icon" href="logo.jpg" />

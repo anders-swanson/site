@@ -47,7 +47,21 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
 
   return (
     <>
-    <Gtag id='G-XKQY1855YQ'/>
+    <Script
+      strategy="lazyOnload"
+      src={`https://www.googletagmanager.com/gtag/js?id=G-XKQY1855YQ`}
+    />
+
+    <Script strategy="lazyOnload">
+    {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XKQY1855YQ', {
+            page_path: window.location.pathname,
+        });
+    `}
+    </Script>
     <Head>
       <title>{headerText ? headerText : title}</title>
       <link rel="icon" href="logo.jpg" />

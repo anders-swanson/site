@@ -7,7 +7,7 @@ import PostBox from './postbox'
 import Search from './search'
 import { useState, useEffect } from 'react'
 import { CapitalizeWords } from '../lib/common'
-import Gtag from './gtag'
+import Script from 'next/script'
 
 export const title = `Trails and Trekking`
 const name = title
@@ -48,11 +48,12 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
   return (
     <>
     <Script
+      id='gtag1'
       strategy="lazyOnload"
       src={`https://www.googletagmanager.com/gtag/js?id=G-XKQY1855YQ`}
     />
 
-    <Script strategy="lazyOnload">
+    <Script id='gtag2' strategy="lazyOnload">
     {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}

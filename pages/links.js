@@ -1,19 +1,17 @@
+import FeaturedPost from '../components/featuredpost'
 import Layout from '../components/layout'
 import LinkButton from '../components/linkbutton'
 import RelatedPosts from '../components/related_posts'
 import { Posts } from '../lib/metadata'
 import utilStyles from '../styles/utils.module.css'
 
-export default function Post() {
-    const latestPost = Posts()[0]
+export default function Links({ featuredPost }) {
     return (
         <Layout headerImage='/images/links.JPG'>
-            <div id='info' className={utilStyles.centered}>
-                {`This page may contain affiliate links. By clicking on a link and purchasing an item, I'll receive an affiliate commission 
-                at no additional cost to you. This helps supports my accounts and adventures. Thank you!`}
+            <div id='info' class={utilStyles.pageAnchor}>
+                <FeaturedPost post={featuredPost}/>
             </div>
-            <br/>
-            <br/>
+            <br/><br/>
             <div className={`${utilStyles.centeredRow}`} style={{'maxWidth': '800px'}}>
                 <LinkButton title='Shop my LTK' body='Like my outfits? They’re linked here!' src='https://www.shopltk.com/explore/laurengastineau'/>
                 <LinkButton title='REI Hipbelt Pocket' body='My Favorite Backpack Attatchment ' src='https://bit.ly/3KkMTnp'/>
@@ -24,10 +22,19 @@ export default function Post() {
                 <LinkButton title='My Go to Hiking Shorts' body='Discount Code: "LAURENG222"' src='https://bit.ly/3whRpQd'/>
             </div>
             <RelatedPosts
-                text='Suggested Posts'
+                text='Recommended Posts'
                 metadata={{'title': ''}}
                 tag="national park"
             />
         </Layout>
     )
 }
+
+export async function getStaticProps() {
+    const posts = Posts()
+    return {
+      props: {
+        featuredPost: posts[0]
+      }
+    }
+  }

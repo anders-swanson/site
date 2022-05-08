@@ -65,7 +65,7 @@ export default function Burger() {
           <br/>
           <Link href="/about">About</Link>
           <br/>
-          <Link href="/links">Links</Link>
+          <Link href="/links#info">Links</Link>
           <br/>
           
           <div className={styles.footer}>

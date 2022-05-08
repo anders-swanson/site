@@ -15,7 +15,7 @@ const defaultHeaderImage = "/images/cover.jpeg"
 const maxScroll = 5
 const defaultHeaderColor = 'white'
 
-export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor}) {
+export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor }) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
   let stxt = subText ? subText : ""

@@ -40,16 +40,25 @@ export default function Post() {
                 <br/>
                 <div>
                     {`The 40.5-mile long `}<Link href={rogueRiverTrail}>Rogue River National Scenic Trail</Link>{` follows the Rogue River from Graves Creek towards the
-                    Pacific Ocean, and is a 4 hour drive from Portland. This beautiful trail is 4 hours from Portland, has plentiful campsites, gorgeous river scenery,
-                    and typically is not overly crowded. The BLM has an excellent guide to the `}<Link href={rogueRiverBLM}>Rogue River trail</Link>{`, complete with mileage and general 
+                    Pacific Ocean, and is a 4 hour drive from Portland. This beautiful trail is typically not too crowded, has plentiful campsites, and is home to gorgeous 
+                    river scenery. The BLM has an excellent guide to the `}<Link href={rogueRiverBLM}>Rogue River trail</Link>{`, complete with mileage and general 
                     guidance. We used the BLM website for planning our trip, and finding campsites.`}
                     <br/>
+                    <div className={utilStyles.centered}>
+                        <Image
+                            alt='rogue 1'
+                            src='/images/rogue-river.png'
+                            width={1200}
+                            height={800}
+                        />
+                    </div>
                     {`A popular method of hiking the Rogue is to run a shuttle from Graves Creek and hike ~40 miles point-to-point. When I last hiked this in 2019,
-                    we hiked a section from Graves Creek and did a 55 mile out-and-back.`}
+                    we hiked a section from Graves Creek and did a 54 mile out-and-back, camping two nights at Meadow Creek. This made for a 13.5 mile day to Meadow Creek,
+                    a 27 mile out-and-back day past Marial and back to Meadow Creek, and then 13.5 miles to return to the trailhead.`}
                     <br/><br/>
                     {`The Rogue is a perfect trail to do early in the season, as the lower Rogue River valley can become unbearably hot in the summer. Even in May, the sun felt intense
-                    and we stripped down to shorts/t-shirts by late morning. The weather can be variable in spring, but the lower Rogue is typically drier and warmer. The trail has an even
-                    grade, and you won't see too much elevation change - you'll have a slight downgrade trekking from Graves Creek.`}
+                    and we stripped down to shorts/t-shirts by late morning. The weather can be variable in spring, but the lower Rogue is typically drier and warmer. The trail has
+                    a slight downgrade from Graves Creek, and is overall light on elevation change.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Image
@@ -61,8 +70,8 @@ export default function Post() {
                     </div>
                     <br/><br/>
                     {`The lower Rogue is tick country, so make sure to check yourself for any unwanted companions after a day of hiking. On the trail you'll see plenty of landmarks
-                    named after bears - this is because the Rogue is has a healthy black bear population. Plan to pack a bear canister or bag, as there are no food lockers or
-                    hanging wires in the established campgrounds. We never saw any bears, but did suffer one tick bite at the end of the trip (it was easy to remove).`}
+                    named after bears - this is because the Rogue is has a healthy black bear population. Plan to pack a bear canister or bag, as most campgrounds do not have
+                    secure food storage. On our trip, we didn't see any bears, but did suffer one tick bite at the end of the trip (it was easy to remove).`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Image
@@ -79,8 +88,8 @@ export default function Post() {
                 <div>
                     {`Our 2021 Memorial Day backpacking trip followed the McKenzie River, a pristine coldwater river that originates from underground springs high in central
                     Oregon's Cascades. The McKenzie hosts waterfalls, lava tubes, hot springs, and more - it's a truly amazing hike, and well worth doing. The trail spans 27 miles
-                    from it's high point at Clear Lake to McKenzie Bridge. For our hike in 2021, we started a Clear Lake and did an out and back. The trail's most scienic elements
-                    can be found on the upper sections, standouts including Clear Lake, the waterfalls loop, and Blue Pool.`}
+                    from it's high point at Clear Lake to McKenzie Bridge. For our Memorial Day hike in 2021, we started a Clear Lake and did an out and back to Deer Creek hot springs.
+                    The trail's most scienic elements can be found on the upper sections, standouts including Clear Lake, the waterfalls loop, and Blue Pool.`}
                     <br/><br/>
                     {`Check out our post on `}<Link href='/blog/oregon/mckenzie-river-backpack'>Backpacking the McKenzie River</Link>{` for more details about the trail!`}
                     <br/><br/>
@@ -121,7 +130,7 @@ export default function Post() {
                      sandy bars to setup camp and cast your line. We didn't have our gear with us, but saw many others fishing.`}
                     <br/>
                     {`In the lower section of the trail (first ~10 miles from Prospect), we found abundant Morel and King Bolete mushrooms. Both are delicious, edible wild mushrooms,
-                    which we used to spice up our backpacking meals. I was surprised at how many mushrooms there were, and how easy they were to find - all the Morels we found
+                    which we used to spice up our backpacking meals. I was surprised at how many mushrooms there were, and how easy they were to find - all the Morels
                     were readily visible from the trail.`}
                     <br/>
                     {`Note: please only harvest wild mushrooms if you're confident in your ability to identify them. Wild mushrooms can be poisonous

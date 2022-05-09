@@ -98,3 +98,64 @@
   padding-top: 50px;
   margin-top: -50px;
 }
+
+.bounceAnimation {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: bounceAnimation;
+  transform-origin: center bottom;
+}
+
+@keyframes bounceAnimation {
+  0%,
+  10%,
+  26.5%,
+  40%,
+  to {
+   animation-timing-function:cubic-bezier(.215,.61,.355,1);
+   transform:translateZ(0)
+  }
+  20%,
+  21.5% {
+   animation-timing-function:cubic-bezier(.755,.05,.855,.06);
+   transform:translate3d(0,-10px,0)
+  }
+  35% {
+   animation-timing-function:cubic-bezier(.755,.05,.855,.06);
+   transform:translate3d(0,-10px,0)
+  }
+  42.5% {
+   transform:translate3d(0,-2px,0)
+  }
+}
+
+@keyframes shakeAnimation {
+  0%,
+  to {
+   transform:translateZ(0)
+  }
+  15%,
+  25%,
+  35%,
+  45%,
+  5% {
+   transform:translate3d(-5px,0,0)
+  }
+  10%,
+  20%,
+  30%,
+  40% {
+   transform:translate3d(5px,0,0)
+  }
+  50% {
+   transform:translateZ(0)
+  }
+ }
+ .shakeAnimation {
+  animation-duration:4s;
+  animation-fill-mode:both;
+  animation-iteration-count:infinite;
+  animation-name:shakeAnimation;
+  transform-origin:center
+ }

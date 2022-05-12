@@ -8,7 +8,10 @@ import utilStyles from '../styles/utils.module.css'
 export default function Links() {
     const featuredPost = Posts()[0]
     return (
-        <Layout headerImage='/images/links.JPG'>
+        <Layout
+            headerImage='/images/links.JPG'
+            headerText='Links'
+        >
             <div id='info' className={utilStyles.pageAnchor}>
                 <FeaturedPost post={featuredPost}/>
             </div>

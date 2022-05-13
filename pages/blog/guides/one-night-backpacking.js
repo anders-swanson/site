@@ -9,7 +9,7 @@ import RelatedPosts from '../../../components/related_posts'
 let metadata = {
     "title": "One Night Backpacking Trips for Beginners",
     "date": "2022-03-23",
-    "image": "https://lh3.googleusercontent.com/G49vblZq-3LuIdeTEwV3pRxloeaZVnjhaVf_QW_dlZaz5-Nz0Rs5c62PBrJAvCLuOqbMxofhDllZSlBi1H0kpLYHSjdJHP0gjNAAXn-Ba6gHkFKxaPWd2w5hr3i2Zrh3p8ybTk8ZAQ4HPrP5ds5HyNZIpBI25fPK0mhPzXTYZbUHsswLwVeaIdlOGSNV9SXU9d-n6UqV-uYwGHU6jNyFK1XcACdheZ0iUrHyhpbb4JQcblwsEJuiq_KoW0Nnm53XGYZ9HZ6sDYj8H8Iv3k1d4b4CqJFXlQmdVyck9HyI1DJ2zxhezRu0vyAECHLyWByaxNX9AVHZQAIa1ZthGZg_wka0wYlwjiDied8VLNiU7LUFXd0iNnn686s8ds9YdJ-ufIUAdCQfJGy5thjLzYaPC5bCwuywWNkNX-VmxYr-iU5_AuSlAX0jFGBPrMSV_U9bfjTZlbS5qVJrez0IO9vk7O6lRJYaAFfr-WszQehggMryiUl-08AuK5YjEdSkSnun_4qadwb0mBrEPmL3NpobQlZCQJ9QyPnHCZidCfGEOk3elqzIFanonUI0SlZYjKlA0V61K3THguWdGA9hnXHht9TX98bdF1w9CUK4ZfT-YVbMRd6MrfMmbgVovzRcrcGI6-5xFKZ6r6rcmUPNVltGwNh8_cS_4vXCZEn10-yjjeYIFh9rDlgMI9QkW6hs2NTRpSAohajJGnx6JkwUHEZptUwCYhcymjRrjQ6M6hZx-arD42HkTDS81dTtgzrHs_INKu9XdalrA_ygw8pHA-2bzUz82zhQ0cp7VA=s599-no?authuser=1",
+    "image": "https://lh3.googleusercontent.com/pw/AM-JKLXNcW2fsTXlo5zhyrAEHcS4TojjXhtA-IVO-695wQI_6dIEZk11MuURrGNGs9AyPd2R000ZJCP-A75sgm0YqIEMQ5pk9oByucw5zp5lzKaoun145l-JpNVACjN_wRizngzQ0JgGeQBMuhLsLulzZSMWbA=s599-no?authuser=1",
     "tags": ["backpacking", "guide"]
 }
 

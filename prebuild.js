@@ -67,7 +67,6 @@ function getMetdata(file, id) {
     }
 
     if (startIdx < 1 || endIdx < 1) {
-        console.log("bar")
         return {
             "error": "non-terminal metadata"
         }
@@ -113,7 +112,6 @@ export function Tags() {
     return ${JSON.stringify(tags)}
 }
 `
-console.log(data)
 
 // Write the Posts function out to the metadata.js file
 fs.writeFile(metadataFile, data, function (err, data) {

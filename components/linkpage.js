@@ -5,12 +5,12 @@ import RelatedPosts from '../components/related_posts'
 import { Posts } from '../lib/metadata'
 import utilStyles from '../styles/utils.module.css'
 
-export default function Links() {
+export default function Links({ title }) {
     const featuredPost = Posts()[0]
     return (
         <Layout
             headerImage='/images/links.JPG'
-            headerText='Links'
+            headerText={title}
         >
             <div id='info' className={utilStyles.pageAnchor}>
                 <FeaturedPost post={featuredPost}/>

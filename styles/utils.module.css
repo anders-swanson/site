@@ -125,9 +125,6 @@
    animation-timing-function:cubic-bezier(.755,.05,.855,.06);
    transform:translate3d(0,-10px,0)
   }
-  42.5% {
-   transform:translate3d(0,-2px,0)
-  }
 }
 
 @keyframes shakeAnimation {

@@ -2,6 +2,6 @@ import Links from "../components/linkpage";
 
 export default function Page() {
     return (
-        <Links/>
+        <Links title='Hello from TikTok/>
     )
 }

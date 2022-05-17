@@ -2,8 +2,32 @@ const fs = require('fs')
 const path = require('path')
 
 const blogDirectory = path.join(process.cwd(), 'pages/blog')
+const pagesDirectory = path.join(process.cwd(), 'pages')
 const metadataFlag = '//+metadata'
 const metadataFile = 'lib/metadata.js'
+const sitemapFile = 'public/sitemap.txt'
+const domain = 'https://trailsandtrekking.com'
+
+function getSiteMap() {
+    metadata = ''
+    const recurseMetadata = (currentDir, relDir) => {
+        const files = fs.readdirSync(currentDir)
+        files.map((fileName) => {
+            const filePath = path.join(currentDir, fileName)
+            if (fs.statSync(filePath).isDirectory()) {                
+                recurseMetadata(filePath, relDir + '/' + fileName)
+            } else if (fileName.endsWith('.js') && !fileName.startsWith('_')) {
+                const id = relDir + '/' + fileName.replace(/\.js$/, '')
+                metadata = metadata + domain + id + '\n'
+            } else {
+                return
+            }            
+        })
+    }
+
+    recurseMetadata(pagesDirectory, '')
+    return metadata
+}
 
 // Get a sorted list of metadata from all pages in the blogDirectory
 function getSortedMetadata() {
@@ -33,7 +57,6 @@ function getSortedMetadata() {
           return -1
         }
     })
-    
 }
 
 // Read metadata from a blog post
@@ -98,11 +121,18 @@ function getTags(metadata) {
     })
 }
 
+function writeFile(f, d) {
+    fs.writeFile(f, d, function (err, d) {
+        if (err) {
+            return console.log(err);
+        }
+        console.log(d);
+    });
+}
+
 // Define the Posts function which returns a sorted array of post data
 metadata = getSortedMetadata()
 tags = getTags(metadata)
-
-
 data=`
 export function Posts() {
     return ${JSON.stringify(metadata)}
@@ -112,11 +142,6 @@ export function Tags() {
     return ${JSON.stringify(tags)}
 }
 `
-
 // Write the Posts function out to the metadata.js file
-fs.writeFile(metadataFile, data, function (err, data) {
-    if (err) {
-        return console.log(err);
-    }
-    console.log(data);
-});
+writeFile(metadataFile, data)
+writeFile(sitemapFile, getSiteMap())

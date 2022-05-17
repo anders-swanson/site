@@ -95,8 +95,8 @@
 
 /* Because of the header bar, anchor should be 50 px above the slug */
 .pageAnchor {
-  padding-top: 50px;
-  margin-top: -50px;
+  padding-top: 67px;
+  margin-top: -67px;
 }
 
 .bounceAnimation {

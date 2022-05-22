@@ -5,11 +5,13 @@ const blogDirectory = path.join(process.cwd(), 'pages/blog')
 const pagesDirectory = path.join(process.cwd(), 'pages')
 const metadataFlag = '//+metadata'
 const metadataFile = 'lib/metadata.js'
-const sitemapFile = 'public/sitemap.txt'
-const domain = 'https://trailsandtrekking.com'
+const sitemapFile = 'public/sitemap.xml'
+const robotsFile = 'public/robots.txt'
+const domain = 'https://www.trailsandtrekking.com'
 
 function getSiteMap() {
-    metadata = ''
+    metadata = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`
     const recurseMetadata = (currentDir, relDir) => {
         const files = fs.readdirSync(currentDir)
         files.map((fileName) => {
@@ -18,7 +20,12 @@ function getSiteMap() {
                 recurseMetadata(filePath, relDir + '/' + fileName)
             } else if (fileName.endsWith('.js') && !fileName.startsWith('_')) {
                 const id = relDir + '/' + fileName.replace(/\.js$/, '')
-                metadata = metadata + domain + id + '\n'
+                const mtime = fs.statSync(filePath).mtime
+                metadata = metadata + `
+  <url>
+    <loc>${domain}${id}</loc>
+    <lastmod>${mtime.getFullYear()}-${mtime.getMonth()}-${mtime.getDate()}</lastmod>
+  </url>`
             } else {
                 return
             }            
@@ -26,7 +33,8 @@ function getSiteMap() {
     }
 
     recurseMetadata(pagesDirectory, '')
-    return metadata
+    return metadata + `
+</urlset>`
 }
 
 // Get a sorted list of metadata from all pages in the blogDirectory
@@ -144,4 +152,13 @@ export function Tags() {
 `
 // Write the Posts function out to the metadata.js file
 writeFile(metadataFile, data)
+// Create the sitemap.xml
 writeFile(sitemapFile, getSiteMap())
+
+
+robotsTxt = `User-agent: *
+Allow: /
+Sitemap: ${domain}/sitemap.xml
+`
+// Create the robots.txt
+writeFile(robotsFile, robotsTxt)

@@ -10,7 +10,7 @@ let metadata = {
     "title": "Three Fingered Jack Loop",
     "date": "2021-07-24",
     "image": "/images/oregon/tfj-loop/thumbnail.jpg",
-    "tags": ["backpacking", "lakes"]
+    "tags": ["backpacking", "lakes", "central oregon"]
 }
 
 const subText = '35.68 miles, 4,623 feet gain, 1 night'

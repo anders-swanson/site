@@ -11,7 +11,7 @@ let metadata = {
     "title": "Chambers Lake Basin",
     "date": "2021-08-14",
     "image": "/images/oregon/chambers-lakes/thumbnail.jpg",
-    "tags": ["hiking", "lakes", "sisters"]
+    "tags": ["hiking", "lakes", "central oregon"]
 }
 
 const subText = '19 miles, 3,000 feet gain'
@@ -104,7 +104,7 @@ export default function Post() {
             />
             <RelatedPosts
                 metadata={metadata}
-                tag="sisters"
+                tag="central oregon"
             />
         </Layout>
     )

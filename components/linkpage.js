@@ -36,12 +36,12 @@ export default function Links({ title }) {
                 />
                 <LinkButton
                     title='Senita'
-                    body='Discount Code: "LAURENG" saves 15%'
+                    body='Save with discount code "LAURENG"'
                     src='https://glnk.io/r4vq/laurensbigadventure'
                 />
                 <LinkButton
                     title='VERB Energy Bars'
-                    body='This link saves 40% on the Starter Pack!! $̶2̶4̶.̶9̶5̶ ✨$15✨'
+                    body='This link saves ✨40%✨ the Starter Pack!!'
                     src='https://bit.ly/354avy0'
                 />
                 <LinkButton
@@ -51,7 +51,7 @@ export default function Links({ title }) {
                 />
                 <LinkButton
                     title='My Go to Hiking Shorts'
-                    body='Discount Code: "LAURENG222"'
+                    body='Use discount code "LAURENG222" to save!'
                     src='https://bit.ly/3whRpQd'
                 />
             </div>

@@ -62,7 +62,7 @@ export default function Post() {
                     {`We hiked Mt. Defiance in January, when most of the trail was buried in snow. If you attempt this trail during the winter months, bring
                     a GPS, a map, and crampons/spikes, and be prepared to melt your quads and calves from the climbing.`}
                     <br/>
-                    {`Because the snow was dense hardpack (it hadn't snowed much in the two weeks
+                    {`Because the snow was densely packed (it hadn't snowed much in the two weeks
                     prior to our hike), we ended up not needing snowshoes, and only used our spikes.
                     The snow got deeper as we climbed, reaching around 7-8 feet deep at the summit.`}
                     <br/>

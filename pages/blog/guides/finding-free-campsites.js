@@ -46,7 +46,7 @@ export default function Post() {
                     <div className={utilStyles.textBlock}>
                         <b>{`1. Make sure dispersed camping is allowed`}</b>
                         <br/>
-                        {`Check local rules and regulations for the place your travelling. Laws around camping vary from state to state,
+                        {`Check local rules and regulations for the place your traveling. Laws around camping vary from state to state,
                         and it's important to verify if camping is allowed where you'll be visiting.`}
                         <br/><br/>
                         <b>{`2. Find a relatively flat, open spot`}</b>
@@ -119,7 +119,7 @@ export default function Post() {
                 <div>
                     {`Generally, dispersed camping is prohibited in National and State parks. There may be some exceptions to this rule,
                     but usually you are required to have a permit, and camp in designated sites. Often (in the case of National Parks), 
-                    backcountry permits are highly competitive due to their popularity.`}
+                    back country permits are highly competitive due to their popularity.`}
                 </div>
             </div>
             <RelatedPosts

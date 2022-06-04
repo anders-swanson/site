@@ -86,10 +86,10 @@ export default function Post() {
                 <h1 className={utilStyles.justifyCenter} id='mckenzie-river'>McKenzie River Trail</h1>
                 <br/>
                 <div>
-                    {`Our 2021 Memorial Day backpacking trip followed the McKenzie River, a pristine coldwater river that originates from underground springs high in central
+                    {`Our 2021 Memorial Day backpacking trip followed the McKenzie River, a pristine cold water river that originates from underground springs high in central
                     Oregon's Cascades. The McKenzie hosts waterfalls, lava tubes, hot springs, and more - it's a truly amazing hike, and well worth doing. The trail spans 27 miles
                     from it's high point at Clear Lake to McKenzie Bridge. For our Memorial Day hike in 2021, we started a Clear Lake and did an out and back to Deer Creek hot springs.
-                    The trail's most scienic elements can be found on the upper sections, standouts including Clear Lake, the waterfalls loop, and Blue Pool.`}
+                    The trail's most scenic elements can be found on the upper sections, standouts including Clear Lake, the waterfalls loop, and Blue Pool.`}
                     <br/><br/>
                     {`Check out our post on `}<Link href='/blog/oregon/mckenzie-river-backpack'>Backpacking the McKenzie River</Link>{` for more details about the trail!`}
                     <br/><br/>
@@ -112,7 +112,7 @@ export default function Post() {
                     The developed campgrounds support a small number of walkup campers, and we never had trouble finding a campsite.`}
                     <br/><br/>
                     {`At Natural Bridge (where the river enters and exits a lava tube), the trail forks and continues as #1034 on the north side of the river,
-                    and #1034A on the south side. We were tempted to cross the river here and follow trail #1034, but we quickily found it was covered in blowdown and
+                    and #1034A on the south side. We were tempted to cross the river here and follow trail #1034, but we quickly found it was covered in blow down and
                     almost impassable. After covering about 1/2 of a mile, we doubled back and continued on #1034A to Farewell Bend.`}
                     <br/>
                     {`Unless you've got a high appetite for scrambling over brush, I'd recommend to stay on the #1034A trail.`}

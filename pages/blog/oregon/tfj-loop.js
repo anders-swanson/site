@@ -50,7 +50,7 @@ export default function Post() {
                 />
                 <div className={utilStyles.textBlock}>
                     {`We looped clock-wise around Three Fingered Jack, making detours for Summit lake and Canyon Creek meadows. Canyon Creek meadows
-                    is a great spot to view wildflowers, and get close-up views Three Fingerd Jack's eastern face. If you're willing to make the scramble,
+                    is a great spot to view wildflowers, and get close-up views Three Fingered Jack's eastern face. If you're willing to make the scramble,
                     you can also climb to the summit near here.`}
                     <br/><br/>
                     {`As you make your way around the loop, you'll get panoramic views of the Mt. Jefferson wilderness, and views down to Mt. Washington 
@@ -69,7 +69,7 @@ export default function Post() {
                     All the camping areas along this route are primitive.`}
                     <br/><br/>
                     {`The second day back to the car was a bit of a slog - we had much farther to hike than planned,
-                    and the temperatures were creeping into the ninties by afternoon. By the time we made it back to the car, we were exhausted, 
+                    and the temperatures were creeping into the nineties by afternoon. By the time we made it back to the car, we were exhausted, 
                     dusty, and dead-tired from the heat, but thankful for our time in the beautiful Mt. Jefferson Wilderness.`}                                
                 </div>
             </div>

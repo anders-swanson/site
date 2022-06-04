@@ -34,7 +34,7 @@ export default function Post() {
                     the hills are blanketed with a sea of yellow (Balsamroot), purple (Lupine), and flowers of other colors.`}
                     <br/><br/>
                     {`These are my top three recommendations to view wildflowers in the gorge, along with hiking tips to get the most out 
-                    of your trip. Honorable menteions go out to Lyle Cherry Orchard and Dog Mountain (Dog Mountain requires a permit May through October).`}
+                    of your trip. Honorable mentions go out to Lyle Cherry Orchard and Dog Mountain (Dog Mountain requires a permit May through October).`}
                 </div>
                 <h2 className={utilStyles.justifyCenter} id='rowena-crest'>Rowena Crest</h2>
                 <div>

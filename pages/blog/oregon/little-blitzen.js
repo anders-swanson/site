@@ -48,8 +48,8 @@ export default function Post() {
                     gorge. I've heard this about a 24 mile hike or backpacking trip.`}
                     <br/><br/>
                     {`There's lots to do in the surrounding Steens Mountain area, so I suggest camping at the nearby South Steens
-                    campground, or one of the other campgrouns on the Steens Mountain loop road. Fishing for rainbow and lahontan 
-                    cutthrout trout is possible in almost any water body of the Steens.`}
+                    campground, or one of the other campgrounds on the Steens Mountain loop road. Fishing for rainbow and Lahontan 
+                    cutthroat trout is possible in almost any water body of the Steens.`}
                 </div>
                 <Image
                         alt='gorge3'

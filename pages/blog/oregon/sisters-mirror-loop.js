@@ -40,7 +40,7 @@ export default function Post() {
                     loop of <Link href={sistersMirror}>{`Sister's Mirror Lake`}</Link>{`. On the way up we passed Horse lake, and took the
                     Red Hill trail to Sister's Mirror. About three miles from the Mirror Lakes area, the trail was completely lost under
                     snow, and we relied on GPS to reach to the lake, trail blazes were not visible. On second day, we took the Mirror
-                    Lakes trail back towards Quinn Meadows, there was hardpack snow almost the entire way to the trailhead.`}
+                    Lakes trail back towards Quinn Meadows, there was hard pack snow almost the entire way to the trailhead.`}
                     <br/>
                     If you are thinking of doing this loop before melt out, consider bringing a GPS, spikes, and a topo-trail map.
                     Route-finding would be difficult to impossible without these items.

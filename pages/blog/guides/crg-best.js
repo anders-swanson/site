@@ -50,7 +50,7 @@ export default function Post() {
                     <div>
                         {`There are two main starting points for Hamilton mountain, from the `}<Link href={equestrianTH}>Equestrian Trailhead</Link>{`, 
                         or the `}<Link href={hamiltonTH}>Hamilton Mountain Trailhead</Link>{`. The latter is heavily used, and you will likely have 
-                        competition for parking after 8AM on weekends with nice weather. The Equestrain Trailhead is less used, but still active.
+                        competition for parking after 8AM on weekends with nice weather. The Equestrian Trailhead is less used, but still active.
                         Both trailheads offer access to Hamilton Mountain, with the route being a little longer from the Equestrian Trailhead.`}
                         <br/><br/>
                         {`A popular route from the main trailhead is to do an out-and-back to Hamilton Mountain's summit, or to add another 1-2 miles 
@@ -77,11 +77,11 @@ export default function Post() {
                     <div>
                         {`A grueling, steep trek with gorgeous views from the summit, Table mountain can be approached from both the south and the north.
                         The south trailhead is located in `}<Link href={northBonnevilleTH}>North Bonneville</Link>{` and provides the easiest route to Table
-                        Moutain. From the south trailhead, you'll have about a 16 mile round trip, with an extremely steep scramble towards the top of Heartbreak Ridge
-                        (you'll know it from the signs). The rockfield scramble is about 1/2 mile from the summit, but it is doable if you are in decent shape.`}
+                        Mountain. From the south trailhead, you'll have about a 16 mile round trip, with an extremely steep scramble towards the top of Heartbreak Ridge
+                        (you'll know it from the signs). The rock field scramble is about 1/2 mile from the summit, but it is doable if you are in decent shape.`}
                         <br/><br/>
                         {`There are a couple of options for the north trailhead, the most accessible of which is probably `}<Link href={rockCreekPassTH}>Rock Creek Pass Trailhead</Link>
-                        {`. This route is considerabely longer, at around 24 miles, with a longer drive as well. The last 10 miles of the drive to the trailhead are on a decent gravel road.
+                        {`. This route is considerably longer, at around 24 miles, with a longer drive as well. The last 10 miles of the drive to the trailhead are on a decent gravel road.
                         To reach Table Mountain from the north, you'll travel south along the Pacific Crest trail (make sure to head the right direction from Rock Creek Pass).
                         Along the way you'll get beautiful views, and lots of wildflowers if they are in season.`}
                         <br/><br/>

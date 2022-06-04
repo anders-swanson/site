@@ -49,7 +49,7 @@ export default function Post() {
                     <br/><br/>
                     {`This hike involves strenuous scrambling over sandstone, and can get deadly hot in the summer. Remember to be prepared, and bring plenty of
                     water. Do note that in the last 1/4 mile towards Druid Arch, there's a tough scramble up a steep wash. It's doable, but difficult - We ended up
-                    using a backpack strap as a psuedo-rope to hoist up.`}
+                    using a backpack strap as a pseudo-rope to hoist up.`}
                     <br/><br/>
                     {`The canyon leading up to Druid arch is truly spectacular. I was astounded by the beauty of the sandstone pinnacles, and the wavy floes of red rock`}
                     <br/>

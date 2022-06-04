@@ -9,7 +9,7 @@ let metadata = {
     "title": "Death Valley Daytrip",
     "date": "2022-05-12",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLUoO0exTlAcaCVl92q9T4oWO1ZYastLcaj-VwT0trT7zBPPROSpw0iA1PwVNvPaQAE5Qerd7yjIA9obLuakzju1-ZGg_jfP8Fh-0ckU_i6JPPNs2F4RfF3nRRasaSMqcYb1AtsQFbdB7iqxcrfP84ZX=w800-h799-no?authuser=0",
-    "tags": ["hking", "national park"]
+    "tags": ["hiking", "national park"]
 }
 
 const sidewinderCanyon = 'https://www.google.com/maps/place/Sidewinder+Canyon/@36.0649766,-116.7884058,12.42z/data=!4m5!3m4!1s0x80c6e6ff3be5d46b:0x3fece4316e04be2!8m2!3d36.064642!4d-116.7447889'
@@ -28,7 +28,7 @@ export default function Post() {
         >
             <div className={utilStyles.flexGapContainer}>
                 <div>
-                    {`Inspired by one of the days we spent in Death Valley National Park, this guide visits Sidewinder Canyon, Mosiac Canyon, Mesquite Dunes, and optionally Badwater Basin.
+                    {`Inspired by one of the days we spent in Death Valley National Park, this guide visits Sidewinder Canyon, Mosaic Canyon, Mesquite Dunes, and optionally Badwater Basin.
                     There's lots to see in Death Valley - if you make the trip out here, it's not hard to plan several days of activities. It's best to visit this park 
                     in any season except summer, when temperatures are lower (i.e., not deadly hot). Winter and spring are the ideal seasons to visit, with
                     spring being the most popular. You'll see less crowds in winter but will encounter colder weather, and persistent snow at high elevations.`}
@@ -63,7 +63,7 @@ export default function Post() {
                     {`Towards the end of the main wash, the trail becomes rougher, eventually ending at a large rockfall. If you're into canyoneering, you could climb further,
                     but we opted to turn around. On the way back we found our favorite fork of the hike, a tight walkway that passes through several doorways of sedimentary rock,
                     interspersed with domed rooms. I recommend bringing a GPS loaded with topo-trail maps to help navigate the canyons. GPS helped out a lot on this hike,
-                    leting us estimate the length of each side canyon, and stay on the main wash when there were multiple forks. That said, we `}<b>never</b>{` felt like we were getting lost,
+                    letting us estimate the length of each side canyon, and stay on the main wash when there were multiple forks. That said, we `}<b>never</b>{` felt like we were getting lost,
                     because it's a short and simple return hike to the parking lot.`}
                     <br/>
                     {`It can be a little dark in some of the deeper slot canyons. If you're hiking later in the afternoon, consider brining a headlamp. We didn't have much issue with lighting
@@ -102,7 +102,7 @@ export default function Post() {
                     <br/><br/>
                     {`When the trail breaks out into a wide wash, you'll find a 1/4 mile side trail to the left that leads up to a viewpoint looking down on Stovepipe Wells. 
                     Past the wide wash, the trail becomes more narrow and the amount of slides/scrambles increases. If you continue up the canyon, you'll eventually 
-                    reach a 30-foot dryfall that marks the end of the trail.`}
+                    reach a 30-foot dry fall that marks the end of the trail.`}
                     <br/><br/>
                     {`This is one of the more popular trails in the area, so you'll run into crowds during peak hours - especially at the trailhead.
                     Most people seem to turn back before the first few scrambles, making it generally quieter towards the end of the trail.`}
@@ -123,7 +123,7 @@ export default function Post() {
                     {`Just a few minutes drive from Stovepipe Wells, `}<Link href={mesquiteDunes}>Mesquite Flat Sand Dunes</Link>
                     {` is an astounding area of rolling golden sand dunes, best experienced
                     at sunrise or sunset, when the light illuminates the sand. When we visited Mesquite Dunes, we were camping at Stovepipe Wells
-                    and decided to walk directly there from our campsite after dinner (prime rib on a campstove, because it was New Years Eve!). 
+                    and decided to walk directly there from our campsite after dinner (prime rib on a camp stove, because it was New Years Eve!). 
                     If you walk from the campground, it's about 2 miles round trip - but most people drive, and there's a parking lot right by the dunes
                     that's shortly off the highway.`}
                     <br/><br/>
@@ -138,7 +138,7 @@ export default function Post() {
                         />
                     </div>
                     <br/><br/>
-                    {`The entire Mequite Dunes area is decently large, and it's fun to wander about - being surrounded by the towering dunes is an otherwordly experience.`}
+                    {`The entire Mesquite Dunes area is decently large, and it's fun to wander about - being surrounded by the towering dunes is an otherworldly experience.`}
                     <br/>
                     {`The majority of visitors here stick near the parking lot, so if you hike past the first ridge or loop around to the rear of the dunes you're likely to 
                     be alone. Walking from Stovepipe Wells, we came up to the dunes from the back and didn't see anyone else until we got near to the parking lot (there were 
@@ -159,7 +159,7 @@ export default function Post() {
                 <h1 className={utilStyles.justifyCenter} id='badwater-basin'>Badwater Basin</h1>
                 <br/>
                 <div>
-                    {`Badwater Basin is a popular pullout between Sidewinder Canyon and Furance Creek, strongly consider stopping if you have time.
+                    {`Badwater Basin is a popular pullout between Sidewinder Canyon and Furnace Creek, strongly consider stopping if you have time.
                     Badwater Basin is one of the more crowded spots in the park, but you get a good view of the salt flats. Once you're fully out
                     on the flats, there's plenty of space to spread out and look around (there's only salt to see here).`}
                     <br/><br/>

@@ -7,8 +7,12 @@ export default function FeaturedPost({ post, txt }) {
         <div className={utilStyles.centered}>
         <div className={utilStyles.flexGapContainer} style={{'maxWidth': '600px'}}>
           <div>
-            {`Welcome to Trails and Trekking! You'll find pages about hiking, camping, and the outdoors here. While you're here, check out our
-            featured post, `}<Link href={`/blog${post.id}`}>{post.title}</Link>{`.`}
+            {`Do you like exploring the outdoors? Join us as we share recent hiking trips, camping suggestions, 
+            and backcountry guides.`}
+            <br/><br/>
+            {`For ideas on planning your next trip, check out our most recent post, `}
+            <Link href={`/blog${post.id}`}>{post.title}</Link>
+            {`.`}
             <br/>
             {txt}
           </div>

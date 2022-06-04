@@ -18,7 +18,7 @@ function getSiteMap() {
             const filePath = path.join(currentDir, fileName)
             if (fs.statSync(filePath).isDirectory()) {                
                 recurseMetadata(filePath, relDir + '/' + fileName)
-            } else if (fileName.endsWith('.js') && !fileName.startsWith('_')) {
+            } else if (fileName.endsWith('.js') && !fileName.startsWith('_') && !fileName.startsWith('[')) {
                 const id = relDir + '/' + fileName.replace(/\.js$/, '')
                 const mtime = fs.statSync(filePath).mtime
                 metadata = metadata + `

@@ -50,7 +50,7 @@ export default function Post() {
                     is an exceptionally well graded gravel road that traverses the wilderness, passing the summit trail and many other recreation points.`}
                     <br/><br/>
                     {`The road is closed seasonally, but usually opens by June or July. If you're unsure of its status, check with the Burns BLM office for conditions.
-                    There are serveral campgrounds along the Byway, all of which use a walkup reservation system. I've never had trouble finding a campsite here, 
+                    There are several campgrounds along the Byway, all of which use a walkup reservation system. I've never had trouble finding a campsite here, 
                     even on a busy holiday weekend. Traffic in general is pretty light, though you will see other people.`}
                 </div>
                 <Image

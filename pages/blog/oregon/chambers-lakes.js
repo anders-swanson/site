@@ -45,7 +45,7 @@ export default function Post() {
                 />
                 <div className={utilStyles.textBlock}>
                     {`It'll take you about 8 miles to reach Camp Lake - along the way you'll get panoramic views of the Three Sisters.
-                    Smoke from summer wildfires (unfortunately a common occurence in recent years) created a fine haze the day
+                    Smoke from summer wildfires (unfortunately a common occurrence in recent years) created a fine haze the day
                     I was hiking, and gave the mountains an ethereal look.`}
                     <br/><br/>
                     {`Camp Lake has (surprise, surprise!) a few campsites to pick from. These are all unimproved, backcountry campsites. If you do

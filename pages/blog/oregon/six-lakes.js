@@ -43,7 +43,7 @@ export default function Post() {
                     <br/><br/>
                     {`Overall, it was difficult to enjoy this trip due to one overriding factor: This place is infested with the worst
                     mosquitos I have encountered, anywhere, anytime. We're talking thick clouds of mosquitos that follow you day and night,
-                    requiring regular dousings of DEET to prevent being completely devoured. Thankfully, the mosquitos didn't come 
+                    requiring regular application of DEET to prevent being completely devoured. Thankfully, the mosquitos didn't come 
                     near the our campsite at Mink lake, but there were omnipresent at all other locations of the trail.`}
                 </div>
                 <Image

@@ -98,7 +98,7 @@ export default function Post() {
                 <h1 className={utilStyles.justifyCenter} id='wildhorse-lake'>Wildhorse Lake</h1>
                 <br/>
                 <div>
-                    {`Wildhorse lake is nestled in a glacial cirque below the summit of Steens Moutain. Short (3 miles), steep, and extremely rewarding, this is the trail I would recommend
+                    {`Wildhorse lake is nestled in a glacial cirque below the summit of Steens Mountain. Short (3 miles), steep, and extremely rewarding, this is the trail I would recommend
                     if you are only have time for a single hike around Steens Mountain - The views here are unparalleled in the entire wilderness.`}
                     <br/><br/>
                     {`If you are thinking of hiking this trail, take note that the upper section is dangerously steep and not recommended for small children or those
@@ -128,7 +128,7 @@ export default function Post() {
                     {`Consider backpacking this trail, or make it an epic day trip if you have the stamina for 20+ miles.`}
                     <br/><br/>
                     {`Adventurous hikers can combine the Little Blitzen and Big Indian Gorge trails in a 25 mile loop that requires no small amount of scrambling and route finding.
-                    Only attempt this route if you are an experienced hiker who is comfortable in on difficult terrain.`}
+                    Only attempt this route if you are an experienced hiker who is comfortable on difficult terrain.`}
                     <br/>
                     {`Hiking the Little Blitzen is covered greater depth in one of my previous posts, so `}
                     <Link href='/blog/oregon/little-blitzen'>Click Here</Link>
@@ -149,7 +149,7 @@ export default function Post() {
                 <div>
                     {`East of Steens Mountain is the Alvord Desert, a playa-type desert that features hot springs and vastly different terrain. Visiting the playa is
                     an amazing experience - driving your car on the seemingly endless expanse of flat white sand feels like you're on another planet.
-                    You can camp near the playa for free, or at the Alvord Hot springs for a free (The Alvord Hot springs is a privately owned hot springs,
+                    You can camp near the playa for free, or at the Alvord Hot springs for a fee (The Alvord Hot springs is a privately owned hot springs,
                     and requires a fee to camp or use the springs). The gate to the playa at Alvord Hot Springs requires a code from the hot springs owners,
                     but you can drive further south to find public access roads. Do not drive on the playa if it has rained recently, or if you see any standing water:
                     you do not want to get your vehicle stuck in playa mud.`}
@@ -169,9 +169,9 @@ export default function Post() {
                         />
                     </div>
                     <br/><br/>
-                    {`Just north of Alvord Hot Springs is the Pike Creek trail. The Pike Creek trail cilmbs up a ravine towards Steens Mountain, and shows the changing 
+                    {`Just north of Alvord Hot Springs is the Pike Creek trail. The Pike Creek trail climbs up a ravine towards Steens Mountain, and shows the changing 
                     landscape from the Alvord Desert to the high country of the Steens. You can hike as short or as long as you like on this trail, which has excellent
-                    wilderflowers in the spring/early summer.`}
+                    wildflowers in the spring/early summer.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Image

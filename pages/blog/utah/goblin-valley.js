@@ -51,7 +51,7 @@ export default function Post() {
                 />
                 <div className={utilStyles.textBlock}>                
                     If you are thinking about making the trip to Goblin Valley - do it. This place is seriously amazing and has some of
-                    the most unqiue and accessible sandstone formations around.
+                    the most unique and accessible sandstone formations around.
                     <br/><br/>
                     {`Camping at the state park is available for a fee, but you can drive a bit further down the road away from the
                     highway to dispersed camp sites (there's a few areas with dispersed sites along the road). These dispersed campgrounds are

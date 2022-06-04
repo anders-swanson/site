@@ -28,7 +28,7 @@ export default function Post() {
         >
             <div className={utilStyles.flexGapContainer}>
                 <div>
-                    {`Comprised of Jefferson, Crook, and Deschutes counties, Central Oregon is home to snow capped mountains, alpine lakes, pristine rivers, and sprawing sagebrush
+                    {`Comprised of Jefferson, Crook, and Deschutes counties, Central Oregon is home to snow capped mountains, alpine lakes, pristine rivers, and sprawling sagebrush
                     desert. Considered by many to be Oregon's premier destination for outdoor recreation, there are almost endless opportunities for hiking,
                     backpacking, and more. The most popular time to visit is July through September - spring, fall, and winter are also beautiful, but the weather is more variable,
                     and can be bitterly cold. Because of Central Oregon's long, cold winters, heavy mountain snowpack does not melt out until 

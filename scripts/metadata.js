@@ -1,6 +1,5 @@
 const fs = require('fs')
 const path = require('path')
-const { stringify } = require('querystring')
 const metadataFlag = '//+metadata'
 
 // Get a sorted list of metadata from all pages in the blogDirectory

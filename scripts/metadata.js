@@ -79,6 +79,9 @@ function getMetdata(file, id) {
 function loadPreview(data) {
     const previewStart = data.indexOf('{`')
     const previewEnd = data.indexOf('`}')
+    if (previewStart < 0 || previewEnd < 0) {
+        return ""
+    }
     // return preview with whitespace filtered
     return data.substring(previewStart+2, previewEnd)
         .split(/(\s+)/)

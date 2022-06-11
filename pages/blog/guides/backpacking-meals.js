@@ -27,8 +27,8 @@ export default function Post() {
         >
             <div className={utilStyles.flexGapContainer}>
                 <div>
-                    {`Packing legitimately tasty food on a backpacking trip is a challenge - you'll often be choosing between prepacked/dry food, or other even
-                    more unappetizing options like freeze-dried dinners. With a little inspiration, you can whip up a decent meal on the trail, using simple and 
+                    {`Packing legitimately tasty food on a backpacking trip is a challenge - you'll often be choosing between prepacked/dry food, or expensive fare
+                    like freeze-dried dinners. With a little inspiration, you can whip up a decent meal on the trail, using simple, cost-effective, and 
                     lightweight ingredients. Check below for some of my favorite meals to make while backpacking!`}
                 </div>
 

@@ -35,9 +35,9 @@ export default function Post() {
                 <h1 className={utilStyles.justifyCenter} id='oatmeal'>Oatmeal</h1>
                 <br/>
                 <div>
-                    {`Oatmeal is the centerpiece of every breakfast (Yes, I mean `}<i>every</i>{` breakfast), and can be prepared. Don't even think about 
-                    bringing prepackaged oatmeal - Those little packets are barely 160 calories. Homemade oatmeal packets are filling, nutritious, and if prepared
-                    correctly, pretty damn tasty.`}
+                    {`Oatmeal is the centerpiece of every breakfast (Yes, I mean `}<i>every</i>{` breakfast), and can be prepared easily in many ways.
+                    Don't even think about bringing prepackaged oatmeal - Those little packets are barely 160 calories. Homemade oatmeal packets are filling, 
+                    nutritious, and if prepared correctly, pretty damn tasty.`}
                     <br/>
                     {`Our simple recipe is as follows (portion for one person)`}
                     <ul>

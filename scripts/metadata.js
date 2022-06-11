@@ -72,7 +72,18 @@ function getMetdata(file, id) {
     let metadata = JSON.parse(metadataStr)
     metadata["id"] = id
     metadata["tags"] = metadata["tags"].sort()
+    metadata["preview"] = loadPreview(data)
     return metadata
+}
+
+function loadPreview(data) {
+    const previewStart = data.indexOf('{`')
+    const previewEnd = data.indexOf('`}')
+    // return preview with whitespace filtered
+    return data.substring(previewStart+2, previewEnd)
+        .split(/(\s+)/)
+        .filter( e => e.trim().length > 0)
+        .join(' ')
 }
 
 module.exports.getTags = function (metadata) {

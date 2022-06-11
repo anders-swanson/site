@@ -31,7 +31,7 @@ export default function Post() {
             headerImage={metadata.image}
             headerText={metadata.title}
             subText={subText}
-            description={`Long creek hike for beautiful waterfalls, flowing hard with seasonal rain.`}
+            description={`Chance upon rushing waterfalls as they swell with seasonal rain on this Washington hiking trail.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexWrapContainer}>                

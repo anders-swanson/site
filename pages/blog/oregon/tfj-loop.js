@@ -23,7 +23,7 @@ export default function Post() {
             headerImage={image('cover.jpg')}
             headerText={metadata.title}
             subText={subText}
-            description={`One night loop around Three Fingered Jack, featuring intense milage and overpowering heat.`}
+            description={`Share our pain on this grueling 35+ mile backpacking loop that we hiked in the intense heat of summer.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

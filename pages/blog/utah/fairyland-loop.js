@@ -32,8 +32,8 @@ export default function Post() {
         <Layout
             headerImage={cover}
             headerText={metadata.title}
-            subText={subText} headerColor={`black`}
-            description={`Popular Bryce Canyon hike, beautifully blanketed in snow. Crowds were thinned out due to the freezing temperatures.`}
+            subText={subText} headerColor='black'
+            description={`Read about this popular Bryce Canyon hike, beautifully blanketed in fresh snow.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

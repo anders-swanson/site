@@ -24,7 +24,7 @@ export default function Post() {
     return (
         <Layout
             headerText={metadata.title}
-            description={`Where to find beautiful wildflowers in the Columbia River Gorge.`}
+            description={`Explore our suggestions on where to find beautiful wildflowers in the Columbia River Gorge.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

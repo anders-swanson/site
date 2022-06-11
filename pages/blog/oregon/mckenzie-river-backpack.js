@@ -27,7 +27,7 @@ export default function Post() {
             headerImage={cover}
             headerText={metadata.title}
             subText={subText}
-            description={`Backpacking the upper McKenzie River in Oregon's central Cascades.`}
+            description={`Learn about backpacking the upper McKenzie River in Oregon's central Cascades.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

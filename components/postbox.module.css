@@ -34,15 +34,15 @@
 }
 
 .post {
-    min-width: 230px;
-    max-width: 230px;
-    min-height: 330px;
-    max-height: 330px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 450px;
+    max-height: 450px;
 }
 
 .postLink {
     color: black;
-    font-size: small;
+    font-size: 16px;
 }
 
 .tag {
@@ -61,4 +61,8 @@
 .tag a:hover {
     padding-right: 7px;
     color: #272727;
+}
+
+.description {
+    font-size: 16px;
 }

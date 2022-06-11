@@ -8,7 +8,7 @@ import RelatedPosts from '../../../components/related_posts'
 let metadata = { 
     "title": "Glacier via Chief Mountain",
     "date": "2021-08-28",
-    "image": "https://lh3.googleusercontent.com/pw/AM-JKLWApIcPOrd5ioi3DJX5ahuj-1RqjTPm9pYZ_4K0u8pwfDrNHe_Cr31ff8tiQx9-gSeDECijH834LfP5jQ-4Q9VdffUZremTuJiAZxm9zgsOceG8IUk1f53qDWjTivqzqqbDnWm7aWAVLUJb-pSDz_6Z=s1075-no?authuser=1",
+    "image": "https://lh3.googleusercontent.com/pw/AM-JKLXnYR1cX0xGgKfP6e2_HTlPhC3S5_DH-g1Nv1pct0zLY92HcN7m3sLFjNzW5q1t2pPyy87ud7EDAAAsoI-DnsNpgExJjEwrIGbVxHopWyIYlyd2fU9IS_W_H83VUSZkKSCDS3zndaFrmeZGEMuiwbAZSw=w798-h799-no?authuser=1",
     "tags": ["backpacking", "lakes"]
 }
 
@@ -33,7 +33,7 @@ export default function Post() {
             headerImage={cover}
             headerText={metadata.title}
             subText={subText}
-            description={`Three night, sixty mile backpacking trip in Glacer National Park.`}
+            description={`Join us as we share our three night, sixty mile backpacking trip in Glacer National Park.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

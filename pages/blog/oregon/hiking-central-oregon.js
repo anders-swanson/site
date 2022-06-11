@@ -10,7 +10,7 @@ let metadata = {
     "title": "Hiking Central Oregon",
     "date": "2022-05-20",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLUW7_4LIZ7fByn7o4y1428ZKsnsjsactTjOkLQE_m8Jihr_5BNKNkubk47XUEd6bcVc4ip1AKbA18Jkjt_SZkGqaS-rRY7-RivJDBffauokzT0ws2uF3fhbt1zxrA4Fc5srNr1-zeniKtF3W9DO5kLZ=s800-no?authuser=0",
-    "tags": ["hking", "central oregon", "waterall"]
+    "tags": ["hiking", "central oregon", "waterfall"]
 }
 
 const skeneOgden = 'https://www.google.com/maps/place/McKay+Crossing+Campground/@43.7144315,-121.3789647,15.62z/data=!4m5!3m4!1s0x54b884ad1eb489ab:0xd55879446a68c383!8m2!3d43.7157!4d-121.3773999'
@@ -23,7 +23,7 @@ export default function Post() {
         <Layout 
             headerImage={cover}
             headerText={metadata.title}
-            description={`Trip planning ideas for hiking Central Oregon.`}
+            description={`Read about our favorite and most beautiful hikes in Central Oregon as inspiration for your next trip!`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

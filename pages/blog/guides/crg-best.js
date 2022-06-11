@@ -34,7 +34,7 @@ export default function Post() {
         <Layout
             headerImage={cover}
             headerText={metadata.title}
-            description={`Classic and beautiful hikes in Oregon's Columbia River Gorge.`}
+            description={`Uncover three classic hikes in Oregon's scenic and beautiful Columbia River Gorge.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

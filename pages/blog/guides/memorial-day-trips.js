@@ -6,7 +6,7 @@ import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
-    "title": "May Backpacking in Oregon",
+    "title": "Spring Backpacking in Oregon",
     "date": "2022-05-02",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLUylk_UAqZ4M-vLAFvIJHqRTilndXouWRBpsznAtoS5WQrZ22ggfsj_rECSj-ClI43nKEormgAZ5OxVtlMu_ub_HK37C0sbjmdvZZWz0EC61wjbU56TUafrUoJpDDx0sTsQG_RSgnodWraTDErSgeOZ=w796-h798-no?authuser=0",
     "tags": ["backpacking", "guide"]
@@ -22,7 +22,7 @@ export default function Post() {
         <Layout 
             headerImage={cover}
             headerText={metadata.title}
-            description={`Backpacking Oregon in May.`}
+            description={`Kick off the spring season in style with our suggestions for early-season backpacking that avoids the snow!`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

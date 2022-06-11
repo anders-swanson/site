@@ -32,12 +32,15 @@ export default function Post({ item, imgSizing }) {
             ))}  
             </div>                    
             <Link href={`/blog${item.id}`} className={styles.postLink}>
-            <a>{item.title}</a>
+                <a style={{'fontSize': '18px'}}>{item.title}</a>
             </Link>              
-            <br/>              
-            <small className={utilStyles.lightText}>
-            <Date dateString={item.date} />
-            </small>
+            <br/>
+            <div className={styles.description}>
+                {item.preview}
+            </div>         
+            <div style={{'fontSize': '16px'}} className={utilStyles.lightText}>
+                <Date dateString={item.date} />
+            </div>
         </div>
     )
 }

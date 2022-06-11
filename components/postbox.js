@@ -5,8 +5,8 @@ import { Matches } from '../lib/search'
 import { useState } from 'react'
 import Post from './post'
 
-const imgSizing = 200
-const itemsPerPage = 8
+const imgSizing = 280
+const itemsPerPage = 4
 const selectedStyles = {'fontWeight': 'bold', 'textDecoration': 'underline', 'color': 'black'}
 
 export default function PostBox({ posts, search, heading, postBoxClass }) {

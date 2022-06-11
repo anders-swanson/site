@@ -30,7 +30,7 @@ export default function Post() {
             headerImage={cover}
             headerText={metadata.title}
             subText={subText}
-            description={`Unique rock formations in a valley that feels like another planet.`}
+            description={`Exploring the unique rock formations in Goblin Valley makes you feel like you're on another planet.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>
@@ -83,7 +83,7 @@ export default function Post() {
             
             <hr/>
             <div className={utilStyles.flexWrapContainer}>
-                    A goblin in its lair. Hanging from goblin noses not recommended.
+                A goblin in its lair. Hanging from goblin noses not recommended.
             </div>
             <div className={utilStyles.flexWrapContainer}>
                     <Image

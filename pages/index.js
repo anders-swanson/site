@@ -9,7 +9,7 @@ export default function Home({ posts, featuredPost }) {
       headerImage="/images/cover.jpeg"
       allPostsData={posts}
       postsHeading="Recent Posts"
-      description={`Welcome to Trails and Trekking! You'll find pages about hiking, camping, and the outdoors here.`}
+      description={`Do you like exploring the outdoors? Join us as we share recent hiking trips, camping suggestions, and backcountry guides.`}
       ogImage="/images/cover.jpeg"
     >
       <FeaturedPost post={featuredPost}/>

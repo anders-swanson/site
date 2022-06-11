@@ -21,8 +21,8 @@ export default function Post() {
         <Layout
             headerImage={image('cover.jpg')}
             headerText={metadata.title}
-            subText={`1 night camping`}
-            description={`Secluded hot spring deep in Southeastern Oregon.`}
+            subText='1 night camping'
+            description={`Learn about a secluded desert hot spring where you can camp and soak for free.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

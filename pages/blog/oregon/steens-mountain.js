@@ -20,7 +20,7 @@ export default function Post() {
         <Layout 
             headerImage={cover}
             headerText={metadata.title}
-            description={`Exploring Steens Mountain in Southeast Oregon.`}
+            description={`Read our guide about southeastern Oregon's high desert wonderland.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

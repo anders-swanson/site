@@ -27,7 +27,7 @@ export default function Post() {
             headerImage={metadata.image}
             headerText={metadata.title}
             subText={subText}
-            description={`Cascading hot spring waterfall camping near Idaho's Salmon River.`}
+            description={`Journey to a cascading hot spring waterfall near Idaho's Salmon River.`}
         >
             <div className={utilStyles.flexWrapContainer}>
                 <div style={{'width': '1400px'}}>

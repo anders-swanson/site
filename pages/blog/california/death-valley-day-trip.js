@@ -23,7 +23,7 @@ export default function Post() {
         <Layout 
             headerImage={cover}
             headerText={metadata.title}
-            description={`A daytrip in Death Valley National Park.`}
+            description={`Planning to visit to Death Valley? Read our suggestions for a day trip in the hottest National Park.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

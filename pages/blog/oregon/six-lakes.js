@@ -30,7 +30,7 @@ export default function Post() {
             headerImage={cover}
             headerText={metadata.title}
             subText={subText}
-            description={`Backpacking loop in the Three Sisters Wilderness. Way more than six lakes can be found!`}
+            description={`Dozens of gorgeous lakes are waiting to be found on this backpacking loop - but be wary of mosquitos`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

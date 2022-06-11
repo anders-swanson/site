@@ -24,7 +24,7 @@ export default function Post() {
             headerImage={image('cover.jpg')}
             headerText={metadata.title}
             subText={subText}
-            description={`Basin lakes in the Three Sisters high country.`}
+            description={`Read about a gorgeous alpine lake basin - and my favorite hike in the Three Sisters Wilderness.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

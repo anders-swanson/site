@@ -22,7 +22,7 @@ export default function Post() {
         <Layout 
             headerImage={cover}
             headerText={metadata.title}
-            description={`Meal inspiration for your next backpacking trip!`}
+            description={`Backpacking meals don't have to be bland or leave you hungry - We've combined our favorite trail meals in this post!`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

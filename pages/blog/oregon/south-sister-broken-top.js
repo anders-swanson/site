@@ -29,7 +29,7 @@ export default function Post() {
         <Layout
             headerImage={cover}
             headerText={metadata.title}
-            description={`How to summit two popular peaks in the Three Sisters Wilderness.`}
+            description={`Learn about summitting the two most popular peaks in Central Oregon.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

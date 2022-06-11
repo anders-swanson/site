@@ -27,7 +27,7 @@ export default function Post() {
             headerImage={cover}
             headerText={metadata.title}
             subText={subText}
-            description={`Canyon loop trail in Death Valley National Park.`}
+            description={`Explore dramatic yellow-gold canyons under the scorching sun of Death Valley.`}
             ogImage={metadata.image}
         >
 

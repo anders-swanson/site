@@ -28,7 +28,7 @@ export default function Post() {
             headerImage={cover}
             headerText={metadata.title}
             subText={subText}
-            description={`Steep, snowy climb to the Columbia River Gorge's highest point.`}
+            description={`A steep, snowy climb to the Columbia River Gorge's highest point.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>

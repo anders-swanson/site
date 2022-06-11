@@ -66,3 +66,11 @@
 .description {
     font-size: 16px;
 }
+
+.description a:hover {
+    color: #000;
+}
+
+.description a:visited {
+    color: #000
+}

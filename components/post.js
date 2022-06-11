@@ -6,9 +6,11 @@ import Image from 'next/image'
 import { CapitalizeWords } from '../lib/common'
 
 export default function Post({ item, imgSizing }) {
+    const blogLink = `/blog${item.id}`
+
     return (
         <div className={styles.post}>
-            <Link href={`/blog${item.id}`}>
+            <Link href={blogLink}>
             <a>
                 <Image
                 alt={item.id}       
@@ -31,12 +33,12 @@ export default function Post({ item, imgSizing }) {
                 
             ))}  
             </div>                    
-            <Link href={`/blog${item.id}`} className={styles.postLink}>
+            <Link href={blogLink} className={styles.postLink}>
                 <a style={{'fontSize': '18px'}}>{item.title}</a>
             </Link>              
             <br/>
             <div className={styles.description}>
-                {item.preview}
+                <Link style={{'color': 'black'}} href={blogLink}>{item.preview}</Link>
             </div>         
             <div style={{'fontSize': '16px'}} className={utilStyles.lightText}>
                 <Date dateString={item.date} />

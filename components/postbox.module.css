@@ -22,14 +22,14 @@
 }
 
 .pageNums button:hover {
-    color: black;
+    color: #000;
     text-decoration: underline;
     cursor: pointer;
 }
 
 .highlighted {
     text-decoration: underline;
-    color: black;
+    color: #000;
     font-weight: bold;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .postLink {
-    color: black;
+    color: #000;
     font-size: 16px;
 }
 
@@ -50,12 +50,12 @@
     background: none;
     font-size: small;
     padding: 0%;
-    color: #272727;
+    color: #000;
 }
 
 .tag a {
     padding-right: 7px;
-    color: #272727;
+    color: #000;
 }
 
 .tag a:hover {
@@ -65,6 +65,10 @@
 
 .description {
     font-size: 16px;
+}
+
+.description a {
+    color: #000;
 }
 
 .description a:hover {

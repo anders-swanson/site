@@ -87,7 +87,7 @@ export default function Post() {
                     {`The McKenzie Highway is a narrow, seasonally open road and is not recommend for large vehicles or those with trailers (there's a turnaround point outside Sisters).
                     Note that the road is typically closed to motorized traffic from November through July, though this changes year to year depending on snowfall.`}
                     <br/>
-                    {`An gorgeous bike trip can be had by visiting the McKenzie highway just before it opens for motorized traffic. On the Sisters side (north),
+                    {`A gorgeous bike trip can be had by visiting the McKenzie highway just before it opens for motorized traffic. On the Sisters side (north),
                     drive your car to the highway gate, and then bike from the gate McKenzie Pass summit. For best results, try to time your trip after snow has
                     melted out but before the highway is opened to cars. I wouldn't recommend biking this once the road is open because of how narrow it is
                     (there's almost no shoulder).`}

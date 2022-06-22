@@ -21,7 +21,8 @@
 .fixedText {
   position: fixed;
   top: 50px;
-  left: 36px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .fixedText h1 {

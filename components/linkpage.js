@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import FeaturedPost from '../components/featuredpost'
 import Layout from '../components/layout'
 import LinkButton from '../components/linkbutton'
@@ -21,18 +22,23 @@ export default function Links({ title }) {
                     title='Shop my LTK'
                     body='Like my outfits? They’re linked here!'
                     src='https://www.shopltk.com/explore/laurengastineau'
+                    animation={utilStyles.bounceAnimation}
+                />
+                <LinkButton
+                    title='Rumpl'
+                    body='Your perfect camp blanket'
+                    src='https://bit.ly/3O3pXLO'
+                    animation={utilStyles.shakeAnimation}
                 />
                 <LinkButton
                     title='REI Hipbelt Pocket'
                     body='My Favorite Backpack Attatchment'
                     src='https://bit.ly/3KkMTnp'
-                    animation={utilStyles.bounceAnimation}
                 />
                 <LinkButton
                     title='My Amazon Favorites'
                     body='Items I Know & Love!'
                     src='https://www.amazon.com/shop/laurensbigadventure'
-                    animation={utilStyles.shakeAnimation}
                 />
                 <LinkButton
                     title='Senita'

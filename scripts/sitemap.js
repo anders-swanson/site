@@ -12,11 +12,9 @@ module.exports.txt = function (pagesDirectory, domain) {
                 recurseMetadata(filePath, relDir + '/' + fileName)
             } else if (fileName.endsWith('.js') && !fileName.startsWith('_') && !fileName.startsWith('[')) {
                 const id = relDir + '/' + fileName.replace(/\.js$/, '')
-                const mtime = fs.statSync(filePath).mtime
                 metadata = metadata + `
   <url>
     <loc>${domain}${id}</loc>
-    <lastmod>${mtime.getFullYear()}-${mtime.getMonth()}-${mtime.getDate()}</lastmod>
   </url>`
             } else {
                 return

@@ -20,7 +20,7 @@
 
 .fixedText {
   position: fixed;
-  top: 50px;
+  top: 200px;
   left: 50%;
   transform: translateX(-50%);
 }

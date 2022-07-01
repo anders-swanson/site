@@ -1,8 +1,9 @@
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import Image from 'next/image'
 import Link from 'next/link'
 import RelatedPosts from '../../../components/related_posts'
+import Pinnable from '../../../components/pinit'
+
 //+metadata
 let metadata = {
     "title": "Navajo Knobs at Capitol Reef",
@@ -14,6 +15,7 @@ let metadata = {
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLVDKuDPIETlDsSAE-xWmA0a_FOPgFGJ3wKqFJf1XcJCF0q96OY1rhEB9WQNW8M2uvuFKIBayUko4ipPiiN_Jo4RZjnZcO1gLpxxImjDVZeNE2eVol6l8Oa5IZ3COps3hrF2IXghT7rWg3URYBB92REr=w800-h600-no?authuser=0'
 const hickmanTH = 'https://www.google.com/maps/place/Hickman+Bridge,+Rim+Overlook+and+Navajo+Knobs+Trail+Head/@38.2897142,-111.2310988,16.83z/data=!4m5!3m4!1s0x874a1904f7209117:0x2c6384b908780ba!8m2!3d38.2887635!4d-111.227639'
 const cohabCanyonTH = 'https://www.google.com/maps/place/Cohab+Canyon+Trailhead/@38.2827507,-111.2467847,17.71z/data=!4m5!3m4!1s0x874a19af84cbc6e9:0x5f99a228620aa33e!8m2!3d38.282643!4d-111.2462364'
+const pageURI = '/blog/utah/navajo-knobs'
 
 export default function Post() {
     return (
@@ -33,8 +35,9 @@ export default function Post() {
                 </div>
 
                 <div className={utilStyles.centered}>
-                        <Image
-                            alt='cr 1'
+                        <Pinnable
+                            page={pageURI}
+                            alt="Domes of Navajo Sandstone in Utah's Capitol Reef National Park."
                             src='https://lh3.googleusercontent.com/pw/AM-JKLVaXE4CbKQcFYhOdKsTt_9HMXqDnPSvwS-LXZSyaw8IWZyr99rj1zrtV2xUw2VPdI_w0UICGndUFFq2p004WkUE0fBN8vZdjC3sv91PGuforUdXlI8MviDqpExBMYQCsWg9ZXpnidOirMSxhr05tIkw=w800-h600-no?authuser=0'
                             width={800}
                             height={600}
@@ -59,8 +62,9 @@ export default function Post() {
                     road from the Hickman Bridge Trailhead. Cross the road and continue on the Hickman Bridge Trail.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
-                        <Image
-                            alt='cr 2'
+                        <Pinnable
+                            page={pageURI}
+                            alt='Looking down on Fruita from the Waterpocket Fold, Capitol Reef National Park.'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLWKfI1f9rInyOQIuPhI8kIRZLDekYpw2-uYgmRPMcHc8CELhyJTANfmt2225DC5n5wfza8-crABpmn98v9SL5xdOJQ5lTeb2F7HEkuzZQqCbvReiZpSj4UXAw8kLF6996-udX9PzOudvoyF_r_4n-9J=w800-h600-no?authuser=0'
                             width={800}
                             height={600}
@@ -78,8 +82,9 @@ export default function Post() {
                     is not otherwise visible.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
-                        <Image
-                            alt='cr 3'
+                        <Pinnable
+                            page={pageURI}
+                            alt='Hiking the Waterpocket Fold in Capitol Reef National Park, Utah.'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLVDMQIBepkS15RgEpj4fFtmSnkugxtHl9bGEDK98gGzkRyNEzsL3ZF4-RxNvLsegBKmRZmZqLgeNw2RSQ1d23T-NUCRS1_2leDrlmkpr3emmNLas0h3auSuy0jatYUffmw7PGVonh_F6YVi5kFP0JwY=w800-h600-no?authuser=0'
                             width={800}
                             height={600}
@@ -93,8 +98,9 @@ export default function Post() {
                     great lunch spot before your trek back. `}
                     <br/><br/>
                     <div className={utilStyles.centered}>
-                        <Image
-                            alt='cr 4'
+                        <Pinnable
+                            page={pageURI}
+                            alt='Navajo Sandstone on the Waterpocket Fold in Capitol Reef National Park, Utah.'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLUKHWyJP9nZy6dmhF6lapqBZHnxcFA7S_zW31aoL_j7J7iXopjTqB7GgU8tmAmuVoOVO0UsZeNC7MYuLjs5JUjxNtQIEDvzjOpWtoeCzFCn_6jR591ZxOoOfM6YXKatB8zCGVbNDsNglHaQ0T2OJETu=w800-h600-no?authuser=0'
                             width={800}
                             height={600}

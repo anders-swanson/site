@@ -1,9 +1,9 @@
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import Image from 'next/image'
 import Link from 'next/link'
 import RelatedPosts from '../../../components/related_posts'
 import { CentralCascadesWildernessPermit } from '../../../lib/common'
+import Pinnable from '../../../components/pinit'
 
 //+metadata
 let metadata = {
@@ -15,6 +15,7 @@ let metadata = {
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXNMW8TL-8xrGW_qU69jKliEhCxmHAjgPFttbpeF9o5nhHfXVHaEmRDJO61AMwyCkXnDrf9-fxJ4kRffHNGz4G-BGnLKBs5tBrTKE0md8ia2Jq288iVkBrM25q1jBPZwxdFQW0rgwy_iQKNb_nhsaFD=w800-h535-no?authuser=0'
 const trailhead = 'https://www.google.com/maps/place/Obsidian+Trailhead/@44.2051449,-121.8726616,17z/data=!3m1!4b1!4m5!3m4!1s0x54bf5005f3395137:0x64b0073a16160758!8m2!3d44.2051411!4d-121.8704729'
+const pageURI = '/blog/oregon/obsidian-trail'
 
 export default function Post() {
     return (
@@ -41,8 +42,9 @@ export default function Post() {
                 </div>
 
                 <div className={utilStyles.centered}>
-                        <Image
-                            alt='obsidian 1'
+                        <Pinnable
+                            page={pageURI}
+                            alt='North Sister from the Dee Wright Observatory on McKenzie Pass.'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLULR5H8nvIPY3sSZOD5RtPfXV-cY7Kbped41uHQ-iaLQa3aZs3DNIt-jdZVw-Xk4cYfWG6Bt_7Npu0wnhFnpR4vWe6_h7wdumLqZwlVNzWqWkwcrKecjJT5xk5YxjDVyGaHTX0It1FpBjagjYjcoyIe=w800-h535-no?authuser=0'
                             width={800}
                             height={535}
@@ -58,8 +60,9 @@ export default function Post() {
                     take note of the ground at your feet - glassy chunks of obsidian are scattered about, remnants of volcanic activity from millennia past.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
-                        <Image
-                            alt='obsidian 2'
+                        <Pinnable
+                            page={pageURI}
+                            alt='Sister creek winding through a meadow below North Sister.'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLUuBa0vlw6safJD7Aj7z0dH4UuH0EnuFJ3DkbtOQzk3wKlM0cgI-pq1DPxIWtZkSv5QlDM67lOlxyBh1dbL45A_I_dTrMRofxhzic_Nqgg_Ebdqy8y-EFzBw76KPxgpEBEOItkMATBGzQQxtjE8pjko=w450-h600-no?authuser=0'
                             width={450}
                             height={600}
@@ -73,8 +76,9 @@ export default function Post() {
                     Consider leaving your dogs at home for this hike unless you have dog boots or similar paw protection.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
-                        <Image
-                            alt='obsidian 3'
+                        <Pinnable
+                            page={pageURI}
+                            alt='Alpine meadow on the Obsidian Trail, Three Sisters Wilderness.'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLXZt6LxC0PfgSUG8Oi74djgLftdaJUJRr_urQXFFhOTx0RgI6__HZb_Ln5vkA2q6bNTXou4AXoo-78uq3vy88lMEiCeVciQXlXiUDhUTO3A_WLFs6YMS2Idt9uEmZLgYN_acyN9IJUcPvv3OSaZrFoe=w800-h535-no?authuser=0'
                             width={800}
                             height={535}
@@ -92,8 +96,9 @@ export default function Post() {
                     melted out but before the highway is opened to cars. I wouldn't recommend biking this once the road is open because of how narrow it is
                     (there's almost no shoulder).`}
                    <div className={utilStyles.centered}>
-                        <Image
-                            alt='obsidian 4'
+                        <Pinnable
+                            page={pageURI}
+                            alt='Obsidian Trail, Three Sisters Wilderness.'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLXNMW8TL-8xrGW_qU69jKliEhCxmHAjgPFttbpeF9o5nhHfXVHaEmRDJO61AMwyCkXnDrf9-fxJ4kRffHNGz4G-BGnLKBs5tBrTKE0md8ia2Jq288iVkBrM25q1jBPZwxdFQW0rgwy_iQKNb_nhsaFD=w800-h535-no?authuser=0'
                             width={800}
                             height={535}

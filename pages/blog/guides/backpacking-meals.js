@@ -1,9 +1,9 @@
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import Image from 'next/image'
 import Link from 'next/link'
 import Video from "../../../components/video"
 import RelatedPosts from '../../../components/related_posts'
+import Pinnable from '../../../components/pinit'
 
 //+metadata
 let metadata = {
@@ -14,7 +14,7 @@ let metadata = {
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXXcf1K4hJmKGMYeeh4mEo1RunikoWbFKynQaEqZnUXA3bnuerQ2Rba3aTFMdM68SBqSLI0MyLAHyM5-kNFrAgFzLMJlbn-4_Iwws4twiM35I6ImoiYNLV1n-ccMYhnlACnipIVaZaVUF6qOmyE23qk=w1920-h955-no?authuser=1'
-
+const pageURI = '/blog/guides/backpacking-meals'
 const tvp = 'https://www.bobsredmill.com/tvp-textured-veg-protein.html'
 
 export default function Post() {
@@ -63,7 +63,8 @@ export default function Post() {
                 </div>
                 <br/><br/>
                 <div className={utilStyles.centered}>
-                    <Image
+                    <Pinnable
+                        page={pageURI}
                         alt='oats 1'
                         src='https://lh3.googleusercontent.com/pw/AM-JKLWL5hr2Ghx32lGffuZGyc8ZGNBIkQ_kjEU5krh-voXoN_MmRNRUy2U-DUXvAtadpi9CpLxUpfua1BPqAZJ4qLv7pG-k7SRsUrL85iapJz2hs1fUMmZUksaQ5KqbUb48Df9EjT8AgCr9-Khiraj-ZVaw=w450-h600-no?authuser=0'
                         width={450}
@@ -71,7 +72,8 @@ export default function Post() {
                     /> 
                 </div>
                 <div className={utilStyles.centered}>
-                    <Image
+                    <Pinnable
+                        page={pageURI}
                         alt='oats 2'
                         src='https://lh3.googleusercontent.com/pw/AM-JKLX6L6UpIAcWu59G4QjeGgRwSsTSCMLK9VVRxlZsa_HAkVongR2OeJ6Qe-sNRiVyBdNhV8tCW3fbVprGl9gfonppyNQuPnlN9UfCSGT8Lq_OzSWwTWZLd5sKtydYU-GVjRloXWDLYXeeI6mI9fL3E5qC=w450-h600-no?authuser=0'
                         width={450}
@@ -98,7 +100,8 @@ export default function Post() {
                     {`The pasta or couscous can also be swapped out for minute rice or instant mashed potatoes - both are good carbohydrate substitutes.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
-                        <Image
+                        <Pinnable
+                            page={pageURI}
                             alt='pc 1'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLVjdRG6C3PnRGty28IgF4z1-MVEx-SnV8wZMbCvTRZYty2JF8UxA4YxnUGmIK7W6HAO4F1lBe7w-G-ab22JYJ-_-Q58ld-AW0owzOlvNs5OWcE0rQyRAK5LK_Nhzz4tGN8RsSOIgk51kk8CWud7CHgb=w450-h600-no?authuser=0'
                             width={450}
@@ -121,7 +124,8 @@ export default function Post() {
                     but they make a great lunch on the first day of your trip.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
-                        <Image
+                        <Pinnable
+                            page={pageURI}
                             alt='bagel 1'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLVqB0TJ9iQ4RuZpN9lOIhTTfG0XSJimyIeJK8MGmwNCWDA54GMX_CRk1ILCZWNUOKlkCdCW2XQYxW9wDn4l1tqKW-zIBs1hRyHnUmh8lCU84GEfA0vwIjKrox6ZHPIbLF2vXZn0KFemk6AcXJqNWKR9=w450-h600-no?authuser=0'
                             width={450}
@@ -143,7 +147,8 @@ export default function Post() {
                     You can portion the rice ahead time into individual ziplock bags, or pack a bigger bag ahead of time for longer trips.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
-                        <Image
+                        <Pinnable
+                            page={pageURI}
                             alt='curry 1'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLVBBORDEPtBsdwamsOgzq_udxqHY6p2sTNY1KqEE7GuHWX7tl8j56yMELUzJ85Oi7q-1dZi1FItJDxvOdZH7RsExwjhROtgDRn_UMSwxKx1XlgQZC1z0_QZJ0EZfDaZQzraHW3CKyEy5RpappLBKurZ=w450-h600-no?authuser=0'
                             width={450}
@@ -153,7 +158,8 @@ export default function Post() {
                     <br/><br/>
                     {`Look how happy I am to be eating trail curry - you can't even see the suffering from a 90+ degree day and dozens of mosquito bites.`}
                     <div className={utilStyles.centered}>
-                        <Image
+                        <Pinnable
+                            page={pageURI}
                             alt='curry 2'
                             src='https://lh3.googleusercontent.com/pw/AM-JKLXn3awARUCE01NlHbZl2YzvfnjzqkKUlqV7SY1K5jhHbMf8AUNG5XA1xXRsz923taELhOdvlP5dqjm8xPSV0g2IQnDtkWcWS34pp8TybAaCZ27RrPXyvJjS60Qt002MRPXN6z-7I9jydVNm8irmYmtd=w800-h535-no?authuser=0'
                             width={800}

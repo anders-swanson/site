@@ -18,7 +18,7 @@ export default function Links({ title }) {
             </div>
             <br/><br/>
             <div className={`${utilStyles.centeredRow}`} style={{'maxWidth': '800px'}}>
-                <LinkButton 
+                <LinkButton
                     title='Shop my LTK'
                     body='Like my outfits? They’re linked here!'
                     src='https://www.shopltk.com/explore/laurengastineau'
@@ -44,11 +44,6 @@ export default function Links({ title }) {
                     title='Senita'
                     body='Save with discount code "LAURENG"'
                     src='https://glnk.io/r4vq/laurensbigadventure'
-                />
-                <LinkButton
-                    title='VERB Energy Bars'
-                    body='This link saves ✨40%✨ the Starter Pack!!'
-                    src='https://bit.ly/354avy0'
                 />
                 <LinkButton
                     title='Kamo Fitness'

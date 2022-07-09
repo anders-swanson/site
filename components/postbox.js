@@ -32,6 +32,7 @@ export default function PostBox({ posts, search, heading, postBoxClass }) {
             />
           ))}
         </div>
+        <br/><br/>
         <div className={styles.pageNums}>
           {pages.map((pageNum) => (
             <button 

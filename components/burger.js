@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styles from './burger.module.css'
 import { slide as Menu } from 'react-burger-menu'
+import config from "../lib/config"
 
 const menuStyles = {
   bmBurgerButton: {
@@ -64,6 +65,8 @@ export default function Burger() {
           <Link href="/">Home</Link>
           <br/>
           <Link href="/about">About</Link>
+          <br/>
+          <Link href="/archive">Archive</Link>
           <br/>
           <Link href="/links#info">Links</Link>
           <br/>

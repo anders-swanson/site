@@ -1,6 +1,7 @@
 
 import Layout from "../../components/layout";
 import { Tags, Posts } from "../../lib/metadata";
+import { FilterTag } from "../../lib/post_filter";
 
 export default function Post({ id, posts }) {
     return (
@@ -21,13 +22,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const posts = Posts().filter((post) => {
-        return post["tags"].includes(params.id)
-    })
     return {
         props: {
             id: params.id,
-            posts: posts
+            posts: FilterTag(Posts(), params.id)
         }
     }
 }

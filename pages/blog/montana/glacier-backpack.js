@@ -21,7 +21,7 @@ const image3 = 'https://lh3.googleusercontent.com/pw/AM-JKLWUA3oNDukbXsFClFp5Whv
 const image4 = 'https://lh3.googleusercontent.com/pw/AM-JKLUludpbF0RmgMTZg7r20pnQi1JdswyjaV9EwO8m9z3A8CBGxtNQ8izDBfa1CPmWpl5YJR7MR4UQV74g-RqC0mYeDRvFkOvahsuotfZhX4djfb7vWRHqpmf4qnTRIE-XG4XFPzOJONbKYcD-QPcvuDT4=w800-h535-no?authuser=0'
 const image5 = 'https://lh3.googleusercontent.com/pw/AM-JKLUjZnTkY8NkCCloEH6ooj3puBQJjJPN8MruLlHzToyDghmsMTAqOZ9m8Xt0yLfnlbBUfdQuJU4c8ZSuofZB8wCFuYo9IMk9TfM66XrcD-HeGrm5dbI_nP48l4Zk39VqIoJEbT8E7UZrBH6y33l6plvG=s800-no?authuser=0'
 const image6 = 'https://lh3.googleusercontent.com/pw/AM-JKLWcrd2BzG_wXJt4XwgFd6C9Vg_XInhtQ1cOUA1oBTmZ2neAy6RDWQVL0N8nqRBwy6FUWKURUaYaelkHqFCtfpjmXWIb8sQUBIa4Dj1BaSwRAPLfWyFj-GWLzV29RV08Fy9WzpgJu3lnFvmrke7q7acl=s800-no?authuser=0'
-const image7 = 'https://lh3.googleusercontent.com/pw/AM-JKLUjZnTkY8NkCCloEH6ooj3puBQJjJPN8MruLlHzToyDghmsMTAqOZ9m8Xt0yLfnlbBUfdQuJU4c8ZSuofZB8wCFuYo9IMk9TfM66XrcD-HeGrm5dbI_nP48l4Zk39VqIoJEbT8E7UZrBH6y33l6plvG=s800-no?authuser=0'
+const image7 = 'https://lh3.googleusercontent.com/pw/AM-JKLUgDLqXVyqdTGEkLjH809llsl64-cpj4FzR6rICaSQuhAbUa7HGeIaX9PvzRiCatid5NDnNkOxFa5-TFKuPhtKJYWHAEe4f_Q0kUoLW0xkiYTbhU2nNqN61Yw7eRpjPZ7s7Fr-CakTT7JM-jgUP5rN8=s600-no?authuser=0'
 const slides = [
     'https://lh3.googleusercontent.com/pw/AM-JKLUc7Lh4C-p8SwRhIu35V9qZNPd20U8cFXbV4FuDj2ES1ctDbG2Tsd8V3DfD1HXprOcYqLrlf8pV-WiKWzKGQUAupz6P_EiHBqoQAON8jz57b5VQl7jLjJMnWseb1dF82RnXU8wE-be1OvAmyO7LT0Rs=w800-h535-no?authuser=0',
     'https://lh3.googleusercontent.com/pw/AM-JKLXoJONZ6-dygWPLl5j7VYvJM9pg9KEwHgD4oTV2mxA9avaOqcPKibXfVk-uUChLqgR8WXlZfp4G5SUia3cr8tIAoBubyT4zZygLNejc6i9_NFhvGRCOhCb7wIXGC1ZGvkMy9W0GrF2Pdnd9deV6ElvB=w800-h535-no?authuser=0',

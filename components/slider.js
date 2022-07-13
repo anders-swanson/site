@@ -67,7 +67,6 @@ export default function Slider({ slides, width, height }) {
                             width={imgWidth}
                             height={imgHeight}
                             draggable="false"
-                            onmousedown="return false"
                             style={{"userDrag": "none"}}
                         />
                     )}

@@ -8,6 +8,8 @@ import Search from './search'
 import { useState, useEffect } from 'react'
 import { CapitalizeWords } from '../lib/common'
 import Script from 'next/script'
+import { Tags } from '../lib/metadata'
+import Archive from './post_archive'
 
 export const title = `Trails and Trekking`
 const name = title
@@ -15,7 +17,7 @@ const defaultHeaderImage = "/images/cover.jpeg"
 const maxScroll = 5
 const defaultHeaderColor = 'white'
 
-export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor }) {
+export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor, archive }) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
   let stxt = subText ? subText : ""
@@ -99,7 +101,13 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
         </div>
       )}
       <main>{children}</main>
-      {allPostsData && (
+      {archive && (
+        <Archive
+          posts={allPostsData}
+          search={search}
+          tags={Tags()}
+        />
+      ) || allPostsData && (
         <>
           <PostBox
             posts={allPostsData}

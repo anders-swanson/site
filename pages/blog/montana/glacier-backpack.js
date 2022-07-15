@@ -8,23 +8,24 @@ import RelatedPosts from '../../../components/related_posts'
 let metadata = { 
     "title": "Glacier via Chief Mountain",
     "date": "2021-08-28",
-    "image": "https://lh3.googleusercontent.com/pw/AM-JKLXnYR1cX0xGgKfP6e2_HTlPhC3S5_DH-g1Nv1pct0zLY92HcN7m3sLFjNzW5q1t2pPyy87ud7EDAAAsoI-DnsNpgExJjEwrIGbVxHopWyIYlyd2fU9IS_W_H83VUSZkKSCDS3zndaFrmeZGEMuiwbAZSw=w798-h799-no?authuser=1",
+    "image": "https://lh3.googleusercontent.com/pw/AM-JKLUzo50M6Tj_iJPOm_MA25fgJ7e9cnDWe40vM4ex1Oe2G8zSt-Zyj5T7x1pq97ilS6x049V-b79tpekYevsxAinyMhRoS1BluwT6-Hkgy3SueG-RP60M7y4pr3yQvLlNVkR3i0e5JFoKL2vdHhLmSVTthw=w798-h799-no?authuser=0",
     "tags": ["backpacking", "lakes"]
 }
 
 const subText = '59.04 miles, 7471 feet gain, 3 nights'
-const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXIj1g2Ls4knxXhrHXEYM68jF-YPOZ-z5VXL645gbyG50lQSvRBhtquPAysASh1g8Hh2qyIu3boI1eToBauM7kjlUix1cqfJ5-WIcVhlgPxegxNQ_4Mjvev-CVDCwYUXRAAnyhLIxm9xfjBLj1_miCz=w1609-h1075-no?authuser=1'
-const image1 = 'https://lh3.googleusercontent.com/pw/AM-JKLUkyZS10srB4-5QJ4Ezq2G3E6rdFjLpTM0nzntUIDktFFPn7gS-liBUs10K6CGiTzrf8XU86eB2vcBfJ_agCMwBjHwG_ycSLB3c8UoU_ncljA2P46JlFDGAvmhsMRaWwxDycdS0cJygZgGoN-T6mudd=w1609-h1075-no?authuser=1'
-const image2 = 'https://lh3.googleusercontent.com/pw/AM-JKLXCCl2eMQSBsLEAJEe0UZRlLoPahdYSY2pVAdOoQ2yzUVF1iQn04WH-aqv7CbfjHdaSiffkNqtabkYH6Rna8Ecs9JiNi3LFFdPNZ-i_Vc5NzAdfrtw1k2x2ppVqlokmVdwkBUO2JxLf1ype_4QEQE5_=w1609-h1075-no?authuser=1'
-const image3 = 'https://lh3.googleusercontent.com/pw/AM-JKLVYS8P3ZwZnv1yoRJ7yYs2axz8sD-kHIArUWmbb5HEIb9BeYmmOx-2oTrWDbsN-iVZ62LYnxq9BOq8390seV2aw8jm1_sEvR21dsOsOhwVWdxQfo2DPk8918449EUQ1RbqtI-YOdvi6UC5QYcgQYH88=w1609-h1075-no?authuser=1'
-const image4 = 'https://lh3.googleusercontent.com/pw/AM-JKLVpOSPuLu_TSne3XwgF66824R4laN68I2iu2rF9c7MIcPr6YrgyweyLQ88RocxsdLV25c6SETTV8gFnQKrGRJwcmGbcfdl1czsvEgkArmjqyQfu4__7wGJenFCenibyujuk1x2yDel-ZLnPjxrPlF6Q=w1609-h1075-no?authuser=1'
-const image5 = 'https://lh3.googleusercontent.com/pw/AM-JKLXqdcGxi9huHtW_UfjPzBRUDtJzLa9zn2zm_wxJ_FuvDi2MsTglEWgFqJzJGLCdL2huorQMVaLFSpmkAOOqFltQM0sTaBLitMfHNPnyVSsmaWyo7I0MFFI9hBMzA15TijIoaFGXsPl-kmfMpZi3Dm8d=w807-h1075-no?authuser=1'
-const image6 = 'https://lh3.googleusercontent.com/pw/AM-JKLWSYXJv5JLaxdNQnzKfnose41q-qjEHkJdA3jANnURIFuLdx2z6o5qrwBI-AablqhYXQBB3574-lOz9M2BwUDgUAScPsynHDoTH920ZpSSAnYJ37kDZD3wp8WqvASW4W0-B3QVPo73WVHEFBu-sL6E0=w807-h1075-no?authuser=1'
-const image7 = 'https://lh3.googleusercontent.com/pw/AM-JKLUq0u6mV9NzydRfFIZ9VXXCPmWsAK67xbsoAvfKjYmswXwoJpGC9h9RilD3In_TP_l7SRfmTk0lMXFGDqPDKIlvfaLZcT_ZunBFZwOIBtNrtDVze_ojzHXxEQfHx4L88blQxt2KsAc7f29UFTqospUX=w807-h1075-no?authuser=1'
+const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLUnrYK4SOh4IRzMObQAsfqs4PzyJWwDonBPASTZuaBoW8IkdUFtlqfdMKHzAVzG52Iy9pNCtMOAh8DXAZFt_b0TMuic7kOdFW8ELvvPfdmKYodbUZ5mEqA4lhnzJ2foYqI6XYPdLeYCaWDOWBKe6xsc=w800-h535-no?authuser=0'
+
+const image1 = 'https://lh3.googleusercontent.com/pw/AM-JKLWKx3TRni8GRRX0xrD66KrssXzQ4tu62yovjc0P2lqK8Tz27P6u4mjw1WXc15Xb5BWCgQyDFQi3d1BaZZiiRClq7F8CJvVkWT-fo4jL79pOFne6KGjm4elgCeq_vYqID7lYdNmCs19SUZXoTQla8IJP=w800-h535-no?authuser=0'
+const image2 = 'https://lh3.googleusercontent.com/pw/AM-JKLUcyWQfluhzUW5bsrVdJ0gjxlTxAbIQabZHhDq_fcBMw9iK_UNyEmQIwEQ-sE4LqneRHxfwqzsF4ktkPrhvlequD9IlxDiEWt-HVUEkJPg5XBqU79bnj9CM4fSvBlGvBIQPkPCBZ6oO5jTLWWtVaZB5=w800-h535-no?authuser=0'
+const image3 = 'https://lh3.googleusercontent.com/pw/AM-JKLWUA3oNDukbXsFClFp5WhvuEaBpWAtWBFwM_UsIuPFKypHqNPSZYuvFtoqfgZyiVSax5geyPWkYWjoVMqp44TK5I9WU_8aDbiqZ9-yae6O6pMs3ytPjHv-WtVm2GjPVbJOn4OCK6mKA3CaeGQ3xAZsU=w800-h535-no?authuser=0'
+const image4 = 'https://lh3.googleusercontent.com/pw/AM-JKLUludpbF0RmgMTZg7r20pnQi1JdswyjaV9EwO8m9z3A8CBGxtNQ8izDBfa1CPmWpl5YJR7MR4UQV74g-RqC0mYeDRvFkOvahsuotfZhX4djfb7vWRHqpmf4qnTRIE-XG4XFPzOJONbKYcD-QPcvuDT4=w800-h535-no?authuser=0'
+const image5 = 'https://lh3.googleusercontent.com/pw/AM-JKLUjZnTkY8NkCCloEH6ooj3puBQJjJPN8MruLlHzToyDghmsMTAqOZ9m8Xt0yLfnlbBUfdQuJU4c8ZSuofZB8wCFuYo9IMk9TfM66XrcD-HeGrm5dbI_nP48l4Zk39VqIoJEbT8E7UZrBH6y33l6plvG=s800-no?authuser=0'
+const image6 = 'https://lh3.googleusercontent.com/pw/AM-JKLWcrd2BzG_wXJt4XwgFd6C9Vg_XInhtQ1cOUA1oBTmZ2neAy6RDWQVL0N8nqRBwy6FUWKURUaYaelkHqFCtfpjmXWIb8sQUBIa4Dj1BaSwRAPLfWyFj-GWLzV29RV08Fy9WzpgJu3lnFvmrke7q7acl=s800-no?authuser=0'
+const image7 = 'https://lh3.googleusercontent.com/pw/AM-JKLUgDLqXVyqdTGEkLjH809llsl64-cpj4FzR6rICaSQuhAbUa7HGeIaX9PvzRiCatid5NDnNkOxFa5-TFKuPhtKJYWHAEe4f_Q0kUoLW0xkiYTbhU2nNqN61Yw7eRpjPZ7s7Fr-CakTT7JM-jgUP5rN8=s600-no?authuser=0'
 const slides = [
-    'https://lh3.googleusercontent.com/pw/AM-JKLUOoF6zBKVTDaGZQm-FkcWI0c1Ly20TvAEqYLFwlW5cqQqCdfw6FxyJIGtZT4XB6gYfkU2XRjJz7w0v3fKMXQVBnF5FVc1F6rDex4GaLuIfIMz-HJJeXZwVv51furk3VwIBeBMD1CrrST1ARxN_F5ie=w1609-h1075-no?authuser=1',
-    'https://lh3.googleusercontent.com/pw/AM-JKLUhFf-5GlbiJWStS0hETheADCYHpr8xR4ds7bCaSp6lMmTWvMOsBXLJkA0WoUpmFRYhS6eZXXPwjG5VnH-vqyR6NaLuVOOLSFDHuV9eMz62-FA9aRghyTx4W-pmTNHhoD29edGiOz9iOnMK_sR7y3Ed=w1434-h1075-no?authuser=1',
-    'https://lh3.googleusercontent.com/pw/AM-JKLUxae0LpovkEibUtUOxq4RFywC7EE9FdNCLXdOujD2csLlTy89lMPQR5Zig12EpBzBVEofnL7POBwgc0mibM2UyicC0lgCJtdz04O9byEldfSDQntUSs9ki-QU1UsR8mhHRnaHa7DZsxtRmSasxWFL2=w1609-h1075-no?authuser=1'
+    'https://lh3.googleusercontent.com/pw/AM-JKLUc7Lh4C-p8SwRhIu35V9qZNPd20U8cFXbV4FuDj2ES1ctDbG2Tsd8V3DfD1HXprOcYqLrlf8pV-WiKWzKGQUAupz6P_EiHBqoQAON8jz57b5VQl7jLjJMnWseb1dF82RnXU8wE-be1OvAmyO7LT0Rs=w800-h535-no?authuser=0',
+    'https://lh3.googleusercontent.com/pw/AM-JKLXoJONZ6-dygWPLl5j7VYvJM9pg9KEwHgD4oTV2mxA9avaOqcPKibXfVk-uUChLqgR8WXlZfp4G5SUia3cr8tIAoBubyT4zZygLNejc6i9_NFhvGRCOhCb7wIXGC1ZGvkMy9W0GrF2Pdnd9deV6ElvB=w800-h535-no?authuser=0',
+    'https://lh3.googleusercontent.com/pw/AM-JKLXfsbptvP9e1ICbP6Jx59T0n9jqpFaJknx-uX8_w2pt2m3zYZRcd0KD0Mo3UGKXFmn7cF5KPZJRGZFVF9D-pr_J5qRDStWUtV6JpGAqEn-_PUk5Xpzblu06y1h0pf-TjyQ1GP8HXmI9z4Ke6tdcfBiR=w800-h600-no?authuser=0'
 ]
 
 export default function Post() {

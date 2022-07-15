@@ -12,10 +12,8 @@ let metadata = {
     "tags": ["lakes", "backpacking"]
 }
 
-const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXNlsA0EI899Wuy_CWH_s9hTHE77DnJcIFq-M5IjfJ1DpuTiP3OUAW1ObhvUrxe3PhYYsBfwVT5palzh1NR02pC8CSKRWZqk1Md_IrrHuXLo6-Cpq4yQjDgQ-FOo-wzItnd5GwRzpktZpaR1gvF3vFX=w800-h600-no?authuser=0'
+const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLW_ayn0e_jkC96r4yaREm45gsA5048u3PD2sbCi4xBah_zKCAKan2ujaWxusOcFJEzjSGLvmPCLB3HW0dQASgLKbfI7hRnfX1OZXog4stGvSoZhdEp2cnnXDsD-LLulcktG2BeXbLYSB3E2eyqvXMpI=w800-h600-no?authuser=0'
 const pageURI = '/blog/utah/jefferson-park'
-
-const devilsGardenTrailhead = `https://www.google.com/maps/place/Devil's+Garden+Trailhead/@38.7797899,-109.5946363,16.21z/data=!4m5!3m4!1s0x8748778d7fcc775f:0x7701fbf4c1ffd6b7!8m2!3d38.7829031!4d-109.5949423`
 
 export default function Post() {
     return (
@@ -23,13 +21,13 @@ export default function Post() {
             headerImage={cover}
             headerText={metadata.title}
             description={`Alpine lake camping on the flank of Mt. Jefferson, with a bonus cave to explore.`}
-            subText={`CLOSED until further notice due to the 2020 Lionshead Fire.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>
                 <div>
-                    {`An alpine lake basin with plenty to explore on Mt. Jefferson's Northwest slopes, Jefferson Park features numerous lakes, glacier views, and
-                    camping near meadows. Sadly, the area is indefinitely close due to the 2020 Lionshead Fire - we hope that someday for Forest Service will reopen
+                    {`Jefferson Park is an alpine lake basin with plenty to explore on Mt. Jefferson's Northwest slope. Get lost as you take in the glacier views, 
+                    visit the lakes, and camp near beautiful meadows.
+                    Sadly, Jefferson Park is indefinitely close due to the 2020 Lionshead Fire - we hope that someday for Forest Service will reopen
                     this area and visitors can hike and camp here again. Until then, enjoy Jefferson Park and its surrounding area from afar.`}
                 </div>
 
@@ -46,10 +44,11 @@ export default function Post() {
                 <br/>
                 <div>
                     {`In 2019, we hiked from Triangulation Peak trailhead to Jefferson Park, camping one night near Russell Lake. Triangulation Peak is a short, but steep
-                    side trail up to a viewpoint of Mt. Jefferson's western face.`}
-                    <br/>
-                    {`Just shy of Triangulation Peak's summit is a scramble down an unassuming slope leading to a small cave. I would have easily missed this trail
-                    without prior, as it is not well marked. The cave is maybe 30 feet deep, and beautifully frames Mt. Jefferson 
+                    side trail up to a viewpoint of Mt. Jefferson's western face. It's worth the extra distance to Triangulation Peak, and many people used
+                    to visit as a day hike. Beware the fat, hungry chipmunks who live at the peak!`}
+                    <br/><br/>
+                    {`Just below of Triangulation Peak's summit is a scramble down an unassuming slope that leads to a small cave. I would have easily missed this trail
+                    without prior knowledge, as it is not well marked. The cave is maybe 30 feet deep, and beautifully frames Mt. Jefferson 
                     when you stand inside its entrance. On the return trek from Jefferson Park, the cave is visible to the careful observer from the trail below.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
@@ -62,25 +61,18 @@ export default function Post() {
                         />
                     </div>
                     <br/><br/>
-                    {`After visiting the cave and lunching atop Triangulation Peak, we headed back down to the Triangulation Trail, following it as it merges with the 
-                    Whitewater Trail, and eventually joining the PCT. It's about 10 miles by this route (there are shorter trails to Jefferson Park), but we had
-                    wanted to explore the Triangulation Peak cave.`}
+                    {`After visiting the cave and lunching atop Triangulation Peak, we headed back down to the Triangulation Trail, following along as it merges with the 
+                    Whitewater Trail, and eventually joining the PCT - it's about 10 miles one way by this route. There are shorter trails to Jefferson Park,
+                    but we had wanted to extend our trip and visit Triangulation Peak.`}
                     <br/><br/>
-
-                    {`Past the first side trail, you'll arrive at the Landscape arch, the longest arch in the park. The trail forks here, so take the right-hand path
-                    and continue on the Devil's Garden primitive loop. This "primitive" trail section requires route finding by cairns, some scrambling and climbing over sandstone
-                    obstacles.`}
-                    <br/><br/>
-                    {`On the primitive trail, you'll pass through Fin Canyon, notable for its narrow packed ridges, followed by climbing up through tight sections of sandstone trail. Don't miss the side trail
-                    for Private Arch, which should be well marked. Continuing on from Private Arch, the primitive trail reconnects to the main trail near Double-O Arch, a truly
-                    impressive feature. This is great place to stop for lunch, and there are many scrambles to viewpoints around Double-O arch. You may also make a short hike to 
-                    the Dark Angel rock spire, though it is not as remarkable as the arches.`}
+                    {`From Triangulation Peak, the trail traverses through a burned area, doubly burned now from the 2020 fires. Sprouting wildflowers grow among the charred pine,
+                    showing the slow recovery of the burn. The trail is hot and dusty, greening up as it draws closer to the PCT and crosses a fordable stream.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Pinnable
                             page={pageURI}
-                            alt='Double-O Arch in Arches National Park, Utah.'
-                            src='https://lh3.googleusercontent.com/pw/AM-JKLUt4mOQC2VE3Ar3OVl6twxMlFZIe4K-0qYn36Ty8G0QgJ51eiE-Yvq364_DoY7iatFV-JxFc5JYrIgxebY4mDzbTAAbNjPsOsZknX9vuRJPXulk3Yt-2sDQCqm3vJIBl8UW_x2ExVgrsCmlGlEE4Rdo=w800-h600-no?authuser=0'
+                            alt='Russell Lake at Jefferson Park, Oregon.'
+                            src='https://lh3.googleusercontent.com/pw/AM-JKLW7RmdEHZP4m4iBUB3Bt5QrelTP6zsVbCWraoGTF2_aPbuci4oRTbZAgjWOO6cQSwwtsH06rJbF9yarsVkZYnaJCzsiL7a50mJlsF1ykHYsgsNTwby4ZpaGmXYCW-X6k4QqSceX5dGUcNaFcGWuFigs=w800-h600-no?authuser=0'
                             width={800}
                             height={600}
                         />
@@ -89,22 +81,22 @@ export default function Post() {
 
                 </div>
                 <div>
-                    {`As you head back from Double-O arch on the return section of the loop, the trail follows a narrow fin of sandstone that offers great views of Devil's Garden. As you
-                    get closer to the end of the loop near Landscape arch, there are side trails to Navajo and Partition arches, both of which are worth seeing if you have the time. 
-                    Navajo arch is a large, bridge like arch with greenery around it, and Partition arch is a window-style arch that looks down on the surrounding area.`}
+                    {`As you head north along the PCT towards Jefferson Park, the trail becomes very beautiful and pleasant - a small creek bubbles along the trail as you climb up through rolling 
+                    meadows. After a short trek on the PCT, the trail levels out onto Jefferson Park - once you reach the lake basin, you'll be amazed by the views of Mt. Jefferson.
+                    Several hours can be spent exploring the different lakes, meadows, and taking in the views. There are 20+ campsites around Jefferson Park, and the area never
+                    required permits. A couple days can easily be spent here, making day hikes or just relaxing.`}
                     <br/><br/>
-                    {`Once you connect back to Landscape arch, it's a short trek on familiar trail to the parking lot. I recommend to take your time on this hike, and enjoy every
-                    section of it - there's a lot of variety in Devil's Garden, and an amazing amount of arches and other features to discover. If you've still got energy left after this
-                    hike, consider making hike the 3-mile roundtrip to Delicate Arch as you head out of the park. Delicate arch is best viewed at sunset or sunrise, and is
-                    absolutely astounding to behold.`}
+                    {`Please respect ongoing fire closures until the Forest Service fully reopens Jefferson Park. Trespassing is dangerous due to fire hazards, and may result in
+                    a hefty fine.
+                    For information regarding the status of Jefferson Park, contact the Mt. Jefferson Wilderness USFS office.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Pinnable
                             page={pageURI}
-                            alt='Arch formation in Southeastern Utah.'
-                            src='https://lh3.googleusercontent.com/pw/AM-JKLXcOiICJSWfiD5TiqffCKGPIyCe8FqiXPTcOpEp3hQcVlpOL0KsZAOS60L6oKgaBt1nRjM8N_5iLtE69V6gHNqXIwxGwKEcAHU1MkvegByJnkAuXOBFh6kXuImqABJ_vCbLBiErXiEXS77jUge3GiR7=w600-h800-no?authuser=0'
-                            width={600}
-                            height={800}
+                            alt='Mt. Jefferson from Jefferson Park, Oregon.'
+                            src='https://lh3.googleusercontent.com/pw/AM-JKLX2VkyfNAd6Cr-F3cFV6Rc4Rylv3CHkcTAelzpt5WPisSGzVSKGkEoWLQ2qliU8II2BXYvFfCrrw6l__Qzm18Xd4DjlrBQwlmZkN-R7BghSSPSn3kF2G95XWk0UzjHz1baMyM5GY_BNFvs-9puWJb45=w675-h379-no?authuser=0'
+                            width={675}
+                            height={379}
                         />
                     </div>
                     

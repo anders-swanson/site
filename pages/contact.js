@@ -55,7 +55,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div>
-                        <button type="submit">Register</button>
+                        <button type="submit">Submit</button>
                         <button type="button" onClick={() => reset()}>Reset</button>
                     </div>
                 </form>

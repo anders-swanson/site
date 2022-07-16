@@ -27,7 +27,7 @@ export default function Post() {
                 <div>
                     {`Jefferson Park is an alpine lake basin with plenty to explore on Mt. Jefferson's Northwest slope. Get lost as you take in the glacier views, 
                     visit the lakes, and camp near beautiful meadows.
-                    Sadly, Jefferson Park is indefinitely close due to the 2020 Lionshead Fire - we hope that someday for Forest Service will reopen
+                    Sadly, Jefferson Park is indefinitely close due to the 2020 Lionshead Fire - we hope someday soon the Forest Service will reopen
                     this area and visitors can hike and camp here again. Until then, enjoy Jefferson Park and its surrounding area from afar.`}
                 </div>
 

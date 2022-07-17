@@ -1,16 +1,13 @@
 import { SMTPClient } from 'emailjs';
+import config from '../../lib/config';
 
  
 export default function handler(req, res) {
- 
-    const sender = req.body.sender;
-    const subject = sender + ': ' + req.body.subject
-    const text = req.body.text
-
+    const text = `From: ${req.body.name}, ${req.body.email}\n\n${req.body.msg}`
     const client = new SMTPClient({
         user: process.env.SMTP_USERNAME,
         password: process.env.SMTP_PASSWORD,
-        host: 'smtp.gmail.com',
+        host: config.smtp.server,
         ssl: true
     });
 
@@ -19,7 +16,7 @@ export default function handler(req, res) {
             text: text,
             from: process.env.SMTP_USERNAME,
             to: process.env.SMTP_USERNAME,
-            subject: subject,
+            subject: req.body.subject,
         })
     } catch(e) {
         res.status(400).end(JSON.stringify({ message: e }))

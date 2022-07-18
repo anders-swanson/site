@@ -3,7 +3,11 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import config from '../lib/config';
 import * as Yup from 'yup';
 import Layout from '../components/layout';
+import ReCAPTCHA from 'react-google-recaptcha'
+import React, { useState } from 'react';
 
+
+const recaptchaPublicKey = process.env.NEXT_PUBLIC_RECAPTCHA_PUBLIC_KEY
 
 export default function Contact() {
     const validationSchema = Yup.object().shape({
@@ -19,16 +23,49 @@ export default function Contact() {
 
     });
     const formOptions = { resolver: yupResolver(validationSchema) };
-
-    // get functions to build form with useForm() hook
     const { register, handleSubmit, reset, formState } = useForm(formOptions);
     const { errors } = formState;
+    const [formData, setFormData] = useState({})
+    const recaptchaRef = React.useRef(null);
 
     function onSubmit(data) {
-        // display form data on success
-        sendmail(data)
+        setFormData(data)
+        recaptchaRef.current.execute()
         return false;
     }
+
+    const onCAPTCHAChange = async (captchaCode) => {
+        if (!captchaCode) {
+            return;
+        }
+        try {
+            const response = await fetch("/api/email", {
+                method: "POST",
+                body: JSON.stringify({
+                    email: formData.email,
+                    name: formData.name,
+                    subject: formData.subject,
+                    msg: formData.msg,
+                    captcha: captchaCode,
+                }),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+          })
+            if (response.ok) {
+                alert("Email sent.")
+                reset()
+            } else {
+                const error = await response.json()
+                throw new Error(error.message)
+            }
+        } catch (error) {
+            alert(error?.message || "Something went wrong")
+        } finally {
+            recaptchaRef.current.reset()
+            setFormData({})
+        }
+    };
 
     return (
         <Layout
@@ -38,6 +75,12 @@ export default function Contact() {
             <div>
                 <div>
                     <form onSubmit={handleSubmit(onSubmit)}>
+                        <ReCAPTCHA
+                            ref={recaptchaRef}
+                            size="invisible"
+                            sitekey={recaptchaPublicKey}
+                            onChange={onCAPTCHAChange}
+                        />
                         <div>
                             <div>
                                 <label>Name</label>

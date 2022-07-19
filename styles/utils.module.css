@@ -113,46 +113,110 @@
   26.5%,
   40%,
   to {
-   animation-timing-function:cubic-bezier(.215,.61,.355,1);
-   transform:translateZ(0)
+   animation-timing-function: cubic-bezier(.215,.61,.355,1);
+   transform: translateZ(0)
   }
   20%,
   21.5% {
-   animation-timing-function:cubic-bezier(.755,.05,.855,.06);
-   transform:translate3d(0,-10px,0)
+   animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+   transform: translate3d(0,-10px,0)
   }
   35% {
-   animation-timing-function:cubic-bezier(.755,.05,.855,.06);
-   transform:translate3d(0,-10px,0)
+   animation-timing-function: cubic-bezier(.755,.05,.855,.06);
+   transform: translate3d(0,-10px,0)
   }
 }
 
 @keyframes shakeAnimation {
   0%,
   to {
-   transform:translateZ(0)
+    transform: translateZ(0)
   }
   15%,
   25%,
   35%,
   45%,
   5% {
-   transform:translate3d(-5px,0,0)
+    transform: translate3d(-5px,0,0)
   }
   10%,
   20%,
   30%,
   40% {
-   transform:translate3d(5px,0,0)
+    transform: translate3d(5px,0,0)
   }
   50% {
-   transform:translateZ(0)
+    transform: translateZ(0)
   }
- }
- .shakeAnimation {
-  animation-duration:4s;
-  animation-fill-mode:both;
-  animation-iteration-count:infinite;
-  animation-name:shakeAnimation;
-  transform-origin:center
- }
+}
+
+.shakeAnimation {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: shakeAnimation;
+  transform-origin: center
+}
+
+.contactForm {
+  background-color: rgb(211, 238, 237);
+  padding: 25px;
+  border-radius: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactForm button {
+  font-size: 13px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  height: 30px;
+  width: 120px;
+}
+
+.contactForm input {
+  width: 380px;
+  height: 30px;
+  border: 2px;
+  border-color: #666;
+}
+
+.contactForm textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  width: 380px;
+  height: 220px;
+  border: 2px;
+  border-color: #666;
+}
+
+.contactForm label {
+  font-size: small;
+  font-weight: 500;
+}
+
+.contactForm button:hover {
+  cursor: pointer;
+}
+
+.resetButton {
+  background-color: rgb(94, 94, 94);
+}
+
+.submitButton {
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: rgb(32, 32, 32);
+}
+
+.errorMessage {
+  padding-top: 5px;
+  color: rgb(197, 4, 4);
+  font-size: small;
+}
+
+.formHeader {
+  font-size: 16px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}

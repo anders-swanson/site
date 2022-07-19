@@ -16,8 +16,8 @@ export default function handler(req, res) {
         return res.status(405).send(methodNotAllowed)
     }
 
-    const { email, name, msg, subject, captcha } = req.body
-    if (!email || !name || !msg || !subject || !captcha) {
+    const { email, name, msg, captcha } = req.body
+    if (!email || !name || !msg || !captcha) {
         console.log(JSON.stringify(req.body))
         return res.status(400).send(badRequest)
     }
@@ -35,7 +35,7 @@ export default function handler(req, res) {
             text: text,
             from: process.env.SMTP_USERNAME,
             to: process.env.SMTP_USERNAME,
-            subject: subject,
+            subject: `New contact from ${email}`,
         })
     } catch(e) {
         res.status(400).end(JSON.stringify({ message: e }))

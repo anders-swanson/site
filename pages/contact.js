@@ -1,50 +1,56 @@
+import utilStyles from '../styles/utils.module.css'
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import config from '../lib/config';
 import * as Yup from 'yup';
 import Layout from '../components/layout';
 import ReCAPTCHA from 'react-google-recaptcha'
 import React, { useState } from 'react';
+import { ThreeDots } from 'react-loading-icons/'
 
 
 const recaptchaPublicKey = process.env.NEXT_PUBLIC_RECAPTCHA_PUBLIC_KEY
+const maxInputLength = 100
+const maxMessageLength = 5000
 
 export default function Contact() {
     const validationSchema = Yup.object().shape({
         name: Yup.string()
-            .required("Name is required"),
-        subject: Yup.string()
-            .required("Subject is required"),
+            .required("* Name is required")
+            .max(maxInputLength, `* Name must be at most ${maxInputLength} characters.`),
         email: Yup.string()
-            .required('Email is required')
-            .email('Email is invalid'),
+            .required('* Email is required')
+            .max(maxInputLength, `* Email must be at most ${maxInputLength} characters.`)
+            .email('* Email is invalid'),
         msg: Yup.string()
-            .required("Message is required"),
+            .required("* Message is required")
+            .max(maxMessageLength, `* Message must be at most ${maxMessageLength} characters.`),
 
-    });
-    const formOptions = { resolver: yupResolver(validationSchema) };
-    const { register, handleSubmit, reset, formState } = useForm(formOptions);
-    const { errors } = formState;
+    })
+    const formOptions = { resolver: yupResolver(validationSchema) }
+    const { register, handleSubmit, reset, formState } = useForm(formOptions)
+    const { errors } = formState
     const [formData, setFormData] = useState({})
-    const recaptchaRef = React.useRef(null);
+    const recaptchaRef = React.useRef(null)
+    const formRef = React.useRef(null)
+    const [loading, setLoading] = useState(false)
 
     function onSubmit(data) {
         setFormData(data)
         recaptchaRef.current.execute()
-        return false;
+        return false
     }
 
     const onCAPTCHAChange = async (captchaCode) => {
         if (!captchaCode) {
-            return;
+            return
         }
+        setLoading(true)
         try {
             const response = await fetch("/api/email", {
                 method: "POST",
                 body: JSON.stringify({
                     email: formData.email,
                     name: formData.name,
-                    subject: formData.subject,
                     msg: formData.msg,
                     captcha: captchaCode,
                 }),
@@ -53,8 +59,8 @@ export default function Contact() {
                 },
           })
             if (response.ok) {
-                alert("Email sent.")
-                reset()
+                alert("Email sent")
+                formRef.current.reset()
             } else {
                 const error = await response.json()
                 throw new Error(error.message)
@@ -64,68 +70,60 @@ export default function Contact() {
         } finally {
             recaptchaRef.current.reset()
             setFormData({})
+            setLoading(false)
         }
-    };
+    }
 
     return (
         <Layout
             headerText={'Contact Us'}
             description={`Contact us!`}
         >
-            <div>
-                <div>
-                    <form onSubmit={handleSubmit(onSubmit)}>
-                        <ReCAPTCHA
-                            ref={recaptchaRef}
-                            size="invisible"
-                            sitekey={recaptchaPublicKey}
-                            onChange={onCAPTCHAChange}
-                        />
-                        <div>
-                            <div>
-                                <label>Name</label>
-                                <input name="name" type="text" {...register('name')}/>
-                                <div>{errors.name?.message}</div>
-                            </div>
-                            <div>
-                                <label>Subject</label>
-                                <input name="subject" type="text" {...register('subject')}/>
-                                <div>{errors.subject?.message}</div>
-                            </div>
-                            <div>
-                                <label>Email</label>
-                                <input name="email" type="text" {...register('email')}/>
-                                <div>{errors.email?.message}</div>
-                            </div>
-                            <div>
-                                <label>Message</label>
-                                <input name="msg" type="text" {...register('msg')}/>
-                                <div>{errors.msg?.message}</div>
-                            </div>
-                        </div>
-                        <div>
-                            <button type="submit">Submit</button>
-                            <button type="button" onClick={() => reset()}>Reset</button>
-                        </div>
-                    </form>
+            <div className={utilStyles.contactForm}>
+                {loading && 
+                <div className={utilStyles.centered}>
+                    <ThreeDots/>
                 </div>
+                }
+                <div className={`${utilStyles.centered} ${utilStyles.formHeader}`}>
+                    {`Send us a message if you have questions, comments, or just want to connect!`}
+                </div>
+                
+
+                <form
+                    className={utilStyles.centered}
+                    onSubmit={handleSubmit(onSubmit)}
+                    ref={formRef}
+                >
+                    <ReCAPTCHA
+                        ref={recaptchaRef}
+                        size="invisible"
+                        sitekey={recaptchaPublicKey}
+                        onChange={onCAPTCHAChange}
+                    />
+                    <div>
+                        <div>
+                            <label>Name</label><br/>
+                            <input name="name" type="text" {...register('name')} placeholder='Type full name'/>
+                            <div className={utilStyles.errorMessage}>{errors.name?.message}</div>
+                        </div>
+                        <div>
+                            <label>Email</label><br/>
+                            <input name="email" type="text" {...register('email')} placeholder='Type email address'/>
+                            <div className={utilStyles.errorMessage}>{errors.email?.message}</div>
+                        </div>
+                        <div>
+                            <label>Message</label><br/>
+                            <textarea name="msg" type="text" {...register('msg')}/>
+                            <div className={utilStyles.errorMessage}>{errors.msg?.message}</div>
+                        </div>
+                        <div style={{'float': 'right'}}>
+                            <button type="submit" className={utilStyles.submitButton}>Send Email</button>
+                            <button type="button" onClick={() => reset()} className={utilStyles.resetButton}>Reset</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </Layout>
-    );
-}
-
-function sendmail(data) {
-    (async () => {
-        const uri = process.env.DEV_MODE === 'true' ? 'http://localhost:3000' : config.domain
-        const res = await fetch(`${uri}/api/email`, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data)
-        })
-        const content = await res.json()
-        alert(JSON.stringify(content))
-    })()
+    )
 }

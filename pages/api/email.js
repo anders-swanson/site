@@ -11,7 +11,7 @@ const methodNotAllowed = JSON.stringify({
     code: 405,
 })
  
-export default function handler(req, res) {
+export default async function handler(req, res) {
     if (req.method !== "POST") {
         return res.status(405).send(methodNotAllowed)
     }
@@ -31,15 +31,28 @@ export default function handler(req, res) {
     });
 
     try {
-        client.send({
-            text: text,
-            from: process.env.SMTP_USERNAME,
-            to: process.env.SMTP_USERNAME,
-            subject: `New contact from ${email}`,
+        const captchaURI = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${captcha}`
+        const captchaRes = await fetch(captchaURI, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
+            },
         })
+        const captchaValidation = await captchaRes.json();
+        if (captchaValidation.success) {
+            client.send({
+                text: text,
+                from: process.env.SMTP_USERNAME,
+                to: process.env.SMTP_USERNAME,
+                subject: `New contact from ${email}`,
+            })
+        } else {
+            res.status(400).end(JSON.stringify({ message: 'Unauthorized' }))
+            return
+        }
     } catch(e) {
         res.status(400).end(JSON.stringify({ message: e }))
-        return;
+        return
     }
-    res.status(200).end(JSON.stringify({ message:'Sent' }))
+    res.status(200).end(JSON.stringify({ message: 'Sent' }))
 }

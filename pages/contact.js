@@ -32,7 +32,10 @@ export default function Contact() {
     const [formData, setFormData] = useState({})
     const recaptchaRef = React.useRef(null)
     const formRef = React.useRef(null)
+    // display loading bars instead of submit button if true
     const [loading, setLoading] = useState(false)
+    // displays check mark instead of submit button if true
+    const [emailSent, setEmailSent] = useState(false)
 
     function onSubmit(data) {
         setFormData(data)
@@ -59,14 +62,13 @@ export default function Contact() {
                 },
           })
             if (response.ok) {
-                alert("Email sent")
-                formRef.current.reset()
+                setEmailSent(true)
             } else {
                 const error = await response.json()
                 throw new Error(error.message)
             }
         } catch (error) {
-            alert(error?.message || "Something went wrong")
+            alert("Something went wrong, please try again later")
         } finally {
             recaptchaRef.current.reset()
             setFormData({})
@@ -78,52 +80,52 @@ export default function Contact() {
         <Layout
             headerText={'Contact Us'}
             description={`Contact us!`}
-        >
-            <div className={utilStyles.contactForm}>
-                {loading && 
-                <div className={utilStyles.centered}>
-                    <ThreeDots/>
-                </div>
-                }
-                <div className={`${utilStyles.centered} ${utilStyles.formHeader}`}>
-                    {`Send us a message if you have questions, comments, or just want to connect!`}
-                </div>
-                
-
-                <form
-                    className={utilStyles.centered}
-                    onSubmit={handleSubmit(onSubmit)}
-                    ref={formRef}
-                >
-                    <ReCAPTCHA
-                        ref={recaptchaRef}
-                        size="invisible"
-                        sitekey={recaptchaPublicKey}
-                        onChange={onCAPTCHAChange}
-                    />
-                    <div>
-                        <div>
-                            <label>Name</label><br/>
-                            <input name="name" type="text" {...register('name')} placeholder='Type full name'/>
-                            <div className={utilStyles.errorMessage}>{errors.name?.message}</div>
-                        </div>
-                        <div>
-                            <label>Email</label><br/>
-                            <input name="email" type="text" {...register('email')} placeholder='Type email address'/>
-                            <div className={utilStyles.errorMessage}>{errors.email?.message}</div>
-                        </div>
-                        <div>
-                            <label>Message</label><br/>
-                            <textarea name="msg" type="text" {...register('msg')}/>
-                            <div className={utilStyles.errorMessage}>{errors.msg?.message}</div>
-                        </div>
-                        <div style={{'float': 'right'}}>
-                            <button type="submit" className={utilStyles.submitButton}>Send Email</button>
-                            <button type="button" onClick={() => reset()} className={utilStyles.resetButton}>Reset</button>
-                        </div>
+            >
+                <div className={utilStyles.contactForm}>
+                    <div className={`${utilStyles.centered} ${utilStyles.formHeader}`}>
+                        {`Send us a message if you have questions, comments, or just want to connect!`}
                     </div>
-                </form>
-            </div>
+                    
+
+                    <form
+                        className={utilStyles.centered}
+                        onSubmit={handleSubmit(onSubmit)}
+                        ref={formRef}
+                    >
+                        <ReCAPTCHA
+                            ref={recaptchaRef}
+                            size="invisible"
+                            sitekey={recaptchaPublicKey}
+                            onChange={onCAPTCHAChange}
+                        />
+                        <div>
+                            <div>
+                                <label>Name</label><br/>
+                                <input name="name" type="text" {...register('name')} placeholder='Type full name'/>
+                                <div className={utilStyles.errorMessage}>{errors.name?.message}</div>
+                            </div>
+                            <div>
+                                <label>Email</label><br/>
+                                <input name="email" type="text" {...register('email')} placeholder='Type email address'/>
+                                <div className={utilStyles.errorMessage}>{errors.email?.message}</div>
+                            </div>
+                            <div>
+                                <label>Message</label><br/>
+                                <textarea name="msg" type="text" {...register('msg')}/>
+                                <div className={utilStyles.errorMessage}>{errors.msg?.message}</div>
+                            </div>
+                            <div style={{'float': 'right', 'display': 'flex'}}>
+                                {emailSent && <div style={{'paddingRight': '50px', 'marginTop': '10px'}}>✔️</div>}
+                                {loading && !emailSent && <ThreeDots className={utilStyles.formLoader} stroke='grey'/>}
+                                {!loading && !emailSent && <button type="submit" className={utilStyles.submitButton}>Send Email</button>}
+                                <button style={{'marginTop': '10px'}} type="button" onClick={() => {
+                                    setEmailSent(false)
+                                    reset()
+                                }} className={utilStyles.resetButton}>Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
         </Layout>
     )
 }

@@ -1,5 +1,6 @@
 import { SMTPClient } from 'emailjs';
 import config from '../../lib/config';
+import nodemailer from 'nodemailer';
 
 const badRequest = JSON.stringify({
     message: 'Bad Request',
@@ -23,11 +24,16 @@ export default async function handler(req, res) {
     }
 
     const text = `From: ${name}, ${email}\n\n${msg}`
-    const client = new SMTPClient({
-        user: process.env.SMTP_USERNAME,
-        password: process.env.SMTP_PASSWORD,
-        host: config.smtp.server,
-        ssl: true
+    let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            type: 'OAuth2',
+            user: process.env.SMTP_USERNAME,
+            pass: process.env.SMTP_PASSWORD,
+            clientId: process.env.OAUTH_CLIENTID,
+            clientSecret: process.env.OAUTH_CLIENT_SECRET,
+            refreshToken: process.env.OAUTH_REFRESH_TOKEN
+        }
     });
 
     try {
@@ -41,13 +47,22 @@ export default async function handler(req, res) {
         const captchaValidation = await captchaRes.json();
         console.log(JSON.stringify(captchaValidation))
         if (captchaValidation.success) {
-            console.log("Sending email")
-            client.send({
+            const mailObject = {
                 text: text,
                 from: process.env.SMTP_USERNAME,
                 to: process.env.SMTP_USERNAME,
                 subject: `New contact from ${email}`,
-            })
+            }
+            console.log("Sending email")
+            transporter.sendMail(mailObject, function(err, data) {
+                if (err) {
+                    console.log("Error sending email: " + err)
+                    res.status(400).end(JSON.stringify({ message: err }))
+                    return
+                } else {
+                    console.log("Email sent successfully");
+                }
+            });
         } else {
             console.log("Failed captcha validation")
             res.status(400).end(JSON.stringify({ message: 'Unauthorized' }))

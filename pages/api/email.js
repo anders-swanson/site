@@ -39,7 +39,9 @@ export default async function handler(req, res) {
             },
         })
         const captchaValidation = await captchaRes.json();
+        console.log(JSON.stringify(captchaValidation))
         if (captchaValidation.success) {
+            console.log("Sending email")
             client.send({
                 text: text,
                 from: process.env.SMTP_USERNAME,
@@ -47,10 +49,12 @@ export default async function handler(req, res) {
                 subject: `New contact from ${email}`,
             })
         } else {
+            console.log("Failed captcha validation")
             res.status(400).end(JSON.stringify({ message: 'Unauthorized' }))
             return
         }
     } catch(e) {
+        console.log("Error sending email: " + e)
         res.status(400).end(JSON.stringify({ message: e }))
         return
     }

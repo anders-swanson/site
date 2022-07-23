@@ -1,5 +1,3 @@
-import { SMTPClient } from 'emailjs';
-import config from '../../lib/config';
 import nodemailer from 'nodemailer';
 
 const badRequest = JSON.stringify({

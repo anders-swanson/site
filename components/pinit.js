@@ -24,11 +24,9 @@ export default function Pinnable({ src, width, height, alt, page}) {
                 />
             </div>
         </div>
-        
     )
 }
     
-
 
 function pinitURL(src, page, alt) {
     return encodeURI(

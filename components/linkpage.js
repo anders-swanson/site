@@ -1,12 +1,13 @@
-import Link from 'next/link'
 import FeaturedPost from '../components/featuredpost'
 import Layout from '../components/layout'
 import LinkButton from '../components/linkbutton'
 import RelatedPosts from '../components/related_posts'
 import { Posts } from '../lib/metadata'
 import utilStyles from '../styles/utils.module.css'
+import { SocialIcon } from 'react-social-icons';
+import config from '../lib/config'
 
-export default function Links({ title }) {
+export default function Links({ title, showSocial }) {
     const featuredPost = Posts()[0]
     return (
         <Layout
@@ -17,7 +18,14 @@ export default function Links({ title }) {
                 <FeaturedPost post={featuredPost}/>
             </div>
             <br/><br/>
-            <div className={`${utilStyles.centeredRow}`} style={{'maxWidth': '800px'}}>
+            <div className={utilStyles.centeredRow} style={{'maxWidth': '800px'}}>
+                {showSocial && 
+                    <div className={utilStyles.centeredRow} style={{'marginBottom': '25px'}}>
+                        <SocialIcon url={config.social.instagram}/>
+                        <SocialIcon url={config.social.tiktok}/>
+                        <SocialIcon url={config.social.pinterest}/>
+                    </div>
+                }
                 <LinkButton
                     title='Shop my LTK'
                     body='Like my outfits? They’re linked here!'

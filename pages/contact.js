@@ -76,8 +76,8 @@ export default function Contact() {
 
     return (
         <Layout
-            headerText={'Contact Us'}
-            description={`Contact us!`}
+                headerText={'Contact Us'}
+                description={`Contact us!`}
             >
                 <div className={utilStyles.contactForm}>
                     <div className={`${utilStyles.centered} ${utilStyles.formHeader}`}>

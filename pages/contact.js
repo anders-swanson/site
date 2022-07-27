@@ -49,18 +49,16 @@ export default function Contact() {
         }
         setLoading(true)
         try {
-            const response = await fetch("/api/email", {
+            const params = new URLSearchParams({
+                email: formData.email,
+                name: formData.name,
+                msg: formData.msg,
+                captcha: captchaCode,
+            })
+            const uri = `${process.env.NEXT_PUBLIC_EMAIL_BACKEND_URI}?${params}`
+            const response = await fetch(uri, {
                 method: "POST",
-                body: JSON.stringify({
-                    email: formData.email,
-                    name: formData.name,
-                    msg: formData.msg,
-                    captcha: captchaCode,
-                }),
-                headers: {
-                    "Content-Type": "application/json",
-                },
-          })
+            })
             if (response.ok) {
                 setEmailSent(true)
             } else {

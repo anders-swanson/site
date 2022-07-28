@@ -68,8 +68,8 @@ export default function Burger() {
           <br/>
           <Link href="/archive">Archive</Link>
           <br/>
-          {/* <Link href="/contact">Contact</Link>
-          <br/> */}
+          <Link href="/contact">Contact</Link>
+          <br/>
           <Link href="/links#info">Links</Link>
           <br/>
           

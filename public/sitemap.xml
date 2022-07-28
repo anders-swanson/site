@@ -4,9 +4,6 @@
     <loc>https://www.trailsandtrekking.com/about</loc>
   </url>
   <url>
-    <loc>https://www.trailsandtrekking.com/api/email</loc>
-  </url>
-  <url>
     <loc>https://www.trailsandtrekking.com/archive</loc>
   </url>
   <url>
@@ -44,6 +41,9 @@
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/blog/oregon/dalles-mountain</loc>
+  </url>
+  <url>
+    <loc>https://www.trailsandtrekking.com/blog/oregon/golden-lake</loc>
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/blog/oregon/gorge-waterfalls</loc>

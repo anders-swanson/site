@@ -2,31 +2,46 @@ import Image from "next/image";
 import Link from "next/link";
 import utilStyles from '../styles/utils.module.css'
 import styles from './postbox.module.css'
+import archiveStyles from './post_archive.module.css'
 import { CapitalizeWords } from "../lib/common";
 import { FilterTag } from "../lib/post_filter";
 import { Matches } from "../lib/search";
+import { useState } from "react";
 
 
 const imgSizing = 100
 
 export default function Archive({ posts, tags, search }) {
     posts = search.length === 0 ? posts : Matches(search, posts)
+    const [isTagVisible, setIsTagVisible] = useState(Array(tags.length).fill(true))
+
+    const onClickHeader = (idx) => {
+        const isTagVisibleCopy = [...isTagVisible]
+        isTagVisibleCopy[idx] = !isTagVisibleCopy[idx]
+        setIsTagVisible(isTagVisibleCopy)
+    }
 
     return (
-        <>
-        {tags.map(({ params }) => (
+        <div>
+        {tags.map(({ params }, idx) => (
             <section
                 key={params.id}
                 className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
             >
                 <div style={{display: "flex"}}>
-                    <h2 className={utilStyles.headingLg}>
-                        {CapitalizeWords(params.id)}
-                    </h2>            
+                    <button
+                        className={archiveStyles.collapseButton}
+                        onClick={() => onClickHeader(idx)}
+                    >
+                        {getCollapseSymbol(isTagVisible[idx])}{' ' + CapitalizeWords(params.id)}
+                    </button>           
                 </div>
                 <hr/>
-                <div>
-            {FilterTag(posts, params.id).map(({ ...item }) => (
+                <div style={{
+                    visibility: isTagVisible[idx] ? "visible" : "hidden",
+                    height: isTagVisible[idx] ? "100%" : "0px"
+                }}>
+                {FilterTag(posts, params.id).map(({ ...item }) => (
                 <>
                     <div style={{'display': 'flex'}}>
                         <div style={{
@@ -63,6 +78,13 @@ export default function Archive({ posts, tags, search }) {
                 </div>
             </section>
         ))}
-        </>
+        </div>
     )
+}
+
+function getCollapseSymbol(collapsed) {
+    if (collapsed) {
+        return <Image src='/down-arrow.svg' height={15} width={15} alt='down arrow'/>
+    }
+    return <Image src='/right-arrow.svg' height={15} width={15} alt='right arrow'/>
 }

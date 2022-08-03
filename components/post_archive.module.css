@@ -1,0 +1,12 @@
+.collapseButton {
+    font-size: 20px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: transparent;
+    text-align: left;
+    min-width: 100%;
+}
+
+.collapseButton:hover {
+    cursor: pointer;
+}

@@ -25,12 +25,15 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
   // State for the search box
   const [search, setSearch] = useState('')
   // State for the scroll effect
-  const [isVisible, setVisible] = useState(true)
+  const [isVisible, setVisible] = useState(false)
+  useEffect(() => {
+    // set visibility if page is refreshed on a scroll position
+    setVisible(!isScrolled())
+  }, [])
 
   // set isVisible property to false if the viewport is past maxScroll pixels
   const onScroll = () => {
-    const currentScroll = document.body.scrollTop || document.documentElement.scrollTop
-    if (currentScroll > maxScroll) {
+    if (isScrolled()) {
       isVisible && setVisible(false)
     } else {
       setVisible(true)
@@ -136,3 +139,9 @@ export async function getStaticProps() {
     }
   }
 }
+
+function isScrolled() {
+  const currentScroll = document.body.scrollTop || document.documentElement.scrollTop
+  return currentScroll > maxScroll
+}
+

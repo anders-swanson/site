@@ -105,6 +105,12 @@ module.exports.getTags = function (metadata) {
                 id: tag
             }
         }
+    }).sort((a, b) => {
+        if (a.params.id > b.params.id) {
+          return 1
+        } else {
+          return -1
+        }
     })
 }
 

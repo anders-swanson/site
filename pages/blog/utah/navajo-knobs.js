@@ -9,7 +9,7 @@ let metadata = {
     "title": "Navajo Knobs at Capitol Reef",
     "date": "2022-06-29",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVCdFFKxG34Gb-kxA7VErUzs-jOIzUToqDNiUOtqxiTliOJ4qTjiCBpc566ABwG6mroJn5O_eElzGVzZ6xTE_RzKCak5Pe65UpHacTQ9kZfP8PTYfIFdCAcXcSkTy_E3FnOfELHm1FMMyDYQP5mDRIY=s800-no?authuser=0",
-    "tags": ["hiking", "national park"]
+    "tags": ["hiking", "national park", "utah"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLVDKuDPIETlDsSAE-xWmA0a_FOPgFGJ3wKqFJf1XcJCF0q96OY1rhEB9WQNW8M2uvuFKIBayUko4ipPiiN_Jo4RZjnZcO1gLpxxImjDVZeNE2eVol6l8Oa5IZ3COps3hrF2IXghT7rWg3URYBB92REr=w800-h600-no?authuser=0'

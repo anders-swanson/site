@@ -9,7 +9,7 @@ let metadata = {
     "title": "Devil's Garden Loop",
     "date": "2022-07-07",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLWejtJQaBmM9FcDNoAjPSkdfFuiwpD6H_28t81k6fOti9muxs8Iy6LHgCo-ZlvR9Ak2HqeI61binOTUvkmW6p68Aj6Koov0zQbfcIc8q7DtcFdvUUyceqi-b2yOBbx3pMCkC9bnP1-LJFYmm9vvrm-S=s800-no?authuser=0",
-    "tags": ["hiking", "national park"]
+    "tags": ["hiking", "national park", "utah"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXNlsA0EI899Wuy_CWH_s9hTHE77DnJcIFq-M5IjfJ1DpuTiP3OUAW1ObhvUrxe3PhYYsBfwVT5palzh1NR02pC8CSKRWZqk1Md_IrrHuXLo6-Cpq4yQjDgQ-FOo-wzItnd5GwRzpktZpaR1gvF3vFX=w800-h600-no?authuser=0'

@@ -9,7 +9,7 @@ let metadata = {
     "title": "Classic Hikes in the Columbia River Gorge",
     "date": "2022-01-24",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXQvu4P9AMp_zEBWEPl5pko0vJHNNGVO5xhR3lrWLMmdZ3yPl-tMgDATjWqNttYm8RHlxVU2cLxq9PQtrj2XM9O8LYvVzK7hAg00kDOeLKdebZXNIX7IovMT3LVKgRJ1x1EbnQA3WcufZn0qJHItZTV=s1067-no?authuser=0",
-    "tags": ["hiking", "guide", "crg"]
+    "tags": ["hiking", "guide", "crg", "oregon"]
 }
 
 const hamilton1 = 'https://lh3.googleusercontent.com/pw/AM-JKLUVOemRvAGA8Nlxdhr_yhTK4HuQOENbAvI4E7e6OmOJCmpChtgfg5kFCYqD7YEFGy0sotPzv27hewXWwiukmvYVv83znU4cfdooGRIJFnZ-jauMN-AwpOnvVi19HnOJWqPuCaOFOaI1qdDFeXteohFU=w1912-h1075-no?authuser=0'

@@ -8,7 +8,7 @@ let metadata = {
     "title": "Jefferson Park from Triangulation Peak",
     "date": "2022-07-14",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLX7qCosM0T7xsZ9HG-0vN1X3AUbvkx5zczRAOwjkw-V1n-bSV1EvaW7UVr6jTUY2jPu0wfAkQ7GGsmDLPb18M1rvhTu6ySURM5aVv_pToVQqFyXIMgidaZ2TfQfdglhddXhb6cR-53gQjJCIvlJvQNe=s800-no?authuser=0",
-    "tags": ["lakes", "backpacking"]
+    "tags": ["lakes", "backpacking", "oregon"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLW_ayn0e_jkC96r4yaREm45gsA5048u3PD2sbCi4xBah_zKCAKan2ujaWxusOcFJEzjSGLvmPCLB3HW0dQASgLKbfI7hRnfX1OZXog4stGvSoZhdEp2cnnXDsD-LLulcktG2BeXbLYSB3E2eyqvXMpI=w800-h600-no?authuser=0'

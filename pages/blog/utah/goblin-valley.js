@@ -10,7 +10,7 @@ let metadata = {
     "title": "Goblin Valley",
     "date": "2020-11-06",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXWrT94NWtCKzcXwflU9Xa-DQI9zNvmaRyFTI2QprcDklAXjG8MTkrjrpeMsW1NTWc5joii5dg2oJJRJhHf8Sqk5oFp_Ge9pX35yeiMlqwNyfYOgUmHT1ZhPHuTfDcgVWrn6YDt-ZsFhUUnlebuOQ7U=s1067-no?authuser=0",
-    "tags": ["hiking", "national park"]
+    "tags": ["hiking", "national park", "utah"]
 }
 
 const subText = '7.91 miles, 1,191 feet gain'

@@ -9,7 +9,7 @@ let metadata = {
     "title": "McKenzie River",
     "date": "2022-03-02",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVXZxDHctgqXuPbATiM-jc6EREPPKZX1EWEKvAZVll3-UrsXRkryL4M_jqVy1SWhb5PFoRg5VC9uM_s8w-lvgVA6uadfICSeY7vUM5oK-Md7TOAa-k0EmZozrocZoO7XYLnoZg4sEfumj_b_6O7ahcU=w1065-h1067-no?authuser=0",
-    "tags": ["backpacking", "hot springs"]
+    "tags": ["backpacking", "hot springs", "oregon"]
 }
 
 const subText = '40.39 miles, 4458 feet gain'

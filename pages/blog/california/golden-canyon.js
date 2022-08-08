@@ -9,7 +9,7 @@ let metadata = {
     "title": "Golden Canyon",
     "date": "2021-12-31",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLV3jc6L3YxPH7Nv1BA4tPYYCPJF9aMReUSFvE6UvRK-qmUJSiiMamjLoDfOTPszrGebRi5SfC_MEuZ8HVsE753uQv4VE9mkmWnWZEQkDt_BUzwylu-pc5DPlAbrN5XX2ZCujhA1j57gnkq3Er1oO6XP=w1076-h1075-no?authuser=1",
-    "tags": ["hiking", "national park"]
+    "tags": ["hiking", "national park", "california"]
 }
 
 const trailhead = 'https://www.google.com/maps/place/Golden+Canyon+Trailhead/@36.4226602,-116.8415294,14.96z/data=!4m5!3m4!1s0x80c73e8ab49dc8e7:0x81181ab2667c4455!8m2!3d36.4207027!4d-116.8467738'

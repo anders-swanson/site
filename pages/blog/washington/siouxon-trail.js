@@ -11,7 +11,7 @@ let metadata = {
     "title": "Siouxon Creek Trail",
     "date": "2021-11-28",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXGmSLxR_PLkzmOxphgROXQYNAxjXtjD9Hl-n0Ph3gMeNHcBlq7NkW_mioJoitYBnUHWYS3Sb2Y6PAWLJ4pGBa9-xAcgo5zwIjVPIbyydmGj8JGgUEaRUHqvnBnDkhvhkkB0d3rVA5LmwDQ1dlnBtR_=w801-h1067-no?authuser=0",
-    "tags": ["hiking", "waterfall"]
+    "tags": ["hiking", "waterfall", "washington"]
 }
 
 

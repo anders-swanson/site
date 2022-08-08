@@ -9,7 +9,7 @@ let metadata = {
     "title": "Glacier via Chief Mountain",
     "date": "2021-08-28",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLUzo50M6Tj_iJPOm_MA25fgJ7e9cnDWe40vM4ex1Oe2G8zSt-Zyj5T7x1pq97ilS6x049V-b79tpekYevsxAinyMhRoS1BluwT6-Hkgy3SueG-RP60M7y4pr3yQvLlNVkR3i0e5JFoKL2vdHhLmSVTthw=w798-h799-no?authuser=0",
-    "tags": ["backpacking", "lakes"]
+    "tags": ["backpacking", "lakes", "montana"]
 }
 
 const subText = '59.04 miles, 7471 feet gain, 3 nights'

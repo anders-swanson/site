@@ -11,7 +11,7 @@ let metadata = {
     "title": "Four Columbia River Gorge Waterfall Hikes",
     "date": "2022-04-23",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXNVS6gNP6V3_7o58uqNcpWjDZXpTDbGCB5TNNoo6rvrjvDEb0ki6YauKW0DURhzI-iUA2gSfa4mp2fNT0gqGIijxmCKOO-0HsA2vim1HmsfB1iqfT3T3xD_ehigFSem9a5alPM3k5Xe648r-sa7m4d=s1067-no?authuser=1",
-    "tags": ["hiking", "waterfall", "crg"]
+    "tags": ["hiking", "waterfall", "crg", "oregon"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXL2bm7k_rkcJ-P6EgMZGG7ZDzSH6BQ8JFPtl7m7AiRYMcakNMeUVHEkjyZFnhoFdvvTsOiR0ixc-qfbAC-t0sDmpNcrl94yQFnYmdtEMGIfa4IYdgl9C-_kOXSYufZcQsIK6ITRS0oPw2-kIpnb7-Y=w1597-h1067-no?authuser=1'

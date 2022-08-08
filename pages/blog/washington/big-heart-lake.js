@@ -9,7 +9,7 @@ let metadata = {
     "title": "Big Heart Lake Backpack",
     "date": "2022-07-25",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLWKatNzTf41ySXDw-gYtvZYb2TEYJVuKkpY3WgDFI42r-Ufgy1xSWH_-ifGak8-08pP7z10GqliMMj6iOTlS476idB207MOB3_AOInbmOV8t8QtjlWeRrFc6j696kZxIybZzzYJPhbM-lXNTOvleaJt=s800-no?authuser=0",
-    "tags": ["lakes", "backpacking", "waterfall"]
+    "tags": ["lakes", "backpacking", "waterfall", "washington"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLVoZekIWMiZJaqXMAziZ-RvHHQaWbTj-Ct9gssRSiAgF0z3Mx7gIWZX4Mbq38gVfNJwvntDSf_HWZHVhQ3ThNDQ8QbNNNwTPXxu6NX5t0fN3kfnK8UBSGr9kmv9WoNJLCzCumj7WZXTnhoGQd8xP0ON=w800-h600-no?authuser=0'

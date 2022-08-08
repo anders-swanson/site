@@ -9,7 +9,7 @@ let metadata = {
     "title": "Spring Backpacking in Oregon",
     "date": "2022-05-02",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLUylk_UAqZ4M-vLAFvIJHqRTilndXouWRBpsznAtoS5WQrZ22ggfsj_rECSj-ClI43nKEormgAZ5OxVtlMu_ub_HK37C0sbjmdvZZWz0EC61wjbU56TUafrUoJpDDx0sTsQG_RSgnodWraTDErSgeOZ=w796-h798-no?authuser=0",
-    "tags": ["backpacking", "guide"]
+    "tags": ["backpacking", "guide", "oregon"]
 }
 
 const rogueRiverTrail = 'https://www.google.com/maps/place/Rogue+River+National+Recreation+Trail/@42.6522736,-123.607442,14.62z/data=!4m8!1m2!2m1!1srogue+river+trail!3m4!1s0x54c5092d96ca97b7:0xe67a995c036f7ea!8m2!3d42.650836!4d-123.5865435'

@@ -9,7 +9,7 @@ let metadata = {
     "title": "Death Valley Daytrip",
     "date": "2022-05-12",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLUoO0exTlAcaCVl92q9T4oWO1ZYastLcaj-VwT0trT7zBPPROSpw0iA1PwVNvPaQAE5Qerd7yjIA9obLuakzju1-ZGg_jfP8Fh-0ckU_i6JPPNs2F4RfF3nRRasaSMqcYb1AtsQFbdB7iqxcrfP84ZX=w800-h799-no?authuser=0",
-    "tags": ["hiking", "national park"]
+    "tags": ["hiking", "national park", "california"]
 }
 
 const sidewinderCanyon = 'https://www.google.com/maps/place/Sidewinder+Canyon/@36.0649766,-116.7884058,12.42z/data=!4m5!3m4!1s0x80c6e6ff3be5d46b:0x3fece4316e04be2!8m2!3d36.064642!4d-116.7447889'

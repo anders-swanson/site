@@ -10,7 +10,7 @@ let metadata = {
     "title": "Willow Creek Hot Springs",
     "date": "2021-07-05",
     "image": "/images/oregon/willow-creek/thumbnail.jpg",
-    "tags": ["camping", "hot springs", "steens"]
+    "tags": ["camping", "hot springs", "steens", "oregon"]
 }
 
 const image = ImagePathBuilder('/images/oregon/willow-creek')

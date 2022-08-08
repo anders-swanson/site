@@ -10,7 +10,7 @@ let metadata = {
     "title": "Little Blitzen Gorge",
     "date": "2021-07-04",
     "image": "/images/oregon/little-blitzen/thumbnail.jpg",
-    "tags": ["hiking", "waterfall", "steens"]
+    "tags": ["hiking", "waterfall", "steens", "oregon"]
 }
 
 const subText = '20.04 miles, 2,867 feet gain'

@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 //+metadata
 let metadata = {
-    "title": "Tank Lakes",
+    "title": "Tank Lakes Backpacking",
     "date": "2022-08-09",
     "image": "https://lh3.googleusercontent.com/pw/AL9nZEWxLuzadNQTYTvoNNkiecQsizYqx3wpydluafg5-Rc8Lc6sAvZEzaynslU5OGeIeU6HE3W_hFXNC5lq-LMoQtwRtubErCoMaDIeahrhtdni5Ot4Avu6moA7miUgV68PBT9tLEH6Kv4vg2UfaKSRdRJk=s800-no?authuser=0",
     "tags": ["lakes", "backpacking", "washington"]
@@ -79,7 +79,7 @@ export default function Post() {
                     <br/>
                     {`The next mile from Jade Lake passes by Emerald and Opal Lakes, and the rustic Necklace Valley cabin which was built in 1950. You'll find plenty
                     of campsites near Emerald and Opal Lakes. The trail in this section is full of wildflowers, bubbling streams, and the occasional small waterfall.
-                    Enjoy the respite while you can before embarking on the grueling climb to Tank Lakes.`}
+                    Enjoy the brief respite before embarking on the grueling climb to Tank Lakes.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Pinnable
@@ -92,13 +92,13 @@ export default function Post() {
                     </div>
                 </div>
                 <div>
-                    {`The trail becomes steeper as you start the ascent to Tank Lakes, scrambling up a brushy hillside which transitions to a boulder field.
-                    Once you're on the boulder field, follow the rock cairns up and to the left for the easiest route to Tank Lakes. Having a GPS track is helpful
-                    here, as there aren't many trail markers except cairns. A nice view of La Bohn peak is your left as you climb, and there may be
-                    snow fields as late as August. We didn't have any trouble crossing the snow in regular hiking boots.`}
+                    {`The trail starts off steep as you start ascending to Tank Lakes, scrambling up a brushy hillside which transitions to a boulder field.
+                    Once you're on the boulder field, follow the rock cairns up and to the left for the easiest route to Tank Lakes. It's helpful to have GPS track
+                    in the boulder field (and higher), as there aren't many trail markers except cairns. As you climb, you'll have a nice view of La Bohn peak to the left,
+                    and may see snow fields as late as August. We didn't have any trouble crossing the snow fields in regular hiking boots.`}
                     <br/><br/>
-                    {`Eventually, you'll crest the rightmost arm of La Bohn peak to gaze down at the southern Tank Lake. The view here is absolutely jaw-dropping - beyond the lake
-                    are the impressive Three Chief mountains and glaciated Chimney Rock.`}
+                    {`One tough climb later, you'll crest the rightmost arm of La Bohn peak and gaze down at Tank Lake. The view here is absolutely jaw-dropping - 
+                    the Three Chief mountains and glaciated Chimney Rock peaks rise impressively beyond the lake.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Pinnable
@@ -112,7 +112,7 @@ export default function Post() {
                     {`The lake basin has several campsites with commanding views of the surrounding scenery, all within a short distance of the lake. Explore the basin plateau
                     for a view of Bear's Breast Mountain, Iron Cap Mountain, and Dutch Miller Gap.`}
                     <br/><br/>
-                    {`Before heading back, I recommend to either scramble the side of La Bohn peak for a top-down view, or hike cross-country to the northern Tank Lake
+                    {`Before heading back, I recommend either scrambling the side of La Bohn peak for a top-down view of the area, or hiking cross-country to the northern Tank Lake
                     for even more views.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
@@ -125,8 +125,8 @@ export default function Post() {
                         />
                     </div>
                     <br/>
-                    {`Note: If you're visiting Necklace Valley, you'll definitely want to bring bug spray (such as DEET).
-                    This area is notorious for mosquitoes and biting flies during the summer.
+                    <strong>Note:</strong>{` If you're visiting Necklace Valley, definitely bring bug spray (such as DEET),
+                    this area is notorious for mosquitoes and biting flies during the summer.
                     The Alpine Lakes Wilderness is also Black Bear country, so please pack bear resistent containers and store all food or scented items securely. We saw lots of 
                     wildlife during our hike, including a black bear in the Tank Lakes area.`} 
                 </div>

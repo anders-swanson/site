@@ -7,7 +7,7 @@ import RelatedPosts from '../../../components/related_posts'
 
 //+metadata
 let metadata = {
-    "title": "Dalles Mountain Loop + Stacker Butte",
+    "title": "Dalles Mountain Loop",
     "date": "2021-04-25",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLU7ss51ZNznlDCgNWaYP9MkawWJ0w-YqWksHfUQ0O87MIWpQnAbyIRSynnZK_0jlsNy62t4OZtfdvQs0T7aHESz60MRdb7_Y38etQpKjayDv3gVVzte8totA1DHOTkilRE_RrxGeIGYsiVCN2bXvlrn=s1067-no?authuser=0",
     "tags": ["hiking", "wildflowers", "crg", "oregon"]
@@ -17,7 +17,7 @@ const subText = '13 miles, 1,600 feet gain'
 const trailhead = 'https://www.google.com/maps/place/Crawford+Oaks+Trailhead/@45.6558713,-121.0971517,14.08z/data=!4m12!1m6!3m5!1s0x549621be76f4f723:0xe92aeaedd990341!2sColumbia+Hills+Historical+State+Park!8m2!3d45.642663!4d-121.1055748!3m4!1s0x549621c64b70bb85:0xed2a853923a2b8ff!8m2!3d45.6571086!4d-121.0862031'
 const stackerButte = 'https://www.google.com/maps/place/Stacker+Butte+Trailhead/@45.6780985,-121.0911704,14.67z/data=!4m5!3m4!1s0x5496234deae70d3d:0xe04b8a4d61444b0f!8m2!3d45.6949542!4d-121.0925934'
 
-const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLV96sGuqiaSk72gayPQS9WVGw_TTHWOAGtrE6e-c_JsOJCt1rZfrMk5zES6Rh2jQm8nOyrxMCbmjZrg3cRBY1Om3rcDBSBrvIJoeolXB75LEmvjKLMXo01LYI3B2AV74V13IsJBw79dOpcjD_kC7sr1=w1597-h1067-no?authuser=0'
+const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEXmXqLADWTd6MQtIn11F_NC-dMC7yQmdjeX4v6ho_gDEZPAlYSqESNaLpoC07pQHGDoKqvisvI1xf2TIZ2x3LLIRXNmqLbBMGgIIx8NQk7PIyCfOEIEtNVX5oBEk518A3rp68BhmH2reXUpWHqzFDli=w1597-h1067-no?authuser=0'
 const trailWithFlowers = 'https://lh3.googleusercontent.com/pw/AM-JKLVE3OyiOzDpzI60rp3USt08EniGUCiKQ3uXfQUmKegNBH-yF796IRwTBPcz2DGHopd7JNclnCL5aLqhjRrKuQ2Oyyijb3xMHXLTOMd_yGyUHPITLo1IkGF3fK6klTMhtY2P1pC2VYLw8NrIdxfLb0jl=w801-h1067-no?authuser=0'
 const trail2 = 'https://lh3.googleusercontent.com/pw/AM-JKLWm7xv8fO1x4ubCdY8WrL1lxSEHeOWZi7eZK825jnn4e6cZbHKzv739wP3jAKsSSV3Eig1u214gKulCNHC_58OuY85k51YoqLsQAEGjOx05szzvyZJb-pQJwOFKs5mUYR6u230qsAsOKpje5ElInCJn=w801-h1067-no?authuser=0'
 const fenceWithFlowers = 'https://lh3.googleusercontent.com/pw/AM-JKLXf_bJCwTddquYkJxP4jBnTy2eJOvElaErAr2oFQcDphCGNzn96P9ok1biB2BROu4nujfP2jqtO89aXoLJGgJmRDGbdljzI8dTCBQjmgVC2TAp89oIjfDE8jKxGTVgfpFQhzikiIbrARoNQM_9Y5afz=w1597-h1067-no?authuser=0'

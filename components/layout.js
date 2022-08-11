@@ -10,6 +10,7 @@ import { CapitalizeWords } from '../lib/common'
 import Script from 'next/script'
 import { Tags } from '../lib/metadata'
 import Archive from './post_archive'
+import config from '../lib/config'
 
 export const title = `Trails and Trekking`
 const name = title
@@ -72,6 +73,7 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     {`!function(a,b,c){var d,e,f;d="PIN_"+~~((new Date).getTime()/864e5),a[d]?a[d]+=1:(a[d]=1,a.setTimeout(function(){e=b.getElementsByTagName("SCRIPT")[0],f=b.createElement("SCRIPT"),f.type="text/javascript",f.async=!0,f.src=c.mainUrl+"?"+Math.random(),e.parentNode.insertBefore(f,e)},10))}(window,document,{mainUrl:"https://assets.pinterest.com/js/pinit_main.js"});`}
     </Script>
     <Head>
+      <meta name="google-site-verification" content={config.google.siteVerification} />
       <title>{headerText ? headerText : title}</title>
       <link rel="icon" href="logo.jpg" />
       <meta name="og:title" content={headerText ? headerText : title}/>

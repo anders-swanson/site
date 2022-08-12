@@ -1,21 +1,20 @@
 import utilStyles from '../styles/utils.module.css'
 import styles from './postbox.module.css'
 import { CapitalizeWords } from '../lib/common'
-import { Matches } from '../lib/search'
 import { useState } from 'react'
 import Post from './post'
+import config from '../lib/config'
 
 const imgSizing = 280
-const itemsPerPage = 4
 const selectedStyles = {'fontWeight': 'bold', 'textDecoration': 'underline', 'color': 'black'}
 
-export default function PostBox({ posts, search, heading, postBoxClass }) {
+export default function PostBox({ posts, heading, postBoxClass, perPage }) {
     const pbClass = postBoxClass ? postBoxClass : styles.postBox
     const headingUpper = CapitalizeWords(heading)
-    const filteredPosts = search.length === 0 ? posts : Matches(search, posts)
-    const pages = [...Array(Math.ceil(filteredPosts.length / itemsPerPage)).keys()]
+    const itemsPerPage = perPage ? perPage : config.itemsPerPage
+    const pages = [...Array(Math.ceil(posts.length / itemsPerPage)).keys()]
     const [idx, setIdx] = useState(0)
-    const items = filteredPosts.slice(idx * itemsPerPage, (idx * itemsPerPage) + itemsPerPage)
+    const items = posts.slice(idx * itemsPerPage, (idx * itemsPerPage) + itemsPerPage)
 
     return (
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

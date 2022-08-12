@@ -5,14 +5,12 @@ import styles from './postbox.module.css'
 import archiveStyles from './post_archive.module.css'
 import { CapitalizeWords } from "../lib/common";
 import { FilterTag } from "../lib/post_filter";
-import { Matches } from "../lib/search";
 import { useState } from "react";
 
 
 const imgSizing = 100
 
-export default function Archive({ posts, tags, search }) {
-    posts = search.length === 0 ? posts : Matches(search, posts)
+export default function Archive({ posts, tags }) {
     const [isTagVisible, setIsTagVisible] = useState(Array(tags.length).fill(true))
 
     const onClickHeader = (idx) => {

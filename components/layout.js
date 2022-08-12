@@ -109,14 +109,12 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       {archive && (
         <Archive
           posts={allPostsData}
-          search={search}
           tags={Tags()}
         />
       ) || allPostsData && (
         <>
           <PostBox
             posts={allPostsData}
-            search={search}
             heading={postsHeading}
           />
         </>

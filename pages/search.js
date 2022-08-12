@@ -12,11 +12,18 @@ export default function SearchPage({ allPostsData }) {
       filteredPosts = terms.length === 0 ? allPostsData : Matches(terms, allPostsData)
     }
 
+    const resultWord = (size) => {
+        if (size == 1) {
+            return 'result'
+        }
+        return 'results'
+    }
+
     return (
         <Layout>
             <PostBox
-                posts={allPostsData}
-                heading={`${filteredPosts.length} results for "${terms}"`}
+                posts={filteredPosts}
+                heading={`${filteredPosts.length} ${resultWord(filteredPosts.length)} for "${terms}"`}
                 perPage={10}
             />
         </Layout>

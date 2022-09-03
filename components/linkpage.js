@@ -49,11 +49,6 @@ export default function Links({ title, showSocial }) {
                     src='https://www.amazon.com/shop/laurensbigadventure'
                 />
                 <LinkButton
-                    title='Senita'
-                    body='Save with discount code "LAURENG"'
-                    src='https://glnk.io/r4vq/laurensbigadventure'
-                />
-                <LinkButton
                     title='Kamo Fitness'
                     body='Support Code: "LAURENG"'
                     src='http://kamofitness.com/LAURENG'

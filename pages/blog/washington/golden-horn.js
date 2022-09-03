@@ -6,38 +6,37 @@ import Link from 'next/link'
 
 //+metadata
 let metadata = {
-    "title": "Tank Lakes Backpacking",
-    "date": "2022-08-09",
+    "title": "Golden Horn and Snowy Lakes",
+    "date": "2022-08-22",
     "image": "https://lh3.googleusercontent.com/pw/AL9nZEWxLuzadNQTYTvoNNkiecQsizYqx3wpydluafg5-Rc8Lc6sAvZEzaynslU5OGeIeU6HE3W_hFXNC5lq-LMoQtwRtubErCoMaDIeahrhtdni5Ot4Avu6moA7miUgV68PBT9tLEH6Kv4vg2UfaKSRdRJk=s800-no?authuser=0",
     "tags": ["lakes", "backpacking", "washington"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEWOw_322W10tjYx5Wi2etJKvCrPKqIDKpm-ulWi1TBWtQQg5jDXEIZDoVHyngDz318-vH-U5fkIP0fbN56pkLSCH-F7lw3P_kI8C3Ur6It_r9OfZAq4Z1kDwAlD00o0YfGVPXUc0_Z_nbxOEZfhj4IF=w800-h533-no?authuser=0'
-const pageURI = '/blog/washington/tank-lakes'
+const pageURI = '/blog/washington/golden-horn'
 
-const eastFossRiverTH = 'https://www.google.com/maps/place/Necklace+Valley+Trailhead/@47.6606472,-121.2944193,15.08z/data=!4m5!3m4!1s0x549a8c9d5a0ce6cf:0xecb31ebbfc1ce76c!8m2!3d47.6651581!4d-121.2883488'
+const paciticCrestNorthTrailhead = 'https://www.google.com/maps/place/Pacific+Crest+Trail+North+Trailhead/@48.5258689,-120.7382231,16.58z/data=!4m8!1m2!2m1!1sgolden+horn+trailhead!3m4!1s0x5484ade98ee8e437:0x54f63bb022e7f5b5!8m2!3d48.5246355!4d-120.7360385'
 
 export default function Post() {
     return (
         <Layout 
             headerImage={cover}
             headerText={metadata.title}
-            description={`Take a strenuous, but stunning hike to Tank Lakes in Washington's Alpine Lakes Wilderness.`}
-            subText={`24 miles, 1 night`}
+            description={`Explore a gorgeous stretch of the Pacific Crest Trail in Washington's North Cascades.`}
+            subText={`20 miles`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>
                 <div>
-                    {`Tank Lakes is a stunning backpacking destination high in Washington's Alpine Lakes Wilderness.
-                    This incredible hike starts off unassumingly, ambling through miles of forest alongside the East Foss River before rapidly gaining 5,300 feet of elevation 
-                    through rugged terrain.
-                    If you survive the climb to the top, and you'll be rewarded with astounding views of multiple snow-capped peaks, pristine alpine lakes, and ample backcountry
-                    to explore in Washington's beautiful Cascade Range.`}
+                    {`The hike to Golden Horn and Snowy Lakes explores some extremely accessible and wonderfully beautiful high country in the eastern North Cascades.`}
+                    <br/>
+                    {`The majority of this 20 mile out-and-back is spent above the treeline, crossing two mountain passes with almost constant 360-views of the surrounding
+                    peaks. Set your tent at Upper or Lower Snowy Lake in one of many campsites, or make this a long day hike if you're a especially hardy hiker.`}
                     <br/><br/>
-                    {`Bring a Northwest Forest Pass for parking at the `}
-                    <Link href={eastFossRiverTH}>Necklace Valley Trailhead</Link>
-                    {`, and self-issue a free wilderness permit at the trailhead kiosk. The trailhead parking area is small and fills up fast, but you
-                    can easily find additional spots to park along the forest road road.`}
+                    {`The trail starts at the `}
+                    <Link href={paciticCrestNorthTrailhead}>Pacific Crest North Trailhead</Link>
+                    {` across Highway 20 from Rainy Pass, just outside the North Cascades National Park. Campsites at Snowy Lakes are first come, first serve, and there are no
+                    required permits for backcountry camping along this stretch of the Pactific Crest Trail.`}
                 </div>
 
                 <div className={utilStyles.centered}>
@@ -49,16 +48,14 @@ export default function Post() {
                             height={533}
                         />
                 </div>
-                <h1 className={utilStyles.justifyCenter} id='tank-lakes'>Necklace Valley and Tank Lakes</h1>
+                <h1 className={utilStyles.justifyCenter} id='golden-horn-snowy-lakes'>Golden Horn and Snowy Lakes</h1>
                 <br/>
                 <div>
-                    {`For the first five miles, the trail is relatively flat, having only minor ups and downs. You'll spot multiple small campsites along the East Foss
-                    River, which are good spots to stop for lunch, or refill your water.`}
-                    <br/><br/>
-                    {`After crossing the foot bridge at the five mile mark, the climb begins to Jade Lake. In about 3 miles you'll gain almost 2,500 feet of elevation
-                    on a rough, rocky trail before reaching the southern end of Jade Lake.
-                    Jade Lake is a pretty, oblong lake with mountains poking out of the treeline at either end. Campsites are available near the lake if you
-                    decide to stop here for the day. Fingerling trout were jumping in Jade Lake, so fishing is definitely possible here.`}
+                    {`The trail's first five miles gradually climb to Cutthroat Pass, with views of mountains interspersed throughout the forest along the way. There's plenty of water
+                    at the start, with several small stream crossings including Porcupine Creek. Cutthroat Pass is an excellent place to stop and have lunch, looking across
+                    Cutthroat + Hinkhouse Peaks, and down to Cutthroat lake.`}
+                    <br/>
+                    {`This was also the trail section we saw the most wildlife. We passed a black bear 50 yards off trail below Cutthroat Pass, and saw a mountain goat above the pass.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Pinnable
@@ -77,9 +74,12 @@ export default function Post() {
                         />
                     </div>
                     <br/>
-                    {`The next mile from Jade Lake passes by Emerald and Opal Lakes, and the rustic Necklace Valley cabin which was built in 1950. You'll find plenty
-                    of campsites near Emerald and Opal Lakes. The trail in this section is full of wildflowers, bubbling streams, and the occasional small waterfall.
-                    Enjoy the brief respite before embarking on the grueling climb to Tank Lakes.`}
+                    {`The next couple miles follow a high, dry ridge line, which eventually drops down to Granite Pass. Continue a few miles more through the gorgeous high country
+                    to reach the Snowy Lakes cutoff trail. You'll see Mt. Hardy, Golden Horn, and The Tower on your approach.`}
+                    <br/><br/>
+                    {`The Snowy Lakes side-trail is clearly marked - you'll climb about 500 feet in 0.8 miles to Lower Snowy Lake. Upper Snowy Lake is 0.2 miles further. 
+                    There are plenty of established campsites at both lakes, and it might be hard to pick a favorite for camping. The upper lake has an excellent view of Mt.
+                    Hardy from ridge behind, which is great during sunset.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Pinnable
@@ -92,13 +92,7 @@ export default function Post() {
                     </div>
                 </div>
                 <div>
-                    {`The trail starts off steep as you begin the ascent to Tank Lakes, scrambling up a brushy hillside which transitions to a boulder field.
-                    Once you're on the boulder field, follow the rock cairns up and to the left for the easiest route to Tank Lakes. It's helpful to have GPS track
-                    in the boulder field (and higher), as there aren't many trail markers except cairns. As you climb, you'll have a nice view of La Bohn peak to the left,
-                    and may see snow fields as late as August. We didn't have any trouble crossing the snow fields in regular hiking boots.`}
-                    <br/><br/>
-                    {`One tough climb later, you'll crest the rightmost arm of La Bohn peak and gaze down at Tank Lake. The view here is absolutely jaw-dropping - 
-                    the Three Chief mountains and glaciated Chimney Rock peaks rise impressively beyond the lake.`}
+                    {``}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Pinnable
@@ -109,11 +103,6 @@ export default function Post() {
                             height={534}
                         />
                     </div>
-                    {`The lake basin has several campsites with commanding views of the surrounding scenery, all within a short distance of the lake. Explore the basin plateau
-                    for a view of Bear's Breast Mountain, Iron Cap Mountain, and Dutch Miller Gap.`}
-                    <br/><br/>
-                    {`Before heading back, I recommend either scrambling the side of La Bohn peak for a top-down view of the area, or hiking cross-country to the northern Tank Lake
-                    for even more views.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
                         <Pinnable
@@ -125,10 +114,17 @@ export default function Post() {
                         />
                     </div>
                     <br/>
-                    <strong>Note:</strong>{` If you're visiting Necklace Valley, definitely bring bug spray (such as DEET),
-                    this area is notorious for mosquitoes and biting flies during the summer.
-                    The Alpine Lakes Wilderness is also Black Bear country, so please pack bear resistent containers and store all food or scented items securely. We saw lots of 
-                    wildlife during our hike, including a black bear in the Tank Lakes area.`} 
+                    {`Snowy Lakes is best hiked from August through the end of September. The season is relatively short here due to the high elevation,
+                    and northern latitude. Without proper gear, it is dangerous to hike through snow here because of the steepness of the trail.`}
+                    <br/><br/>
+                    {`In addition to your regular backpacking gear, I recommend bringing the following on a trip to Snowy Lakes:`}
+                    <ul>
+                        <li>{`A near canister or bear bag such as an Ursack. Black bears are commonly spotted nearby.`}</li>
+                        <li>{`DEET and/or Permethrin - bugs can be annoying at the lakes, especially depending on the season.`}</li>
+                        <li>{`Plenty of sunscreen and/or sun protective clothing. Exposure is high, and you'll mostly be in the sun.`}</li>
+                        <li>{`Swimwear for the lakes - they'll be freezing cold, but it's fun to take a plunge!`}</li>
+                    </ul>
+                    {`Happy trails!`}
                 </div>
             </div>
             <RelatedPosts

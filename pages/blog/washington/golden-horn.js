@@ -8,11 +8,11 @@ import Link from 'next/link'
 let metadata = {
     "title": "Golden Horn and Snowy Lakes",
     "date": "2022-08-22",
-    "image": "https://lh3.googleusercontent.com/pw/AL9nZEWxLuzadNQTYTvoNNkiecQsizYqx3wpydluafg5-Rc8Lc6sAvZEzaynslU5OGeIeU6HE3W_hFXNC5lq-LMoQtwRtubErCoMaDIeahrhtdni5Ot4Avu6moA7miUgV68PBT9tLEH6Kv4vg2UfaKSRdRJk=s800-no?authuser=0",
+    "image": "https://lh3.googleusercontent.com/pw/AL9nZEVVUlfj77qjZ5umYnAraQ4Ima49vWuAW6xeKc4mLfsXzM_L-QbCiGHWv9DaRgcKijcH3HAZNvQR4wO_SaQ4yWGGMUZFVdaTCNeo1fQdjg0mU8e4wHN0hJ9QvYdDS5r8YURVUInUwKsfUoy1rlZ00JvP=s800-no?authuser=0",
     "tags": ["lakes", "backpacking", "washington"]
 }
 
-const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEWOw_322W10tjYx5Wi2etJKvCrPKqIDKpm-ulWi1TBWtQQg5jDXEIZDoVHyngDz318-vH-U5fkIP0fbN56pkLSCH-F7lw3P_kI8C3Ur6It_r9OfZAq4Z1kDwAlD00o0YfGVPXUc0_Z_nbxOEZfhj4IF=w800-h533-no?authuser=0'
+const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEXGw25374hAKaC-wbDFevMC96m4QD0cQ-4c0Skaji8BApUQe-VCPhbjk71gq7T6c5FjM1nvigVMrW8aZ9RSIrsDdtvjyjWZHcHhwHoGHnL2BoHfrAvbVcW1qYxPjAunP-OLojDOpz73CC42DOpwY8Rj=w800-h533-no?authuser=0'
 const pageURI = '/blog/washington/golden-horn'
 
 const paciticCrestNorthTrailhead = 'https://www.google.com/maps/place/Pacific+Crest+Trail+North+Trailhead/@48.5258689,-120.7382231,16.58z/data=!4m8!1m2!2m1!1sgolden+horn+trailhead!3m4!1s0x5484ade98ee8e437:0x54f63bb022e7f5b5!8m2!3d48.5246355!4d-120.7360385'
@@ -42,8 +42,8 @@ export default function Post() {
                 <div className={utilStyles.centered}>
                         <Pinnable
                             page={pageURI}
-                            alt="Camping at Tank Lake, Alpine Lakes Wilderness, Washington."
-                            src='https://lh3.googleusercontent.com/pw/AL9nZEUbNo_YhJDC1eFxRpQRpuhgo6f1gsd7dZUsmHmadeyKF3JCHJDElv-t4GTT2ZnAp8ylt2fqaM1AC_FFL7bRpeCBu1vcWN5ePslAgBFrywoahqTQYRpQ_KGWlfov-fXaHxh0c4sJ8HNJkc0g9XYYkgsN=w800-h533-no?authuser=0'
+                            alt="Lower and Upper Snowy Lakes, Washington."
+                            src='https://lh3.googleusercontent.com/pw/AL9nZEWMkjEj54FVoNqTQXLApl7MN-tmcsZv1CYWOCcGp_uMXHBGNnstKH9_Z4VkbSF3AAf_T9iK1BCl9SKdM5_ypsTb2SIotZbldRuds8Ybs9bqK_KoaofjyCoquPWVakgecXk-a4RkAJdNMxwUv5b0-pSj=w800-h533-no?authuser=0'
                             width={800}
                             height={533}
                         />
@@ -60,17 +60,10 @@ export default function Post() {
                     <div className={utilStyles.centered}>
                         <Pinnable
                             page={pageURI}
-                            alt="Jade Lake north end, Washington."
-                            src='https://lh3.googleusercontent.com/pw/AL9nZEVfJ9-pdMIrPP2xKDrNNE-bw8Cmdl_Sm4Yrt3WsdkfNE4fH37nLExcJWDoCHc72AgOXe2P2RwN5BJrllDkZSL1inWWg_yYKHeYd8CyeqaCeRLzgdMFrI26IIVBNwQ3YXeqdoRWnZ7yXW12MxNof7MwD=w533-h800-no?authuser=0'
-                            width={266}
-                            height={400}
-                        />
-                        <Pinnable
-                            page={pageURI}
-                            alt="Jade Lake south end, Washington."
-                            src='https://lh3.googleusercontent.com/pw/AL9nZEWrl0NLqM_afWXU38OzrpQKpcNqkXkU5L_tpakWVggh6wKZUhtCRgMa0MiBxP6Cg79fuaUjhPklp87eiuI3HXdqZLupVPOvzOu8NSHP0fMcjsSocAuvHn9A0pxbQ08pHTJY7Jv0JqjyhTuY0pEN8dy9=w533-h800-no?authuser=0'
-                            width={266}
-                            height={400}
+                            alt="Lower Snowy Lake and the Tower, Washington."
+                            src='https://lh3.googleusercontent.com/pw/AL9nZEWhwc-Z_m4FrpaVPfv9f1s7Vi6M7Djt-gq5e578L_skGQKZbr3w68KRsq5Oa2m9cudTCdMq8avmRU68YvfmlcR0RgQoEuhMhmwS4NU6MqzcW8FsOBJdgg8lNhsrAGJcTW-Y8NIlh4r-h6TMslN8TOJL=w533-h800-no?authuser=0'
+                            width={533}
+                            height={800}
                         />
                     </div>
                     <br/>
@@ -84,36 +77,14 @@ export default function Post() {
                     <div className={utilStyles.centered}>
                         <Pinnable
                             page={pageURI}
-                            alt='La Bohn Peak, Washington.'
-                            src='https://lh3.googleusercontent.com/pw/AL9nZEXc1d_B-c2n9oM43JHWBS-gwnxBAqkH2T3qzwmU5wYSXCZubj2YD6PhQ3tdhAfGSC4A77p60oqM5C7of3gjh6pPXsmIxnuT7B7P3xWRbpT1gQyMCikxoxz_zVEca56pHa-4bmWXxNujnEuqoX4BWi_b=w800-h533-no?authuser=0'
+                            alt={`Washington's North Cascades.`}
+                            src='https://lh3.googleusercontent.com/pw/AL9nZEXr8EGJtIQsN-iItxKV29KLYRcoaTS4QY_KPyYZIpGHvkECgmuD8IT6mQvBWgP0iXsjkFYLqbiCtTj0xHHWEZ6_uV4ekg3S7dDfemFDVUBJkf7h8MCZclJIL-377Xm5v-o1jIgf3elGM5O_Z0XW5bd9=w800-h533-no?authuser=0'
                             width={800}
                             height={533}
                         />
                     </div>
                 </div>
                 <div>
-                    {``}
-                    <br/><br/>
-                    <div className={utilStyles.centered}>
-                        <Pinnable
-                            page={pageURI}
-                            alt='Tank Lake, Washington.'
-                            src='https://lh3.googleusercontent.com/pw/AL9nZEWmCLIhWCMT_h4Lf7SJg03PDmzhpWC3UTvygOg8If-Ssgq76_Z51qIJPypft6bYor6YzWezLGii72djD3gzIEgLioO4GFDg4Zb201NLefKB-r2Yawl5bcuvcY6g8RpefeyxMqZTgiRjNwGgZ__El_qP=w533-h534-no?authuser=0'
-                            width={533}
-                            height={534}
-                        />
-                    </div>
-                    <br/><br/>
-                    <div className={utilStyles.centered}>
-                        <Pinnable
-                            page={pageURI}
-                            alt='Chimney Rock, Washington.'
-                            src='https://lh3.googleusercontent.com/pw/AL9nZEXMkXbwXs7yzykr1uivjOt-D2XFujkz5zL-0GFIrTIGOJfZ1vidwBgLROY5wKI9HEFPBp9ipDmvWdznUSkWOB2u2S6VLCShL3snRESzlPdeY5YNg4lDiFIW-ploSLpXkdoyfdEFXONfTzOKRR6WHBsH=w533-h800-no?authuser=0'
-                            width={533}
-                            height={800}
-                        />
-                    </div>
-                    <br/>
                     {`Snowy Lakes is best hiked from August through the end of September. The season is relatively short here due to the high elevation,
                     and northern latitude. Without proper gear, it is dangerous to hike through snow here because of the steepness of the trail.`}
                     <br/><br/>
@@ -125,6 +96,16 @@ export default function Post() {
                         <li>{`Swimwear for the lakes - they'll be freezing cold, but it's fun to take a plunge!`}</li>
                     </ul>
                     {`Happy trails!`}
+                    <br/><br/>
+                    <div className={utilStyles.centered}>
+                        <Pinnable
+                            page={pageURI}
+                            alt={`Golden Horn, Washington.`}
+                            src='https://lh3.googleusercontent.com/pw/AL9nZEViOd9NJm8PMWG11gWT57sVAZOzWV0xHX8oAMsy_WlioZP3bVvKhdPtVfXO70SerOXnRNRcC79Ba2FDSQmgf2m2F2D80gSuFj2l998xaOJuAGT9agxgkwQSGou9V_MnCq3AABjFgARvBoopkPm-Rv-H=w533-h800-no?authuser=0'
+                            width={533}
+                            height={800}
+                        />
+                    </div>
                 </div>
             </div>
             <RelatedPosts

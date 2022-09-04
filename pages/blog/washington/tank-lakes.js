@@ -92,7 +92,7 @@ export default function Post() {
                     </div>
                 </div>
                 <div>
-                    {`The trail starts off steep as you start ascending to Tank Lakes, scrambling up a brushy hillside which transitions to a boulder field.
+                    {`The trail starts off steep as you begin the ascent to Tank Lakes, scrambling up a brushy hillside which transitions to a boulder field.
                     Once you're on the boulder field, follow the rock cairns up and to the left for the easiest route to Tank Lakes. It's helpful to have GPS track
                     in the boulder field (and higher), as there aren't many trail markers except cairns. As you climb, you'll have a nice view of La Bohn peak to the left,
                     and may see snow fields as late as August. We didn't have any trouble crossing the snow fields in regular hiking boots.`}

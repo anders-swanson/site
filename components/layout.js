@@ -91,13 +91,12 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       search={search}
       setSearch={setSearch}
     />
-    <img
+  {headerImage != "none" && (<img
       alt=""
       src={img}
       className={utilStyles.headerImage}
-    />
+    />)}
 
-    
     <div className={styles.container}>
       {isVisible && (
         <div className={styles.fixedText}>

@@ -3,6 +3,7 @@ import Layout from "../../../components/layout"
 import RelatedPosts from '../../../components/related_posts'
 import Pinnable from '../../../components/pinit'
 import Link from 'next/link'
+import links from '../../../lib/links'
 
 //+metadata
 let metadata = {
@@ -90,8 +91,8 @@ export default function Post() {
                     <br/><br/>
                     {`In addition to your regular backpacking gear, I recommend bringing the following on a trip to Snowy Lakes:`}
                     <ul>
-                        <li>{`A near canister or bear bag such as an Ursack. Black bears are commonly spotted nearby.`}</li>
-                        <li>{`DEET and/or Permethrin - bugs can be annoying at the lakes, especially depending on the season.`}</li>
+                        <li>{`A `}<Link href={links.hiking.bearVault}>bear canister</Link>{` or `}<Link href={links.hiking.ursack}>bear bag such as an Ursack</Link>{`. Black bears are commonly spotted nearby.`}</li>
+                        <li><Link href={links.hiking.bugSpray}>DEET</Link>{` and/or `}<Link href={links.hiking.afterbite}>Afterbite</Link>{` - bugs can be annoying at the lakes, especially depending on the season.`}</li>
                         <li>{`Plenty of sunscreen and/or sun protective clothing. Exposure is high, and you'll mostly be in the sun.`}</li>
                         <li>{`Swimwear for the lakes - they'll be freezing cold, but it's fun to take a plunge!`}</li>
                     </ul>

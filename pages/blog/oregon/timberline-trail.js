@@ -3,6 +3,7 @@ import Layout from "../../../components/layout"
 import RelatedPosts from '../../../components/related_posts'
 import Pinnable from '../../../components/pinit'
 import Link from 'next/link'
+import links from '../../../lib/links'
 
 //+metadata
 let metadata = {
@@ -60,7 +61,10 @@ export default function Post() {
                     on that year's snowpack. Hiking earlier in the season is ill-advised and incredibly hazardous: stream crossings become more dangerous,
                     and there is high avalanche risk.`}
                     <br/><br/>
-                    {`Bugs are present through August, though usually not in high numbers. Bring protective clothing and/or repellent like DEET just in case.
+                    {`Bugs are present through August, though usually not in high numbers. Bring protective clothing and/or `}
+                    <Link href={links.hiking.bugSpray}>repellent like DEET</Link>
+                    {` just in case. A cortizone-based ointment such as `}<Link href={links.hiking.afterbite}>Afterbite</Link>{` will help alleviate the irritation from 
+                    any bites you do get.
                     Most of the trail is exposed and above the treeline, so definitely pack enough sunscreen. Almost all of the hiking will be in full sun.`}
                 </div>
                 

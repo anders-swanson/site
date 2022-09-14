@@ -51,7 +51,7 @@ export default function Links({ title, showSocial }) {
                 <LinkButton
                     title='Kamo Fitness'
                     body='Support Code: "LAURENG"'
-                    src='http://kamofitness.com/LAURENG'
+                    src='https://kamofitness.com/LAURENG'
                 />
                 <LinkButton
                     title='My Go to Hiking Shorts'

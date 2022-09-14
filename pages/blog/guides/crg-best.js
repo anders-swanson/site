@@ -18,8 +18,8 @@ const table1 = 'https://lh3.googleusercontent.com/pw/AM-JKLVq-74p75G-Jw8gCZ7O0ah
 const table2 = 'https://lh3.googleusercontent.com/pw/AM-JKLXkW7bZGe5Wj2ojKFqS10NbFLbg1wVPud3amS1-91wYHjPObM9rL2XDoY9HcJf1lJ6G8k8rzM_zvrmENYKq9HLSZshm3l6tWPHLPBcQdvYEWzvJuYhwI_RIOb2IhDcdzrgtAGLJCcUTKGHfVQzKhyr9=w1609-h1075-no?authuser=1'
 const table3 = 'https://lh3.googleusercontent.com/pw/AM-JKLV6p2wtw5-t_wDnzbM0uDyDk5yLirOiz_H6ko-luLA1fW3OEu1iNuim94cLJpRaHpCiIXcG2GW6xxzktc5r4b8VF3Kit5wGKkw3V1rhWDs38e6SOtodpM2ycvfYZPhnxk8_yOCx8KTrTc29TkrIOjYb=w1609-h1075-no?authuser=1'
 const tunnelfalls = 'https://lh3.googleusercontent.com/pw/AM-JKLU4b0RnfgUxz74m6hx6_652cQB3CWd0D96uaRBKuUWHiRQSwG9FWH646d3JclbjPn_CL35X4K37kSJGtvswgianW-UNEt9yGFkVuoZOH6ABSXaUUlyvsH8snIMEsL_f-2fxvGBCYMN8uKnndIpP8ceY=w1609-h1075-no?authuser=1'
-const punchbowl = 'https://lh3.googleusercontent.com/pw/AM-JKLU4j4PmuwGb33KHyH94hkGZcIIEgEcSxmZ_fQAkhXh7_O-5klooUsV-MxeBnazpiPkcXKniXoSAJtizEcVRQd9QLfCWOWsrH14pPwNGtUvUWgNMxQ4ISwrQp2ysNOjJogP-BtLc7Hx7m7ht51uIJ9qR=w1609-h1075-no?authuser=1'
-const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLU4j4PmuwGb33KHyH94hkGZcIIEgEcSxmZ_fQAkhXh7_O-5klooUsV-MxeBnazpiPkcXKniXoSAJtizEcVRQd9QLfCWOWsrH14pPwNGtUvUWgNMxQ4ISwrQp2ysNOjJogP-BtLc7Hx7m7ht51uIJ9qR=w1609-h1075-no?authuser=1'
+const punchbowl = 'https://lh3.googleusercontent.com/pw/AL9nZEUIauDTyjBs5dm0g29Ja5RkmjrLLPJ4NRVhw5Cve2P347n1XDYiThMKpdkzs8yfFmzci1zeMtgpBwnv3DVKrVqCHqtlLAWlainnLnZ9NWEYBwbJFT-LsTgNpfuEZIohDpLlFMaTkYSN3iiP_OJLfJ8H=w1597-h1067-no?authuser=0'
+const cover = punchbowl
 
 const equestrianTH = 'https://www.google.com/maps/place/Equestrian+Trailhead/@45.6347414,-122.0182306,15.5z/data=!4m5!3m4!1s0x5495e9b638181129:0x5f33b879c1e99b3a!8m2!3d45.6412843!4d-122.0324582'
 const hamiltonTH = 'https://www.google.com/maps/place/Hamilton+Mountain+Trailhead/@45.6347414,-122.0182306,15.5z/data=!4m5!3m4!1s0x5495e9ca4e5a2d5d:0x98cef5ae4083eb6!8m2!3d45.6327992!4d-122.020139'

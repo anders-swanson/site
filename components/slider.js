@@ -48,30 +48,46 @@ export default function Slider({ slides, width, height }) {
         <div
             className={styles.container}
         >
-            <ReactTouchEvents
-                onSwipe={handleSwipe}
-            >
-                <div 
-                    key={slides[currentSlide]}
-                >
-                    {isVideo(slides[currentSlide]) && (
-                        <Video            
-                            src={slides[currentSlide]}
-                            width={imgWidth}
-                            height={imgHeight}
-                        />
-                    ) || (
-                        <Image
-                            alt={slides[currentSlide]}
-                            src={slides[currentSlide]}
-                            width={imgWidth}
-                            height={imgHeight}
-                            draggable="false"
-                            style={{"userDrag": "none"}}
-                        />
-                    )}
-                </div> 
-            </ReactTouchEvents>
+            <div className={styles.outer}>
+            {                
+                slides.map((_, idx) => {
+                    return (
+                        <ReactTouchEvents
+                            key={`touch-${idx}`}
+                            onSwipe={handleSwipe}
+                        >
+                            <div 
+                                key={slides[idx]}
+                                className={styles.inner}
+                            >
+                                {isVideo(slides[idx]) && (
+                                    <Video            
+                                        src={slides[idx]}
+                                        width={imgWidth}
+                                        height={imgHeight}
+                                        style={{"opacity": idx === currentSlide ? "100%" : "0%"}}
+                                    />
+                                ) || (
+                                    <Image
+                                        alt={slides[idx]}
+                                        src={slides[idx]}
+                                        width={imgWidth}
+                                        height={imgHeight}
+                                        draggable="false"
+                                        style={{"userDrag": "none", "opacity": idx === currentSlide ? "100%" : "0%"}}
+                                        preload='true'
+                                    />
+                                )}
+                            </div> 
+                        </ReactTouchEvents>
+                    )
+                })
+            }
+            </div>
+            
+
+
+
             <br/>
             <div>
             {                

@@ -4,6 +4,18 @@
     padding-right: 25px;
 }
 
+.outer {
+    margin: 0 auto;
+    /* important part */
+    display: grid;
+    place-items: center;
+    grid-template-areas: "inner-div";
+}
+  
+.inner {
+    /* important part */
+    grid-area: inner-div;
+}
 
 .dot {
     cursor: pointer;

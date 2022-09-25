@@ -8,7 +8,7 @@ const videoTypes = {
 
 // Only play the video when it is in the viewport.
 // The video will be paused when it is not in the viewport
-export default function Video({ src, height, width, controls}) {
+export default function Video({ src, height, width, controls, style}) {
     const videoRef = useRef(null)
     const imgHeight = height ? height : "500px"
     const imgWidth = width ? width : "500px"
@@ -29,6 +29,7 @@ export default function Video({ src, height, width, controls}) {
                     onLeave={() => {videoRef.current.pause()}}
                 >
                     <video
+                        style={style}
                         ref={videoRef}
                         width={imgWidth}
                         height={imgHeight}

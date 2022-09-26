@@ -33,12 +33,6 @@ export default function Links({ title, showSocial }) {
                     animation={utilStyles.bounceAnimation}
                 />
                 <LinkButton
-                    title='Rumpl'
-                    body='Your perfect camp blanket'
-                    src='https://bit.ly/3O3pXLO'
-                    animation={utilStyles.shakeAnimation}
-                />
-                <LinkButton
                     title='REI Hipbelt Pocket'
                     body='My Favorite Backpack Attatchment'
                     src='https://bit.ly/3KkMTnp'

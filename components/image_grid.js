@@ -22,8 +22,9 @@ export default function ImageGrid({ backgroundImage, title, items, opacity, imag
             <div
                 className={styles.grid_container}
             >
-                {items.map((item) => (
+                {items.map((item, idx) => (
                     <div
+                        key={idx}
                         className={styles.grid_item}
                     >
                         <div 
@@ -36,6 +37,7 @@ export default function ImageGrid({ backgroundImage, title, items, opacity, imag
                             <Link href={item.link}>
                                 <a target="_blank">
                                     <Image
+                                        alt={idx}
                                         src={item.image}
                                         width={imageWidth}
                                         height={imageHeight}

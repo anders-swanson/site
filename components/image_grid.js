@@ -54,8 +54,9 @@ export default function ImageGrid({ backgroundImage, title, items, opacity, imag
                         </div>
                     </div>
                     </>
-                ))} 
+                ))}
             </div>
+            <br/>
         </div>
     )
 }

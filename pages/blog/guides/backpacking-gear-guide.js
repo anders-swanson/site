@@ -26,25 +26,44 @@ export default function Post() {
                 backgroundImage={backgroundImage}
             >
                 <br/>
-                <h1 className={utilStyles.floatyText}>{`My Backpacking Gear`}</h1>
+                <h1
+                    className={utilStyles.floatyText}
+                    style={{'fontSize': '6.0vw'}}
+                >
+                    {`My Backpacking Gear`}
+                </h1>
                 <div style={{
                     'fontFamily': 'font-family: "Poppins",sans-serif',
                     'fontWeight': '500',
-                    'justifyContent': 'center',
+                    'fontSize': '3.5vw',
                     'color': 'white',
+                    'margin': 'auto',
+                    'marginRight': '50px',
+                    'marginLeft': '50px',
+                    'background': 'rgba(0, 0, 0, .5)',
+                    'maxWidth': '1200px',
+                    'display': 'flex',
+                    'padding': '5%',
+                    'lineHeight': '1.2',
                 }}>
-                    {`This guide contains the backpacking gear I bring on `}<b>every trip</b>{`. I use this gear for `}<b>weekend</b>{` and `}<b>multi-day</b>{` trips.
-                    I look for gear that balances cost, durability & weight. This gear has lasted me over `}<b>4 years</b>{` and  `}<b>1000+ miles</b>{`. Click the photos below to shop my gear.`}
-                    <br/><br/>
-                    - Lauren 💙
-                    <br/><br/><br/>
-                    <small style={{
-                        'fontWeight': '600',
+                    <div>
+                    <p>    
+                        {`This guide contains the backpacking gear I bring on `}<b>every trip</b>{`. I use this gear for `}<b>weekend</b>{` and `}<b>multi-day</b>{` trips.
+                        I look for gear that balances cost, durability & weight. This gear has lasted me over `}<b>4 years</b>{` and  `}<b>1000+ miles</b>{`. Click the photos below to shop my gear.`}
+                    </p>
+                    <p>
+                        {`- Lauren 💙`}
+                    </p>
+                    <br/>
+                    <p style={{
+                        'fontSize': '3vw',
                     }}>
                         {`This guide contains affiliate links, which means that by using these links, I will earn a small commission
                         at no additional cost to you. This helps support my adventures and allows me to make more resources like this for you. Thank you!`}
-                    </small>
+                    </p>
+                    </div>
                 </div>
+                <br/><br/>
             </HeaderText>
             <ImageGrid
                 title={`The “Big 3” & Tent Gear`}
@@ -83,7 +102,7 @@ export default function Post() {
                     {
                         text: `Inflatable Pillow`,
                         image: backpack,
-                        link: `https://www.rei.com/product/829826/therm-a-rest-z-lite-sol-sleeping-pad?cm_mmc=aff_AL-_-246005-_-307117-_-NA&avad=307117_b2b36b6c1`
+                        link: `https://amzn.to/3DivXOm`
                     },
                     {
                         text: `Spacious 2-Person Tent`,

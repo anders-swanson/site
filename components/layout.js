@@ -17,6 +17,7 @@ const name = title
 const defaultHeaderImage = "/images/cover.jpeg"
 const maxScroll = 5
 const defaultHeaderColor = 'white'
+const noHeader = 'none'
 
 export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor, archive }) {
   let img = headerImage ? headerImage : defaultHeaderImage
@@ -91,14 +92,14 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       search={search}
       setSearch={setSearch}
     />
-  {headerImage != "none" && (<img
+  {headerImage != noHeader && (<img
       alt=""
       src={img}
       className={utilStyles.headerImage}
     />)}
 
     <div className={styles.container}>
-      {isVisible && (
+      {isVisible && headerImage != noHeader && (
         <div className={styles.fixedText}>
           <h1 className={styles.headerText} style={{ 'color': color }}>{CapitalizeWords(txt)}</h1>
           <h1 className={styles.statsText} style={{ 'color': color }}>{stxt}</h1>

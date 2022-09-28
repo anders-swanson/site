@@ -225,3 +225,10 @@
   margin-right: 10px;
   padding-top: 10px;
 }
+
+.floatyText {
+  font-family: "Shrikhand",sans-serif;
+  text-shadow: 0px 2px 2px #2275ac;
+  color: rgb(255, 251, 242);
+  text-align: center;
+}

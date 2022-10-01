@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './linkbutton.module.css'
 
 export default function LinkButton({ title, body, src, animation }) {
@@ -7,12 +8,12 @@ export default function LinkButton({ title, body, src, animation }) {
                 {title}
                 <p className={styles.lbBody}>{body}</p>
             </div>
-            <a
-                href={src}
-                target="_blank"
-                rel="noreferrer"
-            />
+            <Link href={src} passHref>
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                />
+            </Link>
         </div>
-
     )
 }

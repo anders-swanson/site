@@ -33,6 +33,11 @@ export default function Links({ title, showSocial }) {
                     animation={utilStyles.bounceAnimation}
                 />
                 <LinkButton
+                    title='My Backpacking Gear'
+                    body="Gear that's lasted me over 1000+ miles"
+                    src='/blog/guides/backpacking-gear-guide'
+                />
+                <LinkButton
                     title='REI Hipbelt Pocket'
                     body='My Favorite Backpack Attatchment'
                     src='https://bit.ly/3KkMTnp'

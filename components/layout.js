@@ -92,11 +92,14 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       search={search}
       setSearch={setSearch}
     />
-  {headerImage != noHeader && (<img
+  <img
       alt=""
       src={img}
       className={utilStyles.headerImage}
-    />)}
+      style={{
+        'height': headerImage == noHeader ? '0px': '500px',
+      }}
+    />
 
     <div className={styles.container}>
       {isVisible && headerImage != noHeader && (

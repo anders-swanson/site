@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /search*
 Disallow: /filter/*
+Disallow: /media-kit*
 Allow: /
 Sitemap: https://www.trailsandtrekking.com/sitemap.xml

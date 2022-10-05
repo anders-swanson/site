@@ -195,7 +195,7 @@ export default function Post() {
             />
             <RelatedPosts
                 metadata={metadata}
-                tag="guidse"
+                tag="guides"
             />
         </Layout>
     )

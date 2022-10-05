@@ -10,7 +10,7 @@ let metadata = {
     "title": "Mt. Hood's Timberline Trail",
     "date": "2022-09-09",
     "image": "https://lh3.googleusercontent.com/pw/AL9nZEWXCF2hPa8fZMrTCKDZlPkbzrZuDjP0kvU_hpCslG0qi-5bwgac8O3ejUDV_ZTvhj-3pXYIxL9xVW6i5XaEVhWNnvGiKnGIk0AU5YrnJNJ9sZm_c0SzGfwefYkjV3WvIznubiCgnlToHxUB5v8NwXiY=s800-no?authuser=0",
-    "tags": ["lakes", "backpacking", "oregon", "guide"]
+    "tags": ["lakes", "backpacking", "oregon", "guides"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEUFQkxUG704mLPsypTmBDWj_H_Xj5mCNtBoKYOneX_zs0fv0Rtu7ilknKlmZWHB-NtUaFxMLSTjfUvNTYZghtdOTKp1poAppkWOaYegCYycYFlNl4lv-EaJK32dUfBDX5qQMCxyN45NwgVacxjnp3_Z=w800-h533-no?authuser=0'

@@ -97,17 +97,19 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       src={img}
       className={utilStyles.headerImage}
       style={{
-        'height': headerImage == noHeader ? '0px': '500px',
+        'height': headerImage == noHeader ? '0px': '20vmax',
       }}
     />
 
+    {isVisible && headerImage != noHeader && (
+      <div className={styles.fixedText} style={{'color': color}}>
+        <h1 className={styles.headerText}>{CapitalizeWords(txt)}</h1>
+        <h1 className={styles.statsText}>{stxt}</h1>
+      </div>
+    )}
+
     <div className={styles.container}>
-      {isVisible && headerImage != noHeader && (
-        <div className={styles.fixedText}>
-          <h1 className={styles.headerText} style={{ 'color': color }}>{CapitalizeWords(txt)}</h1>
-          <h1 className={styles.statsText} style={{ 'color': color }}>{stxt}</h1>
-        </div>
-      )}
+      
       <main>{children}</main>
       {archive && (
         <Archive

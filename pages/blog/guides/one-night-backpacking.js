@@ -10,7 +10,7 @@ let metadata = {
     "title": "One Night Backpacking Trips for Beginners",
     "date": "2022-03-23",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXNcW2fsTXlo5zhyrAEHcS4TojjXhtA-IVO-695wQI_6dIEZk11MuURrGNGs9AyPd2R000ZJCP-A75sgm0YqIEMQ5pk9oByucw5zp5lzKaoun145l-JpNVACjN_wRizngzQ0JgGeQBMuhLsLulzZSMWbA=s599-no?authuser=1",
-    "tags": ["backpacking", "guide"]
+    "tags": ["backpacking", "guides"]
 }
 
 const killenCreekTrailhead = 'https://www.google.com/maps/place/Killen+Creek+Trailhead/@46.265345,-121.5707579,13.21z/data=!4m9!1m2!2m1!1shigh+camp+mt+adams!3m5!1s0x5496fad09064a871:0x116bf95df4b0c597!8m2!3d46.2884481!4d-121.5523052!15sChJoaWdoIGNhbXAgbXQgYWRhbXNaFCISaGlnaCBjYW1wIG10IGFkYW1zkgEKdHJhaWxfaGVhZJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VORGRqZG1RM1puUlJBQg'
@@ -179,7 +179,7 @@ export default function Post() {
             </div>
             <RelatedPosts
                 metadata={metadata}
-                tag="guide"
+                tag="guidse"
             />
         </Layout>
     )

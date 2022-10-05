@@ -10,7 +10,7 @@ let metadata = {
     "title": "Backpacking Meal Ideas",
     "date": "2022-06-09",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVPvvDopK4LEy8vh-6RYP7G4pZxu8W2gbDSiBjXeFETMOat9i4INw8lXKv8rhqb6Baqf1MCoPKnsy9vd432BliVf1Hk5xquM85ZQeCSuDSxD2f0tp6u-PHaYh0SIPb7_7X7EymaRdQwgMMK6B3J9V2H=s450-no?authuser=0",
-    "tags": ["backpacking", "guide"]
+    "tags": ["backpacking", "guides"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXXcf1K4hJmKGMYeeh4mEo1RunikoWbFKynQaEqZnUXA3bnuerQ2Rba3aTFMdM68SBqSLI0MyLAHyM5-kNFrAgFzLMJlbn-4_Iwws4twiM35I6ImoiYNLV1n-ccMYhnlACnipIVaZaVUF6qOmyE23qk=w1920-h955-no?authuser=1'
@@ -183,7 +183,7 @@ export default function Post() {
             </div>
             <RelatedPosts
                 metadata={metadata}
-                tag="guide"
+                tag="guides"
             />
         </Layout>
     )

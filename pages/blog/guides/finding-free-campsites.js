@@ -9,7 +9,7 @@ let metadata = {
     "title": "Finding Free Campsites",
     "date": "2022-01-20",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVooI0kgLGMI0IBWJ7MLlQVv91otMikeyds_Ouuk_jkBuQvytB07HjrYPKI-XGRtLc-8G-NTJV92zze-1hqTDldOtwuWuD4ISHSX-7T2A0nsEU0tZjZC9DBTyffU8Xm8cw5auqgIqt6UFeqj6-ueca6=s1075-no?authuser=1",
-    "tags": ["camping", "guide"]
+    "tags": ["camping", "guides"]
 }
 
 const tent1 = 'https://lh3.googleusercontent.com/pw/AM-JKLXt2H_cG1Gi1b6fVuaUny7D25pufXWBUEJFjz5dt4bSFXTWZAMKhYVMQDIlAb98OQWMTMvqS5iPpWhQGh_7n7eRJPG32xXzo2Rs5IKqDAZvcCGHel5-BwI_zZrpPdbmlUeniX27DIomCZzklExEnPtb=w807-h1075-no?authuser=1'
@@ -124,7 +124,7 @@ export default function Post() {
             </div>
             <RelatedPosts
                 metadata={metadata}
-                tag="guide"
+                tag="guides"
             />
         </Layout>
     )

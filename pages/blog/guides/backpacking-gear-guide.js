@@ -1,5 +1,6 @@
 import HeaderText from "../../../components/header_text"
 import ImageGrid from "../../../components/image_grid"
+import RelatedPosts from '../../../components/related_posts'
 import Layout from "../../../components/layout"
 import utilStyles from '../../../styles/utils.module.css'
 
@@ -8,7 +9,7 @@ let metadata = {
     "title": "Backpacking Gear Guide",
     "date": "2022-09-27",
     "image": "https://lh3.googleusercontent.com/pw/AL9nZEWokLaiP_-Rg2J3riCugLMqDMOgsM_2ZbDQjH7p5-fjnCmDQajineWfBxHKvVt1YM2JOS_JPCFXVoYa-6ZDcbD9-Vjb5jG6twOD949h0RfhlT6QmzYeNUdDgI0tAfUKcXuSBBFeEq_HKtCzFPOnlbll=s698-no?authuser=0",
-    "tags": ["backpacking", "guide"]
+    "tags": ["backpacking", "guides"]
 }
 
 const backgroundImage = 'https://lh3.googleusercontent.com/pw/AL9nZEVYk7S03VbTbPmMXNWg61YYuZ_hQdE75O5_Cj2yRHu6t5KKuCLnkgW3PWGxz0nlH8jwzA4bUHFzFBNiDDKFAxbVHkm81yS19htj9X4FYVrhofToP2MZbjGPcschCRiytpfcARvEsV4rPvintQ7d4SK8=w600-h900-no?authuser=0'
@@ -191,6 +192,10 @@ export default function Post() {
                         link: `https://www.rei.com/product/132220/hart-outdoor-weekend-first-aid-kit?cm_mmc=aff_AL-_-246005-_-307117-_-NA&avad=307117_a2b3713f9`
                     },
                 ]}
+            />
+            <RelatedPosts
+                metadata={metadata}
+                tag="guidse"
             />
         </Layout>
     )

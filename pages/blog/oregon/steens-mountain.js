@@ -9,7 +9,7 @@ let metadata = {
     "title": "Exploring Steens Mountain",
     "date": "2022-06-01",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLWWJgfi_5SEW_Z1NGMGCA72m1-eVKoxRb6oTnkS-sDwpKEtHtgdXU-n8AnMkbch4AHcxJg8yHYWuIpFQ1OUZX0ZMRqcMoPkfObO2AhtElXjo6yj2CoM-swfhVPQ80UxktL_e494CkmUawdHActV9OZ9=s535-no?authuser=0",
-    "tags": ["guide", "steens", "hot springs", "oregon"]
+    "tags": ["guides", "steens", "hot springs", "oregon"]
 }
 
 const steensBLM = 'https://www.blm.gov/programs/recreation/recreation-activities/oregon-washington/steens-mountain'
@@ -219,7 +219,7 @@ export default function Post() {
             </div>
             <RelatedPosts
                 metadata={metadata}
-                tag="guide"
+                tag="guides"
             />
         </Layout>
     )

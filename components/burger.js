@@ -69,9 +69,7 @@ export default function Burger() {
           <br/>
           <Link href="/contact">Contact</Link>
           <br/>
-          <Link href="/blog/guides/backpacking-gear-guide">
-              Our Gear
-          </Link>
+          <Link href="/filter/guides">Guides</Link>
           <br/>
           <Link href="/links#info">Links</Link>
           <br/>

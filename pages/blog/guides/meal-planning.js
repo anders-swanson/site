@@ -10,20 +10,19 @@ import Pinnable from '../../../components/pinit'
 let metadata = {
     "title": "Planning Backpacking Meals",
     "date": "2022-10-11",
-    "image": "https://lh3.googleusercontent.com/pw/AM-JKLVPvvDopK4LEy8vh-6RYP7G4pZxu8W2gbDSiBjXeFETMOat9i4INw8lXKv8rhqb6Baqf1MCoPKnsy9vd432BliVf1Hk5xquM85ZQeCSuDSxD2f0tp6u-PHaYh0SIPb7_7X7EymaRdQwgMMK6B3J9V2H=s450-no?authuser=0",
+    "image": "https://lh3.googleusercontent.com/pw/AL9nZEV5m8JAnqzOje7KyO-67a02LkfLX-vNWYvAhg15S5hW84KYrPUaYByT3rPelgYZ1kieHRdEm3IhvbYeAAMGA-Pezdyux8XExnRFrh6vD5721iQQbYJgPlxyBfwRSSG-Q35A2vzCgR8rcUAsMmDxJ1Rh=s800-no?authuser=0",
     "tags": ["backpacking", "guides"]
 }
 
-const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXXcf1K4hJmKGMYeeh4mEo1RunikoWbFKynQaEqZnUXA3bnuerQ2Rba3aTFMdM68SBqSLI0MyLAHyM5-kNFrAgFzLMJlbn-4_Iwws4twiM35I6ImoiYNLV1n-ccMYhnlACnipIVaZaVUF6qOmyE23qk=w1920-h955-no?authuser=1'
+const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEV4GlBmI7D8c9857KbiMNEi_O-n-k_3AjKqdqy7T6DkYwciO4W7ovxGU7MZ3pYfN_mgYssGweSY8lQRAzhvOSQDYsOIockrLmroknOrq9E2brxnF9uTXVVWR1TGF1NsC0kFPu-6cVQjYiL6AibkZCbq=w800-h533-no?authuser=0'
 const pageURI = '/blog/guides/backpacking-meals'
-const tvp = 'https://www.bobsredmill.com/tvp-textured-veg-protein.html'
 
 export default function Post() {
     return (
         <Layout 
             headerImage={cover}
             headerText={metadata.title}
-            description={`Backpacking meals don't have to be bland or leave you hungry - We've combined our favorite trail meals in this post!`}
+            description={`Learn how to plan tasty, filling meals for your next trip to the backcountry.`}
             ogImage={metadata.image}
         >
             <div className={utilStyles.flexGapContainer}>
@@ -33,6 +32,14 @@ export default function Post() {
                     <br/><br/>
                     {`Meal planning is a crucial part of any backcountry adventure, so whether you're brand new to backpacking, or just 
                     looking for some tasty inspiration, this guide has the answers to your questions!`}
+                </div>
+
+                <div className={utilStyles.centered}>
+                    <Video
+                        height={600}
+                        width={338}
+                        src='https://raw.githubusercontent.com/anders-swanson/data/master/data/IMG_9102.mp4'
+                    />
                 </div>
 
                 <h1 className={utilStyles.justifyCenter} id='basics'>Food and Water Basics</h1>
@@ -52,11 +59,13 @@ export default function Post() {
                     may need to pack more or less water. Hikes in arid, desert regions can require packing `}<b>all</b>{` your water.`}
                     <br/><br/>
                     <div className={utilStyles.centered}>
-                    <Video
-                        height={600}
-                        width={338}
-                        src='https://raw.githubusercontent.com/anders-swanson/data/master/data/IMG_7056.mp4'
-                    />
+                        <Pinnable
+                            page={pageURI}
+                            alt='pc0'
+                            src='https://lh3.googleusercontent.com/pw/AL9nZEXpsimNoMDv981nPmAkR9PF9I6iF5GlI2xEsh_yGIB5QaEER7o1ajY_xrLSwpc4kYOshiZOBb0YfAmlNfqazItU9teESLwTyVu1USmtAZg4Pnh7MHT9dDtyh2RPL3i5rEKGhHU9-U4KjBhS9jP8Y-fn=w533-h800-no?authuser=0'
+                            width={533}
+                            height={800}
+                        />
                     </div>
                 </div>
 
@@ -113,8 +122,8 @@ export default function Post() {
                     <div className={utilStyles.centered}>
                         <Pinnable
                             page={pageURI}
-                            alt='pc 1'
-                            src='https://lh3.googleusercontent.com/pw/AM-JKLVjdRG6C3PnRGty28IgF4z1-MVEx-SnV8wZMbCvTRZYty2JF8UxA4YxnUGmIK7W6HAO4F1lBe7w-G-ab22JYJ-_-Q58ld-AW0owzOlvNs5OWcE0rQyRAK5LK_Nhzz4tGN8RsSOIgk51kk8CWud7CHgb=w450-h600-no?authuser=0'
+                            alt='pc1'
+                            src='https://lh3.googleusercontent.com/pw/AL9nZEWZfLMoTTE1mc2Emrrq5BkUvU6sdzxXn2efyALd-ttvKQThKxwnPkcWfXySwNi0xnD5oFHN4itWdIa02jKeNdiZh7ed13rwHicV6cziI_zNQK_op0EvMMaRgl7XZl4awGDHqTNwEj3yvCz3vLkKxC3m=w450-h600-no?authuser=0'
                             width={450}
                             height={600}
                         />
@@ -142,11 +151,11 @@ export default function Post() {
                     <div className={utilStyles.centered}>
                         <Pinnable
                             page={pageURI}
-                            alt='bagel 1'
-                            src='https://lh3.googleusercontent.com/pw/AM-JKLVqB0TJ9iQ4RuZpN9lOIhTTfG0XSJimyIeJK8MGmwNCWDA54GMX_CRk1ILCZWNUOKlkCdCW2XQYxW9wDn4l1tqKW-zIBs1hRyHnUmh8lCU84GEfA0vwIjKrox6ZHPIbLF2vXZn0KFemk6AcXJqNWKR9=w450-h600-no?authuser=0'
+                            alt='pc2'
+                            src='https://lh3.googleusercontent.com/pw/AL9nZEWT1pWQYMGFfOuypOHmiiOwX2ftIqTpHY3nwHxbzGJ1ah22dc76hbTveUOomWBo9ptnmzl93FfsnF4qPQa5B8h5mnIUXGCw0LjYhYj0uj8Aqzo0vnhQDXZjp55Eb9iDr3nW1IxrjKn0sTr6YA8RUlI9=w828-h1067-no?authuser=0'
                             width={450}
                             height={600}
-                        /> 
+                        />
                     </div>
                     <br/><br/>
                     <div>

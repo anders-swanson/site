@@ -14,6 +14,7 @@ const marginStyle = {
     maxWidth: "72rem",
     padding: "0 1rem",
     margin: "1rem auto",
+    borderRadius: '0px',
 }
 
 export default function Links({ title, showSocial }) {
@@ -24,14 +25,14 @@ export default function Links({ title, showSocial }) {
             containerClass='none'
             headerText={title}
         >
-            <HeaderText styles={marginStyle}>
-                <p className={utilStyles.floatyText} style={{'fontSize': '6.0vmax'}}>My Links</p>
+            <HeaderText styles={marginStyle} backgroundImage={backgroundImage}>
+                <p key='info' className={utilStyles.floatyText} style={{'fontSize': '6.0vmax'}}>My Links</p>
                 <div style={{
                     'fontFamily': 'font-family: "Poppins",sans-serif',
                     'fontWeight': '500',
-                    'fontSize': '3.5vw',
                     'color': 'white',
                     'margin': 'auto',
+                    'fontSize': '2vmax',
                     'marginRight': '50px',
                     'marginLeft': '50px',
                     'background': 'rgba(0, 0, 0, .5)',
@@ -42,9 +43,7 @@ export default function Links({ title, showSocial }) {
                 }}>
                     <div>
                     <br/>
-                    <p style={{
-                        'fontSize': '3vw',
-                    }}>
+                    <p>
                         {`This page contains affiliate links, which means that by using these links, I will earn a small commission
                         at no additional cost to you. This helps support my adventures and allows me to make more resources like this for you. Thank you!`}
                     </p>
@@ -74,6 +73,7 @@ export default function Links({ title, showSocial }) {
                         title='My Backpacking Gear'
                         body="Gear that's lasted me over 1000+ miles"
                         src='/blog/guides/backpacking-gear-guide'
+                        animation={utilStyles.shakeAnimation}
                     />
                     <LinkButton
                         title='REI Hipbelt Pocket'
@@ -98,11 +98,17 @@ export default function Links({ title, showSocial }) {
                 </div>
                 <br/>
                 <div style={{
-                    textShadow: "0px 2px 2px white",
+                    'fontFamily': 'font-family: "Poppins",sans-serif',
+                    'fontWeight': '500',
+                    'margin': 'auto',
+                    'background': 'rgba(255, 255, 255, .75)',
+                    'maxWidth': '600px',
+                    'padding': '5%',
+                    'lineHeight': '1.2',
+                    'borderRadius': '4px',
                 }}>
-                    <FeaturedPost post={featuredPost}/>
-                </div>
-                <br/>
+                    <FeaturedPost post={featuredPost} />
+                    <br/>
                 {showSocial && 
                     <div className={utilStyles.centeredRow} style={{'marginBottom': '25px'}}>
                         <SocialIcon url={config.social.instagram}/>
@@ -110,6 +116,7 @@ export default function Links({ title, showSocial }) {
                         <SocialIcon url={config.social.pinterest}/>
                     </div>
                 }
+                </div>
                 <br/>
             </div>
             <div style={marginStyle}>

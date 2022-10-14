@@ -11,7 +11,7 @@ export default function ImageGrid({ backgroundImage, title, items, opacity, imag
 
     return (
         <div
-            className={`${styles.container} ${utilStyles.floatyText}`}
+            className={`${utilStyles.coverContainer} ${utilStyles.floatyText}`}
             style={backgroundImageStyle(backgroundImage, opacity)}
         >
             <h1

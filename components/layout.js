@@ -19,7 +19,7 @@ const maxScroll = 5
 const defaultHeaderColor = 'white'
 const noHeader = 'none'
 
-export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor, archive }) {
+export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor, archive, containerClass }) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
   let stxt = subText ? subText : ""
@@ -108,8 +108,7 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       </div>
     )}
 
-    <div className={styles.container}>
-      
+    <div className={containerClass ? containerClass : styles.container}>
       <main>{children}</main>
       {archive && (
         <Archive

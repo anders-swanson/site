@@ -67,6 +67,11 @@
     font-size: 16px;
 }
 
+.descriptionLight {
+    font-size: 16px;
+    color: white;
+}
+
 .description a {
     color: #000;
 }

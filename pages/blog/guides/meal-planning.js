@@ -5,6 +5,7 @@ import links from '../../../lib/links'
 import Video from "../../../components/video"
 import RelatedPosts from '../../../components/related_posts'
 import Pinnable from '../../../components/pinit'
+import Contact from '../../../components/contact'
 
 //+metadata
 let metadata = {
@@ -15,7 +16,7 @@ let metadata = {
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEV4GlBmI7D8c9857KbiMNEi_O-n-k_3AjKqdqy7T6DkYwciO4W7ovxGU7MZ3pYfN_mgYssGweSY8lQRAzhvOSQDYsOIockrLmroknOrq9E2brxnF9uTXVVWR1TGF1NsC0kFPu-6cVQjYiL6AibkZCbq=w800-h533-no?authuser=0'
-const pageURI = '/blog/guides/backpacking-meals'
+const pageURI = '/blog/guides/meal-planning'
 
 export default function Post() {
     return (
@@ -158,9 +159,7 @@ export default function Post() {
                         />
                     </div>
                     <br/><br/>
-                    <div>
-                        {`Still have questions? `}<Link href='/contact'>Send me a message</Link>{` and I'll be happy to help you out!`}
-                    </div>
+                    <Contact/>
                 </div>
             </div>
             <RelatedPosts

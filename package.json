@@ -3,7 +3,7 @@
   "scripts": {
     "prebuild": "node prebuild.js",
     "dev": "npm run prebuild && next dev",
-    "build": "npm run prebuild && next build",
+    "build": " next build",
     "export": "npm run prebuild && next build && next export",
     "start": "npm run prebuild && next start",
     "lint": "next lint",

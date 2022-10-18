@@ -112,7 +112,7 @@ export default function Contact() {
                                 <textarea name="msg" type="text" {...register('msg')}/>
                                 <div className={utilStyles.errorMessage}>{errors.msg?.message}</div>
                             </div>
-                            <div style={{'float': 'right', 'display': 'flex'}}>
+                            <div style={{'float': 'right', 'display': 'flex', paddingBottom: '25px'}}>
                                 {emailSent && <div style={{'paddingRight': '50px', 'marginTop': '10px'}}>✔️</div>}
                                 {loading && !emailSent && <ThreeDots className={utilStyles.formLoader} stroke='grey'/>}
                                 {!loading && !emailSent && <button type="submit" className={utilStyles.submitButton}>Send Email</button>}

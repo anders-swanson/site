@@ -34,7 +34,7 @@ export default function PostBox({ posts, heading, postBoxClass, perPage, idx }) 
         {pages.length > 1 && (
         <div className={styles.pageNums}>
           {pages.map((pageNum) => (
-            <Link href={`/blog/page/${pageNum+1}#recent`}>
+            <Link key={pageNum} href={`/blog/page/${pageNum+1}#recent`}>
               <a style={pageNum === idx ? selectedStyles : {}}>{`${pageNum+1}`}</a>
             </Link>
           ))}

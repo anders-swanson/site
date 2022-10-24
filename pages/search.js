@@ -1,6 +1,7 @@
 import { useRouter } from "next/router"
 import Layout from "../components/layout"
 import PostBox from "../components/postbox"
+import config from "../lib/config"
 import { Posts } from "../lib/metadata"
 import { Matches } from "../lib/search"
 
@@ -24,7 +25,7 @@ export default function SearchPage({ allPostsData }) {
             <PostBox
                 posts={filteredPosts}
                 heading={`${filteredPosts.length} ${resultWord(filteredPosts.length)} for "${terms}"`}
-                perPage={10}
+                perPage={config.useScroll}
             />
         </Layout>
     )

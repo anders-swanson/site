@@ -19,7 +19,7 @@ const maxScroll = 5
 const defaultHeaderColor = 'white'
 const noHeader = 'none'
 
-export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor, archive, containerClass }) {
+export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor, archive, containerClass, idx, perPage }) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
   let stxt = subText ? subText : ""
@@ -120,6 +120,8 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
           <PostBox
             posts={allPostsData}
             heading={postsHeading}
+            idx={idx}
+            perPage={perPage}
           />
         </>
       )}

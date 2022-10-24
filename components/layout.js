@@ -97,7 +97,7 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       src={img}
       className={utilStyles.headerImage}
       style={{
-        'height': headerImage == noHeader ? '0px': '20vmax',
+        'height': headerImage == noHeader ? '0px': '25vmax',
       }}
     />
 

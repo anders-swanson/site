@@ -152,9 +152,9 @@
 }
 
 .contactForm {
-  background-color: rgb(211, 238, 237);
-  padding: 25px;
+  background-color: rgba(211, 238, 237, .7);
   border-radius: 1px;
+  max-width: 1200px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -164,12 +164,13 @@
   border: none;
   color: white;
   height: 30px;
-  width: 120px;
+  max-width: 120px;
 }
 
 .contactForm input {
-  width: 380px;
+  max-width: 380px;
   height: 30px;
+  min-width: 250px;
   border: 2px;
   border-color: #666;
 }
@@ -177,7 +178,7 @@
 .contactForm textarea {
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
-  width: 380px;
+  min-width: 250px;
   height: 220px;
   border: 2px;
   border-color: #666;
@@ -209,6 +210,7 @@
 }
 
 .formHeader {
+  padding: 1vmax;
   font-size: 16px;
   font-weight: 100;
   font-family: Arial, Helvetica, sans-serif;

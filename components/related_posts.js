@@ -1,6 +1,7 @@
 import PostBox from "./postbox";
 import { Posts } from "../lib/metadata";
 import styles from './related_posts.module.css'
+import config from "../lib/config";
 
 const posts = Posts()
 const defaultText = "Related Posts"
@@ -26,6 +27,7 @@ export default function RelatedPosts({metadata, tag, text}) {
                 search=""
                 heading={text ? text : defaultText}
                 postBoxClass={styles.scroll}
+                perPage={config.useScroll}
             />
         </>
     )

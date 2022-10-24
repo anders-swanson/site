@@ -1,5 +1,6 @@
 
 import Layout from "../../components/layout";
+import config from "../../lib/config";
 import { Tags, Posts } from "../../lib/metadata";
 import { FilterTag } from "../../lib/post_filter";
 
@@ -8,7 +9,8 @@ export default function Post({ id, posts }) {
         <Layout
             headerImage="/images/cover.jpeg"
             allPostsData={posts}
-            postsHeading={id}        
+            perPage={config.useScroll}
+            postsHeading={`${id}: ${posts.length} posts`}        
         />
     )
 }

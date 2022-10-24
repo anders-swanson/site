@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const metadataFlag = '//+metadata'
+const conf = require('../lib/config')
 
 // Get a sorted list of metadata from all pages in the blogDirectory
 module.exports.getSorted = function(blogDirectory) {
@@ -11,7 +12,7 @@ module.exports.getSorted = function(blogDirectory) {
             const filePath = path.join(currentDir, fileName)
             if (fs.statSync(filePath).isDirectory()) {                
                 recurseMetadata(filePath, relDir + '/' + fileName)
-            } else if (fileName.endsWith('.js')) {
+            } else if (fileName.endsWith('.js') && !fileName.startsWith('[')) {
                 const id = relDir + '/' + fileName.replace(/\.js$/, '')
                 metadata.push(getMetdata(filePath, id))
             } else {
@@ -89,6 +90,19 @@ function loadPreview(data) {
         .join(' ')
 }
 
+module.exports.getPageParams = function (numPosts) {
+    const numPages = Math.ceil(numPosts/conf.itemsPerPage)
+    let pageParams = []
+    for (let i = 0; i < numPages; ++i) {
+        pageParams.push({
+            'params': {
+                'id': `${i+1}`,
+            }
+        })
+    }
+    return pageParams
+}
+
 module.exports.getTags = function (metadata) {
     let allTags = new Set()
 
@@ -115,9 +129,10 @@ module.exports.getTags = function (metadata) {
 }
 
 module.exports.txt = function(blogDirectory) {
-    sortedMetadata = this.getSorted(blogDirectory)
-    tags = this.getTags(sortedMetadata)
-
+    let sortedMetadata = this.getSorted(blogDirectory)
+    let tags = this.getTags(sortedMetadata)
+    let pages = this.getPageParams(sortedMetadata.length)
+    
     return `
 export function Posts() {
     return ${JSON.stringify(sortedMetadata)}
@@ -125,6 +140,10 @@ export function Posts() {
 
 export function Tags() {
     return ${JSON.stringify(tags)}
+}
+
+export function Pages() {
+    return ${JSON.stringify(pages)}
 }
 `
 }

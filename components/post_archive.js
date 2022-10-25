@@ -28,6 +28,7 @@ export default function Archive({ posts, tags }) {
             >
                 <div style={{display: "flex"}}>
                     <button
+                        key={idx}
                         className={archiveStyles.collapseButton}
                         onClick={() => onClickHeader(idx)}
                     >

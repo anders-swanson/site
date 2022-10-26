@@ -12,7 +12,7 @@ let metadata = {
     "title": "Columbia River Gorge Wildflowers",
     "date": "2022-03-13",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXe8AqPQnAu5WMEfzYEdiiX67YL7i2ujDnG7UyNvDAxqlh4G7N2ETUZJgksfFwnxRf99IlOrZdFI0IXs0KriM4Anhft9QOECIaLRffu9gLq9moDNldiaPEpeVuzBOsbzqq7f9gzsKda8B1lNE_C86eV=s1067-no?authuser=0",
-    "tags": ["hiking", "wildflowers", "crg", "oregon"]
+    "tags": ["hiking", "wildflowers", "columbia river gorge", "oregon"]
 }
 
 const rowenaCrest = 'https://www.google.com/maps/place/Rowena+Crest+Viewpoint/@45.6768915,-121.3049786,15.54z/data=!4m5!3m4!1s0x54961a222daa6039:0x6ff5db7101043183!8m2!3d45.6827367!4d-121.2992539'
@@ -117,7 +117,7 @@ export default function Post() {
             </div>
             <RelatedPosts
                 metadata={metadata}
-                tag="crg"
+                tag="columbia river gorge"
             />
         </Layout>
     )

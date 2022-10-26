@@ -12,7 +12,7 @@ let metadata = {
     "title": "Climb Mount St. Helens",
     "date": "2022-09-14",
     "image": "https://lh3.googleusercontent.com/pw/AL9nZEWkrh9eHct0UNXH1naAfOdKS8q7HCwHf-Tjavt8Y7GpPDE7YLrYBTI3Rwn-G8f2c0trfaJzIsU6kNxzPNzNZFQr-7Z1OcqxcnsrCaalcUDQnE_KL24O39FQF8XKO88yOOon5wtFN-AF7-G0BpQVlDMZ=s800-no?authuser=0",
-    "tags": ["hiking", "guides", "washington"]
+    "tags": ["hiking", "guides", "washington", "camping"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEWPKuqOYeCj0xrT3eYkQOAOmcm5nEcREs1-VDfL8O3xIaAeeCs8VuhFNpLTkJbA9_uaSA92_552cvW324gL8oV82xIpQ88S5iobWGJPWYWCIYP_VSxC3dWF-f-0GuJCJsRNCDB8ldXB4o0orImPFNdh=w800-h533-no?authuser=0'

@@ -12,7 +12,7 @@ let metadata = {
     "title": "Maple Pass Loop",
     "date": "2022-10-18",
     "image": "https://lh3.googleusercontent.com/pw/AL9nZEWibEdZnXniowowo_BwOCztCjde2LaympWEJu6mMs8wtTwss0u6krwrJ-SY9964iTAh_fGuH1T-ca2sZlWSq-AeSqs06TMH1bYlke-tDxZFQ301vhHop1lTDrastQ107wU7d7IH-iNe3htClFOASNAb=s800-no?authuser=0",
-    "tags": ["washington", "lakes"]
+    "tags": ["washington", "lakes", "camping"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEVTL7BLvGmaPvK_Uv1FHmsEAguLVCbjGiIhq2CW7dEO5AjPiIfmc-MOP4Kka6ZuxiPaO4TK3l1knnk3Iv5ktLekzyjy7NAtyz5cc3-9pWD-CcvWunn37uc89WlucENIaBsdUmr6isgRoRUbwT6SBA1H=w800-h446-no?authuser=0'

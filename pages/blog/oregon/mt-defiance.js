@@ -11,7 +11,7 @@ let metadata = {
     "title": "Mt. Defiance Winter Route",
     "date": "2022-03-05",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLUurR1iF-8zqOBfoQzGw8PMHNKTYAciJS09gTC2r--cchoXJ9To-ZXyjho6cEq8_Zpyu5_lDh6KskGe56fqeCDLADv9hF7FgneJnKD7Yvamkib6eT4Z2rU_kzk1LoKTzIzMLBIh7uKeXtdywLxcKPYt=s1067-no?authuser=0",
-    "tags": ["hiking", "waterfall", "crg", "oregon"]
+    "tags": ["hiking", "waterfall", "columbia river gorge", "oregon"]
 }
 
 const subText = '12 miles, 5,000 feet  gain'
@@ -95,7 +95,7 @@ export default function Post() {
             </div>
             <RelatedPosts
                 metadata={metadata}
-                tag="crg"
+                tag="columbia river gorge"
             />
         </Layout>
     )

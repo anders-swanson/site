@@ -10,7 +10,7 @@ let metadata = {
     "title": "Golden Lake Day Hike",
     "date": "2022-07-28",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXyUxue64xix3GXgedkZD-DmcK4wFWovDx4wboO_BSBGLgAMPJXETpxxxM5cNK9yowXt3Kh-Bpon1qnhKury8LTKmhVl66_EnzsiGLITuP5zuWyq7Ynlx-Pc5cf9QNFjGUvHkgSh0CA7_g6QjuHlMkZUA=s800-no?authuser=0",
-    "tags": ["hiking", "lakes", "central oregon"]
+    "tags": ["hiking", "lakes", "oregon", "sisters"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLW_HzI37jGr1p_yXU3405KDSucMYgFRtoUfBnKy3cC4OOjr4RbZI7B0scl3tTyoocg3h3xPHlBCOv8CKUNR9DN9lAvRCHxYXhbwg8vL-WMEBn079vFV-hdCcE8maaTOEalg5xhjw8WWYrYxXNcOlHOvyg=w800-h535-no?authuser=0'
@@ -124,7 +124,7 @@ export default function Post() {
             </div>
             <RelatedPosts
                 metadata={metadata}
-                tag="central oregon"
+                tag="oregon"
             />
         </Layout>
     )

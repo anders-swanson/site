@@ -10,7 +10,7 @@ let metadata = {
     "title": "Sister's Mirror Loop",
     "date": "2021-06-19",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVt-06h0-ZNCa9E70jtJ1fQfV5jUNvYj3y5tp-D-St27MDYy9Knzq67xipiMh-UaRQcIrpbIt8qAmKrXNNvvOd-Psq6EoOYuCfYKC6fBP1yfOQ6N-gEW16OMg0kzsqVCT0IZWfvd-wB9hI3zvoixQaF=s1067-no?authuser=0",
-    "tags": ["backpacking", "lakes", "central oregon"]
+    "tags": ["backpacking", "lakes", "oregon", "sisters"]
 }
 
 const subText = '18.61 miles, 2,011 feet gain, 1 night'
@@ -100,7 +100,7 @@ export default function Post() {
             </div>
             <RelatedPosts
                 metadata={metadata}
-                tag="central oregon"
+                tag="sisters"
             />
         </Layout>
     )

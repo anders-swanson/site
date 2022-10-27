@@ -10,7 +10,7 @@ let metadata = {
     "title": "Obsidian Trail",
     "date": "2022-06-18",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVvWyI-5ilACE2LZEb-luC_6m1fb7cwnRfp3vUO36TtJ0WVH3tcEZ9q74mfi1SBCjv5oZHhjFiD1cTYYUBiubTv_L1wNZdKLRWncVJ6BfBFa7qMxGxnMd0eXb6qMf47MO4IXC4hZXIYOSsCx0hMWi6l=s800-no?authuser=0",
-    "tags": ["hiking", "central oregon"]
+    "tags": ["hiking", "oregon", "sisters"]
 }
 
 const cover = 'https://lh3.googleusercontent.com/pw/AM-JKLXNMW8TL-8xrGW_qU69jKliEhCxmHAjgPFttbpeF9o5nhHfXVHaEmRDJO61AMwyCkXnDrf9-fxJ4kRffHNGz4G-BGnLKBs5tBrTKE0md8ia2Jq288iVkBrM25q1jBPZwxdFQW0rgwy_iQKNb_nhsaFD=w800-h535-no?authuser=0'
@@ -109,7 +109,7 @@ export default function Post() {
             </div>
             <RelatedPosts
                 metadata={metadata}
-                tag="central oregon"
+                tag="sisters"
             />
         </Layout>
     )

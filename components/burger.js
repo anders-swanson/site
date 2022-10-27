@@ -65,7 +65,7 @@ export default function Burger() {
           <br/>
           <Link href="/about">About</Link>
           <br/>
-          <Link href="/archive">Archive</Link>
+          <Link href="/archive">All Posts</Link>
           <br/>
           <Link href="/contact">Contact</Link>
           <br/>

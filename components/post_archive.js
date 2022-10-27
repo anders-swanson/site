@@ -49,7 +49,8 @@ export default function Archive({ posts, tags }) {
                 >
                     <option style={{display: 'none'}}/>
                     {tags.map(({params}) => (
-                        <option 
+                        <option
+                            key={params.id}
                             value={`${params.id} ${getSelectedSymbol(tagList, params.id)}`}
                             onClick={() => {
                                 onClickOption(params.id)
@@ -64,7 +65,10 @@ export default function Archive({ posts, tags }) {
             <br/>
             <div className={archiveStyles.flexGap}>
             {FilterTag(posts, ...tagList).map(({ ...item }) => (
-            <div style={{'display': 'flex'}}>
+            <div 
+                style={{'display': 'flex'}}
+                key={item.id}
+            >
                 <div style={{
                     'display': 'block',
                     'marginRight': '10px',

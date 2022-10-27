@@ -41,7 +41,7 @@ export default function Archive({ posts, tags }) {
 
     return (
         <div>
-            <div>
+            <div className={archiveStyles.flexGap}>
                 <label htmlFor="tags">{`Choose tags: `}</label>
                 <select
                     className={archiveStyles.tagSelector}
@@ -62,8 +62,8 @@ export default function Archive({ posts, tags }) {
             </div>
             <div className={archiveStyles.tagListItems}>{tagListItems()}</div>
             <br/>
+            <div className={archiveStyles.flexGap}>
             {FilterTag(posts, ...tagList).map(({ ...item }) => (
-            <>
             <div style={{'display': 'flex'}}>
                 <div style={{
                     'display': 'block',
@@ -93,9 +93,9 @@ export default function Archive({ posts, tags }) {
                     </div>
                 </div>
             </div>
-            <br/>
-            </>
             ))}
+            </div>
+
         </div>
     )
 }

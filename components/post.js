@@ -5,7 +5,7 @@ import Date from '../components/date'
 import Image from 'next/image'
 import { CapitalizeWords } from '../lib/common'
 
-export default function Post({ item, imgSizing, postStyle }) {
+export default function Post({ item, imgSizing, postStyle, showDate }) {
     const blogLink = `/blog${item.id}`
     const styling = postStyle ? postStyle : styles.post
 
@@ -33,17 +33,19 @@ export default function Post({ item, imgSizing, postStyle }) {
                 </Link>
                 
             ))}  
-            </div>                    
+            </div>  
             <Link href={blogLink} className={styles.postLink}>
                 <a style={{'fontSize': '18px'}}>{item.title}</a>
-            </Link>              
+            </Link>                 
             <br/>
             <div className={styles.description}>
                 <Link style={{'color': 'black'}} href={blogLink}>{item.preview}</Link>
             </div>         
+            {showDate && (
             <div style={{'fontSize': '16px'}} className={utilStyles.lightText}>
                 <Date dateString={item.date} />
             </div>
+            )}
         </div>
     )
 }

@@ -86,10 +86,12 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     </Head>
     <div className={styles.headerBar}/>
     <Burger/>
+    {config.search.enabled && (
     <Search
       search={search}
       setSearch={setSearch}
     />
+    )}
   <img
       alt=""
       src={img}

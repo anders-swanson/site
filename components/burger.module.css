@@ -1,8 +1,6 @@
 .menu {
-    background-color: rgb(26, 26, 26);
     font-size: 24px;
     width: 80%;
-    padding: 1px 60px 25px;
     border-radius: 15px;
     white-space: nowrap;
 }
@@ -14,21 +12,22 @@
 }
 
 .menu a {
-    color: #FFF
+    color: black;
 }
 
 .menu a:hover {
-    color: #FFF
+    color: black;
 }
 
 .footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:60px;
+    left: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
 }
 
 .footer p {
-    color: #FFF;
+    color: black;
     font-size: small;
 }

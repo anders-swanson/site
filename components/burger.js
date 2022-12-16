@@ -2,21 +2,23 @@ import Link from 'next/link'
 import styles from './burger.module.css'
 import { slide as Menu } from 'react-burger-menu'
 
+
+const bmBackground = "#e5e5e5"
+
 const menuStyles = {
   bmBurgerButton: {
     zIndex: "9999",
     position: 'fixed',
-    width: '36px',
-    height: '30px',
-    left: '10px',
-    top: '10px',
+    width: '18px',
+    height: '12px',
+    left: '25px',
+    top: '18px',
     transition: 'top 0.3s',
   },
   bmBurgerBars: {
-    border: '0.25px solid grey',
-    borderRadius: '3px',
-    background: '#FFF',
-    height: '8px'
+    borderRadius: '1.5px',
+    background: '#000',
+    height: '3px'
   },
   bmBurgerBarsHover: {
     background: '#a90000'
@@ -33,15 +35,15 @@ const menuStyles = {
     height: '100%'
   },
   bmMenu: {
-    backgroundColor: "rgb(26, 26, 26)",
-    padding: '5em 1.5em 0',
-    fontSize: '1.15em'
+    backgroundColor: bmBackground,
+    fontSize: '1.15em',
+    paddingTop: '50px',
   },
   bmMorphShape: {
-    fill: 'rgb(26, 26, 26)'
+    fill: bmBackground
   },
   bmItemList: {
-    color: '#b8b7ad',
+    color: bmBackground,
     padding: '0.8em'
   },
   bmItem: {
@@ -74,8 +76,8 @@ export default function Burger() {
           <Link href="/links#info">Links</Link>
           <br/>
           
-          <div className={styles.footer}>
-            <p>© {new Date().getFullYear()}</p>
+          <div className={styles.footer} style={{'color': 'black'}}>
+            <p>© {new Date().getFullYear() + `, trailsandtrekking.com`}</p>
           </div>
         </div>        
       </Menu>

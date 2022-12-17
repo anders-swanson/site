@@ -10,9 +10,7 @@ export default function FeaturedPost({ post, txt }) {
             {`Do you like exploring the outdoors? Join us as we share recent hiking trips, camping suggestions, 
             and backcountry guides.`}
             <br/><br/>
-            {`For ideas on planning your next trip, check out our most recent post, `}
-            <Link href={`/blog${post.id}`}>{post.title}</Link>
-            {`.`}
+            {`Check out our most recent post for ideas planning your next trip.`}
             <br/>
             {txt}
           </div>

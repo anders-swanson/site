@@ -35,7 +35,7 @@ export default function Post({ item, imgSizing, postStyle, showDate }) {
             ))}  
             </div>  
             <Link href={blogLink} className={styles.postLink}>
-                <a style={{'fontSize': '18px'}}>{item.title}</a>
+                <a style={{'fontSize': '18px', 'color': 'black'}}>{item.title}</a>
             </Link>                 
             <br/>
             <div className={styles.description}>

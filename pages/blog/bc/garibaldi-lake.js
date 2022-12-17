@@ -18,7 +18,7 @@ const cover = 'https://lh3.googleusercontent.com/pw/AL9nZEVhRrYvbUiAVCeZAXykSN_q
 const pageURI = '/blog/bc/garibaldi-lake'
 const relatedTag = 'backpacking'
 
-const garibaldiLakeTrailhead = 'https://www.google.com/maps/dir//Rubble+Creek+Trailhead,+0A0+Daisy+Lake+Rd,+Whistler,+BC+V0N+1H0,+Canada/@49.9573116,-123.1552543,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54871c632191eab1:0x59a0a0082e018b3f!2m2!1d-123.120235!2d49.9572617?hl=en'
+const garibaldiLakeTrailhead = 'https://www.google.com/maps/dir/Rubble+Creek+Trailhead,+0A0+Daisy+Lake+Rd,+Whistler,+BC+V0N+1H0,+Canada/@49.9573116,-123.1552543,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54871c632191eab1:0x59a0a0082e018b3f!2m2!1d-123.120235!2d49.9572617?hl=en'
 const elfinLakesTrailhead = 'https://www.google.com/maps/dir//Elfin+Lakes+Trail+%26+Diamond+Head+Trail,+Squamish-Lillooet,+BC+V0N+1H0,+Canada/@49.7714738,-123.0387118,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x5486fae751cb2185:0xdde616187e478a39!2m2!1d-123.0036925!2d49.7714236?hl=en'
 
 export default function Post() {

@@ -1,16 +1,15 @@
 import Layout from "../../../components/layout"
-import FeaturedPost from "../../../components/featuredpost"
 import { Pages, Posts } from "../../../lib/metadata"
+import _const from "../../../lib/const"
 
-export default function Post({ id, posts, featuredPost }) {
+export default function Post({ id, posts }) {
     return (
         <Layout
-            headerImage="/images/cover.jpeg"
+            headerImage={_const.noHeader}
             allPostsData={posts}
             idx={id}
-            postsHeading="Recent Posts"
+            postsHeading='Recent Posts'
         >
-            <FeaturedPost post={featuredPost}/>
         </Layout>
     )
 }
@@ -24,11 +23,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     const posts = Posts()
-    const featuredPost = posts.shift()
+    posts.shift()
     return {
         props: {
             id: params.id,
-            featuredPost: featuredPost,
             posts: posts,
         }
     }

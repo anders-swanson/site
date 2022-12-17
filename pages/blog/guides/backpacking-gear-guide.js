@@ -3,6 +3,7 @@ import ImageGrid from "../../../components/image_grid"
 import RelatedPosts from '../../../components/related_posts'
 import Layout from "../../../components/layout"
 import utilStyles from '../../../styles/utils.module.css'
+import _const from "../../../lib/const"
 
 //+metadata
 let metadata = {
@@ -17,7 +18,7 @@ const backgroundImage = 'https://lh3.googleusercontent.com/pw/AL9nZEVYk7S03VbTbP
 export default function Post() {
     return (
         <Layout
-            headerImage='none'
+            headerImage={_const.noHeader}
             headerText={metadata.title}
             description={`Our go-to backpacking gear for weekend and multi-day trips, that we've used for years and thousands of miles.`}
             ogImage={metadata.image}

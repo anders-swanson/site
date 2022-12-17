@@ -8,6 +8,7 @@ import { SocialIcon } from 'react-social-icons';
 import config from '../lib/config'
 import HeaderText from './header_text'
 import { backgroundImageStyle } from '../lib/common'
+import _const from '../lib/const'
 
 const backgroundImage = 'https://lh3.googleusercontent.com/pw/AL9nZEVYk7S03VbTbPmMXNWg61YYuZ_hQdE75O5_Cj2yRHu6t5KKuCLnkgW3PWGxz0nlH8jwzA4bUHFzFBNiDDKFAxbVHkm81yS19htj9X4FYVrhofToP2MZbjGPcschCRiytpfcARvEsV4rPvintQ7d4SK8=w600-h900-no?authuser=0'
 const marginStyle = {
@@ -21,8 +22,7 @@ export default function Links({ title, showSocial }) {
     const featuredPost = Posts()[0]
     return (
         <Layout
-            headerImage='none'
-            containerClass='none'
+            headerImage={_const.noHeader}
             headerText={title}
         >
             <HeaderText styles={marginStyle} backgroundImage={backgroundImage}>
@@ -84,16 +84,6 @@ export default function Links({ title, showSocial }) {
                         title='My Amazon Favorites'
                         body='Items I Know & Love!'
                         src='https://www.amazon.com/shop/laurensbigadventure'
-                    />
-                    <LinkButton
-                        title='Kamo Fitness'
-                        body='Support Code: "LAURENG"'
-                        src='https://kamofitness.com/LAURENG'
-                    />
-                    <LinkButton
-                        title='My Go to Hiking Shorts'
-                        body='Use discount code "LAURENG222" to save!'
-                        src='https://bit.ly/3whRpQd'
                     />
                 </div>
                 <br/>

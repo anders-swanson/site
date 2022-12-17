@@ -42,7 +42,7 @@ export default function Archive({ posts, tags }) {
     return (
         <div>
             <div className={archiveStyles.flexGap}>
-                <label htmlFor="tags">{`Choose tags: `}</label>
+                <label htmlFor="tags">{`Filter by tag: `}</label>
                 <select
                     className={archiveStyles.tagSelector}
                     id='tags'

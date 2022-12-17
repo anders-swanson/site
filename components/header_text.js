@@ -9,7 +9,6 @@ export default function HeaderText({ children, backgroundImage, opacity, styles 
     }
     return (
         <>
-        <br/>
         <div 
             className={utilStyles.coverContainer}
             style={s}

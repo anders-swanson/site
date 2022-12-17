@@ -7,6 +7,7 @@ import PostBox from './postbox'
 import Search from './search'
 import { useState, useEffect } from 'react'
 import { CapitalizeWords } from '../lib/common'
+import _const from '../lib/const'
 import Script from 'next/script'
 import config from '../lib/config'
 
@@ -15,7 +16,7 @@ const name = title
 const defaultHeaderImage = "/images/cover.jpeg"
 const maxScroll = 5
 const defaultHeaderColor = 'white'
-const noHeader = 'none'
+const noHeader = _const.noHeader
 
 export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor, containerClass, idx, perPage }) {
   let img = headerImage ? headerImage : defaultHeaderImage
@@ -84,7 +85,13 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       <meta name="twitter:description" content={descriptionText}/>
       <meta name="keywords" content="hiking, backpacking, oregon"/>
     </Head>
-    <div className={styles.headerBar}/>
+    <div className={styles.headerBar}>
+      <div className={styles.linkBar}>
+        <Link href='/'>
+          Trails And Trekking
+        </Link>
+      </div>
+    </div>
     <Burger/>
     {config.search.enabled && (
     <Search
@@ -92,23 +99,34 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
       setSearch={setSearch}
     />
     )}
-  <img
+    <img
       alt=""
       src={img}
       className={utilStyles.headerImage}
       style={{
-        'height': headerImage == noHeader ? '0px': '25vmax',
+        'height': headerImage == noHeader || !config.header.enabled ? '0px': '25vmax',
       }}
     />
 
-    {isVisible && headerImage != noHeader && (
+    {config.header.enabled && isVisible && headerImage != noHeader && (
       <div className={styles.fixedText} style={{'color': color}}>
         <h1 className={styles.headerText}>{CapitalizeWords(txt)}</h1>
         <h1 className={styles.statsText}>{stxt}</h1>
       </div>
     )}
-
+    {!config.header.enabled && (
+        <><br/><br/></>
+      )}
     <div className={containerClass ? containerClass : styles.container}>
+      
+      {!home && !config.header.enabled && headerImage != noHeader && (
+        <div style={{'textAlign': 'center'}}>
+          <br/>
+          <h1 style={{'fontSize': '40px'}} className={styles.headerText}>{CapitalizeWords(txt)}</h1>
+          <h1 style={{'fontSize': '25px'}} className={styles.statsText}>{stxt}</h1>
+        </div>
+      )}
+      
       <main>{children}</main>
       {allPostsData && (
         <>

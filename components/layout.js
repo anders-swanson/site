@@ -18,7 +18,7 @@ const maxScroll = 5
 const defaultHeaderColor = 'white'
 const noHeader = _const.noHeader
 
-export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor, containerClass, idx, perPage }) {
+export default function Layout({ children, home, allPostsData, postsHeading, headerImage, ogImage, headerText, subText, description, headerColor, idx, perPage }) {
   let img = headerImage ? headerImage : defaultHeaderImage
   let txt = headerText ? headerText : name
   let stxt = subText ? subText : ""
@@ -116,9 +116,8 @@ export default function Layout({ children, home, allPostsData, postsHeading, hea
     )}
     {!config.header.enabled && (
         <><br/><br/></>
-      )}
-    <div className={containerClass ? containerClass : styles.container}>
-      
+    )}
+    <div className={styles.container}>
       {!home && !config.header.enabled && headerImage != noHeader && (
         <div style={{'textAlign': 'center'}}>
           <br/>

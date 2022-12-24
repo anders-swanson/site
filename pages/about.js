@@ -65,7 +65,7 @@ export default function Post() {
                 <div>
                     <Image
                         alt=''
-                        src='https://lh3.googleusercontent.com/RzSFN7WyLGNKmgjhdDzd_zx6c7ANyvqZaBPZaMqICbuCKnN0VhUWtfjXJ3JIVdm2gE0WhK3K0hkUS-hQZkkxm95LU2xoTea5nfj4Y4HSvRVEzSZX8HIghXns-Xuz7XIZBUwD3F8q6Hu3aocfPWyWzeaKwZ5YO6FCKTbEgnoHK6RUU_SXv0RpRpD31NbmAMYx-u4dDjdDKHSOVbqzVV-v0WBQZDBuJKxKP_AHsyDRwSPEwf3rmHQiwLLSLZpRDME8SFQZFvlzyXgh1SE_H7ZgCTab14Ln3wOdCp15UVgXxfHQdmW9i1E1TFXqTl0nB-TjpLR-qvhjJlIt7SeF3ryY85pksAEQkjEAioXP4S2mTGEvMUv4zW-060ZEnY2pu6ENz27iSlNeDU3ylGLGfe0ALjqJmX2RalrhcYv1vOiaCAMK-RmudPHZQM8veGQVBogPY_Uqtylm9BhI9WC0QtQiiIlPP0yIMRWwchVduKDVe0iyrWrMBMhRmeqW2GidEHPeKy2P_e0T7yDdbrGzjrINNUg7jGux-pbq7RotZrjMBpjnei9t8HzYKa68VG2-17ccperUPhFPubjEsFIa9q7WdDwibBZnZXkSP7mul8WHEvfz0doEzR7t8Secna4zaqLSsUfPnjmDTlOSvks0z7VjWrGu8OGeuoxobjII6gu5NkeSip2Rn78dNTDCCqG_smfRpDRfoHMXWlwMm8CmWD_3aCyd-CV707-e18GoC0tiAhwlXG4dltHTFLhjufRs4F_meV5_zgQnnxa1UrlBgwPiFF6NEI3rZNOPqVSoad7VHuK57ugjIRLSPjot21k7WwGIw6Np2Bwc4UyE-gcFRSVaZ5Ib6EjtOmUyg70MDeXTtYbCf0GZV8MRUNo4SlgqF8GPygEaCghdKTJI6Rt5_jVjDKgz5v6bgC8h-90av7HNByT2zfDHzfhYxY4XjEvru_LiVCIKETN1NcZ0FOUwMI8=w533-h800-no?authuser=0'
+                        src='https://lh3.googleusercontent.com/pw/AL9nZEWb2GADoJRIM3jZyUgq7VtaUbwsQqug8Xvi7_fzlBsjC8s0-MjTXS5Yj5d52DL9tFDfI73ljbO1Ss1cdtqQZRuu_9_7yb52BnXQe5AAR3e_w_0I8i09F84ftRhKK1jD8zZhY5wcwbH6AUqckfgfWaGq=w533-h800-no?authuser=0'
                         width={533}
                         height={800}
                     />

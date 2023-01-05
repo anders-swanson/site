@@ -12,9 +12,8 @@ module.exports.getSorted = function(blogDirectory) {
             const filePath = path.join(currentDir, fileName)
             if (fs.statSync(filePath).isDirectory()) {                
                 recurseMetadata(filePath, relDir + '/' + fileName)
-            } else if (fileName.endsWith('.js') && !fileName.startsWith('[')) {
-                const id = relDir + '/' + fileName.replace(/\.js$/, '')
-                metadata.push(getMetdata(filePath, id))
+            } else if (isPostFile(fileName)) {
+                addMetadata(metadata, relDir, fileName, filePath)
             } else {
                 return
             }            
@@ -31,6 +30,18 @@ module.exports.getSorted = function(blogDirectory) {
           return -1
         }
     })
+}
+
+function isPostFile(fileName) {
+    return fileName.endsWith('.js') && !fileName.startsWith('[')
+}
+
+function addMetadata(metadata, relDir, fileName, filePath) {
+    const id = relDir + '/' + fileName.replace(/\.js$/, '')
+    let fileMetadata = getMetdata(filePath, id)
+    if (!fileMetadata.hasOwnProperty("disabled")) {
+        metadata.push(fileMetadata)
+    }
 }
 
 // Read metadata from a blog post

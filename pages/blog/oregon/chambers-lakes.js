@@ -11,7 +11,8 @@ let metadata = {
     "title": "Chambers Lake Basin",
     "date": "2021-08-14",
     "image": "/images/oregon/chambers-lakes/thumbnail.jpg",
-    "tags": ["hiking", "lakes", "oregon", "sisters"]
+    "tags": ["hiking", "lakes", "oregon", "sisters"],
+    "disabled": true
 }
 
 const subText = '19 miles, 3,000 feet gain'

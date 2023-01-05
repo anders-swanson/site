@@ -11,7 +11,8 @@ let metadata = {
     "title": "Six Lakes Loop",
     "date": "2021-06-26",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXT2d7H6qWU-mdFP8v5it4P0veMSt044d91QS7NTLRPYq647GSQ48JFxwFUMZ7fr6YPIIKurTsEvN33ekGpdyCKTm5Og1t52BDAuyXZh2d77ThcBUjcWi6tbjg4F1PXI89FNQX2HNLGjeBPJl44Irqe=w1068-h1067-no?authuser=0",
-    "tags": ["backpacking", "lakes", "oregon", "sisters"]
+    "tags": ["backpacking", "lakes", "oregon", "sisters"],
+    "disabled": true
 }
 
 const subText = '20.87 miles, 2,218 feet gain, 1 night'

@@ -10,7 +10,8 @@ let metadata = {
     "title": "Fairlyland Loop + Queen's Garden",
     "date": "2020-11-09",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXNTmzYbH8y8lrcfALZxzoLC2VJiKATIqLq2hAV_WCWKj1GUN-ek_8ysi8BDcs1Y4Y6IRss1Elu0hznknd1lkV8VeFWUWEalaCofgHl4kVRnqMSJUdPn8HAFDxtHvCpTMg6EQmy4v4S2H_IGhIwko0J=w1068-h1067-no?authuser=0",
-    "tags": ["hiking", "national park", "utah"]
+    "tags": ["hiking", "national park", "utah"],
+    "disabled": true
 }
 
 const subText = '13.52 miles, 2,464 feet gain'

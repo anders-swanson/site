@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 //+metadata
 let metadata = {
-    "title": "Classic Hikes in the Columbia River Gorge",
+    "title": "Three Epic Hikes in the Columbia River Gorge",
     "date": "2022-01-24",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLXQvu4P9AMp_zEBWEPl5pko0vJHNNGVO5xhR3lrWLMmdZ3yPl-tMgDATjWqNttYm8RHlxVU2cLxq9PQtrj2XM9O8LYvVzK7hAg00kDOeLKdebZXNIX7IovMT3LVKgRJ1x1EbnQA3WcufZn0qJHItZTV=s1067-no?authuser=0",
     "tags": ["hiking", "guides", "columbia river gorge", "oregon"]

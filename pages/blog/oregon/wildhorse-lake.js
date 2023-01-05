@@ -9,7 +9,8 @@ let metadata = {
     "title": "Wildhorse Lake",
     "date": "2022-04-14",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVh8DGmfxmPRACCPXJGASupjnMLPgNwdNzXlRYh6SyOiQTxknXNTT9ALfUekgx6ZQK8-HwScUe5XJikupggIjXO8-wNlTg2KaaZnSHrBI5f-yXWqbzDZEjGBVHKe1w1Zsp9pw89eC__MT7d2BVg9whm=w1069-h1067-no?authuser=0",
-    "tags": ["hiking", "lakes", "steens", "oregon"]
+    "tags": ["hiking", "lakes", "steens", "oregon"],
+    "disabled": true
 }
 
 const trailhead = 'https://www.google.com/maps/place/Steens+Summit+Trailhead/@42.6351922,-118.587701,16.13z/data=!4m13!1m7!3m6!1s0x54b6a356f7124c99:0x1d8a60efd02e6802!2sWildhorse+Lake+Trail,+Oregon+97721!3b1!8m2!3d42.6358412!4d-118.5831428!3m4!1s0x54b6a4ab7263132d:0xca9321d335ba4b88!8m2!3d42.6414093!4d-118.5796356'

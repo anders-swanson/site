@@ -10,7 +10,8 @@ let metadata = {
     "title": "Druid Arch",
     "date": "2022-03-20",
     "image": "https://lh3.googleusercontent.com/pw/AM-JKLVYkpYYWiI4ZlOWasAHvsytICWO3KWORDCcKfNHRNUoH7fIGbZBN0lOLI-8oZBqY7ccnqaK5SIyZ39J_gdrTVh1nVGwHMBiudzKDjU6Ko9aItjDRKcIO4WEkP1DTaJeCTeMyJ2Z2wpqDsP1FwPwIZkR=s1067-no?authuser=0",
-    "tags": ["hiking", "national park", "utah"]
+    "tags": ["hiking", "national park", "utah"],
+    "disabled": true
 }
 
 const subText = '15.91 miles, 1,932 feet gain'

@@ -11,7 +11,8 @@ let metadata = {
     "title": "Goldbug Hot Springs",
     "date": "2021-09-05",
     "image": "/images/idaho/goldbug-hotsprings/cover.jpg",
-    "tags": ["backpacking", "hot springs", "waterfall", "idaho"]
+    "tags": ["backpacking", "hot springs", "waterfall", "idaho"],
+    "disabled": true
 }
 
 const image = ImagePathBuilder('/images/idaho/goldbug-hotsprings')

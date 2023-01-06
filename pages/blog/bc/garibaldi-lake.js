@@ -5,6 +5,7 @@ import RelatedPosts from '../../../components/related_posts'
 import links from '../../../lib/links'
 import Pinnable from '../../../components/pinit'
 import Contact from '../../../components/contact'
+import MapEmbed from '../../../components/maps'
 
 //+metadata
 let metadata = {
@@ -19,7 +20,7 @@ const pageURI = '/blog/bc/garibaldi-lake'
 const relatedTag = 'backpacking'
 
 const garibaldiLakeTrailhead = 'https://www.google.com/maps/dir/Rubble+Creek+Trailhead,+0A0+Daisy+Lake+Rd,+Whistler,+BC+V0N+1H0,+Canada/@49.9573116,-123.1552543,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54871c632191eab1:0x59a0a0082e018b3f!2m2!1d-123.120235!2d49.9572617?hl=en'
-const elfinLakesTrailhead = 'https://www.google.com/maps/dir//Elfin+Lakes+Trail+%26+Diamond+Head+Trail,+Squamish-Lillooet,+BC+V0N+1H0,+Canada/@49.7714738,-123.0387118,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x5486fae751cb2185:0xdde616187e478a39!2m2!1d-123.0036925!2d49.7714236?hl=en'
+const elfinLakesTrailhead = 'https://www.google.com/maps/dir/Elfin+Lakes+Trail+%26+Diamond+Head+Trail,+Squamish-Lillooet,+BC+V0N+1H0,+Canada/@49.7714738,-123.0387118,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x5486fae751cb2185:0xdde616187e478a39!2m2!1d-123.0036925!2d49.7714236?hl=en'
 
 export default function Post() {
     return (
@@ -71,6 +72,8 @@ export default function Post() {
                     but its made up for by the extreme beauty of the lake. If you can tolerate cold water,
                     the lake is good for swimming in the summer. At the lake, there are several small islands called "The Battleships" you can swim or walk out to depending on the
                     water level.`}
+                    <br/>
+                    <MapEmbed query='Rubble+Creek+Trailhead/@49.9572651,-123.1224237,17z/data=!3m1!4b1!4m5!3m4!1s0x54871c632191eab1:0x59a0a0082e018b3f!8m2!3d49.9572617!4d-123.120235'/>
                     <br/><br/>
                     {`Garibaldi Lake is a popular area for both day hikers and backpackers, so expect to see plenty of people here. The lake is adjacent to a 50-site
                     campground. The campground has multiple cooking shelters, outhouses, and a pulley system for food storage - it's one of the most developed
@@ -150,6 +153,7 @@ export default function Post() {
                     red heather meadows until it reaches Elfin Lakes.
                     Partway up the trail is the Red Heather shelter, a nice spot to stop and have lunch, especially if the weather is wet or cold
                     (we were freezing wet when we hiked this!).`}
+                    <MapEmbed query='49.750047,-123.053960'/>
                     <br/><br/>
                     {`When we visited in the fall, the meadows were vibrant with color, and there were plentiful blueberries growing alongside the trail. 
                     The berries growing in the meadows also attracted bears, and we saw six bears on the way up - two mama bears, each with two cubs.`}

@@ -15,7 +15,7 @@ export default function MapEmbed({ height, width, query, lat, long }) {
                     "border": "0",
                 }}
                 loading="lazy"
-                allowfullscreen
+                allowFullScreen
                 referrerpolicy="no-referrer-when-downgrade"
                 src={url}
             />

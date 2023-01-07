@@ -41,31 +41,30 @@ export default function Post() {
                     Whether you're a seasoned hiker or a first-timer, a one-night trip to Goat Lake is an experience you won't soon forget.`}
                 </div>
                 <h1 className={utilStyles.justifyCenter} id='getting-there'>Getting There</h1>
-                <br/>
                 <div>
                     {`The Goat Lake trail starts at the Chain of Lakes trailhead, located near Artist's Point, and 
                     has a one-way distance of approximately 5.3 miles while gaining 1.5k feet in elevation.
                     The road leading to the trailhead is usually open from June to October, but may close earlier due to heavy snowfall. 
                     To check the current road conditions, you can call the US Forest Service at the Glacier Public Service Center. Please be 
                     aware that this area experiences heavy winter snowfall, which can make the trails impassable for several weeks or even months after the spring opening`}
-                    <br/><br/>
-                    <MapEmbed query='Ptarmigan+Ridge+Trailhead/@48.8475561,-121.6924061,18.04z/data=!4m5!3m4!1s0x5484f78a92345021:0x8b3c693994e6e328!8m2!3d48.8469133!4d-121.6922099'/>
-                    <br/><br/>
+                </div>
+                <MapEmbed query='Ptarmigan+Ridge+Trailhead/@48.8475561,-121.6924061,18.04z/data=!4m5!3m4!1s0x5484f78a92345021:0x8b3c693994e6e328!8m2!3d48.8469133!4d-121.6922099'/>
+                <div>
                     {`To find the trailhead, walk to the west end of the Chain of Lakes parking lot - this will be at the far end as you drive in. Shortly after starting your hike,
                     you'll pass a sign for the Chain of Lakes trail.
                     After hiking on the Chain of Lakes trail for 1.1 miles, turn left onto the unmarked Ptarmigan Ridge trail. 
                     If you continue right, you'll stay on the Chain of Lakes trail, which will eventually lead you back to the lower parking lot near the Mt. Baker Ski Area.`}
-                    <br/><br/>
-                    <div className={utilStyles.centered}>
-                        <Pinnable
-                            page={pageURI}
-                            alt='Mt. Shuksan with smoke'
-                            src='https://lh3.googleusercontent.com/pw/AL9nZEXwpgpMdOqpxw6oLT8VcHqpv0GOnG0imUiNAcCJ8RtmIr51ZyEIF1XcV5WvigHSa9NAZ1pkbVbStGK-BZgAn--lCr5H6_46hung0gs8LnS2xIyJ7FQOvEFVk6TJWrurXJanv0IDkiMv7cGetLCg7mzJ=w800-h533-no?authuser=0'
-                            width={800}
-                            height={533}
-                        />
-                    </div>
-                    <br/>
+                </div>
+                <div className={utilStyles.centered}>
+                    <Pinnable
+                        page={pageURI}
+                        alt='Mt. Shuksan with smoke'
+                        src='https://lh3.googleusercontent.com/pw/AL9nZEXwpgpMdOqpxw6oLT8VcHqpv0GOnG0imUiNAcCJ8RtmIr51ZyEIF1XcV5WvigHSa9NAZ1pkbVbStGK-BZgAn--lCr5H6_46hung0gs8LnS2xIyJ7FQOvEFVk6TJWrurXJanv0IDkiMv7cGetLCg7mzJ=w800-h533-no?authuser=0'
+                        width={800}
+                        height={533}
+                    />
+                </div>
+                <div>
                     {`Continue your hike on the Ptarmigan Ridge trail for approximately 2.2 miles, approaching Mt. Baker to the west with Mt. Shuksan looming behind you.
                     The Ptarmigan Ridge trail is a popular route, so you may encounter other hikers, backpackers, and climbers on your way.
                     Along the trail, you'll find plenty of oval-leaf blueberries, which are ripe and ready to pick by September. Take a break and enjoy a snack of these sweet, 
@@ -76,9 +75,8 @@ export default function Post() {
                     It's about 1 mile further from here to the lake, where you can set up camp for the night or turn around and retrace your steps.`}
                     <br/><br/>
                     {`The following pin shows the approximate location of the camping area near Goat Lake.`}
-                    <MapEmbed lat='48.808790' long='-121.732103'/>
                 </div>
-
+                <MapEmbed lat='48.808790' long='-121.732103'/>
                 <h1 className={utilStyles.justifyCenter} id='need-to-know'>Need To Know</h1>
                 <div>
                     <h2>Hiking</h2>

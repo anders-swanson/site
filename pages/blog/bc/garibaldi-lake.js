@@ -72,16 +72,16 @@ export default function Post() {
                     but its made up for by the extreme beauty of the lake. If you can tolerate cold water,
                     the lake is good for swimming in the summer. At the lake, there are several small islands called "The Battleships" you can swim or walk out to depending on the
                     water level.`}
-                    <br/>
-                    <MapEmbed query='Rubble+Creek+Trailhead/@49.9572651,-123.1224237,17z/data=!3m1!4b1!4m5!3m4!1s0x54871c632191eab1:0x59a0a0082e018b3f!8m2!3d49.9572617!4d-123.120235'/>
-                    <br/><br/>
+                </div>
+                <MapEmbed query='Rubble+Creek+Trailhead/@49.9572651,-123.1224237,17z/data=!3m1!4b1!4m5!3m4!1s0x54871c632191eab1:0x59a0a0082e018b3f!8m2!3d49.9572617!4d-123.120235'/>
+                <div>
                     {`Garibaldi Lake is a popular area for both day hikers and backpackers, so expect to see plenty of people here. The lake is adjacent to a 50-site
                     campground. The campground has multiple cooking shelters, outhouses, and a pulley system for food storage - it's one of the most developed
                     backpacking campgrounds I've ever seen. During the summer, a ranger station is staffed with park employees.`}
                     <br/><br/>
                     {`If you are able to camp here, stay out to view the sunset as the last rays of light crest the mountains behind the lake.`}
-                    <br/><br/>
-                    <div className={utilStyles.centered}>
+                </div>
+                <div className={utilStyles.centered}>
                         <Pinnable
                             page={pageURI}
                             alt='Garibaldi Lake at sunset'
@@ -89,8 +89,6 @@ export default function Post() {
                             width={800}
                             height={533}
                         />
-                    </div>
-                    <br/><br/>
                 </div>
 
                 <h1 className={utilStyles.justifyCenter} id='panorama-ridge'>Panorama Ridge</h1>
@@ -153,8 +151,9 @@ export default function Post() {
                     red heather meadows until it reaches Elfin Lakes.
                     Partway up the trail is the Red Heather shelter, a nice spot to stop and have lunch, especially if the weather is wet or cold
                     (we were freezing wet when we hiked this!).`}
-                    <MapEmbed query='49.750047,-123.053960'/>
-                    <br/><br/>
+                </div>
+                <MapEmbed query='49.750047,-123.053960'/>
+                <div>
                     {`When we visited in the fall, the meadows were vibrant with color, and there were plentiful blueberries growing alongside the trail. 
                     The berries growing in the meadows also attracted bears, and we saw six bears on the way up - two mama bears, each with two cubs.`}
                     <br/><br/>
@@ -162,17 +161,15 @@ export default function Post() {
                     closed when we visited. Past Elfin Lakes, there's several options to continue your hike: continue on to Rampart Ponds, hike up to the Gargoyles (an interesting rock
                     formation). Another campground is located at Rampart Ponds
                     if you want to extend your backpacking trip.`}
-                    <br/><br/>
-                    <div className={utilStyles.centered}>
-                        <Pinnable
-                            page={pageURI}
-                            alt='Bear Cubs near Red Heather Meadows'
-                            src='https://lh3.googleusercontent.com/pw/AL9nZEXR2bgAsL-703pZH1C5CQzCbnJ_2zAFN4Z9rWkexTyysq-YSsWp4U_mYfLwk1K7K5CIv49TvN2fTg2ZTYjilPb6yh3eX6Y5WXCLNN0hykPjvOcC6_ju3doTFJDNdxTy_B9vHUlZjIi2-J-IYHHA0TWR=w800-h533-no?authuser=0'
-                            width={800}
-                            height={533}
-                        />
-                    </div>
-                    <br/><br/>
+                </div>
+                <div className={utilStyles.centered}>
+                    <Pinnable
+                        page={pageURI}
+                        alt='Bear Cubs near Red Heather Meadows'
+                        src='https://lh3.googleusercontent.com/pw/AL9nZEXR2bgAsL-703pZH1C5CQzCbnJ_2zAFN4Z9rWkexTyysq-YSsWp4U_mYfLwk1K7K5CIv49TvN2fTg2ZTYjilPb6yh3eX6Y5WXCLNN0hykPjvOcC6_ju3doTFJDNdxTy_B9vHUlZjIi2-J-IYHHA0TWR=w800-h533-no?authuser=0'
+                        width={800}
+                        height={533}
+                    />
                 </div>
 
                 <h1 className={utilStyles.justifyCenter} id='trip-ideas'>Backpacking Trip Ideas</h1>

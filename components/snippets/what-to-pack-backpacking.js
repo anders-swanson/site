@@ -36,12 +36,11 @@ export default function WTPBackpacking({ uri }) {
                     <TabLink href={links.hiking.revelLights} text="tent lights" /> 
                     </li>
                 </ul>
-
                 <div className={utilStyles.centered}>
                     <Pinnable
                         page={uri}
                         alt='Goat Lake Campsite'
-                        src='https://lh3.googleusercontent.com/pw/AL9nZEV5K4Z2xxGIjUslUVgVqZ3g9T9010i76LnLrOQgbrmchXPViU7mklgTksGpy5r7Xiej90mBjTssC2BKa_yXbUhJcDxVCMrgnvHvAA2Amaj6LZ1rgf8LRfS59uDqjbd1WYCGs9C9NEKsQjYQWd0gj0nL=w800-h533-no?authuser=0'
+                        src='https://lh3.googleusercontent.com/pw/AL9nZEWUxU82cOHanRCS3qpyD3UKpBu8WNZ4kLCGAT0yo7LrDObPXFc8U_qfp_h1F4SnpCRPjaLhGKnBOWpicDCY7Huz-XDcYYQ5MuuB4ktpAOnLGV2wwOitrSW651weaj3tSZDf1m46f7os-mekFczodNG-=w800-h533-no?authuser=0'
                         width={800}
                         height={533}
                     />
@@ -85,7 +84,15 @@ export default function WTPBackpacking({ uri }) {
                     <TabLink href={links.food.delicioats} text="easy no-mess camp breakfast" /> {`(discount code LAURENG for 15% off)`}
                     </li>
                 </ul>
-
+                <div className={utilStyles.centered}>
+                    <Pinnable
+                        page={uri}
+                        alt='Oatmeal at Ramona Falls'
+                        src='https://lh3.googleusercontent.com/pw/AL9nZEVhMFo-8z2ln0FD4acs-rHHOJZt6LzWctEZtOxFZJxwbW8mwQKaMUYSt_4RT8OsUKtNfvxE5BVqWpymjR6fItgCYM-bcWbXpkwcWQ4f87OoODdQH1vL4KiSmNIuMmZ8szZtjokP1yi_1nUTq3brZxjQ=w355-h533-no?authuser=0'
+                        width={355}
+                        height={533}
+                    />
+                </div>
                 <h2>Toiletries</h2>
                 <ul>
                     <li>
@@ -110,7 +117,15 @@ export default function WTPBackpacking({ uri }) {
                     <TabLink href={links.hiking.firstAidKit} text="first aid kit" /> 
                     </li>
                 </ul>
-
+                <div className={utilStyles.centered}>
+                    <Pinnable
+                        page={uri}
+                        alt='LB1'
+                        src='https://lh3.googleusercontent.com/pw/AL9nZEWVB4hHrHqzB9RgXo-OdD4_yCkazusr1QKcN3mmyRg1Ovs47K9Mf6uUxN_nqpMTmCURWXR_YI9A5M7q72bLG5wTVZHmkqYWlu24j190uKtXscij1m_OvRGaJpV7MmXWtKpBEIuiyoUepegSfDnafQQk=w355-h533-no?authuser=0'
+                        width={355}
+                        height={533}
+                    />
+                </div>
                 <h2>Utilities</h2>
                 <ul>
                     <li>
@@ -132,7 +147,15 @@ export default function WTPBackpacking({ uri }) {
                     <TabLink href={links.hiking.greenTrailMaps} text="the best trail maps " /> {`(better than Nat Geo's)`}
                     </li>
                 </ul>
-
+                <div className={utilStyles.centered}>
+                    <Pinnable
+                        page={uri}
+                        alt='LB2'
+                        src='https://lh3.googleusercontent.com/pw/AL9nZEXyfSI4Aeg3Cl0jouKYCUGuJC1Peh5fo7LHxfa3BFuFyvUJJAEd1rrgr7HxVyN8DgZgzoZi1PSaUQIxCwiGet8OllS-cXEjF8-GrdWsl9xYeFUf5G8Q1KRe5sB1iGUU0Oaz7l6lJ_hWYQi4uwRcBxpy=w355-h533-no?authuser=0'
+                        width={355}
+                        height={533}
+                    />
+                </div>
                 <h2>Clothing</h2>
                 <ul>
                     <li>

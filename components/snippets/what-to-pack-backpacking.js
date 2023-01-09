@@ -1,8 +1,9 @@
 import links from '../../lib/links'
 import TabLink from '../tablink'
 import utilStyles from '../../styles/utils.module.css'
+import Pinnable from '../pinit'
 
-export default function WTPBackpacking() {
+export default function WTPBackpacking({ uri }) {
     return (
         <>
             <h1 className={utilStyles.justifyCenter} id='what-to-pack'>What to Pack</h1>
@@ -35,6 +36,16 @@ export default function WTPBackpacking() {
                     <TabLink href={links.hiking.revelLights} text="tent lights" /> 
                     </li>
                 </ul>
+
+                <div className={utilStyles.centered}>
+                    <Pinnable
+                        page={uri}
+                        alt='Goat Lake Campsite'
+                        src='https://lh3.googleusercontent.com/pw/AL9nZEV5K4Z2xxGIjUslUVgVqZ3g9T9010i76LnLrOQgbrmchXPViU7mklgTksGpy5r7Xiej90mBjTssC2BKa_yXbUhJcDxVCMrgnvHvAA2Amaj6LZ1rgf8LRfS59uDqjbd1WYCGs9C9NEKsQjYQWd0gj0nL=w800-h533-no?authuser=0'
+                        width={800}
+                        height={533}
+                    />
+                </div>
                 <h2>Camp Kitchen</h2>
                 <ul>
                     <li>

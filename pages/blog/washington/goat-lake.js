@@ -1,11 +1,11 @@
 import utilStyles from '../../../styles/utils.module.css'
 import Layout from "../../../components/layout"
-import Link from 'next/link'
 import RelatedPosts from '../../../components/related_posts'
 import Pinnable from '../../../components/pinit'
 import Contact from '../../../components/contact'
 import MapEmbed from '../../../components/maps'
 import BearSafetyNC from '../../../components/snippets/bear-safety-nc'
+import WTPBackpacking from '../../../components/snippets/what-to-pack-backpacking'
 
 //+metadata
 let metadata = {
@@ -151,6 +151,8 @@ export default function Post() {
                         />
                     </div>
                 </div>
+
+                <WTPBackpacking uri={pageURI}/>
 
                 <h1 className={utilStyles.justifyCenter} id='bear-safety'>Bear Safety</h1>
                 <div>

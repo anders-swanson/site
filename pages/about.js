@@ -17,12 +17,7 @@ export default function Post() {
                     I'll give a you quick breakdown of how we got to where we are, and what's in store for us next.`}
         </div>
         <div>
-          <Image
-            alt=""
-            width={800}
-            height={600}
-            src="https://lh3.googleusercontent.com/pw/AL9nZEVrAtSS12cZlnzLeSUjJaaEhYA9YiLp2ze7K66WG4Jst083guDxMs6cVqng7xFHSyF1lJgIsHa4QlbIM4VsXcnKYEGFHKLcyDGL63NV-5HOscHg4xZnO_wJFBNjOjMNLTmsOdNcAzFRhRHGMPl7hFNT=w800-h600-no?authuser=0"
-          />
+          <Image alt="" width={800} height={571} src="/us.jpg" />
         </div>
         <div>
           {`Lauren and I both graduated with Bachelor's degrees in Computer Science in 2019, and found ourselves working corporate jobs as software engineers

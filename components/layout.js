@@ -14,7 +14,7 @@ import { Posts } from "../lib/metadata";
 
 export const title = `Trails and Trekking`;
 const name = title;
-const defaultHeaderImage = "/images/cover.jpeg";
+const defaultHeaderImage = "/cover.jpeg";
 const maxScroll = 5;
 const defaultHeaderColor = "white";
 const noHeader = _const.noHeader;

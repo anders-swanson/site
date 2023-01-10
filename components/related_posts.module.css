@@ -1,8 +1,8 @@
 .scroll {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    overflow-x: auto;
-    gap: 30px;
-    height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  overflow-x: auto;
+  gap: 30px;
+  height: 100%;
 }

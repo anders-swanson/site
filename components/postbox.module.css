@@ -1,86 +1,86 @@
 .postBox {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .pageNums {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .pageNums a {
-    color: rgb(97, 97, 97);
-    padding-left: 10px;
-    font-weight: 500;
-    font-size: 17px;
-    border: none;
-    background: none;
+  color: rgb(97, 97, 97);
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  border: none;
+  background: none;
 }
 
 .pageNums a:hover {
-    color: #000;
-    text-decoration: underline;
-    cursor: pointer;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .highlighted {
-    text-decoration: underline;
-    color: #000;
-    font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+  font-weight: bold;
 }
 
 .post {
-    min-width: 300px;
-    max-width: 300px;
-    min-height: 450px;
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 450px;
 }
 
 .postLink {
-    color: #000;
-    font-size: 16px;
+  color: #000;
+  font-size: 16px;
 }
 
 .tag {
-    border: none;
-    background: none;
-    font-size: small;
-    padding: 0%;
-    color: #000;
+  border: none;
+  background: none;
+  font-size: small;
+  padding: 0%;
+  color: #000;
 }
 
 .tag a {
-    padding-right: 7px;
-    color: #000;
+  padding-right: 7px;
+  color: #000;
 }
 
 .tag a:hover {
-    padding-right: 7px;
-    color: #272727;
+  padding-right: 7px;
+  color: #272727;
 }
 
 .description {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .descriptionLight {
-    font-size: 16px;
-    color: white;
+  font-size: 16px;
+  color: white;
 }
 
 .description a {
-    color: #000;
+  color: #000;
 }
 
 .description a:hover {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 .description a:visited {
-    color: #000
+  color: #000;
 }

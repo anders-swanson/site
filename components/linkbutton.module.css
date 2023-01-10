@@ -1,44 +1,42 @@
 .lbContainer {
-    border-radius: 10px;
-    border: 2px solid rgb(102, 102, 102);
-    background-image: linear-gradient(to bottom right, #39a8ad, #3ab179);
+  border-radius: 10px;
+  border: 2px solid rgb(102, 102, 102);
+  background-image: linear-gradient(to bottom right, #39a8ad, #3ab179);
 
-    width: 600px;
-    height: 75px;
-    text-align: center;
-    display: table;
-    position: relative;
-    color: #FFFFFF;
+  width: 600px;
+  height: 75px;
+  text-align: center;
+  display: table;
+  position: relative;
+  color: #ffffff;
 }
 
 .lbContainer a {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .lbContainer div {
-    font-family: "Poppins",sans-serif;
-    font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .lbContainer:hover {
-    background-color: #9ee0d8;
-    color: black;
+  background-color: #9ee0d8;
+  color: black;
 }
 
 .lbItem {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 14px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 14px;
 }
 
 .lbBody {
-    font-size: 12px;
-    margin: 0;
+  font-size: 12px;
+  margin: 0;
 }
-
-

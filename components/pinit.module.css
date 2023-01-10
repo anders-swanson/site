@@ -1,22 +1,22 @@
 .parent {
-    position: relative;
+  position: relative;
 }
 
 .parent span {
-    opacity: 0;
+  opacity: 0;
 }
 
 .parent:hover span {
-    opacity: 1;
+  opacity: 1;
 }
 
 .parent:hover div {
-    filter: brightness(70%)
+  filter: brightness(70%);
 }
 
 .child {
-    margin-top: 5px;
-    margin-left: 5px;
-    position: absolute;
-    z-index: 1;
+  margin-top: 5px;
+  margin-left: 5px;
+  position: absolute;
+  z-index: 1;
 }

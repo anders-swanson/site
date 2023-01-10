@@ -1,33 +1,33 @@
 .menu {
-    font-size: 24px;
-    width: 80%;
-    border-radius: 15px;
-    white-space: nowrap;
+  font-size: 24px;
+  width: 80%;
+  border-radius: 15px;
+  white-space: nowrap;
 }
 
 .menuImage {
-    z-index: 9999;
-    filter: brightness(75%);
-    display: block;
+  z-index: 9999;
+  filter: brightness(75%);
+  display: block;
 }
 
 .menu a {
-    color: black;
+  color: black;
 }
 
 .menu a:hover {
-    color: black;
+  color: black;
 }
 
 .footer {
-    left: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
+  left: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
 }
 
 .footer p {
-    color: black;
-    font-size: small;
+  color: black;
+  font-size: small;
 }

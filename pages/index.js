@@ -1,8 +1,8 @@
-import Layout from '../components/layout'
-import { Posts } from '../lib/metadata'
-import FeaturedPost from '../components/featuredpost'
-import Image from 'next/image'
-import utilStyles from '../styles/utils.module.css'
+import Layout from "../components/layout";
+import { Posts } from "../lib/metadata";
+import FeaturedPost from "../components/featuredpost";
+import Image from "next/image";
+import utilStyles from "../styles/utils.module.css";
 
 export default function Home({ posts, featuredPost }) {
   return (
@@ -16,24 +16,24 @@ export default function Home({ posts, featuredPost }) {
     >
       <div className={utilStyles.flexGapContainer}>
         <Image
-          src='https://lh3.googleusercontent.com/pw/AL9nZEWt1IXz-Pf-KlWIEGhhhvAzIRqEwt8d1j2FSXtnwjfEI6DxY_w-zUi79-hFIb_FH4pUUXKbSN6W9w9PUAkSk2BnJGRt48WcoRn3gVmfjlD6HE7OBLaRzsYhgDfYGRfrQMXp2R7xgOv_a6YnHKdpNXyd=w800-h535-no?authuser=0'
+          src="https://lh3.googleusercontent.com/pw/AL9nZEWt1IXz-Pf-KlWIEGhhhvAzIRqEwt8d1j2FSXtnwjfEI6DxY_w-zUi79-hFIb_FH4pUUXKbSN6W9w9PUAkSk2BnJGRt48WcoRn3gVmfjlD6HE7OBLaRzsYhgDfYGRfrQMXp2R7xgOv_a6YnHKdpNXyd=w800-h535-no?authuser=0"
           width={800}
           height={535}
         />
       </div>
-      <br/>
-      <FeaturedPost post={featuredPost}/>
+      <br />
+      <FeaturedPost post={featuredPost} />
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const posts = Posts()
-  const featuredPost = posts.shift()
+  const posts = Posts();
+  const featuredPost = posts.shift();
   return {
     props: {
       posts,
-      featuredPost
-    }
-  }
+      featuredPost,
+    },
+  };
 }

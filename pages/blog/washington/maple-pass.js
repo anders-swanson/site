@@ -142,6 +142,7 @@ export default function Post() {
         <MapEmbed query="Colonial+Creek+South+Campground/@48.6810889,-121.1001968,14.96z/data=!4m5!3m4!1s0x5484bdfab8f10d75:0x41e7c72111746f86!8m2!3d48.6891658!4d-121.0955492" />
         <MapEmbed query="Lone+Fir+Campground/@48.573151,-120.6167413,14.08z/data=!4m5!3m4!1s0x5484a97bc7e1fd37:0x2a0ffec0be98b780!8m2!3d48.5813061!4d-120.6246965" />
         <MapEmbed query="Klipchuck+Campground/@48.5940161,-120.5320873,14.08z/data=!4m5!3m4!1s0x548355dcfadda2d3:0xd318d4ba1996073f!8m2!3d48.59736!4d-120.5129999" />
+        <br/>
         <div className={utilStyles.centered}>
           <Slider
             slides={[

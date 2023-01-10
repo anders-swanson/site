@@ -22,8 +22,8 @@ export default function Post() {
                     <Image
                         alt=''
                         width={800}
-                        height={600}
-                        src='https://lh3.googleusercontent.com/pw/AL9nZEVrAtSS12cZlnzLeSUjJaaEhYA9YiLp2ze7K66WG4Jst083guDxMs6cVqng7xFHSyF1lJgIsHa4QlbIM4VsXcnKYEGFHKLcyDGL63NV-5HOscHg4xZnO_wJFBNjOjMNLTmsOdNcAzFRhRHGMPl7hFNT=w800-h600-no?authuser=0'
+                        height={571}
+                        src='/us.jpg'
                     />
                 </div>
                 <div>

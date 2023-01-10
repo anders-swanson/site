@@ -12,7 +12,7 @@ let metadata = {
   title: "Backpacking Goat Lake on Mt. Baker",
   date: "2023-01-07",
   image:
-    "https://lh3.googleusercontent.com/pw/AL9nZEXcdqTZVMAUY6cUAnu93UCkzViBPWxOgJ4Povcpi7_mODMYX8DySgxVc6cD23RDBFpb0hvlNosvFSd-PkYdaGyYOepNmzLUvuZffmzfIcKesuNoO_iUc9w281Grn2TsVF1CvhvcpAvMU5Gray6zf9RR=s800-no?authuser=0",
+    "https://lh3.googleusercontent.com/pw/AL9nZEU1CmjLIhK8lhIfEtKnmH5LzD30ZavQLlXdUIvSyRbBo8Qg6a5GoW1FfMDQdtqH_51O9BB4fG3cthT4Wv794w3dwwKu14tq3Y2stMINK545OomZ4lOhcNdVthvQGGCUPBxqkbP0NE7kpBRTdEhNcDVC=s800-no?authuser=0",
   tags: ["washington", "lakes", "backpacking", "north cascades"],
 };
 

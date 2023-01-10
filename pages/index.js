@@ -1,8 +1,8 @@
-import Layout from '../components/layout'
-import { Posts } from '../lib/metadata'
-import FeaturedPost from '../components/featuredpost'
-import Image from 'next/image'
-import utilStyles from '../styles/utils.module.css'
+import Layout from "../components/layout";
+import { Posts } from "../lib/metadata";
+import FeaturedPost from "../components/featuredpost";
+import Image from "next/image";
+import utilStyles from "../styles/utils.module.css";
 
 export default function Home({ posts, featuredPost }) {
   return (
@@ -15,25 +15,21 @@ export default function Home({ posts, featuredPost }) {
       ogImage="/images/cover.jpeg"
     >
       <div className={utilStyles.flexGapContainer}>
-        <Image
-          src='/cover.png'
-          width={800}
-          height={400}
-        />
+        <Image src="/cover.png" width={800} height={400} />
       </div>
-      <br/>
-      <FeaturedPost post={featuredPost}/>
+      <br />
+      <FeaturedPost post={featuredPost} />
     </Layout>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const posts = Posts()
-  const featuredPost = posts.shift()
+  const posts = Posts();
+  const featuredPost = posts.shift();
   return {
     props: {
       posts,
-      featuredPost
-    }
-  }
+      featuredPost,
+    },
+  };
 }

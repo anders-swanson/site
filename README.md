@@ -5,6 +5,7 @@ Hi! This is my personal website, focused on travel blogging. You can view the we
 ### Developer Notes
 
 prereqs:
+
 - `node`
 - `npm`
 
@@ -46,11 +47,11 @@ Without these variables the site will still be reachable, but some features may 
 
 Create a new `Javascript` file in the `pages/blog/` directory, such as `pages/blog/mypage.js`
 
-
 #### 2.
 
 Add metadata to your page, at the top of the file. the `//+metadata` comment is important for the site builder to add your page's
 data to the metadata store during site compilation.
+
 ```
 //+metadata
 let metadata = {
@@ -68,21 +69,22 @@ let metadata = {
 #### 3.
 
 Implement the React page contract in your page:
+
 ```js
-import Layout from "../../components/layout"
+import Layout from "../../components/layout";
 
 export default function Post() {
-    return (
-        // you may use any image or header text, not just the metadata values
-        <Layout
-            headerImage={metadata.image}
-            ogImage={metadata.image}
-            headerText={metadata.title}
-            description={`This description will show up in links and post references`}
-        >           
-            <h1>The body within Layout is customizable</h1>
-        </Layout>
-    )
+  return (
+    // you may use any image or header text, not just the metadata values
+    <Layout
+      headerImage={metadata.image}
+      ogImage={metadata.image}
+      headerText={metadata.title}
+      description={`This description will show up in links and post references`}
+    >
+      <h1>The body within Layout is customizable</h1>
+    </Layout>
+  );
 }
 ```
 

@@ -7,7 +7,8 @@
     "export": "npm run prebuild && next build && next export",
     "start": "npm run prebuild && next start",
     "lint": "next lint",
-    "check-url": "node scripts/url_checker.js"
+    "check-url": "node scripts/url_checker.js",
+    "prettier": "npx prettier --write ."
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.6",

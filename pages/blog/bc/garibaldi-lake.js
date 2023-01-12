@@ -51,7 +51,7 @@ export default function Post() {
            backpacking opportunities.`}
           <br />
           <br />
-          {`During our weeklong visit to Garibaldi Provincial Park in September 2022, we were awestruck by the natural beauty and had one of the best trips of the year.
+          {`During our weeklong visit to Garibaldi Provincial Park in September 2022, we were awestruck by the park's natural beauty and had one of the best trips of the year.
           In this guide, we'll share our top tips for planning your own adventure to this incredible destination.`}
         </div>
         <h1 className={utilStyles.justifyCenter} id="getting-there">
@@ -60,8 +60,8 @@ export default function Post() {
         <br />
         <div>
           {`Located about an hour north of Vancouver, Garibaldi Provincial Park is easily accessible via the picturesque Sea-to-Sky highway, which
-          winds its way towards the popular ski destination of Whistler..
-          Garbaldi Lake is the most popular hike, reached by a paved road with a large parking lo (note: This lot will still fill by mid-morning
+          winds its way towards the popular ski destination of Whistler.
+          Garbaldi Lake is the park's most popular hike, reached by a paved road with a large parking lot (note: This lot will still fill by mid-morning
             most days the park is open). The park's other main trailheads, Cheakamus Lake and Elfin Lakes, are miles down gravel/dirt roads.
           I found these roads passable with a 2WD sedan, though there are many rocky or potholed sections that must be taken slowly.`}
           <br />

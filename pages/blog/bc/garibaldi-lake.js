@@ -6,6 +6,7 @@ import links from "../../../lib/links";
 import Pinnable from "../../../components/pinit";
 import Contact from "../../../components/contact";
 import MapEmbed from "../../../components/maps";
+import WTPBackpacking from "../../../components/snippets/what-to-pack-backpacking";
 
 //+metadata
 let metadata = {
@@ -35,33 +36,44 @@ export default function Post() {
       ogImage={metadata.image}
     >
       <div className={utilStyles.flexGapContainer}>
+        <div className={utilStyles.centered}>
+          <Pinnable
+            page={pageURI}
+            alt="Mountain range in Garibaldi Park"
+            src={cover}
+            width={800}
+            height={533}
+          />
+        </div>
         <div>
-          {`We visited Garibaldi Provincial Park for a week in 
-                    mid-September 2022, and experienced one of our best trips of the year. Check out my tips and recommendations below for planning your
-                    trip to this amazing area!`}
+          {`Picture yourself surrounded by towering peaks, alpine lakes, and fields of wildflowers as you backpack through the rugged splendor of Garibaldi Provincial Park
+           in British Columbia, Canada. This park is a favorite for lovers of the outdoors, offering a range of challenging hikes, panoramic vistas, and diverse 
+           backpacking opportunities.`}
+          <br />
+          <br />
+          {`During our weeklong visit to Garibaldi Provincial Park in September 2022, we were awestruck by the natural beauty and had one of the best trips of the year.
+          In this guide, we'll share our top tips for planning your own adventure to this incredible destination.`}
         </div>
         <h1 className={utilStyles.justifyCenter} id="getting-there">
           Getting There
         </h1>
         <br />
         <div>
-          {`Garibaldi Provincial Park is located near the town of Squamish in British Columbia, accessed by the Sea-to-Sky highway.
-                    The park hosts some extremely beautiful trails - The Garibaldi Lake trail is probably the most popular in the park, though there are
-                    many to choose from.`}
+          {`Located about an hour north of Vancouver, Garibaldi Provincial Park is easily accessible via the picturesque Sea-to-Sky highway, which
+          winds its way towards the popular ski destination of Whistler..
+          Garbaldi Lake is the most popular hike, reached by a paved road with a large parking lo (note: This lot will still fill by mid-morning
+            most days the park is open). The park's other main trailheads, Cheakamus Lake and Elfin Lakes, are miles down gravel/dirt roads.
+          I found these roads passable with a 2WD sedan, though there are many rocky or potholed sections that must be taken slowly.`}
           <br />
           <br />
-          {`Most trailheads in the park are accessible via gravel or dirt forest service roads (except Garibaldi Lake, which is fully paved). I found all the main roads
-                    passable with a 2WD sedan, though there are many rocky/potholed sections that should be taken slowly.`}
-          <br />
-          <br />
-          {`Backcountry camping in Garibaldi Provincial Park is restricted to developed campgrounds, and reservations must be made in advance. For day or overnight
-                    reservations, visit the `}
+          {`Camping in Garibaldi Provincial Park is restricted to developed campgrounds and requires reservations made in advance.
+          To reserve a campsite or a day-use permit, visit the `}
           <Link href={links.misc.bcparksReservations}>BC Parks Website</Link>
-          {`. During the summer season, a free permit is required
-                    for day use. There are limited number of permits, and they can go quickly. I recommend checking for permits as soon as they are released.`}
+          {`. It's important to note that during the summer months, a free permit must also be reserved for day use. There are a limited number of permits,
+          and they are often claimed quickly. I recommend reserving a permit as soon as you are able to secure your trip to avoid disappointment.`}
           <br />
           <br />
-          {`If you don't feel like camping, there are more developed places to stay in nearby Squamish or Whistler, both of which are popular tourist destinations.`}
+          {`If camping isn't your style, the nearby towns of Squamish and Whistler are popular tourist destinations with excellent accommodations.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
@@ -82,21 +94,28 @@ export default function Post() {
           {`The hike to Garibaldi Lake starts at the `}
           <Link href={garibaldiLakeTrailhead}>Rubble Creek Trailhead</Link>
           {` north of Squamish, travelling uphill
-                    roughly 6 miles (12 round trip).
-                    You may optionally return back via Taylor Meadows for a slightly longer, but more varied experience. The trail is steep and wooded
-                    for the majority of its duration,
-                    but its made up for by the extreme beauty of the lake. If you can tolerate cold water,
-                    the lake is good for swimming in the summer. At the lake, there are several small islands called "The Battleships" you can swim or walk out to depending on the
-                    water level.`}
+                    roughly 6 miles (12 round trip) through dense evergreen forest. The hike is typically done as an out-and-back, but you may
+                    optionally return via Taylor Meadows for a slightly longer, but more varied experience. The trail is clearly marked
+                    throughout the hike, with signposts and maps.`}
+          <br />
+          <br />
+          {`While the wooded hike to the lake is not terribly exciting, the lake's beauty more than makes up for it. When we finally arrived
+                    at Garibaldi Lake, we were instantly amazed by the lake's bright turquoise waters, tucked in a basin of towering snow-capped mountains.
+                    If you're up for a swim,
+                    I recommend heading out to one of the small islands, nicknamed "The Battleships" - if the view didn't take your breath away,
+                    the lake's icy cold water definitely will. Be aware that while the lake water
+                    may look inviting after a hike, it's extremely cold and should only be attempted by confident swimmers.`}
         </div>
         <MapEmbed query="Rubble+Creek+Trailhead/@49.9572651,-123.1224237,17z/data=!3m1!4b1!4m5!3m4!1s0x54871c632191eab1:0x59a0a0082e018b3f!8m2!3d49.9572617!4d-123.120235" />
         <div>
-          {`Garibaldi Lake is a popular area for both day hikers and backpackers, so expect to see plenty of people here. The lake is adjacent to a 50-site
-                    campground. The campground has multiple cooking shelters, outhouses, and a pulley system for food storage - it's one of the most developed
-                    backpacking campgrounds I've ever seen. During the summer, a ranger station is staffed with park employees.`}
+          {`This area is heavily frequented by both day hikers and backpackers, so don't expect too much solitude here. The lake is adjacent to a 50-site backpacker's
+                    campground. The campground has multiple cooking shelters, outhouses, and a pulley system for bear-safe food storage. 
+                    During the summer, a ranger station at the edge of the campground is staffed with park employees. Note that all drinking water
+                    must be filtered and/or purified from the lake.`}
           <br />
           <br />
-          {`If you are able to camp here, stay out to view the sunset as the last rays of light crest the mountains behind the lake.`}
+          {`If you are able to camp here, stay out to view the sunset as the last rays of light illuminate the mountain range behind the lake. A great spot to view the sunset
+          is from the wooden, floating helipad near the ranger station. The helipad is also a good spot to hang out and chat with other backpackers who are enjoying the view.`}
         </div>
         <div className={utilStyles.centered}>
           <Pinnable
@@ -113,24 +132,31 @@ export default function Post() {
         </h1>
         <div>
           {`Panorama Ridge offers a 360 degree view of Garibaldi Lake, Black Tusk, and the Helm Lake area. It's arguably the 
-                    best viewpoint in the park - but it's a long, difficult hike to get there. If done as a day hike, 
-                    you'll cover around 20 miles round-trip, with 5k+ feet of elevation gain.`}
+                    best viewpoint in the park accessible by trail, but it's a long, difficult hike to get there with plenty of climbing and rocky terrain.
+                    If you hike Panorama Ridge in a day, 
+                    be prepared to cover over 20 miles round-trip with about 5,000 feet of elevation gain. For most hikers, this is a 10-14 hour hike, so
+                    plan accordingly with plenty of food and water.`}
           <br />
           <br />
-          {`To hike Panorama Ridge, start at `}
+          {`The Panorama Ridge hike starts at the`}
           <Link href={garibaldiLakeTrailhead}>Rubble Creek Trailhead</Link>
-          {`.
-                    You may choose to hike past Garibaldi Lake, or through Taylor Meadows and bypass the Lake. Past Garibaldi Lake/Taylor Meadows,
-                    you'll travel several miles of varied meadows and smaller lakes - the views here are stunning. On your way, you'll see for
-                    Panorama Ridge. The Panorama Ridge trail is about 2 miles long once it leaves the main trail.`}
+          {`, with stunning views of meadows, mountain glaciers, and lakes. On the way there, you may choose to hike past Garibaldi Lake, or bypass the 
+          lake with the trail through Taylor Meadows.
+          The high country between Taylor Meadows/Garibaldi Lake is some of the best in park - thinning tress give way to wildflower meadows, streams,
+          and unimpeded views of several mountain ranges, including the farther off Tantalus Range towards Squamish.`}
+
+          {`The final push to Panorama point is along a 2-mile spur off the main trail, on the right hand side near the signage for Helm Creek. The trail rapidly
+          turns steep and rocky here, but persevere and you'll be rewarded with an incredible view of Garibaldi Lake from above. There's an excellent spot for
+          photos of the lake and mountains on the saddle past the high point. The pin below marks the turn-off for the Panorama Ridge trail - it's 
+          easily missed, so take your time when approaching and watch for where other hikers are headed. Most other people on the trail will be heading up to Panorama Ridge`}
+        </div>
+        <MapEmbed lat="49.964556" long="-123.028118" />
+        <div>
+          {`To better enjoy this hike, I recommend camping at Taylor Meadows or Garibaldi Lake the night before, to reduce the amount of miles you need
+          to hike in a single day. Not only will this make your trip easier, it will also allow you to spend more time enjoying the natural splendor of Garibaldi.`}
           <br />
           <br />
-          {`If you can get the reservations, I recommend camping at Taylor Meadows or Garibaldi Lake before attempting this hike.
-                    Camping at one of the backcountry campgrounds will reduce the distance you need to hike each day, and you'll be able to spend more time
-                    exploring the park.`}
-          <br />
-          <br />
-          {`If you can only do one hike at Garibaldi Provincial Park, and you're up for a tough 20-mile day, this is the hike you want to do.`}
+          {`If you only have one day at Garibaldi Provincial Park, and you know you can tackle a tough 20-mile hike, this is the one you absolutely must do.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
@@ -150,16 +176,19 @@ export default function Post() {
           Black Tusk
         </h1>
         <div>
-          {`Black Tusk is a peak of dark volcanic rock that's visible from most of the area above Garibaldi Lake. The peak is accessed via a steep 2-mile trail that
-                    forks from the main trail past Taylor Meadows. The last section of this trail is somewhat of a scramble, but will take you high up the mountain to an
-                    amazing view. Starting at the `}
+          {`Black Tusk is an imposing peak of dark volcanic rock that's plainly visible from most of the area above Garibaldi Lake, and offers a commanding view 
+          of this gorgeous area. The hike to Black tusk also starts at the `}
           <Link href={garibaldiLakeTrailhead}>Rubble Creek Trailhead</Link>
-          {`, expect a 17 mile round trip - the route is 
-                    very similar to the Panorama Ridge hike.`}
-          <br />
-          <br />
-          {`It's possible to hike Panorama Ridge, Black Tusk, and Garibaldi Lake on the same trip due to their proximity. This itenerary is best suited
-                    for a multi-day backpack, camping at Taylor Meadows, Garibaldi Lake, or Helm Creek Campground. Helm Creek Campground is around 3 miles further from
+          {`, and is approximately a 17 mile round trip - the route is 
+                    technically similar to the Panorama Ridge hike described in the last section. Hike along the main trail from Taylor Meadows, till you
+                    reach signage for Black Tusk. The challengingly steep side trail to the peak is 2 miles long, and becomes increasingly rocky towards the end. The pin below marks
+                    the exact location of the Black Tusk turnoff from the main trail.`}
+        </div>
+        <MapEmbed lat="49.959747" long="-123.048888" />
+        <div>
+          {`If you're out in Garibaldi Park for multiple days, I suggest hiking hike Panorama Ridge, Black Tusk, and Garibaldi Lake on the same trip due to their proximity.
+          While possible for extreme hikers in a single day, this itinerary is better suited
+                    for multi-day backpackers taking advantage of campsites Taylor Meadows, Garibaldi Lake, or Helm Creek. Helm Creek Campground is around 3 miles further from
                     the Panorama Ridge turnoff on the main trail.`}
           <br />
           <br />
@@ -181,20 +210,31 @@ export default function Post() {
         </h1>
         <div>
           <Link href={elfinLakesTrailhead}>Elfin Lakes</Link>
-          {` is a favorite backpacking destination near Squamish. The trailhead is up a 
-                    steep forest service road just 45 minutes outside of town. The trail climbs steadily along a closed road for 6 miles, passing through
-                    red heather meadows until it reaches Elfin Lakes.
-                    Partway up the trail is the Red Heather shelter, a nice spot to stop and have lunch, especially if the weather is wet or cold
-                    (we were freezing wet when we hiked this!).`}
+          {` is a favorite backpacking destination near Squamish with multiple lakes and a beautiful campsite that fronts Mt. Garibaldi.
+                   The  Elfin Lakes Trail trailhead is up a rocky forest service road just 45 minutes outside of Squamish, most of the drive time
+                   being on the gravel road.
+                   Once you hit the trail, it climbs steadily along an old, closed road for about 6 miles, passing through
+                   meadows of red heather and wild blueberry before reaching Elfin Lakes. Partway up the trail is the Red Heather shelter
+                   stocked with tables, chairs, and a fully hooked up a gas burner. The shelter is a great spot to stop and have lunch, especially
+                   if the weather is rainy or cold, but note that camping is not allowed in the Red Heather shelter.`}
+          <br />
+          <br />
+          {`Due to the abundance of blueberry meadows along the trail, bear sightings in this area are quite frequent. Be bear aware during your hike, as
+                   you'll likely see one or more black bears munching on blueberries towards the end of summer - I recommend hiking
+                   this trail in a group, as you will be less likely to startle any bears you encounter.`}
         </div>
         <MapEmbed query="49.750047,-123.053960" />
         <div>
-          {`When we visited in the fall, the meadows were vibrant with color, and there were plentiful blueberries growing alongside the trail. 
-                    The berries growing in the meadows also attracted bears, and we saw six bears on the way up - two mama bears, each with two cubs.`}
+          {`When we visited in the fall, the meadows were vibrant red with color, and there were plentiful blueberries growing alongside the trail. 
+                    The berries growing in the meadows attracted bears, and we saw six bears on the way up - two mama bears, each with two cubs.`}
           <br />
           <br />
-          {`Elfin Lakes campground has a shelter, outhouse, and many, many tent pads. There's a larger shelter for winter camping, but it was 
-                    closed when we visited. Past Elfin Lakes, there's several options to continue your hike: continue on to Rampart Ponds, hike up to the Gargoyles (an interesting rock
+          {`The Elfin Lakes campground has a shelter, an outhouse, and a large amount of tent pads. There's a larger shelter for winter camping, but it was indefinitely
+                    closed during our visit. One of the lakes is designated for collecting drinking water, while the other is intended for swimming.`}
+          <br />
+          <br />
+          {`If you decide hike past Elfin Lakes, there's a couple options to continue adventuring: continue on to Rampart Ponds, or
+                    hike up to the Gargoyles (an interesting rock
                     formation). Another campground is located at Rampart Ponds
                     if you want to extend your backpacking trip.`}
         </div>
@@ -248,24 +288,23 @@ export default function Post() {
               height={533}
             />
           </div>
-          <br />
-          <br />
         </div>
 
         <h1 className={utilStyles.justifyCenter} id="bear-safety">
           Bear Safety
         </h1>
         <div>
-          {`Garibaldi is home to a large population of Black Bears, as well as the occasional Brown Bear. Bears are particularly active towards the
-                    end of summer and early fall, and you are likely to see them when visiting the park.`}
+          {`Garibaldi is home to a large population of Black Bears, as well as the occasional Brown Bear. Bears are highly active during the
+                    end of summer and early fall, and you are likely to see them when visiting the park. We saw at least one bear every day we backpacked in 
+                    Garibaldi, often multiple bears per day.`}
           <br />
           <br />
           {`While visiting bear country,
-                    please learn and practice `}
+                    please be bear aware and and practice recommended tips for `}
           <Link href={links.hiking.bearSafety}>Bear Safety</Link>
           {` to protect yourself and the bears.
                     Keeping human food away from bears is of the utmost importance - bears that become accustomed to approaching humans or eating 
-                    human food are euthanized if reverse conditioning is ineffective. Please hike responsibly and help preserve the park's wildlife.`}
+                    human food are euthanized if reverse conditioning is ineffective. Please hike responsibly to help preserve the park's wildlife.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
@@ -277,10 +316,9 @@ export default function Post() {
               height={800}
             />
           </div>
-          <br />
-          <br />
-          <Contact />
         </div>
+        <WTPBackpacking pageURI={pageURI} />
+        <Contact />
       </div>
       <RelatedPosts metadata={metadata} tag={relatedTag} />
     </Layout>

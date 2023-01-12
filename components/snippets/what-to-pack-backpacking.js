@@ -39,12 +39,14 @@ export default function WTPBackpacking({ uri }) {
           <li>
             <TabLink
               href={links.hiking.etherLightSleepingpadW}
-              text={`sleeping mat (women's), `}
-            />
+              text={`sleeping mat`}
+            />{" "}
+            {` (women's), `}
             <TabLink
               href={links.hiking.etherLightSleepingpadM}
-              text={`sleeping mat (men's)`}
-            />
+              text={`sleeping mat`}
+            />{" "}
+            {` (men's)`}
           </li>
           <li>
             <TabLink href={links.hiking.aerosPremiumPillow} text="pillow" />

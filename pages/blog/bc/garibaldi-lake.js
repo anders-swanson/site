@@ -51,19 +51,19 @@ export default function Post() {
            backpacking opportunities.`}
           <br />
           <br />
-          {`During our weeklong visit to Garibaldi Provincial Park in September 2022, we were awestruck by the park's natural beauty and had one of the best trips of the year.
-          In this guide, we'll share our top tips for planning your own adventure to this incredible destination.`}
+          {`During our week-long visit to Garibaldi Provincial Park in September 2022, we were left in awe by the park's natural splendor and had one of the most
+           memorable trips of the year. In this guide, we'll share our top tips and insights for planning your own unforgettable adventure to this incredible destination.`}
         </div>
         <h1 className={utilStyles.justifyCenter} id="getting-there">
           Getting There
         </h1>
         <br />
         <div>
-          {`Located about an hour north of Vancouver, Garibaldi Provincial Park is easily accessible via the picturesque Sea-to-Sky highway, which
-          winds its way towards the popular ski destination of Whistler.
-          Garbaldi Lake is the park's most popular hike, reached by a paved road with a large parking lot (note: This lot will still fill by mid-morning
-            most days the park is open). The park's other main trailheads, Cheakamus Lake and Elfin Lakes, are miles down gravel/dirt roads.
-          I found these roads passable with a 2WD sedan, though there are many rocky or potholed sections that must be taken slowly.`}
+          {`Conveniently located just an hour north of Vancouver, Garibaldi Provincial Park is easily accessible via the scenic Sea-to-Sky highway, which
+           takes you on a picturesque journey towards the world-renowned ski destination of Whistler. One of Garibaldi Park's most popular hikes is Garibaldi Lake, 
+           which can be reached by a well-maintained road with a large parking lot (however, it's worth noting that the lot 
+            tends to fill up quickly during peak season). The park's other main trailheads (Cheakamus Lake and Elfin Lakes) can 
+            be accessed via gravel/dirt roads. I found these roads passable with a 2WD sedan, but they do have numerous rocky or potholed sections that should be taken slowly.`}
           <br />
           <br />
           {`Camping in Garibaldi Provincial Park is restricted to developed campgrounds and requires reservations made in advance.
@@ -91,16 +91,14 @@ export default function Post() {
           Garibaldi Lake
         </h1>
         <div>
-          {`The hike to Garibaldi Lake starts at the `}
+          {`The hike to Garibaldi Lake begins at the `}
           <Link href={garibaldiLakeTrailhead}>Rubble Creek Trailhead</Link>
-          {` north of Squamish, travelling uphill
-                    roughly 6 miles (12 round trip) through dense evergreen forest. The hike is typically done as an out-and-back, but you may
-                    optionally return via Taylor Meadows for a slightly longer, but more varied experience. The trail is clearly marked
-                    throughout the hike, with signposts and maps.`}
+          {`, located north of Squamish, and takes you uphill for about 6 miles (12 miles round trip) through a dense evergreen forest. The hike can be done as an out-and-back, or you can opt for a slightly longer and more varied experience by returning via Taylor Meadows. The trail is well-marked throughout, with signposts and maps to guide you.`}
+          {`The hike to Garibaldi Lake starts at the `}
           <br />
           <br />
-          {`While the wooded hike to the lake is not terribly exciting, the lake's beauty more than makes up for it. When we finally arrived
-                    at Garibaldi Lake, we were instantly amazed by the lake's bright turquoise waters, tucked in a basin of towering snow-capped mountains.
+          {`Although the hike through the forest may not be the most thrilling, the lake's breathtaking beauty more than makes up for it. When we finally arrived at Garibaldi Lake, we were struck
+           by the lake's bright turquoise waters, surrounded by towering snow-capped mountains.
                     If you're up for a swim,
                     I recommend heading out to one of the small islands, nicknamed "The Battleships" - if the view didn't take your breath away,
                     the lake's icy cold water definitely will. Be aware that while the lake water
@@ -114,8 +112,7 @@ export default function Post() {
                     must be filtered and/or purified from the lake.`}
           <br />
           <br />
-          {`If you are able to camp here, stay out to view the sunset as the last rays of light illuminate the mountain range behind the lake. A great spot to view the sunset
-          is from the wooden, floating helipad near the ranger station. The helipad is also a good spot to hang out and chat with other backpackers who are enjoying the view.`}
+          {`If you are able to camp here, stay out to view the sunset as the last rays of light illuminate the mountain range behind the lake. A great spot to take in the sunset is from the wooden, floating helipad near the ranger station. The helipad is also a great spot to hang out and chat with other backpackers who are also enjoying the view.`}
         </div>
         <div className={utilStyles.centered}>
           <Pinnable
@@ -131,24 +128,22 @@ export default function Post() {
           Panorama Ridge
         </h1>
         <div>
-          {`Panorama Ridge offers a 360 degree view of Garibaldi Lake, Black Tusk, and the Helm Lake area. It's arguably the 
-                    best viewpoint in the park accessible by trail, but it's a long, difficult hike to get there with plenty of climbing and rocky terrain.
-                    If you hike Panorama Ridge in a day, 
-                    be prepared to cover over 20 miles round-trip with about 5,000 feet of elevation gain. For most hikers, this is a 10-14 hour hike, so
-                    plan accordingly with plenty of food and water.`}
+          {`Panorama Ridge offers a beautiful 360-degree view of Garibaldi Lake, Black Tusk, and the Helm Lake area, and it's considered the 
+                    best viewpoint in the park accessible by trail. However, it's a long and challenging hike to get there, with plenty 
+                    of climbing and rocky terrain. If you decide to hike Panorama Ridge in a day, be prepared to cover over 20 miles 
+                    round-trip with about 5,000 feet of elevation gain. For most hikers, this is a 10-14-hour hike, so plan accordingly with plenty of food and water.`}
           <br />
           <br />
-          {`The Panorama Ridge hike starts at the`}
+          {`The Panorama Ridge hike starts at the `}
           <Link href={garibaldiLakeTrailhead}>Rubble Creek Trailhead</Link>
-          {`, with stunning views of meadows, mountain glaciers, and lakes. On the way there, you may choose to hike past Garibaldi Lake, or bypass the 
-          lake with the trail through Taylor Meadows.
-          The high country between Taylor Meadows/Garibaldi Lake is some of the best in park - thinning tress give way to wildflower meadows, streams,
-          and unimpeded views of several mountain ranges, including the farther off Tantalus Range towards Squamish.`}
+          {`, with stunning views of meadows, mountain glaciers, and lakes. On the way there, you have the option of hiking past Garibaldi Lake or bypassing the 
+          lake with the trail through Taylor Meadows. The high country between Taylor Meadows/Garibaldi Lake is some of the best in the park, with thinning trees
+           giving way to wildflower meadows, streams, and unobstructed views of several mountain ranges, including the distant Tantalus Range towards Squamish.`}
 
           {`The final push to Panorama point is along a 2-mile spur off the main trail, on the right hand side near the signage for Helm Creek. The trail rapidly
           turns steep and rocky here, but persevere and you'll be rewarded with an incredible view of Garibaldi Lake from above. There's an excellent spot for
           photos of the lake and mountains on the saddle past the high point. The pin below marks the turn-off for the Panorama Ridge trail - it's 
-          easily missed, so take your time when approaching and watch for where other hikers are headed. Most other people on the trail will be heading up to Panorama Ridge`}
+          easily missed, so take your time when approaching and watch for where other hikers are headed. Most other people on the trail will be heading up to Panorama Ridge.`}
         </div>
         <MapEmbed lat="49.964556" long="-123.028118" />
         <div>
@@ -186,7 +181,7 @@ export default function Post() {
         </div>
         <MapEmbed lat="49.959747" long="-123.048888" />
         <div>
-          {`If you're out in Garibaldi Park for multiple days, I suggest hiking hike Panorama Ridge, Black Tusk, and Garibaldi Lake on the same trip due to their proximity.
+          {`If you're planning a multi-day trip to Garibaldi Park, I recommend hiking hike Panorama Ridge, Black Tusk, and Garibaldi Lake on the same trip due to their proximity.
           While possible for extreme hikers in a single day, this itinerary is better suited
                     for multi-day backpackers taking advantage of campsites Taylor Meadows, Garibaldi Lake, or Helm Creek. Helm Creek Campground is around 3 miles further from
                     the Panorama Ridge turnoff on the main trail.`}
@@ -216,7 +211,7 @@ export default function Post() {
                    Once you hit the trail, it climbs steadily along an old, closed road for about 6 miles, passing through
                    meadows of red heather and wild blueberry before reaching Elfin Lakes. Partway up the trail is the Red Heather shelter
                    stocked with tables, chairs, and a fully hooked up a gas burner. The shelter is a great spot to stop and have lunch, especially
-                   if the weather is rainy or cold, but note that camping is not allowed in the Red Heather shelter.`}
+                   if the weather is rainy or cold, but please note that overnight camping is not allowed in the Red Heather shelter.`}
           <br />
           <br />
           {`Due to the abundance of blueberry meadows along the trail, bear sightings in this area are quite frequent. Be bear aware during your hike, as

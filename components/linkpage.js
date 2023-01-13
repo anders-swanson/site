@@ -71,15 +71,20 @@ export default function Links({ title, showSocial }) {
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
           <LinkButton
             title="Shop my LTK"
-            body="Like my outfits? They’re linked here!"
+            body="Like my Outfits? They’re Linked Here! Can't find what you want? Just DM Me!"
             src="https://www.shopltk.com/explore/laurengastineau"
             animation={utilStyles.bounceAnimation}
           />
           <LinkButton
             title="My Backpacking Gear"
-            body="Gear that's lasted me over 1000+ miles"
+            body="Gear That's Lasted Me Over 1000+ Miles"
             src="/blog/guides/backpacking-gear-guide"
             animation={utilStyles.shakeAnimation}
+          />
+        <LinkButton
+            title="Camera Clip"
+            body="Keep Your Camera Out & Within Quick Reach. Attaches to your backpack strap"
+            src="https://bit.ly/3W3IwTj"
           />
           <LinkButton
             title="REI Hipbelt Pocket"

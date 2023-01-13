@@ -165,10 +165,6 @@ export default function Post() {
         </div>
 
         <WTPBackpacking uri={pageURI} />
-
-        <h1 className={utilStyles.justifyCenter} id="bear-safety">
-          Bear Safety
-        </h1>
         <div>
           <BearSafetyNC />
           <br />

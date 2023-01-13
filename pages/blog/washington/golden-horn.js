@@ -4,14 +4,18 @@ import RelatedPosts from "../../../components/related_posts";
 import Pinnable from "../../../components/pinit";
 import Link from "next/link";
 import links from "../../../lib/links";
+import MapEmbed from "../../../components/maps";
+import WTPBackpacking from "../../../components/snippets/what-to-pack-backpacking";
+import BearSafetyNC from "../../../components/snippets/bear-safety-nc";
+import Contact from "../../../components/contact";
 
 //+metadata
 let metadata = {
-  title: "Golden Horn and Snowy Lakes",
+  title: "Backpacking Snowy Lakes in the North Cascades",
   date: "2022-08-22",
   image:
     "https://lh3.googleusercontent.com/pw/AL9nZEVVUlfj77qjZ5umYnAraQ4Ima49vWuAW6xeKc4mLfsXzM_L-QbCiGHWv9DaRgcKijcH3HAZNvQR4wO_SaQ4yWGGMUZFVdaTCNeo1fQdjg0mU8e4wHN0hJ9QvYdDS5r8YURVUInUwKsfUoy1rlZ00JvP=s800-no?authuser=0",
-  tags: ["lakes", "backpacking", "washington"],
+  tags: ["lakes", "backpacking", "washington", "north cascades"],
 };
 
 const cover =
@@ -26,16 +30,29 @@ export default function Post() {
     <Layout
       headerImage={cover}
       headerText={metadata.title}
-      description={`Explore a gorgeous stretch of the Pacific Crest Trail in Washington's North Cascades.`}
-      subText={`20 miles`}
+      description={`Join us on an adventure through the mountains of Washington's North Cascades as we backpack to Snowy Lakes.`}
+      subText={`20 miles round-trip`}
       ogImage={metadata.image}
     >
       <div className={utilStyles.flexGapContainer}>
+        <div className={utilStyles.centered}>
+          <Pinnable
+            page={pageURI}
+            alt={`Snowy Lakes, Washington.`}
+            src="https://lh3.googleusercontent.com/pw/AL9nZEXp6wbW7nlsHLwbPiG2ovlM0zRmSrqQEVyFCblbIl_Td9HWDug3e_TjxYaGNx5c8YBUjmPmwtlzaG1gAuPwmwuDajjOcXs9FLJKaQfyUdYzZ7Z9wqXGqDSL6RadEx9Kl1jE1r0y7Q30BJ_S2QDcnOX1=w800-h533-no?authuser=0"
+            width={800}
+            height={533}
+          />
+        </div>
         <div>
-          {`The hike to Golden Horn and Snowy Lakes explores some extremely accessible and wonderfully beautiful high country in the eastern North Cascades.`}
+          {`Explore stunning landscapes and the natural beauty of northern Washington with a backpacking trip to Snowy Lakes. These high alpine lakes
+          are an ideal backpacking destination, tucked deep in the heart of the North Cascades and surrounded by a multitude of snowy peaks.`}
           <br />
-          {`The majority of this 20 mile out-and-back is spent above the treeline, crossing two mountain passes with almost constant 360-views of the surrounding
-                    peaks. Set your tent at Upper or Lower Snowy Lake in one of many campsites, or make this a long day hike if you're a especially hardy hiker.`}
+          <br />
+          {`On this 20-mile out and back, you'll spend the majority of your hiking time well above the treeline, taking in constant views of the Cascade Range.
+          Wildlife is also abundant on this trail, which you may be lucky enough to see (we saw mountain goats and a solitary black bear). While Snowy Lakes is 
+          suitable as a day hike for experienced hikers, it's best experienced as a backpacking trip. This will allow you to spread out your miles and 
+          fully experience the gorgeous campsites at Snowy Lakes.`}
           <br />
           <br />
           {`The trail starts at the `}
@@ -43,65 +60,136 @@ export default function Post() {
             Pacific Crest North Trailhead
           </Link>
           {` across Highway 20 from Rainy Pass, just outside the North Cascades National Park. Campsites at Snowy Lakes are first come, first serve, and there are no
-                    required permits for backcountry camping along this stretch of the Pactific Crest Trail.`}
+                    required permits for backcountry camping along this stretch of the Pacific Crest Trail (PCT).`}
         </div>
 
         <div className={utilStyles.centered}>
           <Pinnable
             page={pageURI}
-            alt="Lower and Upper Snowy Lakes, Washington."
-            src="https://lh3.googleusercontent.com/pw/AL9nZEWMkjEj54FVoNqTQXLApl7MN-tmcsZv1CYWOCcGp_uMXHBGNnstKH9_Z4VkbSF3AAf_T9iK1BCl9SKdM5_ypsTb2SIotZbldRuds8Ybs9bqK_KoaofjyCoquPWVakgecXk-a4RkAJdNMxwUv5b0-pSj=w800-h533-no?authuser=0"
+            alt="Pacific Crest Trail headed north and Mt. Hardy"
+            src="https://lh3.googleusercontent.com/pw/AL9nZEVYwrCW3rD0stVlOECQCYQrMueM39mrGcOgfVYbKl1HVKFgJopEUZBduA4fV-stdaT9WSj_zyKsnb5FpDthOL8xaeJlIAMTqrM9v21HZPf29xlMIl1VPCtbT5a803XxXYCTXY9cLid4EO03d9P6qfSv=w800-h533-no?authuser=0"
             width={800}
             height={533}
           />
         </div>
-        <h1 className={utilStyles.justifyCenter} id="golden-horn-snowy-lakes">
-          Golden Horn and Snowy Lakes
+
+        <h1 className={utilStyles.justifyCenter} id="getting-there">
+          Getting There
         </h1>
-        <br />
         <div>
-          {`The trail's first five miles gradually climb to Cutthroat Pass, with views of mountains interspersed throughout the forest along the way. There's plenty of water
-                    at the start, with several small stream crossings including Porcupine Creek. Cutthroat Pass is an excellent place to stop and have lunch, looking across
-                    Cutthroat + Hinkhouse Peaks, and down to Cutthroat lake.`}
+          {`The trail to Snowy Lakes begins at the Pacific Crest North trailhead on the north side of Highway 20. There is a decent-sized dirt parking lot
+          at the trailhead capable of parking at least 30 vehicles. Be aware that while this trailhead is not usually too busy, it may fill up
+          with hikers going to the Maple Pass trail on the other side of the highway during peak season (near the end of September/beginning of October).`}
           <br />
-          {`This was also the trail section we saw the most wildlife. We passed a black bear 50 yards off trail below Cutthroat Pass, and saw a mountain goat above the pass.`}
+          <br />
+          {`The following pin shows the location of trailhead.`}
+        </div>
+        <MapEmbed lat="48.524680" long="-120.736027" />
+
+        <h1 className={utilStyles.justifyCenter} id="snowy-lakes-details">
+          Snowy Lakes Hiking Details
+        </h1>
+        <div>
+          {`The first five miles of PCT takes you through dense forest, as the trail gradually climbs and opens up to expansive views. 
+          Along the way, you'll encounter several small stream crossings that are easily traversed by mid-August. 
+          At the five-mile mark, you'll reach Cutthroat Pass, a high point that offers a stunning view of a mountainous 
+          lake basin. Take a moment to look for Cutthroat Lake, which lies far below the pass.`}
+          <br />
+          <br />
+          {`As you reach Cutthroat Pass, there are plenty of flat areas to stop and rest. I suggest taking a break here to have a snack or eat lunch.`}
+          <br />
+          <br />
+          {`We saw the most wildlife in the trail section before Cutthroat Pass. We even came across a black bear just 50 yards off the
+           trail on our way up, and ran into a mountain goat by the pass on our return trip.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="Lower Snowy Lake and the Tower, Washington."
-              src="https://lh3.googleusercontent.com/pw/AL9nZEWhwc-Z_m4FrpaVPfv9f1s7Vi6M7Djt-gq5e578L_skGQKZbr3w68KRsq5Oa2m9cudTCdMq8avmRU68YvfmlcR0RgQoEuhMhmwS4NU6MqzcW8FsOBJdgg8lNhsrAGJcTW-Y8NIlh4r-h6TMslN8TOJL=w533-h800-no?authuser=0"
-              width={533}
-              height={800}
+              alt="North Cascades below Cutthroat Pass"
+              src="https://lh3.googleusercontent.com/pw/AL9nZEWp5OrhYkkwCKFXcRcI7YhUvyeI_G-u-sf0a5eMJwKbnzgx0toOssq-xLs2ZIuaYX6tMXL2EMc7MSkGc5SSWnW8xAltnc7yXnlGVX_CIfkaIwU6ZwwlAsqJeVsw5sR9_4aBe7AAQZPC7KF0q9CPXgdE=w800-h533-no?authuser=0"
+              width={800}
+              height={533}
             />
           </div>
           <br />
-          {`The next couple miles follow a high, dry ridge line, which eventually drops down to Granite Pass. Continue a few miles more through the gorgeous high country
-                    to reach the Snowy Lakes cutoff trail. You'll see Mt. Hardy, Golden Horn, and The Tower on your approach.`}
-          <br />
-          <br />
-          {`The Snowy Lakes side-trail is clearly marked - you'll climb about 500 feet in 0.8 miles to Lower Snowy Lake. Upper Snowy Lake is 0.2 miles further. 
-                    There are plenty of established campsites at both lakes, and it might be hard to pick a favorite for camping. The upper lake has an excellent view of Mt.
-                    Hardy from ridge behind, which is great during sunset.`}
+          {`Past Cutthroat Pass, continue hiking for around 2 more miles along a high ridge line that eventually drops down to Granite Pass. Beyond Granite Pass,
+          the trail continues a few miles more through the gorgeous high country before
+                    to reaching the Snowy Lakes cutoff trail, which is clearly marked. On your approach, you will see the peaks of Mt. Hardy, Golden Horn, and The Tower.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
               alt={`Washington's North Cascades.`}
-              src="https://lh3.googleusercontent.com/pw/AL9nZEXr8EGJtIQsN-iItxKV29KLYRcoaTS4QY_KPyYZIpGHvkECgmuD8IT6mQvBWgP0iXsjkFYLqbiCtTj0xHHWEZ6_uV4ekg3S7dDfemFDVUBJkf7h8MCZclJIL-377Xm5v-o1jIgf3elGM5O_Z0XW5bd9=w800-h533-no?authuser=0"
+              src="https://lh3.googleusercontent.com/pw/AL9nZEUl0jbbb8dAn6Wf0V7XX6dY242pndZPc6wCnMOSOmPovHa9FONXHY_qhCIZvsqrri0XZ-9CBpevdhY6nRdf0R_zPSluyFCWiPLlhCMNYpxtHiP6_csn290HaLNA54ILNvYzY9ZOUo7xlzXG_4KRJmzD=w533-h800-no?authuser=0"
+              width={533}
+              height={800}
+            />
+          </div>
+          <br />
+          <br />
+          {`Take the Snowy Lakes trail off the PCT, and climb up 500 feet in 0.8 miles to Lower Snowy Lake, with Upper Snowy Lake being 0.2 miles further.
+           Both lakes offer established campsites, but finding a favorite spot may be difficult as both lakes are astoundingly beautiful. We stayed two nights here, 
+           camping at both the upper and lower lakes. I recommend camping just past the upper lake, where you can enjoy sunset views of Mt. Hardy.`}
+          <br />
+          <br />
+          {`The campsites at Snowy Lakes are basic backcountry sites with minimal facilities. Pit toilets have been constructed at both lakes 
+          (look for signs to find the trail to the toilets), and water can be filtered/purified from either lake. Be sure to pack extra bug spray 
+          and sunscreen for your trip as there are usually mosquitoes present at the lakes and there is no shade.`}
+          <br />
+          <br />
+          <div className={utilStyles.centered}>
+            <Pinnable
+              page={pageURI}
+              alt={`Lower Snowy Lakes, Washington.`}
+              src="https://lh3.googleusercontent.com/pw/AL9nZEWhBJh_o91YMSQWArsUcTk_QSVSCI6Yr9ymRmVmzj6YG9QGtIv4js82QVinO_c-WIBxVp_UNPlaTGx4F7O9rr0pI_wkqeoulKjfBy2rzahk0V8OwjNhde08Ap4niqYt0pqlWn8J_fn11LwdNtYXsTjx=w800-h533-no?authuser=0"
+              width={800}
+              height={533}
+            />
+          </div>
+          <br />
+          {`If you have extra time at the lakes, scrambling the ridges around Snowy Lakes leads to even better views overlooking the lake basin. The spur towards Mt. Hardy is 
+          rocky and full of scree, but the trek behind the lakes is not too bad. You'll find a very light trail to a saddle between the mountain peaks of Golden Horn 
+          and The Tower, with some minimal route finding. The view from just below the saddle was the best we saw on the entire trip.`}
+          <br />
+          <br />
+          {`If you decide to continue your hike on the PCT, know that the next 8-10 miles descend steeply into thick forest. We spent the better
+          part of a day exploring this section of the trail, and found no remarkable landmarks beyond Methow Pass, which is shortly past Snowy Lakes on the PCT.`}
+          <br />
+          <br />
+          <div className={utilStyles.centered}>
+            <Pinnable
+              page={pageURI}
+              alt={`Snowy Lakes, Washington.`}
+              src="https://lh3.googleusercontent.com/pw/AL9nZEXukXznEOx5pZvGF6ID3m1kDV86EoFKOIj_hRtAeexyZvm1PCs6AL7kI_nbTI4T84ZjTPQUOjBs8-Eflb7ZjWbmj_x3M1SQrFoEQFq-7wJPnSMSk4UOq7m9yyvTe96P0KT4PeQlGUqqTpXml2mS_I0k=w800-h533-no?authuser=0"
               width={800}
               height={533}
             />
           </div>
         </div>
         <div>
-          {`Snowy Lakes is best hiked from August through the end of September. The season is relatively short here due to the high elevation,
-                    and northern latitude. Without proper gear, it is dangerous to hike through snow here because of the steepness of the trail.`}
-          <br />
-          <br />
-          {`In addition to your regular backpacking gear, I recommend bringing the following on a trip to Snowy Lakes:`}
+          {`Snowy Lakes is best hiked from August through the end of September. The hiking season is kept short by the lake's high elevation and position on the cold,
+         northeastern slopes of the Cascade Range. Be aware that hiking this trail in the snow and ice is incredibly dangerous, as there are many steep 
+         drop-offs and ledges that would become quite hazardous to pass.`}
+        </div>
+        <div>
+          {`You're likely to encounter PCT thru-hikers along the trail, who will be completing the last leg of their journey to Canada. 
+        I suggest stopping to chat with these hikers, as they often have interesting stories to tell from
+         their months of hiking, and recommendations for backpacking trips you might never have heard of.`}
+        </div>
+        <div className={utilStyles.centered}>
+          <Pinnable
+            page={pageURI}
+            alt={`Washington's North Cascades.`}
+            src="https://lh3.googleusercontent.com/pw/AL9nZEXr8EGJtIQsN-iItxKV29KLYRcoaTS4QY_KPyYZIpGHvkECgmuD8IT6mQvBWgP0iXsjkFYLqbiCtTj0xHHWEZ6_uV4ekg3S7dDfemFDVUBJkf7h8MCZclJIL-377Xm5v-o1jIgf3elGM5O_Z0XW5bd9=w800-h533-no?authuser=0"
+            width={800}
+            height={533}
+          />
+        </div>
+        <WTPBackpacking />
+        <div>
+          {`In addition to your regular backpacking gear, I strongly recommend bringing the following extra items on your trip to Snowy Lakes:`}
           <ul>
             <li>
               {`A `}
@@ -119,18 +207,17 @@ export default function Post() {
             <li>{`Plenty of sunscreen and/or sun protective clothing. Exposure is high, and you'll mostly be in the sun.`}</li>
             <li>{`Swimwear for the lakes - they'll be freezing cold, but it's fun to take a plunge!`}</li>
           </ul>
-          {`Happy trails!`}
-          <br />
-          <br />
-          <div className={utilStyles.centered}>
-            <Pinnable
-              page={pageURI}
-              alt={`Golden Horn, Washington.`}
-              src="https://lh3.googleusercontent.com/pw/AL9nZEViOd9NJm8PMWG11gWT57sVAZOzWV0xHX8oAMsy_WlioZP3bVvKhdPtVfXO70SerOXnRNRcC79Ba2FDSQmgf2m2F2D80gSuFj2l998xaOJuAGT9agxgkwQSGou9V_MnCq3AABjFgARvBoopkPm-Rv-H=w533-h800-no?authuser=0"
-              width={533}
-              height={800}
-            />
-          </div>
+        </div>
+        <BearSafetyNC />
+        <Contact />
+        <div className={utilStyles.centered}>
+          <Pinnable
+            page={pageURI}
+            alt={`Golden Horn, Washington.`}
+            src="https://lh3.googleusercontent.com/pw/AL9nZEViOd9NJm8PMWG11gWT57sVAZOzWV0xHX8oAMsy_WlioZP3bVvKhdPtVfXO70SerOXnRNRcC79Ba2FDSQmgf2m2F2D80gSuFj2l998xaOJuAGT9agxgkwQSGou9V_MnCq3AABjFgARvBoopkPm-Rv-H=w533-h800-no?authuser=0"
+            width={533}
+            height={800}
+          />
         </div>
       </div>
       <RelatedPosts metadata={metadata} tag="backpacking" />

@@ -165,8 +165,8 @@ export default function Post() {
         </div>
 
         <WTPBackpacking uri={pageURI} />
+        <BearSafetyNC/>
         <div>
-          <BearSafetyNC />
           <br />
           <Contact />
         </div>

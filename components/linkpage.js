@@ -27,7 +27,7 @@ export default function Links({ title, showSocial }) {
         <p
           key="info"
           className={utilStyles.floatyText}
-          style={{ fontSize: "6.0vmax" }}
+          style={{ fontSize: "62px" }}
         >
           My Links
         </p>
@@ -37,7 +37,7 @@ export default function Links({ title, showSocial }) {
             fontWeight: "500",
             color: "white",
             margin: "auto",
-            fontSize: "2vmax",
+            fontSize: "18px",
             marginRight: "50px",
             marginLeft: "50px",
             background: "rgba(0, 0, 0, .5)",

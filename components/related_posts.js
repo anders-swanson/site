@@ -26,7 +26,7 @@ export default function RelatedPosts({ metadata, tag, text }) {
         search=""
         heading={text ? text : defaultText}
         postBoxClass={styles.scroll}
-        perPage={config.useScroll}
+        perPage={config.itemsPerFilterPage}
       />
     </>
   );

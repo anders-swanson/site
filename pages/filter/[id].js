@@ -9,7 +9,7 @@ export default function Post({ id, posts }) {
     <Layout
       headerImage={_const.noHeader}
       allPostsData={posts}
-      perPage={config.useScroll}
+      perPage={config.itemsPerFilterPage}
       postsHeading={`${id}: ${posts.length} posts`}
     />
   );

@@ -28,7 +28,7 @@ export default function SearchPage({ allPostsData }) {
         heading={`${filteredPosts.length} ${resultWord(
           filteredPosts.length
         )} for "${terms}"`}
-        perPage={config.useScroll}
+        perPage={config.itemsPerFilterPage}
       />
     </Layout>
   );

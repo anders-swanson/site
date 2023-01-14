@@ -81,7 +81,7 @@ export default function Links({ title, showSocial }) {
             src="/blog/guides/backpacking-gear-guide"
             animation={utilStyles.shakeAnimation}
           />
-        <LinkButton
+          <LinkButton
             title="Camera Clip"
             body="Keep Your Camera Out & Within Quick Reach. Attaches to your backpack strap"
             src="https://bit.ly/3W3IwTj"

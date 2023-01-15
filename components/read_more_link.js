@@ -1,4 +1,7 @@
 import Link from "next/link";
+import utilStyles from "../styles/utils.module.css";
+
+const readMoreSlug = "read-more";
 
 export default function ReadMoreLink({
   children,
@@ -10,8 +13,19 @@ export default function ReadMoreLink({
   readMoreText = readMoreText ? readMoreText : "Read more about";
   return (
     <>
-      {enabled && <Link href={uri}>{`${readMoreText} ${text}`}</Link>}
-      {!enabled && { children }}
+      {enabled && (
+        <div className={utilStyles.justifyCenter}>
+          <Link
+            href={`${uri}#${readMoreSlug}`}
+          >{`${readMoreText} ${text}`}</Link>
+        </div>
+      )}
+      {!enabled && (
+        <>
+          <div id={readMoreSlug} />
+          {children}
+        </>
+      )}
     </>
   );
 }

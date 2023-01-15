@@ -6,7 +6,7 @@ import config from "../lib/config";
 const posts = Posts();
 const defaultText = "Related Posts";
 
-export default function RelatedPosts({ metadata, tag, text }) {
+export default function RelatedPosts({ metadata, tag, text, readMore }) {
   const self = metadata.title;
   const related = posts.filter((post) => {
     if (self === post.title) {
@@ -21,13 +21,15 @@ export default function RelatedPosts({ metadata, tag, text }) {
   });
   return (
     <>
-      <PostBox
-        posts={related}
-        search=""
-        heading={text ? text : defaultText}
-        postBoxClass={styles.scroll}
-        perPage={config.itemsPerFilterPage}
-      />
+      {!readMore && (
+        <PostBox
+          posts={related}
+          search=""
+          heading={text ? text : defaultText}
+          postBoxClass={styles.scroll}
+          perPage={config.itemsPerFilterPage}
+        />
+      )}
     </>
   );
 }

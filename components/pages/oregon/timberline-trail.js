@@ -39,7 +39,7 @@ export default function TimberlineTrail({ readMore }) {
     <Layout
       headerImage={cover}
       headerText={metadata.title}
-      description={`Traverse a breathtaking 40 mile loop through Mt. Hoods most scenic terrain on .`}
+      description={`Backpack a stunning 40 mile loop through the most scenic terrain on Mt. Hood.`}
       subText={`40+ miles, 10k+ gain`}
       ogImage={metadata.image}
     >

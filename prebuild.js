@@ -5,6 +5,7 @@ const metadata = require("./scripts/metadata");
 const robots = require("./scripts/robots");
 
 const blogDirectory = path.join(process.cwd(), "pages/blog");
+const embeddedPagesDirectory = path.join(process.cwd(), "components/pages");
 const pagesDirectory = path.join(process.cwd(), "pages");
 
 const metadataFile = "lib/metadata.js";
@@ -22,7 +23,7 @@ function writeFile(f, d) {
 }
 
 // Write the Posts function out to the metadata.js file
-writeFile(metadataFile, metadata.txt(blogDirectory));
+writeFile(metadataFile, metadata.txt([blogDirectory, embeddedPagesDirectory]));
 // Create the sitemap.xml
 writeFile(sitemapFile, sitemap.txt(pagesDirectory, domain));
 // Create the robots.txt

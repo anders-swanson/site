@@ -67,30 +67,41 @@ export default function Layout({
 
   return (
     <>
-      <Script
-        id="gtag1"
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-XKQY1855YQ`}
-      />
+      {config.google.gtag && (
+        <>
+          {" "}
+          <Script
+            id="gtag1"
+            strategy="lazyOnload"
+            src={`https://www.googletagmanager.com/gtag/js?id=${config.google.gtag}`}
+          />
+          <Script id="gtag2" strategy="lazyOnload">
+            {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${config.google.gtag}', {
+          page_path: window.location.pathname,
+      });
+  `}
+          </Script>
+        </>
+      )}
 
-      <Script id="gtag2" strategy="lazyOnload">
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XKQY1855YQ', {
-            page_path: window.location.pathname,
-        });
-    `}
-      </Script>
-      <Script id="pinit" strategy="lazyOnLoad">
-        {`!function(a,b,c){var d,e,f;d="PIN_"+~~((new Date).getTime()/864e5),a[d]?a[d]+=1:(a[d]=1,a.setTimeout(function(){e=b.getElementsByTagName("SCRIPT")[0],f=b.createElement("SCRIPT"),f.type="text/javascript",f.async=!0,f.src=c.mainUrl+"?"+Math.random(),e.parentNode.insertBefore(f,e)},10))}(window,document,{mainUrl:"https://assets.pinterest.com/js/pinit_main.js"});`}
-      </Script>
+      {config.pinterest.enabled && (
+        <Script id="pinit" strategy="lazyOnLoad">
+          {`!function(a,b,c){var d,e,f;d="PIN_"+~~((new Date).getTime()/864e5),a[d]?a[d]+=1:(a[d]=1,a.setTimeout(function(){e=b.getElementsByTagName("SCRIPT")[0],f=b.createElement("SCRIPT"),f.type="text/javascript",f.async=!0,f.src=c.mainUrl+"?"+Math.random(),e.parentNode.insertBefore(f,e)},10))}(window,document,{mainUrl:"https://assets.pinterest.com/js/pinit_main.js"});`}
+        </Script>
+      )}
+
       <Head>
-        <meta
-          name="google-site-verification"
-          content={config.google.siteVerification}
-        />
+        {config.google.siteVerification && (
+          <meta
+            name="google-site-verification"
+            content={config.google.siteVerification}
+          />
+        )}
+
         <title>{headerText ? headerText : title}</title>
         <link rel="icon" href="logo.jpg" />
         <meta name="og:title" content={headerText ? headerText : title} />

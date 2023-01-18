@@ -3,8 +3,8 @@ const path = require("path");
 const metadataFlag = "//+metadata";
 const conf = require("../lib/config");
 
-// Get a sorted list of metadata from all pages in the blogDirectory
-module.exports.getSorted = function (blogDirectory) {
+// Get a sorted list of metadata from all pages in the supplied directories
+module.exports.getSorted = function (dirs) {
   metadata = [];
   const recurseMetadata = (currentDir, relDir) => {
     const files = fs.readdirSync(currentDir);
@@ -20,7 +20,9 @@ module.exports.getSorted = function (blogDirectory) {
     });
   };
 
-  recurseMetadata(blogDirectory, "");
+  for (let i = 0; i < dirs.length; i++) {
+    recurseMetadata(dirs[i], "");
+  }
   return metadata
     .filter((e) => {
       return e != null;
@@ -41,7 +43,7 @@ function isPostFile(fileName) {
 function addMetadata(metadata, relDir, fileName, filePath) {
   const id = relDir + "/" + fileName.replace(/\.js$/, "");
   let fileMetadata = getMetdata(filePath, id);
-  if (!fileMetadata.hasOwnProperty("disabled")) {
+  if (fileMetadata && !fileMetadata.hasOwnProperty("disabled")) {
     metadata.push(fileMetadata);
   }
 }
@@ -51,9 +53,8 @@ function getMetdata(file, id) {
   const data = fs.readFileSync(file).toString("utf-8");
   const idx = data.indexOf(metadataFlag);
   if (idx === -1) {
-    return {
-      error: "metadata not found",
-    };
+    console.log(`INFO: No Metadata Tag For "${file}".`);
+    return null;
   }
 
   let objectFound = false;
@@ -147,8 +148,8 @@ module.exports.getTags = function (metadata) {
     });
 };
 
-module.exports.txt = function (blogDirectory) {
-  let sortedMetadata = this.getSorted(blogDirectory);
+module.exports.txt = function (dirs) {
+  let sortedMetadata = this.getSorted(dirs);
   let tags = this.getTags(sortedMetadata);
   let pages = this.getPageParams(sortedMetadata.length);
 

@@ -1,4 +1,5 @@
 import FeaturedPost from "../components/featuredpost";
+import AffiliateDisclosure from '../components/affiliate_disclosure'
 import Layout from "../components/layout";
 import LinkButton from "../components/linkbutton";
 import RelatedPosts from "../components/related_posts";
@@ -31,33 +32,6 @@ export default function Links({ title, showSocial }) {
         >
           My Links
         </p>
-        <div
-          style={{
-            fontFamily: 'font-family: "Poppins",sans-serif',
-            fontWeight: "500",
-            color: "white",
-            margin: "auto",
-            fontSize: "2vmax",
-            marginRight: "50px",
-            marginLeft: "50px",
-            background: "rgba(0, 0, 0, .5)",
-            maxWidth: "1200px",
-            display: "flex",
-            padding: "5%",
-            lineHeight: "1.2",
-          }}
-        >
-          <div>
-            <br />
-            <p>
-              {`This page contains affiliate links, which means that by using these links, I will earn a small commission
-                        at no additional cost to you. This helps support my adventures and allows me to make more resources like this for you. Thank you!`}
-            </p>
-            <p>{`- Lauren 💙`}</p>
-          </div>
-        </div>
-        <br />
-        <br />
       </HeaderText>
       <div
         className={`${utilStyles.coverContainer}`}
@@ -85,6 +59,11 @@ export default function Links({ title, showSocial }) {
             title="REI Hipbelt Pocket"
             body="My Favorite Backpack Attatchment"
             src="https://bit.ly/3KkMTnp"
+          />
+          <LinkButton
+            title="Camera Clip"
+            body="Keep Your Camera Out & Within Quick Reach. Attaches to your backpack strap"
+            src="https://bit.ly/3W3IwTj"
           />
           <LinkButton
             title="My Amazon Favorites"
@@ -127,6 +106,7 @@ export default function Links({ title, showSocial }) {
           tag="guides"
         />
       </div>
+      <AffiliateDisclosure> </AffiliateDisclosure>
     </Layout>
   );
 }

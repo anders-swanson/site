@@ -1,5 +1,5 @@
 import FeaturedPost from "../components/featuredpost";
-import AffiliateDisclosure from '../components/affiliate_disclosure'
+import AffiliateDisclosure from "../components/affiliate_disclosure";
 import Layout from "../components/layout";
 import LinkButton from "../components/linkbutton";
 import RelatedPosts from "../components/related_posts";
@@ -7,7 +7,6 @@ import { Posts } from "../lib/metadata";
 import utilStyles from "../styles/utils.module.css";
 import { SocialIcon } from "react-social-icons";
 import config from "../lib/config";
-import HeaderText from "./header_text";
 import { backgroundImageStyle } from "../lib/common";
 import _const from "../lib/const";
 
@@ -24,15 +23,6 @@ export default function Links({ title, showSocial }) {
   const featuredPost = Posts()[0];
   return (
     <Layout headerImage={_const.noHeader} headerText={title}>
-      <HeaderText styles={marginStyle} backgroundImage={backgroundImage}>
-        <p
-          key="info"
-          className={utilStyles.floatyText}
-          style={{ fontSize: "62px" }}
-        >
-          My Links
-        </p>
-      </HeaderText>
       <div
         className={`${utilStyles.coverContainer}`}
         style={{
@@ -40,8 +30,13 @@ export default function Links({ title, showSocial }) {
           ...backgroundImageStyle(backgroundImage),
         }}
       >
-        <br />
-        <br />
+        <p
+          key="info"
+          className={utilStyles.floatyText}
+          style={{ fontSize: "62px" }}
+        >
+          My Links
+        </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
           <LinkButton
             title="Shop my LTK"
@@ -111,7 +106,7 @@ export default function Links({ title, showSocial }) {
           tag="guides"
         />
       </div>
-      <AffiliateDisclosure/>
+      <AffiliateDisclosure />
     </Layout>
   );
 }

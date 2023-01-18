@@ -11,9 +11,10 @@ export default function Post() {
       <div className={utilStyles.flexGapContainer}>
         <h1>About Us</h1>
         <div>
-          {`Thanks for visiting our travel blog, Trails And Trekking. Our names are Anders and Lauren - we're both originally from Oregon,
+          {`Thanks for visiting our travel blog, Trails And Trekking! We're Lauren and Anders - an adventure loving 
+                    couple currently stationed in the Pacific Northwest. We're avid hikers, backpackers, and travelers. We're both originally from Oregon,
                     but we've spent the last two years traveling the Pacific Northwest and beyond. We created this blog to share our passion
-                    for exploring the outdoors, and to inspire others to get out adventuring. 
+                    for exploring the outdoors, and to inspire you to get outside. 
                     I'll give a you quick breakdown of how we got to where we are, and what's in store for us next.`}
         </div>
         <div>

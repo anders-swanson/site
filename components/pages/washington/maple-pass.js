@@ -1,15 +1,16 @@
 import utilStyles from "../../../styles/utils.module.css";
-import Layout from "../../layout";
 import Link from "next/link";
 import RelatedPosts from "../../related_posts";
 import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import Slider from "../../slider";
 import MapEmbed from "../../maps";
-import ReadMoreLink from "../../read_more_link";
+import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
+
+const pageURI = "/blog/washington/maple-pass";
 
 //+metadata
-let metadata = {
+export const metadata = {
   title: "Maple Pass Loop",
   date: "2022-10-18",
   image:
@@ -17,19 +18,10 @@ let metadata = {
   tags: ["washington", "lakes", "camping", "north cascades"],
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AL9nZEVTL7BLvGmaPvK_Uv1FHmsEAguLVCbjGiIhq2CW7dEO5AjPiIfmc-MOP4Kka6ZuxiPaO4TK3l1knnk3Iv5ktLekzyjy7NAtyz5cc3-9pWD-CcvWunn37uc89WlucENIaBsdUmr6isgRoRUbwT6SBA1H=w800-h446-no?authuser=0";
-const pageURI = "/blog/washington/maple-pass";
-
 export default function MaplePass({ readMore }) {
   return (
-    <Layout
-      headerImage={cover}
-      headerText={metadata.title}
-      description={`Hike an 8-mile loop to discover astounding fall colors in Washington's North Cascades.`}
-      subText={`8 miles, 2k feet gain`}
-      ogImage={metadata.image}
-    >
+    <>
+      <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
         <div>
           {`Get ready to be mesmerized by the natural beauty of larch season at the stunning Maple Pass Loop in Washington's North Cascades. 
@@ -187,6 +179,6 @@ export default function MaplePass({ readMore }) {
         </ReadMoreLink>
       </div>
       <RelatedPosts metadata={metadata} tag="guides" readMore={readMore} />
-    </Layout>
+    </>
   );
 }

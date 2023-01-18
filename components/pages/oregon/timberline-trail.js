@@ -1,24 +1,12 @@
 import utilStyles from "../../../styles/utils.module.css";
-import Layout from "../../layout";
 import RelatedPosts from "../../related_posts";
 import Pinnable from "../../pinit";
 import Link from "next/link";
 import links from "../../../lib/links";
-import ReadMoreLink from "../../read_more_link";
+import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 import MapEmbed from "../../maps";
 import Contact from "../../contact";
 
-//+metadata
-let metadata = {
-  title: "Mt. Hood's Timberline Trail",
-  date: "2022-09-09",
-  image:
-    "https://lh3.googleusercontent.com/pw/AL9nZEWXCF2hPa8fZMrTCKDZlPkbzrZuDjP0kvU_hpCslG0qi-5bwgac8O3ejUDV_ZTvhj-3pXYIxL9xVW6i5XaEVhWNnvGiKnGIk0AU5YrnJNJ9sZm_c0SzGfwefYkjV3WvIznubiCgnlToHxUB5v8NwXiY=s800-no?authuser=0",
-  tags: ["lakes", "backpacking", "oregon", "guides"],
-};
-
-const cover =
-  "https://lh3.googleusercontent.com/pw/AL9nZEUFQkxUG704mLPsypTmBDWj_H_Xj5mCNtBoKYOneX_zs0fv0Rtu7ilknKlmZWHB-NtUaFxMLSTjfUvNTYZghtdOTKp1poAppkWOaYegCYycYFlNl4lv-EaJK32dUfBDX5qQMCxyN45NwgVacxjnp3_Z=w800-h533-no?authuser=0";
 const pageURI = "/blog/oregon/timberline-trail";
 
 const timberlineLodgeTrailhead =
@@ -34,15 +22,19 @@ const cloudCapSaddle =
 const paradiseParkCamp =
   "https://www.google.com/maps/place/Paradise+Park/@45.3506786,-121.746723,15.42z/data=!4m5!3m4!1s0x54be1e8139de8f91:0x48d2c21e3a7c8b37!8m2!3d45.352886!4d-121.7471435?hl=en";
 
+//+metadata
+export const metadata = {
+  title: "Mt. Hood's Timberline Trail",
+  date: "2022-09-09",
+  image:
+    "https://lh3.googleusercontent.com/pw/AL9nZEWXCF2hPa8fZMrTCKDZlPkbzrZuDjP0kvU_hpCslG0qi-5bwgac8O3ejUDV_ZTvhj-3pXYIxL9xVW6i5XaEVhWNnvGiKnGIk0AU5YrnJNJ9sZm_c0SzGfwefYkjV3WvIznubiCgnlToHxUB5v8NwXiY=s800-no?authuser=0",
+  tags: ["lakes", "backpacking", "oregon", "guides"],
+};
+
 export default function TimberlineTrail({ readMore }) {
   return (
-    <Layout
-      headerImage={cover}
-      headerText={metadata.title}
-      description={`Backpack a stunning 40 mile loop through the most scenic terrain on Mt. Hood.`}
-      subText={`40+ miles, 10k+ gain`}
-      ogImage={metadata.image}
-    >
+    <>
+      <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.centered}>
           <Pinnable
@@ -282,6 +274,6 @@ export default function TimberlineTrail({ readMore }) {
         </ReadMoreLink>
       </div>
       <RelatedPosts metadata={metadata} tag="backpacking" readMore={readMore} />
-    </Layout>
+    </>
   );
 }

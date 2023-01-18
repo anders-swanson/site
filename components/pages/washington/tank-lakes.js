@@ -1,15 +1,16 @@
 import utilStyles from "../../../styles/utils.module.css";
-import Layout from "../../layout";
 import RelatedPosts from "../../related_posts";
 import Pinnable from "../../pinit";
 import Link from "next/link";
 import MapEmbed from "../../maps";
 import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
-import ReadMoreLink from "../../read_more_link";
 import Contact from "../../contact";
+import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
+
+const pageURI = "/blog/washington/tank-lakes";
 
 //+metadata
-let metadata = {
+export const metadata = {
   title: "Tank Lakes Backpacking",
   date: "2022-08-09",
   image:
@@ -17,22 +18,13 @@ let metadata = {
   tags: ["lakes", "backpacking", "washington"],
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AL9nZEWOw_322W10tjYx5Wi2etJKvCrPKqIDKpm-ulWi1TBWtQQg5jDXEIZDoVHyngDz318-vH-U5fkIP0fbN56pkLSCH-F7lw3P_kI8C3Ur6It_r9OfZAq4Z1kDwAlD00o0YfGVPXUc0_Z_nbxOEZfhj4IF=w800-h533-no?authuser=0";
-const pageURI = "/blog/washington/tank-lakes";
-
 const eastFossRiverTH =
   "https://www.google.com/maps/place/Necklace+Valley+Trailhead/@47.6606472,-121.2944193,15.08z/data=!4m5!3m4!1s0x549a8c9d5a0ce6cf:0xecb31ebbfc1ce76c!8m2!3d47.6651581!4d-121.2883488";
 
 export default function TankLakes({ readMore }) {
   return (
-    <Layout
-      headerImage={cover}
-      headerText={metadata.title}
-      description={`Camp at Tank Lakes high in Washington's picturesque Alpine Lakes Wilderness.`}
-      subText={`24 miles round-trip, 5,300+ feet gain`}
-      ogImage={metadata.image}
-    >
+    <>
+      <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
         <Pinnable
           page={pageURI}
@@ -215,7 +207,7 @@ export default function TankLakes({ readMore }) {
           <Contact />
         </ReadMoreLink>
       </div>
-      <RelatedPosts metadata={metadata} tag="backpacking" />
-    </Layout>
+      <RelatedPosts metadata={metadata} tag="backpacking" readMore={readMore} />
+    </>
   );
 }

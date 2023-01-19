@@ -16,6 +16,9 @@ export const metadata = {
   image:
     "https://lh3.googleusercontent.com/pw/AL9nZEWxLuzadNQTYTvoNNkiecQsizYqx3wpydluafg5-Rc8Lc6sAvZEzaynslU5OGeIeU6HE3W_hFXNC5lq-LMoQtwRtubErCoMaDIeahrhtdni5Ot4Avu6moA7miUgV68PBT9tLEH6Kv4vg2UfaKSRdRJk=s800-no?authuser=0",
   tags: ["lakes", "backpacking", "washington"],
+  preview:
+    "Camp at Tank Lakes high in Washington's picturesque Alpine Lakes Wilderness.",
+  subText: "24 miles round-trip, 5,300+ feet gain",
 };
 
 const eastFossRiverTH =
@@ -60,11 +63,7 @@ export default function TankLakes({ readMore }) {
             height={800}
           />
         </div>
-        <ReadMoreLink
-          uri={pageURI}
-          text="backpacking Tank Lakes in Washington's Alpine Lakes Wilderness"
-          enabled={readMore}
-        >
+        <ReadMoreLink uri={pageURI} text="Tank Lakes" enabled={readMore}>
           <h1 className={utilStyles.justifyCenter} id="getting-there">
             Getting There
           </h1>

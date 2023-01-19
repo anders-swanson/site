@@ -7,7 +7,7 @@ export default function Post() {
   return (
     <Layout
       headerText={metadata.title}
-      description={`Discover, backpack, and enjoy beautiful Garibaldi Provincial Park in British Columbia.`}
+      description={metadata.preview}
       ogImage={metadata.image}
     >
       <Garibaldi />

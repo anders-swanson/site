@@ -7,8 +7,8 @@ export default function Post() {
   return (
     <Layout
       headerText={metadata.title}
-      description={`Hike an 8-mile loop to discover astounding fall colors in Washington's North Cascades.`}
-      subText={`8 miles, 2k feet gain`}
+      description={metadata.preview}
+      subText={metadata.subText}
       ogImage={metadata.image}
     >
       <MaplePass />

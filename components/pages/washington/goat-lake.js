@@ -17,6 +17,8 @@ export const metadata = {
   image:
     "https://lh3.googleusercontent.com/pw/AL9nZEU1CmjLIhK8lhIfEtKnmH5LzD30ZavQLlXdUIvSyRbBo8Qg6a5GoW1FfMDQdtqH_51O9BB4fG3cthT4Wv794w3dwwKu14tq3Y2stMINK545OomZ4lOhcNdVthvQGGCUPBxqkbP0NE7kpBRTdEhNcDVC=s800-no?authuser=0",
   tags: ["washington", "lakes", "backpacking", "north cascades"],
+  preview:
+    "Experience the wild beauty of Goat Lake, nestled in the shadow of Mt. Baker in Washington's North Cascades.",
 };
 
 export default function GoatLake({ readMore }) {
@@ -55,11 +57,7 @@ export default function GoatLake({ readMore }) {
                     After hiking on the Chain of Lakes trail for 1.1 miles, turn left onto the unmarked Ptarmigan Ridge trail. 
                     If you continue right, you'll stay on the Chain of Lakes trail, which will eventually lead you back to the lower parking lot near the Mt. Baker Ski Area.`}
         </div>
-        <ReadMoreLink
-          enabled={readMore}
-          text="our backpacking trip to Goat Lake on Mt. Baker"
-          uri={pageURI}
-        >
+        <ReadMoreLink enabled={readMore} text="Goat Lake" uri={pageURI}>
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}

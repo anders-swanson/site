@@ -6,7 +6,7 @@ export default function Post() {
   return (
     <Layout
       headerText={metadata.title}
-      description={`Experience the wild beauty of Goat Lake, nestled in the shadow of Mt. Baker in Washington's North Cascades.`}
+      description={metadata.preview}
       ogImage={metadata.image}
     >
       <GoatLake />

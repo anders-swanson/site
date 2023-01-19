@@ -5,7 +5,11 @@ import { PostHeader } from "./layout";
 const readMoreSlug = "read-more";
 
 export function ReadMoreHeader({ metadata, enabled }) {
-  return <>{enabled && <PostHeader txt={metadata.title} />}</>;
+  return (
+    <>
+      {enabled && <PostHeader txt={metadata.title} stxt={metadata.subText} />}
+    </>
+  );
 }
 
 export default function ReadMoreLink({

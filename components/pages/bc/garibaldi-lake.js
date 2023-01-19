@@ -25,6 +25,8 @@ export const metadata = {
   image:
     "https://lh3.googleusercontent.com/pw/AL9nZEXdf4dR5_zUFiRTPPsNDjkqVJOi6-6SHxXZikfgvFTSUOr0gLfI6ojOVx6jbh62KSyDGAdifitbY1T00Iiy6XvsCArGuH_j-RisUlMwqlUwINk_LvZ5pNphMwBPcdBVX50R0nuXXHmannaPVyIBoyKg=s800-no?authuser=0",
   tags: ["british columbia", "lakes", "backpacking"],
+  preview:
+    "Discover, backpack, and enjoy beautiful Garibaldi Provincial Park in British Columbia.",
 };
 
 export default function Garibaldi({ readMore }) {
@@ -85,7 +87,7 @@ export default function Garibaldi({ readMore }) {
 
         <ReadMoreLink
           enabled={readMore}
-          text="backpacking Garibaldi Provincial Park in British Columbia"
+          text="Garibaldi Provincial Park"
           uri={pageURI}
         >
           <h1 className={utilStyles.justifyCenter} id="garibaldi-lake">

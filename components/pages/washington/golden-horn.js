@@ -21,6 +21,9 @@ export const metadata = {
   image:
     "https://lh3.googleusercontent.com/pw/AL9nZEVVUlfj77qjZ5umYnAraQ4Ima49vWuAW6xeKc4mLfsXzM_L-QbCiGHWv9DaRgcKijcH3HAZNvQR4wO_SaQ4yWGGMUZFVdaTCNeo1fQdjg0mU8e4wHN0hJ9QvYdDS5r8YURVUInUwKsfUoy1rlZ00JvP=s800-no?authuser=0",
   tags: ["lakes", "backpacking", "washington", "north cascades"],
+  preview:
+    "Join us on an adventure through the mountains of Washington's North Cascades as we backpack to Snowy Lakes.",
+  subText: "20 miles round-trip",
 };
 
 export default function SnowyLakes({ readMore }) {
@@ -55,11 +58,7 @@ export default function SnowyLakes({ readMore }) {
           {` across Highway 20 from Rainy Pass, just outside the North Cascades National Park. Campsites at Snowy Lakes are first come, first serve, and there are no
                     required permits for backcountry camping along this stretch of the Pacific Crest Trail (PCT).`}
         </div>
-        <ReadMoreLink
-          enabled={readMore}
-          uri={pageURI}
-          text="backpacking to Snowy Lakes in Washington's North Cascades"
-        >
+        <ReadMoreLink enabled={readMore} uri={pageURI} text="Snowy Lakes">
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}

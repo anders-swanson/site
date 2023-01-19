@@ -1,6 +1,5 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
-import Link from "next/link";
 import RelatedPosts from "../../../components/related_posts";
 import TankLakes from "../../../components/pages/washington/tank-lakes";
 import TimberlineTrail from "../../../components/pages/oregon/timberline-trail";
@@ -23,18 +22,15 @@ export default function Post() {
   return (
     <Layout
       headerText={metadata.title}
-      description={`Explore trip ideas for 1-night beginner backpackers near Portlnad, Oregon.`}
+      description={`Plan your next outdoor adventure with our top 5 must-see backpacking trips of 2022.`}
       ogImage={metadata.image}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
-          {`We spent most of 2022 exploring northern Washington State, hiking a variety of trails in the North Cascades and in within British Columbia.
-          We made a brief foray down to Oregon to hike the `}
-          <Link href="/blog/oregon/timberline-trail">Timberline Trail</Link>
-          {`, which I've included in this post.`}
-          <br />
-          <br />
-          {`Enjoy reading our top 5 backpacking trips of 2022 - I hope our past trips inspire you to get out and backpack this year!.`}
+          {`From the rugged peaks of the North Cascades to the serene lakes of British Columbia, 
+          our top 5 must-see backpacking trips of 2022 offer a diverse range of experiences for backpackers of all skill levels. 
+          Traversing some of the most beautiful wilderness we've ever encountered, these trips are guaranteed  to provide an unforgettable experience. So pack your essentials and gear up,
+          and join us as we discover the great outdoors. We hope our past trips inspire you to get out and explore this year!`}
         </div>
       </div>
       <TankLakes readMore={true} />

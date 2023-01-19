@@ -7,8 +7,8 @@ export default function Post() {
   return (
     <Layout
       headerText={metadata.title}
-      description={`Backpack a stunning 40 mile loop through the most scenic terrain on Mt. Hood.`}
-      subText={`40+ miles, 10k+ gain`}
+      description={metadata.preview}
+      subText={metadata.subText}
       ogImage={metadata.image}
     >
       <TimberlineTrail />

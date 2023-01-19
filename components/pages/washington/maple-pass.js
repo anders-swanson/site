@@ -16,6 +16,9 @@ export const metadata = {
   image:
     "https://lh3.googleusercontent.com/pw/AL9nZEWibEdZnXniowowo_BwOCztCjde2LaympWEJu6mMs8wtTwss0u6krwrJ-SY9964iTAh_fGuH1T-ca2sZlWSq-AeSqs06TMH1bYlke-tDxZFQ301vhHop1lTDrastQ107wU7d7IH-iNe3htClFOASNAb=s800-no?authuser=0",
   tags: ["washington", "lakes", "camping", "north cascades"],
+  preview:
+    "Hike an 8-mile loop to discover astounding fall colors in Washington's North Cascades.",
+  subText: "8 miles, 2k feet gain",
 };
 
 export default function MaplePass({ readMore }) {

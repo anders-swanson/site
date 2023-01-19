@@ -29,6 +29,9 @@ export const metadata = {
   image:
     "https://lh3.googleusercontent.com/pw/AL9nZEWXCF2hPa8fZMrTCKDZlPkbzrZuDjP0kvU_hpCslG0qi-5bwgac8O3ejUDV_ZTvhj-3pXYIxL9xVW6i5XaEVhWNnvGiKnGIk0AU5YrnJNJ9sZm_c0SzGfwefYkjV3WvIznubiCgnlToHxUB5v8NwXiY=s800-no?authuser=0",
   tags: ["lakes", "backpacking", "oregon", "guides"],
+  preview:
+    "Backpack a stunning 40 mile loop through the most scenic terrain on Mt. Hood.",
+  subText: "40+ miles, 10k+ gain",
 };
 
 export default function TimberlineTrail({ readMore }) {
@@ -79,7 +82,7 @@ export default function TimberlineTrail({ readMore }) {
         <ReadMoreLink
           uri={pageURI}
           enabled={readMore}
-          text="backpacking Mt. Hood's Timberline Trail"
+          text="Mt. Hood's Timberline Trail"
         >
           <h1 className={utilStyles.justifyCenter} id="routes">
             Hiking the Timberline Trail

@@ -33,7 +33,6 @@ const falls2 =
 export default function Post() {
   return (
     <Layout
-      headerImage={metadata.image}
       headerText={metadata.title}
       subText={subText}
       description={`Chance upon rushing waterfalls as they swell with seasonal rain on this Washington hiking trail.`}

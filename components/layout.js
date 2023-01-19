@@ -1,13 +1,11 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Burger from "./burger";
 import PostBox from "./postbox";
 import Search from "./search";
 import { useState, useEffect } from "react";
 import { CapitalizeWords } from "../lib/common";
-import _const from "../lib/const";
 import Script from "next/script";
 import config from "../lib/config";
 import { Posts } from "../lib/metadata";
@@ -16,8 +14,6 @@ export const title = `Trails and Trekking`;
 const name = title;
 const defaultHeaderImage = "/cover.jpeg";
 const maxScroll = 5;
-const defaultHeaderColor = "white";
-const noHeader = _const.noHeader;
 
 export function PostHeader({ txt, stxt }) {
   return (
@@ -37,19 +33,16 @@ export default function Layout({
   home,
   allPostsData,
   postsHeading,
-  headerImage,
   ogImage,
   headerText,
+  noHeader,
   subText,
   description,
-  headerColor,
   idx,
   perPage,
 }) {
-  let img = headerImage ? headerImage : defaultHeaderImage;
   let txt = headerText ? headerText : name;
   let stxt = subText ? subText : "";
-  let color = headerColor ? headerColor : defaultHeaderColor;
   // State for the search box
   const [search, setSearch] = useState("");
   // State for the scroll effect
@@ -138,34 +131,11 @@ export default function Layout({
       {config.search.enabled && (
         <Search search={search} setSearch={setSearch} />
       )}
-      <img
-        alt=""
-        src={img}
-        className={utilStyles.headerImage}
-        style={{
-          height:
-            headerImage == noHeader || !config.header.enabled
-              ? "0px"
-              : "25vmax",
-        }}
-      />
 
-      {config.header.enabled && isVisible && headerImage != noHeader && (
-        <div className={styles.fixedText} style={{ color: color }}>
-          <h1 className={styles.headerText}>{CapitalizeWords(txt)}</h1>
-          <h1 className={styles.statsText}>{stxt}</h1>
-        </div>
-      )}
-      {!config.header.enabled && (
-        <>
-          <br />
-          <br />
-        </>
-      )}
+      <br />
+      <br />
       <div className={styles.container}>
-        {!home && !config.header.enabled && headerImage != noHeader && (
-          <PostHeader txt={txt} stxt={stxt} />
-        )}
+        {!home && !noHeader && <PostHeader txt={txt} stxt={stxt} />}
 
         <main>{children}</main>
         {allPostsData && (

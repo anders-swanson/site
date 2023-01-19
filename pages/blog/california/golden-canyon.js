@@ -16,8 +16,6 @@ let metadata = {
 const trailhead =
   "https://www.google.com/maps/place/Golden+Canyon+Trailhead/@36.4226602,-116.8415294,14.96z/data=!4m5!3m4!1s0x80c73e8ab49dc8e7:0x81181ab2667c4455!8m2!3d36.4207027!4d-116.8467738";
 const subText = "6.23 miles, 1,158 feet gain";
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLVQS20tAYGpQA51LIlVHO8BHJAn0PjRDtnBAo9xidDSYQqKWsoMHPXIjICpsVFPUheqFgUmwPdVgaJsPT0JB1lpJNajd4b1JQEsUYW6nXZkef3kT157Pa7gzZ5cJ0uO6t7HcfxK2YXrK2lT42e7QHk3=w1609-h1075-no?authuser=1";
 const image1 =
   "https://lh3.googleusercontent.com/pw/AM-JKLXqi60E2GTFcqT04LkTsO2Fs8jSDUYZB6WcSQs6cHSaUaqfhFanF5ZjIUhupd7BlttYMKgqmVsS016ezvykuZXhORxt86g_iAzgfmW4LoDwHTiZn46TxbA-7Db8Drv9K8InSSk2ZpsukeG8YZDL-2Tg=w1609-h1075-no?authuser=1";
 const image2 =
@@ -32,7 +30,6 @@ const image5 =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
       description={`Explore dramatic yellow-gold canyons under the scorching sun of Death Valley.`}

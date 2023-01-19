@@ -21,7 +21,6 @@ const campground =
 export default function Post() {
   return (
     <Layout
-      headerImage={image("cover.jpg")}
       headerText={metadata.title}
       subText="1 night camping"
       description={`Learn about a secluded desert hot spring where you can camp and soak for free.`}

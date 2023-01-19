@@ -13,17 +13,13 @@ let metadata = {
   tags: ["lakes", "backpacking", "waterfall", "washington"],
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLVoZekIWMiZJaqXMAziZ-RvHHQaWbTj-Ct9gssRSiAgF0z3Mx7gIWZX4Mbq38gVfNJwvntDSf_HWZHVhQ3ThNDQ8QbNNNwTPXxu6NX5t0fN3kfnK8UBSGr9kmv9WoNJLCzCumj7WZXTnhoGQd8xP0ON=w800-h600-no?authuser=0";
 const pageURI = "/blog/washington/big-heart-lake";
-
 const westFossRiverTH =
   "https://www.google.com/maps/place/West+Fork+Foss+Lakes+Trailhead/@47.6283272,-121.302157,14.08z/data=!4m5!3m4!1s0x549a8bb7daf57e01:0x354fa548cad72ad7!8m2!3d47.6348018!4d-121.303704";
 
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Camp at gorgeous mountain lakes in Washington's Alpine Lakes Wilderness.`}
       ogImage={metadata.image}

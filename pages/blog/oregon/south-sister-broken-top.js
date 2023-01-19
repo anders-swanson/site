@@ -18,9 +18,6 @@ const toddCreekTrailhead =
   "https://www.google.com/maps/place/Todd+Creek+Trailhead/@44.0225321,-121.6929359,15.67z/data=!4m9!1m2!2m1!1stodd+lake+trailhead!3m5!1s0x54b8ae80b44e1a51:0xf82d14931d1d584f!8m2!3d44.0234736!4d-121.6821181!15sChN0b2RkIGxha2UgdHJhaWxoZWFkWhUiE3RvZGQgbGFrZSB0cmFpbGhlYWSSAQtoaWtpbmdfYXJlYZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VRMmRFNWhTMFozRUFF";
 const southSisterTrailhead =
   "https://www.google.com/maps/place/Devils+Lake%2FSouth+Sister+Trailhead/@44.0334638,-121.7691587,17z/data=!3m1!4b1!4m5!3m4!1s0x54b8ac7b169ac463:0x70bf1d3c9f710b51!8m2!3d44.03346!4d-121.76697";
-
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLWfdydnaR3vuqnHby0S-UDoJuoVltMtqvJ00gj409PObkhLq99TXtPsZsZiymwsdZTUnOGwQCHaVFqX1BpU_uhr3_je3XRlEERTNNe1_CqqeQc_Sa6NoI1SWeqqFFkhtq8aRL1S07gPAsr8CpyDsIUd=w1597-h1067-no?authuser=0";
 const heartRock =
   "https://lh3.googleusercontent.com/pw/AM-JKLWKYt6ipH_TYxJGG-cQi5Idb6U5Kf-rrFU4p4cgr_lamoajzPE0CVCs9804IwiY3QD91Ubk5TWsr0qBMJI4GHyzdkwdzvv1WA4Xkk3qBL_N8wL-LViwckMJi5vRh-YgGABpFkBWXaa-ISAoRbD4lKfX=w801-h1067-no?authuser=1";
 const bendGlacier =
@@ -37,7 +34,6 @@ const summitView =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Learn about summitting the two most popular peaks in Central Oregon.`}
       ogImage={metadata.image}

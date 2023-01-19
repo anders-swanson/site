@@ -27,8 +27,6 @@ const tunnelfalls =
   "https://lh3.googleusercontent.com/pw/AM-JKLU4b0RnfgUxz74m6hx6_652cQB3CWd0D96uaRBKuUWHiRQSwG9FWH646d3JclbjPn_CL35X4K37kSJGtvswgianW-UNEt9yGFkVuoZOH6ABSXaUUlyvsH8snIMEsL_f-2fxvGBCYMN8uKnndIpP8ceY=w1609-h1075-no?authuser=1";
 const punchbowl =
   "https://lh3.googleusercontent.com/pw/AL9nZEUIauDTyjBs5dm0g29Ja5RkmjrLLPJ4NRVhw5Cve2P347n1XDYiThMKpdkzs8yfFmzci1zeMtgpBwnv3DVKrVqCHqtlLAWlainnLnZ9NWEYBwbJFT-LsTgNpfuEZIohDpLlFMaTkYSN3iiP_OJLfJ8H=w1597-h1067-no?authuser=0";
-const cover = punchbowl;
-
 const equestrianTH =
   "https://www.google.com/maps/place/Equestrian+Trailhead/@45.6347414,-122.0182306,15.5z/data=!4m5!3m4!1s0x5495e9b638181129:0x5f33b879c1e99b3a!8m2!3d45.6412843!4d-122.0324582";
 const hamiltonTH =
@@ -45,7 +43,6 @@ const eagleCreekTH =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Uncover three classic hikes in Oregon's scenic and beautiful Columbia River Gorge.`}
       ogImage={metadata.image}

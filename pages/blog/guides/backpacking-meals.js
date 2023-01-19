@@ -14,15 +14,12 @@ let metadata = {
   tags: ["backpacking", "guides"],
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXXcf1K4hJmKGMYeeh4mEo1RunikoWbFKynQaEqZnUXA3bnuerQ2Rba3aTFMdM68SBqSLI0MyLAHyM5-kNFrAgFzLMJlbn-4_Iwws4twiM35I6ImoiYNLV1n-ccMYhnlACnipIVaZaVUF6qOmyE23qk=w1920-h955-no?authuser=1";
 const pageURI = "/blog/guides/backpacking-meals";
 const tvp = "https://www.bobsredmill.com/tvp-textured-veg-protein.html";
 
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Backpacking meals don't have to be bland or leave you hungry - We've combined our favorite trail meals in this post!`}
       ogImage={metadata.image}

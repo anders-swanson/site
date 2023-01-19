@@ -1,13 +1,13 @@
 import Layout from "../../components/layout";
 import config from "../../lib/config";
-import _const from "../../lib/const";
 import { Tags, Posts } from "../../lib/metadata";
 import { FilterTag } from "../../lib/post_filter";
 
 export default function Post({ id, posts }) {
   return (
     <Layout
-      headerImage={_const.noHeader}
+      headerText={id}
+      noHeader
       allPostsData={posts}
       perPage={config.itemsPerFilterPage}
       postsHeading={`${id}: ${posts.length} posts`}

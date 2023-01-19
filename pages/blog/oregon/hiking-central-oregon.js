@@ -19,13 +19,9 @@ const skeneOgden =
 const tumaloFalls =
   "https://www.google.com/maps/place/Tumalo+Falls+Trailhead/@44.0387901,-121.5839357,15z/data=!4m13!1m7!3m6!1s0x54b8b10ed248cd3f:0x25fba35d1e66310f!2sTumalo+Falls!3b1!8m2!3d44.0339557!4d-121.5668789!3m4!1s0x54b8b108baef1483:0x68ec5154dee8ca40!8m2!3d44.0320083!4d-121.5663583";
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLUlIRvPPKgdxBPDoa8RRqg7jCJyg_hc3rRsG-T-gQawbFi-TLw7wYbAUokn80IK4-e3cqTccaxh8PUi0S4jTlrYnKsgFrLuqXzxunm1o8Hn72w1_SwGLTeKtDKFyp7wT3ab5s02s0U7Jk7ZrgrwTKSj=w800-h600-no?authuser=0";
-
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Read about our favorite and most beautiful hikes in Central Oregon as inspiration for your next trip!`}
       ogImage={metadata.image}

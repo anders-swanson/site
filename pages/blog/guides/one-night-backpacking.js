@@ -28,13 +28,9 @@ const paradiseParkCamp1 =
 const paradiseParkCamp2 =
   "https://www.google.com/maps/@45.3553334,-121.7496171,17.46z";
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXXcf1K4hJmKGMYeeh4mEo1RunikoWbFKynQaEqZnUXA3bnuerQ2Rba3aTFMdM68SBqSLI0MyLAHyM5-kNFrAgFzLMJlbn-4_Iwws4twiM35I6ImoiYNLV1n-ccMYhnlACnipIVaZaVUF6qOmyE23qk=w1920-h955-no?authuser=1";
-
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Explore trip ideas for 1-night beginner backpackers near Portland, Oregon.`}
       ogImage={metadata.image}

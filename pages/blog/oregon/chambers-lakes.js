@@ -23,7 +23,6 @@ const trailhead =
 export default function Post() {
   return (
     <Layout
-      headerImage={image("cover.jpg")}
       headerText={metadata.title}
       subText={subText}
       description={`Read about a gorgeous alpine lake basin - and my favorite hike in the Three Sisters Wilderness.`}

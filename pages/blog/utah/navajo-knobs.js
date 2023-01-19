@@ -14,8 +14,6 @@ let metadata = {
   disabled: true,
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLVDKuDPIETlDsSAE-xWmA0a_FOPgFGJ3wKqFJf1XcJCF0q96OY1rhEB9WQNW8M2uvuFKIBayUko4ipPiiN_Jo4RZjnZcO1gLpxxImjDVZeNE2eVol6l8Oa5IZ3COps3hrF2IXghT7rWg3URYBB92REr=w800-h600-no?authuser=0";
 const hickmanTH =
   "https://www.google.com/maps/place/Hickman+Bridge,+Rim+Overlook+and+Navajo+Knobs+Trail+Head/@38.2897142,-111.2310988,16.83z/data=!4m5!3m4!1s0x874a1904f7209117:0x2c6384b908780ba!8m2!3d38.2887635!4d-111.227639";
 const cohabCanyonTH =
@@ -25,7 +23,6 @@ const pageURI = "/blog/utah/navajo-knobs";
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Discover stunning vistas while hiking the Waterpocket Fold in Utah's Capitol Reef National Park.`}
       subText={`9 miles, extend to 16+`}

@@ -21,7 +21,6 @@ const trailhead = "https://www.google.com/maps/@42.657206,-118.7285438,18.46z";
 export default function Post() {
   return (
     <Layout
-      headerImage={image("cover.jpg")}
       headerText={metadata.title}
       subText={subText}
       description={`Discover an intense but beautiful hike in the remote Steens Mountain Wilderness.`}

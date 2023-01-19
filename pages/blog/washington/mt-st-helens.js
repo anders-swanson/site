@@ -16,10 +16,7 @@ let metadata = {
   tags: ["hiking", "guides", "washington", "camping"],
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AL9nZEWPKuqOYeCj0xrT3eYkQOAOmcm5nEcREs1-VDfL8O3xIaAeeCs8VuhFNpLTkJbA9_uaSA92_552cvW324gL8oV82xIpQ88S5iobWGJPWYWCIYP_VSxC3dWF-f-0GuJCJsRNCDB8ldXB4o0orImPFNdh=w800-h533-no?authuser=0";
 const pageURI = "/blog/washington/mt-st-helens";
-
 const climbingPermits = "https://www.recreation.gov/permits/4675309";
 const climbersBivouac =
   "https://www.google.com/maps/place/Climbers+Bivouac+Trailhead/@46.146272,-122.1858107,17z/data=!3m1!4b1!4m5!3m4!1s0x54969c8ba8fbef91:0x2a76c011a0f90a6b!8m2!3d46.1462683!4d-122.183622";
@@ -30,7 +27,6 @@ const apeCavesPermits = "https://www.recreation.gov/timed-entry/10086990";
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Day hike from Climber's Bivouac to the summit of the Cascade mountain range's most active volcano.`}
       subText={`9 miles, 4.7k gain`}

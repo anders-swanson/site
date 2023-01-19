@@ -15,8 +15,6 @@ let metadata = {
   tags: ["hiking", "waterfall", "columbia river gorge", "oregon"],
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXL2bm7k_rkcJ-P6EgMZGG7ZDzSH6BQ8JFPtl7m7AiRYMcakNMeUVHEkjyZFnhoFdvvTsOiR0ixc-qfbAC-t0sDmpNcrl94yQFnYmdtEMGIfa4IYdgl9C-_kOXSYufZcQsIK6ITRS0oPw2-kIpnb7-Y=w1597-h1067-no?authuser=1";
 const horsetailFallTrailhead =
   "https://lh3.googleusercontent.com/pw/AM-JKLXL2bm7k_rkcJ-P6EgMZGG7ZDzSH6BQ8JFPtl7m7AiRYMcakNMeUVHEkjyZFnhoFdvvTsOiR0ixc-qfbAC-t0sDmpNcrl94yQFnYmdtEMGIfa4IYdgl9C-_kOXSYufZcQsIK6ITRS0oPw2-kIpnb7-Y=w1597-h1067-no?authuser=1";
 const wahclellaTrailhead =
@@ -29,7 +27,6 @@ const wahkeenaTrailhead =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Find four beautiful and accessible waterfall hikes in the Columbia River Gorge.`}
       ogImage={metadata.image}

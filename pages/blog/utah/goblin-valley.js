@@ -35,7 +35,6 @@ const lair =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
       description={`Exploring the unique rock formations in Goblin Valley makes you feel like you're on another planet.`}

@@ -20,9 +20,6 @@ const trailhead =
   "https://www.google.com/maps/place/Quinn+Meadow+Horse+Camp/@43.9975329,-121.7890709,17z/data=!3m1!4b1!4m5!3m4!1s0x54b8abda495b57bb:0xab653de931fb5259!8m2!3d43.9975291!4d-121.7868822";
 const sistersMirror =
   "https://www.google.com/maps/place/Quinn+Meadow+Horse+Camp/@43.9975329,-121.7890709,17z/data=!3m1!4b1!4m5!3m4!1s0x54b8abda495b57bb:0xab653de931fb5259!8m2!3d43.9975291!4d-121.7868822";
-
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXY_dPQ7BXWgFQcEHN6LR6_VhWevDbd3m9oAUCHLyiaSP2_Ey3XmE-y4SCyOAEw5vJ9n8SCEXM71pP8mV2zHHkXEVRCGffYx2WixbrWvYBpb891okhZdxgCkBmSojxD3-WBy_l71XIsE-S4QvKMqUPQ=w1616-h376-no?authuser=0";
 const log =
   "https://lh3.googleusercontent.com/pw/AM-JKLX7r30CWphB34HdF73b2kDnwcTA8l2vmm0nDFoqYUhJWYRJcNep_dYvOpjvQU-vXGM5uupIX46Pu5wfoZIZhR9rr4uJZFNWQQLAQjtQyPsTvuojntVmjNDhGWhuAa5obUIic5t-OBuPbM0La43TLIJM=w1597-h1067-no?authuser=0";
 const silhouette =
@@ -39,7 +36,6 @@ const mirror =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
       description={`Lakes abound on this backpacking loop near South Sister.`}

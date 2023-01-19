@@ -15,8 +15,6 @@ let metadata = {
   disabled: true,
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXNMW8TL-8xrGW_qU69jKliEhCxmHAjgPFttbpeF9o5nhHfXVHaEmRDJO61AMwyCkXnDrf9-fxJ4kRffHNGz4G-BGnLKBs5tBrTKE0md8ia2Jq288iVkBrM25q1jBPZwxdFQW0rgwy_iQKNb_nhsaFD=w800-h535-no?authuser=0";
 const trailhead =
   "https://www.google.com/maps/place/Obsidian+Trailhead/@44.2051449,-121.8726616,17z/data=!3m1!4b1!4m5!3m4!1s0x54bf5005f3395137:0x64b0073a16160758!8m2!3d44.2051411!4d-121.8704729";
 const pageURI = "/blog/oregon/obsidian-trail";
@@ -24,7 +22,6 @@ const pageURI = "/blog/oregon/obsidian-trail";
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Hike through fields of obsidian stone with mountain views on this Central Oregon day trip.`}
       subText={`11.5 miles, 1.5k gain`}

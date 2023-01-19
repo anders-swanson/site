@@ -12,14 +12,11 @@ let metadata = {
   tags: ["lakes", "backpacking", "oregon"],
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLW_ayn0e_jkC96r4yaREm45gsA5048u3PD2sbCi4xBah_zKCAKan2ujaWxusOcFJEzjSGLvmPCLB3HW0dQASgLKbfI7hRnfX1OZXog4stGvSoZhdEp2cnnXDsD-LLulcktG2BeXbLYSB3E2eyqvXMpI=w800-h600-no?authuser=0";
 const pageURI = "/blog/oregon/jefferson-park";
 
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Alpine lake camping on the flank of Mt. Jefferson, with a bonus cave to explore.`}
       ogImage={metadata.image}

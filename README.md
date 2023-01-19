@@ -26,11 +26,6 @@ Set the following environment variables in your development environment to enabl
 # Google Maps API key, used for Google Maps embeds.
 export NEXT_PUBLIC_MAPS_API_KEY='xyz'
 
-### SMTP SETTINGS ###
-# Username for SMTP API
-export SMTP_USERNAME='foo@bar.com'
-# Password for SMTP API
-export SMTP_PASSWORD='xyz'
 # URI for SMTP API, see: https://github.com/anders-swanson/contact-email-lambda
 export NEXT_PUBLIC_EMAIL_BACKEND_URI='email.service.com'
 
@@ -52,7 +47,7 @@ Create a new `Javascript` file in the `pages/blog/` directory, such as `pages/bl
 Add metadata to your page, at the top of the file. the `//+metadata` comment is important for the site builder to add your page's
 data to the metadata store during site compilation.
 
-```
+```json
 //+metadata
 let metadata = {
     // Title which will appear in links and in HTML title
@@ -62,7 +57,8 @@ let metadata = {
     // Path or URI to cover image
     "image": "/images/profile.jpg",
     // List of tags. Tags are used for sorting/filtering/searching.
-    "tags": ["camping"]
+    "tags": ["camping"],
+    "preview": "This preview will show up in links and post references",
 }
 ```
 
@@ -77,10 +73,10 @@ export default function Post() {
   return (
     // you may use any image or header text, not just the metadata values
     <Layout
-      headerImage={metadata.image}
+      // This image appears in direct link metadata
       ogImage={metadata.image}
+      // Acts as the page title and header text
       headerText={metadata.title}
-      description={`This description will show up in links and post references`}
     >
       <h1>The body within Layout is customizable</h1>
     </Layout>

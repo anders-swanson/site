@@ -26,7 +26,6 @@ const mov2 = rawData("gb2.mp4");
 export default function Post() {
   return (
     <Layout
-      headerImage={metadata.image}
       headerText={metadata.title}
       subText={subText}
       description={`Journey to a cascading hot spring waterfall near Idaho's Salmon River.`}

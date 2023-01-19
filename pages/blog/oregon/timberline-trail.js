@@ -1,5 +1,17 @@
-import TimberlineTrail from "../../../components/pages/oregon/timberline-trail";
+import Layout from "../../../components/layout";
+import TimberlineTrail, {
+  metadata,
+} from "../../../components/pages/oregon/timberline-trail";
 
 export default function Post() {
-  return <TimberlineTrail />;
+  return (
+    <Layout
+      headerText={metadata.title}
+      description={metadata.preview}
+      subText={metadata.subText}
+      ogImage={metadata.image}
+    >
+      <TimberlineTrail />
+    </Layout>
+  );
 }

@@ -1,5 +1,4 @@
 import utilStyles from "../../../styles/utils.module.css";
-import Layout from "../../layout";
 import RelatedPosts from "../../related_posts";
 import Pinnable from "../../pinit";
 import Link from "next/link";
@@ -8,33 +7,29 @@ import MapEmbed from "../../maps";
 import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
 import BearSafetyNC from "../../snippets/bear-safety-nc";
 import Contact from "../../contact";
-import ReadMoreLink from "../../read_more_link";
+import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 
-//+metadata
-let metadata = {
-  title: "Backpacking Snowy Lakes in the North Cascades",
-  date: "2022-08-22",
-  image:
-    "https://lh3.googleusercontent.com/pw/AL9nZEVVUlfj77qjZ5umYnAraQ4Ima49vWuAW6xeKc4mLfsXzM_L-QbCiGHWv9DaRgcKijcH3HAZNvQR4wO_SaQ4yWGGMUZFVdaTCNeo1fQdjg0mU8e4wHN0hJ9QvYdDS5r8YURVUInUwKsfUoy1rlZ00JvP=s800-no?authuser=0",
-  tags: ["lakes", "backpacking", "washington", "north cascades"],
-};
-
-const cover =
-  "https://lh3.googleusercontent.com/pw/AL9nZEXGw25374hAKaC-wbDFevMC96m4QD0cQ-4c0Skaji8BApUQe-VCPhbjk71gq7T6c5FjM1nvigVMrW8aZ9RSIrsDdtvjyjWZHcHhwHoGHnL2BoHfrAvbVcW1qYxPjAunP-OLojDOpz73CC42DOpwY8Rj=w800-h533-no?authuser=0";
 const pageURI = "/blog/washington/golden-horn";
 
 const paciticCrestNorthTrailhead =
   "https://www.google.com/maps/place/Pacific+Crest+Trail+North+Trailhead/@48.5258689,-120.7382231,16.58z/data=!4m8!1m2!2m1!1sgolden+horn+trailhead!3m4!1s0x5484ade98ee8e437:0x54f63bb022e7f5b5!8m2!3d48.5246355!4d-120.7360385";
 
+//+metadata
+export const metadata = {
+  title: "Backpacking Snowy Lakes in the North Cascades",
+  date: "2022-08-22",
+  image:
+    "https://lh3.googleusercontent.com/pw/AL9nZEVVUlfj77qjZ5umYnAraQ4Ima49vWuAW6xeKc4mLfsXzM_L-QbCiGHWv9DaRgcKijcH3HAZNvQR4wO_SaQ4yWGGMUZFVdaTCNeo1fQdjg0mU8e4wHN0hJ9QvYdDS5r8YURVUInUwKsfUoy1rlZ00JvP=s800-no?authuser=0",
+  tags: ["lakes", "backpacking", "washington", "north cascades"],
+  preview:
+    "Join us on an adventure through the mountains of Washington's North Cascades as we backpack to Snowy Lakes.",
+  subText: "20 miles round-trip",
+};
+
 export default function SnowyLakes({ readMore }) {
   return (
-    <Layout
-      headerImage={cover}
-      headerText={metadata.title}
-      description={`Join us on an adventure through the mountains of Washington's North Cascades as we backpack to Snowy Lakes.`}
-      subText={`20 miles round-trip`}
-      ogImage={metadata.image}
-    >
+    <>
+      <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.centered}>
           <Pinnable
@@ -63,11 +58,7 @@ export default function SnowyLakes({ readMore }) {
           {` across Highway 20 from Rainy Pass, just outside the North Cascades National Park. Campsites at Snowy Lakes are first come, first serve, and there are no
                     required permits for backcountry camping along this stretch of the Pacific Crest Trail (PCT).`}
         </div>
-        <ReadMoreLink
-          enabled={readMore}
-          uri={pageURI}
-          text="backpacking to Snowy Lakes in Washington's North Cascades"
-        >
+        <ReadMoreLink enabled={readMore} uri={pageURI} text="Snowy Lakes">
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
@@ -229,6 +220,6 @@ export default function SnowyLakes({ readMore }) {
         </ReadMoreLink>
       </div>
       <RelatedPosts metadata={metadata} tag="backpacking" readMore={readMore} />
-    </Layout>
+    </>
   );
 }

@@ -87,10 +87,18 @@ function getMetdata(file, id) {
   }
 
   const metadataStr = data.substring(startIdx, endIdx + 1);
-  eval("var metadata =" + metadataStr);
-  metadata["id"] = id;
-  metadata["tags"] = metadata["tags"].sort();
-  metadata["preview"] = loadPreview(data);
+  eval("var wholeMetadata =" + metadataStr);
+  const metadata = {
+    id: id,
+    title: wholeMetadata["title"],
+    date: wholeMetadata["date"],
+    image: wholeMetadata["image"],
+    preview: wholeMetadata["preview"],
+    tags: wholeMetadata["tags"].sort(),
+  };
+  if (!metadata["preview"]) {
+    metadata["preview"] = loadPreview(data);
+  }
   return metadata;
 }
 

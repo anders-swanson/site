@@ -1,7 +1,16 @@
 import Link from "next/link";
 import utilStyles from "../styles/utils.module.css";
+import { PostHeader } from "./layout";
 
 const readMoreSlug = "read-more";
+
+export function ReadMoreHeader({ metadata, enabled }) {
+  return (
+    <>
+      {enabled && <PostHeader txt={metadata.title} stxt={metadata.subText} />}
+    </>
+  );
+}
 
 export default function ReadMoreLink({
   children,
@@ -10,11 +19,11 @@ export default function ReadMoreLink({
   uri,
   enabled,
 }) {
-  readMoreText = readMoreText ? readMoreText : "Read more about";
+  readMoreText = readMoreText ? readMoreText : "READ MORE on";
   return (
     <>
       {enabled && (
-        <div className={utilStyles.justifyCenter}>
+        <div className={utilStyles.justifyCenter} style={{ fontSize: "28px" }}>
           <Link
             href={`${uri}#${readMoreSlug}`}
           >{`${readMoreText} ${text}`}</Link>

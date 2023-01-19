@@ -19,6 +19,19 @@ const maxScroll = 5;
 const defaultHeaderColor = "white";
 const noHeader = _const.noHeader;
 
+export function PostHeader({ txt, stxt }) {
+  return (
+    <div style={{ textAlign: "center" }}>
+      <h1 style={{ fontSize: "40px" }} className={styles.headerText}>
+        {CapitalizeWords(txt)}
+      </h1>
+      <h1 style={{ fontSize: "25px" }} className={styles.statsText}>
+        {stxt}
+      </h1>
+    </div>
+  );
+}
+
 export default function Layout({
   children,
   home,
@@ -151,15 +164,7 @@ export default function Layout({
       )}
       <div className={styles.container}>
         {!home && !config.header.enabled && headerImage != noHeader && (
-          <div style={{ textAlign: "center" }}>
-            <br />
-            <h1 style={{ fontSize: "40px" }} className={styles.headerText}>
-              {CapitalizeWords(txt)}
-            </h1>
-            <h1 style={{ fontSize: "25px" }} className={styles.statsText}>
-              {stxt}
-            </h1>
-          </div>
+          <PostHeader txt={txt} stxt={stxt} />
         )}
 
         <main>{children}</main>

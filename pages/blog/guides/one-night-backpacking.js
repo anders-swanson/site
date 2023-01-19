@@ -36,7 +36,7 @@ export default function Post() {
     <Layout
       headerImage={cover}
       headerText={metadata.title}
-      description={`Explore trip ideas for 1-night beginner backpackers near Portlnad, Oregon.`}
+      description={`Explore trip ideas for 1-night beginner backpackers near Portland, Oregon.`}
       ogImage={metadata.image}
     >
       <div className={utilStyles.flexGapContainer}>

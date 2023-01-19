@@ -1,32 +1,30 @@
 import utilStyles from "../../../styles/utils.module.css";
-import Layout from "../../layout";
 import RelatedPosts from "../../related_posts";
-import ReadMoreLink from "../../read_more_link";
+import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import MapEmbed from "../../maps";
 import BearSafetyNC from "../../snippets/bear-safety-nc";
 import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
 
+const pageURI = "/blog/washington/goat-lake";
+const relatedTag = "backpacking";
+
 //+metadata
-let metadata = {
+export const metadata = {
   title: "Backpacking Goat Lake on Mt. Baker",
   date: "2023-01-07",
   image:
     "https://lh3.googleusercontent.com/pw/AL9nZEU1CmjLIhK8lhIfEtKnmH5LzD30ZavQLlXdUIvSyRbBo8Qg6a5GoW1FfMDQdtqH_51O9BB4fG3cthT4Wv794w3dwwKu14tq3Y2stMINK545OomZ4lOhcNdVthvQGGCUPBxqkbP0NE7kpBRTdEhNcDVC=s800-no?authuser=0",
   tags: ["washington", "lakes", "backpacking", "north cascades"],
+  preview:
+    "Experience the wild beauty of Goat Lake, nestled in the shadow of Mt. Baker in Washington's North Cascades.",
 };
-
-const pageURI = "/blog/washington/goat-lake";
-const relatedTag = "backpacking";
 
 export default function GoatLake({ readMore }) {
   return (
-    <Layout
-      headerText={metadata.title}
-      description={`Experience the wild beauty of Goat Lake, nestled in the shadow of Mt. Baker in Washington's North Cascades.`}
-      ogImage={metadata.image}
-    >
+    <>
+      <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.centered}>
           <Pinnable
@@ -59,11 +57,7 @@ export default function GoatLake({ readMore }) {
                     After hiking on the Chain of Lakes trail for 1.1 miles, turn left onto the unmarked Ptarmigan Ridge trail. 
                     If you continue right, you'll stay on the Chain of Lakes trail, which will eventually lead you back to the lower parking lot near the Mt. Baker Ski Area.`}
         </div>
-        <ReadMoreLink
-          enabled={readMore}
-          text="our backpacking trip to Goat Lake on Mt. Baker"
-          uri={pageURI}
-        >
+        <ReadMoreLink enabled={readMore} text="Goat Lake" uri={pageURI}>
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
@@ -179,6 +173,6 @@ export default function GoatLake({ readMore }) {
         </ReadMoreLink>
       </div>
       <RelatedPosts metadata={metadata} tag={relatedTag} readMore={readMore} />
-    </Layout>
+    </>
   );
 }

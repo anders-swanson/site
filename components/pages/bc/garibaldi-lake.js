@@ -1,5 +1,4 @@
 import utilStyles from "../../../styles/utils.module.css";
-import Layout from "../../layout";
 import Link from "next/link";
 import RelatedPosts from "../../related_posts";
 import links from "../../../lib/links";
@@ -7,19 +6,8 @@ import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import MapEmbed from "../../maps";
 import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
-import ReadMoreLink from "../../read_more_link";
+import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 
-//+metadata
-let metadata = {
-  title: "Garibaldi Park Backpacking",
-  date: "2022-11-06",
-  image:
-    "https://lh3.googleusercontent.com/pw/AL9nZEXdf4dR5_zUFiRTPPsNDjkqVJOi6-6SHxXZikfgvFTSUOr0gLfI6ojOVx6jbh62KSyDGAdifitbY1T00Iiy6XvsCArGuH_j-RisUlMwqlUwINk_LvZ5pNphMwBPcdBVX50R0nuXXHmannaPVyIBoyKg=s800-no?authuser=0",
-  tags: ["british columbia", "lakes", "backpacking"],
-};
-
-const cover =
-  "https://lh3.googleusercontent.com/pw/AL9nZEVhRrYvbUiAVCeZAXykSN_qLJhTemb91Y8JEKVIm6S1ogFbzcwBqdjXkQc4a5_9bmn9agULI6lT8wzVhkIHRR2eELYAlo-ST0xuu9Gd08pirzCESrXU96HyuA6cCVWzQwdh8rzSkHK4zBv7RwdCjcmR=w800-h533-no?authuser=0";
 const pageURI = "/blog/bc/garibaldi-lake";
 const relatedTag = "backpacking";
 
@@ -27,15 +15,24 @@ const garibaldiLakeTrailhead =
   "https://www.google.com/maps/dir/Rubble+Creek+Trailhead,+0A0+Daisy+Lake+Rd,+Whistler,+BC+V0N+1H0,+Canada/@49.9573116,-123.1552543,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54871c632191eab1:0x59a0a0082e018b3f!2m2!1d-123.120235!2d49.9572617?hl=en";
 const elfinLakesTrailhead =
   "https://www.google.com/maps/dir/Elfin+Lakes+Trail+%26+Diamond+Head+Trail,+Squamish-Lillooet,+BC+V0N+1H0,+Canada/@49.7714738,-123.0387118,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x5486fae751cb2185:0xdde616187e478a39!2m2!1d-123.0036925!2d49.7714236?hl=en";
+const cover =
+  "https://lh3.googleusercontent.com/pw/AL9nZEVhRrYvbUiAVCeZAXykSN_qLJhTemb91Y8JEKVIm6S1ogFbzcwBqdjXkQc4a5_9bmn9agULI6lT8wzVhkIHRR2eELYAlo-ST0xuu9Gd08pirzCESrXU96HyuA6cCVWzQwdh8rzSkHK4zBv7RwdCjcmR=w800-h533-no?authuser=0";
+
+//+metadata
+export const metadata = {
+  title: "Garibaldi Park Backpacking",
+  date: "2022-11-06",
+  image:
+    "https://lh3.googleusercontent.com/pw/AL9nZEXdf4dR5_zUFiRTPPsNDjkqVJOi6-6SHxXZikfgvFTSUOr0gLfI6ojOVx6jbh62KSyDGAdifitbY1T00Iiy6XvsCArGuH_j-RisUlMwqlUwINk_LvZ5pNphMwBPcdBVX50R0nuXXHmannaPVyIBoyKg=s800-no?authuser=0",
+  tags: ["british columbia", "lakes", "backpacking"],
+  preview:
+    "Discover, backpack, and enjoy beautiful Garibaldi Provincial Park in British Columbia.",
+};
 
 export default function Garibaldi({ readMore }) {
   return (
-    <Layout
-      headerImage={cover}
-      headerText={metadata.title}
-      description={`Discover, backpack, and enjoy beautiful Garibaldi Provincial Park in British Columbia.`}
-      ogImage={metadata.image}
-    >
+    <>
+      <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.centered}>
           <Pinnable
@@ -90,7 +87,7 @@ export default function Garibaldi({ readMore }) {
 
         <ReadMoreLink
           enabled={readMore}
-          text="backpacking Garibaldi Provincial Park in British Columbia"
+          text="Garibaldi Provincial Park"
           uri={pageURI}
         >
           <h1 className={utilStyles.justifyCenter} id="garibaldi-lake">
@@ -323,6 +320,6 @@ export default function Garibaldi({ readMore }) {
         </ReadMoreLink>
       </div>
       <RelatedPosts metadata={metadata} tag={relatedTag} readMore={readMore} />
-    </Layout>
+    </>
   );
 }

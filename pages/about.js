@@ -2,14 +2,12 @@ import utilStyles from "../styles/utils.module.css";
 import Layout from "../components/layout";
 import Contact from "../components/contact";
 import Image from "next/image";
-import _const from "../lib/const";
 import RelatedPosts from "../components/related_posts";
 
 export default function Post() {
   return (
-    <Layout headerImage={_const.noHeader}>
+    <Layout headerText={"About Us"}>
       <div className={utilStyles.flexGapContainer}>
-        <h1>About Us</h1>
         <div>
           {`Thanks for visiting our travel blog, Trails And Trekking! We're Lauren and Anders - an adventure loving 
                     couple currently stationed in the Pacific Northwest. We're avid hikers, backpackers, and travelers. We're both originally from Oregon,

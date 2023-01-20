@@ -16,9 +16,6 @@ let metadata = {
 };
 
 const subText = "15.91 miles, 1,932 feet gain";
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLV4Uskh-TDkQaIWBSCzOsuI25vUD_FYrbr2KLojGuzr3BCbQvPHjfw7xQ9pkg2zvwYwmCMuE3M4Pkom5kTKlQwsH3it-IWj4WLc9uCbA2giElUuG9ER13XIuzEBhGwhFX0SGN0Ogbs5D8X0m5EBkXxb=w1851-h1067-no?authuser=0";
-
 const needles =
   "https://www.google.com/maps/place/The+Needles+District+Campground/@38.1505356,-109.7884323,15z/data=!4m12!1m6!3m5!1s0x8737ef418486a001:0x40cebc4e101c9459!2sDruid+Arch!8m2!3d38.0884622!4d-109.8316832!3m4!1s0x8737f9c128b461c3:0xb2d1b837cb5e9a9a!8m2!3d38.1484794!4d-109.8019552";
 const clnp = "https://www.nps.gov/cany/index.htm";
@@ -26,7 +23,6 @@ const clnp = "https://www.nps.gov/cany/index.htm";
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
       description={`Find a towering, stonehenge-esque arch in the heart of the Canyonland's jaw-dropping Needles district.`}

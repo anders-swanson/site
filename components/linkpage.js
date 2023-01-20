@@ -8,7 +8,6 @@ import utilStyles from "../styles/utils.module.css";
 import { SocialIcon } from "react-social-icons";
 import config from "../lib/config";
 import { backgroundImageStyle } from "../lib/common";
-import _const from "../lib/const";
 
 const backgroundImage =
   "https://lh3.googleusercontent.com/pw/AL9nZEVYk7S03VbTbPmMXNWg61YYuZ_hQdE75O5_Cj2yRHu6t5KKuCLnkgW3PWGxz0nlH8jwzA4bUHFzFBNiDDKFAxbVHkm81yS19htj9X4FYVrhofToP2MZbjGPcschCRiytpfcARvEsV4rPvintQ7d4SK8=w600-h900-no?authuser=0";
@@ -22,7 +21,7 @@ const marginStyle = {
 export default function Links({ title, showSocial }) {
   const featuredPost = Posts()[0];
   return (
-    <Layout headerImage={_const.noHeader} headerText={title}>
+    <Layout headerText={title} noHeader>
       <div
         className={`${utilStyles.coverContainer}`}
         style={{

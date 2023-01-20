@@ -1,15 +1,9 @@
 import Layout from "../../../components/layout";
 import { Pages, Posts } from "../../../lib/metadata";
-import _const from "../../../lib/const";
 
 export default function Post({ id, posts }) {
   return (
-    <Layout
-      headerImage={_const.noHeader}
-      allPostsData={posts}
-      idx={id}
-      postsHeading="Recent Posts"
-    ></Layout>
+    <Layout allPostsData={posts} idx={id} postsHeading="Recent Posts"></Layout>
   );
 }
 

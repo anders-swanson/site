@@ -13,16 +13,12 @@ let metadata = {
   tags: ["hiking", "national park", "utah"],
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXNlsA0EI899Wuy_CWH_s9hTHE77DnJcIFq-M5IjfJ1DpuTiP3OUAW1ObhvUrxe3PhYYsBfwVT5palzh1NR02pC8CSKRWZqk1Md_IrrHuXLo6-Cpq4yQjDgQ-FOo-wzItnd5GwRzpktZpaR1gvF3vFX=w800-h600-no?authuser=0";
 const pageURI = "/blog/utah/devils-garden-loop";
-
 const devilsGardenTrailhead = `https://www.google.com/maps/place/Devil's+Garden+Trailhead/@38.7797899,-109.5946363,16.21z/data=!4m5!3m4!1s0x8748778d7fcc775f:0x7701fbf4c1ffd6b7!8m2!3d38.7829031!4d-109.5949423`;
 
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Scramble up sandstone trails on this challenging loop in Arches National Park, Utah.`}
       subText={`9.5 miles, 1,300 feet of gain.`}

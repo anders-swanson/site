@@ -18,13 +18,9 @@ const rogueRiverTrail =
 const rogueRiverBLM =
   "https://www.blm.gov/visit/rogue-river-national-recreation-trail";
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXIb_XMM-aULownfswLPoBFXK_RfoQ69Cuzxl3XqDFMIG8DV3AMKlNSe0IoaYlT1ase375566a-zMWX5V--K3HQTzYnPoNctXyES-bDBfyk2Fuod-Lna26hEkKctYYTSbkNGUAn3jy055FddAug2ceHEQ=w1423-h1067-no?authuser=1";
-
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Kick off the spring season in style with our suggestions for early-season backpacking that avoids the snow!`}
       ogImage={metadata.image}

@@ -16,13 +16,10 @@ let metadata = {
 
 const trailhead =
   "https://www.google.com/maps/place/Steens+Summit+Trailhead/@42.6351922,-118.587701,16.13z/data=!4m13!1m7!3m6!1s0x54b6a356f7124c99:0x1d8a60efd02e6802!2sWildhorse+Lake+Trail,+Oregon+97721!3b1!8m2!3d42.6358412!4d-118.5831428!3m4!1s0x54b6a4ab7263132d:0xca9321d335ba4b88!8m2!3d42.6414093!4d-118.5796356";
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXuI7u_VPi6zxULb2Yl8XbJ-Xs-rbg0tcbxraaSkxuO_1eESAjmXtzB6zy6t3hbJMiJhXi-YwAxusyYuKjz-Vj12Faop04a0gTmKEmqSzNtK4BCFffrpnqBFS1PfN-NO6JXhsvvssxlfSzCtPjJdzlO=w1423-h1067-no?authuser=0";
 
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText="3 miles out and back"
       description={`Discover an alpine lake hours from civilization in Oregon's remote high desert.`}

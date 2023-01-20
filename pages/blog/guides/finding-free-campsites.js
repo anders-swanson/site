@@ -19,13 +19,10 @@ const tent2 =
   "https://lh3.googleusercontent.com/pw/AM-JKLUGp0OaLjXgmnr7iJsYoRDbqKnQtOdtvk3lqTlySAg1tJlkPoaZnH027tCaKToTniVpYE_KAVU48ph67SIcDzFYzs_FxKKb408H4xzS_zPgkGKQL9FwgLvEermQLbE3MUTHZ3_yoH_8tBASCN3ihAeA=w807-h1075-no?authuser=1";
 const tent3 =
   "https://lh3.googleusercontent.com/pw/AM-JKLX93LbV7GeXS8ZNI6u0gSEQnUXP95Fe4wIf40iqCkMjkAuLJBoRMzcIgmGPWYRrNPRIxEgL4vP1VrF7-JC-UdXxQSFG2GwMLdgHQvrwrgWmZ2nRxni01TU4A2vr9YdcRvHEZQOjul2HkYX0FRfh79-R=w807-h1075-no?authuser=1";
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLVCuN0XZmybg8YX_z9owTEDco9SLDjYtk248PcljRwtKgLbhaVmSShbON0xwzYftzcECY2NrJgidepu2N-RU2Ri1YIWuXuYKpl7IIwu9qzmumRTkb5rCKhuxS9MzBgNWQb1xj0lY52s_YvztXEz-gOp=w1759-h1075-no?authuser=1";
 
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Camping for free in the western U.S. is easy with a little know-how - discover the varied ways you can camp on public land (for free!).`}
       ogImage={metadata.image}

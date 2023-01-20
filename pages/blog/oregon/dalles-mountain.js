@@ -20,8 +20,6 @@ const trailhead =
 const stackerButte =
   "https://www.google.com/maps/place/Stacker+Butte+Trailhead/@45.6780985,-121.0911704,14.67z/data=!4m5!3m4!1s0x5496234deae70d3d:0xe04b8a4d61444b0f!8m2!3d45.6949542!4d-121.0925934";
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AL9nZEXmXqLADWTd6MQtIn11F_NC-dMC7yQmdjeX4v6ho_gDEZPAlYSqESNaLpoC07pQHGDoKqvisvI1xf2TIZ2x3LLIRXNmqLbBMGgIIx8NQk7PIyCfOEIEtNVX5oBEk518A3rp68BhmH2reXUpWHqzFDli=w1597-h1067-no?authuser=0";
 const trailWithFlowers =
   "https://lh3.googleusercontent.com/pw/AM-JKLVE3OyiOzDpzI60rp3USt08EniGUCiKQ3uXfQUmKegNBH-yF796IRwTBPcz2DGHopd7JNclnCL5aLqhjRrKuQ2Oyyijb3xMHXLTOMd_yGyUHPITLo1IkGF3fK6klTMhtY2P1pC2VYLw8NrIdxfLb0jl=w801-h1067-no?authuser=0";
 const trail2 =
@@ -38,7 +36,6 @@ const sliderImages = [
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
       description={`Uncover a wildflower hiking loop in the eastern Columbia River Gorge.`}

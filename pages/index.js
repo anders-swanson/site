@@ -8,7 +8,6 @@ export default function Home({ posts, featuredPost }) {
   return (
     <Layout
       home
-      headerImage="/images/cover.jpeg"
       allPostsData={posts}
       postsHeading="Recent Posts"
       description={`Do you like exploring the outdoors? Join us as we share recent hiking trips, camping suggestions, and backcountry guides.`}

@@ -15,13 +15,10 @@ let metadata = {
 
 const steensBLM =
   "https://www.blm.gov/programs/recreation/recreation-activities/oregon-washington/steens-mountain";
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLV-YPvyN7EIn-p_83V-JctdfhPoNDH01ubsoCLchDFwIsr70inJNQLqSAtc3IHbgORLvoJsDMXiLyGt7sNLIp1RRolIZPwLqd8uY2hWMhi4rYk_tDRmQ7Nmvy-d1racBUF6TQiWDi3y--dym_4NAiBG=w800-h600-no?authuser=0";
 
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Read our guide about southeastern Oregon's high desert wonderland.`}
       ogImage={metadata.image}

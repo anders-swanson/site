@@ -21,7 +21,6 @@ const trailhead =
 export default function Post() {
   return (
     <Layout
-      headerImage={image("cover.jpg")}
       headerText={metadata.title}
       subText={subText}
       description={`Share our pain on this grueling 35+ mile backpacking loop that we hiked in the intense heat of summer.`}

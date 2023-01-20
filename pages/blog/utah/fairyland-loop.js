@@ -18,9 +18,6 @@ let metadata = {
 const subText = "13.52 miles, 2,464 feet gain";
 const trailhead =
   "https://www.google.com/maps/place/Fairyland+Loop+Trail/@37.6489936,-112.1489393,17.29z/data=!4m5!3m4!1s0x873568d683d50bf7:0xfa8d2eaaafebdff4!8m2!3d37.6495899!4d-112.1475292";
-
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLVjrL-cu7h1t0DlE-CSCMij787DHwEinQTdTmGLBVPc9fkoSa_uc_K6NUku4uJwW_52rfyUyLV_yfX45Daz6F38101O0wZcl8Y1r6btaQ_63kZ9_3jwx9P5Tdtk_s6mrF--KjpW7p-2sZQOtUXzliee=w1423-h1067-no?authuser=0";
 const rim1 =
   "https://lh3.googleusercontent.com/pw/AM-JKLU6J_r9x3GWiMF4JWoO9mM8mLhhoh80PEI3VlqGrBWNbgtywrbSxTC00Qi_QsvYxOcAwueV8lI4vXuXDq_OQod-RYPvQOJqznHYv34COk49HHaT2KWDfd9HKNI_eCqFLM1a8O4RlIzAhxQGs8Aa6U_R=w1423-h1067-no?authuser=0";
 const rim2 =
@@ -41,10 +38,8 @@ const towerBridge =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
-      headerColor="black"
       description={`Read about this popular Bryce Canyon hike, beautifully blanketed in fresh snow.`}
       ogImage={metadata.image}
     >

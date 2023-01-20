@@ -14,8 +14,6 @@ let metadata = {
 };
 
 const subText = "59.04 miles, 7471 feet gain, 3 nights";
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLUnrYK4SOh4IRzMObQAsfqs4PzyJWwDonBPASTZuaBoW8IkdUFtlqfdMKHzAVzG52Iy9pNCtMOAh8DXAZFt_b0TMuic7kOdFW8ELvvPfdmKYodbUZ5mEqA4lhnzJ2foYqI6XYPdLeYCaWDOWBKe6xsc=w800-h535-no?authuser=0";
 
 const image1 =
   "https://lh3.googleusercontent.com/pw/AM-JKLWKx3TRni8GRRX0xrD66KrssXzQ4tu62yovjc0P2lqK8Tz27P6u4mjw1WXc15Xb5BWCgQyDFQi3d1BaZZiiRClq7F8CJvVkWT-fo4jL79pOFne6KGjm4elgCeq_vYqID7lYdNmCs19SUZXoTQla8IJP=w800-h535-no?authuser=0";
@@ -40,7 +38,6 @@ const slides = [
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
       description={`Join us as we share our three night, sixty mile backpacking trip in Glacer National Park.`}

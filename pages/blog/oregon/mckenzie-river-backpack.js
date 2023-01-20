@@ -14,8 +14,6 @@ let metadata = {
 };
 
 const subText = "40.39 miles, 4458 feet gain";
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLU9p5t9XbeUfrQAx3F8NmO4__BwwBEkTutwnv7FNXlfJu71C7p1hKRIFtVqe9OjZpZMpFFcJbHtvgI8WadtTMVQleTMJCNJXvCF8Jco_Tkhi0y7qGTAJvI4iXbGOIPAp4Hehyx8TiVydrR4qEUPe9Hn=w1597-h1067-no?authuser=0";
 const jay =
   "https://lh3.googleusercontent.com/pw/AM-JKLUGTYXnDg4KvfI6y0fJq7ELc2TD6HnZwfZplWhWGbN4q4p0c3cdf9SuSqvchvuXIqGSipyp0F4EK7vrikR_TzQlGy9pMwoQDFyfh2OlCg3ael6XgDS1hgCtfVMjTZdKLwABOAH4RhgY7rJD3LHAVKQF=w1597-h1067-no?authuser=0";
 const falls =
@@ -33,7 +31,6 @@ const bigelowSprings =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
       description={`Learn about backpacking the upper McKenzie River in Oregon's central Cascades.`}

@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import Archive from "../components/post_archive";
-import _const from "../lib/const";
 import { Posts, Tags } from "../lib/metadata";
 
 export default function ArchivePage({ posts }) {
@@ -9,8 +8,8 @@ export default function ArchivePage({ posts }) {
       archive="true"
       description={`Post Archive.`}
       ogImage="/images/cover.jpeg"
-      headerImage={_const.noHeader}
       headerText="Archive"
+      noHeader
     >
       <Archive posts={posts} tags={Tags()} />
     </Layout>

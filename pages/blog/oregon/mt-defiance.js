@@ -19,8 +19,6 @@ const subText = "12 miles, 5,000 feet  gain";
 const mtDefianceTrail =
   "https://www.google.com/maps/place/Starvation+Creek+State+Park/@45.6870692,-121.6939233,17.62z/data=!4m13!1m7!3m6!1s0x5495e23b3e662c99:0xd79cd1335e924e6d!2sMt+Defiance!3b1!8m2!3d45.6484508!4d-121.7222975!3m4!1s0x54960a14f6e2eaf5:0x2b607d98939c269!8m2!3d45.6884615!4d-121.6903015";
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLU8OaHn_0zXye3TfXdKN2sE3vZpAzwsslde45V-Ef7bJpCIVVDpHzKgwKChEkiFbmqPJgv4h6VTlpTpC6lFXQJ53fWWApDib6JW5sAZzZL_uUQWXASFVwwz3_jHjF6gu5wgXgfSEXQ5Jeo1S2NzE6SG=w801-h1067-no?authuser=0";
 const img1 =
   "https://lh3.googleusercontent.com/pw/AM-JKLWvyluz0LiXosvvepyGZLKKatmuOLAFx0XLywFKP-_d7ShBWIZoIpOs7aG9c6lSecSAlbpf1BoFV20esZVk-p79UsOoNxVjLSnFL2xAKlYDCya3koHTliB1ffJVi48hbYGlaqzWvFffZQiXerDbldyc=w801-h1067-no?authuser=0";
 const img2 =
@@ -31,7 +29,6 @@ const img3 =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
       description={`A steep, snowy climb to the Columbia River Gorge's highest point.`}

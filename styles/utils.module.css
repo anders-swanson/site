@@ -26,18 +26,6 @@
   padding-top: 1px;
 }
 
-.headerDiv {
-  position: relative;
-  width: 100%;
-}
-
-.headerImage {
-  filter: brightness(70%);
-  object-fit: cover;
-  width: 100%;
-  z-index: -1;
-}
-
 .lightText {
   color: #666;
 }

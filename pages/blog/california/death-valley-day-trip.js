@@ -20,13 +20,9 @@ const mosaicCanyon =
 const mesquiteDunes =
   "https://www.google.com/maps/place/Mesquite+Flat+Sand+Dunes/@36.6151258,-117.1153331,17z/data=!3m1!4b1!4m5!3m4!1s0x80c7440000000001:0xcfa4dc5d128efa34!8m2!3d36.6151215!4d-117.1131444";
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLXeItgnO2-8UQCyUHEjGne0cFAqc-9-fqjFgF8zsjpmEEk6CkX4XbLA_q1XGzOLS9glza3nNk5HeiUr9fasN0K00ZidqtW8NFx8PYblTGQhwz8mi2xu61j-AS0POGp2_wb1LV7l5wIclcyz44XFJjA7hg=w1597-h1067-no?authuser=1";
-
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Planning to visit to Death Valley? Read our suggestions for a day trip in the hottest National Park.`}
       ogImage={metadata.image}

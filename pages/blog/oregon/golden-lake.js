@@ -15,8 +15,6 @@ let metadata = {
   disabled: true,
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLW_HzI37jGr1p_yXU3405KDSucMYgFRtoUfBnKy3cC4OOjr4RbZI7B0scl3tTyoocg3h3xPHlBCOv8CKUNR9DN9lAvRCHxYXhbwg8vL-WMEBn079vFV-hdCcE8maaTOEalg5xhjw8WWYrYxXNcOlHOvyg=w800-h535-no?authuser=0";
 const pageURI = "/blog/oregon/golden-lake";
 const trailhead =
   "https://www.google.com/maps/dir/Current+Location/44.11766,-121.62827";
@@ -24,7 +22,6 @@ const trailhead =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Day hike to a beautiful lake in the shadow of Broken Top near Sisters, Oregon.`}
       subText={`13.1 miles`}

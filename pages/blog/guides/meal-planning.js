@@ -16,14 +16,11 @@ let metadata = {
   tags: ["backpacking", "guides"],
 };
 
-const cover =
-  "https://lh3.googleusercontent.com/pw/AL9nZEV4GlBmI7D8c9857KbiMNEi_O-n-k_3AjKqdqy7T6DkYwciO4W7ovxGU7MZ3pYfN_mgYssGweSY8lQRAzhvOSQDYsOIockrLmroknOrq9E2brxnF9uTXVVWR1TGF1NsC0kFPu-6cVQjYiL6AibkZCbq=w800-h533-no?authuser=0";
 const pageURI = "/blog/guides/meal-planning";
 
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       description={`Learn how to plan tasty, filling meals for your next trip to the backcountry.`}
       ogImage={metadata.image}

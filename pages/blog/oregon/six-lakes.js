@@ -19,9 +19,6 @@ let metadata = {
 const subText = "20.87 miles, 2,218 feet gain, 1 night";
 const trailhead =
   "https://www.google.com/maps/place/Six+Lakes+Trailhead/@43.9511829,-121.7962771,14.67z/data=!4m5!3m4!1s0x54b8a971aa2baa5f:0x7aa495dccceb6d66!8m2!3d43.9531277!4d-121.8009068";
-
-const cover =
-  "https://lh3.googleusercontent.com/pw/AM-JKLX_QJhgpCS8BTGTzhifJZh5Ocan9WzyBL4A562LpohU6iHThZ1smPeY-qVkJtvc_gwoh3phQ6O3q5NJtlmk_ooII_OJsK70-IFtIxTypWy7XUZ95rKyNkYBB3MDshs5LrqRsk4MOGQUpeAOubY17xWv=w1600-h413-no?authuser=0";
 const tent =
   "https://lh3.googleusercontent.com/pw/AM-JKLWSMWDy6WI9ACHvXejKUTIIaTRPUwE63YcRvbEwsaIRqtgohEEG8vYIulpu1_JiXBRnnOXy4e65VKYuzBEX-lVG_QLInLpOkSCXJGoMbh2JlTPZxlWLdfochNYp4WQpab850axpBaU2FNP55RmeWkbu=w801-h1067-no?authuser=0";
 const i1 =
@@ -36,7 +33,6 @@ const i4 =
 export default function Post() {
   return (
     <Layout
-      headerImage={cover}
       headerText={metadata.title}
       subText={subText}
       description={`Dozens of gorgeous lakes are waiting to be found on this backpacking loop - but be wary of mosquitos`}

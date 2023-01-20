@@ -47,7 +47,7 @@ Create a new `Javascript` file in the `pages/blog/` directory, such as `pages/bl
 Add metadata to your page, at the top of the file. the `//+metadata` comment is important for the site builder to add your page's
 data to the metadata store during site compilation.
 
-```json
+```js
 //+metadata
 let metadata = {
     // Title which will appear in links and in HTML title

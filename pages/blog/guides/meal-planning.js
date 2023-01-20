@@ -3,7 +3,6 @@ import Layout from "../../../components/layout";
 import Link from "next/link";
 import links from "../../../lib/links";
 import Video from "../../../components/video";
-import RelatedPosts from "../../../components/related_posts";
 import Pinnable from "../../../components/pinit";
 import Contact from "../../../components/contact";
 
@@ -24,6 +23,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Learn how to plan tasty, filling meals for your next trip to the backcountry.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "guides",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -196,7 +199,6 @@ export default function Post() {
           <Contact />
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="guides" />
     </Layout>
   );
 }

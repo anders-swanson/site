@@ -1,6 +1,5 @@
 import HeaderText from "../../../components/header_text";
 import ImageGrid from "../../../components/image_grid";
-import RelatedPosts from "../../../components/related_posts";
 import Layout from "../../../components/layout";
 import utilStyles from "../../../styles/utils.module.css";
 
@@ -23,6 +22,10 @@ export default function Post() {
       noHeader
       description={`Our go-to backpacking gear for weekend and multi-day trips, that we've used for years and thousands of miles.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "guides",
+      }}
     >
       <HeaderText backgroundImage={backgroundImage}>
         <br />
@@ -225,7 +228,6 @@ export default function Post() {
           },
         ]}
       />
-      <RelatedPosts metadata={metadata} tag="guides" />
     </Layout>
   );
 }

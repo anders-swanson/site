@@ -2,7 +2,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Image from "next/image";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -24,6 +23,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Kick off the spring season in style with our suggestions for early-season backpacking that avoids the snow!`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "guides",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -186,7 +189,6 @@ export default function Post() {
           {` if you're interested in learning more. Happy trails!`}
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="guides" />
     </Layout>
   );
 }

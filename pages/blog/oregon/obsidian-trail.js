@@ -1,7 +1,6 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 import { CentralCascadesWildernessPermit } from "../../../lib/common";
 import Pinnable from "../../../components/pinit";
 
@@ -26,6 +25,10 @@ export default function Post() {
       description={`Hike through fields of obsidian stone with mountain views on this Central Oregon day trip.`}
       subText={`11.5 miles, 1.5k gain`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "sisters",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -115,7 +118,6 @@ export default function Post() {
           </div>
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="sisters" />
     </Layout>
   );
 }

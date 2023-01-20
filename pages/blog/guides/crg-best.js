@@ -1,7 +1,6 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Slider from "../../../components/slider";
-import RelatedPosts from "../../../components/related_posts";
 import Link from "next/link";
 
 //+metadata
@@ -46,6 +45,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Uncover three classic hikes in Oregon's scenic and beautiful Columbia River Gorge.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "columbia river gorge",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -135,7 +138,6 @@ export default function Post() {
         </div>
         <Slider slides={[tunnelfalls, punchbowl]} width={1200} height={700} />
       </div>
-      <RelatedPosts metadata={metadata} tag="columbia river gorge" />
     </Layout>
   );
 }

@@ -2,7 +2,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Image from "next/image";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -26,6 +25,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Camping for free in the western U.S. is easy with a little know-how - discover the varied ways you can camp on public land (for free!).`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "guides",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -121,7 +124,6 @@ export default function Post() {
                     back country permits are highly competitive due to their popularity.`}
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="guides" />
     </Layout>
   );
 }

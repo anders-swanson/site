@@ -1,5 +1,4 @@
 import utilStyles from "../../../styles/utils.module.css";
-import RelatedPosts from "../../related_posts";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 import Pinnable from "../../pinit";
 import Contact from "../../contact";
@@ -8,7 +7,6 @@ import BearSafetyNC from "../../snippets/bear-safety-nc";
 import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
 
 const pageURI = "/blog/washington/goat-lake";
-const relatedTag = "backpacking";
 
 //+metadata
 export const metadata = {
@@ -172,7 +170,6 @@ export default function GoatLake({ readMore }) {
           </div>
         </ReadMoreLink>
       </div>
-      <RelatedPosts metadata={metadata} tag={relatedTag} readMore={readMore} />
     </>
   );
 }

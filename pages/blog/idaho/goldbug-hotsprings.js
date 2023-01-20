@@ -4,7 +4,6 @@ import Layout from "../../../components/layout";
 import Video from "../../../components/video";
 import { ImagePathBuilder, rawData } from "../../../lib/common";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -29,6 +28,10 @@ export default function Post() {
       headerText={metadata.title}
       subText={subText}
       description={`Journey to a cascading hot spring waterfall near Idaho's Salmon River.`}
+      related={{
+        metadata: metadata,
+        tag: "backpacking",
+      }}
     >
       <div className={utilStyles.flexWrapContainer}>
         <div style={{ width: "1400px" }}>
@@ -76,7 +79,6 @@ export default function Post() {
           src={image("mountain.jpg")}
         />
       </div>
-      <RelatedPosts metadata={metadata} tag="hot springs" />
     </Layout>
   );
 }

@@ -3,7 +3,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import { CentralCascadesWildernessPermit } from "../../../lib/common";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -40,6 +39,10 @@ export default function Post() {
       subText={subText}
       description={`Lakes abound on this backpacking loop near South Sister.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "sisters",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.textBlock}>
@@ -84,7 +87,6 @@ export default function Post() {
         <Image height={450} width={600} alt="lake" src={lake} />
         <Image height={600} width={900} alt="mirror" src={mirror} />
       </div>
-      <RelatedPosts metadata={metadata} tag="sisters" />
     </Layout>
   );
 }

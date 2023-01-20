@@ -2,7 +2,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Link from "next/link";
 import Video from "../../../components/video";
-import RelatedPosts from "../../../components/related_posts";
 import Pinnable from "../../../components/pinit";
 import links from "../../../lib/links";
 import { rawData } from "../../../lib/common";
@@ -31,6 +30,10 @@ export default function Post() {
       description={`Day hike from Climber's Bivouac to the summit of the Cascade mountain range's most active volcano.`}
       subText={`9 miles, 4.7k gain`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "washington",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -165,7 +168,6 @@ export default function Post() {
           </div>
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="guides" />
     </Layout>
   );
 }

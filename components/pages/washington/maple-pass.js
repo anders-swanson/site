@@ -1,6 +1,5 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Link from "next/link";
-import RelatedPosts from "../../related_posts";
 import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import Slider from "../../slider";
@@ -181,7 +180,6 @@ export default function MaplePass({ readMore }) {
           </div>
         </ReadMoreLink>
       </div>
-      <RelatedPosts metadata={metadata} tag="guides" readMore={readMore} />
     </>
   );
 }

@@ -5,7 +5,6 @@ import { rawData } from "../../../lib/common";
 import Link from "next/link";
 import Video from "../../../components/video";
 import Slider from "../../../components/slider";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -29,6 +28,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Explore our suggestions on where to find beautiful wildflowers in the Columbia River Gorge.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "wildflowers",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -125,7 +128,6 @@ export default function Post() {
           </div>
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="columbia river gorge" />
     </Layout>
   );
 }

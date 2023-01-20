@@ -9,6 +9,10 @@ export default function Post() {
       headerText={metadata.title}
       description={metadata.preview}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "backpacking",
+      }}
     >
       <Garibaldi />
     </Layout>

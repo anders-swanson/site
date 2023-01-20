@@ -3,7 +3,6 @@ import Layout from "../../../components/layout";
 import { ImagePathBuilder } from "../../../lib/common";
 import Link from "next/link";
 import Image from "next/image";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -25,6 +24,10 @@ export default function Post() {
       subText="1 night camping"
       description={`Learn about a secluded desert hot spring where you can camp and soak for free.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "steens",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.textBlock}>
@@ -66,7 +69,6 @@ export default function Post() {
         />
         <Image alt="sunset" height={600} width={900} src={image("cover.jpg")} />
       </div>
-      <RelatedPosts metadata={metadata} tag="steens" />
     </Layout>
   );
 }

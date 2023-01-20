@@ -2,7 +2,6 @@ import FeaturedPost from "../components/featuredpost";
 import AffiliateDisclosure from "../components/affiliate_disclosure";
 import Layout from "../components/layout";
 import LinkButton from "../components/linkbutton";
-import RelatedPosts from "../components/related_posts";
 import { Posts } from "../lib/metadata";
 import utilStyles from "../styles/utils.module.css";
 import { SocialIcon } from "react-social-icons";
@@ -21,7 +20,15 @@ const marginStyle = {
 export default function Links({ title, showSocial }) {
   const featuredPost = Posts()[0];
   return (
-    <Layout headerText={title} noHeader>
+    <Layout
+      headerText={title}
+      noHeader
+      related={{
+        text: "Recommended Posts",
+        metadata: { title: "" },
+        tag: "guides",
+      }}
+    >
       <div
         className={`${utilStyles.coverContainer}`}
         style={{
@@ -97,13 +104,6 @@ export default function Links({ title, showSocial }) {
           )}
         </div>
         <br />
-      </div>
-      <div style={marginStyle}>
-        <RelatedPosts
-          text="Recommended Posts"
-          metadata={{ title: "" }}
-          tag="guides"
-        />
       </div>
       <AffiliateDisclosure />
     </Layout>

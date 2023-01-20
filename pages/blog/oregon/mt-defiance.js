@@ -4,7 +4,6 @@ import Layout from "../../../components/layout";
 import { rawData } from "../../../lib/common";
 import Link from "next/link";
 import Video from "../../../components/video";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -33,6 +32,10 @@ export default function Post() {
       subText={subText}
       description={`A steep, snowy climb to the Columbia River Gorge's highest point.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "columbia river gorge",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -72,7 +75,6 @@ export default function Post() {
         <Image alt="2" height="400px" width="300px" src={img2} />
         <Image alt="3" height="400px" width="300px" src={img3} />
       </div>
-      <RelatedPosts metadata={metadata} tag="columbia river gorge" />
     </Layout>
   );
 }

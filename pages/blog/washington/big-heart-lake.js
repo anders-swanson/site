@@ -1,6 +1,5 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
-import RelatedPosts from "../../../components/related_posts";
 import Pinnable from "../../../components/pinit";
 import Link from "next/link";
 
@@ -23,6 +22,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Camp at gorgeous mountain lakes in Washington's Alpine Lakes Wilderness.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "backpacking",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -125,7 +128,6 @@ export default function Post() {
                     fingerling trout from Copper, Malachite, and Big Heart Lakes. Angeline Lake is reported to have fish as well, but the descent looks painfully steep.`}
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="backpacking" />
     </Layout>
   );
 }

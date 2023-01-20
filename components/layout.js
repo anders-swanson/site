@@ -9,6 +9,7 @@ import { CapitalizeWords } from "../lib/common";
 import Script from "next/script";
 import config from "../lib/config";
 import { Posts } from "../lib/metadata";
+import RelatedPosts from "./related_posts";
 
 export const title = `Trails and Trekking`;
 const name = title;
@@ -40,6 +41,7 @@ export default function Layout({
   description,
   idx,
   perPage,
+  related,
 }) {
   let txt = headerText ? headerText : name;
   let stxt = subText ? subText : "";
@@ -139,14 +141,20 @@ export default function Layout({
 
         <main>{children}</main>
         {allPostsData && (
-          <>
-            <PostBox
-              posts={allPostsData}
-              heading={postsHeading}
-              idx={idx}
-              perPage={perPage}
-            />
-          </>
+          <PostBox
+            posts={allPostsData}
+            heading={postsHeading}
+            idx={idx}
+            perPage={perPage}
+          />
+        )}
+        {related && (
+          <RelatedPosts
+            metadata={related.metadata}
+            tag={related.tag}
+            text={related.text}
+            readMore={related.readMore}
+          />
         )}
         {!home && (
           <div className={styles.backToHome}>

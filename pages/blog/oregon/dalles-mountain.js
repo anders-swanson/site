@@ -3,7 +3,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Slider from "../../../components/slider";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -40,6 +39,10 @@ export default function Post() {
       subText={subText}
       description={`Uncover a wildflower hiking loop in the eastern Columbia River Gorge.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "wildflowers",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.textBlock}>
@@ -81,7 +84,6 @@ export default function Post() {
       </div>
       <hr />
       <Slider height={800} width={1200} slides={sliderImages} />
-      <RelatedPosts metadata={metadata} tag="columbia river gorge" />
     </Layout>
   );
 }

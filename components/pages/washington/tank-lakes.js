@@ -1,5 +1,4 @@
 import utilStyles from "../../../styles/utils.module.css";
-import RelatedPosts from "../../related_posts";
 import Pinnable from "../../pinit";
 import Link from "next/link";
 import MapEmbed from "../../maps";
@@ -206,7 +205,6 @@ export default function TankLakes({ readMore }) {
           <Contact />
         </ReadMoreLink>
       </div>
-      <RelatedPosts metadata={metadata} tag="backpacking" readMore={readMore} />
     </>
   );
 }

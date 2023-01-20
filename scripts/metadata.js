@@ -99,6 +99,9 @@ function getMetdata(file, id) {
   if (!metadata["preview"]) {
     metadata["preview"] = loadPreview(data);
   }
+  if (wholeMetadata["disabled"]) {
+    metadata["disabled"] = true;
+  }
   return metadata;
 }
 

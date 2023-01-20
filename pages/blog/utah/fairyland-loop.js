@@ -3,7 +3,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Slider from "../../../components/slider";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -42,6 +41,10 @@ export default function Post() {
       subText={subText}
       description={`Read about this popular Bryce Canyon hike, beautifully blanketed in fresh snow.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "national park",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.textBlock}>
@@ -75,7 +78,6 @@ export default function Post() {
           slides={[twinBridges, snowHoodoo, towerBridge]}
         />
       </div>
-      <RelatedPosts metadata={metadata} tag="national park" />
     </Layout>
   );
 }

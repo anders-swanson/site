@@ -2,7 +2,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Link from "next/link";
 import Video from "../../../components/video";
-import RelatedPosts from "../../../components/related_posts";
 import Pinnable from "../../../components/pinit";
 
 //+metadata
@@ -23,6 +22,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Backpacking meals don't have to be bland or leave you hungry - We've combined our favorite trail meals in this post!`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "guides",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -240,7 +243,6 @@ export default function Post() {
         <br />
         <br />
       </div>
-      <RelatedPosts metadata={metadata} tag="guides" />
     </Layout>
   );
 }

@@ -1,5 +1,4 @@
 import utilStyles from "../../../styles/utils.module.css";
-import RelatedPosts from "../../related_posts";
 import Pinnable from "../../pinit";
 import Link from "next/link";
 import links from "../../../lib/links";
@@ -276,7 +275,6 @@ export default function TimberlineTrail({ readMore }) {
           </div>
         </ReadMoreLink>
       </div>
-      <RelatedPosts metadata={metadata} tag="backpacking" readMore={readMore} />
     </>
   );
 }

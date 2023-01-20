@@ -3,7 +3,6 @@ import Layout from "../../../components/layout";
 import Link from "next/link";
 import Image from "next/image";
 import Video from "../../../components/video";
-import RelatedPosts from "../../../components/related_posts";
 import { rawData } from "../../../lib/common";
 
 //+metadata
@@ -30,6 +29,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Find four beautiful and accessible waterfall hikes in the Columbia River Gorge.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "columbia river gorge",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <h1 id="horsetail-falls">Horsetail, Ponytail, and Triple Falls</h1>
@@ -148,7 +151,6 @@ export default function Post() {
                     favorite (and most picturesque) gorge hike, Eagle Creek to Tunnel Falls.`}
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="columbia river gorge" />
     </Layout>
   );
 }

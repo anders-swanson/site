@@ -2,7 +2,6 @@ import Image from "next/image";
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -34,6 +33,10 @@ export default function Post() {
       subText={subText}
       description={`Explore dramatic yellow-gold canyons under the scorching sun of Death Valley.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "national park",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.textBlock}>
@@ -72,7 +75,6 @@ export default function Post() {
           <Image height={550} width={800} alt="5" src={image5} />
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="national park" />
     </Layout>
   );
 }

@@ -50,16 +50,16 @@ data to the metadata store during site compilation.
 ```js
 //+metadata
 let metadata = {
-    // Title which will appear in links and in HTML title
-    "title": "my new page",
-    // Page publish date, in 'YYYY-MM-DD' format
-    "date": "2023-01-07",
-    // Path or URI to cover image
-    "image": "/images/profile.jpg",
-    // List of tags. Tags are used for sorting/filtering/searching.
-    "tags": ["camping"],
-    "preview": "This preview will show up in links and post references",
-}
+  // Title which will appear in links and in HTML title
+  title: "my new page",
+  // Page publish date, in 'YYYY-MM-DD' format
+  date: "2023-01-07",
+  // Path or URI to cover image
+  image: "/images/profile.jpg",
+  // List of tags. Tags are used for sorting/filtering/searching.
+  tags: ["camping"],
+  preview: "This preview will show up in links and post references",
+};
 ```
 
 #### 3.

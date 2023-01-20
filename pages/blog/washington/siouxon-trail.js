@@ -4,7 +4,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Slider from "../../../components/slider";
 import { rawData } from "../../../lib/common";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -37,6 +36,10 @@ export default function Post() {
       subText={subText}
       description={`Chance upon rushing waterfalls as they swell with seasonal rain on this Washington hiking trail.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "waterfall",
+      }}
     >
       <div className={utilStyles.flexWrapContainer}>
         <div className={utilStyles.textBlock}>
@@ -82,7 +85,6 @@ export default function Post() {
         <Image height={400} width={400} alt="falls" src={falls2} />
         <Image height={400} width={400} alt="lobster" src={lobster} />
       </div>
-      <RelatedPosts metadata={metadata} tag="waterfall" />
     </Layout>
   );
 }

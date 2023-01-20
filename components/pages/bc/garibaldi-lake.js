@@ -1,6 +1,5 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Link from "next/link";
-import RelatedPosts from "../../related_posts";
 import links from "../../../lib/links";
 import Pinnable from "../../pinit";
 import Contact from "../../contact";
@@ -9,7 +8,6 @@ import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 
 const pageURI = "/blog/bc/garibaldi-lake";
-const relatedTag = "backpacking";
 
 const garibaldiLakeTrailhead =
   "https://www.google.com/maps/dir/Rubble+Creek+Trailhead,+0A0+Daisy+Lake+Rd,+Whistler,+BC+V0N+1H0,+Canada/@49.9573116,-123.1552543,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x54871c632191eab1:0x59a0a0082e018b3f!2m2!1d-123.120235!2d49.9572617?hl=en";
@@ -319,7 +317,6 @@ export default function Garibaldi({ readMore }) {
           <Contact />
         </ReadMoreLink>
       </div>
-      <RelatedPosts metadata={metadata} tag={relatedTag} readMore={readMore} />
     </>
   );
 }

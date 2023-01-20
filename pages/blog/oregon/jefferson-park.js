@@ -1,6 +1,5 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
-import RelatedPosts from "../../../components/related_posts";
 import Pinnable from "../../../components/pinit";
 
 //+metadata
@@ -20,6 +19,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Alpine lake camping on the flank of Mt. Jefferson, with a bonus cave to explore.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "backpacking",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -106,7 +109,6 @@ export default function Post() {
           </div>
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="backpacking" />
     </Layout>
   );
 }

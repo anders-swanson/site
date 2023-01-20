@@ -2,7 +2,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Image from "next/image";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 import { CentralCascadesWildernessPermit } from "../../../lib/common";
 
 //+metadata
@@ -25,6 +24,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Read about our favorite and most beautiful hikes in Central Oregon as inspiration for your next trip!`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "sisters",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -201,7 +204,6 @@ export default function Post() {
         </div>
         {`Look below for more Central Oregon hiking ideas - Happy Trails!`}
       </div>
-      <RelatedPosts metadata={metadata} tag="sisters" />
     </Layout>
   );
 }

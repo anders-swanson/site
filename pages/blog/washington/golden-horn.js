@@ -9,6 +9,10 @@ export default function Post() {
       description={metadata.preview}
       subText={metadata.subText}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "backpacking",
+      }}
     >
       <SnowyLakes />
     </Layout>

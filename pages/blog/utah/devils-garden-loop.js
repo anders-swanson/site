@@ -1,7 +1,6 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 import Pinnable from "../../../components/pinit";
 
 //+metadata
@@ -23,6 +22,10 @@ export default function Post() {
       description={`Scramble up sandstone trails on this challenging loop in Arches National Park, Utah.`}
       subText={`9.5 miles, 1,300 feet of gain.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "national park",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -121,7 +124,6 @@ export default function Post() {
           </div>
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="national park" />
     </Layout>
   );
 }

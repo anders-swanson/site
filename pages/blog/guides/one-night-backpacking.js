@@ -3,7 +3,6 @@ import Layout from "../../../components/layout";
 import { CentralCascadesWildernessPermit } from "../../../lib/common";
 import Image from "next/image";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -34,6 +33,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Explore trip ideas for 1-night beginner backpackers near Portland, Oregon.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "guides",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -228,7 +231,6 @@ export default function Post() {
           <br />
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="guides" />
     </Layout>
   );
 }

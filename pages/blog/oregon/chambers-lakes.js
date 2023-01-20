@@ -4,7 +4,6 @@ import Layout from "../../../components/layout";
 import Slider from "../../../components/slider";
 import { ImagePathBuilder } from "../../../lib/common";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -27,6 +26,10 @@ export default function Post() {
       subText={subText}
       description={`Read about a gorgeous alpine lake basin - and my favorite hike in the Three Sisters Wilderness.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "sisters",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.textBlock}>
@@ -100,7 +103,6 @@ export default function Post() {
         width={1200}
         src={image("camp-lake-2.jpg")}
       />
-      <RelatedPosts metadata={metadata} tag="sisters" />
     </Layout>
   );
 }

@@ -1,7 +1,6 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 import Pinnable from "../../../components/pinit";
 import { CentralCascadesWildernessPermit } from "../../../lib/common";
 
@@ -26,6 +25,10 @@ export default function Post() {
       description={`Day hike to a beautiful lake in the shadow of Broken Top near Sisters, Oregon.`}
       subText={`13.1 miles`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "sisters",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -138,7 +141,6 @@ export default function Post() {
           <br />
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="oregon" />
     </Layout>
   );
 }

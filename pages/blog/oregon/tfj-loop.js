@@ -3,7 +3,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import { ImagePathBuilder } from "../../../lib/common";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -25,6 +24,10 @@ export default function Post() {
       subText={subText}
       description={`Share our pain on this grueling 35+ mile backpacking loop that we hiked in the intense heat of summer.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "lakes",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -105,7 +108,6 @@ export default function Post() {
           src={image("lauren-meadow-2.jpg")}
         />
       </div>
-      <RelatedPosts metadata={metadata} tag="lakes" />
     </Layout>
   );
 }

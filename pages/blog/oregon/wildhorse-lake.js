@@ -2,7 +2,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Link from "next/link";
 import Image from "next/image";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -24,6 +23,10 @@ export default function Post() {
       subText="3 miles out and back"
       description={`Discover an alpine lake hours from civilization in Oregon's remote high desert.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "steens",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -87,7 +90,6 @@ export default function Post() {
           src="https://lh3.googleusercontent.com/pw/AM-JKLVitSGVlYhZE8z-eH4aaU3Pt2I-co10hx4eSPlebffxdWAK8lopCbB-845u7oAqSsC_45HHWI83cT7ERHoZj2QsVnAMs7c2O-n86Gf0pHbgnLqIAR_8ws83Txx95Zd3yR-pzui_k2JXbXUpdGnT6_rO=w1334-h750-no?authuser=0"
         />
       </div>
-      <RelatedPosts metadata={metadata} tag="steens" />
     </Layout>
   );
 }

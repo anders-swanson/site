@@ -1,7 +1,6 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 import Pinnable from "../../../components/pinit";
 
 //+metadata
@@ -27,6 +26,10 @@ export default function Post() {
       description={`Discover stunning vistas while hiking the Waterpocket Fold in Utah's Capitol Reef National Park.`}
       subText={`9 miles, extend to 16+`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "national park",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -122,7 +125,6 @@ export default function Post() {
           </div>
         </div>
       </div>
-      <RelatedPosts metadata={metadata} tag="national park" />
     </Layout>
   );
 }

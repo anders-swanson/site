@@ -4,7 +4,6 @@ import Layout from "../../../components/layout";
 import { rawData } from "../../../lib/common";
 import Link from "next/link";
 import Video from "../../../components/video";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -37,6 +36,10 @@ export default function Post() {
       subText={subText}
       description={`Dozens of gorgeous lakes are waiting to be found on this backpacking loop - but be wary of mosquitos`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "sisters",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.textBlock}>
@@ -77,7 +80,6 @@ export default function Post() {
         <Image height={450} width={300} alt="wilderness" src={i3} />
         <Image height={600} width={900} alt="lake" src={i4} />
       </div>
-      <RelatedPosts metadata={metadata} tag="sisters" />
     </Layout>
   );
 }

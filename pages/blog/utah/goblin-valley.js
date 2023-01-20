@@ -3,7 +3,6 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Slider from "../../../components/slider";
 import Link from "next/link";
-import RelatedPosts from "../../../components/related_posts";
 
 //+metadata
 let metadata = {
@@ -39,6 +38,10 @@ export default function Post() {
       subText={subText}
       description={`Exploring the unique rock formations in Goblin Valley makes you feel like you're on another planet.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "national park",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div className={utilStyles.textBlock}>
@@ -85,7 +88,6 @@ export default function Post() {
         <Image alt="goblin in its lair" height={600} width={450} src={lair} />
         <Image alt="goblin nose" height={600} width={450} src={gob4} />
       </div>
-      <RelatedPosts metadata={metadata} tag="national park" />
     </Layout>
   );
 }

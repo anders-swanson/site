@@ -1,6 +1,5 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
-import RelatedPosts from "../../../components/related_posts";
 import TankLakes from "../../../components/pages/washington/tank-lakes";
 import TimberlineTrail from "../../../components/pages/oregon/timberline-trail";
 import GoatLake from "../../../components/pages/washington/goat-lake";
@@ -24,6 +23,10 @@ export default function Post() {
       headerText={metadata.title}
       description={`Plan your next outdoor adventure with our top 5 must-see backpacking trips of 2022.`}
       ogImage={metadata.image}
+      related={{
+        metadata: metadata,
+        tag: "guides",
+      }}
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
@@ -45,7 +48,6 @@ export default function Post() {
       <br />
       <WTPBackpacking readMore={true} />
       <Contact />
-      <RelatedPosts metadata={metadata} tag="guides" />
     </Layout>
   );
 }

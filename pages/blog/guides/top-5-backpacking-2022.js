@@ -5,7 +5,6 @@ import TimberlineTrail from "../../../components/pages/oregon/timberline-trail";
 import GoatLake from "../../../components/pages/washington/goat-lake";
 import SnowyLakes from "../../../components/pages/washington/golden-horn";
 import Garibaldi from "../../../components/pages/bc/garibaldi-lake";
-import WTPBackpacking from "../../../components/snippets/what-to-pack-backpacking";
 import Contact from "../../../components/contact";
 
 //+metadata
@@ -46,9 +45,6 @@ export default function Post() {
       <br />
       <GoatLake readMore={true} />
       <br />
-      <div>
-        <WTPBackpacking uri="/blog/guides/top-5-backpacking-2022" />
-      </div>
       <Contact />
     </Layout>
   );

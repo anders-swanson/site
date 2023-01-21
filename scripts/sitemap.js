@@ -12,6 +12,7 @@ module.exports.txt = function (pagesDirectory, domain) {
         recurseMetadata(filePath, relDir + "/" + fileName);
       } else if (
         fileName.endsWith(".js") &&
+        !fileName.startsWith("example.js") &&
         !fileName.startsWith("_") &&
         !fileName.startsWith("[")
       ) {

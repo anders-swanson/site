@@ -4,9 +4,9 @@ import Layout from "../components/layout";
 import LinkButton from "../components/linkbutton";
 import { Posts } from "../lib/metadata";
 import utilStyles from "../styles/utils.module.css";
-import { SocialIcon } from "react-social-icons";
 import config from "../lib/config";
 import { backgroundImageStyle } from "../lib/common";
+import Socials from "./socials";
 
 const backgroundImage =
   "https://lh3.googleusercontent.com/pw/AL9nZEVYk7S03VbTbPmMXNWg61YYuZ_hQdE75O5_Cj2yRHu6t5KKuCLnkgW3PWGxz0nlH8jwzA4bUHFzFBNiDDKFAxbVHkm81yS19htj9X4FYVrhofToP2MZbjGPcschCRiytpfcARvEsV4rPvintQ7d4SK8=w600-h900-no?authuser=0";
@@ -97,9 +97,7 @@ export default function Links({ title, showSocial }) {
               className={utilStyles.centeredRow}
               style={{ marginBottom: "25px" }}
             >
-              <SocialIcon url={config.social.instagram} />
-              <SocialIcon url={config.social.tiktok} />
-              <SocialIcon url={config.social.pinterest} />
+              <Socials instagram={config.social.instagram} tiktok={config.social.tiktok} pinterest={config.social.pinterest}/>
             </div>
           )}
         </div>

@@ -4,8 +4,6 @@ import Layout from "../components/layout";
 import LinkButton from "../components/linkbutton";
 import { Posts } from "../lib/metadata";
 import utilStyles from "../styles/utils.module.css";
-import { SocialIcon } from "react-social-icons";
-import config from "../lib/config";
 import { backgroundImageStyle } from "../lib/common";
 
 const backgroundImage =
@@ -96,9 +94,7 @@ export default function Links({ title, showSocial }) {
             <div
               className={utilStyles.centeredRow}
               style={{ marginBottom: "25px" }}
-            >
-              
-            </div>
+            ></div>
           )}
         </div>
         <br />

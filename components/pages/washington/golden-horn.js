@@ -182,7 +182,7 @@ export default function SnowyLakes({ readMore }) {
               height={533}
             />
           </div>
-          <WTPBackpacking />
+          <WTPBackpacking uri={pageURI} />
           <div>
             {`In addition to your regular backpacking gear, I strongly recommend bringing the following extra items on your trip to Snowy Lakes:`}
             <ul>

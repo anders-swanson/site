@@ -201,7 +201,7 @@ export default function TankLakes({ readMore }) {
             <br />
             {`The Alpine Lakes Wilderness is home to black bears, so please remember to pack bear-resistant containers, and store all food and scented items securely.`}
           </div>
-          <WTPBackpacking />
+          <WTPBackpacking uri={pageURI}/>
           <Contact />
         </ReadMoreLink>
       </div>

@@ -313,7 +313,7 @@ export default function Garibaldi({ readMore }) {
               />
             </div>
           </div>
-          <WTPBackpacking pageURI={pageURI} />
+          <WTPBackpacking uri={pageURI} />
           <Contact />
         </ReadMoreLink>
       </div>

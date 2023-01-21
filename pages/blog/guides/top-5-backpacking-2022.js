@@ -46,7 +46,7 @@ export default function Post() {
       <br />
       <GoatLake readMore={true} />
       <br />
-      <WTPBackpacking readMore={true} />
+      <WTPBackpacking uri='/blog/guides/top-5-backpacking-2022'/>
       <Contact />
     </Layout>
   );

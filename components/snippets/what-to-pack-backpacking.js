@@ -4,7 +4,7 @@ import utilStyles from "../../styles/utils.module.css";
 import Pinnable from "../pinit";
 
 export default function WTPBackpacking({ uri }) {
-  uri = uri ? uri : "/"
+  uri = uri ? uri : "/";
   return (
     <>
       <h1 className={utilStyles.justifyCenter} id="what-to-pack">

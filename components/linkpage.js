@@ -97,7 +97,11 @@ export default function Links({ title, showSocial }) {
               className={utilStyles.centeredRow}
               style={{ marginBottom: "25px" }}
             >
-              <Socials instagram={config.social.instagram} tiktok={config.social.tiktok} pinterest={config.social.pinterest}/>
+              <Socials
+                instagram={config.social.instagram}
+                tiktok={config.social.tiktok}
+                pinterest={config.social.pinterest}
+              />
             </div>
           )}
         </div>

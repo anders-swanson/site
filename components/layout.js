@@ -10,6 +10,7 @@ import Script from "next/script";
 import config from "../lib/config";
 import { Posts } from "../lib/metadata";
 import RelatedPosts from "./related_posts";
+import PrevNextPost from "./prev_next_post";
 
 export const title = `Trails and Trekking`;
 const name = title;
@@ -148,6 +149,7 @@ export default function Layout({
             perPage={perPage}
           />
         )}
+        {related && <PrevNextPost date={related.metadata.date} />}
         {related && (
           <RelatedPosts
             metadata={related.metadata}

@@ -165,8 +165,10 @@ module.exports.txt = function (dirs) {
   let pages = this.getPageParams(sortedMetadata.length);
 
   return `
+const posts = ${JSON.stringify(sortedMetadata)}
+
 export function Posts() {
-    return ${JSON.stringify(sortedMetadata)}
+    return posts
 }
 
 export function Tags() {

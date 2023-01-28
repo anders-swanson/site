@@ -2,7 +2,7 @@ import styles from "./slider.module.css";
 import { useState } from "react";
 import Image from "next/image";
 import Video from "./video";
-import ReactTouchEvents from "react-touch-events";
+import ReactTouchEvents from "./touch_event";
 
 export default function Slider({ slides, width, height }) {
   const imgWidth = width ? width : "500px";

@@ -22,18 +22,17 @@
 // SOFTWARE.
 
 import { Component, Children, createElement, cloneElement } from "react";
-import { node, number, func } from 'prop-types';
-
+import { node, number, func } from "prop-types";
 
 function touchX(event) {
-  if(event.type.indexOf('mouse') !== -1){
+  if (event.type.indexOf("mouse") !== -1) {
     return event.clientX;
   }
   return event.touches[0].clientX;
 }
 
 function touchY(event) {
-  if(event.type.indexOf('mouse') !== -1){
+  if (event.type.indexOf("mouse") !== -1) {
     return event.clientY;
   }
   return event.touches[0].clientY;
@@ -56,17 +55,21 @@ class ReactTouchEvents extends Component {
 
   setElRef = (element) => {
     this.el = element;
-  }
+  };
 
   touchStartEvent = (event) => {
-    const isTouchEvent = event.type.indexOf('touch') >= 0;
-    const isMouseEvent = event.type.indexOf('mouse') >= 0;
+    const isTouchEvent = event.type.indexOf("touch") >= 0;
+    const isMouseEvent = event.type.indexOf("mouse") >= 0;
 
     if (isTouchEvent) {
       this.lastTouchStartTime = event.timeStamp;
     }
 
-    if (isMouseEvent && this.lastTouchStartTime && event.timeStamp - this.lastTouchStartTime < 350) {
+    if (
+      isMouseEvent &&
+      this.lastTouchStartTime &&
+      event.timeStamp - this.lastTouchStartTime < 350
+    ) {
       return;
     }
 
@@ -85,7 +88,7 @@ class ReactTouchEvents extends Component {
     this.currentX = this.currentY = 0;
 
     this.touchStartTime = event.timeStamp;
-  }
+  };
 
   touchMoveEvent = (event) => {
     this.currentX = touchX(event);
@@ -94,27 +97,28 @@ class ReactTouchEvents extends Component {
     if (!this.touchMoved) {
       var tapTolerance = this.props.tapTolerance;
 
-      this.touchMoved = Math.abs(this.startX - this.currentX) > tapTolerance ||
-          Math.abs(this.startY - this.currentY) > tapTolerance;
-
+      this.touchMoved =
+        Math.abs(this.startX - this.currentX) > tapTolerance ||
+        Math.abs(this.startY - this.currentY) > tapTolerance;
     } else if (!this.swipeOutBounded) {
       var swipeOutBounded = this.props.swipeTolerance;
 
-      this.swipeOutBounded = Math.abs(this.startX - this.currentX) > swipeOutBounded &&
-          Math.abs(this.startY - this.currentY) > swipeOutBounded;
+      this.swipeOutBounded =
+        Math.abs(this.startX - this.currentX) > swipeOutBounded &&
+        Math.abs(this.startY - this.currentY) > swipeOutBounded;
     }
-  }
+  };
 
   touchCancelEvent = () => {
     this.removeTouchClass();
 
     this.touchStarted = this.touchMoved = false;
     this.startX = this.startY = 0;
-  }
+  };
 
   touchEndEvent = (event) => {
-    const isTouchEvent = event.type.indexOf('touch') >= 0;
-    const isMouseEvent = event.type.indexOf('mouse') >= 0;
+    const isTouchEvent = event.type.indexOf("touch") >= 0;
+    const isMouseEvent = event.type.indexOf("mouse") >= 0;
 
     if (isTouchEvent) {
       this.lastTouchEndTime = event.timeStamp;
@@ -124,64 +128,72 @@ class ReactTouchEvents extends Component {
 
     this.removeTouchClass();
 
-    if (isMouseEvent && this.lastTouchEndTime && event.timeStamp - this.lastTouchEndTime < 350) {
+    if (
+      isMouseEvent &&
+      this.lastTouchEndTime &&
+      event.timeStamp - this.lastTouchEndTime < 350
+    ) {
       return;
     }
 
     if (!this.touchMoved) {
-      this.triggerEvent(event, 'tap')
-
+      this.triggerEvent(event, "tap");
     } else if (!this.swipeOutBounded) {
       const swipeOutBounded = this.props.swipeTolerance;
       let direction;
 
       if (Math.abs(this.startX - this.currentX) < swipeOutBounded) {
-        direction = this.startY > this.currentY ? 'top' : 'bottom';
-
+        direction = this.startY > this.currentY ? "top" : "bottom";
       } else {
-        direction = this.startX > this.currentX ? 'left' : 'right';
+        direction = this.startX > this.currentX ? "left" : "right";
       }
 
-      this.triggerEvent(event, 'swipe', direction)
+      this.triggerEvent(event, "swipe", direction);
     }
-  }
+  };
 
   mouseEnterEvent = () => {
-    this.addTouchClass()
-  }
+    this.addTouchClass();
+  };
 
   mouseLeaveEvent = () => {
-    this.removeTouchClass()
-  }
+    this.removeTouchClass();
+  };
 
   triggerEvent = (event, eventType, param) => {
     switch (eventType) {
-      case 'tap':
-        this.props.onTap && typeof this.props.onTap === 'function' && this.props.onTap(event);
+      case "tap":
+        this.props.onTap &&
+          typeof this.props.onTap === "function" &&
+          this.props.onTap(event);
         break;
 
-      case 'swipe':
-        this.props.onSwipe && typeof this.props.onSwipe === 'function' && this.props.onSwipe(event, param);
+      case "swipe":
+        this.props.onSwipe &&
+          typeof this.props.onSwipe === "function" &&
+          this.props.onSwipe(event, param);
     }
-  }
+  };
 
   addTouchClass = () => {
     if (this.el) {
       const className = this.props.touchClass;
       className && this.el.classList.add(className);
     }
-  }
+  };
 
   removeTouchClass = () => {
     if (this.el) {
       const className = this.props.touchClass;
       className && this.el.classList.remove(className);
     }
-  }
+  };
 
   render() {
     const children = this.props.children;
-    const element = children ? Children.only(children) : createElement("button", null);
+    const element = children
+      ? Children.only(children)
+      : createElement("button", null);
 
     const props = {
       ref: this.setElRef,
@@ -190,7 +202,7 @@ class ReactTouchEvents extends Component {
       onTouchMove: this.touchMoveEvent,
       onTouchCancel: this.touchCancelEvent,
       onTouchEnd: this.touchEndEvent,
-    }
+    };
 
     if (!this.props.disableClick) {
       props.onMouseDown = this.touchStartEvent;
@@ -208,7 +220,7 @@ ReactTouchEvents.defaultProps = {
   disableClick: false,
   tapTolerance: 10,
   swipeTolerance: 30,
-  touchClass: '',
+  touchClass: "",
 };
 
 ReactTouchEvents.propTypes = {
@@ -218,6 +230,5 @@ ReactTouchEvents.propTypes = {
   onTap: func,
   onSwipe: func,
 };
-
 
 export default ReactTouchEvents;

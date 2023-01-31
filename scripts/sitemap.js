@@ -11,6 +11,8 @@ module.exports.txt = function (pagesDirectory, domain) {
       if (fs.statSync(filePath).isDirectory()) {
         recurseMetadata(filePath, relDir + "/" + fileName);
       } else if (isSiteFile(fileName)) {
+        let stats = fs.statSync(filePath);
+        let lastmod = stats.mtime.toISOString().split("T")[0];
         const id =
           relDir + "/" + fileName.replace(/\.js$/, "").replace(/\.tsx$/, "");
         metadata =
@@ -18,6 +20,7 @@ module.exports.txt = function (pagesDirectory, domain) {
           `
   <url>
     <loc>${domain}${id}</loc>
+    <lastmod>${lastmod}</lastmod>
   </url>`;
       } else {
         return;
@@ -34,7 +37,7 @@ module.exports.txt = function (pagesDirectory, domain) {
 };
 
 const allowedExtensions = [".js", "jsx", ".ts", ".tsx"];
-const blockedFiles = ["example.js", "_", "["];
+const blockedFiles = ["example.js", "_", "[", "search.js"];
 
 function isSiteFile(fileName) {
   for (let i = 0; i < blockedFiles.length; ++i) {

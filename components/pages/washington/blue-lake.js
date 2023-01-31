@@ -107,7 +107,8 @@ export default function BlueLake({ readMore }) {
             <br />
             <br />
             {`Return back down the same path, taking in the autumn colors one last time before reaching the trailhead.`}
-            <br/><br/>
+            <br />
+            <br />
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}

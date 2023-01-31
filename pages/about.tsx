@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import Contact from "../components/contact";
 import Image from "next/image";
 import RelatedPosts from "../components/related_posts";
+import React from "react";
 
 export default function Post() {
   return (

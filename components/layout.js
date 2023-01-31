@@ -13,7 +13,6 @@ import RelatedPosts from "./related_posts";
 import PrevNextPost from "./prev_next_post";
 
 export const title = `Trails and Trekking`;
-const name = title;
 const defaultHeaderImage = "/cover.jpeg";
 const maxScroll = 5;
 
@@ -32,20 +31,18 @@ export function PostHeader({ txt, stxt }) {
 
 export default function Layout({
   children,
-  home,
-  allPostsData,
-  postsHeading,
-  ogImage,
-  headerText,
-  noHeader,
-  subText,
-  description,
-  idx,
-  perPage,
-  related,
+  home = false,
+  allPostsData = null,
+  postsHeading = "",
+  ogImage = "",
+  headerText = title,
+  noHeader = false,
+  subText = "",
+  description = title,
+  idx = 0,
+  perPage = 4,
+  related = null,
 }) {
-  let txt = headerText ? headerText : name;
-  let stxt = subText ? subText : "";
   // State for the search box
   const [search, setSearch] = useState("");
   // State for the scroll effect
@@ -71,8 +68,6 @@ export default function Layout({
       window.removeEventListener("scroll", onScroll);
     };
   });
-
-  const descriptionText = description ? description : title;
 
   return (
     <>
@@ -118,11 +113,11 @@ export default function Layout({
           name="og:image"
           content={ogImage ? ogImage : defaultHeaderImage}
         />
-        <meta name="og:description" content={descriptionText} />
+        <meta name="og:description" content={description} />
         <meta name="og:site_name" content={title} />
-        <meta name="description" content={descriptionText} />
-        <meta name="twitter:card" content={descriptionText} />
-        <meta name="twitter:description" content={descriptionText} />
+        <meta name="description" content={description} />
+        <meta name="twitter:card" content={description} />
+        <meta name="twitter:description" content={description} />
         <meta name="keywords" content="hiking, backpacking, oregon" />
       </Head>
       <div className={styles.headerBar}>
@@ -138,7 +133,7 @@ export default function Layout({
       <br />
       <br />
       <div className={styles.container}>
-        {!home && !noHeader && <PostHeader txt={txt} stxt={stxt} />}
+        {!home && !noHeader && <PostHeader txt={headerText} stxt={subText} />}
 
         <main>{children}</main>
         {allPostsData && (

@@ -17,7 +17,7 @@ const marginStyle = {
   borderRadius: "0px",
 };
 
-export default function Links({ title, showSocial }) {
+export default function Links({ title, showSocial = false }) {
   const featuredPost = Posts()[0];
   return (
     <Layout

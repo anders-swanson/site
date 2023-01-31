@@ -1,3 +1,4 @@
+import React from "react";
 import Layout from "../components/layout";
 import Archive from "../components/post_archive";
 import { Posts, Tags } from "../lib/metadata";
@@ -5,7 +6,6 @@ import { Posts, Tags } from "../lib/metadata";
 export default function ArchivePage({ posts }) {
   return (
     <Layout
-      archive="true"
       description={`Post Archive.`}
       ogImage="/images/cover.jpeg"
       headerText="Archive"

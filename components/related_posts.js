@@ -6,7 +6,12 @@ import config from "../lib/config";
 const posts = Posts();
 const defaultText = "Related Posts";
 
-export default function RelatedPosts({ metadata, tag, text, readMore }) {
+export default function RelatedPosts({
+  metadata,
+  tag,
+  text,
+  readMore = false,
+}) {
   const self = metadata.title;
   const related = posts.filter((post) => {
     if (self === post.title) {

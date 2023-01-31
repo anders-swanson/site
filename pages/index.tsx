@@ -3,6 +3,7 @@ import { Posts } from "../lib/metadata";
 import FeaturedPost from "../components/featuredpost";
 import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
+import React from "react";
 
 export default function Home({ posts, featuredPost }) {
   return (

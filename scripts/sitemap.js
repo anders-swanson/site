@@ -10,13 +10,9 @@ module.exports.txt = function (pagesDirectory, domain) {
       const filePath = path.join(currentDir, fileName);
       if (fs.statSync(filePath).isDirectory()) {
         recurseMetadata(filePath, relDir + "/" + fileName);
-      } else if (
-        fileName.endsWith(".js") &&
-        !fileName.startsWith("example.js") &&
-        !fileName.startsWith("_") &&
-        !fileName.startsWith("[")
-      ) {
-        const id = relDir + "/" + fileName.replace(/\.js$/, "");
+      } else if (isSiteFile(fileName)) {
+        const id =
+          relDir + "/" + fileName.replace(/\.js$/, "").replace(/\.tsx$/, "");
         metadata =
           metadata +
           `
@@ -36,3 +32,20 @@ module.exports.txt = function (pagesDirectory, domain) {
 </urlset>`
   );
 };
+
+const allowedExtensions = [".js", "jsx", ".ts", ".tsx"];
+const blockedFiles = ["example.js", "_", "["];
+
+function isSiteFile(fileName) {
+  for (let i = 0; i < blockedFiles.length; ++i) {
+    if (fileName.startsWith(blockedFiles[i])) {
+      return false;
+    }
+  }
+  for (let i = 0; i < allowedExtensions.length; ++i) {
+    if (fileName.endsWith(blockedFiles[i])) {
+      return false;
+    }
+  }
+  return true;
+}

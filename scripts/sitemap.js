@@ -37,7 +37,7 @@ module.exports.txt = function (pagesDirectory, domain) {
 };
 
 const allowedExtensions = [".js", "jsx", ".ts", ".tsx"];
-const blockedFiles = ["example.js", "_", "[", "search.js"];
+const blockedFiles = ["example.js", "_", "[", "search.js", "404.tsx"];
 
 function isSiteFile(fileName) {
   for (let i = 0; i < blockedFiles.length; ++i) {

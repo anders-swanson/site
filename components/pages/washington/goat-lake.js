@@ -3,11 +3,17 @@ import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import MapEmbed from "../../maps";
-import BearSafetyNC from "../../snippets/bear-safety-nc";
-import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
+import dynamic from "next/dynamic";
 
 const pageURI = "/blog/washington/goat-lake";
 
+const DynamicBearSafety = dynamic(() => import("../../snippets/bear-safety-nc"), {
+  loading: () => 'Loading...',
+});
+const DynamicWTP = dynamic(() => import("../../snippets/what-to-pack-backpacking"), {
+  loading: () => 'Loading...',
+})
+;
 //+metadata
 export const metadata = {
   title: "Backpacking Goat Lake on Mt. Baker",
@@ -162,8 +168,8 @@ export default function GoatLake({ readMore }) {
             </div>
           </div>
 
-          <WTPBackpacking uri={pageURI} />
-          <BearSafetyNC />
+          <DynamicWTP uri={pageURI} />
+          <DynamicBearSafety />
           <div>
             <br />
             <Contact />

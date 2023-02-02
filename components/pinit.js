@@ -14,7 +14,7 @@ export default function Pinnable({ src, width, height, alt, page }) {
               data-pin-round="true"
               href={pinitURL(src, page, alt)}
             >
-              <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" />
+              <Image alt="pinit" src="/pinit.png" width={25} height={25} />
             </a>
           </span>
           <div className={styles.imageChild}>

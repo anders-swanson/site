@@ -2,19 +2,21 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import Link from "next/link";
 import Burger from "./burger";
-import PostBox from "./postbox";
 import Search from "./search";
 import { useState, useEffect } from "react";
 import { CapitalizeWords } from "../lib/common";
 import Script from "next/script";
 import config from "../lib/config";
 import { Posts } from "../lib/metadata";
-import RelatedPosts from "./related_posts";
 import PrevNextPost from "./prev_next_post";
+import dynamic from "next/dynamic";
 
 export const title = `Trails and Trekking`;
-const defaultHeaderImage = "/cover.jpeg";
+const defaultHeaderImage = "/cover.png";
 const maxScroll = 5;
+
+const DynamicPostBox = dynamic(() => import("./postbox"));
+const DynamicRelatedPosts = dynamic(() => import("./related_posts"));
 
 export function PostHeader({ txt, stxt }) {
   return (
@@ -34,7 +36,7 @@ export default function Layout({
   home = false,
   allPostsData = null,
   postsHeading = "",
-  ogImage = "",
+  ogImage = defaultHeaderImage,
   headerText = title,
   noHeader = false,
   subText = "",
@@ -76,10 +78,10 @@ export default function Layout({
           {" "}
           <Script
             id="gtag1"
-            strategy="lazyOnload"
+            strategy="afterInteractive"
             src={`https://www.googletagmanager.com/gtag/js?id=${config.google.gtag}`}
           />
-          <Script id="gtag2" strategy="lazyOnload">
+          <Script id="gtag2" strategy="afterInteractive">
             {`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -93,7 +95,7 @@ export default function Layout({
       )}
 
       {config.pinterest.enabled && (
-        <Script id="pinit" strategy="lazyOnLoad">
+        <Script id="pinit" strategy="afterInteractive">
           {`!function(a,b,c){var d,e,f;d="PIN_"+~~((new Date).getTime()/864e5),a[d]?a[d]+=1:(a[d]=1,a.setTimeout(function(){e=b.getElementsByTagName("SCRIPT")[0],f=b.createElement("SCRIPT"),f.type="text/javascript",f.async=!0,f.src=c.mainUrl+"?"+Math.random(),e.parentNode.insertBefore(f,e)},10))}(window,document,{mainUrl:"https://assets.pinterest.com/js/pinit_main.js"});`}
         </Script>
       )}
@@ -109,10 +111,7 @@ export default function Layout({
         <title>{headerText ? headerText : title}</title>
         <link rel="icon" href="logo.jpg" />
         <meta name="og:title" content={headerText ? headerText : title} />
-        <meta
-          name="og:image"
-          content={ogImage ? ogImage : defaultHeaderImage}
-        />
+        <meta name="og:image" content={ogImage} />
         <meta name="og:description" content={description} />
         <meta name="og:site_name" content={title} />
         <meta name="description" content={description} />
@@ -137,7 +136,7 @@ export default function Layout({
 
         <main>{children}</main>
         {allPostsData && (
-          <PostBox
+          <DynamicPostBox
             posts={allPostsData}
             heading={postsHeading}
             idx={idx}
@@ -146,7 +145,7 @@ export default function Layout({
         )}
         {related && <PrevNextPost date={related.metadata.date} />}
         {related && (
-          <RelatedPosts
+          <DynamicRelatedPosts
             metadata={related.metadata}
             tag={related.tag}
             text={related.text}

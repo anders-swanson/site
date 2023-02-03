@@ -58,7 +58,7 @@ export default function Post() {
           bringing a GPS, spikes, and a topo-trail map. Route-finding would be
           difficult to impossible without these items.
         </div>
-        <Image alt="trail" height={450} width={600} src={log} />
+        <Image alt="Sister's Mirror Trail" height={450} width={600} src={log} />
         <div className={utilStyles.textBlock}>
           {`We camped on the shore of Sister's Mirror lake, in the Mirror Lakes area near South Sister. There's a huge amount of
                     lakes in this area, and you could easily spend a day wandering between them. The lakes range in size from tiny ponds to 
@@ -74,12 +74,22 @@ export default function Post() {
           is a permitted entry zone. The trailheads used in this trip are
           limited for overnight use.
         </div>
-        <Image alt="silhouette" height={450} width={600} src={silhouette} />
+        <Image
+          alt="Silhoutte along Sister's Mirror Lake"
+          height={450}
+          width={600}
+          src={silhouette}
+        />
         <div style={{ width: "1200px" }}>
           While not required, bringing your floaty is recommended. The water
           might be a bit cold in June!
         </div>
-        <Image alt="floating" height={800} width={1200} src={floating} />
+        <Image
+          alt="Floating in Sister's Mirror Lake"
+          height={800}
+          width={1200}
+          src={floating}
+        />
       </div>
       <hr />
       <div className={utilStyles.flexWrapContainer}>

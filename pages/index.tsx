@@ -12,10 +12,14 @@ export default function Home({ posts, featuredPost }) {
       allPostsData={posts}
       postsHeading="Recent Posts"
       description={`Do you like exploring the outdoors? Join us as we share recent hiking trips, camping suggestions, and backcountry guides.`}
-      ogImage="/images/cover.jpeg"
     >
       <div className={utilStyles.flexGapContainer}>
-        <Image src="/cover.png" width={800} height={400} />
+        <Image
+          src="/cover.png"
+          alt="Trails and Trekking"
+          width={800}
+          height={400}
+        />
       </div>
       <br />
       <FeaturedPost post={featuredPost} />

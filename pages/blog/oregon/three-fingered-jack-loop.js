@@ -6,7 +6,7 @@ import Link from "next/link";
 
 //+metadata
 let metadata = {
-  title: "Three Fingered Jack Loop",
+  title: "Three Fingered Jack Backpacking Loop",
   date: "2021-07-24",
   image: "/images/oregon/tfj-loop/thumbnail.jpg",
   tags: ["backpacking", "lakes", "oregon", "sisters"],
@@ -49,7 +49,7 @@ export default function Post() {
                     near the Round Lake Wilderness retreat. This route is slightly longer, but much better graded.`}
         </div>
         <Image
-          alt="square lake"
+          alt="Square Lake, Oregon"
           height={450}
           width={600}
           src={image("square-lake.jpg")}
@@ -66,7 +66,7 @@ export default function Post() {
                     and it is never too far to a water source.`}
         </div>
         <Image
-          alt="square lake with lauren"
+          alt="Checking out Square Lake, Oregon"
           height={450}
           width={600}
           src={image("square-lake2.jpg")}
@@ -84,25 +84,25 @@ export default function Post() {
       <hr />
       <div className={utilStyles.flexWrapContainer}>
         <Image
-          alt="canyon creek meadows"
+          alt="Three Fingered Jack behind Canyon Creek Meadows"
           height={450}
           width={600}
           src={image("canyon-creek-meadows.jpg")}
         />
         <Image
-          alt="three fingered jack"
+          alt="Jack Glacier on Three Fingered Jack"
           height={450}
           width={600}
           src={image("tfj.jpg")}
         />
         <Image
-          alt="Lauren Meadow"
+          alt="Relaxing in a meadow near Three Fingered Jack"
           height={800}
           width={600}
           src={image("lauren-meadow.jpg")}
         />
         <Image
-          alt="Lauren Meadow 2"
+          alt="Canyon Creek Meadows, Oregon"
           height={800}
           width={600}
           src={image("lauren-meadow-2.jpg")}

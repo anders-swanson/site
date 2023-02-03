@@ -162,7 +162,7 @@ export default function WTPBackpacking({ uri }) {
         <div className={utilStyles.centered}>
           <Pinnable
             page={uri}
-            alt="LB1"
+            alt="Backpacking near Jade Lake in the Alpine Lakes Wilderness"
             src="https://lh3.googleusercontent.com/pw/AL9nZEWVB4hHrHqzB9RgXo-OdD4_yCkazusr1QKcN3mmyRg1Ovs47K9Mf6uUxN_nqpMTmCURWXR_YI9A5M7q72bLG5wTVZHmkqYWlu24j190uKtXscij1m_OvRGaJpV7MmXWtKpBEIuiyoUepegSfDnafQQk=w355-h533-no?authuser=0"
             width={355}
             height={533}
@@ -196,7 +196,7 @@ export default function WTPBackpacking({ uri }) {
         <div className={utilStyles.centered}>
           <Pinnable
             page={uri}
-            alt="LB2"
+            alt="Backpacking the Timberline Trail on Mt. Hood"
             src="https://lh3.googleusercontent.com/pw/AL9nZEXyfSI4Aeg3Cl0jouKYCUGuJC1Peh5fo7LHxfa3BFuFyvUJJAEd1rrgr7HxVyN8DgZgzoZi1PSaUQIxCwiGet8OllS-cXEjF8-GrdWsl9xYeFUf5G8Q1KRe5sB1iGUU0Oaz7l6lJ_hWYQi4uwRcBxpy=w355-h533-no?authuser=0"
             width={355}
             height={533}

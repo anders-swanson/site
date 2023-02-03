@@ -7,13 +7,18 @@ import dynamic from "next/dynamic";
 
 const pageURI = "/blog/washington/goat-lake";
 
-const DynamicBearSafety = dynamic(() => import("../../snippets/bear-safety-nc"), {
-  loading: () => 'Loading...',
-});
-const DynamicWTP = dynamic(() => import("../../snippets/what-to-pack-backpacking"), {
-  loading: () => 'Loading...',
-})
-;
+const DynamicBearSafety = dynamic(
+  () => import("../../snippets/bear-safety-nc"),
+  {
+    loading: () => "Loading...",
+  }
+);
+const DynamicWTP = dynamic(
+  () => import("../../snippets/what-to-pack-backpacking"),
+  {
+    loading: () => "Loading...",
+  }
+);
 //+metadata
 export const metadata = {
   title: "Backpacking Goat Lake on Mt. Baker",

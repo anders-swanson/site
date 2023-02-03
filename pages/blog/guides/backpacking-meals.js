@@ -77,7 +77,7 @@ export default function Post() {
         <div className={utilStyles.centered}>
           <Pinnable
             page={pageURI}
-            alt="oats 1"
+            alt="Backpacker's Oatmeal"
             src="https://lh3.googleusercontent.com/pw/AM-JKLWL5hr2Ghx32lGffuZGyc8ZGNBIkQ_kjEU5krh-voXoN_MmRNRUy2U-DUXvAtadpi9CpLxUpfua1BPqAZJ4qLv7pG-k7SRsUrL85iapJz2hs1fUMmZUksaQ5KqbUb48Df9EjT8AgCr9-Khiraj-ZVaw=w450-h600-no?authuser=0"
             width={450}
             height={600}
@@ -86,7 +86,7 @@ export default function Post() {
         <div className={utilStyles.centered}>
           <Pinnable
             page={pageURI}
-            alt="oats 2"
+            alt="Oatmeal prepared on the trail"
             src="https://lh3.googleusercontent.com/pw/AM-JKLX6L6UpIAcWu59G4QjeGgRwSsTSCMLK9VVRxlZsa_HAkVongR2OeJ6Qe-sNRiVyBdNhV8tCW3fbVprGl9gfonppyNQuPnlN9UfCSGT8Lq_OzSWwTWZLd5sKtydYU-GVjRloXWDLYXeeI6mI9fL3E5qC=w450-h600-no?authuser=0"
             width={450}
             height={600}
@@ -131,7 +131,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="pc 1"
+              alt="A backpacking dinner with tuna"
               src="https://lh3.googleusercontent.com/pw/AM-JKLVjdRG6C3PnRGty28IgF4z1-MVEx-SnV8wZMbCvTRZYty2JF8UxA4YxnUGmIK7W6HAO4F1lBe7w-G-ab22JYJ-_-Q58ld-AW0owzOlvNs5OWcE0rQyRAK5LK_Nhzz4tGN8RsSOIgk51kk8CWud7CHgb=w450-h600-no?authuser=0"
               width={450}
               height={600}
@@ -160,7 +160,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="bagel 1"
+              alt="Backpacking bagel loaded with oreos"
               src="https://lh3.googleusercontent.com/pw/AM-JKLVqB0TJ9iQ4RuZpN9lOIhTTfG0XSJimyIeJK8MGmwNCWDA54GMX_CRk1ILCZWNUOKlkCdCW2XQYxW9wDn4l1tqKW-zIBs1hRyHnUmh8lCU84GEfA0vwIjKrox6ZHPIbLF2vXZn0KFemk6AcXJqNWKR9=w450-h600-no?authuser=0"
               width={450}
               height={600}
@@ -187,7 +187,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="curry 1"
+              alt="Backpacker's curry"
               src="https://lh3.googleusercontent.com/pw/AM-JKLVBBORDEPtBsdwamsOgzq_udxqHY6p2sTNY1KqEE7GuHWX7tl8j56yMELUzJ85Oi7q-1dZi1FItJDxvOdZH7RsExwjhROtgDRn_UMSwxKx1XlgQZC1z0_QZJ0EZfDaZQzraHW3CKyEy5RpappLBKurZ=w450-h600-no?authuser=0"
               width={450}
               height={600}
@@ -199,7 +199,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="curry 2"
+              alt="Enjoying curry on the trail"
               src="https://lh3.googleusercontent.com/pw/AM-JKLXn3awARUCE01NlHbZl2YzvfnjzqkKUlqV7SY1K5jhHbMf8AUNG5XA1xXRsz923taELhOdvlP5dqjm8xPSV0g2IQnDtkWcWS34pp8TybAaCZ27RrPXyvJjS60Qt002MRPXN6z-7I9jydVNm8irmYmtd=w800-h535-no?authuser=0"
               width={800}
               height={535}

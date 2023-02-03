@@ -51,7 +51,12 @@ export default function Post() {
           {`The Golden Canyon trail is home to colorful canyons that vary from light yellow to ruddy or dark brown. Near Red Cathedral (a 1/2 mile
                     spur trail), tall sandstone cliffs take on a deep, reddish hue.`}
         </div>
-        <Image alt="lauren in a canyon" height={450} width={700} src={image1} />
+        <Image
+          alt="Hiking Golden Canyon in Death Valley National Park"
+          height={450}
+          width={700}
+          src={image1}
+        />
         <div className={utilStyles.textBlock}>
           {`As you climb up and around the loop, the trail exits the wash and follows a series of marker posts. 
                     Near Manly Beacon (the high point on the trail), there are panoramic views of the canyons, and the salt flats below.
@@ -62,7 +67,12 @@ export default function Post() {
                     appropriately. There wont be much shade during the summer months, and the heat can quickly become intolerable in the canyon.`}
         </div>
 
-        <Image alt="golden canyons" height={450} width={700} src={image2} />
+        <Image
+          alt="Hiking through the wash of Golden Canyon, Death Valley National Park"
+          height={450}
+          width={700}
+          src={image2}
+        />
         <div>
           {`Golden Canyon can be tied in with other trails and destinations along the Badwater Basin road (the road that runs south
                     from Furnace Creek). 
@@ -70,9 +80,24 @@ export default function Post() {
                     before heading back to camp near Stovepipe Wells.`}
         </div>
         <div className={utilStyles.flexWrapContainer}>
-          <Image alt="canyons" height={750} width={1200} src={image3} />
-          <Image height={550} width={400} alt="4" src={image4} />
-          <Image height={550} width={800} alt="5" src={image5} />
+          <Image
+            alt="Overlooking geologic formations in Golden Canyon, Death Valley National Park"
+            height={750}
+            width={1200}
+            src={image3}
+          />
+          <Image
+            height={550}
+            width={400}
+            alt="Sunlight illuminating Golden Canyon, Death Valley National Park"
+            src={image4}
+          />
+          <Image
+            height={550}
+            width={800}
+            alt="Red Cathedral, Death Valley National Park"
+            src={image5}
+          />
         </div>
       </div>
     </Layout>

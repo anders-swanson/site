@@ -70,7 +70,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="p1"
+              alt="Double Falls, Newberry Caldera"
               src="https://lh3.googleusercontent.com/pw/AM-JKLUlIRvPPKgdxBPDoa8RRqg7jCJyg_hc3rRsG-T-gQawbFi-TLw7wYbAUokn80IK4-e3cqTccaxh8PUi0S4jTlrYnKsgFrLuqXzxunm1o8Hn72w1_SwGLTeKtDKFyp7wT3ab5s02s0U7Jk7ZrgrwTKSj=w800-h600-no?authuser=0"
               width={800}
               height={535}
@@ -89,7 +89,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="p2"
+              alt="Obsidian Heart, Big Obsidian Flow in Central Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLWR5yIn1_bFsPbqJ6esq3Za82p7kHDJ24sVBiO31HvdpGNxkte6pDBXdTylJ4Wnc5ye7AV8PZB9Yuoyn-YqURIZB4JwFgCp8sWBkz5qykV5iP91Ogm1gtc3ox1sRNGNP-gfSa__CfoUtP2aBiQ33523=w600-h800-no?authuser=0"
               width={400}
               height={600}
@@ -103,7 +103,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="p3"
+              alt="Paulina Lake, Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLWysbYcKY7P3pgI6Zhsivbnq3v5TsHD6DP3hmaGaEHWPwIHP5ta4CSjXxNfygfi1Unkq02KS1hFtCVVo_tChslpkHFSijpBqen_OqlIaCVRf4vEcxQnxOmOPaB9gQ-3HbqDVJSb2-LSyPMG8p8iYBEn=w800-h600-no?authuser=0"
               width={800}
               height={535}
@@ -128,7 +128,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="m1"
+              alt="Metolius River in mid-summer, Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLXzC4Fhc2EkXvUSe3bMaw3l9hANenPscot57-O0NATy4y2Dw2Vjt3s0pydY4_JNTWw6PYYr9h8j4xf89iMtJTCcDABl6PA7lFdZFuRMMevB1lNrzPHywcO9OIEYILNmE2D8KicUdoifCrBX4mUjuvyR=w800-h535-no?authuser=0"
               width={800}
               height={535}
@@ -152,7 +152,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="m2"
+              alt="Metolius River, Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLXwjfWQ5l_Y-Tez4_Y5ZutdVs0-JQV9P6sO9LbJN0ibLZzrX4BaAiRzQBFdneG3BQUcTitdrBnJfc_LlMrbyTfvI3l9gdGouCzhUNLejlWyZahrC2kWgmljNL_qK2WsH7tJODrWJKVIrDZ7JyxuRJFQcQ=w800-h535-no?authuser=0"
               width={800}
               height={535}
@@ -174,7 +174,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="t1"
+              alt="Tiered waterfall along Tumalo Creek"
               src="https://lh3.googleusercontent.com/pw/AM-JKLVqVUJt1UpUXKqXgjjSzgCZjGxAKzFQ0JP7Z-E9Vz0sRnJNYE6Gkz-NDu1m95GRb2ZtAdFR2MVPCn95ltxWaF8hyH0ZgQZLE2NDBN0cXQrIiiQLhQ1khAor0qg7-bImKT_epLuSjGoRNTcZke9lz6Z-=w800-h535-no?authuser=0"
               width={800}
               height={535}
@@ -190,13 +190,13 @@ export default function Post() {
         </div>
         <div className={utilStyles.centered}>
           <Image
-            alt="t2"
+            alt="Waterfall near Tumalo Creek"
             src="https://lh3.googleusercontent.com/pw/AM-JKLXDaybHNNW9eC1g25yfycnDNU48u73Eg65JOX_N24ybXRBmekw2Hm82FD0bSuAezRXom_tnMHes526tJKwckGgYuVr9bG8tEpMRXTwqlKD5K4rHWKzMZ2WhLvfCJZnAS_FdzDOmB947KJu9Xv_4yFeR=w450-h600-no?authuser=0"
             width={450}
             height={600}
           />
           <Image
-            alt="t3"
+            alt="Multiple falls along Tumalo Creek"
             src="https://lh3.googleusercontent.com/pw/AM-JKLXiobtUeGzehE61wDrG-o1u2jc74-E1oSBGK7J3m0qBARwfvqxJ0pM5d2Rz75zeZjfACqI__DeWVUi3O9KeBqzVCDcNieoMQB6PNh7mC7Qj1xnd33qzT2pqUbJYo_5juviQ18NST1mY4DukDgW0YXwq=w600-h800-no?authuser=0"
             width={450}
             height={600}

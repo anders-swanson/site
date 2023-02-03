@@ -64,13 +64,13 @@ export default function Post() {
           src="https://lh3.googleusercontent.com/pw/AM-JKLWl4YxE5oQmUCeYUcnKCAeaiS707KPeHjNWWjSpoVg4ply1RUylQa_ycDtZ7UyQOnrsj5WO_uwZnVVyqS8vE_WBCSlwg3WAPN_rjuD35rwn1fM79nhDa2utRzkq-1jRmjQyhuwIx3JeepWjYNAubDcD=w801-h1067-no?authuser=0"
           width={400}
           height={550}
-          alt="f1"
+          alt="Balsamroot and Lupine Blooming in the Columbia River Gorge"
         />
         <Image
           src="https://lh3.googleusercontent.com/pw/AM-JKLV13v3KsKIqJ8yj8_h13V45AU-H_qjj1uzv7alqkxxXymbjQZKFm9CMOBHF_BTNI0DvyFUVvx2grP9WkZFWdJ8cwGk5kdyN9QBxZcStk0ui7vjAurdRJZ7SbJvGIu52VI2-ZEYyg3Sr_rAjMfUVGPbW=w801-h1067-no?authuser=0"
           width={400}
           height={550}
-          alt="f2"
+          alt="Paintbrush flowers blooming in the Columbia River Gorge"
         />
         <h2 className={utilStyles.justifyCenter} id="coyote-wall">
           Coyote Wall

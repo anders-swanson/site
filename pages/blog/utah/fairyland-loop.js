@@ -69,9 +69,24 @@ export default function Post() {
         </div>
       </div>
       <div className={utilStyles.flexWrapContainer}>
-        <Image alt="tunnel" height={450} width={600} src={tunnel} />
-        <Image alt="tunnel 2" height={450} width={600} src={tunnel2} />
-        <Image alt="tunnel 2" height={950} width={1200} src={thorsHammer} />
+        <Image
+          alt="Tunnel through sandstone on Fairyland Loop trail, Bryce Canyon National Park, Utah"
+          height={450}
+          width={600}
+          src={tunnel}
+        />
+        <Image
+          alt="Another tunnel through sandstone on Fairyland Loop trail, Bryce Canyon National Park, Utah"
+          height={450}
+          width={600}
+          src={tunnel2}
+        />
+        <Image
+          alt="Thor's Hammer, Bryce Canyon National Park, Utah"
+          height={950}
+          width={1200}
+          src={thorsHammer}
+        />
         <Slider
           width="1200px"
           height="800px"

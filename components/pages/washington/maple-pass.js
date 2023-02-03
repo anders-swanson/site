@@ -65,7 +65,7 @@ export default function MaplePass({ readMore }) {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="pc0"
+              alt="Hiking Maple Pass in the North Cascades"
               src="https://lh3.googleusercontent.com/pw/AL9nZEWK86Rl3IMIsLiP0rEZ7HFzAipGg_KVAu7QqByX4dP7ix17vKOzwwjDDxntKwzrwtqIfb-3u3cMPsKt4Fvij0u15j8p0Ea3UF5yY1tU-4MihpWy0FCd86FxPTxgg_9nu3eUmi6rcyn9JPoJbXDS-wsi=w800-h533-no?authuser=0"
               width={800}
               height={533}
@@ -101,7 +101,7 @@ export default function MaplePass({ readMore }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="pc1"
+                alt="Golden Larches at Maple Pass"
                 src="https://lh3.googleusercontent.com/pw/AL9nZEU3bRraoN2erM5PUtzc7QTFSG4GOwKlu77ieavIq93oruiQ_PRhQOWCoDBWYRs87rN0hI6tEh9icR3JRfeAVjmSMthw8PGRu8d0im9NRiH69yPDW6CsLstqq0PHIW8npPc_xAd5tVMkNUz1ZskHFmZr=w800-h533-no?authuser=0"
                 width={800}
                 height={533}

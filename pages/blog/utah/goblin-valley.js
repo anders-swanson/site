@@ -20,8 +20,6 @@ const cover =
   "https://lh3.googleusercontent.com/pw/AM-JKLU0oZlBijhdrx4_ZI-twDykZLBDgLXxIF9fVT6IO5ylp2QuQbVp0ADeqneJ4FST1HyLFkVd35d963j5BQu9PmTpU3KVZe6ETAOIkPt1w9lbHV-IZH3XaUC5ddDjvZrg3LXVPM4-rlUYV35R85EQhl5_=w1920-h952-no?authuser=0";
 const threesisters =
   "https://lh3.googleusercontent.com/pw/AM-JKLWm0Gi37hqKJJc-UJDM06B36GDD3Kf4BmCp3ysqk3iYc1pXDUbkimNAcpZmBsfkNt6fhqc03bq6pNq8YuuYe7DTCV7uQEH9zXoIUnVgdRmB2AjqiNH78_BPo_lC6dvb8RNUCwfk_JUq8NT9Fw9Opybb=w1423-h1067-no?authuser=0";
-const gob1 =
-  "https://lh3.googleusercontent.com/pw/AM-JKLWm0Gi37hqKJJc-UJDM06B36GDD3Kf4BmCp3ysqk3iYc1pXDUbkimNAcpZmBsfkNt6fhqc03bq6pNq8YuuYe7DTCV7uQEH9zXoIUnVgdRmB2AjqiNH78_BPo_lC6dvb8RNUCwfk_JUq8NT9Fw9Opybb=w1423-h1067-no?authuser=0";
 const gob2 =
   "https://lh3.googleusercontent.com/pw/AM-JKLVgam4xCcyMrcWWTqQZwY5IFUrLAWOJ7V112xbFYUo3yvrrW4TLo-l4NyN4gX03GFK0b1h_CAJnFjuUdmdAPLvMJbkM9CO1Mkmukh6iWgd1Tkvu206I4IQYZhFeIzw0ACcl_ZOU0DX9N9N0OxfY9AnE=w1423-h1067-no?authuser=0";
 const gob3 =
@@ -44,7 +42,15 @@ export default function Post() {
       }}
     >
       <div className={utilStyles.flexGapContainer}>
-        <div className={utilStyles.textBlock}>
+        <div className={utilStyles.centered}>
+          <Image
+            alt="Rock formations in Goblin Valley State Park, Utah"
+            height={600}
+            width={800}
+            src={threesisters}
+          />
+        </div>
+        <div>
           <Link href={trailhead}>Goblin Valley</Link>
           {` is a state park in Utah ($20 entry fee for day use), containing
                     unique sandstone formations that may or may not look like Goblins. The main defined trail from the parking lot
@@ -54,13 +60,8 @@ export default function Post() {
                     fit - exploring up side canyons and washes. If you climb the central feature of the valley, a grey stone hill, you
                     are granted a sweeping view of the goblins.`}
         </div>
-        <Image
-          alt="three sisters"
-          height={400}
-          width={600}
-          src={threesisters}
-        />
-        <div className={utilStyles.textBlock}>
+
+        <div>
           If you are thinking about making the trip to Goblin Valley - do it.
           This place is seriously amazing and has some of the most unique and
           accessible sandstone formations around.
@@ -73,11 +74,10 @@ export default function Post() {
           <br />
           {`If you want to continue to explore the area, there are several slot canyons a couple miles from Goblin Valley.`}
         </div>
-        <Image alt="goblins" height={400} width={600} src={gob1} />
         <div className={utilStyles.textBlock}></div>
       </div>
       <div className={utilStyles.flexWrapContainer}>
-        <Slider width="1200px" height="800px" slides={[cover, gob2, gob3]} />
+        <Slider width="900px" height="600px" slides={[cover, gob2, gob3]} />
       </div>
 
       <hr />
@@ -85,8 +85,18 @@ export default function Post() {
         A goblin in its lair. Hanging from goblin noses not recommended.
       </div>
       <div className={utilStyles.flexWrapContainer}>
-        <Image alt="goblin in its lair" height={600} width={450} src={lair} />
-        <Image alt="goblin nose" height={600} width={450} src={gob4} />
+        <Image
+          alt="The Lair of the Goblin, Utah"
+          height={600}
+          width={450}
+          src={lair}
+        />
+        <Image
+          alt="A goblin with a long nose, Goblin Valley State Park, Utah"
+          height={600}
+          width={450}
+          src={gob4}
+        />
       </div>
     </Layout>
   );

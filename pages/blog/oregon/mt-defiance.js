@@ -71,9 +71,24 @@ export default function Post() {
                     The grade of the trail will become to difficult, and potentially dangerous. If that doesn't sound appealing, you can always wait for summer!`}
           <br />
         </div>
-        <Image alt="1" height="400px" width="300px" src={img1} />
-        <Image alt="2" height="400px" width="300px" src={img2} />
-        <Image alt="3" height="400px" width="300px" src={img3} />
+        <Image
+          alt="Summit of Mt. Defiance, Oregon"
+          height="400px"
+          width="300px"
+          src={img1}
+        />
+        <Image
+          alt="Frosted branches along the Mt. Defiance Trail, Oregon"
+          height="400px"
+          width="300px"
+          src={img2}
+        />
+        <Image
+          alt="Mark O. Hatfield Wilderness in Oregon"
+          height="400px"
+          width="300px"
+          src={img3}
+        />
       </div>
     </Layout>
   );

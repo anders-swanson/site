@@ -89,7 +89,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="1"
+              alt="Summit of Mt. St. Helens, Washington"
               src="https://lh3.googleusercontent.com/pw/AL9nZEUVMbHYcuF5b9rQctog-Dlx8d5UXCRVtKaFmnT3C9KlqmDK4hdHSvS8OpZKJ-wLAtlG6TfDFeJgeICktBeb9Da7b66BrI8b1Iy87PVfWFhCTaR6_-36-7uObDcqm6W2d-ahHzI_ySzoV2G7KOXwU5DY=w800-h533-no?authuser=0"
               width={800}
               height={533}
@@ -133,7 +133,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="1"
+              alt="Ape Caves, Washington"
               src="https://lh3.googleusercontent.com/pw/AL9nZEV0Q-PiTjhIBmxaGimJJgcxru5wvsHHDXk2DHfPt4iG_OkT4FUi1Lv-KY_kkdfoqhBzRATdIeg_G5haZylSjQgaLMu3seTcmvZJzCJhfKJjeiqzRnBEghmEyv4PZLAfVPYRgRpCi_31d4G245D07S9n=w800-h533-no?authuser=0"
               width={800}
               height={533}
@@ -160,7 +160,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="1"
+              alt="Mt. Hood viewed from Mt. St. Helens"
               src="https://lh3.googleusercontent.com/pw/AL9nZEXdsOSfwinwqT04E6vpx2rysyboVvo1HWdJtxeIx41FCGkDTt8VqRZnSbwnaAZpVuNfbysDPsk2o_EPCU6VuzWgOfYYyalXT55UshaU03dJxcdUVzMIqlKF9Eqip672OYugIHAxY4tOw-p5ninnPdoK=w800-h533-no?authuser=0"
               width={800}
               height={533}

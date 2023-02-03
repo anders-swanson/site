@@ -73,7 +73,7 @@ export default function Post() {
             {`Dispersed camping areas can be found by looking at maps, researching online, and by word of mouth. If you're planning
                         to camp on public lands, it's a lot easier to have a spot picked out ahead of time than to search for one in the dark.`}
           </div>
-          <Image alt="tent1" src={tent1} width={400} height={600} />
+          <Image alt="Dispersed Camping" src={tent1} width={400} height={600} />
         </div>
 
         <h1 className={utilStyles.justifyCenter} id="blm-camping">
@@ -98,7 +98,12 @@ export default function Post() {
           {`BLM land often intersects with private property, so please be mindful of others rights when you are camping. Property 
                         owners are generally good about fencing off their land, and post signage on property boundaries.`}
         </div>
-        <Image alt="tent2" src={tent2} width={400} height={600} />
+        <Image
+          alt="Dispersed Campsite on BLM land"
+          src={tent2}
+          width={400}
+          height={600}
+        />
 
         <h1 className={utilStyles.justifyCenter} id="wilderness-camping">
           Wilderness Camping
@@ -115,7 +120,12 @@ export default function Post() {
                     allow camping for valid permit holders. This is common when the area gets a high amount of traffic, such as the Three 
                     Sisters Wilderness in Central Oregon.`}
         </div>
-        <Image alt="tent3" src={tent3} width={400} height={600} />
+        <Image
+          alt="Dispersed Campsite in wilderness"
+          src={tent3}
+          width={400}
+          height={600}
+        />
         <h1>National and State Parks</h1>
         <br />
         <div>

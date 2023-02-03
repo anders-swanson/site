@@ -81,9 +81,24 @@ export default function Post() {
         Pictured below are Golden Chanterelles and a Lobster mushroom.
       </div>
       <div className={utilStyles.flexContainer}>
-        <Image height={400} width={400} alt="chanterelle" src={chanterelle} />
-        <Image height={400} width={400} alt="falls" src={falls2} />
-        <Image height={400} width={400} alt="lobster" src={lobster} />
+        <Image
+          height={400}
+          width={400}
+          alt="Chanterelle Mushroom picked on the Siouxon Trail"
+          src={chanterelle}
+        />
+        <Image
+          height={400}
+          width={400}
+          alt="Waterfall along the Siouxon Trail, Washington"
+          src={falls2}
+        />
+        <Image
+          height={400}
+          width={400}
+          alt="Lobster Mushroom picked on the Siouxon Trail"
+          src={lobster}
+        />
       </div>
     </Layout>
   );

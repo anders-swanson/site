@@ -17,7 +17,12 @@ export default function Post() {
                     I'll give a you quick breakdown of how we got to where we are, and what's in store for us next.`}
         </div>
         <div>
-          <Image alt="" width={800} height={571} src="/us.jpg" />
+          <Image
+            alt="Heart Rock at Joshua Tree"
+            width={800}
+            height={571}
+            src="/us.jpg"
+          />
         </div>
         <div>
           {`Lauren and I both graduated with Bachelor's degrees in Computer Science in 2019, and found ourselves working corporate jobs as software engineers
@@ -26,7 +31,7 @@ export default function Post() {
         </div>
         <div>
           <Image
-            alt=""
+            alt="Small waterfall above Two Medicine Lake in Glacier National Park"
             width={450}
             height={600}
             src="https://lh3.googleusercontent.com/pw/AL9nZEWNgWhbFFcFeRPh0XM3_A1NmemckC1See6LNJzF7a1mJ9uiIogo6Vs1fAGWI687KkWOAaa_83NPR5cGCiMggn71fgdIUx0RN1VrEkM_sYR2XUCls7ElRROI3Iq1h9LSAbOQOOLXKr97I8DPQagEICfB=w450-h600-no?authuser=0"
@@ -42,7 +47,7 @@ export default function Post() {
         </div>
         <div>
           <Image
-            alt=""
+            alt="Walking along the summit of Mount St. Helens"
             src="https://lh3.googleusercontent.com/pw/AL9nZEUVMbHYcuF5b9rQctog-Dlx8d5UXCRVtKaFmnT3C9KlqmDK4hdHSvS8OpZKJ-wLAtlG6TfDFeJgeICktBeb9Da7b66BrI8b1Iy87PVfWFhCTaR6_-36-7uObDcqm6W2d-ahHzI_ySzoV2G7KOXwU5DY=w800-h533-no?authuser=0"
             width={800}
             height={533}
@@ -57,7 +62,7 @@ export default function Post() {
         </div>
         <div>
           <Image
-            alt=""
+            alt="Hiking Maple Pass in the North Cascades"
             src="https://lh3.googleusercontent.com/pw/AL9nZEWb2GADoJRIM3jZyUgq7VtaUbwsQqug8Xvi7_fzlBsjC8s0-MjTXS5Yj5d52DL9tFDfI73ljbO1Ss1cdtqQZRuu_9_7yb52BnXQe5AAR3e_w_0I8i09F84ftRhKK1jD8zZhY5wcwbH6AUqckfgfWaGq=w533-h800-no?authuser=0"
             width={533}
             height={800}
@@ -70,7 +75,7 @@ export default function Post() {
         </div>
         <div>
           <Image
-            alt=""
+            alt="Exploring the Oahu rainforest"
             src="https://lh3.googleusercontent.com/pw/AL9nZEWeBNkr8Yrg6GzLLHGYm8yJlbg2byjlaRTZiXP6zZmUlK3XUh7KOLaXAln0hR35EO_Tej9Bbhgpqbt-OABMQUYzZlBTuhnttrEd3WQ463cGhk-bryg_WSGfXKsViHzoXMaguJJr00DgVmCOSUjtB-tu=w355-h533-no?authuser=0"
             width={355}
             height={533}

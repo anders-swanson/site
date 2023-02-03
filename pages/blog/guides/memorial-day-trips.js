@@ -55,7 +55,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="rogue 1"
+              alt="Map of the Rogue River Trail"
               src="/images/rogue-river.png"
               width={1200}
               height={800}
@@ -73,7 +73,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="rogue 2"
+              alt="Rogue River trail in Southern Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLW1u2dGEfxO0X_ekXsDxyg2Wzq-Q-eR0qHN97e-xYVg_FQTcY5ntVqNgQxyux_kncoMqZE9Tj205gqtMywycv42o00wYJlQGcEUcfcxr_vmUn30zJ-dWvZrHiSGYoATZdXx8wDj2r1YNS3ZhxCCeBaB=w600-h800-no?authuser=0"
               width={450}
               height={600}
@@ -88,7 +88,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="rogue 3"
+              alt="Narrows along the Rogue River, Southern Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLVNaEqFIIFS3zeHkPyHMBrEL3oDVALpsFXRv20Px97PDVJDAkOhz2y-jVEkn6jgT18puSy7AZ0TA5i1FPs0fXNZW72S-uJxjzR71xTmjR956omZuvjlkkr5xglh9wuGoSgzgFBr-PzA_nvvl-f2y92K=w450-h600-no?authuser=0"
               width={450}
               height={600}
@@ -116,7 +116,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="McKenzie River"
+              alt="Hiking the McKenzie River trail in Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLUQZRlAHL9D2uKSfsPfrFmePMbaR61IzwR6did5pb3Eh2SG5aVjZz8mjQ2ZeGD_D4Efd67gvpdRZRf7_j-4YkdM5mb9A6eRe1vICc77IC3CzDEYSX7EOCATwdMMaWRbUGhtPIKvWdTsiRLvUCPdAzFZ=w800-h535-no?authuser=0"
               width={800}
               height={525}
@@ -144,7 +144,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="upper rogue"
+              alt="Upper Rogue River in Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLW313ooD6YsaSF1--GPEvngIafet_ZblQCOXfKPiX_iDzxeftbTDR5M9uLuB9v_5s1b-VN5x4y_Yl7HFSKvtnjthx-jVcvMpUKeXhYpIVes0IbvhodZH-K2rs--mAXMV5s-LERWjNaHM27V62Recu4R=w800-h600-no?authuser=0"
               width={800}
               height={600}
@@ -164,13 +164,13 @@ export default function Post() {
         </div>
         <div className={utilStyles.centered}>
           <Image
-            alt="upper rogue 1"
+            alt="Signage for the Upper Rogue River Trail in Oregon"
             src="https://lh3.googleusercontent.com/pw/AM-JKLXme1zos1v6J22zCl4ggHK0biPrhNKs_tJ1NCw-miWnNLFZI-FIpqRuiM03f2QjaMIi0fGEgHe10SCWtKN23RPtk-Cz8zpQoDuF8Q7ChEiPwLjB2h2x36QHZqFHR0_cjUVVBvvbWZpS4AbzJhjaaMj5=w600-h800-no?authuser=0"
             width={450}
             height={600}
           />
           <Image
-            alt="upper rogue 2"
+            alt="Morel Mushroom picked on the Rogue River trail"
             src="https://lh3.googleusercontent.com/pw/AM-JKLW_QVt7lYtSpNrsKJE0zlOH3KKIOn1Dwe7Hconbabdh3tieJ6wLYwENjvqG6fo9qqfpeyiT_ASG_JR9mGJyg8P-t8GEd3TDGaULQlt_6d_914Ps-qfaEfg6dF3kls3i-AyBf-jnJ91YaDIOoNpK1A_w=w450-h600-no?authuser=0"
             width={450}
             height={600}

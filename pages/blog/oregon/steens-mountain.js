@@ -43,7 +43,7 @@ export default function Post() {
 
         <div className={utilStyles.centered}>
           <Image
-            alt="canyon"
+            alt="Canyon below Wildhorse Lake, Steens Mountain"
             src="https://lh3.googleusercontent.com/pw/AM-JKLVT0_5mKVscRRCCLhGQEKzCX7w2QdTPIsdmABiBuUANgpgmaecrOLhUn1IPP0nGKra-5FQJA7oiplUNnv7PRu_YekTpVYWRo8My7-aTc17Ej34S6q5G2IYLg-jhWuGpfpa8NUEXc8FrVqo2Sv1gSlxW=w800-h600-no?authuser=0"
             width={800}
             height={600}
@@ -71,7 +71,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="steens 1"
+              alt="Alvord Desert from the summit of Steens Mountain"
               src="https://lh3.googleusercontent.com/pw/AM-JKLV-YPvyN7EIn-p_83V-JctdfhPoNDH01ubsoCLchDFwIsr70inJNQLqSAtc3IHbgORLvoJsDMXiLyGt7sNLIp1RRolIZPwLqd8uY2hWMhi4rYk_tDRmQ7Nmvy-d1racBUF6TQiWDi3y--dym_4NAiBG=w800-h600-no?authuser=0"
               width={800}
               height={600}
@@ -92,7 +92,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="big indian 1"
+              alt="Big Indian Gorge Trailhead"
               src="https://lh3.googleusercontent.com/pw/AM-JKLXZog65DUqPmWPvxZem6ollOAv1pGac-ELpmBtzD32Po9IVurtVo1abcD5HFGVnpft8wWOEMDdTsjFdo7RHG2uI4ebuOntvlN7_sxT_ct0FB-e5P5B3MYe0taYHl6bD3GAChddEoF9De_qOrwok-YoP=w800-h535-no?authuser=0"
               width={800}
               height={535}
@@ -125,7 +125,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="wildhorse 1"
+              alt="Wildhorse Lake, Steens Mountain"
               src="https://lh3.googleusercontent.com/pw/AM-JKLU_eq1hvRr7Rv4siJQHUF_0Q2OuKYp5KquN-poxPHvg32SuwA3SrSZsZkfjbcVH8iu9SmAgfrZwX9AvLB2g25Qf0N7uGcsfPGSJ6AvKvm5AEqdHUWwlKvhD7hchVE0K162LowWTB8zWjYgMsUa7mofz=w800-h600-no?authuser=0"
               width={800}
               height={600}
@@ -156,7 +156,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="blitzen 1"
+              alt="Little Blitzen Gorge, Steens Mountain"
               src="https://lh3.googleusercontent.com/pw/AM-JKLV45Gtk0TppqygLv5Aojd-VjZlWO2tIotMgVccqn1c9uzeS_6DamdGMQjinThVdZbJ8PcPaz6ha4nOVDgbVm8uP6vO1CLDV2kPGYghoSxLk71fPwcVot9TuY2Ywjey1FaJ-JFn7ff7gt0uH0T7HXnNV=w800-h535-no?authuser=0"
               width={800}
               height={535}
@@ -179,13 +179,13 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="alvord 1"
+              alt="Hot Springs in the Alvord Desert"
               src="https://lh3.googleusercontent.com/pw/AM-JKLVrHZmc8gemNKXCEgwbzYijIKY1Kf7O2anuPNG-35Y7X2Iwk63gKP28-8d_nQB-NTmn879qdgjtiJRtxQw3PbAsMPzgKuosTb_uQX1_LDkR-pRekQyqSXveIU_XhweJwSvxSCzHKlg3VD48oSUqDf-m=w800-h600-no?authuser=0"
               width={800}
               height={600}
             />
             <Image
-              alt="alvord 2"
+              alt="Steens Mountain from the Alvord Desert, Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLUXQikiJVc7pmCCCLtHBfAJVkDpMNSPMTk9V8Y0AwSzfaoGyR6mcQvbz8s_tJB0Y8UBXGrsq_mQuOs3UeJegZWzYgM74RL9QCXHtQ569MkN2tty6RctxYTktO0DYDOPgOhwQl-T_aMR_Jvtoqkc-F3u=w800-h600-no?authuser=0"
               width={800}
               height={600}
@@ -200,7 +200,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="alvord 2"
+              alt="Pike Creek Trail, Stens Mountain"
               src="https://lh3.googleusercontent.com/pw/AM-JKLXaB51X9bsutjgz7ujskdwKygu9-AmvJXgfaDV5AiJ0hLlyBwwjELUWdNUeVBopyeWgI5SPRHbK3DJc1y1k9QbvofjEnOWDPVV1R9QASOJrSWsxvVRMBcawEyLLhuR8bEtC_epXYh0JqCgkvpKh_nMH=w800-h600-no?authuser=0"
               width={800}
               height={600}
@@ -220,7 +220,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="milkshakes 1"
+              alt="Milkshake flavors in Fields, Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLXFlcT_nuZXD8QA5IqlZ03mJTtO0FrVHCg_zEb8rZLrZSTllb2rmsTYsRi_Wtx7YkUvNY1ul7mEjmNImges-p6Sh0GGgYtlTMMbgsJAzm8lA6PtDz8P-Z8rG423HLDm1TwU0M25INOHKxxMCv9UuQXq=w600-h800-no?authuser=0"
               width={600}
               height={800}
@@ -240,7 +240,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="willow creek 1"
+              alt="Willow Creek Hot Springs, Southeastern Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLU52QdOEPmxeueHSx-A7btmPNsdJQ6hlvJyXBi1taoZP9PI7AEgYzvKBnozDe51uasCxNxZN0f6-vs94p5d-mNKtoh_2rZuE8HLy-3a3zwCk8kUDYhA60PcJi_1uSoM7OpWwoTRiLrNPrEb1i_g-FRN=w600-h800-no?authuser=0"
               width={600}
               height={800}

@@ -51,7 +51,12 @@ export default function Post() {
                     We had a late start and chose to camp at Clear Lake after hiking 2.5 miles from the 
                     trailhead. We must have camped under the tree of this Steller's Jay, because he kept hopping around the entire time we were there, looking for food.`}
         </div>
-        <Image alt="jay" height={450} width={700} src={jay} />
+        <Image
+          alt="Steller's Jay near Clear Lake, McKenzie River Trail"
+          height={450}
+          width={700}
+          src={jay}
+        />
         <div>
           {`South of Clear Lake, you'll arrive at a loop trail connecting Sahalie and Koosah falls. You'll hit Sahalie first, 
                     and then Koosah - Both falls are gorgeous, with vibrant hues of blue and green from the water and vegetation. This section of the McKenzie
@@ -60,7 +65,12 @@ export default function Post() {
           <br />
           <div className={utilStyles.flexWrapContainer}>
             <Video src={fallsMovie} height={450} width={300} />
-            <Image alt="falls" height={450} width={700} src={falls} />
+            <Image
+              alt="Sahalie Falls, McKenzie River Trail"
+              height={450}
+              width={700}
+              src={falls}
+            />
           </div>
           <br />
         </div>
@@ -73,8 +83,18 @@ export default function Post() {
                     The pool is encircled by rocky cliffs, though there is a short scramble to get down to the water on the far side.`}
           <br />
         </div>
-        <Image alt="bp" src={bluePool} height={450} width={300} />
-        <Image alt="bp2" height={450} width={700} src={bluePool2} />
+        <Image
+          alt="Blue Pool, McKenzie River Trail"
+          src={bluePool}
+          height={450}
+          width={300}
+        />
+        <Image
+          alt="Top down look at Blue Pool on the McKenzie River Trail"
+          height={450}
+          width={700}
+          src={bluePool2}
+        />
         <div className={utilStyles.textBlock}>
           {`After Blue Pool, we continued to our second campsite, Bigelow Hot Springs. Bigelow is a primitive hot springs located on a
                     tributary creek of the McKenzie River. There is a small campground near the springs, and another across the creek. 
@@ -93,7 +113,12 @@ export default function Post() {
                     summer months. A popular method of hiking the trail is to shuttle from Clear
                     Lake to McKenzie bridge.`}
         </div>
-        <Image alt="clear lake" src={clearLake} width={1200} height={750} />
+        <Image
+          alt="Clear Lake, McKenzie River Trail"
+          src={clearLake}
+          width={800}
+          height={500}
+        />
       </div>
     </Layout>
   );

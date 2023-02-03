@@ -123,7 +123,7 @@ export default function TankLakes({ readMore }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="La Bohn Peak."
+                alt="La Bohn Peak in the Alpine Lakes Wilderness."
                 src="https://lh3.googleusercontent.com/pw/AL9nZEXc1d_B-c2n9oM43JHWBS-gwnxBAqkH2T3qzwmU5wYSXCZubj2YD6PhQ3tdhAfGSC4A77p60oqM5C7of3gjh6pPXsmIxnuT7B7P3xWRbpT1gQyMCikxoxz_zVEca56pHa-4bmWXxNujnEuqoX4BWi_b=w800-h533-no?authuser=0"
                 width={800}
                 height={533}
@@ -160,7 +160,7 @@ export default function TankLakes({ readMore }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Lauren At Tank Lake"
+                alt="Lauren At Tank Lake in the Alpine Lakes wilderness"
                 src="https://lh3.googleusercontent.com/pw/AL9nZEUkOU8lLO9dbeu59q0hNZUu6Qr4ta-fTwifMpD6ZDTyjT9SnwK7BnLH8Ua4i4822P0ozVSatW1Bl2TmXdDNEA7Tko5XViqtifUHlTMhn1HGjiF2jB0A2vaHIaV7WWvYLmQJNeB-8wQbQuDCO4g6RkxZ=w355-h533-no?authuser=0"
                 width={355}
                 height={533}
@@ -169,7 +169,7 @@ export default function TankLakes({ readMore }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Tank Lake, Washington."
+                alt="Tank Lake, Alpine Lakes Wilderness."
                 src="https://lh3.googleusercontent.com/pw/AL9nZEWmCLIhWCMT_h4Lf7SJg03PDmzhpWC3UTvygOg8If-Ssgq76_Z51qIJPypft6bYor6YzWezLGii72djD3gzIEgLioO4GFDg4Zb201NLefKB-r2Yawl5bcuvcY6g8RpefeyxMqZTgiRjNwGgZ__El_qP=w533-h534-no?authuser=0"
                 width={533}
                 height={534}
@@ -188,7 +188,7 @@ export default function TankLakes({ readMore }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Chimney Rock, Washington."
+                alt="Chimney Rock, Alpine Lakes Wilderness."
                 src="https://lh3.googleusercontent.com/pw/AL9nZEXMkXbwXs7yzykr1uivjOt-D2XFujkz5zL-0GFIrTIGOJfZ1vidwBgLROY5wKI9HEFPBp9ipDmvWdznUSkWOB2u2S6VLCShL3snRESzlPdeY5YNg4lDiFIW-ploSLpXkdoyfdEFXONfTzOKRR6WHBsH=w533-h800-no?authuser=0"
                 width={533}
                 height={800}

@@ -43,7 +43,7 @@ export default function Post() {
                 (they were incredibly friendly).`}
         </div>
         <Image
-          alt="campsite"
+          alt="Willow Creek Hot Springs, Southeastern Oregon"
           height={450}
           width={300}
           src={image("springs.jpg")}
@@ -62,12 +62,17 @@ export default function Post() {
                     Fields is also the only place for food or gas within a few hours drive.`}
         </div>
         <Image
-          alt="campsite"
+          alt="Campsite at Willow Creek Hot Springs, Oregon"
           height={450}
           width={300}
           src={image("tent.jpg")}
         />
-        <Image alt="sunset" height={600} width={900} src={image("cover.jpg")} />
+        <Image
+          alt="Sunset at the Willow Creek Hot Springs Campground, Oregon"
+          height={600}
+          width={900}
+          src={image("cover.jpg")}
+        />
       </div>
     </Layout>
   );

@@ -45,7 +45,7 @@ export default function Post() {
                     a view of South Sister. Don't feel too bad if you skip this one, as the views are better around Camp Lake.`}
         </div>
         <Image
-          alt="demaris lake"
+          alt="Demaris Lake, Three Sisters Wilderness"
           height={450}
           width={600}
           src={image("demaris.jpg")}
@@ -70,9 +70,9 @@ export default function Post() {
                     of year.`}
         </div>
         <Image
-          alt="camp lake"
-          height={800}
-          width={1200}
+          alt="Camp Lake, Three Sisters Wilderness"
+          height={533}
+          width={800}
           src={image("camp-lake.jpg")}
         />
         <div className={utilStyles.textBlock}>
@@ -97,12 +97,15 @@ export default function Post() {
                 As a day hike, I didn't have enough time to fully traverse the basin. Hiking the saddle has incredible (so I've heard) views, 
                 more so on a clear day.`}
       </div>
-      <Image
-        alt="camp lake 2"
-        height={800}
-        width={1200}
-        src={image("camp-lake-2.jpg")}
-      />
+      <br />
+      <div className={utilStyles.centered}>
+        <Image
+          alt="Middle Sister from Camp Lake, Three Sisters Wilderness"
+          height={533}
+          width={800}
+          src={image("camp-lake-2.jpg")}
+        />
+      </div>
     </Layout>
   );
 }

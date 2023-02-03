@@ -48,7 +48,7 @@ export default function Post() {
           {`Consider doing the Steens Summit trail while you're here, it's a 1 mile walk from the trailhead and is definitely worth doing.`}
         </div>
         <Image
-          alt="image 1"
+          alt="Wildhorse Lake, Steens Mountain"
           height={750}
           width={1000}
           src="https://lh3.googleusercontent.com/pw/AM-JKLX7BM5SetzbN-Ogj7d1BXNYsMQ55ED7Cq3fgTrbLnmBxWyH9rlquLMd9j16vAZhxRFbt3b4jkzFgHyYNSwju5Q2Os3yxAqjE7c_UUYA-r4M7xQks4JE850B8UOITgSUlaS0AlCYwYZ0W1JKArx-mNYu=w1423-h1067-no?authuser=0"
@@ -63,7 +63,7 @@ export default function Post() {
                     even on a busy holiday weekend. Traffic in general is pretty light, though you will see other people.`}
         </div>
         <Image
-          alt="image 2"
+          alt="Canyon below Wildhorse Lake, Steens Mountain"
           height={750}
           width={1000}
           src="https://lh3.googleusercontent.com/pw/AM-JKLURFzVd6PqbRfon6gyycGM9nz2OXKRkdw7YD8Qe7yTgvucRki-QkK9NjOvu50Qgx8F8G6qvAzW5k5o-z3mEvNS_26ScMG0D2w2n9PdCPt3NuxJ7m_wAX-Ksa4iIY81yR1gYmC8mUyPL59zOtmRsuxWl=w1423-h1067-no?authuser=0"
@@ -84,7 +84,7 @@ export default function Post() {
           {` southeast of Fields. Both are gorgeous, remote, and unique areas.`}
         </div>
         <Image
-          alt="image 3"
+          alt="Alvord Desert, Oregon"
           height={550}
           width={1000}
           src="https://lh3.googleusercontent.com/pw/AM-JKLVitSGVlYhZE8z-eH4aaU3Pt2I-co10hx4eSPlebffxdWAK8lopCbB-845u7oAqSsC_45HHWI83cT7ERHoZj2QsVnAMs7c2O-n86Gf0pHbgnLqIAR_8ws83Txx95Zd3yR-pzui_k2JXbXUpdGnT6_rO=w1334-h750-no?authuser=0"

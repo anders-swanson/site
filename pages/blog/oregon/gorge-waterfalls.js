@@ -56,7 +56,7 @@ export default function Post() {
         <div className={utilStyles.flexWrapContainer}>
           <Video src={rawData("IMG_5701.mp4")} width={300} height={450} />
           <Image
-            alt="triple falls"
+            alt="Triple Falls in Oneonta Gorge"
             src="https://lh3.googleusercontent.com/pw/AM-JKLUXRx5xqIBsLJHM94qX1apD7XHkEKLQCqyQialABS1LBxdk80sYH7T2-7-nJFe55K_tieG0HwgbEY2ZMHQ1d7sgbLHvDJSBMIDmXmzwre9vGchXvUhxNNaS9aeUxrBzrkSmZ4YM6L5-r3P_PEt72TVh=w801-h1067-no?authuser=1"
             width={300}
             height={450}
@@ -79,7 +79,7 @@ export default function Post() {
                     This area is known for car prowlers/break ins, so take caution and leave nothing (especially not any valuables) in your car.`}
         </div>
         <Image
-          alt="wahclella"
+          alt="Wahclella Falls, Columbia River Gorge"
           height={650}
           width={1000}
           src="https://lh3.googleusercontent.com/pw/AM-JKLV2XGi4GsQisZTCqJTqwUAIHLjUOhKJNWJ0HbvZcClSl2jCbhFKsRSXSisB1zVhDKmgabE8En4jNvMf6j1w-tCyZPiUOMlWb46fN82MFgldvGFVmYwbnivxrjozh4W2VXF1dUxHUXSIVUTvbkVUzXbL=w1597-h1067-no?authuser=1"
@@ -103,7 +103,7 @@ export default function Post() {
                     has a nice view up and down the Columbia River, and the interior is usually open for visitors.`}
         </div>
         <Image
-          alt="latourell"
+          alt="Latourell Falls, Columbia River Gorge"
           height={1000}
           width={650}
           src="https://lh3.googleusercontent.com/pw/AM-JKLU9NTNEBphj3drkI3Rt4XucNB1Vwd8V2rYhi_WmjGPYQr9AvtteDfkhmI8yTiMym_v-HAHQgESDR_K5ahzMIOC2Ev-2e_LHTIXNZ_9E55q0nSnuwoCmE2rlm0TF6A3GMZ6J2rYV3mUD0T2yICLFTR6c=w714-h1067-no?authuser=1"
@@ -135,7 +135,7 @@ export default function Post() {
             height={450}
           />
           <Image
-            alt="image"
+            alt="Wiesendanger Falls on Multnomah Creek"
             height={450}
             width={300}
             src="https://lh3.googleusercontent.com/pw/AM-JKLWHSFuTbVi-5jE8A1GeknS9KZH8mKIJEmFqw5So8ZOfPfwDU555IYFBU0u6BfY0fI3rSB-qXsQoJBY6n5ARJFHlOY4Sd0jWwwkir10-UbdlrFqvxQcNyeIiJVukFjpRajo2a1DBFt4yz4_wdJKQaDZN=w714-h1067-no?authuser=1"

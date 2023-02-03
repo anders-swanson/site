@@ -50,8 +50,8 @@ export default function Post() {
               "https://lh3.googleusercontent.com/pw/AM-JKLXrOavwYa--l0VD5PY5Dj7FeQoguECZsG2AIxmnxVo_9khfyqbXXOkRbhFdGluInTb-qHnCuy-CX-Cx9KVWz_QFrZ04dbPTpowQOFBIwoOb2atZsQZxFNrh_mRMb92RTndTSK2_VHm9OeTV-SDyEj8D=w1423-h1067-no?authuser=0",
               "https://lh3.googleusercontent.com/pw/AM-JKLWWLy1o271Hew_bLkYcPja2bVAWNI4CudUceeFo7XFDQbQtBR79p0UPdhreahvfIqTpQ5wq31fOWw3ZIEsy0QSnPpeBrVYinbFym0vGtjnUob0WY3df_lc_J-EXa9q26u5ky3tTdXhQc2LqrJ4XpBrg=w1423-h1067-no?authuser=0",
             ]}
-            width={1200}
-            height={750}
+            width={800}
+            height={600}
           />
           <br />
           <br />
@@ -65,12 +65,14 @@ export default function Post() {
           {`The final section of the out-and-back is the best, and you'll be rewarded with the towering 450' Druid Arch.`}
           <br />
           <br />
-          <Image
-            alt="druid arch trail"
-            src="https://lh3.googleusercontent.com/pw/AM-JKLW8uheYsKSUsHFmE3FjotKgn-l2nqrm6QQ4x776ciLK_bxYXwfug2MOU1MyF6NRWXMvEUtOtHxFPCEpVth4rSx6C-3bBJELZSobIXpPsdR_UgTdJi7rG2pDnMVxDaLBRmVnJ2O66AWop_OVHoIhP_Zr=w1423-h1067-no?authuser=0"
-            width={1200}
-            height={750}
-          />
+          <div className={utilStyles.centered}>
+            <Image
+              alt="Druid Arch, Canyonlands National Park, Utah"
+              src="https://lh3.googleusercontent.com/pw/AM-JKLW8uheYsKSUsHFmE3FjotKgn-l2nqrm6QQ4x776ciLK_bxYXwfug2MOU1MyF6NRWXMvEUtOtHxFPCEpVth4rSx6C-3bBJELZSobIXpPsdR_UgTdJi7rG2pDnMVxDaLBRmVnJ2O66AWop_OVHoIhP_Zr=w1423-h1067-no?authuser=0"
+              width={800}
+              height={600}
+            />
+          </div>
           <br />
           <br />
           {`The Druid Arch hike was one of the highlights of visiting Utah, it's worth exploring the Needles (and Canyonlands) further 
@@ -83,7 +85,7 @@ export default function Post() {
           <br />
           <br />
           <Image
-            alt="druid arch trail"
+            alt="Hiking through a wash along the Druid Arch Trail, Canyonlands National Park, Utah"
             src="https://lh3.googleusercontent.com/pw/AM-JKLWf_riOhczyw1FHQ_Dli7IUNYl4F8hncIu7dr7zzZv6ZpL7oCIZnryM1-7RNLDT1P9zx6pZAJ4OJCric0mPulHyKFVF1_Eg5eaNsl6wLI2VUYPIXDAfWmMDl-GN2UspTPg7W_SHYzZ2Ppx81rCiOvGZ=w1423-h1067-no?authuser=0"
             width={1200}
             height={833}

@@ -58,7 +58,12 @@ export default function Post() {
                     or you can try your luck by checking one of the ranger stations in the park for any available walk-up permits
                     (around 50% of the permits are reserved for walk-ups).`}
         </div>
-        <Image alt="cosley" height={450} width={700} src={image1} />
+        <Image
+          alt="Cosley Lake, Glacier National Park"
+          height={450}
+          width={700}
+          src={image1}
+        />
         <div className={utilStyles.textBlock}>
           {`Our first night was at Glenns Lake Head, a 10 mile trek from Chief Mountain. On the way, we passed through meadows
                     and valleys, before climbing up to Cosley Lake, which connects to Glenns Lake. These lakes (like most in Glacier),
@@ -70,7 +75,12 @@ export default function Post() {
                     further past Elizabeth Lake to Helen Lake. Helen Lake is backed by a steep, snowy headwall, and was probably the most beautiful
                     place we saw in Glacier.`}
         </div>
-        <Image alt="lauren helen lake" height={450} width={700} src={image2} />
+        <Image
+          alt="Helen Lake, Glacier National Park"
+          height={450}
+          width={700}
+          src={image2}
+        />
         <div className={utilStyles.textBlock}>
           {`On our third day, we had a short hike to our next campsite, so we decided to make the climb up to Ptarmigan Tunnel.
                     The Ptarmigan Tunnel hike is a tough climb to a man-made pass. The tunnel pass provides access through the mountains to
@@ -82,7 +92,12 @@ export default function Post() {
                     from hibernating in it. It's an amazing experience to pass through the tunnel, as it feels like a portal between two
                     totally different sections of the park.`}
         </div>
-        <Image alt="ptarmigan trail" height={450} width={700} src={image4} />
+        <Image
+          alt="Foot of Cosley Lake, Glacier National Park"
+          height={450}
+          width={700}
+          src={image4}
+        />
         <div className={utilStyles.textBlock}>
           {`Coming down from the Ptarmigan Tunnel, we headed back towards Cosley Lake, for our final night in Glacier.
                    On our last day, the hike out from Cosley Lake clocked in at around 9 miles to Chief Mountain Trailhead.`}
@@ -94,14 +109,34 @@ export default function Post() {
                    you're required to hang your food (and other scented items/cookware) on provided poles while camping. You are 
                    recommend to bring bear spray, and make plenty of noise while on the trail to avoid startling any bears.`}
         </div>
-        <Image alt="ptarmigan trail" height={450} width={700} src={image3} />
+        <Image
+          alt="Midway up the Ptarmigan Trail, Glacier National Park"
+          height={450}
+          width={700}
+          src={image3}
+        />
         <div className={utilStyles.flexWrapContainer}>
-          <Image height={400} width={400} alt="5" src={image5} />
-          <Image height={400} width={400} alt="6" src={image6} />
-          <Image height={400} width={400} alt="7" src={image7} />
+          <Image
+            height={400}
+            width={400}
+            alt="Chief Mountain Trail, Glacier National Park"
+            src={image5}
+          />
+          <Image
+            height={400}
+            width={400}
+            alt="Glenn Lake head, Glacier National Park"
+            src={image6}
+          />
+          <Image
+            height={400}
+            width={400}
+            alt="Small river in Glacier National Park"
+            src={image7}
+          />
         </div>
 
-        <Slider height={900} width={1200} slides={slides} />
+        <Slider height={600} width={800} slides={slides} />
       </div>
     </Layout>
   );

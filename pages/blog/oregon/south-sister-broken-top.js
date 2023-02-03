@@ -57,8 +57,18 @@ export default function Post() {
                     trail through July or even August at higher elevations. South Sister has an elevation of 10,363 feet, and Broken Top is at 9,117 feet. Both mountains
                     are home to glaciers, though the remaining glaciers have shrunk considerably in recent years.`}
         </div>
-        <Image alt="heart rock" height="450px" width="300px" src={heartRock} />
-        <Image alt="no name lake" height={500} width={850} src={noNameLake} />
+        <Image
+          alt="Heart-shaped rock with Broken Top in the background"
+          height="450px"
+          width="300px"
+          src={heartRock}
+        />
+        <Image
+          alt="No-Name Lake on Broken Top"
+          height={500}
+          width={850}
+          src={noNameLake}
+        />
         <div className={utilStyles.textBlock}>
           {`We hiked Broken Top from the `}
           <Link href={toddCreekTrailhead}>Todd Lake trailhead</Link>
@@ -73,13 +83,13 @@ export default function Post() {
                    and cracking, sending echoes throughout the lake basin.`}
         </div>
         <Image
-          alt="bend glacier"
+          alt="Spire of Broken Top near the summit"
           height="450px"
           width="300px"
           src={bendGlacier}
         />
         <Image
-          alt="lauren on south sister"
+          alt="Looking north from South Sister"
           src={laurenSummit}
           height={613}
           width={850}
@@ -103,15 +113,15 @@ export default function Post() {
         </div>
         <div className={utilStyles.flexWrapContainer}>
           <Image
-            alt="view from summit"
-            height={700}
-            width={1200}
+            alt="Middle and North Sister, Central Oregon"
+            height={533}
+            width={800}
             src={summitView}
           />
           <Image
-            alt="teardrop pool"
-            height={700}
-            width={1200}
+            alt="Teardrop Glacier, South Sister"
+            height={533}
+            width={800}
             src={teardropPool}
           />
         </div>

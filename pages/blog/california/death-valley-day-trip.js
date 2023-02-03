@@ -57,13 +57,13 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="sw 1"
+              alt="Sidewinder Canyon in Death Valley National Park"
               src="https://lh3.googleusercontent.com/pw/AM-JKLVdrK7PWp2jTVIBC5ZSC7l_PQOuQ6BpnPr1lcmLpksxTfMd9Y9rzsW2HwtAz68lhwxhLRs6y0SDrFOq8uDjheMk0IY_neqdnZsb968p89PFG1_bw4Di4xHe_rYCuuhnMqh7Xwqo9SdExoPbp1XQ35ax=w450-h600-no?authuser=0"
               width={400}
               height={600}
             />
             <Image
-              alt="sw 2"
+              alt="Another look at Sidewinder Canyon in Death Valley National Park"
               src="https://lh3.googleusercontent.com/pw/AM-JKLU9FgzPI1jEP4Fo2RXNNAW3cHiB_YioDi2EulxbU9wKmmW2r_SgvR8LoYRP2qWhCz4Lt-3HNRVAHL5m3imPAlCY1mZRqFQkbs-JYrszKqETPRyS-bsLUv_FVA5CVeymjYkhVJQzETkSrZ7I4NrUD9EU=w535-h800-no?authuser=0"
               width={400}
               height={600}
@@ -90,7 +90,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="sw 3"
+              alt="Looking out out of Sidewinder Canyon in Death Valley National Park"
               src="https://lh3.googleusercontent.com/pw/AM-JKLUReH_hE7axUSgTcefmTDxO2jthM1S9h7Kja3YI69bdctkEUzBlKJ4UD3VwCMSw3zXiyeeY3mnZXNoBCTlKV8cjTWobFUOUL8gyjqnKe5py_MKXDOtYmFL5O_TUyHkdgqdsBp_zdZmZWz8Pp_GnnMDK=w800-h535-no?authuser=0"
               width={800}
               height={500}
@@ -113,7 +113,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="mosaic 1"
+              alt="Mosaic Canyon in Death Valley National Park"
               src="https://lh3.googleusercontent.com/pw/AM-JKLXnTrI3ESDLqDzVPCFblaDk0134bWDf-bQF_e6bmgwC2PMhFx7fHTGMYVQHLIXhOLR2NcGfPqte_v460on4QAb7ZyjNJlySgQFtkSN0Rs9RY_2-NkO7eG6eWWXvTWBN2Yh5JIvKDHU_nRskahZQs2SB=w450-h600-no?authuser=0"
               width={450}
               height={600}
@@ -132,7 +132,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="mosaic 2"
+              alt="Steep dryfall in Mosaic Canyon, Death Valley National Park"
               src="https://lh3.googleusercontent.com/pw/AM-JKLXnfI5UDughKrDIS61u3gH4A-Zw0CohqzjEYddm-B_fiZ05T6j_ENQOy2StSEPB3unSo6JYd7KAf8QvIl9jHYRE3rBjzw1QaUAOFz-sGuZwT56qsoAMan9_C6gxEd5PoUj7V893aD3UVzkTlWceZonm=w535-h800-no?authuser=0"
               width={450}
               height={600}
@@ -159,7 +159,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="mesquite 1"
+              alt="Mesquite Dunes in Death Valley National Park"
               src="https://lh3.googleusercontent.com/pw/AM-JKLU_ClGHlgAUTk2whwqprk58CS_uj3mYD0BbciA2n1-RRm6BiRBBy-51nbdFgbVJDQdpgTA1pYYlzNFZBJiMpgy1q7HMF4RRcH5uZlFZiw6_9QuxCHYgCo88xLStn2uM9ZE6exYB8mir42_y3_rKthip=w800-h535-no?authuser=0"
               width={800}
               height={500}
@@ -179,7 +179,7 @@ export default function Post() {
           <br />
           <div className={utilStyles.centered}>
             <Image
-              alt="mesquite 2"
+              alt="Rolling dunes in Death Valley National Park"
               src="https://lh3.googleusercontent.com/pw/AM-JKLUrtHrBzsvTRXys6GhBL84IfsiF_-eaEu1KcdZ5VxF01U5sxZgxm7bxXndElBGWpVa7BcWopNU67NKFVSPQLlaCBBZTM8oiBCSlk7kn0ym4SgzGmnbtoUFY5mQUyi7ewjkPRRi6JVjJSFlSWYZcT0E3=w800-h535-no?authuser=0"
               width={800}
               height={500}
@@ -204,7 +204,7 @@ export default function Post() {
         <br />
         <div className={utilStyles.centered}>
           <Image
-            alt="badwater 1"
+            alt="Badwater Basin salt formations, Death Valley National Park"
             src="https://lh3.googleusercontent.com/pw/AM-JKLVqAxekmNSehHtuzWEr-xY56FbxJsRr7lS_ataEiiiw0aePPsyac1VeBq4VI4Bt7Z3nUif6XbKP6Hmx06OQmWVEiVlLzxJotjiymKPlkH5cNsSICajdVm5dcJrz558q9cQ323mC_a2MlFHfAnUipJyQ=w450-h600-no?authuser=0"
             width={450}
             height={600}

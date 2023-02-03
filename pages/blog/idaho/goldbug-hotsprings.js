@@ -65,7 +65,7 @@ export default function Post() {
         <Image
           height={600}
           width={400}
-          alt="springs"
+          alt="Heart-shaped pool at Goldbug Hotsprings, Idaho"
           src={image("springs1.jpg")}
         />
         <Video height={600} width={338} src={mov2} />
@@ -75,7 +75,7 @@ export default function Post() {
         <Image
           height={400}
           width={1200}
-          alt="smoke mountains"
+          alt="Smoke from wildfires, Idaho"
           src={image("mountain.jpg")}
         />
       </div>

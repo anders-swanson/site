@@ -42,7 +42,7 @@ export default function Post() {
           wildflowers depending on the season.
         </div>
         <Image
-          alt="gorge1"
+          alt="Walking through the Little Blitzen Gorge"
           height={400}
           width={600}
           src={image("gorge1.jpg")}
@@ -60,7 +60,7 @@ export default function Post() {
                     cutthroat trout is possible in almost any water body of the Steens.`}
         </div>
         <Image
-          alt="gorge3"
+          alt="Little Blitzen Trail, Southeastern Oregon"
           height={400}
           width={600}
           src={image("gorge3.jpg")}
@@ -69,21 +69,21 @@ export default function Post() {
       <hr />
       <div className={utilStyles.flexWrapContainer}>
         <Image
-          height={800}
-          width={1200}
-          alt="gorge2"
+          height={533}
+          width={800}
+          alt="Near the start of the Little Blitzen Trail"
           src={image("gorge2.jpg")}
         />
         <Image
-          height={800}
-          width={1200}
-          alt="gorge4"
+          height={533}
+          width={800}
+          alt="Little Blitzen Trail in Southeastern Oregon"
           src={image("gorge4.jpg")}
         />
         <Image
-          height={800}
-          width={1200}
-          alt="gorge5"
+          height={533}
+          width={800}
+          alt="Tree tunnel on the Little Blitzen Trail"
           src={image("gorge5.jpg")}
         />
       </div>

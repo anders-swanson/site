@@ -43,7 +43,7 @@ export default function BlueLake({ readMore }) {
         <div className={utilStyles.centered}>
           <Pinnable
             page={pageURI}
-            alt="Blue Lake"
+            alt="Blue Lake in the North Cascades"
             src="https://lh3.googleusercontent.com/pw/AMWts8BKTXF6nEqkq8Zr4gQe76AftrE3YLNP5D-IERxqrF2eemLog4sNFlOnLpJ87rVBXtmFj6yRhFEfk090oNrNfnnUkYe7CqadeK_qT73AHG9U37a6NjOWpILXoDZo4DyQTpEmZ8KdtpD5nmI3aYMUUpsK=w355-h533-no?authuser=0"
             width={355}
             height={533}
@@ -83,7 +83,7 @@ export default function BlueLake({ readMore }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Blue Lake view"
+                alt="Reflections on Blue Lake"
                 src="https://lh3.googleusercontent.com/pw/AMWts8CqFcIE8figBmvcqdX5-aD3kNsH5lKwHO1nT1BFn7bQgPIMtaHGaAhmxLnZ5JnrAWT1d0_9sb8vcEpovN8-rXrtt5frLRjlZb5z4fcaovHFeaBeAMAsaHQfuBiJt4BdywnYG77ctAdVsYwWATtdNt_u=w800-h533-no?authuser=0"
                 width={800}
                 height={533}
@@ -98,7 +98,7 @@ export default function BlueLake({ readMore }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Blue Lake Tarn"
+                alt="A small tarn above Blue Lake"
                 src="https://lh3.googleusercontent.com/pw/AMWts8BYBxG86xNDW_gVo-zrIV71K6rq9TNcniMQoWAkV36pZtqjmVyMFL9_X6L1USBwpKzhC4FVbgWN0MyD69FRgpEjxTfD8mavGC8OaxNPuzCPe4tGiHmJIsx-Kk4BI-_RZ9QlheJczM1hOZMqQr73y-E-=w355-h533-no?authuser=0"
                 width={355}
                 height={533}
@@ -112,7 +112,7 @@ export default function BlueLake({ readMore }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Blue Lake Tarn 2"
+                alt="Reflections on the tarn"
                 src="https://lh3.googleusercontent.com/pw/AMWts8CQYPOx4A2U4u3Mye-QAPeTpsh8Q9v0bKc-c-A-vAfVqamXnbXCRpXb5jAIZQH1WIT9MXBf80xnzlF9rYMp6AG1uPyZYa4R4Z0e7v7dnoXovsqMvtI0RKnXXsYeisJ7Tn7USnzAZuo6IFs13MsapONR=w800-h533-no?authuser=0"
                 width={800}
                 height={533}

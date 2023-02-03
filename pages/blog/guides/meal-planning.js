@@ -75,7 +75,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="pc0"
+              alt="Backcountry coffee brewed with water filtered from an alpine lake"
               src="https://lh3.googleusercontent.com/pw/AL9nZEXpsimNoMDv981nPmAkR9PF9I6iF5GlI2xEsh_yGIB5QaEER7o1ajY_xrLSwpc4kYOshiZOBb0YfAmlNfqazItU9teESLwTyVu1USmtAZg4Pnh7MHT9dDtyh2RPL3i5rEKGhHU9-U4KjBhS9jP8Y-fn=w533-h800-no?authuser=0"
               width={533}
               height={800}
@@ -148,7 +148,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="pc1"
+              alt="Oatmeal with Granola at Ramona Falls"
               src="https://lh3.googleusercontent.com/pw/AL9nZEWZfLMoTTE1mc2Emrrq5BkUvU6sdzxXn2efyALd-ttvKQThKxwnPkcWfXySwNi0xnD5oFHN4itWdIa02jKeNdiZh7ed13rwHicV6cziI_zNQK_op0EvMMaRgl7XZl4awGDHqTNwEj3yvCz3vLkKxC3m=w450-h600-no?authuser=0"
               width={450}
               height={600}
@@ -188,7 +188,7 @@ export default function Post() {
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt="pc2"
+              alt="Rummaging through a bear container while making dinner"
               src="https://lh3.googleusercontent.com/pw/AL9nZEWT1pWQYMGFfOuypOHmiiOwX2ftIqTpHY3nwHxbzGJ1ah22dc76hbTveUOomWBo9ptnmzl93FfsnF4qPQa5B8h5mnIUXGCw0LjYhYj0uj8Aqzo0vnhQDXZjp55Eb9iDr3nW1IxrjKn0sTr6YA8RUlI9=w828-h1067-no?authuser=0"
               width={450}
               height={600}

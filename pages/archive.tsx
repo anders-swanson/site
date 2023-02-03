@@ -7,7 +7,7 @@ export default function ArchivePage({ posts }) {
   return (
     <Layout
       description={`Post Archive.`}
-      ogImage="/images/cover.jpeg"
+      ogImage="/cover.png"
       headerText="Archive"
       noHeader
     >

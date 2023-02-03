@@ -58,7 +58,12 @@ export default function Post() {
           {`It's strongly recommended to visit the Dalles Mountain Ranch during the spring wildflower bloom. The peak bloom varies
                     every year with the weather, usually occurring around early May.`}
         </div>
-        <Image alt="trail" height={450} width={300} src={trailWithFlowers} />
+        <Image
+          alt="Wildflowers along the trail, Dalles Mountain Ranch, Columbia River Gorge"
+          height={450}
+          width={300}
+          src={trailWithFlowers}
+        />
         <div className={utilStyles.textBlock}>
           {`During the peak bloom, the rolling hills around the ranch will be covered in yellow Balsamroot. A variety of
                     other flowers contribute to the bloom, including lupine, fleabane, and blanket flower. A the high point of the
@@ -70,13 +75,18 @@ export default function Post() {
                     and even more wildflowers. When flowers are blooming at the Rancher, they're usually just budding at the top of 
                     Stacker Butte, due to the elevation change.`}
         </div>
-        <Image alt="trail" height={450} width={300} src={trail2} />
+        <Image
+          alt="Blooming Balsamroot and Lupine, Columbia River Gorge"
+          height={450}
+          width={300}
+          src={trail2}
+        />
         <div style={{ width: "1200px" }}>
           {`A favorite photo spot near the ranch is an abandoned, rusted out old car among the wildflowers. We didn't find it, 
                     but a lot of people I talked to seemed to be searching for it.`}
         </div>
         <Image
-          alt="fence with flowers"
+          alt="Dalles Mountain Ranch, Columbia River Gorge"
           height={800}
           width={1200}
           src={fenceWithFlowers}

@@ -4,12 +4,12 @@
     "prebuild": "node prebuild.js",
     "dev": "npm run prebuild && next dev",
     "build": " next build",
-    "export": "npm run prebuild && next build && next export",
-    "start": "npm run prebuild && next start",
+    "export": "next build && next export",
+    "start": "next start",
     "lint": "next lint",
     "check-url": "node scripts/url_checker.js",
     "prettier": "npx prettier --write .",
-    "precommit": "npm run prettier && npm run build"
+    "precommit": "npm run prettier && npm run precommit && npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.6",

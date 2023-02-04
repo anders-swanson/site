@@ -23,7 +23,7 @@ function writeFile(f, d) {
 }
 
 // Write the Posts function out to the metadata.js file
-writeFile(metadataFile, metadata.txt([blogDirectory, embeddedPagesDirectory]));
+writeFile(metadataFile, metadata.txt(blogDirectory, embeddedPagesDirectory));
 // Create the sitemap.xml
 writeFile(sitemapFile, sitemap.txt(pagesDirectory, domain));
 // Create the robots.txt

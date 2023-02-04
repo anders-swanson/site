@@ -1,5 +1,5 @@
 import utilStyles from "../styles/utils.module.css";
-import { Blurb } from "./pages/about";
+import { Blurb } from "./about";
 import Image from "../node_modules/next/image";
 
 export default function MiniAbout() {

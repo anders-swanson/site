@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Contact from "../components/contact";
 import RelatedPosts from "../components/related_posts";
 import React from "react";
-import About from "../components/pages/about";
+import About from "../components/about";
 
 export default function Post() {
   return (

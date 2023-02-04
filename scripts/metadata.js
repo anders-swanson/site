@@ -4,7 +4,7 @@ const metadataFlag = "//+metadata";
 const conf = require("../lib/config");
 
 // Get a sorted list of metadata from all pages in the supplied directories
-module.exports.getSorted = function (dirs) {
+module.exports.getSorted = function (d1, d2) {
   metadata = [];
   const recurseMetadata = (currentDir, relDir) => {
     const files = fs.readdirSync(currentDir);
@@ -20,9 +20,8 @@ module.exports.getSorted = function (dirs) {
     });
   };
 
-  for (let i = 0; i < dirs.length; i++) {
-    recurseMetadata(dirs[i], "");
-  }
+  recurseMetadata(d1);
+  recurseMetadata(d2);
   return metadata
     .filter((e) => {
       return e != null;
@@ -37,7 +36,10 @@ module.exports.getSorted = function (dirs) {
 };
 
 function isPostFile(fileName) {
-  return fileName.endsWith(".js") && !fileName.startsWith("[");
+  return (
+    (fileName.endsWith(".js") || fileName.endsWith(".tsx")) &&
+    !fileName.startsWith("[")
+  );
 }
 
 function addMetadata(metadata, relDir, fileName, filePath) {
@@ -159,8 +161,8 @@ module.exports.getTags = function (metadata) {
     });
 };
 
-module.exports.txt = function (dirs) {
-  let sortedMetadata = this.getSorted(dirs);
+module.exports.txt = function (d1, d2) {
+  let sortedMetadata = this.getSorted(d1, d2);
   let tags = this.getTags(sortedMetadata);
   let pages = this.getPageParams(sortedMetadata.length);
 

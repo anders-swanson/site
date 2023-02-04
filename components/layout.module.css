@@ -36,10 +36,6 @@
   font-size: 4vmin;
 }
 
-.backToHome {
-  margin: 3rem 0 0;
-}
-
 .headerBar {
   z-index: 2;
   height: 50px;
@@ -61,4 +57,9 @@
 
 .linkBar a {
   color: black;
+}
+
+.backToHome {
+  display: flex;
+  justify-content: center;
 }

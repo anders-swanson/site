@@ -17,6 +17,8 @@ const maxScroll = 5;
 
 const DynamicPostBox = dynamic(() => import("./postbox"));
 const DynamicRelatedPosts = dynamic(() => import("./related_posts"));
+const DynamicAbout = dynamic(() => import("./mini_about"));
+const DynamicFooter = dynamic(() => import("./footer"));
 
 export function PostHeader({ txt, stxt }) {
   return (
@@ -44,6 +46,7 @@ export default function Layout({
   idx = 0,
   perPage = 4,
   related = null,
+  skipAbout = false,
 }) {
   // State for the search box
   const [search, setSearch] = useState("");
@@ -152,6 +155,11 @@ export default function Layout({
             readMore={related.readMore}
           />
         )}
+        {!skipAbout && (
+          <>
+            <DynamicAbout />
+          </>
+        )}
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">
@@ -160,6 +168,7 @@ export default function Layout({
           </div>
         )}
       </div>
+      <DynamicFooter />
     </>
   );
 }

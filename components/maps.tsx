@@ -1,7 +1,4 @@
-export default function MapEmbed({ height, width, query, lat, long }) {
-  height = height ? height : 400;
-  width = width ? width : 650;
-
+export default function MapEmbed({ height=400, width=650, query="", lat="", long="" }) {
   let q = `${query}`;
   if (lat && long) {
     q = `${lat},${long}`;

@@ -14,12 +14,11 @@ export function ReadMoreHeader({ metadata, enabled }) {
 
 export default function ReadMoreLink({
   children,
-  readMoreText,
+  readMoreText="READ MORE on",
   text,
   uri,
   enabled,
 }) {
-  readMoreText = readMoreText ? readMoreText : "READ MORE on";
   return (
     <>
       {enabled && (

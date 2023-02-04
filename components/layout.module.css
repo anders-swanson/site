@@ -58,3 +58,8 @@
 .linkBar a {
   color: black;
 }
+
+.backToHome {
+  display: flex;
+  justify-content: center;
+}

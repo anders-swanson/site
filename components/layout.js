@@ -157,7 +157,6 @@ export default function Layout({
         )}
         {!skipAbout && (
           <>
-            <br />
             <DynamicAbout />
           </>
         )}

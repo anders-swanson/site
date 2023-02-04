@@ -1,15 +1,17 @@
 import Image from "../../node_modules/next/image";
 import utilStyles from "../../styles/utils.module.css";
 
+export const Blurb = `Thanks for visiting our travel blog, Trails And Trekking! We're Lauren and Anders - an adventure loving 
+            couple currently stationed in the Pacific Northwest. We're avid hikers, backpackers, and travelers. We're both originally from Oregon,
+            but we've spent the last two years traveling the Pacific Northwest and beyond. We created this blog to share our passion
+            for exploring the outdoors, and to inspire you to get outside.`;
+
 export default function About() {
   return (
     <div className={utilStyles.flexGapContainer}>
       <div>
-        {`Thanks for visiting our travel blog, Trails And Trekking! We're Lauren and Anders - an adventure loving 
-                    couple currently stationed in the Pacific Northwest. We're avid hikers, backpackers, and travelers. We're both originally from Oregon,
-                    but we've spent the last two years traveling the Pacific Northwest and beyond. We created this blog to share our passion
-                    for exploring the outdoors, and to inspire you to get outside. 
-                    I'll give a you quick breakdown of how we got to where we are, and what's in store for us next.`}
+        {Blurb}
+        {`I'll give a you quick breakdown of how we got to where we are, and what's in store for us next.`}
       </div>
       <div>
         <Image
@@ -19,6 +21,7 @@ export default function About() {
           src="/us.jpg"
         />
       </div>
+
       <div>
         {`Lauren and I both graduated with Bachelor's degrees in Computer Science in 2019, and found ourselves working corporate jobs as software engineers
                     near Portland, Oregon. We had been on several trips together at this point and knew we wanted to travel more,

@@ -17,7 +17,7 @@ const maxScroll = 5;
 
 const DynamicPostBox = dynamic(() => import("./postbox"));
 const DynamicRelatedPosts = dynamic(() => import("./related_posts"));
-const DynamicAbout = dynamic(() => import("./pages/about"));
+const DynamicAbout = dynamic(() => import("./mini_about"));
 const DynamicFooter = dynamic(() => import("./footer"));
 
 export function PostHeader({ txt, stxt }) {
@@ -155,18 +155,18 @@ export default function Layout({
             readMore={related.readMore}
           />
         )}
+        {!skipAbout && (
+          <>
+            <br />
+            <DynamicAbout />
+          </>
+        )}
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">
               <a>← Back to home</a>
             </Link>
           </div>
-        )}
-        {!skipAbout && (
-          <>
-            <br />
-            <DynamicAbout />
-          </>
         )}
       </div>
       <DynamicFooter />

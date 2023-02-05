@@ -9,11 +9,10 @@
     "lint": "next lint",
     "check-url": "node scripts/url_checker.js",
     "prettier": "npx prettier --write .",
-    "precommit": "npm run prettier && npm run precommit && npm run build"
+    "precommit": "npm run prettier && npm run prebuild && npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.6",
-    "@next/bundle-analyzer": "^13.1.6",
     "date-fns": "^2.11.1",
     "next": "^12.3.4",
     "react": "17.0.2",

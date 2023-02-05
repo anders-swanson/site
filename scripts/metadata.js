@@ -20,8 +20,8 @@ module.exports.getSorted = function (d1, d2) {
     });
   };
 
-  recurseMetadata(d1);
-  recurseMetadata(d2);
+  recurseMetadata(d1, "");
+  recurseMetadata(d2, "");
   return metadata
     .filter((e) => {
       return e != null;

@@ -9,6 +9,7 @@ let metadata = {
   image:
     "https://lh3.googleusercontent.com/pw/AM-JKLX7qCosM0T7xsZ9HG-0vN1X3AUbvkx5zczRAOwjkw-V1n-bSV1EvaW7UVr6jTUY2jPu0wfAkQ7GGsmDLPb18M1rvhTu6ySURM5aVv_pToVQqFyXIMgidaZ2TfQfdglhddXhb6cR-53gQjJCIvlJvQNe=s800-no?authuser=0",
   tags: ["lakes", "backpacking", "oregon"],
+  disabled: true,
 };
 
 const pageURI = "/blog/oregon/jefferson-park";

@@ -1,7 +1,4 @@
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
-module.exports = withBundleAnalyzer({
+module.exports = {
   images: {
     domains: ["lh3.googleusercontent.com"],
   },
@@ -9,4 +6,4 @@ module.exports = withBundleAnalyzer({
     locales: ["en"],
     defaultLocale: "en",
   },
-});
+};

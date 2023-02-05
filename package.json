@@ -9,7 +9,7 @@
     "lint": "next lint",
     "check-url": "node scripts/url_checker.js",
     "prettier": "npx prettier --write .",
-    "precommit": "npm run prettier && npm run build"
+    "precommit": "npm run prettier && npm run prebuild && npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.6",

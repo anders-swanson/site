@@ -56,6 +56,7 @@ const menuStyles = {
 export default function Burger() {
   return (
     <Menu styles={menuStyles}>
+      <image className={styles.menuImage} src="/cover.png" />
       <div className={styles.menu}>
         <Link href="/">Home</Link>
         <br />

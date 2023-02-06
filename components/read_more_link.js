@@ -14,7 +14,7 @@ export function ReadMoreHeader({ metadata, enabled }) {
 
 export default function ReadMoreLink({
   children,
-  readMoreText="READ MORE on",
+  readMoreText = "READ MORE on",
   text,
   uri,
   enabled,

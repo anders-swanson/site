@@ -7,43 +7,37 @@ const pageURI = "/blog/washington/blue-lake";
 
 //+metadata
 export const metadata = {
-  title: "Olomana Three Peaks Hike",
+  title: "Olomana Three Peaks Hike on O'ahu",
   date: "2023-02-04",
   image:
-    "https://lh3.googleusercontent.com/pw/AMWts8C3_SC6M8aciqvuySt3xt2b3NZUF6ucpng-88xmjUSq8VaunLC8qpvkCsBZNAAGkU5s84JJGKQNRUx3mHJkH-nD_UQxG7mt7RVkL__-t6RPDg7HLFqcdzSD5U_DSn3zfqrlsZ44o1v92T-Z5dVN3iYJ=s800-no?authuser=0",
+    "https://lh3.googleusercontent.com/pw/AMWts8DosnsEG1-D3bd6P3JzqTANWoD4S9JgQFr_uC5CM_z1zz5rJJMuOpEyhCuX1qu76CeMk0-be3GfvEEl-nlniLCq0rilBcslHg_SW_gfJ1jGV88jfdTpzA5uWFmCJozZBq3GzZyydnvoGNL7BvwHTR3E=s800-no?authuser=0",
   tags: ["hawai'i", "hiking"],
   preview:
     "Hike the Three Peaks trail to Olomana on O'ahu's scenic eastern side.",
   subText: "4.5 miles, 1,600 feet gain",
 };
 
-export default function Olomana({ readMore }) {
+export default function Olomana({ readMore = false }) {
   return (
     <>
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
+      <div className={utilStyles.centered}>
+        <Pinnable
+          page={pageURI}
+          alt="Olomana Third Peak, O'ahu, Hawai'i"
+          src="https://lh3.googleusercontent.com/pw/AMWts8DO4nQbYP4R-aBSNJ2jHXds5Xl8_6HuwHH5Pllhv2EFho9E78uvMponge-_YjL-STL4fA9VaHt9ac8kr4nVus80gHgh7fTiRn3exCuA8MgdGlJWeNfcf3EOCHMpmA2AFSh5JUJAX5bHwWAxIwWJTjQK=w800-h533-no?authuser=0"
+          width={800}
+          height={533}
+        />
+      </div>
       <div className={utilStyles.flexGapContainer}>
         <div>
-          {`Hiking to Blue Lake in Washington's North Cascades is a breathtaking experience, especially during larch season.
-           The 5-mile out-and-back trail winds through a forest of larch trees, which turn a brilliant golden yellow in autumn, 
-           providing an incredible backdrop for the lake's reflective blue waters.`}
+          {`Scramble the mercilessly steep slopes of Olomana's three peaks for an astounding view of O'ahu's eastern side and the Ko'olau Range. One 
+          of the most fun hikes on O'ahu, you'll climb up several rope sections and hoist yourself up rocky boulder faces to reach the first and highest summit.`}
           <br />
           <br />
-          {`To witness the fall colors at their peak, I recommend hiking to Blue Lake during the first couple weeks of October. 
-          When planning your trip, it's best to check recent trip reports on websites like AllTrails to get an idea of current
-           conditions. On our trip, we hiked Blue Lake on October 8th and the timing was perfect. Be aware that the timing
-           may vary depending on the current weather.`}
-          <br />
-          <br />
-        </div>
-
-        <div className={utilStyles.centered}>
-          <Pinnable
-            page={pageURI}
-            alt="Blue Lake in the North Cascades"
-            src="https://lh3.googleusercontent.com/pw/AMWts8BKTXF6nEqkq8Zr4gQe76AftrE3YLNP5D-IERxqrF2eemLog4sNFlOnLpJ87rVBXtmFj6yRhFEfk090oNrNfnnUkYe7CqadeK_qT73AHG9U37a6NjOWpILXoDZo4DyQTpEmZ8KdtpD5nmI3aYMUUpsK=w355-h533-no?authuser=0"
-            width={355}
-            height={533}
-          />
+          {`The Olomana trail has multiple steep drop-offs and is not suitable for those afraid of heights. Be aware that this hike is incredibly muddy and dangerous
+          after or during rainstorms, and should only be hiked on dry days. There are many rescue operations per year on Olomana, so please be careful and hike responsibly.`}
         </div>
       </div>
       <ReadMoreLink enabled={readMore} text="hiking Blue Lake" uri={pageURI}>
@@ -52,77 +46,101 @@ export default function Olomana({ readMore }) {
             Getting There and Parking
           </h1>
           <div>
-            {`The Blue Lake trailhead is approximately a 3-hour drive from Seattle, and is a popular destination during Larch season. 
-            The medium size parking lot may fill quickly on fall weekends, so be prepared to park on the shoulder of Highway 20 or 
-            even walk up to 1/2 mile to the trailhead if you do not arrive early in the morning.`}
-            <br />
-            <br />
-            {`On our visit, we arrived at the trailhead around 1 PM on a weekend and the closest available parking was over 1/2 mile from the trailhead.`}
-            <br />
-            <br />
-            {`The following pin shows the location of the Blue Lake parking lot off Highway 20. Note that Highway 20 is closed seasonally from November through late spring.
-            A Northwest Forest Pass or equivalent is required for parking, you may also self-issue a $5 day pass at the trailhead.`}
+            {`To access the Olomana trail, park on Auloa Road across the street from the bus stop. Park on the small gravel strip opposite the bus stop, taking
+            care not to obstruct the asphalt sidewalk: Note that hikers have reported receiving tickets for parking on the asphalt. The following pin shows the 
+            public parking location on Auloa Road.`}
           </div>
-          <MapEmbed lat="48.519591" long="-120.674131" />
+          <MapEmbed lat="21.376233" long="-157.763602" />
+          {`From the parking area, it's a 0.6 mile to the Olomana trailhead. This section is entirely along Loop Road, which is an access road for the Royal Hawaiian Golf Club.
+          While this is open for public access, parking is not permitted on Loop Road, nor at the trailhead. I've included a photo of the trailhead off Loop Road, as well
+          as a GPS pin of its location to help you find the start of the trail.`}
+          <MapEmbed lat="21.368404" long="-157.760973" />
+          <div>
+            <Pinnable
+              page={pageURI}
+              alt="Olomana Trailhead on Loop Road"
+              src="https://lh3.googleusercontent.com/pw/AMWts8Cp2fOcNqvunxP9PESBIC7_YJoRomSz7g3W0bzZZYpetNRoDryfrn7VNRqH-W9qKaCe077kEbl4aaYIVpeIxeiaPNG_XUoYRjFVBqR30WgIUa1hKB99etYHFW5L2E-LRv50MnZri3F48eoxZ6okN3T1=w800-h533-no?authuser=0"
+              width={800}
+              height={533}
+            />
+          </div>
 
           <h1 className={utilStyles.justifyCenter} id="hike-details">
             Hike Details
           </h1>
 
           <div>
-            {`The 5-mile round trip passes through the colorful larch forest, switching back and forth as you gain around 900 feet of elevation towards Blue Lake.
-            On the way up, you'll see the crags of the Early Winter Spires rising above the forest to your left.
-
-            After reaching the lake, explore its surroundings from multiple rocky outcroppings that offer views of its amazingly reflective waters.`}
+            {`The Olomana trail is seriously steep, and requires some moderate rock climbing to reach the first summit. The trail begins in a dense rain forest,
+            ascending rapidly with periodic views of the surrounding valley and nearby ocean. We made frequent stops on our way up, the humidity of the day
+            combined with the trail's steep grade quickly tired us out.`}
+            <br />
+            <br />
+            {`Starting from the parking area on Auloa Road, you'll cover about 4.5 miles round trip if you hike to the first peak, including over 1,600 feet of elevation gain.`}
             <br />
             <br />
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Reflections on Blue Lake"
-                src="https://lh3.googleusercontent.com/pw/AMWts8CqFcIE8figBmvcqdX5-aD3kNsH5lKwHO1nT1BFn7bQgPIMtaHGaAhmxLnZ5JnrAWT1d0_9sb8vcEpovN8-rXrtt5frLRjlZb5z4fcaovHFeaBeAMAsaHQfuBiJt4BdywnYG77ctAdVsYwWATtdNt_u=w800-h533-no?authuser=0"
-                width={800}
-                height={533}
-              />
-            </div>
-            <br />
-            {`Once you've finished exploring Blue Lake, I recommend continuing your hike along the right side of the lake. This side path
-            winds to a picturesque loop surrounding a shimmering tarn (a small mountain lake). This trail is quieter than the main trail,
-            and is a relaxing spot to set down your pack and snap a few photos.`}
-            <br />
-            <br />
-            <div className={utilStyles.centered}>
-              <Pinnable
-                page={pageURI}
-                alt="A small tarn above Blue Lake"
-                src="https://lh3.googleusercontent.com/pw/AMWts8BYBxG86xNDW_gVo-zrIV71K6rq9TNcniMQoWAkV36pZtqjmVyMFL9_X6L1USBwpKzhC4FVbgWN0MyD69FRgpEjxTfD8mavGC8OaxNPuzCPe4tGiHmJIsx-Kk4BI-_RZ9QlheJczM1hOZMqQr73y-E-=w355-h533-no?authuser=0"
+                alt="Hiking the Olomana Trail on O'ahu, Hawai'i"
+                src="https://lh3.googleusercontent.com/pw/AMWts8CuDXdgLJne3fLrn9pjhWDUC9Mh4nimBggLKANbg2t_-j04v2TqTXnPhmruimFHsU9oedSmgF-d0EAm-Cbmo0w4IvZ2fcQzSLzH38MPw7bFr4INOgX6-CkmKUX7ILeOzb_zzNWXWcPRTYrIx6nFN4to=w355-h533-no?authuser=0"
                 width={355}
                 height={533}
               />
             </div>
             <br />
-            <br />
-            {`Return back down the same path, taking in the autumn colors one last time before reaching the trailhead.`}
+            {`There are multiple rope sections to climb to the first peak, the most difficult of which scales at 15-foot boulder. If you're physically fit and have a limited fear of
+            heights, these climbing sections should be doable.`}
             <br />
             <br />
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Reflections on the tarn"
-                src="https://lh3.googleusercontent.com/pw/AMWts8CQYPOx4A2U4u3Mye-QAPeTpsh8Q9v0bKc-c-A-vAfVqamXnbXCRpXb5jAIZQH1WIT9MXBf80xnzlF9rYMp6AG1uPyZYa4R4Z0e7v7dnoXovsqMvtI0RKnXXsYeisJ7Tn7USnzAZuo6IFs13MsapONR=w800-h533-no?authuser=0"
+                alt="Using ropes to climb up Olomana, O'ahu, Hawai'i"
+                src="https://lh3.googleusercontent.com/pw/AMWts8DxdQxD5KirQmR2NiPoi6A1b4hv80_omPRhnG1J0AhljOOgzgR47iEfSpuZ5z8I8MJ8UhjWWSWvgW8043Z4LTiHkfhdqYaexAW5qDKIdL0iO8DqNF-jvhEfWjTz2jNv0RhAkRN3a414mOCaPKTz2PWU=w355-h533-no?authuser=0"
+                width={355}
+                height={533}
+              />
+            </div>
+            {`After a very sweaty and tiring couple of miles, you'll eventually reach the first peak. The panoramic view from Olomana's summit covers the Ko'olau Range,
+            ranging from well north of Kāne'ohe to Kailua.`}
+            <br />
+            <br />
+            {`We opted to turn around at the first peak, but the trail continues 
+            to the second and third peaks. Hiking further is not advised, especially so if you intend to reach the third peak.`}
+            <br />
+            <br />
+            <div className={utilStyles.centered}>
+              <Pinnable
+                page={pageURI}
+                alt="First peak of Olomana, O'ahu, Hawai'i"
+                src="https://lh3.googleusercontent.com/pw/AMWts8DXJYvOKm4aP7dXmydW_2UxaDGobNH7904lGkkvZGDXV4MTsPCCkw3wgSClrvcZp8bzm8YnPkqKujDjXwu9mykOwJG_81DvzLaF9APcI7kELuPrASbcmBKnHzg2BsELHgAw9WHw8JwsWHUUNE7Twp9V=w355-h533-no?authuser=0"
+                width={355}
+                height={533}
+              />
+            </div>
+            {`Looking south you can see Kailua, and the Mokes (the offshore islands)`}
+            <div className={utilStyles.centered}>
+              <Pinnable
+                page={pageURI}
+                alt="Kailua from Olomana, O'ahu, Hawai'i"
+                src="https://lh3.googleusercontent.com/pw/AMWts8BEOZugUX6RypxJNqEj2aW7ir50PrSxY842Pf5sADnszigy2kPmlK33T_MvSPeV8kXfKv6iD6JrwAcCXwphJGqXGbp0aACJwQhl7lwP1ea62aSGK_VvcwboJvBDL-ooIn9Tq0SJd7W3Z9YOJSS0qEf4=w800-h533-no?authuser=0"
                 width={800}
                 height={533}
               />
             </div>
-          </div>
-          <h1 className={utilStyles.justifyCenter} id="other-info">
-            Other Info
-          </h1>
-          <div>
-            {`Blue Lake is close to many other breathtaking trails in the North Cascades. Continue reading for a couple more of our favorites.`}
+            {`The second peak is relatively close to the first, but lower in elevation. We decided to turn around at this point,
+            the trail having precipitous drop-offs on either side.`}
+            <div className={utilStyles.centered}>
+              <Pinnable
+                page={pageURI}
+                alt="Olomana second peak, O'ahu, Hawai'i"
+                src="https://lh3.googleusercontent.com/pw/AMWts8DelGODaBJhOh8DET5lpaVdgPTdMoLPL2VIv8SEQHeQ4bn42vkTNStOMkHlDkZGGn843mZZX0qLZ7MMB2v_yZZQGXmZIL1WfzTyRP_ItjUyze6Ls1W2E5zrriwyXxPCG4XKVGaPm8C8OEq3BOwtc3LG=w355-h533-no?authuser=0"
+                width={355}
+                height={533}
+              />
+            </div>
           </div>
         </div>
-
         <Contact />
       </ReadMoreLink>
     </>

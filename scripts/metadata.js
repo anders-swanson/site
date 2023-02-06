@@ -43,7 +43,7 @@ function isPostFile(fileName) {
 }
 
 function addMetadata(metadata, relDir, fileName, filePath) {
-  const id = relDir + "/" + fileName.replace(/\.js$/, "");
+  const id = relDir + "/" + fileName.replace(/\.(js|tsx)$/, "");
   let fileMetadata = getMetdata(filePath, id);
   if (fileMetadata && !fileMetadata.hasOwnProperty("disabled")) {
     metadata.push(fileMetadata);

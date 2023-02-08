@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
 import Link from "next/link";
-import Burger from "./burger";
 import Search from "./search";
 import { useState, useEffect } from "react";
 import { CapitalizeWords } from "../lib/common";
@@ -10,6 +9,7 @@ import config from "../lib/config";
 import { Posts } from "../lib/metadata";
 import PrevNextPost from "./prev_next_post";
 import dynamic from "next/dynamic";
+import BurgerMenu from "./burger_menu";
 
 export const title = `Trails and Trekking`;
 const defaultHeaderImage = "/cover.png";
@@ -122,12 +122,12 @@ export default function Layout({
         <meta name="twitter:description" content={description} />
         <meta name="keywords" content="hiking, backpacking, oregon" />
       </Head>
+      <BurgerMenu />
       <div className={styles.headerBar}>
         <div className={styles.linkBar}>
           <Link href="/">Trails And Trekking</Link>
         </div>
       </div>
-      <Burger />
       {config.search.enabled && (
         <Search search={search} setSearch={setSearch} />
       )}

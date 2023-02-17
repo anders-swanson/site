@@ -20,7 +20,6 @@
     "react-google-recaptcha": "^2.1.0",
     "react-hook-form": "^7.33.1",
     "react-loading-icons": "^1.1.0",
-    "react-waypoint": "^10.1.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {

@@ -1,11 +1,11 @@
 import Layout from "../components/layout";
 import { Posts } from "../lib/metadata";
-import FeaturedPost from "../components/featuredpost";
 import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
 import React from "react";
+import FeaturedPost from "../components/featuredpost";
 
-export default function Home({ posts, featuredPost }) {
+export default function Home({ posts }) {
   return (
     <Layout
       home
@@ -22,18 +22,16 @@ export default function Home({ posts, featuredPost }) {
         />
       </div>
       <br />
-      <FeaturedPost post={featuredPost} />
+      <FeaturedPost post={posts[0]} />
     </Layout>
   );
 }
 
 export async function getStaticProps() {
   const posts = Posts();
-  const featuredPost = posts.shift();
   return {
     props: {
       posts,
-      featuredPost,
     },
   };
 }

@@ -30,36 +30,50 @@ export default function Video({ src, height, width, controls, style }) {
 
   let onScroll = function checkScroll() {
     const fraction = 0.8; // Play when 80% of the player is visible.
-    let video = videoRef.current
-    let right = video.offsetLeft + video.offsetWidth
-    let bottom = video.offsetTop + video.offsetHeight
-    let visibleX = Math.max(0, Math.min(video.offsetWidth, window.pageXOffset + window.innerWidth - video.offsetLeft, right - window.pageXOffset));
-    let visibleY = Math.max(0, Math.min(video.offsetHeight, window.pageYOffset + window.innerHeight - video.offsetTop, bottom - window.pageYOffset));
-    let visible = visibleX * visibleY / (video.offsetWidth * video.offsetHeight);
+    let video = videoRef.current;
+    let right = video.offsetLeft + video.offsetWidth;
+    let bottom = video.offsetTop + video.offsetHeight;
+    let visibleX = Math.max(
+      0,
+      Math.min(
+        video.offsetWidth,
+        window.pageXOffset + window.innerWidth - video.offsetLeft,
+        right - window.pageXOffset
+      )
+    );
+    let visibleY = Math.max(
+      0,
+      Math.min(
+        video.offsetHeight,
+        window.pageYOffset + window.innerHeight - video.offsetTop,
+        bottom - window.pageYOffset
+      )
+    );
+    let visible =
+      (visibleX * visibleY) / (video.offsetWidth * video.offsetHeight);
     if (visible > fraction) {
-        video.play();
+      video.play();
     } else {
-        video.pause();
+      video.pause();
     }
-  }
-  
+  };
 
   return (
     <>
       {videoType === videoTypes.mp4 && (
-          <video
-            style={style}
-            ref={videoRef}
-            width={imgWidth}
-            height={imgHeight}
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls={controls}
-          >
-            <source src={src} type="video/mp4" />
-          </video>
+        <video
+          style={style}
+          ref={videoRef}
+          width={imgWidth}
+          height={imgHeight}
+          autoPlay
+          loop
+          muted
+          playsInline
+          controls={controls}
+        >
+          <source src={src} type="video/mp4" />
+        </video>
       )}
       {videoType === videoTypes.youtube && (
         <iframe frameBorder="0" width={width} height={height} src={src} />
@@ -67,4 +81,3 @@ export default function Video({ src, height, width, controls, style }) {
     </>
   );
 }
-

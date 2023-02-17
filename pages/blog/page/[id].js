@@ -16,7 +16,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const posts = Posts();
-  posts.shift();
   return {
     props: {
       id: params.id,

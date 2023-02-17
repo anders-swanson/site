@@ -13,7 +13,6 @@ export default function Archive({ posts, tags }) {
   const [tagList, setTagList] = useState([]);
 
   const onClickOption = (tag) => {
-    console.log(tag);
     const newTagList = [...tagList];
     const idx = newTagList.indexOf(tag);
     if (idx > -1) {
@@ -22,8 +21,6 @@ export default function Archive({ posts, tags }) {
       newTagList.push(tag);
     }
     setTagList(newTagList);
-    console.log(tagList);
-    console.log(newTagList);
   };
 
   const tagListItems = () => {

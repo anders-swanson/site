@@ -141,6 +141,7 @@ export default function Olomana({ readMore = false }) {
             </div>
           </div>
         </div>
+        <br/>
         <Contact />
       </ReadMoreLink>
     </>

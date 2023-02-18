@@ -188,19 +188,24 @@ export default function Post() {
           <br />
           {`The Tumalo Falls trailhead is at 4,800 elevation and may see snow into May. Early summer and fall are the best times to visit.`}
         </div>
-        <div className={utilStyles.centered}>
+        <div className={utilStyles.flexWrapContainer}>
+          <div>
           <Image
             alt="Waterfall near Tumalo Creek"
             src="https://lh3.googleusercontent.com/pw/AM-JKLXDaybHNNW9eC1g25yfycnDNU48u73Eg65JOX_N24ybXRBmekw2Hm82FD0bSuAezRXom_tnMHes526tJKwckGgYuVr9bG8tEpMRXTwqlKD5K4rHWKzMZ2WhLvfCJZnAS_FdzDOmB947KJu9Xv_4yFeR=w450-h600-no?authuser=0"
             width={450}
             height={600}
           />
+          </div>
+          <div>
           <Image
             alt="Multiple falls along Tumalo Creek"
             src="https://lh3.googleusercontent.com/pw/AM-JKLXiobtUeGzehE61wDrG-o1u2jc74-E1oSBGK7J3m0qBARwfvqxJ0pM5d2Rz75zeZjfACqI__DeWVUi3O9KeBqzVCDcNieoMQB6PNh7mC7Qj1xnd33qzT2pqUbJYo_5juviQ18NST1mY4DukDgW0YXwq=w600-h800-no?authuser=0"
             width={450}
             height={600}
           />
+          </div>
+
         </div>
         {`Look below for more Central Oregon hiking ideas - Happy Trails!`}
       </div>

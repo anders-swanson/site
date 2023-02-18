@@ -1,6 +1,7 @@
 import Image from "next/image";
 import config from "../lib/config";
 import styles from "./pinit.module.css";
+import Link from "next/link";
 
 const baseURI = "https://www.pinterest.com/pin/create/button";
 export default function Pinnable({ src, width, height, alt, page }) {
@@ -9,13 +10,14 @@ export default function Pinnable({ src, width, height, alt, page }) {
       {(config.pinterest.enabled && (
         <div className={styles.parent}>
           <span className={styles.child}>
-            <a
+            <Link
+              target="_blank"
               data-pin-do="buttonPin"
               data-pin-round="true"
               href={pinitURL(src, page, alt)}
             >
-              <Image alt="pinit" src="/pinit.png" width={25} height={25} />
-            </a>
+              <Image alt="pinit" src="/pinit.png" width={25} height={25}/>
+            </Link>
           </span>
           <div className={styles.imageChild}>
             <Image src={src} alt={alt} width={width} height={height} />

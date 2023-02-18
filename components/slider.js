@@ -4,9 +4,7 @@ import Image from "next/image";
 import Video from "./video";
 import ReactTouchEvents from "./touch_event";
 
-export default function Slider({ slides, width, height }) {
-  const imgWidth = width ? width : "500px";
-  const imgHeight = height ? height : "500px";
+export default function Slider({ slides, width=500, height=500 }) {
 
   // the currently acive slide in the slider
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -58,16 +56,16 @@ export default function Slider({ slides, width, height }) {
                 {(isVideo(slides[idx]) && (
                   <Video
                     src={slides[idx]}
-                    width={imgWidth}
-                    height={imgHeight}
+                    width={width}
+                    height={height}
                     style={{ opacity: idx === currentSlide ? "100%" : "0%" }}
                   />
                 )) || (
                   <Image
                     alt={slides[idx]}
                     src={slides[idx]}
-                    width={imgWidth}
-                    height={imgHeight}
+                    width={width}
+                    height={height}
                     draggable="false"
                     style={{
                       userDrag: "none",

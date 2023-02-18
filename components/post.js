@@ -12,7 +12,6 @@ export default function Post({ item, imgSizing, postStyle, showDate }) {
   return (
     <div className={styling}>
       <Link href={blogLink}>
-        <a>
           <Image
             alt={item.id}
             src={item.image}
@@ -20,7 +19,6 @@ export default function Post({ item, imgSizing, postStyle, showDate }) {
             height={imgSizing}
             width={imgSizing}
           />
-        </a>
       </Link>
       <br />
       <div className={styles.tag}>
@@ -30,8 +28,8 @@ export default function Post({ item, imgSizing, postStyle, showDate }) {
           </Link>
         ))}
       </div>
-      <Link href={blogLink} className={styles.postLink}>
-        <a style={{ fontSize: "18px", color: "black" }}>{item.title}</a>
+      <Link href={blogLink} className={styles.postLink} style={{ fontSize: "18px", color: "black" }}>
+       {item.title}
       </Link>
       <br />
       <div className={styles.description}>

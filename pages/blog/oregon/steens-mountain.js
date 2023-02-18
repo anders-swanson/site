@@ -177,19 +177,23 @@ export default function Post() {
                     you do not want to get your vehicle stuck in playa mud.`}
           <br />
           <br />
-          <div className={utilStyles.centered}>
+          <div className={utilStyles.flexGapContainer}>
+            <div>
             <Image
               alt="Hot Springs in the Alvord Desert"
               src="https://lh3.googleusercontent.com/pw/AM-JKLVrHZmc8gemNKXCEgwbzYijIKY1Kf7O2anuPNG-35Y7X2Iwk63gKP28-8d_nQB-NTmn879qdgjtiJRtxQw3PbAsMPzgKuosTb_uQX1_LDkR-pRekQyqSXveIU_XhweJwSvxSCzHKlg3VD48oSUqDf-m=w800-h600-no?authuser=0"
               width={800}
               height={600}
             />
+            </div>
+            <div>
             <Image
               alt="Steens Mountain from the Alvord Desert, Oregon"
               src="https://lh3.googleusercontent.com/pw/AM-JKLUXQikiJVc7pmCCCLtHBfAJVkDpMNSPMTk9V8Y0AwSzfaoGyR6mcQvbz8s_tJB0Y8UBXGrsq_mQuOs3UeJegZWzYgM74RL9QCXHtQ569MkN2tty6RctxYTktO0DYDOPgOhwQl-T_aMR_Jvtoqkc-F3u=w800-h600-no?authuser=0"
               width={800}
               height={600}
             />
+            </div>
           </div>
           <br />
           <br />

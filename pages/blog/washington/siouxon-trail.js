@@ -10,7 +10,7 @@ let metadata = {
   title: "Siouxon Creek Trail",
   date: "2021-11-28",
   image:
-    "https://lh3.googleusercontent.com/pw/AM-JKLXGmSLxR_PLkzmOxphgROXQYNAxjXtjD9Hl-n0Ph3gMeNHcBlq7NkW_mioJoitYBnUHWYS3Sb2Y6PAWLJ4pGBa9-xAcgo5zwIjVPIbyydmGj8JGgUEaRUHqvnBnDkhvhkkB0d3rVA5LmwDQ1dlnBtR_=w801-h1067-no?authuser=0",
+    "https://lh3.googleusercontent.com/pw/AMWts8AHe1p2dLWY7Cf9yb1xl37qG9GP-Wchtfd7RqMk7ZX2Jh_F5cHVy1GYsa-uQHOyI-GOYW2okl4v2xfkBs3fE-WZRQiyNuKkgAuNabIUhIf1vmWKLNoGK-cbrry5xEHaWzRA3VUNPIgnBEW21aci_35c=s800-no?authuser=0",
   tags: ["hiking", "waterfall", "washington"],
 };
 
@@ -62,7 +62,9 @@ export default function Post() {
           you decide to hike the full length of the trail, it looks to be around
           24 miles.
         </div>
-        <Slider
+      </div>
+      <div className={utilStyles.flexWrapContainer}>
+      <Slider
           slides={[
             rawData("f2.mp4"),
             rawData("f1.mp4"),
@@ -76,30 +78,38 @@ export default function Post() {
         />
       </div>
       <hr />
-      <div className={utilStyles.flexContainer}>
-        We were able to find wild, edible mushrooms growing beside the trail.
-        Pictured below are Golden Chanterelles and a Lobster mushroom.
-      </div>
-      <div className={utilStyles.flexContainer}>
+      <div className={utilStyles.flexWrapContainer}>
+        <div>
+          {`        We were able to find wild, edible mushrooms growing beside the trail.
+        Pictured below are Golden Chanterelles and a Lobster mushroom.`}
+        </div>
+        <div>
         <Image
           height={400}
           width={400}
           alt="Chanterelle Mushroom picked on the Siouxon Trail"
           src={chanterelle}
         />
-        <Image
+        </div>
+          <div>
+          <Image
           height={400}
           width={400}
           alt="Waterfall along the Siouxon Trail, Washington"
           src={falls2}
         />
-        <Image
-          height={400}
-          width={400}
-          alt="Lobster Mushroom picked on the Siouxon Trail"
-          src={lobster}
-        />
+          </div>
+
+      <div>
+      <Image
+                height={400}
+                width={400}
+                alt="Lobster Mushroom picked on the Siouxon Trail"
+                src={lobster}
+              />
       </div>
+      </div>
+
     </Layout>
   );
 }

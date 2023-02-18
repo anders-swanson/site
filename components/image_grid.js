@@ -26,15 +26,13 @@ export default function ImageGrid({
         {items.map((item, idx) => (
           <div key={idx} className={styles.grid_item}>
             <div className={styles.grid_image}>
-              <Link href={item.link}>
-                <a target="_blank">
-                  <Image
-                    alt={idx}
-                    src={item.image}
-                    width={imageWidth}
-                    height={imageHeight}
-                  />
-                </a>
+              <Link href={item.link} target="_blank">
+                <Image
+                  alt={idx}
+                  src={item.image}
+                  width={imageWidth}
+                  height={imageHeight}
+                />
               </Link>
             </div>
             <div

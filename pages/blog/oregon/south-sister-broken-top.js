@@ -59,8 +59,8 @@ export default function Post() {
         </div>
         <Image
           alt="Heart-shaped rock with Broken Top in the background"
-          height="450px"
-          width="300px"
+          height={450}
+          width={300}
           src={heartRock}
         />
         <Image
@@ -84,8 +84,8 @@ export default function Post() {
         </div>
         <Image
           alt="Spire of Broken Top near the summit"
-          height="450px"
-          width="300px"
+          height={450}
+          width={300}
           src={bendGlacier}
         />
         <Image

@@ -73,20 +73,20 @@ export default function Post() {
         </div>
         <Image
           alt="Summit of Mt. Defiance, Oregon"
-          height="400px"
-          width="300px"
+          height={400}
+          width={300}
           src={img1}
         />
         <Image
           alt="Frosted branches along the Mt. Defiance Trail, Oregon"
-          height="400px"
-          width="300px"
+          height={400}
+          width={300}
           src={img2}
         />
         <Image
           alt="Mark O. Hatfield Wilderness in Oregon"
-          height="400px"
-          width="300px"
+          height={400}
+          width={300}
           src={img3}
         />
       </div>

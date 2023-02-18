@@ -12,9 +12,7 @@ export default function LinkButton({ title, body, src, animation }) {
         {title}
         <p className={styles.lbBody}>{body}</p>
       </div>
-      <Link href={src} passHref>
-        <a target="_blank" rel="noreferrer" />
-      </Link>
+      <Link href={src} passHref target="_blank" rel="noreferrer"></Link>
     </div>
   );
 }

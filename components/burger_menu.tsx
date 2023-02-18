@@ -12,33 +12,33 @@ export default function BurgerMenu() {
 
         <ul className={styles.menu__box}>
           <li>
-            <Link href="/">
-              <a className={styles.menu__item}>Home</a>
+            <Link href="/" className={styles.menu__item}>
+              Home
             </Link>
           </li>
           <li>
-            <Link href="/about">
-              <a className={styles.menu__item}>About</a>
+            <Link href="/about" className={styles.menu__item}>
+              About
             </Link>
           </li>
           <li>
-            <Link href="/archive">
-              <a className={styles.menu__item}>All Posts</a>
+            <Link href="/archive" className={styles.menu__item}>
+              All Posts
             </Link>
           </li>
           <li>
-            <Link href="/contact">
-              <a className={styles.menu__item}>Contact</a>
+            <Link href="/contact" className={styles.menu__item}>
+              Contact
             </Link>
           </li>
           <li>
-            <Link href="/filter/guides">
-              <a className={styles.menu__item}>Guides</a>
+            <Link href="/filter/guides" className={styles.menu__item}>
+              Guides
             </Link>
           </li>
           <li>
-            <Link href="/links#info">
-              <a className={styles.menu__item}>Links</a>
+            <Link href="/links#info" className={styles.menu__item}>
+              Links
             </Link>
           </li>
         </ul>

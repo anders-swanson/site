@@ -162,19 +162,23 @@ export default function Post() {
           {`Note: please only harvest wild mushrooms if you're confident in your ability to identify them. Wild mushrooms can be poisonous
                     or even deadly.`}
         </div>
-        <div className={utilStyles.centered}>
-          <Image
-            alt="Signage for the Upper Rogue River Trail in Oregon"
-            src="https://lh3.googleusercontent.com/pw/AM-JKLXme1zos1v6J22zCl4ggHK0biPrhNKs_tJ1NCw-miWnNLFZI-FIpqRuiM03f2QjaMIi0fGEgHe10SCWtKN23RPtk-Cz8zpQoDuF8Q7ChEiPwLjB2h2x36QHZqFHR0_cjUVVBvvbWZpS4AbzJhjaaMj5=w600-h800-no?authuser=0"
-            width={450}
-            height={600}
-          />
-          <Image
-            alt="Morel Mushroom picked on the Rogue River trail"
-            src="https://lh3.googleusercontent.com/pw/AM-JKLW_QVt7lYtSpNrsKJE0zlOH3KKIOn1Dwe7Hconbabdh3tieJ6wLYwENjvqG6fo9qqfpeyiT_ASG_JR9mGJyg8P-t8GEd3TDGaULQlt_6d_914Ps-qfaEfg6dF3kls3i-AyBf-jnJ91YaDIOoNpK1A_w=w450-h600-no?authuser=0"
-            width={450}
-            height={600}
-          />
+        <div className={utilStyles.flexWrapContainer}>
+          <div>
+            <Image
+              alt="Signage for the Upper Rogue River Trail in Oregon"
+              src="https://lh3.googleusercontent.com/pw/AM-JKLXme1zos1v6J22zCl4ggHK0biPrhNKs_tJ1NCw-miWnNLFZI-FIpqRuiM03f2QjaMIi0fGEgHe10SCWtKN23RPtk-Cz8zpQoDuF8Q7ChEiPwLjB2h2x36QHZqFHR0_cjUVVBvvbWZpS4AbzJhjaaMj5=w600-h800-no?authuser=0"
+              width={450}
+              height={600}
+            />
+          </div>
+          <div>
+            <Image
+              alt="Morel Mushroom picked on the Rogue River trail"
+              src="https://lh3.googleusercontent.com/pw/AM-JKLW_QVt7lYtSpNrsKJE0zlOH3KKIOn1Dwe7Hconbabdh3tieJ6wLYwENjvqG6fo9qqfpeyiT_ASG_JR9mGJyg8P-t8GEd3TDGaULQlt_6d_914Ps-qfaEfg6dF3kls3i-AyBf-jnJ91YaDIOoNpK1A_w=w450-h600-no?authuser=0"
+              width={450}
+              height={600}
+            />
+          </div>
         </div>
         <h1 className={utilStyles.justifyCenter} id="north-umpqua">
           North Umpqua Trail

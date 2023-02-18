@@ -8,23 +8,17 @@ export default function Socials({ instagram, tiktok, pinterest }) {
     <>
       {instagram && (
         <Link href={instagram}>
-          <a>
-            <Instagram />
-          </a>
+          <Instagram />
         </Link>
       )}
       {tiktok && (
         <Link href={tiktok}>
-          <a>
-            <TikTok />
-          </a>
+          <TikTok />
         </Link>
       )}
       {pinterest && (
         <Link href={pinterest}>
-          <a>
-            <Pinterest />
-          </a>
+          <Pinterest />
         </Link>
       )}
     </>

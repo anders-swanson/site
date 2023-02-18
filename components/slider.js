@@ -4,8 +4,7 @@ import Image from "next/image";
 import Video from "./video";
 import ReactTouchEvents from "./touch_event";
 
-export default function Slider({ slides, width=500, height=500 }) {
-
+export default function Slider({ slides, width = 500, height = 500 }) {
   // the currently acive slide in the slider
   const [currentSlide, setCurrentSlide] = useState(0);
   // buttonClass is the class of the dotted buttons below the slider

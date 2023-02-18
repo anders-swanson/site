@@ -57,22 +57,21 @@ export default function Post() {
           <br />
           <div className={utilStyles.flexWrapContainer}>
             <div>
-            <Image
-              alt="Sidewinder Canyon in Death Valley National Park"
-              src="https://lh3.googleusercontent.com/pw/AM-JKLVdrK7PWp2jTVIBC5ZSC7l_PQOuQ6BpnPr1lcmLpksxTfMd9Y9rzsW2HwtAz68lhwxhLRs6y0SDrFOq8uDjheMk0IY_neqdnZsb968p89PFG1_bw4Di4xHe_rYCuuhnMqh7Xwqo9SdExoPbp1XQ35ax=w450-h600-no?authuser=0"
-              width={400}
-              height={600}
-            />
+              <Image
+                alt="Sidewinder Canyon in Death Valley National Park"
+                src="https://lh3.googleusercontent.com/pw/AM-JKLVdrK7PWp2jTVIBC5ZSC7l_PQOuQ6BpnPr1lcmLpksxTfMd9Y9rzsW2HwtAz68lhwxhLRs6y0SDrFOq8uDjheMk0IY_neqdnZsb968p89PFG1_bw4Di4xHe_rYCuuhnMqh7Xwqo9SdExoPbp1XQ35ax=w450-h600-no?authuser=0"
+                width={400}
+                height={600}
+              />
             </div>
             <div>
-            <Image
-              alt="Another look at Sidewinder Canyon in Death Valley National Park"
-              src="https://lh3.googleusercontent.com/pw/AM-JKLU9FgzPI1jEP4Fo2RXNNAW3cHiB_YioDi2EulxbU9wKmmW2r_SgvR8LoYRP2qWhCz4Lt-3HNRVAHL5m3imPAlCY1mZRqFQkbs-JYrszKqETPRyS-bsLUv_FVA5CVeymjYkhVJQzETkSrZ7I4NrUD9EU=w535-h800-no?authuser=0"
-              width={400}
-              height={600}
-            />
+              <Image
+                alt="Another look at Sidewinder Canyon in Death Valley National Park"
+                src="https://lh3.googleusercontent.com/pw/AM-JKLU9FgzPI1jEP4Fo2RXNNAW3cHiB_YioDi2EulxbU9wKmmW2r_SgvR8LoYRP2qWhCz4Lt-3HNRVAHL5m3imPAlCY1mZRqFQkbs-JYrszKqETPRyS-bsLUv_FVA5CVeymjYkhVJQzETkSrZ7I4NrUD9EU=w535-h800-no?authuser=0"
+                width={400}
+                height={600}
+              />
             </div>
-
           </div>
           <br />
           <br />

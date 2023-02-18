@@ -27,12 +27,12 @@ export default function ImageGrid({
           <div key={idx} className={styles.grid_item}>
             <div className={styles.grid_image}>
               <Link href={item.link} target="_blank">
-                  <Image
-                    alt={idx}
-                    src={item.image}
-                    width={imageWidth}
-                    height={imageHeight}
-                  />
+                <Image
+                  alt={idx}
+                  src={item.image}
+                  width={imageWidth}
+                  height={imageHeight}
+                />
               </Link>
             </div>
             <div

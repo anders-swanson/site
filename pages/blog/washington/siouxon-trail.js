@@ -64,7 +64,7 @@ export default function Post() {
         </div>
       </div>
       <div className={utilStyles.flexWrapContainer}>
-      <Slider
+        <Slider
           slides={[
             rawData("f2.mp4"),
             rawData("f1.mp4"),
@@ -84,32 +84,31 @@ export default function Post() {
         Pictured below are Golden Chanterelles and a Lobster mushroom.`}
         </div>
         <div>
-        <Image
-          height={400}
-          width={400}
-          alt="Chanterelle Mushroom picked on the Siouxon Trail"
-          src={chanterelle}
-        />
-        </div>
-          <div>
           <Image
-          height={400}
-          width={400}
-          alt="Waterfall along the Siouxon Trail, Washington"
-          src={falls2}
-        />
-          </div>
+            height={400}
+            width={400}
+            alt="Chanterelle Mushroom picked on the Siouxon Trail"
+            src={chanterelle}
+          />
+        </div>
+        <div>
+          <Image
+            height={400}
+            width={400}
+            alt="Waterfall along the Siouxon Trail, Washington"
+            src={falls2}
+          />
+        </div>
 
-      <div>
-      <Image
-                height={400}
-                width={400}
-                alt="Lobster Mushroom picked on the Siouxon Trail"
-                src={lobster}
-              />
+        <div>
+          <Image
+            height={400}
+            width={400}
+            alt="Lobster Mushroom picked on the Siouxon Trail"
+            src={lobster}
+          />
+        </div>
       </div>
-      </div>
-
     </Layout>
   );
 }

@@ -68,13 +68,13 @@ export default function Archive({ posts, tags }) {
               }}
             >
               <Link href={`/blog${item.id}`}>
-                  <Image
-                    alt={item.id}
-                    src={item.image}
-                    className={utilStyles.borderRounded}
-                    height={imgSizing}
-                    width={imgSizing}
-                  />
+                <Image
+                  alt={item.id}
+                  src={item.image}
+                  className={utilStyles.borderRounded}
+                  height={imgSizing}
+                  width={imgSizing}
+                />
               </Link>
             </div>
 
@@ -83,7 +83,11 @@ export default function Archive({ posts, tags }) {
                 width: "300px",
               }}
             >
-              <Link href={`/blog${item.id}`} className={styles.postLink} style={{ fontSize: "18px" }}>
+              <Link
+                href={`/blog${item.id}`}
+                className={styles.postLink}
+                style={{ fontSize: "18px" }}
+              >
                 {item.title}
               </Link>
               <div className={styles.description}>

@@ -10,7 +10,7 @@ export default function BurgerMenu() {
           <span></span>
         </label>
 
-        <ul className={styles.menu__box} >
+        <ul className={styles.menu__box}>
           <li>
             <Link href="/" className={styles.menu__item}>
               Home

@@ -16,7 +16,7 @@ export default function Pinnable({ src, width, height, alt, page }) {
               data-pin-round="true"
               href={pinitURL(src, page, alt)}
             >
-              <Image alt="pinit" src="/pinit.png" width={25} height={25}/>
+              <Image alt="pinit" src="/pinit.png" width={25} height={25} />
             </Link>
           </span>
           <div className={styles.imageChild}>

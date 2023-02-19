@@ -3,7 +3,7 @@ import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import MapEmbed from "../../maps";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
-const pageURI = "/blog/washington/blue-lake";
+const pageURI = "/blog/hawaii/olomana";
 
 //+metadata
 export const metadata = {
@@ -40,7 +40,7 @@ export default function Olomana({ readMore = false }) {
           after or during rainstorms, and should only be hiked on dry days. There are many rescue operations per year on Olomana, so please be careful and hike responsibly.`}
         </div>
       </div>
-      <ReadMoreLink enabled={readMore} text="hiking Blue Lake" uri={pageURI}>
+      <ReadMoreLink enabled={readMore} text="hiking Olomana" uri={pageURI}>
         <div className={utilStyles.flexGapContainer}>
           <h1 className={utilStyles.justifyCenter} id="getting-there">
             Getting There and Parking

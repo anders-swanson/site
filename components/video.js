@@ -7,7 +7,7 @@ const videoTypes = {
 
 // Only play the video when it is in the viewport.
 // The video will be paused when it is not in the viewport
-export default function Video({ src, height, width, controls, style }) {
+export default function Video({ src, height, width, controls, style, poster="/cover.png" }) {
   const videoRef = useRef(null);
   const imgHeight = height ? height : "500px";
   const imgWidth = width ? width : "500px";
@@ -71,6 +71,7 @@ export default function Video({ src, height, width, controls, style }) {
           muted
           playsInline
           controls={controls}
+          poster={poster}
         >
           <source src={src} type="video/mp4" />
         </video>

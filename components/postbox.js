@@ -17,13 +17,13 @@ export default function PostBox({
   heading,
   postBoxClass,
   perPage,
-  idx = 1,
+  idx,
 }) {
   const pbClass = postBoxClass ? postBoxClass : styles.postBox;
   const headingUpper = CapitalizeWords(heading);
   const itemsPerPage = perPage ? perPage : config.itemsPerPage;
   const pages = [...Array(Math.ceil(posts.length / itemsPerPage)).keys()];
-  idx = idx - 1;
+  idx = idx ? idx - 1 : 0;
 
   const start = idx * itemsPerPage;
   const stop = start + itemsPerPage;

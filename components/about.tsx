@@ -1,4 +1,4 @@
-import Image from "../node_modules/next/image";
+import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
 
 export const Blurb = `Thanks for visiting our travel blog, Trails And Trekking! We're Lauren and Anders - an adventure loving 

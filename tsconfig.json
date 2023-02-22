@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "moduleResolution": "node"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/slider.js", "components/related_posts.js"],
   "exclude": ["node_modules"]
 }

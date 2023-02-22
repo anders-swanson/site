@@ -7,10 +7,15 @@ const videoTypes = {
 
 // Only play the video when it is in the viewport.
 // The video will be paused when it is not in the viewport
-export default function Video({ src, height, width, controls, style, poster="/cover.png" }) {
+export default function Video({
+  src,
+  height = 500,
+  width = 500,
+  controls,
+  style,
+  poster = "/cover.png",
+}) {
   const videoRef = useRef(null);
-  const imgHeight = height ? height : "500px";
-  const imgWidth = width ? width : "500px";
 
   let videoType = videoTypes.mp4;
   if (src.includes("youtube.com")) {
@@ -64,8 +69,8 @@ export default function Video({ src, height, width, controls, style, poster="/co
         <video
           style={style}
           ref={videoRef}
-          width={imgWidth}
-          height={imgHeight}
+          width={width}
+          height={height}
           autoPlay
           loop
           muted
@@ -77,7 +82,14 @@ export default function Video({ src, height, width, controls, style, poster="/co
         </video>
       )}
       {videoType === videoTypes.youtube && (
-        <iframe frameBorder="0" width={width} height={height} src={src} />
+        <iframe
+          width={width}
+          height={height}
+          src={src}
+          style={{
+            border: "0px",
+          }}
+        />
       )}
     </>
   );

@@ -29,7 +29,6 @@ export default function RelatedPosts({
       {!readMore && (
         <PostBox
           posts={related}
-          search=""
           heading={text ? text : defaultText}
           postBoxClass={styles.scroll}
           perPage={config.itemsPerFilterPage}

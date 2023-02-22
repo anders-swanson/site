@@ -3,7 +3,17 @@ import Link from "next/link";
 const width = 50;
 const height = 50;
 
-export default function Socials({ instagram, tiktok, pinterest }) {
+interface SocialsProps {
+  instagram: string | null;
+  tiktok: string | null;
+  pinterest: string | null;
+}
+
+export default function Socials({
+  instagram,
+  tiktok,
+  pinterest,
+}: SocialsProps) {
   return (
     <>
       {instagram && (

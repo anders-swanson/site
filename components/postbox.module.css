@@ -1,7 +1,7 @@
 .postBox {
   justify-content: center;
   display: flex;
-  align-items: center;
+  align-items: top;
   flex-wrap: wrap;
   gap: 30px;
 }

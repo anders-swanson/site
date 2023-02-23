@@ -22,7 +22,7 @@ export default function Home({ posts }) {
         />
       </div>
       <br />
-      <FeaturedPost post={posts[0]} />
+      <FeaturedPost post={false}/>
     </Layout>
   );
 }

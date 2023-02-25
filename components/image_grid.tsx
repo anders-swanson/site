@@ -8,14 +8,10 @@ export default function ImageGrid({
   backgroundImage,
   title,
   items,
-  opacity,
-  imageWidth,
-  imageHeight,
+  opacity = 0.1,
+  imageWidth = 380,
+  imageHeight = 500,
 }) {
-  opacity = opacity ? opacity : 0.1;
-  imageWidth = imageWidth ? imageWidth : 380;
-  imageHeight = imageHeight ? imageHeight : 500;
-
   return (
     <div
       className={`${utilStyles.coverContainer} ${utilStyles.floatyText}`}

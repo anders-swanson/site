@@ -25,9 +25,9 @@ export default function K1K2({ readMore = false }) {
         <Pinnable
           page={pageURI}
           alt="Ko'olau Range, O'ahu, Hawai'i"
-          src="https://lh3.googleusercontent.com/pw/AMWts8BhlRIN-xe36lmnC_CGc94kFQBCvAES0VeKv-9gxAjGHq-B1QxJpNbzrNK03GGwywFy-cxxGBxBTVaIg4a9iXYgFJTwaIAPRyyxlKNlEiOsqOdfuSh1SjEXImW8ZOaleCpbwN_wH7QpmikzRCJGkNq_=w355-h533-no?authuser=0"
+          src="https://lh3.googleusercontent.com/pw/AMWts8ChYPBLH_d0JkFOpAoTXXglyIpWu47FuRxgkyx9NyIvbPog-UiInbSZUxMHYw5fzcZ1NPFdj32VKFj_qNwYC2DsZ7ACm-w4xMBsShVPAG06AJlNyzy0ZXBZOudwnkelKrc7IotwVVGxS4QO1Zz3e0LC=w533-h799-no?authuser=0"
           width={533}
-          height={800}
+          height={799}
         />
       </div>
       <br />
@@ -64,9 +64,9 @@ export default function K1K2({ readMore = false }) {
             <Pinnable
               page={pageURI}
               alt="Kalawahine Trailhead on Tantalus Drive"
-              src="https://lh3.googleusercontent.com/pw/AMWts8APBP1vPy0a8AsIRSe46Vq7-WK7AQX-UgERUTp4oxQ3UHDGccLQ9h1_Rf6S84w3_xHvta8tjPzTcx9KUCwWK5yp_UodATHP3BTPt_MZIKzaQol-9Zz1lAJ2s2Aecwtxs5-DsYxaP9lxC0DlLL3lQDa9=w355-h533-no?authuser=0"
+              src="https://lh3.googleusercontent.com/pw/AMWts8DpR4dGhPMpzFdLAMR9KCaam6slsj4_i-LFc0YtYo9SCtMnkU9J3ToSro8YVGzzCUDEzq0cP0JJPovGLZO5sEngUFQ2ixf1CVwg8v37Y-lP6WY6FMFFIP_8jioS03i1wkSOm4JW0nH2YQernnxb7wcf=w533-h799-no?authuser=0"
               width={533}
-              height={800}
+              height={799}
             />
           </div>
 
@@ -82,9 +82,9 @@ export default function K1K2({ readMore = false }) {
               <Pinnable
                 page={pageURI}
                 alt="Bamboo forest in Round Top Forest Reserve, O'ahu, Hawai'i"
-                src="https://lh3.googleusercontent.com/pw/AMWts8CaUQK18fLlLOGLyteezI--ooDPzfab-wSAfjmKrQ14HUBWRfxUjXOt2RjxiPIebIGfihK1avQdkfmUvbMrSiLG22mqe1iUUo6OdZdKhBgDsGtAaIpxS9BH5Lm3WxiUP6P1SagwECAG4Pna7Dnw0Fb3=w355-h533-no?authuser=0"
+                src="https://lh3.googleusercontent.com/pw/AMWts8BmPHl5C0Rvq6WAnp9OIBUBH1HK21kS90PkQFCn2X0oQjryBKOiuJ9147tYtKITnnADVZjUCMBv-gj6Yj0TLRYRPTgHOMJSLYKXQVV1ts6oOIIzxF0Cb2yNOKRzvzZxjsqnjOEWG0u1_3xNvRlxW1Se=w533-h799-no?authuser=0"
                 width={533}
-                height={800}
+                height={799}
               />
             </div>
             <br />
@@ -105,16 +105,16 @@ export default function K1K2({ readMore = false }) {
               <Pinnable
                 page={pageURI}
                 alt="Pauoa Flats, Oahu, Hawai'i"
-                src="https://lh3.googleusercontent.com/pw/AMWts8AAMeNyhy8SLjKkM7P-EkvEe6D2s_M3HTzFVkTUeOio46XY_RWpUPXcSbsm1H3GdUBydAG9r4Zm9FhVim7McEVpL051_5_mdOMXVFWQwHM3VGxuGC3tR4unRJjy24u7IYz8CUpzMsCSsEJB4Lnx0DVA=w355-h533-no?authuser=0"
+                src="https://lh3.googleusercontent.com/pw/AMWts8Dsv5nTNDOmJTinEtvQVGhz4geMgMYOzGe18-9L134qUq-o4Ek75gmEF-Y3ht9Gi7-B1-aGC4Ab1vYkp4p4xGIfKR7rC2hokTjQQSNQ-Z39Ix8cY3U94ZMShcf_-ufkOOsmYzo6146r4nVJA6ngaGm1=w533-h799-no?authuser=0"
                 width={533}
-                height={800}
+                height={799}
               />
               <Pinnable
                 page={pageURI}
                 alt="Climbing the Konahuanui Trail, O'ahu, Hawai'i"
-                src="https://lh3.googleusercontent.com/pw/AMWts8BQvsF_Yymk1HnSp9v86NiBNlx9anvpc_jzoQ8zOGJhGcR6uWC5JEd8aHf8_n_cd-XzkMovGbnKlKm1EwP-_zvD9kTrl5WytIGaF5OjVXbrphUGFFbo-Rt6wOtqIIJapkPT1TWoitmF1LjisEfXqg9O=w355-h533-no?authuser=0"
+                src="https://lh3.googleusercontent.com/pw/AMWts8CKNrcwXeHsbUxWHoSUhvoSgN4M4BFbNTl-R9vz9ZegmFsSi52sVWX6Jn1EoJad5Xuor8vkWEW8Q39H9qBse-l1jUL0xn4_rX72uqCmwoQ2e5TqgRnO8sVcQRQaIz7tx4daTmN4BSqz-cYql0E9yadD=w533-h799-no?authuser=0"
                 width={533}
-                height={800}
+                height={799}
               />
             </div>
             <br />
@@ -127,9 +127,9 @@ export default function K1K2({ readMore = false }) {
               <Pinnable
                 page={pageURI}
                 alt="Konahuanui Trail, O'ahu, Hawai'i"
-                src="https://lh3.googleusercontent.com/pw/AMWts8DmlIPu4gy1RDDqQacF2tZotzNSzEhxW4LAQB6YZ09saPN3pwc-rF3iCi8twDCCeU2-BUO6o11YHmrQAABHAZfWk66W6IdnqFIUJvHMxHtEe0T8OQ2xoF-t60RsKTiYwi_FnZ4Ej0qNTwZPFY6daOEX=w355-h533-no?authuser=0"
-                width={800}
-                height={800}
+                src="https://lh3.googleusercontent.com/pw/AMWts8AnYDEFVPbXWOEhNWsnnzyKR9CXFS1Anj1J6TzeZkgaSjbApVINsgyg9sQhFrI5Gbh-Bgd7pyG5xPDJIq9MlufprBrKqxWV7BtqPiayr7FlB305JTyP9liMLUl5m12p7eW5i83dxU3aVosv3NCVfBkT=w533-h799-no?authuser=0"
+                width={533}
+                height={799}
               />
             </div>
             <br />
@@ -142,9 +142,9 @@ export default function K1K2({ readMore = false }) {
               <Pinnable
                 page={pageURI}
                 alt="Looking down from K2, O'ahu, Hawai'i"
-                src="https://lh3.googleusercontent.com/pw/AMWts8AaZstyDQVGX3Z6_tcp2njucQySIlI62zqO_-4aVpLP4w5VZKyns6uBKeOp5oWJwCIZApksSKXv0eY5gJdTcdSRqY688teVYrTNsbe5qtoI0QoOwWK1SkKSWuDM22UCHv3elvHqoYba7ABY0qyX_j-L=w355-h533-no?authuser=0"
-                width={355}
-                height={533}
+                src="https://lh3.googleusercontent.com/pw/AMWts8DYKMRKqByzM1bIOKFXz3ydp9Cl_fFlE1N1pp-2zanh2pHxClKpTVfyuSbanxHlmR2NgIVNEcIFlFAgEBZvt84fJigGl-_bUbqhVcgZeXp9CWm6wp4iEI7QiWDvqMVsj6fcLV_Cz6OT__C7ih947rK_=w533-h799-no?authuser=0"
+                width={533}
+                height={799}
               />
             </div>
             <br />

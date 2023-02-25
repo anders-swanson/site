@@ -1,7 +1,7 @@
 import Post from "./post";
 import utilStyles from "../styles/utils.module.css";
 
-export default function FeaturedPost({ post, txt = ""}) {
+export default function FeaturedPost({ post, txt = "" }) {
   return (
     <div className={utilStyles.centered}>
       <div

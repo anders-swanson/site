@@ -5,7 +5,6 @@ import Post from "./post";
 import config from "../lib/config";
 import Link from "next/link";
 
-const imgSizing = 280;
 const selectedStyles = {
   fontWeight: "bold",
   textDecoration: "underline",
@@ -40,7 +39,7 @@ export default function PostBox({
       {items.length > 0 && (
         <div className={pbClass}>
           {items.map(({ ...item }) => (
-            <Post key={item.id} item={item} imgSizing={imgSizing} />
+            <Post key={item.id} item={item} />
           ))}
         </div>
       )}

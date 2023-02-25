@@ -5,12 +5,15 @@ import Date from "../components/date";
 import Image from "next/image";
 import { CapitalizeWords } from "../lib/common";
 
-export default function Post({ item, imgSizing, postStyle, showDate }) {
+export default function Post({
+  item,
+  imgSizing = 280,
+  postStyle = styles.post,
+  showDate = false,
+}) {
   const blogLink = `/blog${item.id}`;
-  const styling = postStyle ? postStyle : styles.post;
-
   return (
-    <div className={styling}>
+    <div className={postStyle}>
       <Link href={blogLink}>
         <Image
           alt={item.id}

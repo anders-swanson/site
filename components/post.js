@@ -21,9 +21,11 @@ export default function Post({
           className={utilStyles.borderRounded}
           height={imgSizing}
           width={imgSizing}
+          style={{
+            paddingBottom: "5px",
+          }}
         />
       </Link>
-      <br />
       <div className={styles.tag}>
         {item.tags.map((t) => (
           <Link href={"/filter/" + t} key={`${item.id}-${t}`}>

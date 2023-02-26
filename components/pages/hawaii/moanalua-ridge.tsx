@@ -51,9 +51,8 @@ export default function Moanalua({ readMore = false }) {
             Getting There and Parking
           </h1>
           <div>
-            {`The Moanalua Ridge trail begins on a gravel road at the far side of the Moanalua neighborhood park. Hiker parking is not permitted at the neighborhood park, 
-            but you can park your car along the street in the neighborhood. Leaving your car at the neighborhood park or
-            blocking driveways/mailboxes is likely to land you a ticket.`}
+            {`The Moanalua Ridge trail begins on a gravel road at the far side of the Moanalua neighborhood park. Look for parking in the adjacent neighborhood.
+            Leaving your car at the neighborhood park's lot or blocking driveways/mailboxes is likely to land you a ticket, and you may see signs warning of this.`}
             <br />
             <br />
             {`On busy days, the nearest available parking may be up to 1/2 mile from the trailhead, which can add some extra distance to your hike.
@@ -69,8 +68,8 @@ export default function Moanalua({ readMore = false }) {
           </h1>
           <div>
             {`The first 2.7 miles of the Moanalua Ridge trail follow an overgrown road through dense forest - while it's relatively flat and easy hiking, don't expect any sweeping views or photo opportunities.
-            At the 2.7 mile mark, you'll come to a sort of three-way junction: At the first fork, take a left to stay on the Moanalua Ridge trail.
-            Shortly after that fork, you'll come to another junction. This time, take a right - this is the Moanalua Ridge trail.`}
+            At the 2.7 mile mark, you'll come to a sort of a couple of two-way junctions: At the first fork, take a left to stay on the Moanalua Ridge trail.
+            Shortly after the fork, you'll come to another junction. This time, take a right for the Moanalua Ridge trail.`}
             <br />
             <br />
             {`The next 1.9 miles after are where things start to get interesting. Once you pass the three-way junction, the trail starts climbing in earnest and you'll quickly rise above the

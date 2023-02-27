@@ -6,7 +6,6 @@ export default function Post() {
     <Layout
       headerText={metadata.title}
       description={metadata.preview}
-      subText={metadata.subText}
       ogImage={metadata.image}
       related={{
         metadata: metadata,

@@ -3,6 +3,8 @@ import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import MapEmbed from "../../maps";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
+import HikeInfo from "../../hike_info";
+import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
 const pageURI = "/blog/hawaii/kalawahine-to-k2";
 
 //+metadata
@@ -14,7 +16,6 @@ export const metadata = {
   tags: ["hawai'i", "hiking"],
   preview:
     "Hike the challenging but breathtaking Moanalua Ridge for a view that's well worth the effort.",
-  subText: "10 miles, 2,900 feet gain",
 };
 
 export default function Moanalua({ readMore = false }) {
@@ -22,6 +23,13 @@ export default function Moanalua({ readMore = false }) {
     <>
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
+        <HikeInfo
+          distance="10 miles round-trip"
+          elevation="2,900 feet"
+          difficulty={HikeDifficulty.VERY_HARD}
+          season={BestSeason.YEAR_ROUND}
+          trailhead="https://www.google.com/maps?ll=21.374094,-157.879939&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=5360102199614774508"
+        />
         <div>
           {`Looking for a challenging day hike on O'ahu that will reward you with incredible views? The Moanalua Ridge trail is known for its steep ridges and difficult climb, as well as its 
           views of the island's vibrant, lush rain forests.`}

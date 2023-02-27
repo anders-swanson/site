@@ -5,7 +5,7 @@ interface HeaderTextProps {
   children: React.ReactNode;
   backgroundImage: string;
   opacity: number | undefined;
-  styles: {};
+  styles: any;
 }
 
 export default function HeaderText({

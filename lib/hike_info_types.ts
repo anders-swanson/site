@@ -1,17 +1,18 @@
 export enum HikeDifficulty {
-  // EASY = "easy",
-  // MODERATE = "moderate",
-  // HARD = "hard",
-  VERY_HARD = "very hard",
+  // EASIEST = "Easiest",
+  EASY = "Easy",
+  MODERATE = "Moderate",
+  HARD = "Hard",
+  VERY_HARD = "Very hard",
 }
 
 export enum BestSeason {
-  YEAR_ROUND = "year-round",
-  // SPRING_FALL = "spring through fall",
-  // SUMMER_FALL = "summer through fall",
-  // LATE_SUMMER_FALL = "late summer through fall",
-  // WINTER = "winter",
-  // SPRING = "spring",
-  // SUMMER = "summer",
-  // FALL = "fall",
+  YEAR_ROUND = "Year-round",
+  // SPRING_FALL = "Spring through fall",
+  SUMMER_FALL = "Summer through fall",
+  // LATE_SUMMER_FALL = "Late summer through fall",
+  // WINTER = "Winter",
+  // SPRING = "Spring",
+  // SUMMER = "Summer",
+  // FALL = "Fall",
 }

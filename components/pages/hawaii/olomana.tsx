@@ -3,6 +3,8 @@ import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import MapEmbed from "../../maps";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
+import HikeInfo from "../../hike_info";
+import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
 const pageURI = "/blog/hawaii/olomana";
 
 //+metadata
@@ -14,23 +16,21 @@ export const metadata = {
   tags: ["hawai'i", "hiking"],
   preview:
     "Hike the Three Peaks trail to Olomana on O'ahu's scenic eastern side.",
-  subText: "4.5 miles, 1,600 feet gain",
 };
 
 export default function Olomana({ readMore = false }) {
   return (
     <>
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
-      <div className={utilStyles.centered}>
-        <Pinnable
-          page={pageURI}
-          alt="Olomana Third Peak, O'ahu, Hawai'i"
-          src="https://lh3.googleusercontent.com/pw/AMWts8DO4nQbYP4R-aBSNJ2jHXds5Xl8_6HuwHH5Pllhv2EFho9E78uvMponge-_YjL-STL4fA9VaHt9ac8kr4nVus80gHgh7fTiRn3exCuA8MgdGlJWeNfcf3EOCHMpmA2AFSh5JUJAX5bHwWAxIwWJTjQK=w800-h533-no?authuser=0"
-          width={800}
-          height={533}
-        />
-      </div>
+
       <div className={utilStyles.flexGapContainer}>
+        <HikeInfo
+          distance="4.5 miles round-trip"
+          elevation="1,600 feet"
+          difficulty={HikeDifficulty.MODERATE}
+          season={BestSeason.YEAR_ROUND}
+          trailhead="https://www.google.com/maps/place/Mt.+Olomana+(Three+Peaks)+Ridge+Trail/@21.3684159,-157.7631554,17z/data=!3m1!4b1!4m5!3m4!1s0x7c0014ad23f72d0d:0x7dde7f1a68d5d9c9!8m2!3d21.3684109!4d-157.7609667"
+        />
         <div>
           {`Scramble the mercilessly steep slopes of Olomana's three peaks for an astounding view of O'ahu's eastern side and the Ko'olau Range. One 
           of the most fun hikes on O'ahu, you'll climb up several rope sections and hoist yourself up rocky boulder faces to reach the first and highest summit.`}
@@ -38,6 +38,16 @@ export default function Olomana({ readMore = false }) {
           <br />
           {`The Olomana trail has multiple steep drop-offs and is not suitable for those afraid of heights. Be aware that this hike is incredibly muddy and dangerous
           after or during rainstorms, and should only be hiked on dry days. There are many rescue operations per year on Olomana, so please be careful and hike responsibly.`}
+        </div>
+        <br />
+        <div className={utilStyles.centered}>
+          <Pinnable
+            page={pageURI}
+            alt="Olomana Third Peak, O'ahu, Hawai'i"
+            src="https://lh3.googleusercontent.com/pw/AMWts8DO4nQbYP4R-aBSNJ2jHXds5Xl8_6HuwHH5Pllhv2EFho9E78uvMponge-_YjL-STL4fA9VaHt9ac8kr4nVus80gHgh7fTiRn3exCuA8MgdGlJWeNfcf3EOCHMpmA2AFSh5JUJAX5bHwWAxIwWJTjQK=w800-h533-no?authuser=0"
+            width={800}
+            height={533}
+          />
         </div>
       </div>
       <ReadMoreLink enabled={readMore} text="hiking Olomana" uri={pageURI}>

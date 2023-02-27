@@ -43,11 +43,11 @@ export default function HikeInfo({
 
   return (
     <div className={styles.infoContainer}>
-      <OptionalInfo k="Length " v={distance} node={<DistanceSVG />} />
-      <OptionalInfo k="Elevation " v={elevation} node={<MountainSVG />} />
-      <OptionalInfo k="Difficulty " v={difficulty} node={<HikerSVG />} />
-      <OptionalInfo k="Best Season " v={season} node={<LeafSVG />} />
-      <OptionalInfo k="Permits " v={permits} />
+      <OptionalInfo k="Length" v={distance} node={<DistanceSVG />} />
+      <OptionalInfo k="Elevation" v={elevation} node={<MountainSVG />} />
+      <OptionalInfo k="Difficulty" v={difficulty} node={<HikerSVG />} />
+      <OptionalInfo k="Season" v={season} node={<LeafSVG />} />
+      <OptionalInfo k="Permits" v={permits} />
       {trailhead && (
         <OptionalInfo
           k="Trailhead "
@@ -105,8 +105,8 @@ function MountainSVG() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M3.18596 18.1957C3.10451 18.329 3.20043 18.5 3.35661 18.5H20.1935C20.3379 18.5 20.4347 18.3516 20.3766 18.2195L15.1918 6.43601C15.1205 6.27377 14.8889 6.2777 14.8231 6.44228L12.5803 12.0492C12.5538 12.1155 12.5646 12.1909 12.6087 12.2471L14.2863 14.3822C14.6275 14.8165 14.5521 15.4451 14.1178 15.7863C13.6835 16.1275 13.0549 16.0521 12.7137 15.6178L8.41831 10.151C8.33217 10.0414 8.1631 10.0513 8.09039 10.1703L3.18596 18.1957Z"
         fill="#000000"
       />
@@ -161,7 +161,7 @@ function DistanceSVG() {
       height="20px"
       viewBox="0 0 64 64"
       xmlns="http://www.w3.org/2000/svg"
-      stroke-width="3"
+      strokeWidth="3"
       stroke="#000000"
       fill="none"
     >
@@ -172,7 +172,7 @@ function DistanceSVG() {
       <path d="M17.87,54.89a28.73,28.73,0,0,0,3.9.89" />
       <path
         d="M24.68,56.07c2.79.12,5.85-.28,7.9-2.08,5.8-5.09,2.89-11.25,6.75-14.71a16.72,16.72,0,0,1,4.93-3"
-        stroke-dasharray="7.8 2.92"
+        strokeDasharray="7.8 2.92"
       />
       <path d="M45.63,35.8a23,23,0,0,1,3.88-.95" />
     </svg>

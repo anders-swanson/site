@@ -3,6 +3,8 @@ import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import MapEmbed from "../../maps";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
+import HikeInfo from "../../hike_info";
+import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
 const pageURI = "/blog/hawaii/kalawahine-to-k2";
 
 //+metadata
@@ -14,32 +16,38 @@ export const metadata = {
   tags: ["hawai'i", "hiking"],
   preview:
     "Summit K2 via the Kalawahine Trail on O'ahu's beautiful Ko'olau Range.",
-  subText: "8.3 miles, 2,750 feet gain",
 };
 
 export default function K1K2({ readMore = false }) {
   return (
     <>
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
-      <div className={utilStyles.centered}>
-        <Pinnable
-          page={pageURI}
-          alt="Ko'olau Range, O'ahu, Hawai'i"
-          src="https://lh3.googleusercontent.com/pw/AMWts8ChYPBLH_d0JkFOpAoTXXglyIpWu47FuRxgkyx9NyIvbPog-UiInbSZUxMHYw5fzcZ1NPFdj32VKFj_qNwYC2DsZ7ACm-w4xMBsShVPAG06AJlNyzy0ZXBZOudwnkelKrc7IotwVVGxS4QO1Zz3e0LC=w533-h799-no?authuser=0"
-          width={533}
-          height={799}
-        />
-      </div>
-      <br />
       <div className={utilStyles.flexGapContainer}>
+        <HikeInfo
+          distance="8.3 miles round-trip"
+          elevation="2,750 feet"
+          difficulty={HikeDifficulty.HARD}
+          season={BestSeason.YEAR_ROUND}
+          trailhead="https://www.google.com/maps/place/Kalawahine+Trail/@21.3310974,-157.8233779,17z/data=!3m1!4b1!4m5!3m4!1s0x7c006c4e1dad5545:0xb4d865dd075e7554!8m2!3d21.3310924!4d-157.8211892"
+        />
         <div>
           {`The K1/K2 Summit Hike, also known as Pu'u Konahuanui, climbs some of the highest and most significant peaks in the Ko'olau Range.
-          As you climb K1 and K2, you'll be rewarded with breathtaking views of the Ko'olau Range and a top-down look at the lush greenery of O'ahu's rain forests.
-          The K2 hike was one of the most adventurous hikes we tackled during our time on O'ahu, and it spends plenty of time above the trees with gorgeous views.`}
+          As you climb K1 and K2, you'll be rewarded with panoramic views of the Ko'olau Range and a top-down look at the greenery of O'ahu's rain forests.
+          The K2 hike was one of the most adventurous hikes we attempted on O'ahu, and is highly recommended for confident hikers.`}
           <br />
           <br />
           {`This trail is quite technical compared to the average hike, involving steep climbs with the use of in-place ropes. 
           To add to the difficulty, the trail to K2 is coated in a thick layer of slippery mud. Once you finally reach the top, take a look back and marvel at the rugged hills you climbed.`}
+        </div>
+        <br />
+        <div className={utilStyles.centered}>
+          <Pinnable
+            page={pageURI}
+            alt="Ko'olau Range, O'ahu, Hawai'i"
+            src="https://lh3.googleusercontent.com/pw/AMWts8ChYPBLH_d0JkFOpAoTXXglyIpWu47FuRxgkyx9NyIvbPog-UiInbSZUxMHYw5fzcZ1NPFdj32VKFj_qNwYC2DsZ7ACm-w4xMBsShVPAG06AJlNyzy0ZXBZOudwnkelKrc7IotwVVGxS4QO1Zz3e0LC=w533-h799-no?authuser=0"
+            width={533}
+            height={799}
+          />
         </div>
       </div>
       <ReadMoreLink

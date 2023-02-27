@@ -28,7 +28,7 @@ export default function K1K2({ readMore = false }) {
           elevation="2,750 feet"
           difficulty={HikeDifficulty.HARD}
           season={BestSeason.YEAR_ROUND}
-          trailhead="https://www.google.com/maps/@21.3306503,-157.8216212,19.62z"
+          trailhead="https://www.google.com/maps/place/Kalawahine+Trail/@21.3310974,-157.8233779,17z/data=!3m1!4b1!4m5!3m4!1s0x7c006c4e1dad5545:0xb4d865dd075e7554!8m2!3d21.3310924!4d-157.8211892"
         />
         <div>
           {`The K1/K2 Summit Hike, also known as Pu'u Konahuanui, climbs some of the highest and most significant peaks in the Ko'olau Range.

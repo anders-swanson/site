@@ -1,0 +1,22 @@
+.infoContainer {
+  display: flex;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0px;
+}
+
+.infoItem {
+  padding: 10px;
+}
+
+.infoLabel {
+  color: rgb(71, 71, 71);
+}
+
+@media only screen and (max-width: 640px) {
+  .infoContainer {
+    flex-direction: column;
+  }
+}

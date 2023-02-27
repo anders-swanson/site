@@ -20,7 +20,7 @@ export default function Video({
   let videoType = videoTypes.mp4;
   if (src.includes("youtube.com")) {
     videoType = videoTypes.youtube;
-    let paths = src.split("/");
+    const paths = src.split("/");
     const id = paths[paths.length - 1];
     src = `${src}?playlist=${id}&loop=1&controls=0&modestbranding=1&mute=1&autoplay=1`;
   }
@@ -33,12 +33,12 @@ export default function Video({
     };
   });
 
-  let onScroll = function checkScroll() {
+  const onScroll = function checkScroll() {
     const fraction = 0.8; // Play when 80% of the player is visible.
-    let video = videoRef.current;
-    let right = video.offsetLeft + video.offsetWidth;
-    let bottom = video.offsetTop + video.offsetHeight;
-    let visibleX = Math.max(
+    const video = videoRef.current;
+    const right = video.offsetLeft + video.offsetWidth;
+    const bottom = video.offsetTop + video.offsetHeight;
+    const visibleX = Math.max(
       0,
       Math.min(
         video.offsetWidth,
@@ -46,7 +46,7 @@ export default function Video({
         right - window.pageXOffset
       )
     );
-    let visibleY = Math.max(
+    const visibleY = Math.max(
       0,
       Math.min(
         video.offsetHeight,
@@ -54,7 +54,7 @@ export default function Video({
         bottom - window.pageYOffset
       )
     );
-    let visible =
+    const visible =
       (visibleX * visibleY) / (video.offsetWidth * video.offsetHeight);
     if (visible > fraction) {
       video.play();

@@ -1,3 +1,4 @@
+import links from "../../../lib/links";
 import HeaderText from "../../../components/header_text";
 import ImageGrid from "../../../components/image_grid";
 import Layout from "../../../components/layout";
@@ -104,7 +105,7 @@ export default function Post() {
             text: `Anders' Backpacking Pack`,
             image:
               "https://lh3.googleusercontent.com/pw/AL9nZEV2nlkZJZf9TEBSIABPBy_1dL26-AgHiFflFx6CzHu1z2sIEKsv-m0HmWc75nwZwfcZc4F3-1WcAv8YianqRLhWmf_oHsPU1LX0NNPumveGuRkLbF_pkGJkYW8ubdY1UjFHfpeUnjeOUPe2ilgdkwgG=w1052-h1362-no?authuser=0",
-            link: `https://www.rei.com/product/148589/rei-co-op-flash-55-pack-mens?cm_mmc=aff_AL-_-246005-_-307117-_-NA&avad=307117_b2b36b6b1`,
+            link: links.hiking.andersPack,
           },
           {
             text: `Inflatable Sleeping Pad`,

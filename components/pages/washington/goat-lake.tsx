@@ -4,20 +4,16 @@ import Pinnable from "../../pinit";
 import Contact from "../../contact";
 import MapEmbed from "../../maps";
 import dynamic from "next/dynamic";
+import HikeInfo from "../../hike_info";
+import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
 
 const pageURI = "/blog/washington/goat-lake";
 
 const DynamicBearSafety = dynamic(
-  () => import("../../snippets/bear-safety-nc"),
-  {
-    loading: () => "Loading...",
-  }
+  () => import("../../snippets/bear-safety-nc")
 );
 const DynamicWTP = dynamic(
-  () => import("../../snippets/what-to-pack-backpacking"),
-  {
-    loading: () => "Loading...",
-  }
+  () => import("../../snippets/what-to-pack-backpacking")
 );
 //+metadata
 export const metadata = {
@@ -30,11 +26,23 @@ export const metadata = {
     "Experience the wild beauty of Goat Lake, nestled in the shadow of Mt. Baker in Washington's North Cascades.",
 };
 
-export default function GoatLake({ readMore }) {
+export default function GoatLake({ readMore = false }) {
   return (
     <>
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
+        <HikeInfo
+          distance="10.6 miles round-trip"
+          elevation="2,300 feet"
+          difficulty={HikeDifficulty.MODERATE}
+          season={BestSeason.MID_SUMMER_FALL}
+          trailhead="https://www.google.com/maps/place/Chain+Lakes+Loop+Trailhead/@48.8463999,-121.6875866,16.33z/data=!4m5!3m4!1s0x5484f76824fa45a7:0xd4320e92883e480f!8m2!3d48.8463054!4d-121.6937912"
+        />
+        <div>
+          {`Are you ready for an unforgettable backpacking adventure? Look no further than Goat Lake on Mt. Baker! 
+                    Tucked between Mt. Shuksan and Mt. Baker, Goat Lake is a picturesque backpacking destination that offers the perfect mix of adventure and relaxation.
+                    Whether you're a seasoned hiker or a first-timer, a one-night trip to Goat Lake is an experience you won't soon forget.`}
+        </div>
         <div className={utilStyles.centered}>
           <Pinnable
             page={pageURI}
@@ -43,11 +51,6 @@ export default function GoatLake({ readMore }) {
             width={800}
             height={533}
           />
-        </div>
-        <div>
-          {`Are you ready for an unforgettable backpacking adventure? Look no further than Goat Lake on Mt. Baker! 
-                    Tucked between Mt. Shuksan and Mt. Baker, Goat Lake is a picturesque backpacking destination that offers the perfect mix of adventure and relaxation.
-                    Whether you're a seasoned hiker or a first-timer, a one-night trip to Goat Lake is an experience you won't soon forget.`}
         </div>
         <h1 className={utilStyles.justifyCenter} id="getting-there">
           Getting There

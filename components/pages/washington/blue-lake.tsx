@@ -22,7 +22,7 @@ export const metadata = {
     "Explore a beautiful lake hike that showcases Northern Washington's stunning fall colors.",
 };
 
-export default function BlueLake({ readMore }) {
+export default function BlueLake({ readMore = false }) {
   return (
     <>
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
@@ -32,7 +32,7 @@ export default function BlueLake({ readMore }) {
           elevation="1,000 feet"
           difficulty={HikeDifficulty.EASY}
           season={BestSeason.SUMMER_FALL}
-          trailhead="https://www.google.com/maps/place/Blue+Lake+Trailhead/@48.4046689,-120.7173796,11.67z/data=!4m9!1m2!2m1!1sblue+lake+trailhead!3m5!1s0x5484ac56dff9a9d9:0x21d2336eec6f02ea!8m2!3d48.5189673!4d-120.6743626!15sChNibHVlIGxha2UgdHJhaWxoZWFkkgELaGlraW5nX2FyZWHgAQA"
+          trailhead="https://www.google.com/maps/place/Blue+Lake+Trailhead/@48.5085358,-120.6741149,15.08z/data=!4m5!3m4!1s0x5484ac56dff9a9d9:0x21d2336eec6f02ea!8m2!3d48.5189673!4d-120.6743626"
         />
         <div>
           {`Hiking to Blue Lake in Washington's North Cascades is a breathtaking experience, especially during larch season.

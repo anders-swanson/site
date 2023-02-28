@@ -7,6 +7,8 @@ import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
 import BearSafetyNC from "../../snippets/bear-safety-nc";
 import Contact from "../../contact";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
+import HikeInfo from "../../hike_info";
+import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
 
 const pageURI = "/blog/washington/golden-horn";
 
@@ -22,23 +24,20 @@ export const metadata = {
   tags: ["lakes", "backpacking", "washington", "north cascades"],
   preview:
     "Join us on an adventure through the mountains of Washington's North Cascades as we backpack to Snowy Lakes.",
-  subText: "20 miles round-trip",
 };
 
-export default function SnowyLakes({ readMore }) {
+export default function SnowyLakes({ readMore = false }) {
   return (
     <>
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
-        <div className={utilStyles.centered}>
-          <Pinnable
-            page={pageURI}
-            alt={`Snowy Lakes, Washington.`}
-            src="https://lh3.googleusercontent.com/pw/AL9nZEXp6wbW7nlsHLwbPiG2ovlM0zRmSrqQEVyFCblbIl_Td9HWDug3e_TjxYaGNx5c8YBUjmPmwtlzaG1gAuPwmwuDajjOcXs9FLJKaQfyUdYzZ7Z9wqXGqDSL6RadEx9Kl1jE1r0y7Q30BJ_S2QDcnOX1=w800-h533-no?authuser=0"
-            width={800}
-            height={533}
-          />
-        </div>
+        <HikeInfo
+          distance="20 miles round-trip"
+          elevation="4,500 feet"
+          difficulty={HikeDifficulty.HARD}
+          season={BestSeason.MID_SUMMER_FALL}
+          trailhead="https://www.google.com/maps/place/Pacific+Crest+Trail+North+Trailhead/@48.5239218,-120.7354583,15.46z/data=!4m5!3m4!1s0x5484ade98ee8e437:0x54f63bb022e7f5b5!8m2!3d48.5246355!4d-120.7360385"
+        />
         <div>
           {`Explore stunning landscapes and the natural beauty of northern Washington with a backpacking trip to Snowy Lakes. These high alpine lakes
           are an ideal backpacking destination, tucked deep in the heart of the North Cascades and surrounded by a multitude of snowy peaks.`}
@@ -56,6 +55,15 @@ export default function SnowyLakes({ readMore }) {
           </Link>
           {` across Highway 20 from Rainy Pass, just outside the North Cascades National Park. Campsites at Snowy Lakes are first come, first serve, and there are no
                     required permits for backcountry camping along this stretch of the Pacific Crest Trail (PCT).`}
+        </div>
+        <div className={utilStyles.centered}>
+          <Pinnable
+            page={pageURI}
+            alt={`Snowy Lakes, Washington.`}
+            src="https://lh3.googleusercontent.com/pw/AL9nZEXp6wbW7nlsHLwbPiG2ovlM0zRmSrqQEVyFCblbIl_Td9HWDug3e_TjxYaGNx5c8YBUjmPmwtlzaG1gAuPwmwuDajjOcXs9FLJKaQfyUdYzZ7Z9wqXGqDSL6RadEx9Kl1jE1r0y7Q30BJ_S2QDcnOX1=w800-h533-no?authuser=0"
+            width={800}
+            height={533}
+          />
         </div>
         <ReadMoreLink enabled={readMore} uri={pageURI} text="Snowy Lakes">
           <div className={utilStyles.centered}>

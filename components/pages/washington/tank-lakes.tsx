@@ -5,6 +5,8 @@ import MapEmbed from "../../maps";
 import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
 import Contact from "../../contact";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
+import HikeInfo from "../../hike_info";
+import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
 
 const pageURI = "/blog/washington/tank-lakes";
 
@@ -17,29 +19,37 @@ export const metadata = {
   tags: ["lakes", "backpacking", "washington"],
   preview:
     "Camp at Tank Lakes high in Washington's picturesque Alpine Lakes Wilderness.",
-  subText: "24 miles round-trip, 5,300+ feet gain",
 };
 
 const eastFossRiverTH =
   "https://www.google.com/maps/place/Necklace+Valley+Trailhead/@47.6606472,-121.2944193,15.08z/data=!4m5!3m4!1s0x549a8c9d5a0ce6cf:0xecb31ebbfc1ce76c!8m2!3d47.6651581!4d-121.2883488";
 
-export default function TankLakes({ readMore }) {
+export default function TankLakes({ readMore = false }) {
   return (
     <>
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
-        <Pinnable
-          page={pageURI}
-          alt="Camping at Tank Lake, Alpine Lakes Wilderness, Washington."
-          src="https://lh3.googleusercontent.com/pw/AL9nZEUbNo_YhJDC1eFxRpQRpuhgo6f1gsd7dZUsmHmadeyKF3JCHJDElv-t4GTT2ZnAp8ylt2fqaM1AC_FFL7bRpeCBu1vcWN5ePslAgBFrywoahqTQYRpQ_KGWlfov-fXaHxh0c4sJ8HNJkc0g9XYYkgsN=w800-h533-no?authuser=0"
-          width={800}
-          height={533}
+        <HikeInfo
+          distance="24 miles round-trip"
+          elevation="5,500 feet"
+          difficulty={HikeDifficulty.VERY_HARD}
+          season={BestSeason.MID_SUMMER_FALL}
+          trailhead="https://www.google.com/maps/place/Necklace+Valley+Trailhead/@47.6544,-121.3092426,14.5z/data=!4m5!3m4!1s0x549a8c9d5a0ce6cf:0xecb31ebbfc1ce76c!8m2!3d47.6651193!4d-121.2882634"
         />
         <div>
           {`Tank Lakes is a backpacking destination high in Washington's Alpine Lakes Wilderness.
                     This incredible hike starts off unassumingly, ambling alongside the forested East Foss River before shifting gears and rapidly gaining 5,300 feet of elevation 
                     through rugged terrain dotted with lakes.`}
           <br />
+          <div className={utilStyles.centered}>
+            <Pinnable
+              page={pageURI}
+              alt="Camping at Tank Lake, Alpine Lakes Wilderness, Washington."
+              src="https://lh3.googleusercontent.com/pw/AL9nZEUbNo_YhJDC1eFxRpQRpuhgo6f1gsd7dZUsmHmadeyKF3JCHJDElv-t4GTT2ZnAp8ylt2fqaM1AC_FFL7bRpeCBu1vcWN5ePslAgBFrywoahqTQYRpQ_KGWlfov-fXaHxh0c4sJ8HNJkc0g9XYYkgsN=w800-h533-no?authuser=0"
+              width={800}
+              height={533}
+            />
+          </div>
           <br />
           {`It's 12 miles one-way to Tank Lakes, with sections of rugged trail near the end.
                     If you survive the climb to the top, you'll be rewarded with awe-inspiring views of towering snow-capped peaks, pristine alpine lakes, and plenty backcountry

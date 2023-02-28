@@ -5,6 +5,8 @@ import links from "../../../lib/links";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 import MapEmbed from "../../maps";
 import Contact from "../../contact";
+import HikeInfo from "../../hike_info";
+import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
 
 const pageURI = "/blog/oregon/timberline-trail";
 
@@ -30,29 +32,34 @@ export const metadata = {
   tags: ["lakes", "backpacking", "oregon", "guides"],
   preview:
     "Backpack a stunning 40 mile loop through the most scenic terrain on Mt. Hood.",
-  subText: "40+ miles, 10k+ gain",
 };
 
-export default function TimberlineTrail({ readMore }) {
+export default function TimberlineTrail({ readMore = false }) {
   return (
     <>
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
-        <div className={utilStyles.centered}>
-          <Pinnable
-            page={pageURI}
-            alt="Mt. Hood near Cooper's Spur, Oregon."
-            src="https://lh3.googleusercontent.com/pw/AL9nZEUyB57H0GJbqLm9mTjguF-K--3zW8iq1uiXgb2tdDsbwoZq44R0T3sv3lA19K-537NiyD288zTqNsUgvfc3ssJn0ukySsFk0rFCp-N3CDOPfAtcDXsAIC40vgMOcUUBzuCJ8XzB5wO7whZ-XXADN7fP=w800-h533-no?authuser=0"
-            width={800}
-            height={533}
-          />
-        </div>
-
+        <HikeInfo
+          distance="44 mile loop"
+          elevation="11,000+ feet"
+          difficulty={HikeDifficulty.VERY_HARD}
+          season={BestSeason.SUMMER_FALL}
+          trailhead={timberlineLodgeTrailhead}
+        />
         <div>
           {`The Timberline Trail is arguably the most iconic and beautiful trail in the Mt. Hood area. Keeping true to its name, the 
-          roughly 40-mile loop is stays almost completely above the treeline as it encircles snow-capped Mt. Hood. On this popular trail,
+          roughly 40+ mile loop is stays almost completely above the treeline as it encircles snow-capped Mt. Hood. On this popular trail,
           you'll trek through innumerable meadows of vibrant wildflowers, ford roaring glacier-fed rivers, and camp in the towering shadow of Mt. Hood.`}
-          <br />
+          <br /><br/>
+          <div className={utilStyles.centered}>
+            <Pinnable
+              page={pageURI}
+              alt="Mt. Hood near Cooper's Spur, Oregon."
+              src="https://lh3.googleusercontent.com/pw/AL9nZEUyB57H0GJbqLm9mTjguF-K--3zW8iq1uiXgb2tdDsbwoZq44R0T3sv3lA19K-537NiyD288zTqNsUgvfc3ssJn0ukySsFk0rFCp-N3CDOPfAtcDXsAIC40vgMOcUUBzuCJ8XzB5wO7whZ-XXADN7fP=w800-h533-no?authuser=0"
+              width={800}
+              height={533}
+            />
+          </div>
           <br />
           {`The loop has several different access points, and can be hiked in a variety of ways - the most popular of which start at `}
           <Link href={timberlineLodgeTrailhead}>Timberline Lodge.</Link>

@@ -5,7 +5,7 @@ import MapEmbed from "../../maps";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 import HikeInfo from "../../hike_info";
 import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
-const pageURI = "/blog/hawaii/kalawahine-to-k2";
+const pageURI = "/blog/hawaii/moanalua-ridge";
 
 //+metadata
 export const metadata = {

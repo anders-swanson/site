@@ -224,4 +224,8 @@
     <loc>https://www.trailsandtrekking.com/links</loc>
     <lastmod>2023-01-31</lastmod>
   </url>
+  <url>
+    <loc>https://www.trailsandtrekking.com/search</loc>
+    <lastmod>2023-03-01</lastmod>
+  </url>
 </urlset>

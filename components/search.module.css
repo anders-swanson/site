@@ -1,22 +1,23 @@
 .searchBox {
   height: 20px;
-  z-index: 9998;
+  z-index: 3;
   position: fixed;
-  width: 200px;
+  width: 230px;
   height: 33px;
   left: 64px;
-  top: 10px;
+  top: 9px;
   font-size: 16px;
   border-radius: 15px;
-  border: 0.25px solid grey;
+  opacity: 0.8;
+  border: 0.25px solid rgb(230, 230, 230);
   padding-left: 38px;
 }
 
 .spyglass {
-  z-index: 9999;
+  z-index: 4;
   position: fixed;
   left: 73px;
   width: 16px;
   height: 16px;
-  top: 19px;
+  top: 18px;
 }

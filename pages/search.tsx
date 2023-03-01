@@ -12,19 +12,20 @@ const options = {
 
 const fuse = new Fuse([...Posts()], options);
 
-function search(terms) {
+function search(terms: string) {
   return fuse.search(terms).map((result) => result.item);
 }
 
 export default function SearchPage() {
   const { terms } = useRouter().query;
-
   const [results, setResults] = useState([]);
   useEffect(() => {
     if (!terms) {
       return;
     }
-    setResults(search(terms));
+
+    const termString = Array.isArray(terms) ? terms.join("") : terms;
+    setResults(search(termString));
   }, [terms]);
 
   return (
@@ -33,6 +34,7 @@ export default function SearchPage() {
         posts={results}
         heading={terms ? `Search results for "${terms}"` : "Loading..."}
         perPage={config.itemsPerFilterPage}
+        idx={0}
       />
     </Layout>
   );

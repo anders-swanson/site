@@ -14,18 +14,16 @@ const selectedStyles = {
 export default function PostBox({
   posts,
   heading,
-  postBoxClass,
-  perPage,
-  idx,
+  postBoxClass = styles.postBox,
+  perPage = config.itemsPerPage,
+  idx = 0,
 }) {
-  const pbClass = postBoxClass ? postBoxClass : styles.postBox;
   const headingUpper = CapitalizeWords(heading);
-  const itemsPerPage = perPage ? perPage : config.itemsPerPage;
-  const pages = [...Array(Math.ceil(posts.length / itemsPerPage)).keys()];
-  idx = idx ? idx - 1 : 0;
+  const pages = [...Array(Math.ceil(posts.length / perPage)).keys()];
+  idx = idx > 0 ? idx - 1 : 0;
 
-  const start = idx * itemsPerPage;
-  const stop = start + itemsPerPage;
+  const start = idx * perPage;
+  const stop = start + perPage;
   let items = [];
   for (let i = start; i < stop && i < posts.length; i++) {
     items.push(posts[i]);
@@ -37,7 +35,7 @@ export default function PostBox({
       </div>
       <hr />
       {items.length > 0 && (
-        <div className={pbClass}>
+        <div className={postBoxClass}>
           {items.map(({ ...item }) => (
             <Post key={item.id} item={item} />
           ))}

@@ -124,9 +124,7 @@ export default function Layout({
       </Head>
       <BurgerMenu />
       <div className={styles.headerBar}>
-        <div className={styles.linkBar}>
-          <Link href="/">Trails And Trekking</Link>
-        </div>
+        <div className={styles.linkBar}></div>
       </div>
       {config.search.enabled && (
         <Search search={search} setSearch={setSearch} />

@@ -3,42 +3,37 @@ import Layout from "../components/layout";
 import PostBox from "../components/postbox";
 import config from "../lib/config";
 import { Posts } from "../lib/metadata";
-import { Matches } from "../lib/search";
+import Fuse from "fuse.js";
+import { useEffect, useState } from "react";
 
-export default function SearchPage({ allPostsData }) {
-  const router = useRouter();
-  const terms = router.query.terms;
-  let filteredPosts = allPostsData;
-  if (terms) {
-    filteredPosts =
-      terms.length === 0 ? allPostsData : Matches(terms, allPostsData);
-  }
+const options = {
+  keys: ["title", "preview", "tags", "id"],
+};
 
-  const resultWord = (size) => {
-    if (size == 1) {
-      return "result";
+const fuse = new Fuse([...Posts()], options);
+
+function search(terms) {
+  return fuse.search(terms).map((result) => result.item);
+}
+
+export default function SearchPage() {
+  const { terms } = useRouter().query;
+
+  const [results, setResults] = useState([]);
+  useEffect(() => {
+    if (!terms) {
+      return;
     }
-    return "results";
-  };
+    setResults(search(terms));
+  }, [terms]);
 
   return (
     <Layout>
       <PostBox
-        posts={filteredPosts}
-        heading={`${filteredPosts.length} ${resultWord(
-          filteredPosts.length
-        )} for "${terms}"`}
+        posts={results}
+        heading={terms ? `Search results for "${terms}"` : "Loading..."}
         perPage={config.itemsPerFilterPage}
       />
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const allPostsData = Posts();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
 }

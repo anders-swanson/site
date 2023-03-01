@@ -50,7 +50,8 @@ export default function TimberlineTrail({ readMore = false }) {
           {`The Timberline Trail is arguably the most iconic and beautiful trail in the Mt. Hood area. Keeping true to its name, the 
           roughly 40+ mile loop is stays almost completely above the treeline as it encircles snow-capped Mt. Hood. On this popular trail,
           you'll trek through innumerable meadows of vibrant wildflowers, ford roaring glacier-fed rivers, and camp in the towering shadow of Mt. Hood.`}
-          <br /><br/>
+          <br />
+          <br />
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}

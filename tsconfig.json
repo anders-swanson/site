@@ -21,6 +21,6 @@
     "**/*.tsx",
     "components/slider.js",
     "components/related_posts.js"
-  ],
+, "components/post_archive.js"  ],
   "exclude": ["node_modules"]
 }

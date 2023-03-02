@@ -48,6 +48,9 @@ export default function Archive({ posts, tags }) {
               style={{cursor: "pointer"}}
               key={params.id}
               value={`${params.id} ${getSelectedSymbol(tagList, params.id)}`}
+              onTouchEnd={() => {
+                onClickOption(params.id);
+              }}
               onClick={() => {
                 onClickOption(params.id);
               }}

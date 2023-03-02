@@ -25,6 +25,10 @@
   background-color: rgb(241, 241, 241);
 }
 
+.tagSelector:hover {
+  cursor: pointer;
+}
+
 .flexGap {
   justify-content: center;
   display: flex;

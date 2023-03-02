@@ -45,6 +45,7 @@ export default function Archive({ posts, tags }) {
           <option style={{ display: "none" }} />
           {tags.map(({ params }) => (
             <option
+              style={{cursor: "pointer"}}
               key={params.id}
               value={`${params.id} ${getSelectedSymbol(tagList, params.id)}`}
               onClick={() => {

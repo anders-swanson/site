@@ -1,41 +1,49 @@
 import Link from "next/link";
 
-const width = 50;
-const height = 50;
-
 interface SocialsProps {
-  instagram: string | null;
-  tiktok: string | null;
-  pinterest: string | null;
+  instagram?: string;
+  tiktok?: string;
+  pinterest?: string;
+  github?: string;
+  height?: number;
+  width?: number;
 }
 
 export default function Socials({
   instagram,
   tiktok,
   pinterest,
+  github,
+  height = 50,
+  width = 50,
 }: SocialsProps) {
   return (
     <>
       {instagram && (
-        <Link href={instagram}>
-          <Instagram />
+        <Link href={instagram} target="_blank">
+          <Instagram height={height} width={width} />
         </Link>
       )}
       {tiktok && (
-        <Link href={tiktok}>
-          <TikTok />
+        <Link href={tiktok} target="_blank">
+          <TikTok height={height} width={width} />
         </Link>
       )}
       {pinterest && (
-        <Link href={pinterest}>
-          <Pinterest />
+        <Link href={pinterest} target="_blank">
+          <Pinterest height={height} width={width} />
+        </Link>
+      )}
+      {github && (
+        <Link href={github} target="_blank">
+          <Github height={height} width={width} />
         </Link>
       )}
     </>
   );
 }
 
-function Instagram() {
+function Instagram({ height, width }) {
   return (
     <svg
       width={width}
@@ -57,7 +65,7 @@ function Instagram() {
   );
 }
 
-function TikTok() {
+function TikTok({ height, width }) {
   return (
     <svg
       width={width}
@@ -90,7 +98,7 @@ function TikTok() {
   );
 }
 
-function Pinterest() {
+function Pinterest({ height, width }) {
   return (
     <svg
       width={width}
@@ -105,6 +113,24 @@ function Pinterest() {
         clipRule="evenodd"
         d="M24.852 12C18.302 12 15 16.696 15 20.612c0 2.37.898 4.48 2.823 5.266.316.129.599.004.69-.345.064-.242.215-.853.281-1.107.093-.346.057-.467-.198-.768-.555-.655-.91-1.503-.91-2.703 0-3.485 2.607-6.604 6.788-6.604 3.702 0 5.736 2.263 5.736 5.283 0 3.976-1.76 7.33-4.37 7.33-1.443 0-2.522-1.193-2.176-2.655.414-1.746 1.217-3.632 1.217-4.892 0-1.128-.606-2.07-1.86-2.07-1.474 0-2.658 1.525-2.658 3.569 0 1.3.44 2.181.44 2.181l-1.774 7.513c-.526 2.23-.079 4.963-.041 5.239.022.163.232.202.328.078.135-.177 1.891-2.346 2.488-4.512.169-.613.97-3.789.97-3.789.479.914 1.879 1.718 3.368 1.718 4.431 0 7.438-4.04 7.438-9.449 0-4.087-3.463-7.895-8.728-7.895Z"
         fill="#fff"
+      />
+    </svg>
+  );
+}
+
+function Github({ height, width }) {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>github</title>
+      <rect width="24" height="24" fill="none" />
+      <path
+        fill="#FFFFFF"
+        d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"
       />
     </svg>
   );

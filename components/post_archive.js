@@ -21,7 +21,7 @@ export default function Archive({ posts, tags }) {
       newTagList.push(tag);
     }
     setTagList(newTagList);
-  }
+  };
 
   const tagListItems = () => {
     return tagList.map((_, idx) => (
@@ -41,11 +41,15 @@ export default function Archive({ posts, tags }) {
     <div>
       <div className={archiveStyles.flexGap}>
         <label htmlFor="tags">{`Filter by tag: `}</label>
-        <select className={archiveStyles.tagSelector} id="tags" onChange={(e) => handleChange(e.target.value.trim())}>
+        <select
+          className={archiveStyles.tagSelector}
+          id="tags"
+          onChange={(e) => handleChange(e.target.value.trim())}
+        >
           <option style={{ display: "none" }} />
           {tags.map(({ params }) => (
             <option
-              style={{cursor: "pointer"}}
+              style={{ cursor: "pointer" }}
               key={params.id}
               value={`${params.id} ${getSelectedSymbol(tagList, params.id)}`}
             >

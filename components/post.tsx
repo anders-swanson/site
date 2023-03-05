@@ -1,7 +1,7 @@
 import utilStyles from "../styles/utils.module.css";
 import styles from "./postbox.module.css";
 import Link from "next/link";
-import Date from "../components/date";
+import Date from "./date";
 import Image from "next/image";
 import { CapitalizeWords } from "../lib/common";
 

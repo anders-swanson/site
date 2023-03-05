@@ -16,17 +16,19 @@
 
 .pageNums a {
   color: rgb(97, 97, 97);
-  padding: 5px;
   font-weight: 500;
-  font-size: 17px;
-  border: none;
-  background: none;
+  font-size: 25px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
 }
 
 .pageNums a:hover {
   color: #000;
   text-decoration: underline;
   cursor: pointer;
+  background-color: #dfdfdf;
 }
 
 .highlighted {
@@ -62,6 +64,8 @@
 .tag a:hover {
   padding-right: 7px;
   color: #272727;
+  background-color: #dfdfdf;
+  text-align: center;
 }
 
 .description {

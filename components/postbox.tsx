@@ -9,6 +9,7 @@ const selectedStyles = {
   fontWeight: "bold",
   textDecoration: "underline",
   color: "black",
+  backgroundColor: "#dfdfdf",
 };
 
 export default function PostBox({
@@ -19,12 +20,15 @@ export default function PostBox({
   idx = 0,
 }) {
   const headingUpper = CapitalizeWords(heading);
-  const pages = [...Array(Math.ceil(posts.length / perPage)).keys()];
+  const pages = [];
+  for (let i = 0; i < posts.length / perPage; i++) {
+    pages[i] = i;
+  }
   idx = idx > 0 ? idx - 1 : 0;
 
   const start = idx * perPage;
   const stop = start + perPage;
-  let items = [];
+  const items = [];
   for (let i = start; i < stop && i < posts.length; i++) {
     items.push(posts[i]);
   }
@@ -51,7 +55,7 @@ export default function PostBox({
               href={`/blog/page/${pageNum + 1}#recent`}
               style={pageNum === idx ? selectedStyles : {}}
             >
-              {`${pageNum + 1}`}
+              <div className={styles.num}>{`${pageNum + 1}`}</div>
             </Link>
           ))}
         </div>

@@ -11,8 +11,8 @@ export default function Video({
   src,
   height = 500,
   width = 500,
-  controls,
-  style,
+  controls = false,
+  style = null,
   poster = "/cover.png",
 }) {
   const videoRef = useRef(null);

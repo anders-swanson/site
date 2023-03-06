@@ -21,7 +21,7 @@ export default function HikeInfo({
   distance,
   elevation,
   trailhead,
-  permits,
+  permits = "none",
   difficulty,
   season,
 }: HikeInfoProps) {

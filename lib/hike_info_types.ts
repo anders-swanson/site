@@ -16,3 +16,5 @@ export enum BestSeason {
   // SUMMER = "Summer",
   // FALL = "Fall",
 }
+
+export const NWForestPass = "NW Forest Pass (parking)";

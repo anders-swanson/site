@@ -51,7 +51,7 @@ export default function Moanalua({ readMore = false }) {
       </div>
       <ReadMoreLink
         enabled={readMore}
-        text="hiking K2 Via Kalawahine Trail"
+        text="hiking Moanalua Ridge"
         uri={pageURI}
       >
         <div className={utilStyles.flexGapContainer}>

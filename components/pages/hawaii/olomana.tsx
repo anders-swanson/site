@@ -5,6 +5,8 @@ import MapEmbed from "../../maps";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 import HikeInfo from "../../hike_info";
 import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
+import Video from "../../video";
+import { rawData } from "../../../lib/common";
 const pageURI = "/blog/hawaii/olomana";
 
 //+metadata
@@ -41,13 +43,7 @@ export default function Olomana({ readMore = false }) {
         </div>
         <br />
         <div className={utilStyles.centered}>
-          <Pinnable
-            page={pageURI}
-            alt="Olomana Third Peak, O'ahu, Hawai'i"
-            src="https://lh3.googleusercontent.com/pw/AMWts8DO4nQbYP4R-aBSNJ2jHXds5Xl8_6HuwHH5Pllhv2EFho9E78uvMponge-_YjL-STL4fA9VaHt9ac8kr4nVus80gHgh7fTiRn3exCuA8MgdGlJWeNfcf3EOCHMpmA2AFSh5JUJAX5bHwWAxIwWJTjQK=w800-h533-no?authuser=0"
-            width={800}
-            height={533}
-          />
+          <Video src={rawData("olomana-vid.mp4")} height={600} width={337} />
         </div>
       </div>
       <ReadMoreLink enabled={readMore} text="hiking Olomana" uri={pageURI}>
@@ -143,9 +139,9 @@ export default function Olomana({ readMore = false }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Olomana second peak, O'ahu, Hawai'i"
-                src="https://lh3.googleusercontent.com/pw/AMWts8DelGODaBJhOh8DET5lpaVdgPTdMoLPL2VIv8SEQHeQ4bn42vkTNStOMkHlDkZGGn843mZZX0qLZ7MMB2v_yZZQGXmZIL1WfzTyRP_ItjUyze6Ls1W2E5zrriwyXxPCG4XKVGaPm8C8OEq3BOwtc3LG=w355-h533-no?authuser=0"
-                width={355}
+                alt="Olomana Third Peak, O'ahu, Hawai'i"
+                src="https://lh3.googleusercontent.com/pw/AMWts8DO4nQbYP4R-aBSNJ2jHXds5Xl8_6HuwHH5Pllhv2EFho9E78uvMponge-_YjL-STL4fA9VaHt9ac8kr4nVus80gHgh7fTiRn3exCuA8MgdGlJWeNfcf3EOCHMpmA2AFSh5JUJAX5bHwWAxIwWJTjQK=w800-h533-no?authuser=0"
+                width={800}
                 height={533}
               />
             </div>

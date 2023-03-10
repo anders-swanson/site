@@ -11,7 +11,7 @@ export enum BestSeason {
   // SPRING_FALL = "Spring through fall",
   SUMMER_FALL = "Summer through fall",
   MID_SUMMER_FALL = "Mid-summer to early fall",
-  // WINTER = "Winter",
+  WINTER = "Winter",
   // SPRING = "Spring",
   // SUMMER = "Summer",
   // FALL = "Fall",

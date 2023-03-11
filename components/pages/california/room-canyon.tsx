@@ -31,7 +31,7 @@ export default function RoomCanyon({ readMore = false }) {
           distance="3 miles round-trip"
           elevation="400 feet"
           difficulty={HikeDifficulty.EASY}
-          season={BestSeason.WINTER}
+          season={BestSeason.WINTER_SPRING}
           trailhead={trailhead}
         />
         <div>
@@ -163,8 +163,8 @@ export default function RoomCanyon({ readMore = false }) {
               />
             </div>
           </div>
-          <h1 className={utilStyles.justifyCenter} id="other-info">
-            Other Info
+          <h1 className={utilStyles.justifyCenter} id="other-tips">
+            Other Tips
           </h1>
           <div>
             {`Room Canyon is an undeveloped trail, and may be difficult to navigate at times. If you find yourself in another canyon, backtrack in the direction of your

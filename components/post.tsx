@@ -21,9 +21,6 @@ export default function Post({
           className={utilStyles.borderRounded}
           height={imgSizing}
           width={imgSizing}
-          style={{
-            paddingBottom: "5px",
-          }}
         />
       </Link>
       <div className={styles.tag}>

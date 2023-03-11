@@ -6,6 +6,12 @@
   gap: 30px;
 }
 
+.postBox img {
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(131, 131, 131);
+  line-height: 0;
+}
+
 .pageNums {
   justify-content: center;
   display: flex;
@@ -49,6 +55,7 @@
 }
 
 .tag {
+  margin-top: 5px;
   border: none;
   background: none;
   font-size: small;

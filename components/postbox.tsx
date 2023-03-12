@@ -19,7 +19,6 @@ export default function PostBox({
   perPage = config.itemsPerPage,
   idx = 0,
 }) {
-  const headingUpper = CapitalizeWords(heading);
   const pages = [];
   for (let i = 0; i < posts.length / perPage; i++) {
     pages[i] = i;
@@ -34,10 +33,11 @@ export default function PostBox({
   }
   return (
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-      <div style={{ display: "flex" }} id="recent">
-        <h2 className={utilStyles.headingLg}>{headingUpper}</h2>
+      <div id="recent">
+        {heading && (
+          <h2 className={utilStyles.headingLg}>{CapitalizeWords(heading)}</h2>
+        )}
       </div>
-      <hr />
       {items.length > 0 && (
         <div className={postBoxClass}>
           {items.map(({ ...item }) => (

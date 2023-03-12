@@ -10,7 +10,6 @@ export default function Home({ posts }) {
     <Layout
       home
       allPostsData={posts}
-      postsHeading="Recent Posts"
       description={`Do you like exploring the outdoors? Join us as we share recent hiking trips, camping suggestions, and backcountry guides.`}
     >
       <div className={utilStyles.flexGapContainer}>
@@ -23,6 +22,7 @@ export default function Home({ posts }) {
       </div>
       <br />
       <FeaturedPost post={false} />
+      <br />
     </Layout>
   );
 }

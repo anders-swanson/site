@@ -16,7 +16,7 @@ export default function FeaturedPost({ post, txt = "" }) {
             and backcountry guides.`}
           <br />
           <br />
-          {`Check out our recent posts for ideas planning your next trip.`}
+          {`Check out our recent posts for ideas on planning your next trip.`}
           <br />
           {txt}
         </div>

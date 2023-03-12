@@ -10,7 +10,6 @@ import { Posts } from "../lib/metadata";
 import PrevNextPost from "./prev_next_post";
 import dynamic from "next/dynamic";
 import BurgerMenu from "./burger_menu";
-import Image from "next/image";
 
 export const title = `Trails and Trekking`;
 const defaultHeaderImage = "/cover.png";

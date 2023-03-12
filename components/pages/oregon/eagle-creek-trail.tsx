@@ -11,6 +11,8 @@ import {
 } from "../../../lib/hike_info_types";
 import Video from "../../video";
 import { rawData } from "../../../lib/common";
+import links from "../../../lib/links";
+import Link from "next/link";
 
 const pageURI = "/blog/oregon/eagle-creek-trail";
 
@@ -40,23 +42,21 @@ export default function EagleCreek({ readMore = false }) {
         />
         <div>
           {`If you're local to NW Oregon, the Eagle Creek trail almost needs no introduction. This trail is well-known for its many waterfalls,
-          towering basalt canyons, and scenic views. The main draw of the Eagle Creek trail is Tunnel Falls, a 172-foot waterfall with a rocky passage behind it.`}
+          towering basalt canyons, and scenic views. The main draw of the Eagle Creek trail is Tunnel Falls, a 172-foot waterfall with an enclosed passage behind it.`}
           <br />
           <br />
-          {`The Eagle Creek trail is a staple hike for those exploring the Columbia River Gorge, and shouldn't be missed. Even if you don't make it all the way to Tunnel Falls,
-          there are countless other waterfalls to see along the way. I've hiked this trail at least a dozen times, during every season of the year, and it never disappoints.`}
+          {`The Eagle Creek trail is a staple hike for those exploring the Columbia River Gorge or visiting Oregon. Even if you don't make it all the way to Tunnel Falls,
+          there are still countless other waterfalls to see along the way. I've hiked the Eagle Creek trail at least a dozen times during every season of the year, and it never disappoints!`}
           <br />
           <br />
           {`The photos in this post are from an early-March trip, when the trail had some snow and ice.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
-            <Pinnable
-              page={pageURI}
-              alt="Eagle Creek Trail, Columbia River Gorge, Oregon."
-              src="https://lh3.googleusercontent.com/pw/AMWts8CdBeidz2ewRYzKMoCYVyjleQGNfLrmdV5EbNJlnolSFk4wTJyCENDkyfScsVbEqE9sD9Cr3HRz_nk4xtYfVJZi6sEXE8UfZqiTtUdCmIEXbpkMRsMgZ8mwN4mcWbKDtBh8Aj7UmrcJEgYT9_bcoWkh=w600-h800-no?authuser=0"
-              width={600}
-              height={800}
+            <Video
+              src={rawData("eagle-cr-walk.mp4")}
+              height={600}
+              width={337}
             />
           </div>
         </div>
@@ -97,10 +97,12 @@ export default function EagleCreek({ readMore = false }) {
             <br />
             <br />
             <div className={utilStyles.centered}>
-              <Video
-                src={rawData("eagle-cr-walk.mp4")}
-                height={600}
-                width={337}
+              <Pinnable
+                page={pageURI}
+                alt="Eagle Creek Trail, Columbia River Gorge, Oregon."
+                src="https://lh3.googleusercontent.com/pw/AMWts8CdBeidz2ewRYzKMoCYVyjleQGNfLrmdV5EbNJlnolSFk4wTJyCENDkyfScsVbEqE9sD9Cr3HRz_nk4xtYfVJZi6sEXE8UfZqiTtUdCmIEXbpkMRsMgZ8mwN4mcWbKDtBh8Aj7UmrcJEgYT9_bcoWkh=w600-h800-no?authuser=0"
+                width={600}
+                height={800}
               />
             </div>
             <br />
@@ -205,6 +207,28 @@ export default function EagleCreek({ readMore = false }) {
               <Video src={rawData("IMG_0325.mp4")} height={600} width={337} />
             </div>
           </div>
+
+          <h1 className={utilStyles.justifyCenter} id="other-tips">
+            Other Tips
+          </h1>
+          <div>
+            {`If you hike the Eagle Creek trail during winter or early spring, be prepared for moderate to heavy snowfall and the possibility of deep stream crossings.`}
+            <ul>
+              <li>
+                {`Bring spikes for traction on snow and ice. I like the `}
+                <Link href={links.hiking.blackDiamondSpikes}>
+                  Black Diamond Spikes
+                </Link>
+                {`, having used them for 100's of miles.`}
+              </li>
+              <li>{`Pack extra food. During colder temperatures, our bodies need more energy.`}</li>
+              <li>{`Be ready to get wet. Winter and spring often mean rain/snow, and deep stream crossings.`}</li>
+            </ul>
+            {`If you're hiking in the summer, expect intense crowds and difficult parking. The benefit of summer hiking is the possibility to swim near Punchbowl Falls or other swimming holes.`}
+            <br />
+            <br />
+          </div>
+
           <br />
           <Contact />
         </ReadMoreLink>

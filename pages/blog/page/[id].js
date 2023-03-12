@@ -1,9 +1,14 @@
 import Layout from "../../../components/layout";
 import { Pages, Posts } from "../../../lib/metadata";
+import FeaturedPost from "../../../components/featuredpost"
 
 export default function Post({ id, posts }) {
   return (
-    <Layout allPostsData={posts} idx={id} postsHeading="Recent Posts"></Layout>
+    <Layout allPostsData={posts} idx={id} description={`Do you like exploring the outdoors? Join us as we share recent hiking trips, camping suggestions, and backcountry guides.`}>
+      <br />
+      <FeaturedPost post={false} />
+      <br/>
+    </Layout>
   );
 }
 

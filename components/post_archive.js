@@ -73,7 +73,7 @@ export default function Archive({ posts, tags }) {
                 <Image
                   alt={item.id}
                   src={item.image}
-                  className={utilStyles.borderRounded}
+                  className={`${utilStyles.borderRounded} ${archiveStyles.linkedImage}`}
                   height={imgSizing}
                   width={imgSizing}
                 />

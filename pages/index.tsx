@@ -8,7 +8,7 @@ import styles from "../components/index.module.css";
 import IsWindowSize from "../lib/use_window_size";
 
 export default function Home({ posts }) {
-  const windowSize = IsWindowSize(640);
+  const windowSize = IsWindowSize(1100);
 
   return (
     <Layout

@@ -149,7 +149,7 @@ export default function RoomCanyon({ readMore = false }) {
             You'll eventually arrive at a dryfall that marks the end of the trail.`}
             <br />
             <br />
-            {` We scrambled up the dryfall to see if it was worth continuing, and found that the canyon gets rockier and less impressive., and rockier.
+            {` We scrambled up the dryfall to see if it was worth continuing, and found that the canyon gets rockier and less impressive, and rockier.
             After a quick rest at the dryfall, we turned around and hiked back to the car.`}
             <br />
             <br />

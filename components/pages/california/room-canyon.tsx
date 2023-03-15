@@ -7,7 +7,7 @@ import HikeInfo from "../../hike_info";
 import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
 import Link from "next/link";
 
-const pageURI = "/blog/washington/blue-lake";
+const pageURI = "/blog/california/room-canyon";
 const trailhead =
   "https://www.google.com/maps/place/35%C2%B058'32.5%22N+116%C2%B043'38.3%22W/@35.9756946,-116.7286124,17z/data=!3m1!4b1!4m4!3m3!8m2!3d35.975692!4d-116.727311";
 

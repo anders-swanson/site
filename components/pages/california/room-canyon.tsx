@@ -64,8 +64,9 @@ export default function RoomCanyon({ readMore = false }) {
             Getting There and Parking
           </h1>
           <div>
-            {`The Room Canyon hike starts 40 miles south of Furnace Creek on Badwater Road. There's no defined trailhead here, nor is there any signage,
-            but I've added a pin below to help you find the hike's starting point.`}
+            {`The Room Canyon hike starts about 40 miles south of Furnace Creek off Badwater Road. There's no trailhead here, nor is there any signage, markers, or 
+            any indication at all that there's a trail here. However, there is a great hike hiding here, and I've added a pin below to help you find its
+            starting point.`}
           </div>
           <div>
             {`Once you arrive at the marker, pull your car to the side of the road and park on the shoulder. Room Canyon is due east from the pinned location.`}
@@ -78,13 +79,12 @@ export default function RoomCanyon({ readMore = false }) {
 
           <div>
             {`The hike to Room Canyon starts on the east side of the road (on your left, driving from Furnace Creek), moving gently uphill through gravel and desert brush.
-            There's no visible trail here, but you may see footprints heading east to the canyon. Stay east, and you'll get to the canyon after a short walk.`}
+            There's no visible trail here, but you may see footprints heading east towards the canyon. Keep going and you'll get to the canyon after a short walk.`}
             <br />
             <br />
             {`The following photo shows the canyon's entrance after hiking up from the road. Sometimes it can be difficult to find the canyon. If you find yourself
-            hiking steeply uphill in a canyon, you're most likely in one of the other canyons to the north or south of Room Canyon.`}
+            hiking steeply uphill or in a spot that doesn't match the photos, you're most likely in another canyon to the north or south of Room Canyon.`}
             <br />
-
             <br />
             <div className={utilStyles.centered}>
               <Pinnable
@@ -96,11 +96,11 @@ export default function RoomCanyon({ readMore = false }) {
               />
             </div>
             <br />
-            {`When you're hiking in Room Canyon, there are two side forks to watch out for. The first fork is a fairly short side passage that will be on your left, that leads to a dead end.`}
+            {`When you're hiking in Room Canyon, there are two side passages to watch out for. The first fork is a short slot on your left, leading to a dead end.`}
             <br />
             <br />
-            {`The second fork is a bit more important. When you arrive at the second fork, take a left to get the "Room" which is the main attraction of this area.
-            The right-hand passage at the second fork leads to a separate wash that isn't as interesting.`}
+            {`The second fork is a more important landmark. When you arrive at the second fork, make sure to take a left to get the "Room" section of Room Canyon.
+            The passage to the right leads to a separate wash that isn't as interesting to see (most people skip the right fork).`}
             <br />
             <br />
             <div className={utilStyles.centered}>
@@ -114,7 +114,7 @@ export default function RoomCanyon({ readMore = false }) {
             </div>
             <br />
             <br />
-            {`From the left fork, the canyon walls grow steeper, and it begins to feel more like a slot canyon. There's a neat keystone here that you can walk under, and some fun
+            {`As you proceed along the left fork, the canyon walls grow steeper, and it begins to feel more like a slot canyon. There's a neat keystone here that you can walk under, and some fun
             enclosed spaces to squeeze through.`}
             <br />
             <br />
@@ -130,7 +130,7 @@ export default function RoomCanyon({ readMore = false }) {
 
             <br />
             <br />
-            {`As you get further in, the canyon widens to a large "Room" with high walls. We decided to stop and have lunch here, admiring the rock formations.
+            {`Getting further in, the canyon widens to a large "Room" with high walls. We decided to stop and have lunch here, admiring the rock formations.
             The afternoon sun was beginning to play in the canyon walls and light up the rock.`}
             <br />
             <br />
@@ -149,7 +149,7 @@ export default function RoomCanyon({ readMore = false }) {
             You'll eventually arrive at a dryfall that marks the end of the trail.`}
             <br />
             <br />
-            {` We scrambled up the dryfall to see if it was worth continuing, and found that the canyon gets rockier and less impressive, and rockier.
+            {` We scrambled up the dryfall to see if it was worth continuing, and found that the canyon becomes rocky, difficult to traverse, and much less impressive.
             After a quick rest at the dryfall, we turned around and hiked back to the car.`}
             <br />
             <br />
@@ -167,14 +167,15 @@ export default function RoomCanyon({ readMore = false }) {
             Other Tips
           </h1>
           <div>
-            {`Room Canyon is an undeveloped trail, and may be difficult to navigate at times. If you find yourself in another canyon, backtrack in the direction of your
+            {`Room Canyon is a completely undeveloped trail, and may be difficult to navigate at times. If you find yourself in another canyon, backtrack in the direction of your
             car and try to reorient yourself in a more easterly direction. The canyon entrance should be in a nearly straight line east from the `}
             <Link href={trailhead}>waypoint</Link>
             {`.`}
             <br />
             <br />
             {`The best season to hike Room Canyon is the winter, to avoid the oppressive heat of Death Valley during the remainder of the year. Because of the 
-            area's remoteness, it's not recommended to hike here during the summer.`}
+            area's remoteness, it's not recommended to hike here during the summer. Please also be mindful not to leave any trash in the area: 
+            any debris left in Room Canyon will remain until another hiker picks them up.`}
             <br />
             <br />
           </div>

@@ -11,7 +11,7 @@
 }
 
 .parent:hover div {
-  filter: brightness(70%);
+  filter: brightness(90%);
 }
 
 .child {

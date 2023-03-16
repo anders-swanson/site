@@ -16,8 +16,11 @@
 .menu__toggle:checked ~ .menu__box {
   left: 0 !important;
 }
-.menu__btn {
+.menu__toggle:checked ~ .menu__btn {
   position: fixed;
+}
+.menu__btn {
+  position: absolute;
   padding-top: 11px;
   top: 12px;
   left: 20px;

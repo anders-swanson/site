@@ -52,6 +52,10 @@ export default function Layout({
   const [search, setSearch] = useState("");
   // State for the scroll effect
   const [isVisible, setVisible] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [navBarStyles, setNavBarStyles] = useState({
+    top: "0px",
+  });
   useEffect(() => {
     // set visibility if page is refreshed on a scroll position
     setVisible(!isScrolled());
@@ -64,7 +68,29 @@ export default function Layout({
     } else {
       setVisible(true);
     }
+
+    if (window.scrollY > scrollPosition) {
+      setNavBarStyles({
+        top: "-50px",
+      });
+    } else {
+      setNavBarStyles({
+        top: "0px",
+      });
+    }
+    setScrollPosition(window.scrollY);
   };
+
+  //   var prevScrollpos = window.pageYOffset;
+  // window.onscroll = function() {
+  //   var currentScrollPos = window.pageYOffset;
+  //   if (prevScrollpos > currentScrollPos) {
+  //     document.getElementById("navbar").style.top = "0";
+  //   } else {
+  //     document.getElementById("navbar").style.top = "-50px";
+  //   }
+  //   prevScrollpos = currentScrollPos;
+  // }
 
   // use the scroll effect
   useEffect(() => {
@@ -122,13 +148,14 @@ export default function Layout({
         <meta name="twitter:description" content={description} />
         <meta name="keywords" content="hiking, backpacking, oregon" />
       </Head>
-      <BurgerMenu />
-      <div className={styles.headerBar}>
+
+      <div className={styles.headerBar} style={navBarStyles}>
+        <BurgerMenu />
+        {config.search.enabled && (
+          <Search search={search} setSearch={setSearch} />
+        )}
         <div className={styles.linkBar}></div>
       </div>
-      {config.search.enabled && (
-        <Search search={search} setSearch={setSearch} />
-      )}
 
       <br />
       <br />

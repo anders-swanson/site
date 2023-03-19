@@ -15,10 +15,10 @@ export const metadata = {
   title: "What should I have for lunch while backpacking?",
   date: "2023-03-17",
   image:
-    "https://lh3.googleusercontent.com/pw/AMWts8CIYux4Hob3k20VjNGnEz4wI70iKsuhoJQT2Ya3zHlmLAPOwjFBznAMLzKNAEyeM8uebfmyP3nyPUy-9Zoc61UDabxutlb2vbx7koRRnzX6LnQmU2L-Zofh4CtFX871UUF9pY8FMS3bRBysxK42hDP5=s800-no?authuser=0",
+    "https://lh3.googleusercontent.com/pw/AMWts8AtHF89VDzcFXO89O39jWXKxDvbz_FTSRr-UkscOsl13kor45kRVRNxgHxObOpSI_dvZknyYWsdrPHCQd7LHoNQAQPIyCWNlSk_htWtlPRi--9WimrVlFaat4WMVjfyE3qmq1lecN_2ThrDoF97AAah=w653-h653-s-no?authuser=0",
   tags: ["guides", "backpacking"],
   preview:
-    "Join us as we share our top, tasty lunch choices that'll keep you well-fed while backpacking.",
+    "Check out our top lunch and snack choices that'll keep you well-fed while backpacking.",
 };
 
 export default function BackpackingLunch({ readMore = false }) {
@@ -27,29 +27,18 @@ export default function BackpackingLunch({ readMore = false }) {
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
         <div>
-
-          {`what types of food to pack: nutrient dense, lightweight, shelf-stable, easy to prepare
-          tortilla wraps and variations
-          snacks: date "snickers"
-          salami/cheese/smolked salmon
-          instant or quick-cook meal packets: instant potatoes, minute oats, ramen noodles, instant rice
-          energy bars: huge variety, but generally low in satiety`}
-          {`If you're local to NW Oregon, the Eagle Creek trail almost needs no introduction. This trail is well-known for its many waterfalls,
-          towering basalt canyons, and scenic views. The main draw of the Eagle Creek trail is Tunnel Falls, a 172-foot waterfall with an enclosed passage behind it.`}
-          <br />
-          <br />
-          {`The Eagle Creek trail is a staple hike for those exploring the Columbia River Gorge or visiting Oregon. Even if you don't make it all the way to Tunnel Falls,
-          there are still countless other waterfalls to see along the way. I've hiked the Eagle Creek trail at least a dozen times during every season of the year, and it never disappoints!`}
-          <br />
-          <br />
-          {`The photos in this post are from an early-March trip, when the trail had some snow and ice.`}
+          {`There's nothing quite like the feeling of embarking on a new backpacking adventure. However, with long hours of strenuous physical activity ahead, 
+          it's essential to fuel your body with nutritious meals - especially at lunchtime, when a quick and satisfying break can make all the difference. 
+          That's why mastering the art of meal planning is a crucial skill for any backpacker looking to make the most of their adventure.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
-            <Video
-              src={rawData("eagle-cr-walk.mp4")}
+            <Pinnable
+              page={pageURI}
+              alt='Backpacking Sandwich'
+              src="https://lh3.googleusercontent.com/pw/AMWts8A8zwUIq_BK-QjFqWCMW07AbpoPYe7hGxd1A2xQT2W-7vxN13surYGteThPE7GEXlFiMqI9Q2wVPtQkwM0ol7sVlAZrq3DZbBk7e01Wk5RzK7JV0U0DIvP29ypzbzqe1jNcO-2fDMsZVeJYNPK-HLSt=w450-h600-s-no?authuser=0"
               height={600}
-              width={337}
+              width={450}
             />
           </div>
         </div>

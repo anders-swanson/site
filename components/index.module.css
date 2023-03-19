@@ -8,7 +8,7 @@
   line-height: 65px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   .container {
     font-size: 40px;
     line-height: 45px;
@@ -22,7 +22,7 @@
   transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   .overlayText {
     top: 23%;
   }

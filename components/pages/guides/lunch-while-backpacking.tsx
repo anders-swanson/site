@@ -27,6 +27,13 @@ export default function BackpackingLunch({ readMore = false }) {
       <ReadMoreHeader enabled={readMore} metadata={metadata} />
       <div className={utilStyles.flexGapContainer}>
         <div>
+
+          {`what types of food to pack: nutrient dense, lightweight, shelf-stable, easy to prepare
+          tortilla wraps and variations
+          snacks: date "snickers"
+          salami/cheese/smolked salmon
+          instant or quick-cook meal packets: instant potatoes, minute oats, ramen noodles, instant rice
+          energy bars: huge variety, but generally low in satiety`}
           {`If you're local to NW Oregon, the Eagle Creek trail almost needs no introduction. This trail is well-known for its many waterfalls,
           towering basalt canyons, and scenic views. The main draw of the Eagle Creek trail is Tunnel Falls, a 172-foot waterfall with an enclosed passage behind it.`}
           <br />

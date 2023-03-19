@@ -1,11 +1,11 @@
 .searchBox {
   height: 20px;
   z-index: 3;
-  position: fixed;
+  position: relative;
   width: 230px;
   height: 33px;
   left: 64px;
-  top: 9px;
+  top: -36px;
   font-size: 16px;
   border-radius: 15px;
   opacity: 0.8;
@@ -15,9 +15,9 @@
 
 .spyglass {
   z-index: 4;
-  position: fixed;
+  position: relative;
   left: 73px;
   width: 16px;
   height: 16px;
-  top: 18px;
+  top: -12px;
 }

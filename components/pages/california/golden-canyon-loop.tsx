@@ -6,7 +6,7 @@ import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
 import HikeInfo from "../../hike_info";
 import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
 
-const pageURI = "/blog/washington/blue-lake";
+const pageURI = "/blog/california/golden-canyon-loop";
 const trailhead =
   "https://www.google.com/maps/place/Golden+Canyon+Trailhead/@36.4207527,-116.8487991,17z/data=!4m14!1m7!3m6!1s0x80c73e8ab49dc8e7:0x81181ab2667c4455!2sGolden+Canyon+Trailhead!8m2!3d36.4207484!4d-116.8466104!16s%2Fg%2F1tjdx578!3m5!1s0x80c73e8ab49dc8e7:0x81181ab2667c4455!8m2!3d36.4207484!4d-116.8466104!16s%2Fg%2F1tjdx578";
 

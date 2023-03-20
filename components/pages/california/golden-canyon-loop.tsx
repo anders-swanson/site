@@ -54,7 +54,7 @@ export default function GoldenCanyon({ readMore = false }) {
       </div>
       <ReadMoreLink
         enabled={readMore}
-        text="exploring Room Canyon"
+        text="hiking Golden Canyon"
         uri={pageURI}
       >
         <div className={utilStyles.flexGapContainer}>

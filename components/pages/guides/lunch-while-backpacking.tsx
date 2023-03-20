@@ -1,12 +1,8 @@
 import utilStyles from "../../../styles/utils.module.css";
 import Pinnable from "../../pinit";
 import ReadMoreLink, { ReadMoreHeader } from "../../read_more_link";
-import MapEmbed from "../../maps";
 import Contact from "../../contact";
-import Video from "../../video";
-import { rawData } from "../../../lib/common";
-import links from "../../../lib/links";
-import Link from "next/link";
+import ChocolateDates from "../../snippets/chocolate-dates";
 
 const pageURI = "/blog/guides/lunch-while-backpacking";
 
@@ -32,10 +28,13 @@ export default function BackpackingLunch({ readMore = false }) {
           That's why mastering the art of meal planning is a crucial skill for any backpacker looking to make the most of their adventure.`}
           <br />
           <br />
+          {`Check out our guide below to learn more about meal planning while backpacking!`}
+          <br />
+          <br />
           <div className={utilStyles.centered}>
             <Pinnable
               page={pageURI}
-              alt='Backpacking Sandwich'
+              alt="Backpacking Sandwich"
               src="https://lh3.googleusercontent.com/pw/AMWts8A8zwUIq_BK-QjFqWCMW07AbpoPYe7hGxd1A2xQT2W-7vxN13surYGteThPE7GEXlFiMqI9Q2wVPtQkwM0ol7sVlAZrq3DZbBk7e01Wk5RzK7JV0U0DIvP29ypzbzqe1jNcO-2fDMsZVeJYNPK-HLSt=w450-h600-s-no?authuser=0"
               height={600}
               width={450}
@@ -45,148 +44,163 @@ export default function BackpackingLunch({ readMore = false }) {
 
         <ReadMoreLink
           enabled={readMore}
-          text="hiking the Eagle Creek trail"
+          text="meal planning for your next backpacking adventure"
           uri={pageURI}
         >
-          <h1 className={utilStyles.justifyCenter} id="getting-there">
-            Getting There and Parking
+          <h1 className={utilStyles.justifyCenter} id="mean-planning">
+            Meal Planning Basics
           </h1>
           <div>
-            {`The trailhead is located about 45 minutes east of Portland on I-84, between Bonneville Dam and Cascade Locks. The following pin shows the trailhead's location
-            in the Columbia River Gorge.`}
-          </div>
-          <MapEmbed query="Eagle+Creek+Trailhead/@45.6366863,-121.9218307,16.71z/data=!4m5!3m4!1s0x5495a7b3fcbd403f:0x7e7ddf075caddc4c!8m2!3d45.6368482!4d-121.9194887" />
-          <div>
-            {`A Northwest Forest Pass or day use permit is required for parking at the trailhead. $5 Day use permits can be purchased on-site before your hike.`}
+            {`The best food for backpacking is nutrient dense, lightweight, shelf-stable, and easy to prepare. You likely won't have the tools to prepare complex meals on the trail,
+          nor will you want to carry avoidable extra weight - so simple meals are important.`}
             <br />
             <br />
-            {`The Eagle Creek trail can get very busy, especially during Spring and Summer. If you're planning to hike on a Summer weekend, I recommend getting to the trailhead by 8:00 AM to claim a parking spot.
-            The majority of the available parking is over 1/2 mile from the trailhead, so arriving early can reduce extra walking along the access road.
-            Alternatively, consider hiking off-season or midweek to reduce the crowds.`}
+            {`For nutrition, expect to consume in excess of your normal daily caloric intake, typically between 2,500 to 4,000 calories. This might sound like a lot, 
+          but backpacking is strenuous and you'll need the additional calories to keep your energy up.`}
+            <br />
+            <br />
+            <div className={utilStyles.centered}>
+              <Pinnable
+                page={pageURI}
+                alt="Eating a homemade bar while backpacking on Ross Lake"
+                src="https://lh3.googleusercontent.com/pw/AMWts8DcxbvylWTZdFrpXL2_oqVKHo0grH5a7Oc0M3oUM7fAwVAm83F-osX_Q-E2vau_Qejkp5t_QACNJZ83cO3ONhDf1jLRBf8nueg2uU7Bn1ghmPzoQTwk-DT9_3UIm--KuJjH5fBFPQBEpCRKiqdT1Ull=w565-h754-s-no?authuser=0"
+                height={754}
+                width={565}
+              />
+            </div>
+            <br />
+            <br />
+            {`When choosing shelf-stable food, there's a a lot pick from, and it largely comes down to personal preference. When I'm planning my meals,
+          I try to select different textures (like crispy or creamy) and flavors to help keep my palate motivated.`}
+            <br />
+            <br />
+            {`These are a few examples of our go-to shelf-stable backpacking foods:`}
+            <ul>
+              <li>{`Hard cheeses and cured meats like salami, smoked salmon, or jerky.`}</li>
+              <li>{`Pasta, ramen, rice, and oatmeal.`}</li>
+              <li>{`Instant or freeze-dried meal packages.`}</li>
+              <li>{`Energy bars or meal replacement bars.`}</li>
+              <li>{`Nuts and nut butters (like peanut butter!).`}</li>
+              <li>{`Packets of tuna, salmon, or chicken.`}</li>
+              <li>{`Tortillas, pita bread, or bagels.`}</li>
+              <li>{`Chocolate, pop tarts, and other packaged deserts.`}</li>
+              <li>{`Dried fruit like apricots or apples.`}</li>
+            </ul>
+
+            <div className={utilStyles.centered}>
+              <Pinnable
+                page={pageURI}
+                alt="Spread of food while backpacking"
+                src="https://lh3.googleusercontent.com/pw/AMWts8A0WNt8kgq5GC7mED8jb9v77h3RK4ZRoD-UaW2DxC4fBNOSCm2QJAoiM-qH4pF4bxo-VSTZ9A5l9BXIaN1xgNgg8zOCLC70jvLF3lDbeoDy9Hocx3116uoB5QsyyZEuchY3nDywR3FbaqQ3_bEBlA2j=w450-h600-s-no?authuser=0"
+                height={800}
+                width={610}
+              />
+            </div>
+            <br />
+            <div>
+              {`When picking your  backpacking food, it's also important to choose food that `}
+              <i>You</i>
+              {` know you'll enjoy eating.`}
+              <br />
+              <br />
+              {`Even if you've selected the "ideal" backpacking food according to some list or article
+          (like this one), if you don't enjoy the food you've brought, you'll be less than happy at mealtime.`}
+              <br />
+              <br />
+              {`When meal planning, we balance tastiness with how "backpackable" something is. For example, we like to bring large home-made deli sandwiches for the first day's lunch: they're not lightweight, but
+          definitely taste amazing!`}
+            </div>
           </div>
 
-          <h1 className={utilStyles.justifyCenter} id="hike-details">
-            Hike Details
+          <h1 className={utilStyles.justifyCenter} id="meal-ideas">
+            Ideas for Lunches and Snacks
           </h1>
-
           <div>
-            {`The Eagle Creek trail begins in a basalt canyon, following the creek. The trail can be rocky at times, and there is a sharp drop-off on the right-hand side.`}
+            <h3>{`Mac & Cheese`}</h3>
+            {`Mac & Cheese is lightweight, tastes great, and has a lot of variety depending on how you choose to prepare it. 
+            Take your favorite brand of store-bought mac & cheese (or use plain pasta), and level it up by adding your favorite mix-ins.`}
             <br />
             <br />
-            {`The first two miles of trail
-            are particularly scenic, with lush moss and small to medium sized waterfalls including Wauna and Metlako Falls. If there has been heavy rain recently, expect to see a multitude of ephemeral
-            waterfalls cascading down the canyon walls.`}
-            <br />
-            <br />
+            {`Potential mix-ins for prepackaged Mac & Cheese:`}
+            <ul>
+              <li>{`Dried Jalapeños.`}</li>
+              <li>{`Salami or other cured meats.`}</li>
+              <li>{`Powdered milk.`}</li>
+              <li>{`Bacon bits.`}</li>
+              <li>{`Shelf stable cheeses like cheddar.`}</li>
+            </ul>
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Eagle Creek Trail, Columbia River Gorge, Oregon."
-                src="https://lh3.googleusercontent.com/pw/AMWts8CdBeidz2ewRYzKMoCYVyjleQGNfLrmdV5EbNJlnolSFk4wTJyCENDkyfScsVbEqE9sD9Cr3HRz_nk4xtYfVJZi6sEXE8UfZqiTtUdCmIEXbpkMRsMgZ8mwN4mcWbKDtBh8Aj7UmrcJEgYT9_bcoWkh=w600-h800-no?authuser=0"
-                width={600}
+                alt="Prepping lunch at Tank Lakes"
+                src="https://lh3.googleusercontent.com/pw/AMWts8APL617fwFHuhi3LHRo-tEzexB8eQCRgjgJqJMpoQNEBMK_0wBFC76aPTfR5MM2MG_vdnGU-T-EhT1zg68hSB3fOEHlW_xYNfRCCZeuUEBoOMU4enNjRY3hAhaCNY8q_ivW5X2SwazZPTWyHZHN_N5x=w817-h1067-s-no?authuser=0"
                 height={800}
+                width={610}
               />
             </div>
-            <br />
-            <div>
-              {`After 2 miles, you'll reach Punchbowl Falls. If you're up for a shorter hike, this is a good turnaround point and/or lunch spot. During the Summer, Punchbowl and Lower Punchbowl Falls
-            are popular with swimmers.`}
-              <br />
-              <br />
-              {`To get down to Lower Punchbowl falls, look for a side trail slightly before Punchbowl Falls. This will takes you down to a rocky bar alongside Eagle Creek, and is best used during Summer.`}
-            </div>
-            <br />
-            <div className={utilStyles.centered}>
-              <Pinnable
-                page={pageURI}
-                alt="Punchbowl Falls, Eagle Creek Trail, Oregon"
-                src="https://lh3.googleusercontent.com/pw/AMWts8BKjmBP9F591eB_St5I5WGFiT9KVSZ5chsSyKGXYa3ZO6k8ubvLTwvNd5QGuXau6FCkXHpCnX6bm3z7f5E1KBf8F28XL9mXLB0GUBRb0iSoujmgwO6YcinQAh5RpJoRJTkrykcWfIXKQEc7WuSGxY58=w600-h800-no?authuser=0"
-                width={600}
-                height={800}
-              />
-            </div>
-            <br />
-            {`1.4 miles from Punchbowl Falls is High Bridge, which spans a steep and very pretty section of the canyon. On the way to High Bridge, look to your right for the two-tiered Loowit Falls.`}
+            <h3>{`Tortilla and Pita Wraps`}</h3>
+            {`Tortilla and Pita bread wraps make a good base for a backpacking lunch, as they are lightweight, quick to assemble, and versatile.`}
             <br />
             <br />
-            {`Continue along the trail for 1.1 miles past High Bridge, crossing over 4 1/2 Mile Bridge. Unsurprisingly, this bridge is 4 1/2 miles from the trailhead!`}
-            <br />
-            <br />
-            {`It was snowing hard at this point during my
-            last trip, and I decided to stop to put on my microspikes.`}
-            <br />
-            <br />
-            <div className={utilStyles.centered}>
-              <Video src={rawData("IMG_0323.mp4")} height={600} width={337} />
-            </div>
-            <br />
-            {`Two more miles of hiking, and you'll arrive at Tunnel Falls. Tunnel Falls is an absolutely spectacular 172-foot waterfall with a man-made tunnel passing behind it. I consider this to be the main
-            destination on the Eagle Creek trail, and most hikers who aren't backpacking turn around here.`}
+            {`Check out our favorite wrap fillings, or use your imagination to pick what's right for you!`}
+            <ul>
+              <li>{`Peanut butter, crumbled Oreos/Poptarts, and banana chips.`}</li>
+              <li>{`Cheddar or cream cheese, tuna/salmon packets, and hot sauce.`}</li>
+              <li>{`Instant or freeze dried meals.`}</li>
+              <li>{`Literally anything combined with peanut butter. We seriously love peanut butter for backpacking!`}</li>
+            </ul>
+            <h3></h3>
+            <h3>{`Oatmeal`}</h3>
+            {`The incredible thing about Oatmeal is how customizable it is. With the right combination of mix-ins, plain oats transforms into
+          something magically delicious. Experiment with nuts, dried fruit, coconut, chocolate, peanut butter, or fresh-picked berries off the trail!`}
             <br />
             <br />
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Tunnel Falls, Eagle Creek Trail, Oregon"
-                src="https://lh3.googleusercontent.com/pw/AMWts8DGhV2lIkow6hRiYzjff4PSJ3tEZKTZlvQfI1wIN2QnmRQyXgoymlZ3LqKVHh8AzIK6IVeeF1Oc6_uC57sveqg7VdytvmF415iq7xw0tyHHiZRYMIWcr6G_eyws0ZgIPak-sUvv6-D-SNofj4amP2By=w600-h800-no?authuser=0"
-                width={600}
-                height={800}
+                alt="Oatmeal made on the trail"
+                src="https://lh3.googleusercontent.com/pw/AMWts8AG1NPX7c3UVMoL_kXAdSSHwv5HN4Sc_j6Fbc5AICOZKWBF2nezKujejy506ekolO7GMAvL-tO1U45R0bKJKxoSExY4yZx8eRmJQyoiq7i-zGr_MZ4c-oGuDmKjIxs5vNu1NHE9ZpO2gt6iiZuZXEDT=w565-h754-s-no?authuser=0"
+                height={754}
+                width={565}
               />
             </div>
+            <h3>{`Chocolate-covered peanut butter dates`}</h3>
+            <ChocolateDates />
+            <h3>{`Cheese & Crackers`}</h3>
+            {`We'll eat cheese and crackers as a midday snack, topping each bite with cured meat like salami. Hard cheeses and cured meats are shelf stable, 
+          and should remain fresh during a backpacking trip.`}
+
+            <h3>{`"Trail Curry"`}</h3>
+            {`"Trail Curry" is our go-to backpacking meal: a simple mixture of minute rice, prepackaged curry, and tuna. Cook the minute rice, stir in the curry, top with tuna, and serve!`}
             <br />
-            <div>
-              {`The trail passes behind the falls, and was a little icy at the time. The buildup of hanging ice from the fall's spray added a layer of beauty to the scene.`}
-            </div>
             <br />
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Another look at Tunnel Falls, Eagle Creek Trail, Oregon"
-                src="https://lh3.googleusercontent.com/pw/AMWts8B-ObS7yeTKD7yqm-rWuC7ULjfvTrAJXkbHWvULzlKDJnUxWMomvxaL7eF9Reh5fIScninRyWzEe9iAkOr0BxslSBnF1dH_8OqOhfzfs_dfxl1eeAGRIKmwYdyJoXjEGQZnb7cted3Vn4SCb0HRZYM9=w600-h800-no?authuser=0"
-                width={600}
-                height={800}
+                alt="Trail Curry"
+                src="https://lh3.googleusercontent.com/pw/AMWts8DaCsYr26gQcrCSML9lWqUq6yOQ5EcXIgP3aghumpoP70IznXZqcGITFgPiqbG0CpUL3U-3IcguvOzpAn0WG0vz_RVUCLqG894AKyICXWew5QAzfBqYMZiIWgWb6D_dTDKk1FmbkXnFHOayLXIwfio8=w565-h754-s-no?authuser=0"
+                height={754}
+                width={565}
               />
             </div>
             <br />
-            <div>
-              {`If you've got the energy for it, I recommend continuing 1/2 mile beyond Tunnel Falls to Twister Falls. There's a gorgeous, steep trail before Twister Falls, and the falls themselves are interesting to see.
-              I didn't notice any tracks in the snow past Tunnel Falls, and continued on. Mind the drop-off here!`}
-            </div>
+            <br />
+            <h3>{`Sandwiches`}</h3>
+            {`While not the lightest on the list, we love to prepare homemade sandwiches to eat within the first or second day of a backpacking trip.
+          Homemade sandwiches are always shelf-stable (depending on your ingredients), so we generally eat these pretty quickly.`}
+            <br />
+            <br />
+            {`Sandwiches made with ingredients like peanut butter, nutella, and honey will last longer and may be kept wrapped for several days, or prepared on the trail.`}
+            <br />
             <br />
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Continuing past Tunnel Falls, Eagle Creek Trail, Oregon"
-                src="https://lh3.googleusercontent.com/pw/AMWts8DpB5hRzXVEwkwaOEBOWhLAct7OBxreista370StlXB5a0Jfssb1jBvExGbP4kXwbmIxG2DO7AZW-FqPcXoIaedpBK8oEhPmYyL7B7fc0W37hsif-NkaA539z-I8OucojNz9soBGS5igkOBmj2TmnGE=w800-h600-no?authuser=0"
-                width={800}
-                height={600}
+                alt="Homemade backpacking sandwich"
+                src="https://lh3.googleusercontent.com/pw/AMWts8DNgdmpZcjSwFFbAunYD2Fb4dQjfxXcb97o9GDtHokI4dw5ViOGWaYO-gum11VZCRCDKobjsBUw-cW3jEdB9zbASXXdU0Bvh5Ih4r_vl23bha3XVvQdNbd2R8iSKovPFUZ9PEc8uqp8_JLa9amlSbM3=w800-h800-s-no?authuser=0"
+                height={450}
+                width={450}
               />
-            </div>
-            <br />
-            <div>
-              {`Twister Falls spirals down through a narrow chute next to the trail, creating a lot of spray. Thick ice had formed over the trail, and I decided to turn around after checking out the falls.`}
-            </div>
-            <br />
-            <div className={utilStyles.centered}>
-              <Pinnable
-                page={pageURI}
-                alt="Twister Falls, Eagle Creek Trail, Oregon"
-                src="https://lh3.googleusercontent.com/pw/AMWts8DmoPey1e0WnexK7fQ9f4_S_6odLYqrPSnSCqOrV1kP08O5_Lvk5B9Gki8j9lm2fAjA3NKlvahp3-NHsAGjDwP2NRe5vwzMF5UO74DvIhzYvo7e3-gHrTWBvHkLa5ntat_pp48X7xA9kFwMGdoH2P3h=w600-h800-no?authuser=0"
-                width={600}
-                height={800}
-              />
-            </div>
-            <br />
-            <div>
-              {`On the way back, it started snowing heavily again, and there was almost no one on the trail. If you plan on hiking this trail in the Winter,
-              be sure to bring microspikes.`}
-              <br />
-              <br />
-              {`If you like waterfalls and canyons, consider this hike a must-do for any trip to Oregon. The only drawback is the crowds, which can be worked around (or joined).`}
-            </div>
-            <br />
-            <div className={utilStyles.centered}>
-              <Video src={rawData("IMG_0325.mp4")} height={600} width={337} />
             </div>
           </div>
 
@@ -194,21 +208,12 @@ export default function BackpackingLunch({ readMore = false }) {
             Other Tips
           </h1>
           <div>
-            {`If you hike the Eagle Creek trail during winter or early spring, be prepared for moderate to heavy snowfall and the possibility of deep stream crossings.`}
             <ul>
-              <li>
-                {`Bring spikes for traction on snow and ice. I like the `}
-                <Link href={links.hiking.blackDiamondSpikes}>
-                  Black Diamond Spikes
-                </Link>
-                {`, having used them for 100's of miles.`}
-              </li>
-              <li>{`Pack extra food. During colder temperatures, our bodies need more energy.`}</li>
-              <li>{`Be ready to get wet. Winter and spring often mean rain/snow, and deep stream crossings.`}</li>
+              <li>{`When possible, lunch near streams, rivers, or lakes. Having a water source nearby is useful for cooking and refilling water.`}</li>
+              <li>{`Try to balance protein, fat, and carbohydrates in your meals, so they are more sustaining and filling.`}</li>
+              <li>{`Packing hot sauce, spices, and other condiments adds much-needed flavor to food that would be otherwise bland and boring.`}</li>
+              <li>{`Plan to eat your heaviest food first instead than saving it for later. Lightening your pack early on will make the longer miles easier.`}</li>
             </ul>
-            {`If you're hiking in the summer, expect intense crowds and difficult parking. The benefit of summer hiking is the possibility to swim near Punchbowl Falls or other swimming holes.`}
-            <br />
-            <br />
           </div>
 
           <br />

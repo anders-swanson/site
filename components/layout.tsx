@@ -127,7 +127,7 @@ export default function Layout({
         )}
 
         <title>{headerText ? headerText : title}</title>
-        <link rel="icon" href="logo.jpg" />
+        <link rel="icon" href="/logo.jpg" />
         <meta name="og:title" content={headerText ? headerText : title} />
         <meta name="og:image" content={ogImage} />
         <meta name="og:description" content={description} />

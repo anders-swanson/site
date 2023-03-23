@@ -15,7 +15,8 @@
   line-height: 0;
   position: relative;
   height: 25vw;
-  width: 17vw;
+  width: 19vw;
+  overflow: hidden;
 }
 
 .grid_text {

@@ -3,9 +3,10 @@ import HeaderText from "../../../components/header_text";
 import ImageGrid from "../../../components/image_grid";
 import Layout from "../../../components/layout";
 import utilStyles from "../../../styles/utils.module.css";
+import IsWindowSize from "../../../lib/use_window_size";
 
 //+metadata
-let metadata = {
+const metadata = {
   title: "Backpacking Gear Guide",
   date: "2022-09-27",
   image:
@@ -17,6 +18,8 @@ const backgroundImage =
   "https://lh3.googleusercontent.com/pw/AL9nZEVYk7S03VbTbPmMXNWg61YYuZ_hQdE75O5_Cj2yRHu6t5KKuCLnkgW3PWGxz0nlH8jwzA4bUHFzFBNiDDKFAxbVHkm81yS19htj9X4FYVrhofToP2MZbjGPcschCRiytpfcARvEsV4rPvintQ7d4SK8=w600-h900-no?authuser=0";
 
 export default function Post() {
+  const windowSize = IsWindowSize(1400);
+
   return (
     <Layout
       headerText={metadata.title}
@@ -30,23 +33,27 @@ export default function Post() {
     >
       <HeaderText backgroundImage={backgroundImage}>
         <br />
-        <h1 className={utilStyles.floatyText} style={{ fontSize: "6.0vw" }}>
+        <h1
+          className={utilStyles.floatyText}
+          style={{ fontSize: windowSize ? "48px" : "32px" }}
+        >
           {`My Backpacking Gear`}
         </h1>
         <div
           style={{
             fontFamily: 'font-family: "Poppins",sans-serif',
             fontWeight: "500",
-            fontSize: "3.5vw",
+            fontSize: windowSize ? "28px" : "18px",
             color: "white",
             margin: "auto",
-            marginRight: "50px",
-            marginLeft: "50px",
+            marginRight: windowSize ? "50px" : "10px",
+            marginLeft: windowSize ? "50px" : "10px",
             background: "rgba(0, 0, 0, .5)",
             maxWidth: "1200px",
             display: "flex",
             padding: "5%",
             lineHeight: "1.2",
+            borderRadius: "5px",
           }}
         >
           <div>
@@ -68,7 +75,7 @@ export default function Post() {
             <br />
             <p
               style={{
-                fontSize: "3vw",
+                fontSize: windowSize ? "24px" : "16px",
               }}
             >
               {`This guide contains affiliate links, which means that by using these links, I will earn a small commission
@@ -84,7 +91,7 @@ export default function Post() {
         backgroundImage={backgroundImage}
         items={[
           {
-            text: `Lauren’s Backpacking Pack`,
+            text: `Lauren's Backpacking Pack`,
             image:
               "https://lh3.googleusercontent.com/pw/AL9nZEXvYz6TDM06TkVT0WQjcAiMMiPcBOlAFU6WZsi7sJE4fBqbgOeWKI3loDDcCb8mdpMH0Q_TmAxPnRj0MMgi4RewLM81-l4y_H1v2jFoShHHhqpvGTmjp4PlYuPbtjh3Z2sE6-3DiG5oOK9Wa8LTVQX5=w1062-h1362-no?authuser=0",
             link: `https://www.rei.com/product/205558/deuter-aircontact-core-45-10-sl-pack-womens?cm_mmc=aff_AL-_-246005-_-307117-_-NA&avad=307117_e2b35d3c1`,

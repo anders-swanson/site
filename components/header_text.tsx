@@ -4,8 +4,8 @@ import utilStyles from "../styles/utils.module.css";
 interface HeaderTextProps {
   children: React.ReactNode;
   backgroundImage: string;
-  opacity: number | undefined;
-  styles: any;
+  opacity?: number;
+  styles?: React.CSSProperties;
 }
 
 export default function HeaderText({

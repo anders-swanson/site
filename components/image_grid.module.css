@@ -1,18 +1,22 @@
 .grid_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid_item {
   padding: 20px 20px 0px 20px;
   padding-bottom: 0px;
-  font-size: 3vw;
+  font-size: 48px;
 }
 
 .grid_image {
   border-radius: 5px;
   box-shadow: 3px 4px 30px 0px rgb(0, 0, 0);
   line-height: 0;
+  position: relative;
+  height: 25vw;
+  width: 19vw;
+  overflow: hidden;
 }
 
 .grid_text {
@@ -22,5 +26,20 @@
 
 .page_header {
   padding-top: 20px;
-  font-size: 5vw;
+  font-size: 48px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .page_header {
+    font-size: 32px;
+  }
+
+  .grid_item {
+    font-size: 14px;
+  }
+
+  .grid_image {
+    height: 28vw;
+    width: 21.23vw;
+  }
 }

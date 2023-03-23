@@ -9,8 +9,6 @@ export default function ImageGrid({
   title,
   items,
   opacity = 0.1,
-  imageWidth = 380,
-  imageHeight = 500,
 }) {
   return (
     <div
@@ -23,22 +21,10 @@ export default function ImageGrid({
           <div key={idx} className={styles.grid_item}>
             <div className={styles.grid_image}>
               <Link href={item.link} target="_blank">
-                <Image
-                  alt={idx}
-                  src={item.image}
-                  width={imageWidth}
-                  height={imageHeight}
-                />
+                <Image alt={item.text} src={item.image} fill />
               </Link>
             </div>
-            <div
-              className={styles.grid_text}
-              style={{
-                maxWidth: imageWidth,
-              }}
-            >
-              {item.text}
-            </div>
+            <div className={styles.grid_text}>{item.text}</div>
           </div>
         ))}
       </div>

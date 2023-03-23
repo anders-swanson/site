@@ -21,7 +21,7 @@ export default function ImageGrid({
           <div key={idx} className={styles.grid_item}>
             <div className={styles.grid_image}>
               <Link href={item.link} target="_blank">
-                <Image alt={text} src={item.image} fill />
+                <Image alt={item.text} src={item.image} fill />
               </Link>
             </div>
             <div className={styles.grid_text}>{item.text}</div>

@@ -51,9 +51,9 @@ export default function Links({ title, showSocial = false }) {
             animation={utilStyles.bounceAnimation}
           />
           <LinkButton
-            title="My Backpacking Gear"
+            title="My REI Favorites"
             body="Gear That's Lasted Me Over 1000+ Miles"
-            src="/blog/guides/backpacking-gear-guide"
+            src="https://bit.ly/40uPjZc"
             animation={utilStyles.shakeAnimation}
           />
           <LinkButton

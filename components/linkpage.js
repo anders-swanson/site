@@ -44,37 +44,32 @@ export default function Links({ title, showSocial = false }) {
           My Links
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
-          <LinkButton
-            title="Shop my LTK"
-            body="Like my Outfits? They’re Linked Here! Can't find what you want? Just DM Me!"
-            src="https://www.shopltk.com/explore/laurengastineau"
-            animation={utilStyles.bounceAnimation}
+        <LinkButton
+            title="Spring Break Swimsuit"
+            body="Save 15% with code LAUREN84928"
+            src="https://bit.ly/3iCkTmP"
+            animation={utilStyles.shakeAnimation}
           />
           <LinkButton
             title="My REI Favorites"
             body="Gear That's Lasted Me Over 1000+ Miles"
             src="https://bit.ly/40uPjZc"
-            animation={utilStyles.shakeAnimation}
+            animation={utilStyles.bounceAnimation}
           />
           <LinkButton
-            title="Camera Clip"
-            body="Keep Your Camera Out & Within Quick Reach. Attaches to your backpack strap"
-            src="https://bit.ly/3W3IwTj"
+            title="Tastiest Backpacking & Travel Instant Coffee"
+            body="Code LAURENG10 for $10 off your 1st order"
+            src="https://bit.ly/3m2ZBki"
           />
           <LinkButton
-            title="REI Hipbelt Pocket"
-            body="My Favorite Backpack Attatchment"
-            src="https://bit.ly/3KkMTnp"
-          />
-          <LinkButton
-            title="Camera Clip"
-            body="Keep Your Camera Out & Within Quick Reach. Attaches to your backpack strap"
-            src="https://bit.ly/3W3IwTj"
-          />
-          <LinkButton
-            title="My Amazon Favorites"
+            title="Amazon Backpacking Favorites"
             body="Items I Know & Love!"
             src="https://www.amazon.com/shop/laurensbigadventure"
+          />
+          <LinkButton
+            title="Shop my LTK"
+            body="Like my Outfits? They’re Linked Here! Can't find what you want? Just DM Me!"
+            src="https://www.shopltk.com/explore/laurengastineau"
           />
         </div>
         <br />

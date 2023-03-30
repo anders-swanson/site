@@ -57,7 +57,7 @@ export default function Links({ title, showSocial = false }) {
             animation={utilStyles.bounceAnimation}
           />
           <LinkButton
-            title="Tastiest Backpacking & Travel Instant Coffee"
+            title="Favorite Backpacking & Travel Instant Coffee"
             body="Code LAURENG10 for $10 off your 1st order"
             src="https://bit.ly/3m2ZBki"
           />

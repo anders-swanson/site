@@ -56,6 +56,11 @@ export default function Links({ title, showSocial = false }) {
             src="https://bit.ly/40uPjZc"
             animation={utilStyles.bounceAnimation}
           />
+                    <LinkButton
+            title="Latest Youtube Video"
+            body="My Solo Camping Trip - Olympic National Park"
+            src="https://youtu.be/e-ATGLOCJLk"
+          />
           <LinkButton
             title="Favorite Backpacking & Travel Instant Coffee"
             body="Code LAURENG10 for $10 off your 1st order"

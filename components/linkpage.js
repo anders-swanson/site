@@ -57,8 +57,8 @@ export default function Links({ title, showSocial = false }) {
             animation={utilStyles.bounceAnimation}
           />
                     <LinkButton
-            title="Latest Youtube Video"
-            body="My Solo Camping Trip - Olympic National Park"
+            title="My Latest Youtube Video"
+            body="My Solo Camping Trip to Olympic National Park"
             src="https://youtu.be/e-ATGLOCJLk"
           />
           <LinkButton

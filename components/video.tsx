@@ -36,6 +36,10 @@ export default function Video({
   const onScroll = function checkScroll() {
     const fraction = 0.8; // Play when 80% of the player is visible.
     const video = videoRef.current;
+    // Ref may be null on refresh
+    if (!video) {
+      return;
+    }
     const right = video.offsetLeft + video.offsetWidth;
     const bottom = video.offsetTop + video.offsetHeight;
     const visibleX = Math.max(

@@ -13,9 +13,10 @@ export enum BestSeason {
   MID_SUMMER_FALL = "Mid-summer to early fall",
   // WINTER = "Winter",
   WINTER_SPRING = "Winter through early spring",
-  // SPRING = "Spring",
+  SPRING = "Spring",
   // SUMMER = "Summer",
   // FALL = "Fall",
 }
 
 export const NWForestPass = "NW Forest Pass (parking)";
+export const DiscoverPass = "Discover Pass";

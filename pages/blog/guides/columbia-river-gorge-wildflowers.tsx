@@ -40,8 +40,8 @@ export default function Post() {
           From late April through mid May, the Columbia River Gorge's rolling hills erupt with an awe-inspiring bloom of Balsamroot, Lupine, and many other beautiful flowers.`}
           <br />
           <br />
-          {`The best wildflower hikes are found east of Hood River, within a 1 to 2 hour drive from Portland, Oregon.
-          Check out my top picks below to begin planning your trip to this natural wonder of Oregon and Washington!`}
+          {`The best wildflower hikes are found east of Cascade Locks, within a 1 to 2 hour drive from Portland, Oregon.
+          Read my favorite hikes below to begin planning your trip to this natural springtime wonder of Oregon and Washington!`}
         </div>
         <div className={utilStyles.centered}>
           <Video src={rawData("dm3.mp4")} />
@@ -57,12 +57,12 @@ export default function Post() {
           trailhead="https://www.google.com/maps/place/Rowena+Crest+Viewpoint/@45.6827475,-121.3015662,18.46z/data=!4m14!1m7!3m6!1s0x54961a384b33a725:0x3a67d738f4ca4f9c!2sTom+McCall+Preserve!8m2!3d45.6834476!4d-121.3024387!16s%2Fg%2F11cnzn26sc!3m5!1s0x54961a222daa6039:0x6ff5db7101043183!8m2!3d45.6827367!4d-121.2992539!16s%2Fg%2F1td32ryy"
         />
         <div>
-          {`The Tom McCall Point hike is a great short hike to view wildflowers located 20 minutes past the town of Hood River.
+          {`The Tom McCall Point hike is a great short hike to view wildflowers located 20 minutes past the town of Hood River in Oregon.
           The hike climbs steeply to McCall point, passing through a mixture of oak savannah and colorful wildflower fields.`}
           <br />
           <br />
-          {`If you want to extend your hike, consider adding on a 3-mile loop through Tom McCall Preserve. The preserve trail is just across the road from the 
-          McCall Point trail - you'll find more wildflowers and views of the Columbia River's impressive basalt cliffs on the loop.`}
+          {`If you want to extend your hike, consider adding on a 3-mile loop through Tom McCall Preserve. The preserve trail is right across the road from the 
+          McCall Point trail - you'll find more wildflowers and views of the Columbia River's impressive basalt cliffs on this loop.`}
           <br />
           <br />
         </div>
@@ -73,11 +73,11 @@ export default function Post() {
           alt="Balsamroot and Lupine Blooming in the Columbia River Gorge"
         />
         <div>
-          {`Be aware that Rowena Crest is a popular area, especially on springtime weekends with fair weather. Plan accordingly, and arrive early to find a parking spot: 
-          getting to the trailhead before 8:30AM is ideal.`}
+          {`Be aware that Rowena Crest and Tom McCall Point are popular areas, especially on springtime weekends. Plan accordingly and arrive early to find a parking spot: 
+          getting to the trailhead before 9AM is ideal.`}
           <br />
           <br />
-          {`The trailhead's location is shown below.`}
+          {`The location of the Tom McCaall Point trailhead is shown below.`}
         </div>
         <MapEmbed lat="45.682682" long="-121.300303" />
 
@@ -98,12 +98,13 @@ export default function Post() {
           trailhead="https://www.google.com/maps/place/Coyote+Wall+Trailhead/@45.7005925,-121.4037556,17z/data=!3m1!4b1!4m6!3m5!1s0x549610435a3707f1:0x6b0035cf329d6726!8m2!3d45.7005888!4d-121.4015669!16s%2Fg%2F11gfc0pt35"
         />
         <div>
-          {`Coyote Wall is a popular loop hike for viewing spring wildflowers about 1 hour and 45 minutes from Portland.
-          On a clear day, you'll also get a spectacular view of the Columbia River Gorge and Mt. Hood.`}
+          {`Coyote Wall is a popular loop hike for viewing spring wildflowers that's 1 hour 45 minute from Portland by car.
+          This is a fun hike even when its not wildflower season, but during spring it becomes absolutely astounding.
+          On clear, sunny days, you'll get a spectacular view of the Columbia River Gorge and Mt. Hood.`}
           <br />
           <br />
-          {`The loop begins on a closed road, and then climbs up through a rocky section with small waterfalls known as the Labyrinth.
-          After hiking through the Labyrinth, the trail traverses through meadows back to the trailhead.`}
+          {`The Coyote Wall loop starts out on a closed road before climbing through a rocky trail section with small waterfalls known as the Labyrinth.
+          After hiking through the Labyrinth, the trail traverses back through flower-filled meadows on its return to the trailhead.`}
         </div>
         <div>
           <Image
@@ -114,8 +115,8 @@ export default function Post() {
           />
         </div>
         <div>
-          {`The latter section of the loop near Coyote Wall (an impressive cliff by the trailhead) is the best for wildflowers. If you've timed your trip just right, the grassy 
-          slopes will be carpeted with brilliant wildflowers.`}
+          {`The latter section of the loop near Coyote Wall (an impressive cliff by the trailhead) is where you'll see the most wildflowers.
+          If you've timed your trip just right, the grassy slopes will be carpeted with colorful flowers of many varieties.`}
           <br />
           <br />
           {`I've linked the trailhead and parking below. Plan to arrive early on weekends, when cars overflow onto the highway by late morning.`}
@@ -144,11 +145,12 @@ export default function Post() {
           permits={DiscoverPass}
         />
         <div>
-          {`This is my absolute favorite hike for spring flowers in the Columbia River Gorge. Located in the beautiful Columbia Hills State Park
-          on the Washington side of the Columbia, the dalles Mountain Ranch Loop is nonstop Balsamroot and Lupine flowers the entire hike.`}
+          {`This is my favorite wildflower hike in the Columbia River Gorge, due to the abundance of its springtime bloom. Located at the beautiful Columbia Hills State Park
+          on the Washington side of the Columbia, the Dalles Mountain Ranch Loop is nonstop Balsamroot and Lupine flowers the entire hike.`}
           <br />
           <br />
-          {`Begin the loop at Crawford Oaks Trailhead, or Dalles Mountain Ranch Trailhead. I prefer to start at Crawford Oaks, and hike clockwise.`}
+          {`Begin your hike at the Crawford Oaks trailhead, or the Dalles Mountain Ranch trailhead. I prefer starting at the Crawford Oaks trailhead, and then hiking clockwise. However,
+          there's no wrong way to hike this trail.`}
           <br />
           <br />
           <div>
@@ -160,8 +162,8 @@ export default function Post() {
             />
           </div>
           <br />
-          {`The Dalles Mountain Ranch is a historic ranch, with most of its buildings still intact. Search along the fence line near the ranch to find a rusted out
-          car surrounded by blooming flowers.`}
+          {`The Dalles Mountain Ranch is a historic ranch at the high point of the trail. The ranch is well preserved, with most of its buildings still intact.
+          At the Ranch, search along the barbed wire fence line to find a rusted out car surrounded by blooming flowers.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
@@ -173,7 +175,8 @@ export default function Post() {
             />
           </div>
           <br />
-          {`This trail is a must-do for us each spring if we're in the area. Most years, peak bloom occurs within the first week of May. This window may change slightly
+          {`I consider this trail a must-do during wildflower season, and we try to complete it every year when we're in the area.
+          Most years, peak bloom occurs within the first week of May. This window may change slightly
           depending on the weather - for example, colder years are likely to have later blooms than warmer years.`}
           <br />
           <br />
@@ -217,7 +220,8 @@ export default function Post() {
           <Link href="https://www.google.com/maps/place/Dog+Mountain+Trail/@45.6992105,-121.7081278,19.04z/data=!4m6!3m5!1s0x54960a66933a3b5f:0xd04dd4a086009cc5!8m2!3d45.6992035!4d-121.7079899!16s%2Fg%2F11bw5xl9vt">
             Dog Mountain Trailhead
           </Link>
-          {` is just off Highway 14 on the Washington side of the Columbia, a 1 hour drive from Portland.`}
+          {` is just off Highway 14 on the Washington side of the Columbia, a 1 hour drive from Portland. Dog Mountain is the steepest hike on this list, gaining over 2,700 feet 
+          for its duration.`}
         </div>
         <div>
           <Image
@@ -231,7 +235,7 @@ export default function Post() {
         <div>
           <h3>Lyle Cherry Orchard</h3>
           {`A 5 mile out-and-back, be wary of thick poison oak on this hike. However, if you can navigate around the poison oak, you'll be rewarded with
-          a gorgeous flower display at the top.`}
+          a gorgeous flower display at the top. Lyle Cherry Orchard is less popular than the other hikes on this list, so you may find less people here on busy days.`}
           <br />
           <br />
           <Link href="https://www.google.com/maps/place/Lyle+Cherry+Orchard+Trailhead/@45.6875827,-121.2643082,16.13z/data=!4m15!1m8!3m7!1s0x549619965c8ba681:0x95de0d7364fdc3da!2sLyle+Cherry+Orchard+Trail,+Washington+98635!3b1!8m2!3d45.6884674!4d-121.2579113!16s%2Fg%2F11clysz7c0!3m5!1s0x5496199738adb237:0x4e42c49a43a54d4!8m2!3d45.6861767!4d-121.2655607!16s%2Fg%2F11hbgbqlpp">
@@ -239,15 +243,22 @@ export default function Post() {
           </Link>
           {` is just east of the town of Lyle, on a small pull-off of Washington Highway 14.`}
         </div>
-
         <div>
-          <h2>Poison Oak</h2>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AMWts8BdhBYU6JaRnVkn1LTrt1DvZQ7I7yeGzW-n6HvCnD_MFoaelUJLEG-SFA4zYRnMP6-4G3uAlxGl1dn-W5fpI8r0lYoWc4d_3Go18gZup7XK2mQeLfW8AfyrV9MvQcewIADlsjWwMP4tvrOnIPOSobJ0=w798-h533-s-no?authuser=0"
+            alt="Spring bloom of Balsamroot"
+            width={799}
+            height={533}
+          />
+        </div>
+        <div>
+          <h3>Poison Oak</h3>
           {`OK, this isn't a hike... but you should definitely watch out for poison oak, which grows plentifully in the Columbia River Gorge. It's especially prevalent on the Tom McCall Point and Lyle Cherry Orchard hikes. Knowing how to 
-          identify this plant can save you from an itchy allergic reaction..`}
+          identify this plant can save you from an itchy allergic reaction.`}
           <br />
           <br />
           {`Poison oak grows as a creeper, vine, or shrub with oily looking leaves that grow in threes.
-          Contact with any part of the plant may cause an itchy rash (about 50% of people are allergic). 
+          Contact with any part of the plant may cause an itchy rash (about 85% of people are allergic). 
           If you think you've come into contact with poison oak, thoroughly wash the affected area 
           with soap and water as soon as possible to mitigate an allergic reaction.`}
           <br />
@@ -260,7 +271,7 @@ export default function Post() {
         </div>
 
         <div>
-          {`Pick a trail, plan your trip, and hunt down the Columbia River Gorge's breathtaking yearly wildflower bloom!`}
+          {`With that said, pick a trail, plan your trip, and hunt down the Columbia River Gorge's breathtaking yearly wildflower bloom!`}
         </div>
         <Contact />
       </div>

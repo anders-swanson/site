@@ -69,7 +69,7 @@ export default function GoldenCanyon({ readMore = false }) {
             <br />
             {`Check the following pin to find the trailhead's location in Death Valley National Park.`}
           </div>
-          <MapEmbed query="Golden+Canyon+Trailhead/@36.4207527,-116.8487991,17z/data=!4m6!3m5!1s0x80c73e8ab49dc8e7:0x81181ab2667c4455!8m2!3d36.4207484!4d-116.8466104!16s%2Fg%2F1tjdx578" />
+          <MapEmbed lat="36.420723" long="-116.846776" />
 
           <h1 className={utilStyles.justifyCenter} id="hike-details">
             Hike Details

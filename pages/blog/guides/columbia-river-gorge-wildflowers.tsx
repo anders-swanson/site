@@ -43,8 +43,8 @@ export default function Post() {
           {`The best wildflower hikes are found east of Cascade Locks, within a 1 to 2 hour drive from Portland, Oregon.
           Read my favorite hikes below to begin planning your trip to this natural springtime wonder of Oregon and Washington!`}
         </div>
-        <div className={utilStyles.centered}>
-          <Video src={rawData("dm3.mp4")} />
+        <div>
+          <Video src={rawData("dm3.mp4")} height={600} width={337}/>
         </div>
         <h2 className={utilStyles.justifyCenter} id="rowena-crest">
           Tom McCall Point and Rowena Crest
@@ -192,9 +192,7 @@ export default function Post() {
           </Link>
           {`to start the loop from an alternate location.`}
         </div>
-        <div className={utilStyles.centered}>
-          <MapEmbed lat="45.657173" long="-121.087336" />
-        </div>
+        <MapEmbed lat="45.657173" long="-121.087336" />
         <div className={utilStyles.centered}>
           <Image
             src="https://lh3.googleusercontent.com/pw/AMWts8AyBwfspYZv2PBxwW1_ow1XugN9hycpJ9I9grPQXX1dfzBZVPUPnpu1TstFn5esUxSKTpu3T4lQPqc4gLC-ZZy6KD8_LjHiP4X1RiW3N3YWyMwChA9p5nCyVnLe4cjr5nt4mZnJRUJPBvWpvtyOCIAJ=w533-h798-s-no?authuser=0"
@@ -263,8 +261,8 @@ export default function Post() {
           with soap and water as soon as possible to mitigate an allergic reaction.`}
           <br />
         </div>
-        <div className={utilStyles.centered}>
-          <Video src={rawData("poison-oak.mp4")} controls />
+        <div>
+          <Video src={rawData("poison-oak.mp4")} height={600} width={337}/>
         </div>
         <div className={utilStyles.justifyCenter}>
           {`This is poison oak in its shrub form along the Lyle Cherry Orchard trail.`}

@@ -44,37 +44,37 @@ export default function Links({ title, showSocial = false }) {
           My Links
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
+        <LinkButton
+            title="Spring Break Swimsuit"
+            body="Save 15% with code LAUREN84928"
+            src="https://bit.ly/3iCkTmP"
+            animation={utilStyles.shakeAnimation}
+          />
+          <LinkButton
+            title="My REI Favorites"
+            body="Gear That's Lasted Me Over 1000+ Miles"
+            src="https://bit.ly/40uPjZc"
+            animation={utilStyles.bounceAnimation}
+          />
+                    <LinkButton
+            title="My Latest Youtube Video"
+            body="My Solo Camping Trip to Olympic National Park"
+            src="https://youtu.be/e-ATGLOCJLk"
+          />
+          <LinkButton
+            title="Favorite Backpacking & Travel Instant Coffee"
+            body="Code LAURENG10 for $10 off your 1st order"
+            src="https://bit.ly/3m2ZBki"
+          />
+          <LinkButton
+            title="Amazon Backpacking Favorites"
+            body="Items I Know & Love!"
+            src="https://www.amazon.com/shop/laurensbigadventure"
+          />
           <LinkButton
             title="Shop my LTK"
             body="Like my Outfits? They’re Linked Here! Can't find what you want? Just DM Me!"
             src="https://www.shopltk.com/explore/laurengastineau"
-            animation={utilStyles.bounceAnimation}
-          />
-          <LinkButton
-            title="My Backpacking Gear"
-            body="Gear That's Lasted Me Over 1000+ Miles"
-            src="/blog/guides/backpacking-gear-guide"
-            animation={utilStyles.shakeAnimation}
-          />
-          <LinkButton
-            title="Camera Clip"
-            body="Keep Your Camera Out & Within Quick Reach. Attaches to your backpack strap"
-            src="https://bit.ly/3W3IwTj"
-          />
-          <LinkButton
-            title="REI Hipbelt Pocket"
-            body="My Favorite Backpack Attatchment"
-            src="https://bit.ly/3KkMTnp"
-          />
-          <LinkButton
-            title="Camera Clip"
-            body="Keep Your Camera Out & Within Quick Reach. Attaches to your backpack strap"
-            src="https://bit.ly/3W3IwTj"
-          />
-          <LinkButton
-            title="My Amazon Favorites"
-            body="Items I Know & Love!"
-            src="https://www.amazon.com/shop/laurensbigadventure"
           />
         </div>
         <br />

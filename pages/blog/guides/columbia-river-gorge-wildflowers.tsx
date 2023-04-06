@@ -44,7 +44,7 @@ export default function Post() {
           Read my favorite hikes below to begin planning your trip to this natural springtime wonder of Oregon and Washington!`}
         </div>
         <div>
-          <Video src={rawData("dm3.mp4")} height={600} width={337}/>
+          <Video src={rawData("dm3.mp4")} height={600} width={337} />
         </div>
         <h2 className={utilStyles.justifyCenter} id="rowena-crest">
           Tom McCall Point and Rowena Crest
@@ -262,7 +262,7 @@ export default function Post() {
           <br />
         </div>
         <div>
-          <Video src={rawData("poison-oak.mp4")} height={600} width={337}/>
+          <Video src={rawData("poison-oak.mp4")} height={600} width={337} />
         </div>
         <div className={utilStyles.justifyCenter}>
           {`This is poison oak in its shrub form along the Lyle Cherry Orchard trail.`}

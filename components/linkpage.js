@@ -44,7 +44,7 @@ export default function Links({ title, showSocial = false }) {
           My Links
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
-        <LinkButton
+          <LinkButton
             title="Spring Break Swimsuit"
             body="Save 15% with code LAUREN84928"
             src="https://bit.ly/3iCkTmP"
@@ -56,7 +56,7 @@ export default function Links({ title, showSocial = false }) {
             src="https://bit.ly/40uPjZc"
             animation={utilStyles.bounceAnimation}
           />
-                    <LinkButton
+          <LinkButton
             title="My Latest Youtube Video"
             body="My Solo Camping Trip to Olympic National Park"
             src="https://youtu.be/e-ATGLOCJLk"

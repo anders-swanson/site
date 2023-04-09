@@ -8,7 +8,7 @@ const pageURI = "/blog/guides/lunch-while-backpacking";
 
 //+metadata
 export const metadata = {
-  title: "What should I have for lunch while backpacking?",
+  title: "What should you have for lunch while backpacking?",
   date: "2023-03-17",
   image:
     "https://lh3.googleusercontent.com/pw/AMWts8AtHF89VDzcFXO89O39jWXKxDvbz_FTSRr-UkscOsl13kor45kRVRNxgHxObOpSI_dvZknyYWsdrPHCQd7LHoNQAQPIyCWNlSk_htWtlPRi--9WimrVlFaat4WMVjfyE3qmq1lecN_2ThrDoF97AAah=w653-h653-s-no?authuser=0",

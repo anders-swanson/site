@@ -43,10 +43,10 @@ export default function K1K2({ readMore = false }) {
         <div className={utilStyles.centered}>
           <Pinnable
             page={pageURI}
-            alt="Ko'olau Range, O'ahu, Hawai'i"
-            src="https://lh3.googleusercontent.com/pw/AMWts8ChYPBLH_d0JkFOpAoTXXglyIpWu47FuRxgkyx9NyIvbPog-UiInbSZUxMHYw5fzcZ1NPFdj32VKFj_qNwYC2DsZ7ACm-w4xMBsShVPAG06AJlNyzy0ZXBZOudwnkelKrc7IotwVVGxS4QO1Zz3e0LC=w533-h799-no?authuser=0"
-            width={533}
-            height={799}
+            alt="Heading down from K2, O'ahu, Hawai'i"
+            src="https://lh3.googleusercontent.com/pw/AMWts8DueSioi1tRaUXgWpokBOldKsRmhosCMExcLSGeGtghhmiPAvCBndxm1slYCvt3io44LMGJDOeFmIgEpkgsTRhRFgP9R2z8VrFGa2AWuNEoMFgm13Zf0xJZQqyiKpKnaRBlFkW6VpECnQV14WV7kMMp=s800-no?authuser=0"
+            width={800}
+            height={800}
           />
         </div>
       </div>
@@ -165,10 +165,10 @@ export default function K1K2({ readMore = false }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Heading down from K2, O'ahu, Hawai'i"
-                src="https://lh3.googleusercontent.com/pw/AMWts8DueSioi1tRaUXgWpokBOldKsRmhosCMExcLSGeGtghhmiPAvCBndxm1slYCvt3io44LMGJDOeFmIgEpkgsTRhRFgP9R2z8VrFGa2AWuNEoMFgm13Zf0xJZQqyiKpKnaRBlFkW6VpECnQV14WV7kMMp=s800-no?authuser=0"
-                width={800}
-                height={800}
+                alt="Ko'olau Range, O'ahu, Hawai'i"
+                src="https://lh3.googleusercontent.com/pw/AMWts8ChYPBLH_d0JkFOpAoTXXglyIpWu47FuRxgkyx9NyIvbPog-UiInbSZUxMHYw5fzcZ1NPFdj32VKFj_qNwYC2DsZ7ACm-w4xMBsShVPAG06AJlNyzy0ZXBZOudwnkelKrc7IotwVVGxS4QO1Zz3e0LC=w533-h799-no?authuser=0"
+                width={533}
+                height={799}
               />
             </div>
             <br />

@@ -42,10 +42,10 @@ export default function Moanalua({ readMore = false }) {
         <div className={utilStyles.centered}>
           <Pinnable
             page={pageURI}
-            alt="Moanalua Ridge, O'ahu, Hawai'i"
-            src="https://lh3.googleusercontent.com/pw/AMWts8Bf-hjejpFq0ANl3gCGv-7CEr_TYPFEOvVw1Rqrndy-3wdqqdJAdRGSM65X1fqi6b_EPxf8ATT1m5NDqbJZN1nbvaTnRMKBU7Re7dR6e3ogan52sLUD8PXlOSew_k-bginpJMuPq8g5sN7A8tr_qB5g=w799-h533-no?authuser=0"
-            width={799}
-            height={533}
+            alt="Moanalua Trail, O'ahu, Hawai'i"
+            src="https://lh3.googleusercontent.com/pw/AMWts8AECVblBfH4M-NPKlyb4pRvcQMRHOVdBhsdfiNqnuGq7lsrp2R4vLxK1SnM5K8OojRhZwn1QtaPNClVsF_fDV2MuY0sbUw-vLuuB4g7CIFjWtFkv6E0NpUDwYKn2zf5yviQrOal1yQ2QK8LxGLcJzHj=w565-h754-no?authuser=0"
+            width={533}
+            height={799}
           />
         </div>
       </div>
@@ -115,10 +115,10 @@ export default function Moanalua({ readMore = false }) {
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
-                alt="Moanalua Trail, O'ahu, Hawai'i"
-                src="https://lh3.googleusercontent.com/pw/AMWts8AECVblBfH4M-NPKlyb4pRvcQMRHOVdBhsdfiNqnuGq7lsrp2R4vLxK1SnM5K8OojRhZwn1QtaPNClVsF_fDV2MuY0sbUw-vLuuB4g7CIFjWtFkv6E0NpUDwYKn2zf5yviQrOal1yQ2QK8LxGLcJzHj=w565-h754-no?authuser=0"
-                width={533}
-                height={799}
+                alt="Moanalua Ridge, O'ahu, Hawai'i"
+                src="https://lh3.googleusercontent.com/pw/AMWts8Bf-hjejpFq0ANl3gCGv-7CEr_TYPFEOvVw1Rqrndy-3wdqqdJAdRGSM65X1fqi6b_EPxf8ATT1m5NDqbJZN1nbvaTnRMKBU7Re7dR6e3ogan52sLUD8PXlOSew_k-bginpJMuPq8g5sN7A8tr_qB5g=w799-h533-no?authuser=0"
+                width={799}
+                height={533}
               />
             </div>
             <br />

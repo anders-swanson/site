@@ -45,7 +45,7 @@ export default function Links({ title, showSocial = false }) {
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
           <LinkButton
-            title="Spring Break Swimsuit"
+            title="My Hawaii Swimsuit"
             body="Save 15% with code LAUREN84928"
             src="https://bit.ly/3iCkTmP"
             animation={utilStyles.shakeAnimation}
@@ -65,6 +65,11 @@ export default function Links({ title, showSocial = false }) {
             title="Favorite Backpacking & Travel Instant Coffee"
             body="Code LAURENG10 for $10 off your 1st order"
             src="https://bit.ly/3m2ZBki"
+          />
+         <LinkButton
+            title="My Running Favorites"
+            body="Gear I'm using to train for a marathon"
+            src="https://bit.ly/3MvsWPs"
           />
           <LinkButton
             title="Amazon Backpacking Favorites"

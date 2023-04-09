@@ -58,8 +58,8 @@ export default function Links({ title, showSocial = false }) {
           />
           <LinkButton
             title="My Latest Youtube Video"
-            body="My Solo Camping Trip to Olympic National Park"
-            src="https://youtu.be/e-ATGLOCJLk"
+            body="My Solo Camping Trip to Olympic National Park ✨Day 2✨"
+            src="https://youtu.be/vu4QGdg-G3c"
           />
           <LinkButton
             title="Favorite Backpacking & Travel Instant Coffee"

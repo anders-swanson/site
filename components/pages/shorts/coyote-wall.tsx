@@ -5,12 +5,19 @@ import Image from "next/image";
 import MapEmbed from "../../maps";
 import Slider from "../../slider";
 
-export default function CoyoteWall() {
+export default function CoyoteWall({ h3 = false }) {
   return (
     <>
-      <h2 className={utilStyles.justifyCenter} id="coyote-wall">
-        Coyote Wall
-      </h2>
+      {(h3 && (
+        <h3 className={utilStyles.justifyCenter} id="coyote-wall">
+          Coyote Wall
+        </h3>
+      )) || (
+        <h2 className={utilStyles.justifyCenter} id="coyote-wall">
+          Coyote Wall
+        </h2>
+      )}
+
       <HikeInfo
         distance="7 mile loop"
         elevation="1,700 feet"

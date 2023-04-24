@@ -6,7 +6,12 @@ import Contact from "../../../components/contact";
 import LyleCherryOrchard from "../../../components/pages/shorts/lyle-cherry-orchard";
 import DogMountain from "../../../components/pages/shorts/dog-mountain";
 import CoyoteWall from "../../../components/pages/shorts/coyote-wall";
-import { BestSeason, DiscoverPass, HikeDifficulty, NWForestPass } from "../../../lib/hike_info_types";
+import {
+  BestSeason,
+  DiscoverPass,
+  HikeDifficulty,
+  NWForestPass,
+} from "../../../lib/hike_info_types";
 
 //+metadata
 const metadata = {
@@ -38,8 +43,8 @@ export default function Post() {
             height={799}
           />
         </div>
-        <h2 className={utilStyles.centered}>Columbia River Gorge</h2>
-        <h3>{`Angel's Rest`}</h3>
+        <h2 className={utilStyles.justifyCenter}>Columbia River Gorge</h2>
+        <h3 className={utilStyles.justifyCenter}>{`Angel's Rest`}</h3>
         <HikeInfo
           distance="4.7 miles round-trip"
           elevation="1,500 feet"
@@ -47,7 +52,9 @@ export default function Post() {
           season={BestSeason.SPRING_SUMMER_FALL}
           trailhead="https://www.google.com/maps/place/45%C2%B033'36.9%22N+122%C2%B010'21.7%22W/@45.5602589,-122.1733457,19z/data=!3m1!4b1!4m4!3m3!8m2!3d45.560258!4d-122.172702"
         />
-        <h3>Wahkeena Falls to Multnomah Falls Loop</h3>
+        <h3 className={utilStyles.justifyCenter}>
+          Wahkeena Falls to Multnomah Falls Loop
+        </h3>
         <HikeInfo
           distance="6 mile loop"
           elevation="1,700 feet"
@@ -56,7 +63,7 @@ export default function Post() {
           trailhead="https://www.google.com/maps/place/Wahkeena+Falls+Day+Use%2FPicnic+Area%2FTrailhead/@45.5754708,-122.1279256,18.83z/data=!4m6!3m5!1s0x5495eadf7c66919d:0x9ca4b92b7a4f7715!8m2!3d45.576025!4d-122.127828!16s%2Fg%2F11bv3ycbbv"
         />
         <DogMountain />
-        <h3>Hamilton Mountain</h3>
+        <h3 className={utilStyles.justifyCenter}>Hamilton Mountain</h3>
         <HikeInfo
           distance="7 miles round-trip"
           elevation="2,000 feet"
@@ -65,9 +72,9 @@ export default function Post() {
           permits={DiscoverPass}
           trailhead="https://www.google.com/maps/place/Hamilton+Mountain+Trailhead/@45.6326886,-122.020203,20.75z/data=!4m6!3m5!1s0x5495e9ca4e5a2d5d:0x98cef5ae4083eb6!8m2!3d45.6327992!4d-122.020139!16s%2Fg%2F11b7kgbgtn"
         />
-        <CoyoteWall />
-        <LyleCherryOrchard />
-        <h2 className={utilStyles.centered}>Southwest Washington</h2>
+        <CoyoteWall h3 />
+        <LyleCherryOrchard h3ClassName={utilStyles.justifyCenter} />
+        <h2 className={utilStyles.justifyCenter}>Southwest Washington</h2>
         <h3 className={utilStyles.justifyCenter}>Fall Creek Falls</h3>
         <HikeInfo
           distance="6.1 mile loop"
@@ -88,7 +95,7 @@ export default function Post() {
           permits={DiscoverPass}
           trailhead="https://www.google.com/maps/place/Tarbell+Trailhead/@45.7286334,-122.2816336,14.75z/data=!4m6!3m5!1s0x5495c72beb3a8485:0xf3ce621aea3c97a1!8m2!3d45.7233732!4d-122.2705953!16s%2Fg%2F11s4_4n51h"
         />
-        <h2 className={utilStyles.centered}>Mount Hood</h2>
+        <h2 className={utilStyles.justifyCenter}>Mount Hood</h2>
         <h3 className={utilStyles.justifyCenter}>Ramona Falls</h3>
         <HikeInfo
           distance="7.2 mile loop"
@@ -162,7 +169,9 @@ export default function Post() {
           season={BestSeason.SUMMER_FALL}
           trailhead="https://www.google.com/maps/place/Saddle+Mountain+State+Natural+Area/@45.9626765,-123.6907317,18.21z/data=!4m6!3m5!1s0x5494bd81fef0ab6f:0x1e57fb94eac783e5!8m2!3d45.9627554!4d-123.6900043!16zL20vMDM5aGZi"
         />
-        <h3 className={utilStyles.centered}>{`Bonus Hike: Silver Falls`}</h3>
+        <h3
+          className={utilStyles.justifyCenter}
+        >{`Bonus Hike: Silver Falls`}</h3>
         <HikeInfo
           distance="9.2 mile loop"
           elevation="1,200 feet"

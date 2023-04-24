@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function LyleCherryOrchard() {
+interface props {
+  h3ClassName?: string;
+}
+
+export default function LyleCherryOrchard({ h3ClassName }: props) {
   return (
     <>
       <div>
-        <h3>Lyle Cherry Orchard</h3>
+        <h3 className={h3ClassName}>Lyle Cherry Orchard</h3>
         {`A 5 mile out-and-back, be wary of thick poison oak on this hike. However, if you can navigate around the poison oak, you'll be rewarded with
       a gorgeous flower display at the top. Lyle Cherry Orchard is less popular than the other hikes on this list, so you may find less people here on busy days.`}
         <br />

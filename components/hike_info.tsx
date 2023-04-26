@@ -1,12 +1,13 @@
 import Link from "next/link";
 import styles from "./hike_info.module.css";
 import { HikeDifficulty, BestSeason } from "../lib/hike_info_types";
+import React from "react";
 
 interface HikeInfoProps {
   distance?: string;
   elevation?: string;
   trailhead?: string;
-  permits?: string;
+  permits?: string | React.ReactNode;
   difficulty?: HikeDifficulty;
   season?: BestSeason;
 }

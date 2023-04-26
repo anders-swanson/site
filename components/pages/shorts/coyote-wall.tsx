@@ -9,8 +9,8 @@ export default function CoyoteWall({ h3 = false }) {
   return (
     <>
       {(h3 && (
-        <h3 className={utilStyles.justifyCenter} id="coyote-wall">
-          Coyote Wall
+        <h3 id="coyote-wall">
+          Coyote Wall Loop
         </h3>
       )) || (
         <h2 className={utilStyles.justifyCenter} id="coyote-wall">

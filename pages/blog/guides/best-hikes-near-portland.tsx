@@ -16,10 +16,10 @@ import Link from "next/link";
 
 //+metadata
 const metadata = {
-  title: "My favorite moderate hikes near Portland",
+  title: "Best moderate hikes near Portland",
   date: "2023-04-15",
   image:
-    "https://lh3.googleusercontent.com/pw/AMWts8B4dSrNj81huqxNj3QwHsPjwBZcX8sls3dm-ovdW1bGw8jhWumezwGAw_Rt_V9ykRQTrjxtJtI6eYwK4LUarVCH9Z39YOSdBJMqJrN28vmgLu7NRcbJv0EaPNa-lEV_6wP3RuODa1YssKvG3NIJo1kY=w653-h653-s-no?authuser=0",
+    "https://lh3.googleusercontent.com/pw/AJFCJaXeV_ESsemxiBWD4pZrZNxSmX-rysyOXESyB7cItBnZSpUU6CWfngHl7yd1XPfbPUZfot0XYCdcU1N0QUbqd2n_An6EFX2QTDz8UfclpweAeoZtESQtD8oDLaVwM7KU7TN7GQVVLAE9ETOnzLAQLLmI=w653-h653-s-no?authuser=0",
   tags: ["hiking", "oregon", "guides", "waterfall"],
 };
 
@@ -29,7 +29,7 @@ export default function Post() {
   return (
     <Layout
       headerText={metadata.title}
-      description={`Amazing hikes between 5-8 miles within a 2 hour drive from Portland. Send this to your hiking buddy! 📤`}
+      description={`Some of the best hikes between 5-8 miles within a 2 hour drive from Portland. Send this to your hiking buddy! 📤`}
       ogImage={metadata.image}
       related={{
         metadata: metadata,
@@ -50,6 +50,14 @@ export default function Post() {
           {`Angel's Rest is a beautiful, beloved out-and-back trail close to Portland. On this trail, you'll swiftly climb to the summit of Angel's Rest,
           a rocky outcropping with a stunning Columbia River overlook. On clear days you'll be able to see the skyscrapers of downtown, miles away.`}
           <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaWOBGNBHUE1A_T_co8o4QRbTiYomsJZ8eV0jCaIaA65kA4r_BV0nA2FtgZtm7GVN873x8dn63PcvOpP6tc7OeONzqDFp4acy7D11_j7rQK7Jmqah--I2DIru0rb3o60JyrCMVn1jHwcaFmgSSuqSbkY=w584-h730-s-no?authuser=0"
+              width={584}
+              height={730}
+              alt="View of the Columbia River from Angel's Rest"
+            />
+          </div>
           <br />
           {`This is a popular trail, so expect crowds on weekends/holidays, and competitive parking during peak season.`}
           <br />
@@ -57,6 +65,15 @@ export default function Post() {
           {`Angel's Rest is also a popular sunset hike, with the sun dipping behind the river as it disappears to the west.
           If you plan to view the sunset here, give yourself plenty of time to reach the top, and bring your headlamp for the hike down.`}
         </div>
+
+        <div>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaXOX5BWGEUQpUZEDYrT_D1Rwoh-kdmYiZAQNv9IFK0H2c05MBDFiRqlxWpt62igZAJsu6mjNLDNpZ0_wFDPMZkstT77ImE-7Ftg1Jal-Ki8CjDJtr-Bw_0s323BjQ2Ma1ykxbwgpnyZb8CwePEhHbUB=w584-h730-s-no?authuser=0"
+              width={584}
+              height={730}
+              alt="Rocky outcroppings at Angel's Rest"
+            />
+          </div>
 
         <div>
           <h3>Wahkeena Falls to Multnomah Falls Loop</h3>
@@ -79,12 +96,29 @@ export default function Post() {
           {`The classic Wahkeena/Multnomah waterfall loop can be started at Multnomah Falls, or Wahkeena Falls, and hiked in either direction.
           There is a short connector trail between Multnomah and Wahkeena falls that links the two trailheads.`}
           <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaVNlDNvhoTHMlkijPyhyo7UvN0cTmlRckhj2XRWbGwZ9uxYHhqxVajNZhtDEU1b2uzMTqioP8geCYzMJOVMqKSUZcyE7lbx17-xIIq35S7mFiSP1h03d0BGbbkpqVDV-5UFe0JRmxn3GVJyzKzeZ6iq=w533-h799-s-no?authuser=0"
+              width={533}
+              height={799}
+              alt="Basalt Overhang on the Wahkeena Multnomah Loop"
+            />
+          </div>
           <br />
           {`Be aware that `}
           <Link href={multnomahFallsPermit}>permit</Link>
           {` is required to park at Multnomah Falls May 26th through September 4th. This trail is best hiked outside of peak season
           to avoid intense crowding at Multnomah Falls, and along the waterfall corridor.`}
         </div>
+
+        <div>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaXUFaUyAeCEYrPMGZFWo5CQ7cCv8_t9Ew_uuFhabV7dCz11tz4_yRQgbSg1cqfM4WhML79drTSg2boNfxJnUle7US_scpwi5DXw5DiGIDrAMJviSmqexZEK8nNRzDGB_rlUD7oiwTbP-8ZcoWB3enmB=w754-h565-s-no?authuser=0"
+              width={754}
+              height={565}
+              alt="Snow covering the Larch Mountain trail on the Wahkeena Multnomah loop"
+            />
+          </div>
 
         <DogMountain />
         <div>

@@ -5,14 +5,10 @@ import Image from "next/image";
 import MapEmbed from "../../maps";
 import Slider from "../../slider";
 
-export default function CoyoteWall({ h3 = false }) {
+export default function CoyoteWall({ h3 = false, showMap = false }) {
   return (
     <>
-      {(h3 && (
-        <h3 id="coyote-wall">
-          Coyote Wall Loop
-        </h3>
-      )) || (
+      {(h3 && <h3 id="coyote-wall">Coyote Wall Loop</h3>) || (
         <h2 className={utilStyles.justifyCenter} id="coyote-wall">
           Coyote Wall
         </h2>
@@ -49,7 +45,7 @@ export default function CoyoteWall({ h3 = false }) {
         <br />
         {`I've linked the trailhead and parking below. Plan to arrive early on weekends, when cars overflow onto the highway by late morning.`}
       </div>
-      <MapEmbed lat="45.700598" long="-121.401522" />
+      {showMap && <MapEmbed lat="45.700598" long="-121.401522" />}
       <Slider
         slides={[
           "https://lh3.googleusercontent.com/pw/AM-JKLWNWCo6ODzkaM3rxi3J5H3mhRxi235OovfFyaeW-8Odvsrl0OT_nOGtxuei2WV8U4do-KNk7w2dQFp7dfn4hzonlWvZZsWW2xmUhK7-JTFijtdXgVbRN9uMFe9OD1L_NwoJXHpmifdADSMZUiJl6Ajb=w1597-h1067-no?authuser=0",

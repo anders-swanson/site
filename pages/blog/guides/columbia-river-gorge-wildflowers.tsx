@@ -90,7 +90,7 @@ export default function Post() {
           height={550}
           alt="Paintbrush flowers blooming in the Columbia River Gorge"
         />
-        <CoyoteWall />
+        <CoyoteWall showMap />
         <h2
           className={utilStyles.justifyCenter}
           id="dalles-mountain-ranch-loop"

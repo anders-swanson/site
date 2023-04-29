@@ -1,11 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BestSeason, HikeDifficulty } from "../../../lib/hike_info_types";
+import HikeInfo from "../../hike_info";
 
-export default function DogMountain() {
+export default function DogMountain({ info = false }) {
   return (
     <>
       <div>
         <h3>Dog Mountain</h3>
+        {info && (
+          <HikeInfo
+            distance="6.8 mile loop"
+            elevation="2,700 feet"
+            difficulty={HikeDifficulty.MODERATE}
+            season={BestSeason.SPRING_SUMMER_FALL}
+            permits={
+              <Link href="https://www.recreation.gov/timed-entry/10091444">
+                Limited Entry Permit
+              </Link>
+            }
+            trailhead="https://www.google.com/maps/place/Dog+Mountain+Trail/@45.7046017,-121.7866986,13.41z/data=!4m6!3m5!1s0x54960a66933a3b5f:0xd04dd4a086009cc5!8m2!3d45.6992035!4d-121.7079899!16s%2Fg%2F11bw5xl9vt"
+          />
+        )}
         {`An extremely popular 6.8 mile loop, Dog Mountain is well-known for its spring flower display. A day use permit from `}
         <Link href="https://www.recreation.gov/timed-entry/10091444?tab=tours">
           Recreation.gov

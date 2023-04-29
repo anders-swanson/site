@@ -38,6 +38,10 @@ export default function Post() {
     >
       <div className={utilStyles.flexGapContainer}>
         <div>
+          <div>
+            {`While this is by no means an exhaustive list, these are some of our favorite hikes in the Portland area.
+            The hikes on this list are within 8 miles round-trip, and are generally rated "Moderate" difficulty or easier.`}
+          </div>
           <h3>{`Angel's Rest`}</h3>
           <HikeInfo
             distance="4.7 miles round-trip"
@@ -49,6 +53,7 @@ export default function Post() {
           <br />
           {`Angel's Rest is a beautiful, beloved out-and-back trail close to Portland. On this trail, you'll swiftly climb to the summit of Angel's Rest,
           a rocky outcropping with a stunning Columbia River overlook. On clear days you'll be able to see the skyscrapers of downtown, miles away.`}
+          <br />
           <br />
           <div className={utilStyles.centered}>
             <Image
@@ -67,13 +72,13 @@ export default function Post() {
         </div>
 
         <div>
-            <Image
-              src="https://lh3.googleusercontent.com/pw/AJFCJaXOX5BWGEUQpUZEDYrT_D1Rwoh-kdmYiZAQNv9IFK0H2c05MBDFiRqlxWpt62igZAJsu6mjNLDNpZ0_wFDPMZkstT77ImE-7Ftg1Jal-Ki8CjDJtr-Bw_0s323BjQ2Ma1ykxbwgpnyZb8CwePEhHbUB=w584-h730-s-no?authuser=0"
-              width={584}
-              height={730}
-              alt="Rocky outcroppings at Angel's Rest"
-            />
-          </div>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AJFCJaXOX5BWGEUQpUZEDYrT_D1Rwoh-kdmYiZAQNv9IFK0H2c05MBDFiRqlxWpt62igZAJsu6mjNLDNpZ0_wFDPMZkstT77ImE-7Ftg1Jal-Ki8CjDJtr-Bw_0s323BjQ2Ma1ykxbwgpnyZb8CwePEhHbUB=w584-h730-s-no?authuser=0"
+            width={584}
+            height={730}
+            alt="Rocky outcroppings at Angel's Rest"
+          />
+        </div>
 
         <div>
           <h3>Wahkeena Falls to Multnomah Falls Loop</h3>
@@ -96,6 +101,7 @@ export default function Post() {
           {`The classic Wahkeena/Multnomah waterfall loop can be started at Multnomah Falls, or Wahkeena Falls, and hiked in either direction.
           There is a short connector trail between Multnomah and Wahkeena falls that links the two trailheads.`}
           <br />
+          <br />
           <div className={utilStyles.centered}>
             <Image
               src="https://lh3.googleusercontent.com/pw/AJFCJaVNlDNvhoTHMlkijPyhyo7UvN0cTmlRckhj2XRWbGwZ9uxYHhqxVajNZhtDEU1b2uzMTqioP8geCYzMJOVMqKSUZcyE7lbx17-xIIq35S7mFiSP1h03d0BGbbkpqVDV-5UFe0JRmxn3GVJyzKzeZ6iq=w533-h799-s-no?authuser=0"
@@ -112,15 +118,15 @@ export default function Post() {
         </div>
 
         <div>
-            <Image
-              src="https://lh3.googleusercontent.com/pw/AJFCJaXUFaUyAeCEYrPMGZFWo5CQ7cCv8_t9Ew_uuFhabV7dCz11tz4_yRQgbSg1cqfM4WhML79drTSg2boNfxJnUle7US_scpwi5DXw5DiGIDrAMJviSmqexZEK8nNRzDGB_rlUD7oiwTbP-8ZcoWB3enmB=w754-h565-s-no?authuser=0"
-              width={754}
-              height={565}
-              alt="Snow covering the Larch Mountain trail on the Wahkeena Multnomah loop"
-            />
-          </div>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AJFCJaXUFaUyAeCEYrPMGZFWo5CQ7cCv8_t9Ew_uuFhabV7dCz11tz4_yRQgbSg1cqfM4WhML79drTSg2boNfxJnUle7US_scpwi5DXw5DiGIDrAMJviSmqexZEK8nNRzDGB_rlUD7oiwTbP-8ZcoWB3enmB=w754-h565-s-no?authuser=0"
+            width={754}
+            height={565}
+            alt="Snow covering the Larch Mountain trail on the Wahkeena Multnomah loop"
+          />
+        </div>
 
-        <DogMountain />
+        <DogMountain info />
         <div>
           <h3>Hamilton Mountain</h3>
           <HikeInfo
@@ -136,10 +142,38 @@ export default function Post() {
           Above the falls, the trail begins to open up from the trees as it ascends Hamilton Mountain, and the trail is interspersed with wildflowers during spring.`}
           <br />
           <br />
-          {`After reaching the summit, I recommend extending your hike another 1/2 mile farther to reach the Saddle, a broad viewpoint of the gorge that is (in my opinion) much more beautiful that the peak.`}
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaUnXE9XB_LAsdJcojIwE8f5xo5qrkfhD_IZFdcZ3ZHTisCzi1y3jvV71kdjK6tKYZWeTTHuDTQNM4_y6w6D7S0Ia48VpIDRRP7XKMGETmszO_EeJ0rgdphOqN7NmmR0vNwy9UwOMUCB0XyEFgRYuzqy=w584-h730-s-no?authuser=0"
+              width={584}
+              height={730}
+              alt="Lauren Hiking the Hamilton Mountain Trail"
+            />
+          </div>
           <br />
+          {`After reaching the summit, I recommend extending your hike another 1/2 mile farther to reach the Saddle, a broad viewpoint of the gorge that is (in my opinion) much more beautiful that the peak.
+          We've hiked to the saddle many times throughout the seasons, but winter was the most beautiful. The ice and snow, however, were not that fun to deal with!`}
+          <br />
+          <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaWBX6gPlgiFD9T_j8tbCvqiSlHZqkAh6P1dqBrMfau7Afw-L_ou9UOSOVPNh93nQqsS29LSKVp9eezBUoA8SWlYzaFjd9fsCfYFEFUMbpwKcmrsHCc4PN7PQyXFiO3f17FSyW38_GjfE6_oJFwmx9kp=w799-h533-s-no?authuser=0"
+              width={799}
+              height={533}
+              alt="Hamilton Mountain in the spring"
+            />
+          </div>
           <br />
           {`Make this trail a ~9 mile loop by hiking past the Saddle on the equestrian trail. The equestrian trail will eventually connect back to the Hamilton Mountain trail near Rodney Falls.`}
+        </div>
+
+        <div>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AJFCJaXQm00DbYCSdMcJbj4lOBWT_uW2Wj338hqUyRw1MqOr_PL9Z5m8kiqTMV8aUmr9yRLQppTf3ji4GLCvS7D9KR9NReMqgQazJTq4KNEU3QcZEVR8l_Hl40buF2C6JeAtNzbcLwfnEw8v8tQs-rGmlUDk=w870-h489-s-no?authuser=0"
+            width={870}
+            height={489}
+            alt="Hamilton Mountain in the snow"
+          />
         </div>
 
         <div>
@@ -156,11 +190,29 @@ export default function Post() {
           with trails looping around it. Do the whole 2.4 mile loop so you can see the upper viewpoint, as well as the pretty Upper Latourell Falls.`}
           <br />
           <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaU-I8wcG59ywoueoxhsu8bMp9SrNMZ4xFr67PDTWslxxWNNmzOl9cGWHQjVlCrj4bKFS9XOQuwf8CBd_F8EJx7QuCRpq_pjEBrvXbP627ogVlQmLdgmprnBwzIepEsaIPZxNEH03SzSbeaviVN756jS=w565-h754-s-no?authuser=0"
+              width={565}
+              height={754}
+              alt="Latourell Falls iced over in winter"
+            />
+          </div>
+          <br />
           {`The last time we hiked this, it was right after a large winter storm, and the falls were decked out in ice and snow. If hiking in winter, microspikes may be required depending
           on snow cover.`}
           <br />
           <br />
           {`Note that it is extremely difficult to find parking at Latourell Falls on summer weekends. I strongly suggest hiking out of season or midweek for the best experience.`}
+        </div>
+
+        <div>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AJFCJaUFxkkynLiaUk1lsRr2j0Qkt-yUrQ8BI6PbbgTcwecNkF-20hKlmOaYD6jkpG9-LeYyZ3T9PnRPz_j0M999ySdhASVvMJJAZD9mgvu5RHimrxAhPcC0V5WA0jT1d3cmEcpmV5SJa0GZTU_d9bpYBz_j=w534-h797-s-no?authuser=0"
+            width={534}
+            height={797}
+            alt="Upper Latourell Falls in winter"
+          />
         </div>
 
         <CoyoteWall h3 />
@@ -206,6 +258,15 @@ export default function Post() {
           The ascent of Silver Star is steep, but its oh-so-worth it.`}
           <br />
           <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaW2-ldcOfEAZ8M5-XxBF59QDg2KSo5HhrVWQrraYAATNNzM6EpvhQ3Ui3-by3bGY2Nv4__y5QKHwngw-IJgIkEGPr-d899G1y96BOvi_0pZVsZS3j9VJDue7ryRx1gZxbatidHgTwWfJRUXzMMULHEt=w584-h730-s-no?authuser=0"
+              width={584}
+              height={730}
+              alt="Lauren looking north from the summit of Silver Star Mountain"
+            />
+          </div>
+          <br />
           {`Try to arrange a clear day for this hike, so you have the best views from the summit. Mount St. Helens, Adams, Rainier, and Hood are all within
           view at the peak.`}
           <br />
@@ -226,6 +287,15 @@ export default function Post() {
           {`Ramona Falls is a major waterfall attraction near Mt. Hood off Lolo Pass Road, within a reasonably short drive from Portland. By mid-summer, crowds flock to visit the stunning waterfall.`}
           <br />
           <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaV3wqzstDJNHnRGqJUhrtsXci_LFc6UfZl6e9u3yqNHvlqzvTFzKnGIbocfP8tG-GUp7YramncocY_xAB9jsH3qJMOwjFO7wHYR9sjBnLtT6aXMO8xnYFFQuLK7VVn6fkW6OO5ieYPUkpx3X32ku-wu=w584-h730-s-no?authuser=0"
+              width={584}
+              height={730}
+              alt="Lauren at Ramona Falls near Mt. Hood"
+            />
+          </div>
+          <br />
           {`The roughly 7-mile loop trail is relatively flat, easy hiking on a sandy trail. However, be aware that there is no bridge for the Sandy River crossing near
            the trailhead. Some minor balancing skills are required to traverse fallen logs spanning the river, or wade across.`}
         </div>
@@ -245,12 +315,30 @@ export default function Post() {
           Inn is closed to the public, but you may freely explore its grounds.`}
           <br />
           <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaVR8vOWRXw7UTWrpDoexLUp--JAbUxXnk9SDTFuEIa_z-2IuFyRYWQYd1ZB555rjDQpc18aITH-kJ333RYDiKeNtol0qkSYwX6RwnydIZ3IElqLn6pdIMEEbvmy8Bo_nERdLqlFCsgn9EZdtVV1wDR_=w584-h730-s-no?authuser=0"
+              width={584}
+              height={730}
+              alt="View of Mt. Hood and Eliot Glacier from Cloud Cap Inn"
+            />
+          </div>
+          <br />
           {`The Cooper Spur hike is all uphill, and can be crowded on summer weekends. Because of the elevation (Cooper Spur is at 8,510 feet), save this hike for later in the summer to
           avoid lingering snow.`}
           <br />
           <br />
           {`The trailhead is about 2 hours from portland, including 8.8 miles of gravel to Cloud Cap Inn. The road is bumpy and roughly graded, but passable for most vehicles.
           If you're interested in camping, The Cloud Cap Saddle campground is right at the trailhead. This is a small, first-come, first-served campground without many amenities.`}
+        </div>
+
+        <div>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AJFCJaWU5mIhOHhJoXTcLBjTarfMpvX_3AYyTz6TVhbd0B3s3R-iDVjYwl4Yv-8jBrdMyInjbPLqmDLYrXvhm69y_VihbwnRorJTkZv_DKJvJkOM2A0_rhZOSLhmiEG6Rs9YJTtcoWn3GAiKZCbCCLNTI0bs=w584-h730-s-no?authuser=0"
+            width={584}
+            height={730}
+            alt="Wildflowers on the east flank of Mt. Hood"
+          />
         </div>
 
         <div>
@@ -276,6 +364,15 @@ export default function Post() {
         </div>
 
         <div>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AJFCJaVDM5KRDPik01h82_NkRCrDa1vTQK7kEKWV6T7agScRqyhOxLIQ20zcPwz_MHuPEV7MZ0dp7sHw3f3z_UjCY6V4ljJqdjfyVNYbPeQVaHUM-i9WxAxbTJ64CYHZwhZGX4PQQT_NftDffU8iVmfcz9IG=w584-h730-s-no?authuser=0"
+            width={584}
+            height={730}
+            alt="Wildflowers blowing at Paradise Park on Mt. Hood"
+          />
+        </div>
+
+        <div>
           <h3>Elk Flats to Cape Falcon</h3>
           <HikeInfo
             distance="7 miles round-trip"
@@ -289,8 +386,26 @@ export default function Post() {
           from Elk Flats to Short Sands beach, where the Cape Falcon trail starts. Depending on how you chose to hike this, you can do Elk Flats, Cape Falcon, or both!`}
           <br />
           <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaVEIvekVyeMkbbBPlyIbNJLXsNwbpoHppQ3bWa3eftMnR9dQkCEcAw3hT3befF_EYquyy64Md9xMHgvcxyBgiR9rNjmbWFUQAnzq_AqZsGS73chRoVkKajN5FeE5GGI2Fy6zhRAsT-QQau6HzOq4R4e=w584-h730-s-no?authuser=0"
+              width={584}
+              height={730}
+              alt="Lauren at the coast near Elk Flats"
+            />
+          </div>
+          <br />
           {`Starting at Elk Flats, the hike follows the rugged coastline, dipping into the trees before arriving at Short Sands beach. From Short Sands, you'll hike uphill
           to Cape Falcon for a panoramic view of the Oregon coast.`}
+        </div>
+
+        <div>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AJFCJaXWW05-9eZ0SP6dlNEv00e2KREIw2aBS3BGxI72yqQfzY2fRz-mx3UBHGdMqQM69CkpI25qt206g2KB41_U76Py9oeNGFgYt_RugU47DY9LvvS6qSVZFI-wONU8VwQ7V1O3yjZPhAwmDfSpoHL5yrvQ=w584-h730-s-no?authuser=0"
+            width={584}
+            height={730}
+            alt="Tree tunnel on the trail to Short Sands Beach"
+          />
         </div>
 
         <div>
@@ -307,15 +422,42 @@ export default function Post() {
           {`Known as the Crown Jewel of the Oregon State Parks system, the Trail of Ten Falls at Silver Falls is the absolute best waterfall hike in Oregon.`}
           <br />
           <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaWLljQk6tq3w7hnPpjTqB1PPcnqbdQAkoj9VClWXJPUb_ObfsHV6a8Ik8RQvYOXyuw-gRC3yWgSYckbBL0OFBxCvdO4n88t8gnFbHg2LOxGo6i5jBKOM4bpR4wljyR2qtvGGNKWMbn_eLgeO6EN9c-5=w533-h799-s-no?authuser=0"
+              width={533}
+              height={799}
+              alt="South Falls at Silver Falls State Park"
+            />
+          </div>
+          <br />
           {`There are ten major waterfalls on this trail, each notable in their own way. The trail cuts behind several of this falls, allowing you to 
           walk behind the water for a surreal experience.`}
           <br />
+          <br />
+          <div className={utilStyles.centered}>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaXLZ1_CNiEzsdIMofR2zUTijzHAHz0-Ug_wm9oq7cBhbULmionaPq_DFuGTTnLcF1ZTgYJxLsFX3aT7EsWZfIrY73N7LVctlot6eRIL9RCA4zmzYRJ3-7TrKpzFZfJu-hHEqNZ3FuM5jGw3fMDVCl-I=w533-h799-s-no?authuser=0"
+              width={533}
+              height={799}
+              alt="Waterfalls at Silver Falls State Park"
+            />
+          </div>
           <br />
           {`Start the trail at the South Falls Lodge, hiking clockwise. This starts you at South Falls, the most majestic of the waterfalls in the park.`}
           <br />
           <br />
           {`After recent rainstorms, the already large waterfalls grow even more tremendous. The best time to hike Silver Falls is during the spring, when
           the waterfalls are huge and the crowds are small.`}
+        </div>
+
+        <div>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AJFCJaX4GB5d5r4FdCTEUtwYCdMDHfIvwdEu7Pa-qKlUfLBV7FPtckF1pIDRXfycxb8I3KTas07SaXHfZ-44V1uIl18m_Rpt4cqGDclVnJEjRq8J14QKtVUOg6s63sbFSqdZkYqk0hh5FgO29gKUsfP7wNZs=w584-h730-s-no?authuser=0"
+            width={533}
+            height={799}
+            alt="More waterfalls at Silver Falls State Park"
+          />
         </div>
         <Contact />
       </div>

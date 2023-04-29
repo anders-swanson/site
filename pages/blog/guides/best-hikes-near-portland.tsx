@@ -39,8 +39,8 @@ export default function Post() {
       <div className={utilStyles.flexGapContainer}>
         <div>
           <div>
-            {`While this is by no means an exhaustive list, these are some of our favorite hikes in the Portland area.
-            The hikes on this list are within 8 miles round-trip, and are generally rated "Moderate" difficulty or easier.`}
+            {`Check out some of the best hikes near Portland with this list of amazing, easy-to-moderate difficulty hikes.
+            This is by no means an exhaustive list (there's just too many great hikes around!), but we tried to pick our favorites!`}
           </div>
           <h3>{`Angel's Rest`}</h3>
           <HikeInfo
@@ -51,8 +51,8 @@ export default function Post() {
             trailhead="https://www.google.com/maps/place/45%C2%B033'36.9%22N+122%C2%B010'21.7%22W/@45.5602589,-122.1733457,19z/data=!3m1!4b1!4m4!3m3!8m2!3d45.560258!4d-122.172702"
           />
           <br />
-          {`Angel's Rest is a beautiful, beloved out-and-back trail close to Portland. On this trail, you'll swiftly climb to the summit of Angel's Rest,
-          a rocky outcropping with a stunning Columbia River overlook. On clear days you'll be able to see the skyscrapers of downtown, miles away.`}
+          {`Angel's Rest is a beautiful, beloved, out-and-back trail very close to Portland. On this trail, you'll swiftly climb to the summit of Angel's Rest,
+          a rocky outcropping with a stunning Columbia River overlook. On clear days you can see down the river to the downtown skyscrapers, miles away.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
@@ -64,7 +64,7 @@ export default function Post() {
             />
           </div>
           <br />
-          {`This is a popular trail, so expect crowds on weekends/holidays, and competitive parking during peak season.`}
+          {`Angel's Rest is a popular trail, so expect crowds on weekends/holidays, and competitive parking during peak season.`}
           <br />
           <br />
           {`Angel's Rest is also a popular sunset hike, with the sun dipping behind the river as it disappears to the west.
@@ -95,11 +95,14 @@ export default function Post() {
             trailhead="https://www.google.com/maps/place/Wahkeena+Falls+Day+Use%2FPicnic+Area%2FTrailhead/@45.5754708,-122.1279256,18.83z/data=!4m6!3m5!1s0x5495eadf7c66919d:0x9ca4b92b7a4f7715!8m2!3d45.576025!4d-122.127828!16s%2Fg%2F11bv3ycbbv"
           />
           <br />
-          {`A classic loop hike with six different waterfalls, you'll be amazed by the towering 627 ft. Multnomah Falls.`}
+          {`A classic loop hike with six different waterfalls, you'll be amazed by the towering 627 ft. Multnomah Falls, and the 5 other waterfalls along the way.`}
           <br />
           <br />
-          {`The classic Wahkeena/Multnomah waterfall loop can be started at Multnomah Falls, or Wahkeena Falls, and hiked in either direction.
-          There is a short connector trail between Multnomah and Wahkeena falls that links the two trailheads.`}
+          {`The Wahkeena/Multnomah waterfall loop can be started at Multnomah Falls or Wahkeena Falls, and hiked in either direction.
+          There is a short connector trail between Multnomah and Wahkeena falls that joins the two trailheads.`}
+          <br />
+          <br />
+          {`I suggest starting your hike at Wahkeena, and hiking counter-clockwise. This route has you pass Multnomah Falls on the back half of your hike.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
@@ -111,10 +114,13 @@ export default function Post() {
             />
           </div>
           <br />
-          {`Be aware that `}
+          {`A `}
           <Link href={multnomahFallsPermit}>permit</Link>
-          {` is required to park at Multnomah Falls May 26th through September 4th. This trail is best hiked outside of peak season
-          to avoid intense crowding at Multnomah Falls, and along the waterfall corridor.`}
+          {` is required to park at Multnomah Falls May 26th through September 4th.`}
+          <br />
+          <br />
+          {`This trail is best hiked outside of peak season
+          to avoid intense crowding at Multnomah Falls, as well as along the waterfall corridor.`}
         </div>
 
         <div>
@@ -138,8 +144,10 @@ export default function Post() {
             trailhead="https://www.google.com/maps/place/Hamilton+Mountain+Trailhead/@45.6326886,-122.020203,20.75z/data=!4m6!3m5!1s0x5495e9ca4e5a2d5d:0x98cef5ae4083eb6!8m2!3d45.6327992!4d-122.020139!16s%2Fg%2F11b7kgbgtn"
           />
           <br />
-          {`Hamilton Mountain is one of my favorite gorge hikes, complete with sweeping views, wildflowers, and waterfalls. On the way up, you'll pass the tumbling Rodney Falls, and the Pool of the Winds.
-          Above the falls, the trail begins to open up from the trees as it ascends Hamilton Mountain, and the trail is interspersed with wildflowers during spring.`}
+          {`Hamilton Mountain is one of my top gorge hikes, complete with sweeping views, wildflowers, and waterfalls. View tumbling Rodney Falls and the Pool of the Winds on the climb up.`}
+          <br />
+          <br />
+          {`Above the falls, the trail opens up from tree cover as it ascends Hamilton Mountain, where the trail is interspersed spring wildflowers.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
@@ -151,7 +159,7 @@ export default function Post() {
             />
           </div>
           <br />
-          {`After reaching the summit, I recommend extending your hike another 1/2 mile farther to reach the Saddle, a broad viewpoint of the gorge that is (in my opinion) much more beautiful that the peak.
+          {`After reaching the summit, considering extending your hike another 1/2 mile farther to reach the Saddle, a broad viewpoint of the gorge that is (in my opinion) much more beautiful that the peak.
           We've hiked to the saddle many times throughout the seasons, but winter was the most beautiful. The ice and snow, however, were not that fun to deal with!`}
           <br />
           <br />
@@ -164,7 +172,7 @@ export default function Post() {
             />
           </div>
           <br />
-          {`Make this trail a ~9 mile loop by hiking past the Saddle on the equestrian trail. The equestrian trail will eventually connect back to the Hamilton Mountain trail near Rodney Falls.`}
+          {`Make this trail a 9+ mile loop by hiking beyond the Saddle on the equestrian trail. The equestrian trail eventually connects with the Hamilton Mountain trail near the Pool of the Winds.`}
         </div>
 
         <div>
@@ -186,8 +194,8 @@ export default function Post() {
             trailhead="https://www.google.com/maps/place/Latourell+Falls+Trailhead/@45.537012,-122.2280962,15z/data=!4m14!1m7!3m6!1s0x549594381efbd86d:0x619be41af91e6535!2sLatourell+Falls!8m2!3d45.5369979!4d-122.2177965!16zL20vMDdsdm1i!3m5!1s0x54959448385ea8e5:0xbcdb6b973e3d24a6!8m2!3d45.5388146!4d-122.2178862!16s%2Fg%2F11bytmbqfk"
           />
           <br />
-          {`Close to Portland, Latourell Falls is a breathtaking waterfall hike that can be easily looped to the upper falls. The main waterfall is in view of the trailhead,
-          with trails looping around it. Do the whole 2.4 mile loop so you can see the upper viewpoint, as well as the pretty Upper Latourell Falls.`}
+          {`Near Portland, Latourell Falls is a breathtaking waterfall hike that can be easily looped with Upper Latourell Falls. The lower waterfall is in view of the trailhead,
+          with trails looping around it. Do the whole 2.4 mile loop to see the upper viewpoint and the very pretty Upper Latourell Falls.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
@@ -199,11 +207,11 @@ export default function Post() {
             />
           </div>
           <br />
-          {`The last time we hiked this, it was right after a large winter storm, and the falls were decked out in ice and snow. If hiking in winter, microspikes may be required depending
-          on snow cover.`}
+          {`The last time we hiked this, it was immediately after a winter storm and the falls were decked out in ice and snow. If hiking in winter, microspikes may be required depending
+          on the current snow and ice.`}
           <br />
           <br />
-          {`Note that it is extremely difficult to find parking at Latourell Falls on summer weekends. I strongly suggest hiking out of season or midweek for the best experience.`}
+          {`Note that it is extremely difficult to find parking at Latourell Falls on summer weekends. I strongly suggest hiking out of season or mid-week for the best experience.`}
         </div>
 
         <div>
@@ -229,20 +237,43 @@ export default function Post() {
           />
           <div>
             <br />
-            {`One of my favorite waterfall hikes near Portland, definitely don't miss Fall Creek Falls. Visiting the falls after recent rains is a tremendous experience, and astoundingly beautiful.
-            The forested hike follows a creek, and can be looped, or made a shorter out-and-back if you only want to visit the falls.`}
+            {`One of my favorite waterfall hikes near Portland, don't miss out on the beautiful Fall Creek Falls. 
+            Visiting the falls after recent rains is a tremendous experience, and astoundingly beautiful.`}
             <br />
             <br />
-            {`Be aware that the access road to the parking lot is closed during winter. It's possible to park at the gate and walk to the trailhead, but be aware it will add 3 miles to your hike, round-trip.`}
+            {`The forested hike to the falls follows a creek, crossing small bridges. This hike can be looped or made a shorter out-and-back to and from the falls.`}
             <br />
             <br />
-            {`If you're in the area, I recommend checking out `}
+            <div className={utilStyles.centered}>
+              <Image
+                src="https://lh3.googleusercontent.com/pw/AJFCJaX8SJg06O2F76ZDYoLPNkPHNrneDYel5E8x-IzXXlsNvsPKbh8A9vAlcNvg-Vn_jVhu_NP0l-BPUF3vOnBWxtzJTi_VjGiX6gPvMp78rybcXEna0ZzRuHLb-nG-renO2xBDJU_RRrxTjGlioZHT7UHu=w530-h795-s-no?authuser=0"
+                width={530}
+                height={795}
+                alt="Fall Creek Falls"
+              />
+            </div>
+            <br />
+            {`The access road to Fall Creek Falls Trailhead is rough and potholed, but drivable enough that any passenger car can make it.
+            This road is closed during the winter, but you may park at the gate and walk to the trailhead adding around 3 miles round-trip.`}
+            <br />
+            <br />
+            {`If you're in the area and have extra time, I recommend checking out `}
             <Link href="https://www.google.com/maps/place/Panther+Creek+Falls/@45.867171,-121.8313998,17z/data=!3m1!4b1!4m6!3m5!1s0x549677449c31d3eb:0x4125e2c0d722c754!8m2!3d45.8671673!4d-121.8288249!16s%2Fm%2F047n_gy">
               Panther Creek Falls
             </Link>
-            {` as well. It's a short hike, and extremely rewarding, as Panther Creek Falls is one of the most beautiful waterfalls in the area.`}
+            {`. It's a 1/2 mile round-trip and extremely rewarding: Panther Creek Falls is one of the most beautiful waterfalls in the area.`}
           </div>
         </div>
+
+        <div>
+          <Image
+            src="https://lh3.googleusercontent.com/pw/AJFCJaWNVp98MxkAYQJqk42GygSO_sDK025ZNBACPWf8ajlExE4qFh7VxluzfyaogV14vnJuz7yMsv7S7EsEgtUTQDdPYG0NIyyVQdZH6jjATSJwCfb1izUwnVL8GsXxD-1gUR4j0AmX0pjQ5fdQ-WG4clpw=w795-h530-s-no?authuser=0"
+            width={795}
+            height={530}
+            alt="Panther Creek Falls"
+          />
+        </div>
+
         <div>
           <h3>Silver Star</h3>
           <HikeInfo
@@ -255,7 +286,7 @@ export default function Post() {
           />
           <br />
           {`The first time I hiked Silver Star, I was absolutely blown away by the breathtaking mountain views near the summit. I highly, highly recommend this hike if you live near Portland:
-          The ascent of Silver Star is steep, but its oh-so-worth it.`}
+          The ascent of Silver Star is steep, but it's oh-so-worth it.`}
           <br />
           <br />
           <div className={utilStyles.centered}>
@@ -267,11 +298,11 @@ export default function Post() {
             />
           </div>
           <br />
-          {`Try to arrange a clear day for this hike, so you have the best views from the summit. Mount St. Helens, Adams, Rainier, and Hood are all within
+          {`Try to arrange a clear day for this hike so you have the best views from the summit. Mount St. Helens, Adams, Rainier, and Hood are all within
           view at the peak.`}
           <br />
           <br />
-          {`The access road is unpaved, rocky, and potholed, but is overall doable by passenger cars. I was able to reach the trailhead without difficulty in a Mazda3 sedan.`}
+          {`The access road is unpaved, rocky, and potholed, but is overall doable by passenger cars. I was able to reach the trailhead without difficulty in a low clearance Mazda3 sedan.`}
         </div>
         <div>
           <h3>Ramona Falls</h3>
@@ -296,7 +327,7 @@ export default function Post() {
             />
           </div>
           <br />
-          {`The roughly 7-mile loop trail is relatively flat, easy hiking on a sandy trail. However, be aware that there is no bridge for the Sandy River crossing near
+          {`The roughly 7-mile loop trail is relatively flat, easy hiking on a somewhat sandy trail. However, be aware that there is no bridge for the Sandy River crossing near
            the trailhead. Some minor balancing skills are required to traverse fallen logs spanning the river, or wade across.`}
         </div>
 
@@ -311,7 +342,7 @@ export default function Post() {
             trailhead="https://www.google.com/maps/place/Cloud+Cap+Saddle+Campground/@45.4051105,-121.6553203,16.46z/data=!4m6!3m5!1s0x54be02ccc7ad4907:0x20059b0c7995414c!8m2!3d45.4024584!4d-121.655107!16s%2Fg%2F11bx1htgln"
           />
           <br />
-          {`Beginning at the historic Cloud Cap Inn on the east slopes of Mt. Hood, the Cooper Spur hike steeply climbs the moraine for a spectacular view of Eliot Glacier. Be aware that the Cloud Cap
+          {`Beginning at the historic Cloud Cap Inn on the east slopes of Mt. Hood, the Cooper Spur hike steeply climbs the moraine for a spectacular view of Eliot Glacier. Note that the Cloud Cap
           Inn is closed to the public, but you may freely explore its grounds.`}
           <br />
           <br />
@@ -325,10 +356,10 @@ export default function Post() {
           </div>
           <br />
           {`The Cooper Spur hike is all uphill, and can be crowded on summer weekends. Because of the elevation (Cooper Spur is at 8,510 feet), save this hike for later in the summer to
-          avoid lingering snow.`}
+          avoid any lingering snow.`}
           <br />
           <br />
-          {`The trailhead is about 2 hours from portland, including 8.8 miles of gravel to Cloud Cap Inn. The road is bumpy and roughly graded, but passable for most vehicles.
+          {`The trailhead is about 2 hours from portland, including 8.8 miles of gravel to Cloud Cap Inn. This last stretch of road is bumpy and roughly graded, but passable for most vehicles.
           If you're interested in camping, The Cloud Cap Saddle campground is right at the trailhead. This is a small, first-come, first-served campground without many amenities.`}
         </div>
 
@@ -352,11 +383,11 @@ export default function Post() {
           />
           <br />
           {`Timberline Lodge is a favorite starting point for the Timberline Trail, a portion of which you'll hike on the way to ZigZag canyon. Best hiked from July to September,
-          expect wildflowers and mountain views on this short, stunning hike.`}
+          expect wildflowers and mountain views on this shorter, stunning hike.`}
           <br />
           <br />
-          {`If its your first time hiking at Timberline Lodge, it can be a bit confusing to find the trail. The way to ZigZag canyon is on the north side of the lot (left as you face 
-            Mt. Hood). There are many small footpaths that lead out of the parking lot, but these trails coalesce into the Timberline Trail.`}
+          {`If its your first time hiking at Timberline Lodge, it can be a bit confusing to find trail's starting point. The way to ZigZag canyon is on the west side of the lot (left as you face 
+            Mt. Hood). There are many small footpaths that lead out of the parking lot, and these trails coalesce into the Timberline Trail.`}
           <br />
           <br />
           {`If you want to extend your hike, consider continuing on the Timberline Trail to Paradise Park. This will increase your total distance to around 10 miles, but Paradise
@@ -411,7 +442,7 @@ export default function Post() {
         <div>
           <h3>{`Trail of Ten Falls, Silver Falls State Park`}</h3>
           <HikeInfo
-            distance="9 mile loop"
+            distance="8 mile loop"
             elevation="1,200 feet"
             permits="$5 park fee payable at trailhead"
             difficulty={HikeDifficulty.MODERATE}
@@ -444,11 +475,11 @@ export default function Post() {
             />
           </div>
           <br />
-          {`Start the trail at the South Falls Lodge, hiking clockwise. This starts you at South Falls, the most majestic of the waterfalls in the park.`}
+          {`Begin the trail at the South Falls Lodge, hiking clockwise. This starts you at South Falls, the most majestic of the waterfalls in the park.`}
           <br />
           <br />
           {`After recent rainstorms, the already large waterfalls grow even more tremendous. The best time to hike Silver Falls is during the spring, when
-          the waterfalls are huge and the crowds are small.`}
+          the waterfalls are huge and the crowds are small(er).`}
         </div>
 
         <div>

@@ -70,7 +70,6 @@ export default function Links({ title, showSocial = false }) {
             title="My Hawaii Swimsuit"
             body="Save 15% with code LAUREN84928"
             src="https://bit.ly/3iCkTmP"
-            animation={utilStyles.shakeAnimation}
           />
           <LinkButton
             title="Shop my LTK"

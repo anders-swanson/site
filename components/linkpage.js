@@ -45,21 +45,16 @@ export default function Links({ title, showSocial = false }) {
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
           <LinkButton
-            title="Spring Break Swimsuit"
-            body="Save 15% with code LAUREN84928"
-            src="https://bit.ly/3iCkTmP"
-            animation={utilStyles.shakeAnimation}
-          />
-          <LinkButton
             title="My REI Favorites"
             body="Gear That's Lasted Me Over 1000+ Miles"
             src="https://bit.ly/40uPjZc"
             animation={utilStyles.bounceAnimation}
           />
           <LinkButton
-            title="My Latest Youtube Video"
-            body="My Solo Camping Trip to Olympic National Park ✨Day 2✨"
-            src="https://youtu.be/vu4QGdg-G3c"
+            title="Latest Youtube Video"
+            body="Your Intro to Backpacking Q&A"
+            src="https://youtu.be/VNWW3bzN8mE"
+            animation={utilStyles.shakeAnimation}
           />
           <LinkButton
             title="Favorite Backpacking & Travel Instant Coffee"
@@ -70,6 +65,12 @@ export default function Links({ title, showSocial = false }) {
             title="Amazon Backpacking Favorites"
             body="Items I Know & Love!"
             src="https://www.amazon.com/shop/laurensbigadventure"
+          />
+          <LinkButton
+            title="My Hawaii Swimsuit"
+            body="Save 15% with code LAUREN84928"
+            src="https://bit.ly/3iCkTmP"
+            animation={utilStyles.shakeAnimation}
           />
           <LinkButton
             title="Shop my LTK"

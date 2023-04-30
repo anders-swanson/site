@@ -34,7 +34,7 @@
   color: #000;
   text-decoration: underline;
   cursor: pointer;
-  background-color: #dfdfdf;
+  background-color: #d6dedf;
 }
 
 .highlighted {
@@ -71,7 +71,7 @@
 .tag a:hover {
   padding-right: 7px;
   color: #272727;
-  background-color: #dfdfdf;
+  background-color: #d6dedf;
   text-align: center;
 }
 

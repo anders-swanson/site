@@ -9,7 +9,7 @@ const selectedStyles = {
   fontWeight: "bold",
   textDecoration: "underline",
   color: "black",
-  backgroundColor: "#dfdfdf",
+  backgroundColor: "#d6dedf",
 };
 
 export default function PostBox({

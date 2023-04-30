@@ -44,7 +44,7 @@ export default function Layout({
   subText = "",
   description = title,
   idx = 0,
-  perPage = 4,
+  perPage = config.itemsPerPage,
   related = null,
   skipAbout = false,
 }) {

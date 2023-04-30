@@ -212,18 +212,16 @@ export default function Post() {
           <br />
           <br />
           <div className={utilStyles.centered}>
-          <Image
-            src="https://lh3.googleusercontent.com/pw/AJFCJaUFxkkynLiaUk1lsRr2j0Qkt-yUrQ8BI6PbbgTcwecNkF-20hKlmOaYD6jkpG9-LeYyZ3T9PnRPz_j0M999ySdhASVvMJJAZD9mgvu5RHimrxAhPcC0V5WA0jT1d3cmEcpmV5SJa0GZTU_d9bpYBz_j=w534-h797-s-no?authuser=0"
-            width={534}
-            height={797}
-            alt="Upper Latourell Falls in winter"
-          />
-        </div>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AJFCJaUFxkkynLiaUk1lsRr2j0Qkt-yUrQ8BI6PbbgTcwecNkF-20hKlmOaYD6jkpG9-LeYyZ3T9PnRPz_j0M999ySdhASVvMJJAZD9mgvu5RHimrxAhPcC0V5WA0jT1d3cmEcpmV5SJa0GZTU_d9bpYBz_j=w534-h797-s-no?authuser=0"
+              width={534}
+              height={797}
+              alt="Upper Latourell Falls in winter"
+            />
+          </div>
           <br />
           {`Note that it is extremely difficult to find parking at Latourell Falls on summer weekends. I strongly suggest hiking out of season or mid-week for the best experience.`}
         </div>
-
-        
 
         <CoyoteWall h3 />
 

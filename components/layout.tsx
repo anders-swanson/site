@@ -56,6 +56,9 @@ export default function Layout({
   const [navBarStyles, setNavBarStyles] = useState({
     top: "0px",
   });
+  const [linkBarStyles, setLinkBarStyles] = useState({
+    top: "10px",
+  });
   useEffect(() => {
     // set visibility if page is refreshed on a scroll position
     setVisible(!isScrolled());
@@ -71,11 +74,17 @@ export default function Layout({
 
     if (window.scrollY > scrollPosition) {
       setNavBarStyles({
-        top: "-50px",
+        top: "-55px",
+      });
+      setLinkBarStyles({
+        top: "-55px",
       });
     } else {
       setNavBarStyles({
         top: "0px",
+      });
+      setLinkBarStyles({
+        top: "10px",
       });
     }
     setScrollPosition(window.scrollY);
@@ -143,7 +152,26 @@ export default function Layout({
         {config.search.enabled && (
           <Search search={search} setSearch={setSearch} />
         )}
-        <div className={styles.linkBar}></div>
+        <div className={styles.linkBar} style={linkBarStyles}>
+          <Link href="/" className={styles.menu__item}>
+            Home
+          </Link>
+          <Link href="/about" className={styles.menu__item}>
+            About
+          </Link>
+          <Link href="/archive" className={styles.menu__item}>
+            All Posts
+          </Link>
+          <Link href="/contact" className={styles.menu__item}>
+            Contact
+          </Link>
+          <Link href="/filter/guides" className={styles.menu__item}>
+            Guides
+          </Link>
+          <Link href="/links#info" className={styles.menu__item}>
+            Links
+          </Link>
+        </div>
       </div>
 
       <br />

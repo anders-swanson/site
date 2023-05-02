@@ -8,7 +8,7 @@ import styles from "../components/index.module.css";
 import IsWindowSize from "../lib/use_window_size";
 
 export default function Home({ posts }) {
-  const windowSize = IsWindowSize(1400);
+  const windowSize = IsWindowSize(1200);
 
   return (
     <Layout
@@ -19,14 +19,14 @@ export default function Home({ posts }) {
       <div className={`${utilStyles.flexGapContainer} ${styles.container}`}>
         {(windowSize && (
           <Image
-            src="/cover-wide.png"
+            src="/cover-wide.jpg"
             alt="Trails and Trekking"
             width={1205}
             height={602}
           />
         )) || (
           <Image
-            src="/cover.png"
+            src="/cover.jpg"
             alt="Trails and Trekking"
             width={799}
             height={533}

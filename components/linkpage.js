@@ -39,9 +39,9 @@ export default function Links({ title, showSocial = false }) {
         <p
           key="info"
           className={utilStyles.floatyText}
-          style={{ fontSize: "62px" }}
+          style={{ fontSize: "80px" }}
         >
-          My Links
+          Where would you like to go next?
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
           <LinkButton
@@ -80,8 +80,8 @@ export default function Links({ title, showSocial = false }) {
         <br />
         <div
           style={{
-            fontFamily: 'font-family: "Poppins",sans-serif',
-            fontWeight: "500",
+            fontFamily: 'font-family: "OpenSans",sans-serif',
+            fontWeight: "400",
             margin: "auto",
             background: "rgba(255, 255, 255, .75)",
             maxWidth: "600px",

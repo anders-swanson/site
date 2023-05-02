@@ -39,7 +39,7 @@
 .headerBar {
   z-index: 2;
   height: 50px;
-  background-color: #3587A4;
+  background-color: #3587a4;
   box-shadow: 3px 3px 5px 0px rgb(0, 0, 0, 0.4);
   width: 100%;
   position: fixed;

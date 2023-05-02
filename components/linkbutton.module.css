@@ -1,14 +1,14 @@
 .lbContainer {
   border-radius: 10px;
-  border: 2px solid ;
-  background-color: #3587A4;
+  border: 2px solid;
+  background-color: #3587a4;
 
   width: 600px;
   height: 75px;
   text-align: center;
   display: table;
   position: relative;
-  color: #F5F5F5;
+  color: #f5f5f5;
 }
 
 .lbContainer a {
@@ -26,7 +26,7 @@
 }
 
 .lbContainer:hover {
-  background-color: #C1DFF0;
+  background-color: #c1dff0;
   color: black;
 }
 

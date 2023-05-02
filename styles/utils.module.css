@@ -132,7 +132,7 @@
 }
 
 .contactForm {
-  background-color: #C1DFF0;
+  background-color: #c1dff0;
   border-radius: 5px;
   max-width: 1200px;
 }
@@ -183,7 +183,7 @@
 }
 
 .resetButton {
-  background-color: #2D848A;
+  background-color: #2d848a;
   min-width: 80px;
 }
 
@@ -191,7 +191,7 @@
   margin-right: 10px;
   margin-top: 10px;
   min-width: 100px;
-  background-color: #3587A4;
+  background-color: #3587a4;
 }
 
 .errorMessage {
@@ -213,10 +213,9 @@
 
 .floatyText {
   font-family: "OpenSans", sans-serif;
-  color: #3587A4;
+  color: #3587a4;
   text-align: center;
-  text-shadow: 3px 3px 2px #F5F5F5;
-
+  text-shadow: 3px 3px 2px #f5f5f5;
 }
 
 .coverContainer {

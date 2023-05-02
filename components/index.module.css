@@ -1,10 +1,10 @@
 .container {
   text-align: center;
-  color: white;
+  color: #F5F5F5;
   position: relative;
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 60px;
-  text-shadow: 0px 2px 2px #4d4d4d;
+  text-shadow: 0px 2px 2px #3587A4;
   line-height: 65px;
 }
 

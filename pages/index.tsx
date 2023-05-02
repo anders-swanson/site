@@ -33,7 +33,7 @@ export default function Home({ posts }) {
           />
         )}
 
-        <div className={styles.overlayText}>{`Trails & Trekking`}</div>
+        <div className={styles.overlayText}>{`TRAILS & TREKKING`}</div>
       </div>
       <br />
       <FeaturedPost post={false} />

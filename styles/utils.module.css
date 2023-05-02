@@ -132,7 +132,7 @@
 }
 
 .contactForm {
-  background-color: rgba(189, 225, 236, 0.479);
+  background-color: #C1DFF0;
   border-radius: 5px;
   max-width: 1200px;
 }
@@ -152,16 +152,16 @@
   height: 30px;
   min-width: 250px;
   border: 2px;
-  border-color: #666;
+  border-color: #66666666;
 }
 
 .contactForm textarea {
   border-radius: 5px;
-  font-size: small;
+  font-size: medium;
   min-width: 250px;
   height: 220px;
   border: 2px;
-  border-color: #666;
+  border-color: #66666666;
 
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -183,7 +183,7 @@
 }
 
 .resetButton {
-  background-color: rgb(39, 23, 82);
+  background-color: #2D848A;
   min-width: 80px;
 }
 
@@ -191,7 +191,7 @@
   margin-right: 10px;
   margin-top: 10px;
   min-width: 100px;
-  background-color: rgb(42, 102, 121);
+  background-color: #3587A4;
 }
 
 .errorMessage {
@@ -212,9 +212,8 @@
 }
 
 .floatyText {
-  font-family: "Shrikhand", sans-serif;
-  text-shadow: 0px 2px 2px #2275ac;
-  color: rgb(255, 251, 242);
+  font-family: "OpenSans", sans-serif;
+  color: #3587A4;
   text-align: center;
 }
 

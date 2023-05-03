@@ -21,8 +21,8 @@ export default function Home({ posts }) {
           <Image
             src="/cover-wide.jpg"
             alt="Trails and Trekking"
-            width={1205}
-            height={602}
+            width={1136}
+            height={639}
           />
         )) || (
           <Image

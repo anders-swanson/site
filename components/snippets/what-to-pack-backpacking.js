@@ -153,7 +153,7 @@ export default function WTPBackpacking({ uri }) {
               href={links.hiking.afterbite}
               text="the BEST itch relief solution "
             />{" "}
-            {`(I literally carry this everywhere during the summer)`}
+            {`(I literally carry this everywhere during bug season)`}
           </li>
           <li>
             <TabLink href={links.hiking.firstAidKit} text="first aid kit" />

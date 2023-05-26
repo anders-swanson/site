@@ -2,9 +2,10 @@ import utilStyles from "../../../styles/utils.module.css";
 import Layout from "../../../components/layout";
 import Image from "next/image";
 import Link from "next/link";
+import WTPBackpacking from "../../../components/snippets/what-to-pack-backpacking";
 
 //+metadata
-let metadata = {
+const metadata = {
   title: "Spring Backpacking in Oregon",
   date: "2022-05-02",
   image:
@@ -12,6 +13,7 @@ let metadata = {
   tags: ["backpacking", "guides", "oregon"],
 };
 
+const pageURI = "/blog/guides/memorial-day-trips";
 const rogueRiverTrail =
   "https://www.google.com/maps/place/Rogue+River+National+Recreation+Trail/@42.6522736,-123.607442,14.62z/data=!4m8!1m2!2m1!1srogue+river+trail!3m4!1s0x54c5092d96ca97b7:0xe67a995c036f7ea!8m2!3d42.650836!4d-123.5865435";
 const rogueRiverBLM =
@@ -185,13 +187,14 @@ export default function Post() {
         </h1>
         <br />
         <div>
-          {`In 2022, we plan to hike the North Umpqua trail - we'll have details on this trail after we complete it! In the meantime,
+          {`We're currently planning to hike the North Umpqua trail - we'll have details on this trail after we complete it! In the meantime,
                     check out the BLM's website covering the `}
           <Link href="https://www.blm.gov/or/districts/roseburg/recreation/umpquatrails/">
             North Umpqua Trail
           </Link>
           {` if you're interested in learning more. Happy trails!`}
         </div>
+        <WTPBackpacking uri={pageURI} />
       </div>
     </Layout>
   );

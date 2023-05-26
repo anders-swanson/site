@@ -6,7 +6,6 @@ import FeaturedPost from "../components/featuredpost";
 import styles from "../components/index.module.css";
 
 export default function Home({ posts }) {
-
   return (
     <Layout
       home

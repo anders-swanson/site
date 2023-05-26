@@ -39,17 +39,11 @@ export default function Links({ title, showSocial = false }) {
         <p
           key="info"
           className={utilStyles.floatyText}
-          style={{ fontSize: "62px" }}
+          style={{ fontSize: "80px" }}
         >
-          My Links
+          Where would you like to go next?
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
-          <LinkButton
-            title="Spring Break Swimsuit"
-            body="Save 15% with code LAUREN84928"
-            src="https://bit.ly/3iCkTmP"
-            animation={utilStyles.shakeAnimation}
-          />
           <LinkButton
             title="My REI Favorites"
             body="Gear That's Lasted Me Over 1000+ Miles"
@@ -57,9 +51,10 @@ export default function Links({ title, showSocial = false }) {
             animation={utilStyles.bounceAnimation}
           />
           <LinkButton
-            title="My Latest Youtube Video"
-            body="My Solo Camping Trip to Olympic National Park ✨Day 2✨"
-            src="https://youtu.be/vu4QGdg-G3c"
+            title="Latest Youtube Video"
+            body="Your Intro to Backpacking Q&A"
+            src="https://youtu.be/VNWW3bzN8mE"
+            animation={utilStyles.shakeAnimation}
           />
           <LinkButton
             title="Favorite Backpacking & Travel Instant Coffee"
@@ -72,6 +67,11 @@ export default function Links({ title, showSocial = false }) {
             src="https://www.amazon.com/shop/laurensbigadventure"
           />
           <LinkButton
+            title="My Hawaii Swimsuit"
+            body="Save 15% with code LAUREN84928"
+            src="https://bit.ly/3iCkTmP"
+          />
+          <LinkButton
             title="Shop my LTK"
             body="Like my Outfits? They’re Linked Here! Can't find what you want? Just DM Me!"
             src="https://www.shopltk.com/explore/laurengastineau"
@@ -80,8 +80,8 @@ export default function Links({ title, showSocial = false }) {
         <br />
         <div
           style={{
-            fontFamily: 'font-family: "Poppins",sans-serif',
-            fontWeight: "500",
+            fontFamily: 'font-family: "OpenSans",sans-serif',
+            fontWeight: "400",
             margin: "auto",
             background: "rgba(255, 255, 255, .75)",
             maxWidth: "600px",

@@ -13,6 +13,7 @@ import {
   NWForestPass,
 } from "../../../lib/hike_info_types";
 import Link from "next/link";
+import WTPHiking from "../../../components/snippets/what-to-pack-hiking";
 
 //+metadata
 const metadata = {
@@ -481,6 +482,7 @@ export default function Post() {
           {`After recent rainstorms, the already large waterfalls grow even more tremendous. The best time to hike Silver Falls is during the spring, when
           the waterfalls are huge and the crowds are small(er).`}
         </div>
+        <WTPHiking />
         <Contact />
       </div>
     </Layout>

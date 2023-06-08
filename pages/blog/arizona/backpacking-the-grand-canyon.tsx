@@ -1,5 +1,7 @@
 import Layout from "../../../components/layout";
-import BackpackingGrandCanyon, { metadata } from "../../../components/pages/arizona/backpacking-the-grand-canyon";
+import BackpackingGrandCanyon, {
+  metadata,
+} from "../../../components/pages/arizona/backpacking-the-grand-canyon";
 
 export default function Post() {
   return (

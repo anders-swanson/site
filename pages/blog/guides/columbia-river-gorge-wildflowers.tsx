@@ -4,7 +4,6 @@ import Layout from "../../../components/layout";
 import { rawData } from "../../../lib/common";
 import Link from "next/link";
 import Video from "../../../components/video";
-import Slider from "../../../components/slider";
 import HikeInfo from "../../../components/hike_info";
 import {
   BestSeason,

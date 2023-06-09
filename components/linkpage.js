@@ -52,8 +52,8 @@ export default function Links({ title, showSocial = false }) {
           />
           <LinkButton
             title="Latest Youtube Video"
-            body="Your Intro to Backpacking Q&A"
-            src="https://youtu.be/VNWW3bzN8mE"
+            body="2 Week Arizona Road Trip - HIKING SEDONA & GRAND CANYON CAMPING"
+            src="https://youtu.be/ygTuuuXGlPI"
             animation={utilStyles.shakeAnimation}
           />
           <LinkButton

@@ -8,6 +8,7 @@ export enum HikeDifficulty {
 
 export enum BestSeason {
   YEAR_ROUND = "Year-round",
+  SPRING_FALL = "Spring and Fall",
   SPRING_SUMMER_FALL = "Spring, summer, and fall",
   SUMMER_FALL = "Summer through fall",
   MID_SUMMER_FALL = "Mid-summer to early fall",

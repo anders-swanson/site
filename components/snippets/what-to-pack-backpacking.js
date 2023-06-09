@@ -3,7 +3,7 @@ import TabLink from "../tablink";
 import utilStyles from "../../styles/utils.module.css";
 import Pinnable from "../pinit";
 
-export default function WTPBackpacking({ uri }) {
+export default function WTPBackpacking({ uri, showBear = true }) {
   uri = uri ? uri : "/";
   return (
     <>
@@ -103,12 +103,18 @@ export default function WTPBackpacking({ uri }) {
               text={`un-flavored, un-sweetned electrolyte solution`}
             />
           </li>
-          <li>
-            <TabLink href={links.hiking.bearVault} text="bear can" />
-          </li>
-          <li>
-            <TabLink href={links.hiking.ursack} text="ursack" /> {`(bear bag)`}
-          </li>
+          {showBear && (
+            <>
+              <li>
+                <TabLink href={links.hiking.bearVault} text="bear can" />
+              </li>
+              <li>
+                <TabLink href={links.hiking.ursack} text="ursack" />{" "}
+                {`(bear bag)`}
+              </li>
+            </>
+          )}
+
           <li>
             <TabLink
               href={links.food.peakRefuelStroganoff}

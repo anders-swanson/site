@@ -75,11 +75,11 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
       >
         <div className={utilStyles.flexGapContainer}>
           <h1 className={utilStyles.justifyCenter} id="permit-information">
-            Overnight Permits
+            Backpacking Permits
           </h1>
           <div>
-            {`A `} <Link href={backcountryPermits}>Backcountry permit</Link>
-            {` is mandatory for backpacking Grand Canyon National Park. There are two types of permits available to prospective campers, `}
+            {`A `} <Link href={backcountryPermits}>permit</Link>
+            {` is required for all backcountry camping in Grand Canyon National Park. There are two types of permits available to prospective campers, `}
             <b>Advance</b>
             {` and `}
             <b>Walk-up</b>
@@ -108,20 +108,20 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
             <h3>Walk-up Permits</h3>
             {`For walk-up permits, show up to the `}
             <Link href={backcountryOffice}>backcountry office</Link>
-            {` at 8AM least two days before you intend to backpack to inquire about permits. If permits are sold out (they typically will be)
-            before you are called, the rangers will give you a wait-list number. You can return the next day (or as long as it takes) with your wait-list number to re-apply for permits.`}
+            {` at least two days before you intend to backpack to inquire about permits. If permits are sold out (they typically will be), the rangers will give you a wait-list number.
+             Return at 8AM the next day and wait for your number to be called. If your number is not called, you'll get a new wait-list number, and may try again the next day.`}
             <br />
             <br />
-            {`Once your number gets called, you'll be awarded a permit for the next day. Due to this system, I recommend spending 3-4 nights at the South Rim to have a good chance
+            {`When your number gets called, you'll be awarded a permit to hike the next day. Because of this system, I recommend spending 3-4 nights at the South Rim to have a good chance
             at securing a walk-up permit. It took us two nights to get ours, but we got a little lucky - another camper was willing to share their site with us, pushing us up a couple places in line.`}
             <br />
             <br />
             {`This is the general flow of getting a backcountry permit using the walk-up system:`}
             <ol>
               <li>{`Reserve around three nights at the Mather Campground, or at another nearby facility. This will be your base camp while waiting for a walk-up permit.`}</li>
-              <li>{`When you arrive at the South Rim, apply for a wait list number at the backcountry office.
-              The earlier in the day you apply, the better.`}</li>
-              <li>{`The following morning, arrive at the backcountry office just before 8AM with your wait list number. If the permits sell out before your number is called, you'll receive a new number and may re-apply the next day.`}</li>
+              <li>{`When you arrive at the South Rim, stop by the backcountry office and get a wait-list number.
+              The earlier in the day you arrive, the better (office opens at 8AM).`}</li>
+              <li>{`The following morning, go to the backcountry office just before 8AM with your wait list number. If the permits sell out before your number is called, you'll receive a new number and may re-apply the next day.`}</li>
               <li>{`Permits are valid the day after you receive them, meaning you'll generally have a couple days to kill at the South Rim.`}</li>
             </ol>
             {`If you do spend extra time at the South Rim waiting for permits, there's plenty to do in terms of day hiking, sightseeing, and more. The West Rim hike from Hermit's Rest is incredible, 
@@ -152,14 +152,13 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
             <br />
             <br />
             {`Access between the two trailheads is faciliated by the `}
-            <Link href={shuttleBus}>South Rim Shuttle Bus</Link>
-            {`, a free shuttle around the South Rim. I recommend parking your car at the backcountry office, and taking the early morning hiker express bus
-            to the South Kaibab Trailhead.`}
+            <Link href={shuttleBus}>South Rim Shuttle bus system</Link>
+            {`, a free shuttle that goes all around the rim. You can park your car overnight at the backcountry office, and use the bus system 
+            to get to the South Kaibab Trailhead.`}
             <br />
             <br />
           </div>
           <h3>South Kaibab Trail</h3>
-
           <div>
             <div className={utilStyles.centered}>
               <Pinnable
@@ -172,16 +171,17 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
             </div>
             <br />
             <br />
-            {`The South Kaibab Trail is dry, rocky, but extremely beautiful with scenic vistas and red rock at every turn. You will see spots of wildflowers in the spring, and many gorgeous rock formations as 
-            you descend to the Colorado River.`}
+            {`The South Kaibab Trail is an otherworldly, extremely beautiful trail with scenic vistas and red rock at every turn. You will see spots of wildflowers in the spring,
+            and many gorgeous rock formations as you descend 5,000 feet and 7 miles to the Colorado River.`}
             <br />
             <br />
             {`Be aware that there is no water on this trail, and almost no shade - pack more water than you think you will need. The temperature will increase as you descend,
              being 20-30F warmer at the bottom than the rim. A general rule of thumb is that for every 1000 feet of elevation you lose, the temperature will go up 5 degrees.`}
             <br />
             <br />
-            {`After losing 5,000 feet of elevation over 7 miles, you'll arrive at the Colorado River. Pass through a tunnel and across a bridge, and you've only got about 1/2 mile
-             to Bright Angel Campground.`}
+            {`After an amazing hike down the South Kaibab Trail, you'll arrive at the Colorado River. Pass through a tunnel and across a bridge, and hike the remaining 
+            1/2 mile to Bright Angel Campground. Depending on the time of year, it may be intensely hot through this section by the river - thankfully, there is a water station
+            not far from the bridge crossing to refill and cool off by.`}
             <br />
             <br />
             <div className={utilStyles.centered}>
@@ -197,18 +197,18 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
 
           <h3>Bright Angel Campground</h3>
           <div>
-            {`This campground is in a canyon alongside Bright Angel Creek, uphill from where it joins the Colorado River. After you arrive, choose an unoccupied site
+            {`Located in a canyon alongside Bright Angel Creek, the campground is up and slightly away from the Colorado River. When you arrive, choose an unoccupied site
             and place your permit in the drop-box. Each site has a picnic table, a backpack hang, and a metal box for food storage. Make sure not to leave any food out,
             as the local squirrels are hungry!`}
             <br />
             <br />
-            {`Despite being in the backcountry, this is a developed campground. There are restrooms and potable water - note that it's still recommended to bring a water
-            filter, in case of emergency.`}
+            {`Despite being in the backcountry, this is a developed campground. There are restrooms and potable water, but note that it's still recommended to bring a water
+            filter in case of emergency.`}
             <br />
             <br />
-            {`If you walk past the campground up Bright Angel Creek, you'll arrive at Phantom Ranch, where drinks or snacks can be purchased (cash or card accepted). Phantom Ranch
+            {`If you continue walking past the campground, you'll arrive at Phantom Ranch, where drinks or snacks can be purchased (cash or card accepted). Phantom Ranch
             is a historic hotel which originally opened in 1922.
-            The North Kaibab Trail begins beyond Phantom Ranch, climbing up until it eventually reaches the North Rim.`}
+            The North Kaibab Trail starts after Phantom Ranch, climbing up until it eventually reaches the North Rim some 14 miles away.`}
             <br />
             <br />
             <div className={utilStyles.centered}>
@@ -225,6 +225,10 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
           <h3>Bright Angel Trail</h3>
 
           <div>
+            {`The Bright Angel Trail is the best way to hike out of the Grand Canyon, with multiple rest houses and places to refill your water, like Havasupai Gardens.
+            While longer than the South Kaibab Trail, there's more shade, water, and the grade is less steep (though still extremely steep).`}
+            <br />
+            <br />
             <div className={utilStyles.centered}>
               <Pinnable
                 page={pageURI}
@@ -234,9 +238,6 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
                 height={799}
               />
             </div>
-            <br />
-            {`The Bright Angel Trail is the best way to hike out of the Grand Canyon, with multiple rest houses and places to refill your water, like Havasupai Gardens.
-            While longer than the South Kaibab Trail, there's more shade, water, and the grade is less steep (though still extremely steep).`}
             <br />
             <br />
             {`From Bright Angel Campground, the trail starts by crossing a suspension bridge, and follows the Colorado River for a ways. From the river, it's 9.5 miles and 4,500 
@@ -296,8 +297,7 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
           <h3>Prepare accordingly</h3>
           <div>
             {`Hiking down to the Colorado River is an amazing experience, but also one that should not be taken lightly. This is a difficult trail, and is known for having many
-            rescues every year.`}
-            {`Check out the `}
+            rescues every year. Check out the `}
             <Link href={backcountryInfo}>NPS Hiking Guide</Link>
             {` for more information on hiking the Grand Canyon.`}
             <br />
@@ -316,8 +316,8 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
           <h3>Ribbon Falls Hike</h3>
           <div>
             {`If you're staying more than one night at Bright Angel, I recommend spending a day hiking the North Kaibab Trail up to Ribbon Falls. It's 13 miles
-            round-trip to Ribbon Falls, and every step of the way is through exceptionally beautiful canyons. The trail starts off in a steep canyon lined with red rock,
-            gradually opening up. Best of all, its relatively flat to Ribbon Falls, gaining only 1,200 feet over the 13 mile round-trip.`}
+            round-trip to Ribbon Falls, and every step of the way is through spectacular red rock canyons.
+            Best of all, it's a relatively flat hike to Ribbon Falls, gaining only 1,200 feet over the 13 mile round-trip.`}
             <br />
             <br />
             {`The Ribbon Falls day hike was the highlight of our trip to the Grand Canyon, chock full of spectacular scenery and wildflowers. Start your hike
@@ -346,7 +346,7 @@ export default function BackpackingGrandCanyon({ readMore = false }) {
             </div>
           </div>
 
-          <WTPBackpacking uri={pageURI} />
+          <WTPBackpacking uri={pageURI} showBear={false} />
         </div>
 
         <Contact />

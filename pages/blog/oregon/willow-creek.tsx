@@ -53,8 +53,8 @@ export default function Post() {
             />
           </div>
           <h3>Getting There</h3>
-          {`Willow Creek Hot Springs is in a remote area, the closest towns being Fields, Oregon (Pop 120), about an hour away.
-        Fields is a 6-7 hour drive from Portland, totalling around 7.5 hours if you drive direct from Portland.`}
+          {`Willow Creek Hot Springs is in a remote area, the closest town being Fields, Oregon (Pop 120) about an hour away.
+        Fields is a 6-7 hour drive from Portland, totalling around 7.5 hours to the hot springs if you drive direct from Portland.`}
           <br />
           <br />
           {`The road to the hot springs is well-graded gravel from Fields, and dirt after the turn-off on Whitehorse Ranch Lane. Avoid this dirt road during or
@@ -73,9 +73,10 @@ export default function Post() {
           <br />
           <br />
           <h3>Hot Springs and Campground</h3>
-          {`The hot springs are located on BLM Land, with adjacent to a free, first-come, first-served campground. Be aware that the campground is very basic, having only fire rings,
-          picnic tables and a pit toilet.
-          Bring your own TP, as this campground is not serviced often. There are about six sites at the campground, right near the hot springs.`}
+          {`The hot springs are located on BLM Land, with adjacent to a free, first-come, first-served campground with about six sites total.
+          Be aware that the campground is very basic, having only fire rings,
+          picnic tables and a pit toilet. 
+          Bring your own TP, as this campground is not serviced often. `}
           <br />
           <br />
 

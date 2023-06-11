@@ -12,7 +12,8 @@ import Contact from "../../../components/contact";
 const metadata = {
   title: "Willow Creek Hot Springs",
   date: "2023-06-12",
-  image: "/images/oregon/willow-creek/thumbnail.jpg",
+  image:
+    "https://lh3.googleusercontent.com/pw/AJFCJaWXplPsdSSnuh2Kf6CkpJ7WFWC0c3V8Okw_hzAL3q8SOLU0EL2oPwYRHGDDwFMVLKwZRcDGweW19rGX6jQckLQ_ls2hvDYeuEW4Ksktv02L4WwI1QAqL_rz4olOByA7PwEHthzblFHpq3JOAoBE5qvG=w653-h653-s-no?authuser=0",
   tags: ["camping", "hot springs", "steens", "oregon"],
   preview:
     "Camp at remote Willow Creek Hot Springs, in Oregon's Southeastern Desert",

@@ -46,16 +46,16 @@ export default function Video({
       0,
       Math.min(
         video.offsetWidth,
-        window.pageXOffset + window.innerWidth - video.offsetLeft,
-        right - window.pageXOffset
+        window.scrollX + window.innerWidth - video.offsetLeft,
+        right - window.scrollX
       )
     );
     const visibleY = Math.max(
       0,
       Math.min(
         video.offsetHeight,
-        window.pageYOffset + window.innerHeight - video.offsetTop,
-        bottom - window.pageYOffset
+        window.scrollY + window.innerHeight - video.offsetTop,
+        bottom - window.scrollY
       )
     );
     const visible =

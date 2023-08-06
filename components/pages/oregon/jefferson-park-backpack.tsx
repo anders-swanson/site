@@ -75,7 +75,7 @@ export default function JeffersonPark({ readMore = false }) {
 
         <ReadMoreLink
           enabled={readMore}
-          text="backpacking Green Lakes"
+          text="Jefferson Park One Night Backpack"
           uri={pageURI}
         >
           <div>
@@ -155,13 +155,18 @@ export default function JeffersonPark({ readMore = false }) {
           <h1 className={utilStyles.justifyCenter} id="permits">
             Permit Info
           </h1>
-          <CCPermitInfo isDayUse={false} zone="Jefferson Park" />
+          <CCPermitInfo
+            isDayUse={false}
+            zone="Jefferson Park"
+            wilderness="Mt. Jefferson"
+          />
           <div>
             {`The Pamelia Lake trailhead additionally requires a `}
             <Link href={CentralCascadesDayUse}>day use permit</Link>
             {`.`}
           </div>
 
+          <div className={utilStyles.justifyCenter} />
           <div>
             <Image
               src="https://lh3.googleusercontent.com/pw/AIL4fc-rKXORAWUNNfKHkuzqOviTznb1OjAGjdNZz4YlrSBTqlSPaPoRYw-0mWX4QynvG_PqQLy8Z28pGy_GSUXfXXm1UDdWJro-uA3ewlMnlpqh7g7PT1qSl6yZIOmxZ9F9NAvgcz2G9cI6pI62-NssleIU=w533-h799-s-no?authuser=0"
@@ -169,6 +174,8 @@ export default function JeffersonPark({ readMore = false }) {
               height={799}
               alt="Sunset on Mt. Jefferson near Russel Lake"
             />
+          </div>
+          <div>
             <Image
               src="https://lh3.googleusercontent.com/pw/AIL4fc90_qpTzz1E0jwhWhBkEUELgIvROBjd_zCJuUvgL6sZRMOGNIV8pGZj4m2B5P5LNeFnqWDYFg_hCFWRhJNifkwF6hTLd4ZEATDv1Iu9c2RwTvgAeXzniK_rnjBDMwqu3JXMbdhkE6UW3YZV-rOl5gSK=w533-h799-s-no?authuser=0"
               width={533}

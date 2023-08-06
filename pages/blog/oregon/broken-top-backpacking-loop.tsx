@@ -1,7 +1,7 @@
 import Layout from "../../../components/layout";
-import JeffersonPark, {
+import BrokenTopLoop, {
   metadata,
-} from "../../../components/pages/oregon/jefferson-park-backpack";
+} from "../../../components/pages/oregon/broken-top-backpacking-loop";
 
 export default function Post() {
   return (
@@ -11,10 +11,10 @@ export default function Post() {
       ogImage={metadata.image}
       related={{
         metadata: metadata,
-        tag: "backpacking",
+        tag: "sisters",
       }}
     >
-      <JeffersonPark />
+      <BrokenTopLoop />
     </Layout>
   );
 }

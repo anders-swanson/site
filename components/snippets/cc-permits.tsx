@@ -1,8 +1,8 @@
-import Link from "next/link";
 import {
   CentralCascadesDayUse,
   CentralCascadesWildernessPermit,
 } from "../../lib/common";
+import { LinkT } from "../tablink";
 
 export default function CCPermitInfo({
   zone = "",
@@ -17,14 +17,14 @@ export default function CCPermitInfo({
   return (
     <div>
       {`${dayUseMessage} are required to carry a `}
-      <Link href={CentralCascadesWildernessPermit}>Overnight Permit</Link>
+      <LinkT href={CentralCascadesWildernessPermit}>Overnight Permit</LinkT>
       {isDayUse && (
         <>
           {` or `}
-          <Link href={CentralCascadesDayUse}>Day Use Ticket</Link>
+          <LinkT href={CentralCascadesDayUse}>Day Use Ticket</LinkT>
         </>
       )}
-      {` when visiting this the ${wilderness} wilderness. Permits must be purchased online prior to the date of your trip.`}
+      {` at all times in the ${wilderness} wilderness. Permits must be purchased online prior to the date of your trip.`}
       <br />
       <br />
       {`The ${wilderness} permit season runs from June 15th to October 15th, becoming highly competitive during peak summer months. 40% of overnight permits are released on April 4th,
@@ -39,7 +39,7 @@ export default function CCPermitInfo({
       <br />
       {`All permits are reservable on a first-come, first-served basis.
       To increase your odds of getting a permit, log into `}
-      <Link href={CentralCascadesWildernessPermit}>recreation.gov</Link>
+      <LinkT href={CentralCascadesWildernessPermit}>recreation.gov</LinkT>
       {` by 7AM the week before you want to backpack, and select your desired trailhead as soon as it becomes available. Permits sell out quickly for popular trailheads!`}
       <br />
       <br />

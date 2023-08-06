@@ -13,41 +13,38 @@ export default function Post({
 }) {
   const blogLink = `/blog${item.id}`;
   return (
-    <div className={postStyle}>
+
+          <div className={postStyle} style={{
+      backgroundImage: `url(${item.image})`,
+    }}>
+      <Link href={blogLink} className={styles.postLink}/>
+      <div className={styles.postText}>
       <Link href={blogLink}>
-        <Image
-          alt={item.id}
-          src={item.image}
-          className={utilStyles.borderRounded}
-          height={imgSizing}
-          width={imgSizing}
-        />
+      {`${truncatePreview(item.preview)}`}
       </Link>
-      <div className={styles.tag}>
-        {item.tags.map((t) => (
-          <Link href={"/filter/" + t} key={`${item.id}-${t}`}>
-            {CapitalizeWords(t)}
-          </Link>
-        ))}
-      </div>
-      <Link
-        href={blogLink}
-        className={styles.postLink}
-        style={{ fontSize: "18px", color: "black" }}
-      >
-        {item.title}
-      </Link>
-      <br />
-      <div className={styles.description}>
-        <Link style={{ color: "black" }} href={blogLink}>
-          {item.preview}
-        </Link>
-      </div>
-      {showDate && (
-        <div style={{ fontSize: "16px" }} className={utilStyles.lightText}>
-          <Date dateString={item.date} />
+        <div className={styles.tag}>
+          {item.tags.map((t) => (
+            <Link href={"/filter/" + t} key={`${item.id}-${t}`}>
+              {CapitalizeWords(t)}
+            </Link>
+          ))}
         </div>
-      )}
+      </div>
+      
+
     </div>
+ 
+
   );
+}
+
+function truncatePreview(preview: string): string {
+  const max = 200
+  let p = preview
+  if(p.length > max) {
+    p.substring(0, max-3)
+    p += "..."
+  }
+
+  return p
 }

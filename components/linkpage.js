@@ -52,8 +52,8 @@ export default function Links({ title, showSocial = false }) {
           />
           <LinkButton
             title="Latest Youtube Video"
-            body="GRAND CANYON VLOG"
-            src="https://youtu.be/YqxDFVTxGPI"
+            body="BACKPACKING the GRAND CANYON VLOG"
+            src="https://youtu.be/9pUUZgOwoHY"
             animation={utilStyles.shakeAnimation}
           />
           <LinkButton

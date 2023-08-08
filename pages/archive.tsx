@@ -10,6 +10,7 @@ export default function ArchivePage({ posts }) {
       ogImage="/cover.png"
       headerText="Archive"
       noHeader
+      allPostsData={null}
     >
       <Archive posts={posts} tags={Tags()} />
     </Layout>

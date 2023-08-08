@@ -24,7 +24,7 @@ export default function FeaturedPost({ post, txt = "" }) {
           <>
             <br />
             <div>
-              <Post item={post} imgSizing={280} />
+              <Post item={post} />
             </div>
           </>
         )}

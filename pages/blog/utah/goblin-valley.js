@@ -77,7 +77,7 @@ export default function Post() {
         <div className={utilStyles.textBlock}></div>
       </div>
       <div className={utilStyles.flexWrapContainer}>
-        <Slider width="900px" height="600px" slides={[cover, gob2, gob3]} />
+        <Slider width={900} height={600} slides={[cover, gob2, gob3]} />
       </div>
 
       <hr />

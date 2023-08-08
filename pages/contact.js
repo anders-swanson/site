@@ -82,7 +82,11 @@ export default function Contact() {
   };
 
   return (
-    <Layout headerText={"Contact Us"} description={`Contact us!`}>
+    <Layout
+      headerText={"Contact Us"}
+      description={`Contact us!`}
+      maxWidthContainer
+    >
       <div className={utilStyles.contactForm}>
         <div className={`${utilStyles.centered} ${utilStyles.formHeader}`}>
           {`Send us a message if you have questions, comments, or just want to connect!`}

@@ -58,7 +58,9 @@ export default function Archive({ posts, tags }) {
           ))}
         </select>
       </div>
-      <div className={archiveStyles.tagListItems}>{tagListItems()}</div>
+      <div className={`${utilStyles.centered} ${archiveStyles.tagListItems}`}>
+        {tagListItems()}
+      </div>
       <br />
       <div className={archiveStyles.flexGap}>
         {FilterTag(posts, ...tagList).map(({ ...item }) => (
@@ -87,8 +89,7 @@ export default function Archive({ posts, tags }) {
             >
               <Link
                 href={`/blog${item.id}`}
-                className={styles.postLink}
-                style={{ fontSize: "18px" }}
+                style={{ fontSize: "18px", color: "black" }}
               >
                 {item.title}
               </Link>

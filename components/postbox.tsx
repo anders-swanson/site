@@ -35,7 +35,9 @@ export default function PostBox({
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
       <div id="recent">
         {heading && (
-          <h2 className={utilStyles.headingLg}>{CapitalizeWords(heading)}</h2>
+          <h2 className={`${utilStyles.centered} ${utilStyles.headingLg}`}>
+            {CapitalizeWords(heading)}
+          </h2>
         )}
       </div>
       {items.length > 0 && (

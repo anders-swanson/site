@@ -10,6 +10,7 @@ import { Posts } from "../lib/metadata";
 import PrevNextPost from "./prev_next_post";
 import dynamic from "next/dynamic";
 import BurgerMenu from "./burger_menu";
+import { max } from "date-fns";
 
 export const title = `Trails and Trekking`;
 const defaultHeaderImage = "/cover.png";
@@ -47,7 +48,10 @@ export default function Layout({
   perPage = config.itemsPerPage,
   related = null,
   skipAbout = false,
+  maxWidthContainer = false,
 }) {
+  const containerStyles =
+    related || maxWidthContainer ? { maxWidth: "72rem" } : {};
   // State for the search box
   const [search, setSearch] = useState("");
   // State for the scroll effect
@@ -176,7 +180,7 @@ export default function Layout({
 
       <br />
       <br />
-      <div className={styles.container}>
+      <div className={styles.container} style={containerStyles}>
         {!home && !noHeader && <PostHeader txt={headerText} stxt={subText} />}
 
         <main>{children}</main>

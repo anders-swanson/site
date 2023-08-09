@@ -3,6 +3,6 @@
   flex-direction: row;
   margin: auto;
   overflow-x: auto;
-  gap: 30px;
+  gap: 10px;
   height: 100%;
 }

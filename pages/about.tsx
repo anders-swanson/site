@@ -7,7 +7,7 @@ import About from "../components/about";
 
 export default function Post() {
   return (
-    <Layout headerText={"About Us"} skipAbout={true}>
+    <Layout headerText={"About Us"} skipAbout={true} maxWidthContainer>
       <About />
       <br />
       <div className={utilStyles.flexGapContainer}>

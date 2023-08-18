@@ -52,7 +52,7 @@ export default function Links({ title, showSocial = false }) {
           />
           <LinkButton
             title="Latest Youtube Video"
-            body="SOLO CAMPING - chatty backpacking vlog"
+            body="SOLO CAMPING - getting deep backpacking vlog"
             src="https://www.youtube.com/watch?v=D2Vp385Z6gE"
             animation={utilStyles.shakeAnimation}
           />

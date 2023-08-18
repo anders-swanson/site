@@ -52,8 +52,8 @@ export default function Links({ title, showSocial = false }) {
           />
           <LinkButton
             title="Latest Youtube Video"
-            body="BEND OREGON HIKING VLOG - Broken Top Loop"
-            src="https://youtu.be/69YrlSyL28U"
+            body="SOLO CAMPING - chatty backpacking vlog"
+            src="https://www.youtube.com/watch?v=D2Vp385Z6gE"
             animation={utilStyles.shakeAnimation}
           />
           <LinkButton

@@ -13,6 +13,7 @@ import CCPermitInfo from "../../snippets/cc-permits";
 import Image from "next/image";
 import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
 import { LinkT } from "../../tablink";
+import Link from "next/link";
 const pageURI = "/blog/oregon/obsidian-trail-backpacking-loop";
 
 const obsidianTH =
@@ -23,10 +24,10 @@ export const metadata = {
   title: "Obsidian Trail Backpacking Loop",
   date: "2023-08-18`",
   image:
-    "https://lh3.googleusercontent.com/pw/AIL4fc_bmb9Phi8EyXiTrE5264gU3bGYs_XVyx9jHOwsdaWuOMp0s77KxdxFDtUvJSEdLKVa-BsKYvrJiBiYeHYzxzFHfBjXq0an6sd46JPEAba3HE9dONZM6u5upi55OAaoQpV3dEj49rwh9586_6TXGu8S=w653-h653-s-no?authuser=0",
+    "https://lh3.googleusercontent.com/pw/AIL4fc-awxAdn6vnSKakkIvc3FsqJaIPH17sgZxEwtTNdpluEMrs_Au8kL9SMMD8g3fk3No7bJZngLPQwC-fUvn6h8u1lx5NnM1ewX60fy316Ownx78D34qG6nzMNEN-JrPoDg0ZEcpkkEFlMAnNv47HQKAJ=w653-h653-s-no?authuser=0",
   tags: ["lakes", "oregon", "backpacking", "waterfall", "sisters"],
   preview:
-    "Explore a unique, backpackable lollipop loop near Middle Sister and discover a hidden lake.",
+    "Explore an easy backpacking lollipop loop near Middle Sister and discover a hidden lake.",
 };
 
 export default function ObsidianTrailLoop({ readMore = false }) {
@@ -37,7 +38,7 @@ export default function ObsidianTrailLoop({ readMore = false }) {
         <HikeInfo
           distance="12 mile loop"
           elevation="2,200 feet"
-          difficulty={HikeDifficulty.MODERATE}
+          difficulty={HikeDifficulty.EASY}
           season={BestSeason.SUMMER_FALL}
           trailhead={obsidianTH}
           permits={
@@ -51,30 +52,32 @@ export default function ObsidianTrailLoop({ readMore = false }) {
         />
 
         <div>
-          {`The Obsidian Trail accesses a lollipop loop on the west side of central cascades, with ample views of North and Middle Sister. Explore the upper loop
-          to find fields of obsidian, a waterfall, and a hidden lake off-trail.`}
+          {`The Obsidian trail is a lollipop loop on the west side of the Three Sisters in Central Oregon's cascades. Expect excellent mountain views of North and Middle Sister on this
+          trail, and a beautiful bloom seasonal wildflowers. Explore the upper loop
+          to find fields of obsidian, a waterfall, and a picturesque lake tucked away off-trail.`}
           <br />
           <br />
-          {`Perfect for a longer day hike, or an easy one-night backpacking trip with two 6 mile days. I Highly recommended for beginner backpackers
-          or those who want an easy night out on the trail - read below for a detailed description, and for tips on how to find the secret lake!`}
+          {`While doable as a longer day hike, I highly recommend the Obsidian trail for beginner backpackers
+          or for more experienced backpackers looking for a relaxing night out. Read below for a detailed description, and for tips on how to find the secret lake!`}
         </div>
 
         <div>
           <Image
-            alt="Trail Map"
-            width={584}
-            height={730}
-            src="https://lh3.googleusercontent.com/pw/AIL4fc9Vs4PW8etzMp5ny1uqjmfTVMUaBhUFDTTG4QbalzOtGYdzKWT3suCnx6pIM1eB8UGYNYmHjC7m0oizlAJA5pdxax6VF7BiLaB0bePmqOtrkXMPGtW-e404m_ahfcQhZ9v8K1ASS4Dc55sg_Q09LWz1=w952-h952-s-no?authuser=0"
-          />
-        </div>
-        <div>
-          <Image
-            src="https://lh3.googleusercontent.com/pw/AIL4fc-mlY6IjKxgtWQ7Nsq3fodTRw4Ekwqq3fBiVfI233fK1CGfJlQ3dNaqvOvrdqzlkNbprVUQiRc3DNPZlFCLO_QGWIn4D3ecTlupilgJ1y7cOLZuq4jMPFUfgTq9NlnMctpG1EawZAJ4qJufzgCOXY5h=w533-h799-s-no?authuser=0"
+            src="https://lh3.googleusercontent.com/pw/AIL4fc8zE0xIxLGY3NiOOPrvq_uih9LokUzQN0uabtoUuzlej_-U1t7pAgpXHNNtvohTZ6suOFRUEn9GjbemMjzMq1G4AsGtAxYUhcLP46oZw8AEkBEKtfPLLQVCSlROsLyGffmej-jhdwavFpyGaOlWaAsw=w533-h799-s-no?authuser=0"
             width={533}
             height={799}
             alt="Broken Top crater and trail #10 sign"
           />
         </div>
+        <div>
+          <Image
+            alt="Trail Map"
+            width={584}
+            height={730}
+            src="https://lh3.googleusercontent.com/pw/AIL4fc-kFRq9r6QOS3vo7sLYEd7rlytbxdULu0dVEEpT3PAucGUN44qCPNT5kcZIGbqL-mpuCPhloyw0wsT7QbVn6WZe3Marlct_7vyomqjN02kKalRhTj7wdyPf1LZnVflidwMc-dld_33mLKLeM6i2WAgK=w689-h618-s-no?authuser=0"
+          />
+        </div>
+
         <ReadMoreLink
           enabled={readMore}
           text="backpacking the Broken Top Loop"
@@ -87,41 +90,90 @@ export default function ObsidianTrailLoop({ readMore = false }) {
           <div>
             {`The `}
             <LinkT href={obsidianTH}>Obsidian Trail</LinkT>
-            {` is off the McKenzie Highway, just below McKenzie Pass on the west side of the central cascades. The McKenzie highway is a beautiful drive from Sisters,
-            passing through the Belknap lava flows on a narrow, scenic stretch of road.`}
-            <br/><br/>
-            {`There's limited parking at the trailhead, but since the induction of the `}
-            <LinkT href={CentralCascadesWildernessPermit}>permit system</LinkT>
-            {`, finding a parking spot should not be an issue.`}
+            {` is located off the McKenzie Highway, just below McKenzie Pass on the west side of the central cascades. If you're coming from Sisters, enjoy the scenic but narrow drive
+            through McKenzie Pass, stopping at the Dee Wright Observatory for mountain and Belknap lava flow views.`}
+            <br />
+            <br />
+            {`Day and overnight visitors to the Obsidian trailhead are required to pre-purchase a `}
+            <LinkT href={CentralCascadesWildernessPermit}>
+              Central Cascades Wilderness Permit
+            </LinkT>
+            {`. Find more information about `}
+            <Link href="/blog/oregon/obsidian-trail-backpacking-loop#permits">
+              permits in the section below.
+            </Link>
           </div>
 
-          <MapEmbed place="ChIJOysIRGuzuFQR4-NYJEz_p6M" />
+          <MapEmbed place="ChIJN1E58wVQv1QRWAcWFjoHsGQ" />
 
           <h1 className={utilStyles.justifyCenter} id="hike-details">
             Hike Details
           </h1>
 
           <div>
-            {`The first 2-3 miles are a moderate uphill climb through dense, evergreen forest. Gradually, the forest opens up at a lava flow, transitioning to meadows.
-            In July, there's an excellent wildflower bloom at the meadows which dries out by August.`}
+            {`For the first two to three miles, the trail gradually climbs uphill through a dense evergreen forest. 
+            As you climb, the forest begins to open up to meadows, and a rugged lava flow. If you're hiking in July, expect a varied wildflower bloom throughout the meadows.`}
           </div>
           <div>
-            {`After about 3.5 miles on the Obsidian Trail, you'll cross a small stream and arrive at the loop junction. Take the left fork with signage for Glacier Way to
-            hike the loop counter-clockwise for the best views. The Glacier Way trail joins with the PCT after 0.8 miles - turn right on the PCT to continue the loop.`}
-          </div>
-
-          <div>
-            {`If you're camping, the best spots are just off the PCT on the upper loop. Hike for 0.5 miles along the PCT, until you come to a user trail veering off to the left.
-            The trail crosses a stream (Glacier Creek), and enters a wooded area with many campsites. There's probably about 20 campsites in the trees here, scattered along the user trail.`}
-          </div>
-
-          <div>
-            {`If you want to find the secret lake, continue up the user trail exiting the trees into a rocky area with a steep cliff on the right. It's about 1 mile to the lake from here,
-            through rocky and rough terrain, though the trail remains visible the entire way.`}
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AIL4fc8gAk-q3BD5_AB4ph57St6JqLf2b3NiVUtNYzPKqrWQJjqdM6p8H7N1CpUYcFkk9gAEyp2eLJqZUuBThjrQfQSM8a560qXj_mH3DqVE_4aduEJxCS3dgSKPGRPeihvT6PSKQbiJvnvl_ROpA0X-ux8h=w533-h799-s-no?authuser=0"
+              width={799}
+              height={799}
+              alt="Wildflowers"
+            />
           </div>
 
           <div>
-            {`There are several more campsites at the lake`}
+            {`After about 3.5 miles on the Obsidian Trail, you'll cross a small stream, arriving at the lollipop loop junction. Take a left at the fork to hike the loop clockwise,
+            following signage for Glacier Way. Hike for 0.8 miles more on the The Glacier Way trail until it joins with the PCT - turn right on the PCT to continue the loop.`}
+          </div>
+
+          <div>
+            {`If you're backpacking this trail, the best campsites are off the PCT on the upper loop. After roughly 0.5 miles along the PCT, you'll come to a user trail 
+            that veers to the left, crossing a stream (Glacier Creek). The wooded area beyond the stream has a large amount of campsites along the small user trail, and good access to water.`}
+          </div>
+
+          <div>
+            {`To find the lake, continue up the user trail, past the campsites in the trees. The trail will exit the trees into a rocky area, with a steep cliff on your right. F
+            Follow the trail through the rocks for about 0.5 miles, then taking a sharp right to double back towards the cliff you say before. This path follows the sharp U-shaped 
+            line on the map above.`}
+          </div>
+
+          <div>
+            {`Once you find the small lake, soak in the views of Three Sisters mountains reflected on its glassy surface. There are numerous campsites scattered around the lake,
+            so you may choose to camp here as well.`}
+          </div>
+
+          <div>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AIL4fc9-Hsk2np4rX8aTSxxhWYDKCblhU-LtCAmC4OxwjACBVPIwPMhI2MIljQKnN15dBn_KjkTVI4uAtz4a--rLN6hn5mrf-bOcNB5oyd9xDaG-9en4o_yW2rKYmpKidGsyA6B3mUxzrB-IsZCAjxUcYDm7=w799-h533-s-no?authuser=0"
+              width={799}
+              height={799}
+              alt="Hidden Lake"
+            />
+          </div>
+
+          <div>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AIL4fc-2XY2xBKOTRormJzE5RQ4S5hZFzu5YoSC--bkBTLMjcXCSabQ5AZyS7MCEL7xlcV5n5tRomE_Yor6yEq9HVIcs4IYjfwtrUevJn7r44jZCF5spUqbhDCIDMxMIZcJerljYiMcMgfRRHk-zmnjkmILZ=w799-h533-s-no?authuser=0"
+              width={799}
+              height={799}
+              alt="Flowers along the trail"
+            />
+          </div>
+
+          <div>
+            {`To complete the loop, follow the PCT until it meets the Obsidian trail farther down. You'll pass Obsidian Falls, and several more wildflower meadows to rejoin the main trail
+            leading back to the parking lot.`}
+          </div>
+
+          <div>
+            <Image
+              src="https://lh3.googleusercontent.com/pw/AIL4fc_nnyUQxhby22jKIOnfyox9wBlA7o04ji_5BDD076UySsMU17B10ct3IworqLCeMDGp3waZxgI_wtLMUd7qY_2bUeeytXp1RkK2llwLln6A6Kf7G8pqi4pEcaTq2pGk0zh7bkZUtCiP3XzdKkeRpIvL=w584-h730-s-no?authuser=0"
+              width={533}
+              height={799}
+              alt="Obsidian Falls"
+            />
           </div>
 
           <h1 className={utilStyles.justifyCenter} id="permits">
@@ -131,8 +183,8 @@ export default function ObsidianTrailLoop({ readMore = false }) {
 
           <div>
             <Image
-              src="https://lh3.googleusercontent.com/pw/AIL4fc-xr5G3CTNb9m4W_w2f46DdFf-Nbw-0dBa712dj0BUTAA1zr0G8WmHQoGjreyBAlrvqFYgByzhOp-Q_IFColcsLOXRIY6vz1m80nK0FP9uC8ViIuq3Nz6M5MqIe1SAx1AnnucfzLZgkqDQs3B4UTG8W=w533-h799-s-no?authuser=0"
-              width={533}
+              src="https://lh3.googleusercontent.com/pw/AIL4fc9KfLGavM6MPlO_R19RDCaSOljWRRmQKpNjo_nLPmr-GL-m9LtvRcvnb8sgIyNE3dbNta50dGsIJvbSODzJTBEA1IgeQnNCEgyowfHcttomKkwOuzPVFWLRzTUDYFYwqj1oZJ6wU1vbddOrsrHOm2Ws=w799-h533-s-no?authuser=0"
+              width={799}
               height={799}
               alt="Bend Glacier close up"
             />

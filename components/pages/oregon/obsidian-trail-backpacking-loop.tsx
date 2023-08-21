@@ -125,12 +125,12 @@ export default function ObsidianTrailLoop({ readMore = false }) {
 
           <div>
             {`After about 3.5 miles on the Obsidian Trail, you'll cross a small stream, arriving at the lollipop loop junction. Take a left at the fork to hike the loop clockwise,
-            following signage for Glacier Way. Hike for 0.8 miles more on the The Glacier Way trail until it joins with the PCT - turn right on the PCT to continue the loop.`}
+            following signage for Glacier Way. Hike 0.8 miles on the The Glacier Way trail until it joins with the PCT, turning right on the PCT to continue the loop.`}
           </div>
 
           <div>
-            {`If you're backpacking this trail, the best campsites are off the PCT on the upper loop. After roughly 0.5 miles along the PCT, you'll come to a user trail 
-            that veers to the left, crossing a stream (Glacier Creek). The wooded area beyond the stream has a large amount of campsites along the small user trail, and good access to water.`}
+            {`If you're backpacking, the best campsites are on the upper loop off the PCT. After roughly 0.5 miles along the PCT, you'll come to a user trail 
+            that veering left and crossing a stream (Glacier Creek). The wooded area beyond the stream has many amount of campsites along the user trail, and good access to water from the stream.`}
           </div>
 
           <div>
@@ -163,8 +163,8 @@ export default function ObsidianTrailLoop({ readMore = false }) {
           </div>
 
           <div>
-            {`To complete the loop, follow the PCT until it meets the Obsidian trail farther down. You'll pass Obsidian Falls, and several more wildflower meadows to rejoin the main trail
-            leading back to the parking lot.`}
+            {`To complete the loop, follow the PCT until it meets the Obsidian trail farther down. You'll pass Obsidian Falls and several more wildflower meadows on your way to the main trail.
+            Once you've rejoined the main trail, it's 3.5 miles on a familiar route back to the parking lot.`}
           </div>
 
           <div>

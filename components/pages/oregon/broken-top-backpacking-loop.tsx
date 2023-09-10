@@ -13,7 +13,7 @@ import CCPermitInfo from "../../snippets/cc-permits";
 import Image from "next/image";
 import WTPBackpacking from "../../snippets/what-to-pack-backpacking";
 import { LinkT } from "../../tablink";
-const pageURI = "/blog/oregon/jefferson-park-backpack";
+const pageURI = "/blog/oregon/broken-top-backpacking-loop";
 
 const tamMcArthurRim =
   "https://www.google.com/maps/place/Tam+McArthur+Rim+Trailhead/@44.0970423,-121.6310223,15.83z/data=!4m6!3m5!1s0x54b8b36b44082b3b:0xa3a7ff4c2458e3e3!8m2!3d44.100786!4d-121.6224637!16s%2Fg%2F1pp2tljll?entry=ttu";

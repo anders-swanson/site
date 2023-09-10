@@ -1,3 +1,5 @@
+import { LinkT } from "../components/tablink";
+
 export enum HikeDifficulty {
   // EASIEST = "Easiest",
   EASY = "Easy",

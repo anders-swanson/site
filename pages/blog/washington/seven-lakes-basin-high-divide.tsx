@@ -1,5 +1,7 @@
 import Layout from "../../../components/layout";
-import SevenLakesBasin, {metadata} from "../../../components/pages/washington/seven-lakes-basin-high-divide";
+import SevenLakesBasin, {
+  metadata,
+} from "../../../components/pages/washington/seven-lakes-basin-high-divide";
 
 export default function Post() {
   return (

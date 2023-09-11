@@ -1,4 +1,3 @@
-
 export enum HikeDifficulty {
   // EASIEST = "Easiest",
   EASY = "Easy",

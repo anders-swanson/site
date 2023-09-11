@@ -52,8 +52,8 @@ export default function SevenLakesBasin({ readMore = false }) {
         </div>
 
         <div>
-          {`Get ready to see some of the best and most accessible high country in Olympic National Park by hiking the Seven Lakes Basin / High Divide loop. 
-          Packed with mountain lakes, alpine meadows, and tons of wildlife, this is amazing 1-3 night backpacking trip is a must-do in Olympic National Park.`}
+          {`Get ready to see some the best high country in Olympic National Park has to offer by hiking the Seven Lakes Basin / High Divide loop. 
+          You'll hike through alpine meadows, swim in mountain lakes, and see tons of wildlife on this must-do 1-3 night backpacking trip in Olympic National Park.`}
           <br />
           <br />
           {`If you're staying overnight, make sure to book an `}
@@ -64,7 +64,7 @@ export default function SevenLakesBasin({ readMore = false }) {
           <LinkT href="https://www.nps.gov/olym/planyourvisit/wilderness-food-storage.htm">
             food storage
           </LinkT>
-          {` regulations before leaving.`}
+          {` regulations before arriving.`}
         </div>
 
         <div>
@@ -87,7 +87,7 @@ export default function SevenLakesBasin({ readMore = false }) {
           <div>
             {`The hike starts at the `}
             <LinkT href={solDocTrailhead}>Sol Duc trailhead</LinkT>
-            {`, around 3.5 hours from Seattle, and 5.5 hours from Portland. The trailhead is highly popular for for backpackers and day hikers alike, so expect
+            {`, around 3.5 hours from Seattle, and 5.5 hours from Portland. The trailhead is popular for for backpackers and day hikers alike, so expect
             competition for parking by mid-morning. When the main lot fills, find additional parallel parking on the entry road.`}
             <br />
             <br />
@@ -129,9 +129,9 @@ export default function SevenLakesBasin({ readMore = false }) {
             />
           </div>
           <div>
-            {`The scenery gets ore interesting beyond Deer Lake, transitioning to heather meadows interspersed with ponds. Keep climbing through varied terrain
+            {`The scenery gets more interesting beyond Deer Lake, transitioning to heather meadows interspersed with ponds. Keep climbing through varied terrain
             for another 3.4 miles until you reach the Lunch Lake/Round Lake trail junction. Lunch Lake is one of the prettiest camping areas on the loop,
-            and whether you have a spot there or not, I highly recommend hiking the scenic 0.8 miles down to the lake. There is clear signage at the junction for Lunch Lake on the left.`}
+            and whether you have a spot there or not, I highly recommend hiking the scenic 0.8 miles down to the lake. There is clear signage for Lunch Lake at the junction.`}
           </div>
 
           <div>
@@ -143,7 +143,7 @@ export default function SevenLakesBasin({ readMore = false }) {
             />
           </div>
           <div>
-            {`From the Lunch Lake trail junction, it's about 1 mile more to the Hoh Lake trail turnoff, passing Bogachiel Peak. This is a gorgeous section of trail,
+            {`From the Lunch Lake trail junction, it's about 1 mile further to the Hoh Lake trail turnoff, passing Bogachiel Peak. This is a gorgeous section of trail,
             with blooming wildflowers in July-August, and a view of glaciers peeking over a knife-edge ridge.`}
           </div>
           <div>
@@ -161,8 +161,8 @@ export default function SevenLakesBasin({ readMore = false }) {
           </div>
           <div>
             {`If you're not camping at Hoh Lake, or just don't 
-            want to be bothered with the extra milage and elevation, stay left at the Hoh Lake turnoff to keep on the High Divide trail. 
-            The next destination on the High Divide trail is Heart Lake, 2.4 miles from the Hoh Lake turnoff. This is an excellent camping
+            want to be bothered with the extra milage and elevation, keep left at the Hoh Lake turnoff to stay on the High Divide trail. 
+            The next destination is Heart Lake, 2.4 miles from the Hoh Lake turnoff. This is an excellent camping
             area, still in the alpine high country with plenty of views.`}
           </div>
 
@@ -176,7 +176,7 @@ export default function SevenLakesBasin({ readMore = false }) {
           </div>
           <div>
             {`Past Heart Lake, the trail steeply descends for 6.7 miles along the Sol Duc river, through a seemingly never-ending series switchbacks. Once you get out of the high country,
-            there's not too much to see in this section besides trees, and it can start to feel like a slog. Eventually, you'll connect the loop back near Sol Duc falls, with about
+            there's not too much to see in this section besides trees, and it can start to feel like a slog. Eventually, you'll connect the loop back near Sol Duc falls, with
             a mile of easy trail back to the parking lot.`}
           </div>
 
@@ -193,7 +193,7 @@ export default function SevenLakesBasin({ readMore = false }) {
             Best Campsites
           </h1>
           <div>
-            {`There's a lot of options for camping on the loop, but sites must be reserved ahead of time. I suggest camping at one of these sites (if they are available)
+            {`There's a lot of camping options on the loop, but sites must be reserved ahead of time. I suggest camping at one of these sites (if they are available)
             to get the most out of your hike. Camping by a scenic lake is much better than a random spot in the forest, though sometimes you take what you can get!`}
             <br />
             <br />

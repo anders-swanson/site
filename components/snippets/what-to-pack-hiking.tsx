@@ -11,7 +11,7 @@ export default function WTPHiking({
 }) {
   return (
     <>
-      <h1>What To Pack Hiking</h1>
+      <h1 className={utilStyles.justifyCenter}>What To Pack Hiking</h1>
       {`This is the gear I personally use for every day hike, having tested it over thousands of miles and multiple years.`}
       <div>
         {clothing && (

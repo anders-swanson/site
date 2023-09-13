@@ -194,7 +194,7 @@ export default function Enchantments({ readMore = false }) {
 
           <div>
             <Image
-              src="https://lh3.googleusercontent.com/pw/AIL4fc-owqgS_Z8LGZo8IC7cpMnT8BVY6uqyaG12mM2L-ne_CPcFzwGKdTuqlavlNR2svUq71V7srbLgzMR-05how6UM76q7vZHcjkV9bi-KDQTr5B2Ss9IWZ90awUsh_tMeFIa_uZdL_AgcwCCsudrSoo-C=w799-h533-s-no?authuser=0"
+              src="https://lh3.googleusercontent.com/pw/AIL4fc8sQ79bVjPHHWwspcpcWCMBfduKynD6fyOFMQBfopUCrLQIb3PszyPQhUNveJxgIwXJ4bTPkvWrPLwIj80155_0Ns2AVYqDCItjl7a-0olbNcLVFd-an9P9WkoYQPmjI44DaNOq8Uv_dmOBfza4P7S_=w584-h730-s-no?authuser=0"
               width={799}
               height={799}
               alt="Core Enchantments"

@@ -1,5 +1,7 @@
 import Layout from "../../../components/layout";
-import Enchantments, {metadata} from "../../../components/pages/washington/enchantments";
+import Enchantments, {
+  metadata,
+} from "../../../components/pages/washington/enchantments";
 
 export default function Post() {
   return (

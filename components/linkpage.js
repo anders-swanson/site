@@ -45,6 +45,11 @@ export default function Links({ title, showSocial = false }) {
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
           <LinkButton
+            title="Backpacking Toiletry Baggie"
+            body="Lightweight & Durable"
+            src="https://ultralitesacks.com/collections/easy-access-zippered-products/products/zippered-pouches?variant=42034229608501&sca_ref=4394675.VU39AYqm0Y"
+          />
+          <LinkButton
             title="My REI Favorites"
             body="Gear That's Lasted Me Over 1000+ Miles"
             src="https://bit.ly/40uPjZc"
@@ -65,11 +70,6 @@ export default function Links({ title, showSocial = false }) {
             title="Amazon Backpacking Favorites"
             body="Items I Know & Love!"
             src="https://www.amazon.com/shop/laurensbigadventure"
-          />
-          <LinkButton
-            title="My Hawaii Swimsuit"
-            body="Save 15% with code LAUREN84928"
-            src="https://bit.ly/3iCkTmP"
           />
           <LinkButton
             title="Shop my LTK"

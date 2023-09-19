@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.trailsandtrekking.com/about</loc>
-    <lastmod>2023-08-08</lastmod>
+    <lastmod>2023-08-09</lastmod>
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/archive</loc>
-    <lastmod>2023-08-08</lastmod>
+    <lastmod>2023-08-09</lastmod>
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/blog/arizona/backpacking-the-grand-canyon</loc>
@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/blog/oregon/broken-top-backpacking-loop</loc>
-    <lastmod>2023-08-06</lastmod>
+    <lastmod>2023-09-11</lastmod>
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/blog/oregon/chambers-lakes</loc>
@@ -151,6 +151,10 @@
   <url>
     <loc>https://www.trailsandtrekking.com/blog/oregon/mt-defiance</loc>
     <lastmod>2023-02-18</lastmod>
+  </url>
+  <url>
+    <loc>https://www.trailsandtrekking.com/blog/oregon/obsidian-trail-backpacking-loop</loc>
+    <lastmod>2023-08-23</lastmod>
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/blog/oregon/obsidian-trail</loc>
@@ -202,7 +206,7 @@
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/blog/utah/goblin-valley</loc>
-    <lastmod>2023-08-08</lastmod>
+    <lastmod>2023-08-09</lastmod>
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/blog/utah/navajo-knobs</loc>
@@ -215,6 +219,10 @@
   <url>
     <loc>https://www.trailsandtrekking.com/blog/washington/blue-lake</loc>
     <lastmod>2023-02-28</lastmod>
+  </url>
+  <url>
+    <loc>https://www.trailsandtrekking.com/blog/washington/enchantments</loc>
+    <lastmod>2023-09-13</lastmod>
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/blog/washington/goat-lake</loc>
@@ -233,6 +241,10 @@
     <lastmod>2023-02-03</lastmod>
   </url>
   <url>
+    <loc>https://www.trailsandtrekking.com/blog/washington/seven-lakes-basin-high-divide</loc>
+    <lastmod>2023-09-13</lastmod>
+  </url>
+  <url>
     <loc>https://www.trailsandtrekking.com/blog/washington/siouxon-trail</loc>
     <lastmod>2023-02-18</lastmod>
   </url>
@@ -242,7 +254,7 @@
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/contact</loc>
-    <lastmod>2023-08-08</lastmod>
+    <lastmod>2023-08-09</lastmod>
   </url>
   <url>
     <loc>https://www.trailsandtrekking.com/hello-from-instagram</loc>

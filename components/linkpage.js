@@ -45,15 +45,15 @@ export default function Links({ title, showSocial = false }) {
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
           <LinkButton
-            title="Backpacking Toiletry Baggie"
-            body="Lightweight & Durable"
-            src="https://ultralitesacks.com/collections/easy-access-zippered-products/products/zippered-pouches?variant=42034229608501&sca_ref=4394675.VU39AYqm0Y"
-          />
-          <LinkButton
             title="My REI Favorites"
             body="Gear That's Lasted Me Over 1000+ Miles"
             src="https://bit.ly/40uPjZc"
             animation={utilStyles.bounceAnimation}
+          />
+          <LinkButton
+            title="Shop my LTK"
+            body="Like my Outfits? They’re Linked Here! Can't find what you want? Just DM Me!"
+            src="https://www.shopltk.com/explore/laurengastineau"
           />
           <LinkButton
             title="Latest Youtube Video"
@@ -67,14 +67,14 @@ export default function Links({ title, showSocial = false }) {
             src="https://bit.ly/3m2ZBki"
           />
           <LinkButton
+            title="Backpacking Toiletry Baggie"
+            body="Lightweight & Durable"
+            src="https://ultralitesacks.com/collections/easy-access-zippered-products/products/zippered-pouches?variant=42034229608501&sca_ref=4394675.VU39AYqm0Y"
+          />
+          <LinkButton
             title="Amazon Backpacking Favorites"
             body="Items I Know & Love!"
             src="https://www.amazon.com/shop/laurensbigadventure"
-          />
-          <LinkButton
-            title="Shop my LTK"
-            body="Like my Outfits? They’re Linked Here! Can't find what you want? Just DM Me!"
-            src="https://www.shopltk.com/explore/laurengastineau"
           />
         </div>
         <br />

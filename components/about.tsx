@@ -80,7 +80,7 @@ export default function About() {
         />
       </div>
       <div>
-        {`Right now, we're back in rainy Portland, Oregon, planning our next adventure. If you're interested to see where we've been, check out some of our other
+        {`Right now, we're living in sunny Bend, Oregon, planning our next adventure. If you're interested to see where we've been, check out some of our other
                     posts on the site.`}
       </div>
     </div>

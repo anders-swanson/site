@@ -51,6 +51,11 @@ export default function Links({ title, showSocial = false }) {
             animation={utilStyles.bounceAnimation}
           />
           <LinkButton
+            title="Shop my LTK"
+            body="Like my Outfits? They’re Linked Here! Can't find what you want? Just DM Me!"
+            src="https://www.shopltk.com/explore/laurengastineau"
+          />
+          <LinkButton
             title="Latest Youtube Video"
             body="SOLO CAMPING - getting deep backpacking vlog"
             src="https://www.youtube.com/watch?v=D2Vp385Z6gE"
@@ -62,19 +67,14 @@ export default function Links({ title, showSocial = false }) {
             src="https://bit.ly/3m2ZBki"
           />
           <LinkButton
+            title="Backpacking Toiletry Baggie"
+            body="Lightweight & Durable"
+            src="https://ultralitesacks.com/collections/easy-access-zippered-products/products/zippered-pouches?variant=42034229608501&sca_ref=4394675.VU39AYqm0Y"
+          />
+          <LinkButton
             title="Amazon Backpacking Favorites"
             body="Items I Know & Love!"
             src="https://www.amazon.com/shop/laurensbigadventure"
-          />
-          <LinkButton
-            title="My Hawaii Swimsuit"
-            body="Save 15% with code LAUREN84928"
-            src="https://bit.ly/3iCkTmP"
-          />
-          <LinkButton
-            title="Shop my LTK"
-            body="Like my Outfits? They’re Linked Here! Can't find what you want? Just DM Me!"
-            src="https://www.shopltk.com/explore/laurengastineau"
           />
         </div>
         <br />

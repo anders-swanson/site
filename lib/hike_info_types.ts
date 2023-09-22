@@ -4,6 +4,7 @@ export enum HikeDifficulty {
   MODERATE = "Moderate",
   HARD = "Hard",
   VERY_HARD = "Very hard",
+  EXTREME = "Extreme",
 }
 
 export enum BestSeason {

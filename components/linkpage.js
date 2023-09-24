@@ -45,9 +45,10 @@ export default function Links({ title, showSocial = false }) {
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
           <LinkButton
-            title="My REI Favorites"
-            body="Gear That's Lasted Me Over 1000+ Miles"
-            src="https://bit.ly/40uPjZc"
+            title="My REI Fall Favorites"
+ //           body="Gear That's Lasted Me Over 1000+ Miles"
+            body="Gear That Will Keep You Cozy & Dry in the PNW Rain"
+            src="https://www.rei.com/lists/418054477"
             animation={utilStyles.bounceAnimation}
           />
           <LinkButton

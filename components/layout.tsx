@@ -75,7 +75,7 @@ export default function Layout({
       setVisible(true);
     }
 
-    if (window.scrollY > scrollPosition) {
+    if (window.scrollY > 300 && window.scrollY > scrollPosition) {
       setNavBarStyles({
         top: "-55px",
       });

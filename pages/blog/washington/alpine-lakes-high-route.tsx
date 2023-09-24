@@ -1,5 +1,7 @@
 import Layout from "../../../components/layout";
-import AlpineLakesHighRoute, { metadata } from "../../../components/pages/washington/alpine-lakes-high-route";
+import AlpineLakesHighRoute, {
+  metadata,
+} from "../../../components/pages/washington/alpine-lakes-high-route";
 
 export default function Post() {
   return (

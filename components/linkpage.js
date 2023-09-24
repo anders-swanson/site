@@ -48,7 +48,7 @@ export default function Links({ title, showSocial = false }) {
             title="My REI Fall Favorites"
  //           body="Gear That's Lasted Me Over 1000+ Miles"
             body="Gear That Will Keep You Cozy & Dry in the PNW Rain"
-            src="https://www.rei.com/lists/418054477"
+            src="https://bit.ly/3ES9ZkK"
             animation={utilStyles.bounceAnimation}
           />
           <LinkButton

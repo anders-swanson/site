@@ -4,7 +4,7 @@ import styles from "./related_posts.module.css";
 import config from "../lib/config";
 
 const posts = Posts();
-const defaultText = "Related Posts";
+const defaultText = "Recommended Posts";
 
 export default function RelatedPosts({
   metadata,

@@ -39,17 +39,23 @@ export default function Links({ title, showSocial = false }) {
         <p
           key="info"
           className={utilStyles.floatyText}
-          style={{ fontSize: "80px" }}
+          style={{ fontSize: "40px" }}
         >
           Where would you like to go next?
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
+        <LinkButton
+            title="Outdoor Lovers Gift Guide"
+            body="Clothes & Gear Your Friends and Family will Love"
+            src="https://laurengastineau.substack.com/p/outdoor-lovers-holiday-gift-guide"
+            animation={utilStyles.bounceAnimation}
+          />
           <LinkButton
             title="My REI Fall Favorites"
  //           body="Gear That's Lasted Me Over 1000+ Miles"
             body="Gear That Will Keep You Cozy & Dry in the PNW Rain"
             src="https://bit.ly/3ES9ZkK"
-            animation={utilStyles.bounceAnimation}
+            //animation={utilStyles.bounceAnimation}
           />
           <LinkButton
             title="Shop my LTK"
@@ -57,20 +63,15 @@ export default function Links({ title, showSocial = false }) {
             src="https://www.shopltk.com/explore/laurengastineau"
           />
           <LinkButton
-            title="Latest Youtube Video"
-            body="SOLO CAMPING - getting deep backpacking vlog"
-            src="https://www.youtube.com/watch?v=D2Vp385Z6gE"
+            title="Youtube Video"
+            body="SOLO ROAD TRIP - Olympic National Park"
+            src="https://youtu.be/e-ATGLOCJLk?si=Dn9avA5wxk7P8nxh"
             animation={utilStyles.shakeAnimation}
           />
           <LinkButton
             title="Favorite Backpacking & Travel Instant Coffee"
             body="Code LAURENG10 for $10 off your 1st order"
             src="https://bit.ly/3m2ZBki"
-          />
-          <LinkButton
-            title="Backpacking Toiletry Baggie"
-            body="Lightweight & Durable"
-            src="https://ultralitesacks.com/collections/easy-access-zippered-products/products/zippered-pouches?variant=42034229608501&sca_ref=4394675.VU39AYqm0Y"
           />
           <LinkButton
             title="Amazon Backpacking Favorites"

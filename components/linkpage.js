@@ -44,18 +44,12 @@ export default function Links({ title, showSocial = false }) {
           Where would you like to go next?
         </p>
         <div className={utilStyles.centeredRow} style={{ maxWidth: "800px" }}>
-        <LinkButton
-            title="Outdoor Lovers Gift Guide"
-            body="Clothes & Gear Your Friends and Family will Love"
-            src="https://laurengastineau.substack.com/p/outdoor-lovers-holiday-gift-guide"
-            animation={utilStyles.bounceAnimation}
-          />
           <LinkButton
-            title="My REI Fall Favorites"
+            title="REI Winter Hiking Gear"
  //           body="Gear That's Lasted Me Over 1000+ Miles"
-            body="Gear That Will Keep You Cozy & Dry in the PNW Rain"
-            src="https://bit.ly/3ES9ZkK"
-            //animation={utilStyles.bounceAnimation}
+            body="Gear That Will Keep You Cozy & Dry in the PNW"
+            src="https://bit.ly/3OEVN3T"
+            animation={utilStyles.bounceAnimation}
           />
           <LinkButton
             title="Shop my LTK"
@@ -63,19 +57,19 @@ export default function Links({ title, showSocial = false }) {
             src="https://www.shopltk.com/explore/laurengastineau"
           />
           <LinkButton
-            title="Youtube Video"
-            body="SOLO ROAD TRIP - Olympic National Park"
-            src="https://youtu.be/e-ATGLOCJLk?si=Dn9avA5wxk7P8nxh"
+            title="Subscribe to my Youtube!!"
+            body="Hiking, Backpacking & Travel Vlogs"
+            src="https://www.youtube.com/channel/UCe0aq3OyXySP2lVV7HS03qg"
             animation={utilStyles.shakeAnimation}
           />
           <LinkButton
-            title="Favorite Backpacking & Travel Instant Coffee"
-            body="Code LAURENG10 for $10 off your 1st order"
-            src="https://bit.ly/3m2ZBki"
+            title="The BEST Matcha - Sunnyday"
+            body="Code LAUREN15 saves you 15%"
+            src="https://collabs.shop/qkvn9f"
           />
           <LinkButton
-            title="Amazon Backpacking Favorites"
-            body="Items I Know & Love!"
+            title="Amazon Favorites"
+            body="Items I actually use & LOVE!"
             src="https://www.amazon.com/shop/laurensbigadventure"
           />
         </div>
